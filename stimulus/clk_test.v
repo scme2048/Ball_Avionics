@@ -1,0 +1,76 @@
+//////////////////////////////////////////////////////////////////////
+// Created by Microsemi SmartDesign Mon Jan 11 20:38:21 2016
+// Testbench Template
+// This is a basic testbench that instantiates your design with basic 
+// clock and reset pins connected.  If your design has special
+// clock/reset or testbench driver requirements then you should 
+// copy this file and modify it. 
+//////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// Company: <Name>
+//
+// File: clk_test.v
+// File history:
+//      <Revision number>: <Date>: <Comments>
+//      <Revision number>: <Date>: <Comments>
+//      <Revision number>: <Date>: <Comments>
+//
+// Description: 
+//
+// <Description here>
+//
+// Targeted device: <Family::ProASIC3L> <Die::A3PE3000L> <Package::484 FBGA>
+// Author: <Name>
+//
+/////////////////////////////////////////////////////////////////////////////////////////////////// 
+
+`timescale 1ns/100ps
+
+module clk_test;
+
+parameter SYSCLK_PERIOD = 1000;// 1MHZ
+
+reg SYSCLK;
+reg NSYSRESET;
+
+initial
+begin
+    SYSCLK = 1'b0;
+    NSYSRESET = 1'b0;
+end
+
+//////////////////////////////////////////////////////////////////////
+// Reset Pulse
+//////////////////////////////////////////////////////////////////////
+initial
+begin
+    #(SYSCLK_PERIOD * 10 )
+        NSYSRESET = 1'b1;
+end
+
+
+//////////////////////////////////////////////////////////////////////
+// Clock Driver
+//////////////////////////////////////////////////////////////////////
+always @(SYSCLK)
+    #(SYSCLK_PERIOD / 2.0) SYSCLK <= !SYSCLK;
+
+wire out;
+wire [16:0] count;
+//////////////////////////////////////////////////////////////////////
+// Instantiate Unit Under Test:  clock_div_1MHZ_10HZ
+//////////////////////////////////////////////////////////////////////
+clock_div_1MHZ_10HZ clock_div_1MHZ_10HZ_0 (
+    // Inputs
+    .CLK_1MHZ_IN(SYSCLK),
+
+    // Outputs
+    .CLK_10HZ_OUT(out ),
+    .counter(count)
+    // Inouts
+
+);
+
+endmodule
+

@@ -1,0 +1,16 @@
+Project Name: Ball_Avionics
+Location: C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics
+Description: 
+Preferred HDL Type: Verilog
+
+#-----------------------------------------------------
+                  Device Details
+#-----------------------------------------------------
+
+Part Number    : A3PE3000L-FG484I
+Family         : ProASIC3L
+Die            : A3PE3000L
+Package        : 484 FBGA
+Speed          : STD
+Core Voltage   : 1.5
+Range          : IND
