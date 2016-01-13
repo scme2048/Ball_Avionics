@@ -38,8 +38,8 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\component\work\full_sys\full_sys.cxf,actgen_cxf"
 STATE="utd"
-TIME="1452575094"
-SIZE="1361"
+TIME="1452625018"
+SIZE="1447"
 ENDFILE
 VALUE "<project>\designer\impl1\full_sys.ide_des,ide_des"
 STATE="utd"
@@ -103,49 +103,72 @@ SIZE="576"
 ENDFILE
 VALUE "<project>\simulation\CLK_div_test_presynth_simulation.log,log"
 STATE="utd"
-TIME="1452569803"
-SIZE="1456"
+TIME="1452569812"
+SIZE="2433"
 ENDFILE
 VALUE "<project>\simulation\clk_test_presynth_simulation.log,log"
 STATE="utd"
-TIME="1452569952"
-SIZE="1879"
+TIME="1452574461"
+SIZE="2044"
 ENDFILE
 VALUE "<project>\simulation\dummy_test_presynth_simulation.log,log"
 STATE="utd"
-TIME="1452567784"
-SIZE="1374"
+TIME="1452569779"
+SIZE="2012"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1452567768"
-SIZE="668"
+TIME="1452625298"
+SIZE="693"
 ENDFILE
 VALUE "<project>\smartgen\CLK_1MHZ\CLK_1MHZ.cxf,actgen_cxf"
 STATE="utd"
-TIME="1452568703"
+TIME="1452624933"
 SIZE="1480"
 ENDFILE
 VALUE "<project>\smartgen\CLK_1MHZ\CLK_1MHZ.gen,gen"
 STATE="utd"
-TIME="1452568698"
+TIME="1452624930"
 SIZE="587"
 PARENT="<project>\smartgen\CLK_1MHZ\CLK_1MHZ.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\smartgen\CLK_1MHZ\CLK_1MHZ.log,log"
 STATE="utd"
-TIME="1452568703"
+TIME="1452624931"
 SIZE="2776"
 PARENT="<project>\smartgen\CLK_1MHZ\CLK_1MHZ.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\smartgen\CLK_1MHZ\CLK_1MHZ.v,hdl"
 STATE="utd"
-TIME="1452568703"
+TIME="1452624931"
 SIZE="2709"
 PARENT="<project>\smartgen\CLK_1MHZ\CLK_1MHZ.cxf"
 IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\CLK_6_5MHZ\CLK_6_5MHZ.cxf,actgen_cxf"
+STATE="utd"
+TIME="1452624578"
+SIZE="1488"
+ENDFILE
+VALUE "<project>\smartgen\CLK_6_5MHZ\CLK_6_5MHZ.gen,gen"
+STATE="utd"
+TIME="1452624574"
+SIZE="589"
+PARENT="<project>\smartgen\CLK_6_5MHZ\CLK_6_5MHZ.cxf"
+ENDFILE
+VALUE "<project>\smartgen\CLK_6_5MHZ\CLK_6_5MHZ.log,log"
+STATE="utd"
+TIME="1452624578"
+SIZE="2782"
+PARENT="<project>\smartgen\CLK_6_5MHZ\CLK_6_5MHZ.cxf"
+ENDFILE
+VALUE "<project>\smartgen\CLK_6_5MHZ\CLK_6_5MHZ.v,hdl"
+STATE="utd"
+TIME="1452624578"
+SIZE="2714"
+PARENT="<project>\smartgen\CLK_6_5MHZ\CLK_6_5MHZ.cxf"
 ENDFILE
 VALUE "<project>\stimulus\clk_test.v,tb_hdl"
 STATE="utd"
@@ -235,7 +258,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_v11.6\Model\win32acoem\modelsim.exe"
-PARAM=" -l clk_test_presynth_simulation.log "
+PARAM=""
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -273,16 +296,13 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-Reports;Reports;0
-ReportsCurrentItem;Project Summary:Ball_Avionics.log
-SmartDesign;full_sys;0
-HDL;hdl\geig_data_handling.v;0
-HDL;hdl\clock_div_1MHZ_10HZ.v;0
-HDL;hdl\timestamp.v;0
-ACTIVEVIEW;hdl\geig_data_handling.v
+StartPage;StartPage;0
+ACTIVEVIEW;StartPage
 ENDLIST
 LIST ModuleSubBlockList
 LIST "CLK_1MHZ::work","smartgen\CLK_1MHZ\CLK_1MHZ.v","TRUE","FALSE"
+ENDLIST
+LIST "CLK_6_5MHZ::work","smartgen\CLK_6_5MHZ\CLK_6_5MHZ.v","TRUE","FALSE"
 ENDLIST
 LIST "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
 ENDLIST
@@ -290,6 +310,7 @@ LIST "dummy_state::work","hdl\dummy_state.v","FALSE","FALSE"
 ENDLIST
 LIST "full_sys::work","component\work\full_sys\full_sys.cxf","TRUE","FALSE"
 SUBBLOCK "CLK_1MHZ::work","smartgen\CLK_1MHZ\CLK_1MHZ.v","TRUE","FALSE"
+SUBBLOCK "CLK_6_5MHZ::work","smartgen\CLK_6_5MHZ\CLK_6_5MHZ.v","TRUE","FALSE"
 SUBBLOCK "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
 SUBBLOCK "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
 ENDLIST

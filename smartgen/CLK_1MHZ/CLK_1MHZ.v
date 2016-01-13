@@ -39,7 +39,7 @@ output GLA;
         .FBDIV3(GND), .FBDIV4(GND), .FBDIV5(GND), .FBDIV6(GND), 
         .FBDLY0(GND), .FBDLY1(GND), .FBDLY2(GND), .FBDLY3(GND), 
         .FBDLY4(GND), .FBSEL0(VCC), .FBSEL1(GND), .XDLYSEL(GND), 
-        .VCOSEL0(GND), .VCOSEL1(VCC), .VCOSEL2(GND));
+        .VCOSEL0(GND), .VCOSEL1(GND), .VCOSEL2(GND));
     GND GND_power_inst1 (.Y(GND_power_net1));
     VCC VCC_power_inst1 (.Y(VCC_power_net1));
     
@@ -80,7 +80,7 @@ endmodule
 // POWERDOWN_POLARITY:0
 // LOCK_POLARITY:1
 // LOCK_CTL:0
-// VOLTAGE:1.2
+// VOLTAGE:1.5
 
 // _End_Comments_
 

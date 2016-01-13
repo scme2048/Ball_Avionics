@@ -1,6 +1,6 @@
  ** Message System Log
  ** Database: 
- ** Date:   Mon Jan 11 20:18:22 2016
+ ** Date:   Tue Jan 12 11:55:30 2016
 
 
 ****************
@@ -55,7 +55,7 @@ DLYGLB[4:0]     00000
 DLYGLC[4:0]     00000
 DLYYB[4:0]      00000
 DLYYC[4:0]      00000
-VCOSEL[2:0]     010
+VCOSEL[2:0]     000
 
 Primary Clock Frequency 1.000
 Primary Clock Phase Shift 0.000
@@ -82,5 +82,5 @@ Netlist Resource Report
 
 Wrote Verilog netlist to C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/smartgen\CLK_1MHZ\CLK_1MHZ.v.
 
- ** Log Ended:   Mon Jan 11 20:18:23 2016
+ ** Log Ended:   Tue Jan 12 11:55:31 2016
 
