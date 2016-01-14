@@ -5,11 +5,11 @@ KEY DEFAULT_OPEN_LOC ""
 KEY ProjectID "0"
 KEY HDLTechnology "VERILOG"
 KEY VendorTechnology_Family "ProASIC3L"
-KEY VendorTechnology_Die "IT14X14M4LDP"
+KEY VendorTechnology_Die "M1IS8X8M2LDP"
 KEY VendorTechnology_Package "fg484"
 KEY VendorTechnology_Speed "STD"
 KEY VendorTechnology_DieVoltage "1.5"
-KEY VendorTechnology_PART_RANGE "IND"
+KEY VendorTechnology_PART_RANGE "COM"
 KEY VendorTechnology_DSW_VCCA_VOLTAGE_RAMP_RATE ""
 KEY VendorTechnology_IO_DEFT_STD "LVCMOS33"
 KEY VendorTechnology_OPCONR ""
@@ -18,13 +18,13 @@ KEY VendorTechnology_RAD_EXPOSURE ""
 KEY VendorTechnology_RESTRICTPROBEPINS "1"
 KEY VendorTechnology_RESTRICTSPIPINS "0"
 KEY VendorTechnology_SYSTEM_CONTROLLER_SUSPEND_MODE ""
-KEY VendorTechnology_TEMPR "IND"
+KEY VendorTechnology_TEMPR "COM"
 KEY VendorTechnology_UNUSED_MSS_IO_RESISTOR_PULL "None"
 KEY VendorTechnology_VCCI_1.5_VOLTR "COM"
 KEY VendorTechnology_VCCI_1.8_VOLTR "COM"
 KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
 KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
-KEY VendorTechnology_VOLTR "IND"
+KEY VendorTechnology_VOLTR "COM"
 KEY ProjectLocation "C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics"
 KEY ProjectDescription ""
 KEY Pa4PeripheralNewSeq "GOOD"
@@ -296,10 +296,7 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-Reports;Reports;0
-ReportsCurrentItem;Project Summary:Ball_Avionics.log
 SmartDesign;full_sys;0
-StartPage;StartPage;0
 ACTIVEVIEW;full_sys
 ENDLIST
 LIST ModuleSubBlockList

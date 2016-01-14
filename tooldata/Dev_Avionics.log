@@ -1,0 +1,16 @@
+Project Name: Dev_Avionics
+Location: C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics
+Description: 
+Preferred HDL Type: Verilog
+
+#-----------------------------------------------------
+                  Device Details
+#-----------------------------------------------------
+
+Part Number    : M1A3P1000L-FG484
+Family         : ProASIC3L
+Die            : M1A3P1000L
+Package        : 484 FBGA
+Speed          : STD
+Core Voltage   : 1.5
+Range          : COM
