@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by Microsemi SmartDesign Mon Jan 11 20:34:40 2016
+// Created by Microsemi SmartDesign Wed Jan 13 20:39:54 2016
 // Testbench Template
 // This is a basic testbench that instantiates your design with basic 
 // clock and reset pins connected.  If your design has special
@@ -10,7 +10,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // Company: <Name>
 //
-// File: CLK_div_test.v
+// File: tb_geig_data_handling.v
 // File history:
 //      <Revision number>: <Date>: <Comments>
 //      <Revision number>: <Date>: <Comments>
@@ -27,16 +27,22 @@
 
 `timescale 1ns/100ps
 
-module CLK_div_test;
+module tb_geig_data_handling;
 
-parameter SYSCLK_PERIOD = 100;// 1.0001MHZ
+parameter SYSCLK_PERIOD = 1000000;// 1kHZ
+parameter CLK_10HZ_PERIOD = 100000000;
+parameter GEIG_100HZ_PERIOD= 10000000;
 
 reg SYSCLK;
 reg NSYSRESET;
+reg CLK_10HZ;
+reg GEIG_100HZ;
 
 initial
 begin
     SYSCLK = 1'b0;
+    CLK_10HZ= 1'b0;
+    GEIG_100HZ = 1'b0;
     NSYSRESET = 1'b0;
 end
 
@@ -48,6 +54,11 @@ begin
     #(SYSCLK_PERIOD * 10 )
         NSYSRESET = 1'b1;
 end
+initial
+begin
+    #(40000)
+        GEIG_100HZ=!GEIG_100HZ;
+end
 
 
 //////////////////////////////////////////////////////////////////////
@@ -55,16 +66,26 @@ end
 //////////////////////////////////////////////////////////////////////
 always @(SYSCLK)
     #(SYSCLK_PERIOD / 2.0) SYSCLK <= !SYSCLK;
-wire out
+
+always @(SYSCLK)
+    #(CLK_10HZ_PERIOD / 2.0) CLK_10HZ <= !CLK_10HZ;
+
+always @(SYSCLK)
+    #(GEIG_100HZ_PERIOD) GEIG_100HZ <= !GEIG_100HZ;
+
+wire [47:0] d_out;
 //////////////////////////////////////////////////////////////////////
-// Instantiate Unit Under Test:  clock_div_1MHZ_10HZ
+// Instantiate Unit Under Test:  geig_data_handling
 //////////////////////////////////////////////////////////////////////
-clock_div_1MHZ_10HZ clock_div_1MHZ_10HZ_0 (
+geig_data_handling geig_data_handling_0 (
     // Inputs
-    .CLK_1MHZ_IN(SYSCLK),
+    .CLK_1KHZ(SYSCLK),
+    .CLK_10HZ(CLK_10HZ),
+    .TIMESTAMP({23{23'b00101010100101011101000}}),
+    .GSTREAM(GEIG_100HZ),
 
     // Outputs
-    .CLK_10HZ_OUT(out )
+    .G_DATA_STACK(d_out)
 
     // Inouts
 

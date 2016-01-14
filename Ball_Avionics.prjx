@@ -38,8 +38,8 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\component\work\full_sys\full_sys.cxf,actgen_cxf"
 STATE="utd"
-TIME="1452740497"
-SIZE="1447"
+TIME="1452750304"
+SIZE="1833"
 ENDFILE
 VALUE "<project>\designer\impl1\full_sys.ide_des,ide_des"
 STATE="utd"
@@ -48,13 +48,18 @@ SIZE="233"
 ENDFILE
 VALUE "<project>\hdl\clock_div_1MHZ_10HZ.v,hdl"
 STATE="utd"
-TIME="1452572426"
-SIZE="1052"
+TIME="1452749669"
+SIZE="856"
+ENDFILE
+VALUE "<project>\hdl\clock_div_1MHZ_1KHZ.v,hdl"
+STATE="utd"
+TIME="1452749856"
+SIZE="854"
 ENDFILE
 VALUE "<project>\hdl\geig_data_handling.v,hdl"
 STATE="utd"
-TIME="1452574170"
-SIZE="1311"
+TIME="1452749261"
+SIZE="1671"
 ENDFILE
 VALUE "<project>\hdl\mag_data_handling.v,hdl"
 STATE="utd"
@@ -116,6 +121,11 @@ STATE="utd"
 TIME="1452733446"
 SIZE="693"
 ENDFILE
+VALUE "<project>\simulation\tb_geig_data_handling_presynth_simulation.log,log"
+STATE="utd"
+TIME="1452744084"
+SIZE="1480"
+ENDFILE
 VALUE "<project>\simulation\testbench_timestamp_presynth_simulation.log,log"
 STATE="utd"
 TIME="1452733615"
@@ -170,15 +180,25 @@ TIME="1452624578"
 SIZE="2714"
 PARENT="<project>\smartgen\CLK_6_5MHZ\CLK_6_5MHZ.cxf"
 ENDFILE
-VALUE "<project>\stimulus\clk_test.v,tb_hdl"
+VALUE "<project>\stimulus\dummy_test.v,tb_hdl"
 STATE="utd"
-TIME="1452571491"
-SIZE="2099"
+TIME="1452567873"
+SIZE="2025"
+ENDFILE
+VALUE "<project>\stimulus\tb_geig_data_handling.v,tb_hdl"
+STATE="utd"
+TIME="1452748886"
+SIZE="2568"
 ENDFILE
 VALUE "<project>\stimulus\testbench_timestamp.v,tb_hdl"
 STATE="utd"
 TIME="1452733424"
 SIZE="2074"
+ENDFILE
+VALUE "<project>\stimulus\timestamp_testbench.v,tb_hdl"
+STATE="utd"
+TIME="1452625277"
+SIZE="2063"
 ENDFILE
 ENDLIST
 LIST UsedFile
@@ -258,7 +278,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_v11.6\Model\win32acoem\modelsim.exe"
-PARAM=""
+PARAM=" -l tb_geig_data_handling_presynth_simulation.log "
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -296,10 +316,13 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+HDL;hdl\clock_div_1MHZ_10HZ.v;0
+HDL;hdl\clock_div_1MHZ_1KHZ.v;0
 Reports;Reports;0
 ReportsCurrentItem;Project Summary:Ball_Avionics.log
 SmartDesign;full_sys;0
-StartPage;StartPage;0
+HDL;hdl\geig_data_handling.v;0
+HDL;stimulus\tb_geig_data_handling.v;0
 ACTIVEVIEW;full_sys
 ENDLIST
 LIST ModuleSubBlockList
@@ -309,10 +332,14 @@ LIST "CLK_6_5MHZ::work","smartgen\CLK_6_5MHZ\CLK_6_5MHZ.v","TRUE","FALSE"
 ENDLIST
 LIST "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
 ENDLIST
+LIST "clock_div_1MHZ_1KHZ::work","hdl\clock_div_1MHZ_1KHZ.v","FALSE","FALSE"
+ENDLIST
 LIST "full_sys::work","component\work\full_sys\full_sys.cxf","TRUE","FALSE"
 SUBBLOCK "CLK_1MHZ::work","smartgen\CLK_1MHZ\CLK_1MHZ.v","TRUE","FALSE"
 SUBBLOCK "CLK_6_5MHZ::work","smartgen\CLK_6_5MHZ\CLK_6_5MHZ.v","TRUE","FALSE"
 SUBBLOCK "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
+SUBBLOCK "clock_div_1MHZ_1KHZ::work","hdl\clock_div_1MHZ_1KHZ.v","FALSE","FALSE"
+SUBBLOCK "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
 SUBBLOCK "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
 ENDLIST
 LIST "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
@@ -333,10 +360,18 @@ LIST "test_harness::work","hdl\test_harness.v","FALSE","FALSE"
 ENDLIST
 LIST "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
 ENDLIST
-LIST "clk_test::work","stimulus\clk_test.v","FALSE","TRUE"
-SUBBLOCK "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
+LIST "dummy_state::work","","FALSE","FALSE"
+ENDLIST
+LIST "dummy_test::work","stimulus\dummy_test.v","FALSE","TRUE"
+SUBBLOCK "dummy_state::work","","FALSE","FALSE"
+ENDLIST
+LIST "tb_geig_data_handling::work","stimulus\tb_geig_data_handling.v","FALSE","TRUE"
+SUBBLOCK "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
 ENDLIST
 LIST "testbench_timestamp::work","stimulus\testbench_timestamp.v","FALSE","TRUE"
+SUBBLOCK "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
+ENDLIST
+LIST "timestamp_testbench::work","stimulus\timestamp_testbench.v","FALSE","TRUE"
 SUBBLOCK "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
 ENDLIST
 ENDLIST
