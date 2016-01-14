@@ -38,7 +38,7 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\component\work\full_sys\full_sys.cxf,actgen_cxf"
 STATE="utd"
-TIME="1452625018"
+TIME="1452731499"
 SIZE="1447"
 ENDFILE
 VALUE "<project>\designer\impl1\full_sys.ide_des,ide_des"
@@ -50,11 +50,6 @@ VALUE "<project>\hdl\clock_div_1MHZ_10HZ.v,hdl"
 STATE="utd"
 TIME="1452572426"
 SIZE="1052"
-ENDFILE
-VALUE "<project>\hdl\dummy_state.v,hdl"
-STATE="utd"
-TIME="1452563936"
-SIZE="706"
 ENDFILE
 VALUE "<project>\hdl\geig_data_handling.v,hdl"
 STATE="utd"
@@ -121,6 +116,11 @@ STATE="utd"
 TIME="1452625298"
 SIZE="693"
 ENDFILE
+VALUE "<project>\simulation\testbench_timestamp_presynth_simulation.log,log"
+STATE="utd"
+TIME="1452732781"
+SIZE="278"
+ENDFILE
 VALUE "<project>\smartgen\CLK_1MHZ\CLK_1MHZ.cxf,actgen_cxf"
 STATE="utd"
 TIME="1452624933"
@@ -175,10 +175,10 @@ STATE="utd"
 TIME="1452571491"
 SIZE="2099"
 ENDFILE
-VALUE "<project>\stimulus\dummy_test.v,tb_hdl"
+VALUE "<project>\stimulus\testbench_timestamp.v,tb_hdl"
 STATE="utd"
-TIME="1452567873"
-SIZE="2025"
+TIME="1452733424"
+SIZE="2074"
 ENDFILE
 ENDLIST
 LIST UsedFile
@@ -258,7 +258,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_v11.6\Model\win32acoem\modelsim.exe"
-PARAM=""
+PARAM=" -l testbench_timestamp_presynth_simulation.log "
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -296,8 +296,14 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-StartPage;StartPage;0
-ACTIVEVIEW;StartPage
+Reports;Reports;0
+ReportsCurrentItem;Project Summary:Ball_Avionics.log
+SmartDesign;full_sys;0
+HDL;hdl\mode_control.v;0
+HDL;hdl\spi_interface.v;0
+HDL;stimulus\testbench_timestamp.v;0
+HDL;hdl\timestamp.v;0
+ACTIVEVIEW;stimulus\testbench_timestamp.v
 ENDLIST
 LIST ModuleSubBlockList
 LIST "CLK_1MHZ::work","smartgen\CLK_1MHZ\CLK_1MHZ.v","TRUE","FALSE"
@@ -305,8 +311,6 @@ ENDLIST
 LIST "CLK_6_5MHZ::work","smartgen\CLK_6_5MHZ\CLK_6_5MHZ.v","TRUE","FALSE"
 ENDLIST
 LIST "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
-ENDLIST
-LIST "dummy_state::work","hdl\dummy_state.v","FALSE","FALSE"
 ENDLIST
 LIST "full_sys::work","component\work\full_sys\full_sys.cxf","TRUE","FALSE"
 SUBBLOCK "CLK_1MHZ::work","smartgen\CLK_1MHZ\CLK_1MHZ.v","TRUE","FALSE"
@@ -335,8 +339,8 @@ ENDLIST
 LIST "clk_test::work","stimulus\clk_test.v","FALSE","TRUE"
 SUBBLOCK "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
 ENDLIST
-LIST "dummy_test::work","stimulus\dummy_test.v","FALSE","TRUE"
-SUBBLOCK "dummy_state::work","hdl\dummy_state.v","FALSE","FALSE"
+LIST "testbench_timestamp::work","stimulus\testbench_timestamp.v","FALSE","TRUE"
+SUBBLOCK "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
 ENDLIST
 ENDLIST
 LIST ActiveTestBenchList

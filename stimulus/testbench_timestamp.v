@@ -1,0 +1,76 @@
+//////////////////////////////////////////////////////////////////////
+// Created by Microsemi SmartDesign Wed Jan 13 17:49:14 2016
+// Testbench Template
+// This is a basic testbench that instantiates your design with basic 
+// clock and reset pins connected.  If your design has special
+// clock/reset or testbench driver requirements then you should 
+// copy this file and modify it. 
+//////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// Company: <Name>
+//
+// File: testbench_timestamp.v
+// File history:
+//      <Revision number>: <Date>: <Comments>
+//      <Revision number>: <Date>: <Comments>
+//      <Revision number>: <Date>: <Comments>
+//
+// Description: 
+//
+// <Description here>
+//
+// Targeted device: <Family::ProASIC3L> <Die::A3PE3000L> <Package::484 FBGA>
+// Author: <Name>
+//
+/////////////////////////////////////////////////////////////////////////////////////////////////// 
+
+`timescale 1ns/100ps
+
+module testbench_timestamp;
+
+parameter SYSCLK_PERIOD = 100000000;// 1e-005MHZ
+
+reg SYSCLK;
+reg NSYSRESET;
+
+initial
+begin
+    SYSCLK = 1'b1;
+    NSYSRESET = 1'b0;
+end
+
+//////////////////////////////////////////////////////////////////////
+// Reset Pulse
+//////////////////////////////////////////////////////////////////////
+initial
+begin
+    #(SYSCLK_PERIOD * 10 )
+        NSYSRESET = 1'b1;
+end
+
+
+//////////////////////////////////////////////////////////////////////
+// Clock Driver
+//////////////////////////////////////////////////////////////////////
+always @(SYSCLK)
+    #(SYSCLK_PERIOD / 2.0) SYSCLK <= !SYSCLK;
+
+
+wire [23:0] time_out;
+//////////////////////////////////////////////////////////////////////
+// Instantiate Unit Under Test:  timestamp
+//////////////////////////////////////////////////////////////////////
+timestamp timestamp_0 (
+    // Inputs
+    .CLK_10HZ(SYSCLK),
+
+    // Outputs
+    .TIMESTAMP(time_out )
+
+    // Inouts
+
+);
+
+endmodule
+

@@ -118,8 +118,30 @@ r1
 !i113 1
 R4
 R5
+vtestbench_timestamp
+Z8 !s110 1452733451
+!i10b 1
+!s100 f8AdLYhJXI`0AJZaJYSLA2
+Ij054nnM2o0F<c7A5<>z[:3
+R1
+R0
+w1452733424
+8C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/testbench_timestamp.v
+FC:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/testbench_timestamp.v
+R2
+R3
+r1
+!s85 0
+31
+!s108 1452733451.203000
+!s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/testbench_timestamp.v|
+!s90 -reportprogress|300|+incdir+C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus|-work|presynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/testbench_timestamp.v|
+!s101 -O0
+!i113 1
+R4
+R5
 vtimestamp
-Z8 !s110 1452625303
+R8
 !i10b 1
 !s100 fNNak:T13z6O6RzTczMiA2
 I4D_fzTC`ABY7_3SZ9McS01
@@ -133,14 +155,14 @@ R3
 r1
 !s85 0
 31
-!s108 1452625303.163000
+!s108 1452733451.062000
 !s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/timestamp.v|
 !s90 -reportprogress|300|-work|presynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/timestamp.v|
 !s101 -O0
 !i113 1
 R4
 vtimestamp_testbench
-R8
+!s110 1452625303
 !i10b 1
 !s100 ;gY`D7m<:Dc=d]]8>;`AO1
 ImPkFcCZ=@zA0Q_^nol8JS2
