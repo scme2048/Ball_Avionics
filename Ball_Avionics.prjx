@@ -88,8 +88,8 @@ SIZE="771"
 ENDFILE
 VALUE "<project>\hdl\sdram_interface.v,hdl"
 STATE="utd"
-TIME="1450492648"
-SIZE="765"
+TIME="1452883150"
+SIZE="1769"
 ENDFILE
 VALUE "<project>\hdl\spi_interface.v,hdl"
 STATE="utd"
@@ -128,8 +128,8 @@ SIZE="2012"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1452748899"
-SIZE="708"
+TIME="1452828973"
+SIZE="712"
 ENDFILE
 VALUE "<project>\simulation\tb_geig_data_handling_presynth_simulation.log,log"
 STATE="utd"
@@ -138,8 +138,8 @@ SIZE="2526"
 ENDFILE
 VALUE "<project>\simulation\tb_test_harness_geig_presynth_simulation.log,log"
 STATE="utd"
-TIME="1452828782"
-SIZE="2133"
+TIME="1452833315"
+SIZE="20014"
 ENDFILE
 VALUE "<project>\simulation\testbench_timestamp_presynth_simulation.log,log"
 STATE="utd"
@@ -298,7 +298,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_v11.6\Model\win32acoem\modelsim.exe"
-PARAM=" -l tb_test_harness_geig_presynth_simulation.log "
+PARAM=""
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -336,10 +336,11 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+SmartDesign;full_sys;0
 HDL;stimulus\tb_test_harness_geig.v;0
 HDL;hdl\test_harness_geiger_stack.v;0
-SmartDesign;full_sys;0
-ACTIVEVIEW;full_sys
+HDL;hdl\sdram_interface.v;0
+ACTIVEVIEW;hdl\sdram_interface.v
 ENDLIST
 LIST ModuleSubBlockList
 LIST "CLK_1MHZ::work","smartgen\CLK_1MHZ\CLK_1MHZ.v","TRUE","FALSE"
