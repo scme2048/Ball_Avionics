@@ -10,8 +10,8 @@
 //
 /////////////////////////////////////////////////////////////////////////////////////////////////// 
 
-module geig_data_handling( CLK_1KHZ,CLK_10HZ, TIMESTAMP, GSTREAM, G_DATA_STACK );
-input CLK_1KHZ,CLK_10HZ,GSTREAM;
+module geig_data_handling( CLK_100KHZ,CLK_10HZ, TIMESTAMP, GSTREAM, G_DATA_STACK );
+input CLK_100KHZ,CLK_10HZ,GSTREAM;
 input [23:0] TIMESTAMP;
 output G_DATA_STACK;
 reg [47:0] G_DATA_STACK;
@@ -35,9 +35,11 @@ end
 
 // Detect spikes in geiger input. Debounce and account for holds. Use shift regester to catch low to high.
 // Careful of debounce. Adjust CLK_XXHZ as needed to account for debounce and 
-
+// NOTE: Check sampling frequency as geiger characterization continues.
+// - Initial geiger testing shows spikes of about 180 microsecs. Sampling at 100 kHz captures this. 
+// - Lower sampling frequency desirable for efficiency and ease of simulation/data accumulation.
 reg [9:0] shift_reg=0;
-always @(posedge CLK_1KHZ)
+always @(posedge CLK_100KHZ)
 begin
 //Shift all bits left by 1
 shift_reg=shift_reg<<1;
