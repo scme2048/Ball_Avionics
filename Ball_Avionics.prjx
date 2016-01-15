@@ -38,8 +38,8 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\component\work\full_sys\full_sys.cxf,actgen_cxf"
 STATE="utd"
-TIME="1452802124"
-SIZE="1953"
+TIME="1452833360"
+SIZE="2081"
 ENDFILE
 VALUE "<project>\designer\impl1\full_sys.ide_des,ide_des"
 STATE="utd"
@@ -103,8 +103,8 @@ SIZE="1144"
 ENDFILE
 VALUE "<project>\hdl\test_harness_geiger_stack.v,hdl"
 STATE="utd"
-TIME="1452804828"
-SIZE="1519"
+TIME="1452831723"
+SIZE="1744"
 ENDFILE
 VALUE "<project>\hdl\timestamp.v,hdl"
 STATE="utd"
@@ -135,6 +135,11 @@ VALUE "<project>\simulation\tb_geig_data_handling_presynth_simulation.log,log"
 STATE="utd"
 TIME="1452749278"
 SIZE="2526"
+ENDFILE
+VALUE "<project>\simulation\tb_test_harness_geig_presynth_simulation.log,log"
+STATE="utd"
+TIME="1452828782"
+SIZE="2133"
 ENDFILE
 VALUE "<project>\simulation\testbench_timestamp_presynth_simulation.log,log"
 STATE="utd"
@@ -199,6 +204,11 @@ VALUE "<project>\stimulus\tb_geig_data_handling.v,tb_hdl"
 STATE="utd"
 TIME="1452748886"
 SIZE="2568"
+ENDFILE
+VALUE "<project>\stimulus\tb_test_harness_geig.v,tb_hdl"
+STATE="utd"
+TIME="1452832103"
+SIZE="2358"
 ENDFILE
 VALUE "<project>\stimulus\testbench_timestamp.v,tb_hdl"
 STATE="utd"
@@ -288,7 +298,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_v11.6\Model\win32acoem\modelsim.exe"
-PARAM=""
+PARAM=" -l tb_test_harness_geig_presynth_simulation.log "
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -326,13 +336,10 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-Reports;Reports;0
-ReportsCurrentItem;Project Summary:Ball_Avionics.log
-SmartDesign;full_sys;0
-HDL;hdl\geig_data_handling.v;0
-HDL;hdl\test_harness.v;0
+HDL;stimulus\tb_test_harness_geig.v;0
 HDL;hdl\test_harness_geiger_stack.v;0
-ACTIVEVIEW;hdl\test_harness_geiger_stack.v
+SmartDesign;full_sys;0
+ACTIVEVIEW;full_sys
 ENDLIST
 LIST ModuleSubBlockList
 LIST "CLK_1MHZ::work","smartgen\CLK_1MHZ\CLK_1MHZ.v","TRUE","FALSE"
@@ -351,8 +358,9 @@ SUBBLOCK "CLK_6_5MHZ::work","smartgen\CLK_6_5MHZ\CLK_6_5MHZ.v","TRUE","FALSE"
 SUBBLOCK "clock_div_1MHZ_100KHZ::work","hdl\clock_div_1MHZ_100KHZ.v","FALSE","FALSE"
 SUBBLOCK "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
 SUBBLOCK "clock_div_1MHZ_1KHZ::work","hdl\clock_div_1MHZ_1KHZ.v","FALSE","FALSE"
-SUBBLOCK "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
 SUBBLOCK "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
+SUBBLOCK "test_harness_geiger_stack::work","hdl\test_harness_geiger_stack.v","FALSE","FALSE"
+SUBBLOCK "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
 ENDLIST
 LIST "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
 ENDLIST
@@ -381,6 +389,9 @@ SUBBLOCK "dummy_state::work","","FALSE","FALSE"
 ENDLIST
 LIST "tb_geig_data_handling::work","stimulus\tb_geig_data_handling.v","FALSE","TRUE"
 SUBBLOCK "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
+ENDLIST
+LIST "tb_test_harness_geig::work","stimulus\tb_test_harness_geig.v","FALSE","TRUE"
+SUBBLOCK "test_harness_geiger_stack::work","hdl\test_harness_geiger_stack.v","FALSE","FALSE"
 ENDLIST
 LIST "testbench_timestamp::work","stimulus\testbench_timestamp.v","FALSE","TRUE"
 SUBBLOCK "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
