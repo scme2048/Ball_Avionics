@@ -41,6 +41,57 @@ SDRAM_CLK,SDRAM_BA0,SDRAM_BA1,SDRAM_CKE,SDRAM_CS,SDRAM_RAS,SDRAM_CAS,SDRAM_WE,SD
 output STATUS;
 output [15:0] DATA_READ;
 
+// Handle inouts
+reg [15:0] dout; // This should be set to the input data
+reg weVAL; // This will be commanded during a write cycle
 
+assign SDRAM_D0 = (weVAL==1'b0) ? dout[0] : 1'bz;
+assign SDRAM_D1 = (weVAL==1'b0) ? dout[1] : 1'bz;
+assign SDRAM_D2 = (weVAL==1'b0) ? dout[2] : 1'bz;
+assign SDRAM_D3 = (weVAL==1'b0) ? dout[3] : 1'bz;
+assign SDRAM_D4 = (weVAL==1'b0) ? dout[4] : 1'bz;
+assign SDRAM_D5 = (weVAL==1'b0) ? dout[5] : 1'bz;
+assign SDRAM_D6 = (weVAL==1'b0) ? dout[6] : 1'bz;
+assign SDRAM_D7 = (weVAL==1'b0) ? dout[7] : 1'bz;
+assign SDRAM_D8 = (weVAL==1'b0) ? dout[8] : 1'bz;
+assign SDRAM_D9 = (weVAL==1'b0) ? dout[9] : 1'bz;
+assign SDRAM_D10 = (weVAL==1'b0) ? dout[10] : 1'bz;
+assign SDRAM_D11 = (weVAL==1'b0) ? dout[11] : 1'bz;
+assign SDRAM_D12 = (weVAL==1'b0) ? dout[12] : 1'bz;
+assign SDRAM_D13 = (weVAL==1'b0) ? dout[13] : 1'bz;
+assign SDRAM_D14 = (weVAL==1'b0) ? dout[14] : 1'bz;
+assign SDRAM_D15 = (weVAL==1'b0) ? dout[15] : 1'bz;
+
+// Read Data
+reg [15:0] dread; // this will be set during a read cycle where dread[*]=SDRAM_D*
+
+assign DATA_READ[0] = dread[0];
+assign DATA_READ[1] = dread[1];
+assign DATA_READ[2] = dread[2];
+assign DATA_READ[3] = dread[3];
+assign DATA_READ[4] = dread[4];
+assign DATA_READ[5] = dread[5];
+assign DATA_READ[6] = dread[6];
+assign DATA_READ[7] = dread[7];
+assign DATA_READ[8] = dread[8];
+assign DATA_READ[9] = dread[9];
+assign DATA_READ[10] = dread[10];
+assign DATA_READ[11] = dread[11];
+assign DATA_READ[12] = dread[12];
+assign DATA_READ[13] = dread[13];
+assign DATA_READ[14] = dread[14];
+assign DATA_READ[15] = dread[15];
+
+always @(posedge CLK_48MHZ)
+begin
+
+// Write Cycle
+
+// Read Cycle
+
+// Idle and Precharge/Refresh States
+
+
+end
 endmodule
 

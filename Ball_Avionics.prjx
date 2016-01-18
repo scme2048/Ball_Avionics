@@ -88,8 +88,8 @@ SIZE="771"
 ENDFILE
 VALUE "<project>\hdl\sdram_interface.v,hdl"
 STATE="utd"
-TIME="1452883150"
-SIZE="1769"
+TIME="1453158433"
+SIZE="3495"
 ENDFILE
 VALUE "<project>\hdl\spi_interface.v,hdl"
 STATE="utd"
@@ -336,10 +336,10 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+HDL;hdl\sdram_interface.v;0
 SmartDesign;full_sys;0
 HDL;stimulus\tb_test_harness_geig.v;0
 HDL;hdl\test_harness_geiger_stack.v;0
-HDL;hdl\sdram_interface.v;0
 ACTIVEVIEW;hdl\sdram_interface.v
 ENDLIST
 LIST ModuleSubBlockList
