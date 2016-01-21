@@ -38,8 +38,8 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\component\work\full_sys\full_sys.cxf,actgen_cxf"
 STATE="utd"
-TIME="1452833360"
-SIZE="2081"
+TIME="1453353716"
+SIZE="2166"
 ENDFILE
 VALUE "<project>\designer\impl1\full_sys.ide_des,ide_des"
 STATE="utd"
@@ -88,8 +88,8 @@ SIZE="771"
 ENDFILE
 VALUE "<project>\hdl\sdram_interface.v,hdl"
 STATE="utd"
-TIME="1453158433"
-SIZE="3495"
+TIME="1453358278"
+SIZE="3950"
 ENDFILE
 VALUE "<project>\hdl\spi_interface.v,hdl"
 STATE="utd"
@@ -170,6 +170,32 @@ STATE="utd"
 TIME="1452624931"
 SIZE="2709"
 PARENT="<project>\smartgen\CLK_1MHZ\CLK_1MHZ.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\CLK_26MHZ\CLK_26MHZ.cxf,actgen_cxf"
+STATE="utd"
+TIME="1453353667"
+SIZE="1484"
+ENDFILE
+VALUE "<project>\smartgen\CLK_26MHZ\CLK_26MHZ.gen,gen"
+STATE="utd"
+TIME="1453353665"
+SIZE="589"
+PARENT="<project>\smartgen\CLK_26MHZ\CLK_26MHZ.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\CLK_26MHZ\CLK_26MHZ.log,log"
+STATE="utd"
+TIME="1453353667"
+SIZE="2781"
+PARENT="<project>\smartgen\CLK_26MHZ\CLK_26MHZ.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\smartgen\CLK_26MHZ\CLK_26MHZ.v,hdl"
+STATE="utd"
+TIME="1453353667"
+SIZE="2713"
+PARENT="<project>\smartgen\CLK_26MHZ\CLK_26MHZ.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\smartgen\CLK_6_5MHZ\CLK_6_5MHZ.cxf,actgen_cxf"
@@ -345,6 +371,8 @@ ENDLIST
 LIST ModuleSubBlockList
 LIST "CLK_1MHZ::work","smartgen\CLK_1MHZ\CLK_1MHZ.v","TRUE","FALSE"
 ENDLIST
+LIST "CLK_26MHZ::work","smartgen\CLK_26MHZ\CLK_26MHZ.v","TRUE","FALSE"
+ENDLIST
 LIST "CLK_6_5MHZ::work","smartgen\CLK_6_5MHZ\CLK_6_5MHZ.v","TRUE","FALSE"
 ENDLIST
 LIST "clock_div_1MHZ_100KHZ::work","hdl\clock_div_1MHZ_100KHZ.v","FALSE","FALSE"
@@ -355,6 +383,7 @@ LIST "clock_div_1MHZ_1KHZ::work","hdl\clock_div_1MHZ_1KHZ.v","FALSE","FALSE"
 ENDLIST
 LIST "full_sys::work","component\work\full_sys\full_sys.cxf","TRUE","FALSE"
 SUBBLOCK "CLK_1MHZ::work","smartgen\CLK_1MHZ\CLK_1MHZ.v","TRUE","FALSE"
+SUBBLOCK "CLK_26MHZ::work","smartgen\CLK_26MHZ\CLK_26MHZ.v","TRUE","FALSE"
 SUBBLOCK "CLK_6_5MHZ::work","smartgen\CLK_6_5MHZ\CLK_6_5MHZ.v","TRUE","FALSE"
 SUBBLOCK "clock_div_1MHZ_100KHZ::work","hdl\clock_div_1MHZ_100KHZ.v","FALSE","FALSE"
 SUBBLOCK "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
