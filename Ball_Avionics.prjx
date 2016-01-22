@@ -88,8 +88,8 @@ SIZE="771"
 ENDFILE
 VALUE "<project>\hdl\sdram_interface.v,hdl"
 STATE="utd"
-TIME="1453358278"
-SIZE="3950"
+TIME="1453442348"
+SIZE="6948"
 ENDFILE
 VALUE "<project>\hdl\spi_interface.v,hdl"
 STATE="utd"
@@ -401,8 +401,6 @@ ENDLIST
 LIST "mem_traverse::work","hdl\mem_traverse.v","FALSE","FALSE"
 ENDLIST
 LIST "mode_control::work","hdl\mode_control.v","FALSE","FALSE"
-ENDLIST
-LIST "sdram_interface::work","hdl\sdram_interface.v","FALSE","FALSE"
 ENDLIST
 LIST "spi_interface::work","hdl\spi_interface.v","FALSE","FALSE"
 ENDLIST
