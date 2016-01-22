@@ -88,8 +88,8 @@ SIZE="771"
 ENDFILE
 VALUE "<project>\hdl\sdram_interface.v,hdl"
 STATE="utd"
-TIME="1453442348"
-SIZE="6948"
+TIME="1453490458"
+SIZE="8871"
 ENDFILE
 VALUE "<project>\hdl\spi_interface.v,hdl"
 STATE="utd"
@@ -135,6 +135,11 @@ VALUE "<project>\simulation\tb_geig_data_handling_presynth_simulation.log,log"
 STATE="utd"
 TIME="1452749278"
 SIZE="2526"
+ENDFILE
+VALUE "<project>\simulation\tb_sdram_interface_presynth_simulation.log,log"
+STATE="utd"
+TIME="1453487789"
+SIZE="926"
 ENDFILE
 VALUE "<project>\simulation\tb_test_harness_geig_presynth_simulation.log,log"
 STATE="utd"
@@ -231,6 +236,11 @@ STATE="utd"
 TIME="1452748886"
 SIZE="2568"
 ENDFILE
+VALUE "<project>\stimulus\tb_sdram_interface.v,tb_hdl"
+STATE="utd"
+TIME="1453487592"
+SIZE="3270"
+ENDFILE
 VALUE "<project>\stimulus\tb_test_harness_geig.v,tb_hdl"
 STATE="utd"
 TIME="1452832103"
@@ -324,7 +334,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_v11.6\Model\win32acoem\modelsim.exe"
-PARAM=""
+PARAM=" -l tb_sdram_interface_presynth_simulation.log "
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -362,6 +372,9 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+HDL;stimulus\tb_sdram_interface.v;0
+Reports;Reports;0
+ReportsCurrentItem;Project Summary:Ball_Avionics.log
 HDL;hdl\sdram_interface.v;0
 SmartDesign;full_sys;0
 HDL;stimulus\tb_test_harness_geig.v;0
@@ -402,6 +415,8 @@ LIST "mem_traverse::work","hdl\mem_traverse.v","FALSE","FALSE"
 ENDLIST
 LIST "mode_control::work","hdl\mode_control.v","FALSE","FALSE"
 ENDLIST
+LIST "sdram_interface::work","hdl\sdram_interface.v","FALSE","FALSE"
+ENDLIST
 LIST "spi_interface::work","hdl\spi_interface.v","FALSE","FALSE"
 ENDLIST
 LIST "test_harness::work","hdl\test_harness.v","FALSE","FALSE"
@@ -417,6 +432,9 @@ SUBBLOCK "dummy_state::work","","FALSE","FALSE"
 ENDLIST
 LIST "tb_geig_data_handling::work","stimulus\tb_geig_data_handling.v","FALSE","TRUE"
 SUBBLOCK "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
+ENDLIST
+LIST "tb_sdram_interface::work","stimulus\tb_sdram_interface.v","FALSE","TRUE"
+SUBBLOCK "sdram_interface::work","hdl\sdram_interface.v","FALSE","FALSE"
 ENDLIST
 LIST "tb_test_harness_geig::work","stimulus\tb_test_harness_geig.v","FALSE","TRUE"
 SUBBLOCK "test_harness_geiger_stack::work","hdl\test_harness_geiger_stack.v","FALSE","FALSE"

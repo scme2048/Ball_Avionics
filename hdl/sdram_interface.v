@@ -161,8 +161,75 @@ if (pwr_up_hold===1'b1) begin
         dqml<=1'b1;
         dqmu<=1'b1;
     end else if (TIMESTAMP>=4) begin // Initialization Sequence. Wait 200 ms after power stabalization
-        
-        
+        if (init_counter==t_ras+t_rp+8+1+2) begin
+            // NOP but pull cke low to enter self refresh.
+            cke<=0;
+            cs<=0;
+            ras<=1;
+            cas<=1;
+            we<=1;
+            address=13'bz;
+            pwr_up_hold=1'b0; // Remove power up sequence hold.
+        end
+
+        if (init_counter==t_ras+t_rp+8+1+1) begin
+            // NOP
+            cke<=1;
+            cs<=0;
+            ras<=1;
+            cas<=1;
+            we<=1;
+            address=13'bz;
+            init_counter=init_counter+1;
+        end
+        if (init_counter==t_ras+t_rp+8+1) begin
+            // Set MRS
+            cke<=1;
+            cs<=0;
+            ras<=0;
+            cas<=0;
+            we<=0;
+            ba1<=0;
+            ba0<=1;
+            address=13'b0001000100000;
+            init_counter=init_counter+1;
+        end
+        if (init_counter==t_ras+t_rp+8) begin
+            //Set cke high for a cycle
+            cke<=1;
+            init_counter=init_counter+1;
+        end
+        if ((init_counter>t_ras+t_rp) && (init_counter<t_ras+t_rp+8)) begin
+            // Let self refresh run for 8 cycles
+            // NOP
+            cke<=0;
+            cs<=0;
+            ras<=1;
+            cas<=1;
+            we<=1;
+            address=13'bz;
+            init_counter=init_counter+1;
+        end
+        if (init_counter==t_ras+t_rp) begin
+            // Set self refresh cmd
+            cke<=0;
+            cs<=0;
+            ras<=0;
+            cas<=0;
+            we<=1;
+            address=13'bz;
+            init_counter=init_counter+1;
+        end
+        if ((init_counter>t_ras) && (init_counter<t_ras+t_rp)) begin
+            // Wait t_rp, NOP
+            cke<=1;
+            cs<=0;
+            ras<=1;
+            cas<=1;
+            we<=1;
+            address=14'bz;
+            init_counter=init_counter+1;
+        end
         if (init_counter==t_ras) begin
             //PALL command to precharge all banks
             cke<=1;
@@ -174,16 +241,17 @@ if (pwr_up_hold===1'b1) begin
             address[10]=a10;
             init_counter=init_counter+1;
         end
-        if ((init_counter>=0) && (init_counter<t_ras)) begin
-            cke<=1'bz;
-            cs<=1'bz;
-            ras<=1'bz;
-            cas<=1'bz;
-            we<=1'bz;
-            address=13'bz
+        if ((init_counter>0) && (init_counter<t_ras)) begin
+            //NOP
+            cke<=1;
+            cs<=0;
+            ras<=1;
+            cas<=1;
+            we<=1;
+            address=13'bz;
             init_counter=init_counter+1;
         end
-        if (init_counter==t_ras) begin
+        if (init_counter==0) begin
             //ACTV Command
             cke<=1;
             cs<=0;
@@ -191,7 +259,7 @@ if (pwr_up_hold===1'b1) begin
             cas<=1;
             we<=1;
             ba0<=0;
-            ba1<=1;
+            ba1<=0;
             a10<=0;
             address=13'b0;
             address[10]=a10;
