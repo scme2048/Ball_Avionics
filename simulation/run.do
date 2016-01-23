@@ -10,9 +10,9 @@ if {[file exists presynth/_info]} {
 vmap presynth presynth
 vmap proasic3l "C:/Microsemi/Libero_v11.6/Designer/lib/modelsim/precompiled/vlog/proasic3l"
 
-vlog  -work presynth "${PROJECT_DIR}/hdl/test_harness_geiger_stack.v"
-vlog "+incdir+${PROJECT_DIR}/stimulus"  -work presynth "${PROJECT_DIR}/stimulus/tb_test_harness_geig.v"
+vlog  -work presynth "${PROJECT_DIR}/hdl/sdram_interface.v"
+vlog "+incdir+${PROJECT_DIR}/stimulus"  -work presynth "${PROJECT_DIR}/stimulus/tb_sdram_interface.v"
 
-vsim -L proasic3l -L presynth  -t 1ps presynth.tb_test_harness_geig
-add wave /tb_test_harness_geig/*
+vsim -L proasic3l -L presynth  -t 1ps presynth.tb_sdram_interface
+add wave /tb_sdram_interface/*
 run 1000ns
