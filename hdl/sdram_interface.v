@@ -26,10 +26,10 @@ STATUS,DATA_READ);
 parameter t_rc = 4; // Ref/active -> ref/active command period 70ns
 parameter t_ras = 3; // Active -> Precharge 50ns     max 120000 ns
 parameter t_rcd= 1; // Active command -> Collumn cmd 20 ns
-parameter t_rp = 1; // Precharge -> active command 20ns
+parameter t_rp = 2; // Precharge -> active command 20ns NOTE: setting to 2 for now...
 parameter t_dpl = 1; // write recovery or data in -> precharge lead time 20 ns
 parameter t_rrd =1; // Active(a) -> Active(b) cmd period 20ns
-parameter t_ref = 2; // Refresh period tbd...
+parameter t_ref = 1; // Refresh period 6.4 ms, 1 timestamp is sufficient
 
 // Inputs
 input CLK_48MHZ;
@@ -111,6 +111,7 @@ assign SDRAM_A12 = address[12];
 reg pwr_up_hold =1'b1;
 reg pwr_stabalize=1'b0;
 reg [3:0] init_counter = 4'b0;
+reg [23:0] ts_delay;
 assign SDRAM_CLK = (pwr_stabalize===1'b0) ? 1'b0  : CLK_48MHZ; // Hold clock low while power stabalizes
 
 // Control Variables
@@ -145,6 +146,7 @@ begin
 // Idle and Precharge/Refresh States
 
 // Power Up and Initialization
+    // This Process takes just over .5 sec to complete. No data will be saved until this process completes.
 if (pwr_up_hold===1'b1) begin
     // Power stabalization wait. Just use 2 timestamps .2 sec
     if (TIMESTAMP < 2) begin
@@ -161,18 +163,18 @@ if (pwr_up_hold===1'b1) begin
         dqml<=1'b1;
         dqmu<=1'b1;
     end else if (TIMESTAMP>=4) begin // Initialization Sequence. Wait 200 ms after power stabalization
-        if (init_counter==t_ras+t_rp+8+1+2) begin
-            // NOP but pull cke low to enter self refresh.
+        if (init_counter==t_rp+1+t_rc+1+1) begin
+            // Enter Self Refresh
             cke<=0;
             cs<=0;
-            ras<=1;
-            cas<=1;
+            ras<=0;
+            cas<=0;
             we<=1;
             address=13'bz;
             pwr_up_hold=1'b0; // Remove power up sequence hold.
         end
 
-        if (init_counter==t_ras+t_rp+8+1+1) begin
+        if (init_counter==t_rp+1+t_rc+1) begin
             // NOP
             cke<=1;
             cs<=0;
@@ -182,7 +184,7 @@ if (pwr_up_hold===1'b1) begin
             address=13'bz;
             init_counter=init_counter+1;
         end
-        if (init_counter==t_ras+t_rp+8+1) begin
+        if (init_counter==t_rp+1+t_rc) begin
             // Set MRS
             cke<=1;
             cs<=0;
@@ -194,15 +196,9 @@ if (pwr_up_hold===1'b1) begin
             address=13'b0001000100000;
             init_counter=init_counter+1;
         end
-        if (init_counter==t_ras+t_rp+8) begin
-            //Set cke high for a cycle
-            cke<=1;
-            init_counter=init_counter+1;
-        end
-        if ((init_counter>t_ras+t_rp) && (init_counter<t_ras+t_rp+8)) begin
-            // Let self refresh run for 8 cycles
+        if ((init_counter>t_rp+1) && (init_counter<t_rp+1+t_rc)) begin
             // NOP
-            cke<=0;
+            cke<=1;
             cs<=0;
             ras<=1;
             cas<=1;
@@ -210,7 +206,27 @@ if (pwr_up_hold===1'b1) begin
             address=13'bz;
             init_counter=init_counter+1;
         end
-        if (init_counter==t_ras+t_rp) begin
+        if ((init_counter==t_rp+1) && (TIMESTAMP==ts_delay)) begin
+            //Exit Refresh
+            // SELFX
+            cke<=1;
+            cs<=0;
+            ras<=1;
+            cas<=1;
+            we<=1;
+            init_counter=init_counter+1;
+        end
+        if ((init_counter==t_rp+1) && (TIMESTAMP!=ts_delay)) begin
+            // Let self refresh run for 8 refresh cycles, 6.4 ms each
+            // NOP
+            cke<=0;
+            cs<=0;
+            ras<=1;
+            cas<=1;
+            we<=1;
+            address=13'bz;
+        end
+        if (init_counter==t_rp) begin
             // Set self refresh cmd
             cke<=0;
             cs<=0;
@@ -219,18 +235,19 @@ if (pwr_up_hold===1'b1) begin
             we<=1;
             address=13'bz;
             init_counter=init_counter+1;
+            ts_delay=TIMESTAMP+1;
         end
-        if ((init_counter>t_ras) && (init_counter<t_ras+t_rp)) begin
+        if ((init_counter>0) && (init_counter<t_rp)) begin
             // Wait t_rp, NOP
             cke<=1;
             cs<=0;
             ras<=1;
             cas<=1;
             we<=1;
-            address=14'bz;
+            address=13'bz;
             init_counter=init_counter+1;
         end
-        if (init_counter==t_ras) begin
+        if (init_counter==0) begin
             //PALL command to precharge all banks
             cke<=1;
             cs<=0;
@@ -241,46 +258,37 @@ if (pwr_up_hold===1'b1) begin
             address[10]=a10;
             init_counter=init_counter+1;
         end
-        if ((init_counter>0) && (init_counter<t_ras)) begin
-            //NOP
-            cke<=1;
-            cs<=0;
-            ras<=1;
-            cas<=1;
-            we<=1;
-            address=13'bz;
-            init_counter=init_counter+1;
-        end
-        if (init_counter==0) begin
-            //ACTV Command
-            cke<=1;
-            cs<=0;
-            ras<=0;
-            cas<=1;
-            we<=1;
-            ba0<=0;
-            ba1<=0;
-            a10<=0;
-            address=13'b0;
-            address[10]=a10;
-            init_counter=init_counter+1;
-        end 
-        
-        
-        
 
-        // Set Mode Register MRS
-
-        // NOTE: Recommended to keep DQMU/DQML and CKE High
+// Old if ACTV needed on boot up. Do not think so...
+        //if ((init_counter>0) && (init_counter<t_ras)) begin
+            ////NOP
+            //cke<=1;
+            //cs<=0;
+            //ras<=1;
+            //cas<=1;
+            //we<=1;
+            //address=13'bz;
+            //init_counter=init_counter+1;
+        //end
+        //if (init_counter==0) begin
+            ////ACTV Command
+            //cke<=1;
+            //cs<=0;
+            //ras<=0;
+            //cas<=1;
+            //we<=1;
+            //ba0<=0;
+            //ba1<=0;
+            //a10<=0;
+            //address=13'b0;
+            //address[10]=a10;
+            //init_counter=init_counter+1;
+        //end 
+       // 
 
     end
 
 end
-
-// Mode Register Set Cycle
-
-
-
 
 end
 endmodule

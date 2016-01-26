@@ -61,6 +61,11 @@ STATE="utd"
 TIME="1452749856"
 SIZE="854"
 ENDFILE
+VALUE "<project>\hdl\dummy_state.v,hdl"
+STATE="utd"
+TIME="1452563936"
+SIZE="706"
+ENDFILE
 VALUE "<project>\hdl\geig_data_handling.v,hdl"
 STATE="utd"
 TIME="1452802250"
@@ -88,13 +93,13 @@ SIZE="771"
 ENDFILE
 VALUE "<project>\hdl\sdram_interface.v,hdl"
 STATE="utd"
-TIME="1453490458"
-SIZE="8871"
+TIME="1453791115"
+SIZE="9245"
 ENDFILE
-VALUE "<project>\hdl\spi_interface.v,hdl"
+VALUE "<project>\hdl\SPI_Master.v,hdl"
 STATE="utd"
-TIME="1450492818"
-SIZE="662"
+TIME="1453768991"
+SIZE="3194"
 ENDFILE
 VALUE "<project>\hdl\test_harness.v,hdl"
 STATE="utd"
@@ -128,8 +133,8 @@ SIZE="2012"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1452828973"
-SIZE="712"
+TIME="1453487772"
+SIZE="696"
 ENDFILE
 VALUE "<project>\simulation\tb_geig_data_handling_presynth_simulation.log,log"
 STATE="utd"
@@ -138,8 +143,8 @@ SIZE="2526"
 ENDFILE
 VALUE "<project>\simulation\tb_sdram_interface_presynth_simulation.log,log"
 STATE="utd"
-TIME="1453487789"
-SIZE="926"
+TIME="1453490442"
+SIZE="3650"
 ENDFILE
 VALUE "<project>\simulation\tb_test_harness_geig_presynth_simulation.log,log"
 STATE="utd"
@@ -230,6 +235,11 @@ VALUE "<project>\stimulus\dummy_test.v,tb_hdl"
 STATE="utd"
 TIME="1452567873"
 SIZE="2025"
+ENDFILE
+VALUE "<project>\stimulus\spi_master_tb3.v,tb_hdl"
+STATE="utd"
+TIME="1453768991"
+SIZE="2361"
 ENDFILE
 VALUE "<project>\stimulus\tb_geig_data_handling.v,tb_hdl"
 STATE="utd"
@@ -372,13 +382,7 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-HDL;stimulus\tb_sdram_interface.v;0
-Reports;Reports;0
-ReportsCurrentItem;Project Summary:Ball_Avionics.log
 HDL;hdl\sdram_interface.v;0
-SmartDesign;full_sys;0
-HDL;stimulus\tb_test_harness_geig.v;0
-HDL;hdl\test_harness_geiger_stack.v;0
 ACTIVEVIEW;hdl\sdram_interface.v
 ENDLIST
 LIST ModuleSubBlockList
@@ -393,6 +397,8 @@ ENDLIST
 LIST "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
 ENDLIST
 LIST "clock_div_1MHZ_1KHZ::work","hdl\clock_div_1MHZ_1KHZ.v","FALSE","FALSE"
+ENDLIST
+LIST "dummy_state::work","hdl\dummy_state.v","FALSE","FALSE"
 ENDLIST
 LIST "full_sys::work","component\work\full_sys\full_sys.cxf","TRUE","FALSE"
 SUBBLOCK "CLK_1MHZ::work","smartgen\CLK_1MHZ\CLK_1MHZ.v","TRUE","FALSE"
@@ -417,7 +423,7 @@ LIST "mode_control::work","hdl\mode_control.v","FALSE","FALSE"
 ENDLIST
 LIST "sdram_interface::work","hdl\sdram_interface.v","FALSE","FALSE"
 ENDLIST
-LIST "spi_interface::work","hdl\spi_interface.v","FALSE","FALSE"
+LIST "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
 ENDLIST
 LIST "test_harness::work","hdl\test_harness.v","FALSE","FALSE"
 ENDLIST
@@ -425,10 +431,8 @@ LIST "test_harness_geiger_stack::work","hdl\test_harness_geiger_stack.v","FALSE"
 ENDLIST
 LIST "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
 ENDLIST
-LIST "dummy_state::work","","FALSE","FALSE"
-ENDLIST
 LIST "dummy_test::work","stimulus\dummy_test.v","FALSE","TRUE"
-SUBBLOCK "dummy_state::work","","FALSE","FALSE"
+SUBBLOCK "dummy_state::work","hdl\dummy_state.v","FALSE","FALSE"
 ENDLIST
 LIST "tb_geig_data_handling::work","stimulus\tb_geig_data_handling.v","FALSE","TRUE"
 SUBBLOCK "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
