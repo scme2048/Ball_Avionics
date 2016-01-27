@@ -33,9 +33,8 @@ parameter t_ref = 1; // Refresh period 6.4 ms, 1 timestamp is sufficient
 
 // Inputs
 input CLK_48MHZ;
-// For now CMD_IN Options: 0-Idle, 1-Read, 2-Write 
 input [23:0] TIMESTAMP;
-input [1:0] CMD_IN; 
+input [1:0] CMD_IN; // For now CMD_IN Options: 0-Idle, 1-Read, 2-Write 
 input [1:0] A_IN_BANK;
 input [8:0] A_IN_COL;
 input [12:0] A_IN_ROW;
@@ -50,26 +49,28 @@ SDRAM_CLK,SDRAM_BA0,SDRAM_BA1,SDRAM_CKE,SDRAM_CS,SDRAM_RAS,SDRAM_CAS,SDRAM_WE,SD
 output STATUS;
 output [15:0] DATA_READ;
 
+//// Assignment and Varible Declaration
+reg busy=1;
 // Data Assignment
 reg [15:0] dout; // This should be set to the input data
-reg weVAL; // This will be commanded during a write cycle
+reg weVAL=0; // This will be commanded during a write cycle
 
-assign SDRAM_D0 = (weVAL==1'b0) ? dout[0] : 1'bz;
-assign SDRAM_D1 = (weVAL==1'b0) ? dout[1] : 1'bz;
-assign SDRAM_D2 = (weVAL==1'b0) ? dout[2] : 1'bz;
-assign SDRAM_D3 = (weVAL==1'b0) ? dout[3] : 1'bz;
-assign SDRAM_D4 = (weVAL==1'b0) ? dout[4] : 1'bz;
-assign SDRAM_D5 = (weVAL==1'b0) ? dout[5] : 1'bz;
-assign SDRAM_D6 = (weVAL==1'b0) ? dout[6] : 1'bz;
-assign SDRAM_D7 = (weVAL==1'b0) ? dout[7] : 1'bz;
-assign SDRAM_D8 = (weVAL==1'b0) ? dout[8] : 1'bz;
-assign SDRAM_D9 = (weVAL==1'b0) ? dout[9] : 1'bz;
-assign SDRAM_D10 = (weVAL==1'b0) ? dout[10] : 1'bz;
-assign SDRAM_D11 = (weVAL==1'b0) ? dout[11] : 1'bz;
-assign SDRAM_D12 = (weVAL==1'b0) ? dout[12] : 1'bz;
-assign SDRAM_D13 = (weVAL==1'b0) ? dout[13] : 1'bz;
-assign SDRAM_D14 = (weVAL==1'b0) ? dout[14] : 1'bz;
-assign SDRAM_D15 = (weVAL==1'b0) ? dout[15] : 1'bz;
+assign SDRAM_D0 = (weVAL==1'b1) ? dout[0] : 1'bz;
+assign SDRAM_D1 = (weVAL==1'b1) ? dout[1] : 1'bz;
+assign SDRAM_D2 = (weVAL==1'b1) ? dout[2] : 1'bz;
+assign SDRAM_D3 = (weVAL==1'b1) ? dout[3] : 1'bz;
+assign SDRAM_D4 = (weVAL==1'b1) ? dout[4] : 1'bz;
+assign SDRAM_D5 = (weVAL==1'b1) ? dout[5] : 1'bz;
+assign SDRAM_D6 = (weVAL==1'b1) ? dout[6] : 1'bz;
+assign SDRAM_D7 = (weVAL==1'b1) ? dout[7] : 1'bz;
+assign SDRAM_D8 = (weVAL==1'b1) ? dout[8] : 1'bz;
+assign SDRAM_D9 = (weVAL==1'b1) ? dout[9] : 1'bz;
+assign SDRAM_D10 = (weVAL==1'b1) ? dout[10] : 1'bz;
+assign SDRAM_D11 = (weVAL==1'b1) ? dout[11] : 1'bz;
+assign SDRAM_D12 = (weVAL==1'b1) ? dout[12] : 1'bz;
+assign SDRAM_D13 = (weVAL==1'b1) ? dout[13] : 1'bz;
+assign SDRAM_D14 = (weVAL==1'b1) ? dout[14] : 1'bz;
+assign SDRAM_D15 = (weVAL==1'b1) ? dout[15] : 1'bz;
 
 // Read Data
 reg [15:0] dread; // this will be set during a read cycle where dread[*]=SDRAM_D*
@@ -136,11 +137,120 @@ assign SDRAM_BA1=  ba1;
 assign SDRAM_DQMU= dqmu;
 assign SDRAM_DQML= dqml;
 
+// Write Cycle Command Vars and Counters
+reg write_cycle = 0;
+reg [3:0] write_counter=0;
+
+// Read Cycle Command Vars and Counters
+reg read_cycle =0;
+reg [3:0] read_counter=0;
+
+reg idle_cycle;
+///// Conditional Logic
 always @(negedge CLK_48MHZ)
 begin
 
-// Write Cycle
+// Command setup
+if (busy==0) begin
+    if (CMD_IN==2) begin
+        write_cycle=1;
+    end else if (CMD_IN==1) begin
+        read_cycle=1;
+    end else begin
+        //Do Nothing
+        idle_cycle=1;
+    end
+end
 
+// Write Cycle
+if (write_cycle==1) begin
+    if (write_counter<t_rc+t_ras+2) begin
+        //SELF
+        cke<=0;
+        cs<=0;
+        ras<=0;
+        cas<=0;
+        we<=1;
+        address<=13'bz;
+        busy=0;
+        write_cycle=0;
+        write_counter=0;
+    end
+    if ((write_counter>t_rc+t_ras) && (write_counter<t_rc+t_ras+2)) begin
+        //NOP
+        cke<=1;
+        cs<=0;
+        ras<=1;
+        cas<=1;
+        we<=1;
+        dqml<=1;
+        dqmu<=0;
+        weVAL<=0;
+        address<=13'bz;
+        write_counter=write_counter+1;
+    end
+    if (write_counter ==t_rc+t_ras) begin
+        //WRITA
+        // Need t_ras between actv and end of write, experimental for now
+        cke<=1;
+        cs<=0;
+        ras<=1;
+        cas<=0;
+        we<=0;
+        address[8:0] <= A_IN_COL;
+        address[10] <=1;
+        weVAL<=1;
+        dout<=D_IN;  
+        write_counter=write_counter+1;
+    end
+    if ((write_counter>t_rc) && (write_counter<t_rc+t_ras)) begin
+        //NOP
+        cke<=1;
+        cs<=0;
+        ras<=1;
+        cas<=1;
+        we<=1;
+        address=13'bz;
+        write_counter=write_counter+1;
+    end
+    if (write_counter==t_rc) begin
+        // ACTV
+        // Latch BA0 and BA1 and Latch ROW Address
+        cke<=1;
+        cs<=0;
+        ras<=0;
+        cas<=1;
+        we<=1;
+        dqmu<=0;
+        dqml<=0;
+        ba0<=A_IN_BANK[0];
+        ba1<=A_IN_BANK[1];
+        address<=A_IN_ROW;
+        write_counter=write_counter+1;
+    end
+    if ((write_counter>0) && (write_counter<t_rc)) begin
+        // NOP
+        cke<=1;
+        cs<=0;
+        ras<=1;
+        cas<=1;
+        we<=1;
+        address=13'bz;
+        write_counter=write_counter+1;
+    end
+    if (write_counter==0) begin
+        //Exit Refresh
+        // SELFX
+        cke<=1;
+        cs<=0;
+        ras<=1;
+        cas<=1;
+        we<=1;
+        write_counter=write_counter+1;
+        busy<=1;
+    end
+
+end
 // Read Cycle
 
 // Idle and Precharge/Refresh States
@@ -157,6 +267,7 @@ if (pwr_up_hold===1'b1) begin
         dqml<=1'b0;
         dqmu<=1'b0;
         dout<=16'b0;
+        busy<=1;
     end else if ((TIMESTAMP>=2)&&(TIMESTAMP<4)) begin
         pwr_stabalize=1'b1;
         cke<=1'b1;
@@ -172,6 +283,7 @@ if (pwr_up_hold===1'b1) begin
             we<=1;
             address=13'bz;
             pwr_up_hold=1'b0; // Remove power up sequence hold.
+            busy=0;
         end
 
         if (init_counter==t_rp+1+t_rc+1) begin

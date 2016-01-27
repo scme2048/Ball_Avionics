@@ -93,8 +93,8 @@ SIZE="771"
 ENDFILE
 VALUE "<project>\hdl\sdram_interface.v,hdl"
 STATE="utd"
-TIME="1453791115"
-SIZE="9245"
+TIME="1453878267"
+SIZE="11897"
 ENDFILE
 VALUE "<project>\hdl\SPI_Master.v,hdl"
 STATE="utd"
@@ -133,7 +133,7 @@ SIZE="2012"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1453487772"
+TIME="1453789585"
 SIZE="696"
 ENDFILE
 VALUE "<project>\simulation\tb_geig_data_handling_presynth_simulation.log,log"
@@ -143,8 +143,8 @@ SIZE="2526"
 ENDFILE
 VALUE "<project>\simulation\tb_sdram_interface_presynth_simulation.log,log"
 STATE="utd"
-TIME="1453490442"
-SIZE="3650"
+TIME="1453792431"
+SIZE="5152"
 ENDFILE
 VALUE "<project>\simulation\tb_test_harness_geig_presynth_simulation.log,log"
 STATE="utd"
@@ -344,7 +344,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_v11.6\Model\win32acoem\modelsim.exe"
-PARAM=" -l tb_sdram_interface_presynth_simulation.log "
+PARAM=""
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -383,6 +383,7 @@ ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 HDL;hdl\sdram_interface.v;0
+StartPage;StartPage;0
 ACTIVEVIEW;hdl\sdram_interface.v
 ENDLIST
 LIST ModuleSubBlockList
