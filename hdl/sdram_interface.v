@@ -20,7 +20,8 @@ SDRAM_D12,SDRAM_D13,SDRAM_D14,SDRAM_D15,
 SDRAM_A0,SDRAM_A1,SDRAM_A2,SDRAM_A3,SDRAM_A4,SDRAM_A5,SDRAM_A6,SDRAM_A7,SDRAM_A8,SDRAM_A9,SDRAM_A10,SDRAM_A11,
 SDRAM_A12,
 SDRAM_CLK,SDRAM_BA0,SDRAM_BA1,SDRAM_CKE,SDRAM_CS,SDRAM_RAS,SDRAM_CAS,SDRAM_WE,SDRAM_DQML,SDRAM_DQMU,
-STATUS,DATA_READ);
+STATUS,DATA_READ,
+test_WC);
 
 // Timing Parameters (Given in 48MHZ (20.833) clock cycles needed to surpass)
 parameter t_rc = 4; // Ref/active -> ref/active command period 70ns
@@ -50,7 +51,8 @@ output STATUS;
 output [15:0] DATA_READ;
 
 //// Assignment and Varible Declaration
-reg busy=1;
+reg busy;
+assign STATUS=busy;
 // Data Assignment
 reg [15:0] dout; // This should be set to the input data
 reg weVAL=0; // This will be commanded during a write cycle
@@ -139,13 +141,19 @@ assign SDRAM_DQML= dqml;
 
 // Write Cycle Command Vars and Counters
 reg write_cycle = 0;
-reg [3:0] write_counter=0;
+reg write_exit=0;
+reg [3:0] write_counter=4'b0;
 
 // Read Cycle Command Vars and Counters
 reg read_cycle =0;
-reg [3:0] read_counter=0;
+reg [3:0] read_counter=4'b0;
 
+// Idle Cycle Command Vars and Counters
 reg idle_cycle;
+
+output test_WC;
+wire [3:0] test_WC;
+assign test_WC=write_counter;
 ///// Conditional Logic
 always @(negedge CLK_48MHZ)
 begin
@@ -154,6 +162,7 @@ begin
 if (busy==0) begin
     if (CMD_IN==2) begin
         write_cycle=1;
+        write_exit=0;
     end else if (CMD_IN==1) begin
         read_cycle=1;
     end else begin
@@ -164,32 +173,34 @@ end
 
 // Write Cycle
 if (write_cycle==1) begin
-    if (write_counter<t_rc+t_ras+2) begin
+    if (write_counter==t_rc+t_ras+2) begin
         //SELF
         cke<=0;
         cs<=0;
         ras<=0;
         cas<=0;
         we<=1;
-        address<=13'bz;
+        address=13'bz;
         busy=0;
         write_cycle=0;
         write_counter=0;
+        write_exit=1;
     end
     if ((write_counter>t_rc+t_ras) && (write_counter<t_rc+t_ras+2)) begin
         //NOP
+        // Possibly bump up the +2 to +3.
         cke<=1;
         cs<=0;
         ras<=1;
         cas<=1;
         we<=1;
         dqml<=1;
-        dqmu<=0;
+        dqmu<=1;
         weVAL<=0;
-        address<=13'bz;
+        address=13'bz;
         write_counter=write_counter+1;
     end
-    if (write_counter ==t_rc+t_ras) begin
+    if (write_counter==t_rc+t_ras) begin
         //WRITA
         // Need t_ras between actv and end of write, experimental for now
         cke<=1;
@@ -238,7 +249,7 @@ if (write_cycle==1) begin
         address=13'bz;
         write_counter=write_counter+1;
     end
-    if (write_counter==0) begin
+    if ((write_counter==0) && (write_exit==0)) begin
         //Exit Refresh
         // SELFX
         cke<=1;
@@ -246,8 +257,8 @@ if (write_cycle==1) begin
         ras<=1;
         cas<=1;
         we<=1;
+        busy=1;
         write_counter=write_counter+1;
-        busy<=1;
     end
 
 end

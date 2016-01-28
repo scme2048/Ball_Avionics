@@ -8,25 +8,25 @@
 # vmap -modelsim_quiet proasic3l C:/Microsemi/Libero_v11.6/Designer/lib/modelsim/precompiled/vlog/proasic3l 
 # Modifying modelsim.ini
 # Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 23:26:31 on Jan 25,2016
+# Start time: 00:33:16 on Jan 28,2016
 # vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/sdram_interface.v 
 # -- Compiling module sdram_interface
 # 
 # Top level modules:
 # 	sdram_interface
-# End time: 23:26:31 on Jan 25,2016, Elapsed time: 0:00:00
+# End time: 00:33:16 on Jan 28,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 23:26:31 on Jan 25,2016
+# Start time: 00:33:16 on Jan 28,2016
 # vlog -reportprogress 300 "+incdir+C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus" -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/tb_sdram_interface.v 
 # -- Compiling module tb_sdram_interface
 # 
 # Top level modules:
 # 	tb_sdram_interface
-# End time: 23:26:31 on Jan 25,2016, Elapsed time: 0:00:00
+# End time: 00:33:16 on Jan 28,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -gui -do "do run.do" -l tb_sdram_interface_presynth_simulation.log 
-# Start time: 23:26:31 on Jan 25,2016
+# Start time: 00:33:16 on Jan 28,2016
 # //  ModelSim Microsemi 10.3c Jul 19 2014 
 # //
 # //  Copyright 1991-2014 Mentor Graphics Corporation
@@ -39,68 +39,5 @@
 # Loading presynth.tb_sdram_interface
 # Loading presynth.sdram_interface
 run -all
-run -all
-do run.do
-# INFO: Simulation library presynth already exists
-# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
-# vmap -modelsim_quiet presynth presynth 
-# Modifying modelsim.ini
-# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
-# vmap -modelsim_quiet proasic3l C:/Microsemi/Libero_v11.6/Designer/lib/modelsim/precompiled/vlog/proasic3l 
-# Modifying modelsim.ini
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 23:43:38 on Jan 25,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/sdram_interface.v 
-# -- Compiling module sdram_interface
-# 
-# Top level modules:
-# 	sdram_interface
-# End time: 23:43:38 on Jan 25,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 23:43:38 on Jan 25,2016
-# vlog -reportprogress 300 "+incdir+C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus" -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/tb_sdram_interface.v 
-# -- Compiling module tb_sdram_interface
-# 
-# Top level modules:
-# 	tb_sdram_interface
-# End time: 23:43:38 on Jan 25,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim 
-# Start time: 23:43:39 on Jan 25,2016
-# Loading presynth.tb_sdram_interface
-# Loading presynth.sdram_interface
-run -all
-do run.do
-# INFO: Simulation library presynth already exists
-# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
-# vmap -modelsim_quiet presynth presynth 
-# Modifying modelsim.ini
-# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
-# vmap -modelsim_quiet proasic3l C:/Microsemi/Libero_v11.6/Designer/lib/modelsim/precompiled/vlog/proasic3l 
-# Modifying modelsim.ini
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 23:52:05 on Jan 25,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/sdram_interface.v 
-# -- Compiling module sdram_interface
-# 
-# Top level modules:
-# 	sdram_interface
-# End time: 23:52:05 on Jan 25,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 23:52:05 on Jan 25,2016
-# vlog -reportprogress 300 "+incdir+C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus" -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/tb_sdram_interface.v 
-# -- Compiling module tb_sdram_interface
-# 
-# Top level modules:
-# 	tb_sdram_interface
-# End time: 23:52:05 on Jan 25,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim 
-# Start time: 23:52:06 on Jan 25,2016
-# Loading presynth.tb_sdram_interface
-# Loading presynth.sdram_interface
-run -all
-# End time: 00:13:51 on Jan 26,2016, Elapsed time: 0:21:45
+# End time: 00:38:39 on Jan 28,2016, Elapsed time: 0:05:23
 # Errors: 0, Warnings: 0
