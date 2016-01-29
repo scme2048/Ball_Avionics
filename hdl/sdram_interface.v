@@ -147,13 +147,14 @@ reg [3:0] write_counter=4'b0;
 // Read Cycle Command Vars and Counters
 reg read_cycle =0;
 reg [3:0] read_counter=4'b0;
+reg read_exit=0;
 
 // Idle Cycle Command Vars and Counters
 reg idle_cycle;
 
 output test_WC;
 wire [3:0] test_WC;
-assign test_WC=write_counter;
+assign test_WC=read_counter;
 ///// Conditional Logic
 always @(negedge CLK_48MHZ)
 begin
@@ -165,6 +166,7 @@ if (busy==0) begin
         write_exit=0;
     end else if (CMD_IN==1) begin
         read_cycle=1;
+        read_exit=0;
     end else begin
         //Do Nothing
         idle_cycle=1;
@@ -262,8 +264,134 @@ if (write_cycle==1) begin
     end
 
 end
-// Read Cycle
 
+/////// Read Cycle
+if (read_cycle==1) begin
+    if (read_counter==t_rc+t_ras+5) begin
+        //SELF
+        cke<=0;
+        cs<=0;
+        ras<=0;
+        cas<=0;
+        we<=1;
+        address=13'bz;
+        busy=0;
+        read_cycle=0;
+        read_counter=0;
+        read_exit=1;
+    end
+    if (read_counter==t_rc+t_ras+4) begin
+        //NOP
+        // Possibly unnescesary if precharge starts above
+        cke<=1;
+        cs<=0;
+        ras<=1;
+        cas<=1;
+        we<=1;
+        dqmu<=1;
+        dqml<=1;
+        address=13'bz;
+        read_counter=read_counter+1;
+    end
+    if (read_counter==t_rc+t_ras+3) begin
+        //Set Data In
+        //NOP
+        cke<=1;
+        cs<=0;
+        ras<=1;
+        cas<=1;
+        we<=1;
+        dread[0]<=SDRAM_D0;
+        dread[1]<=SDRAM_D1;
+        dread[2]<=SDRAM_D2;
+        dread[3]<=SDRAM_D3;
+        dread[4]<=SDRAM_D4;
+        dread[5]<=SDRAM_D5;
+        dread[6]<=SDRAM_D6;
+        dread[7]<=SDRAM_D7;
+        dread[8]<=SDRAM_D8;
+        dread[9]<=SDRAM_D9;
+        dread[10]<=SDRAM_D10;
+        dread[11]<=SDRAM_D11;
+        dread[12]<=SDRAM_D12;
+        dread[13]<=SDRAM_D13;
+        dread[14]<=SDRAM_D14;
+        dread[15]<=SDRAM_D15;
+        address=13'bz;
+        read_counter=read_counter+1;
+    end
+    if ((read_counter>t_rc+t_ras) && (read_counter<t_rc+t_ras+3)) begin
+        //CHANGE THIS?? Or stuff needs to go before careful with timings. Possibly 2 cycles...
+        //NOP
+        cke<=1;
+        cs<=0;
+        ras<=1;
+        cas<=1;
+        we<=1;
+        address=13'bz;
+        read_counter=read_counter+1;
+    end
+    if (read_counter==t_rc+t_ras) begin
+        //READA 
+        // Need t_ras between actv and end of read, experimental for now
+        cke<=1;
+        cs<=0;
+        ras<=1;
+        cas<=0;
+        we<=1;
+        address[8:0] <= A_IN_COL;
+        address[10] <=1; 
+        dread<= 16'bz;
+        read_counter=read_counter+1;
+    end
+    if ((read_counter>t_rc) && (read_counter<t_rc+t_ras)) begin
+        //NOP
+        cke<=1;
+        cs<=0;
+        ras<=1;
+        cas<=1;
+        we<=1;
+        address=13'bz;
+        read_counter=read_counter+1;
+    end
+    if (read_counter==t_rc) begin
+        // ACTV
+        // Latch BA0 and BA1 and Latch ROW Address
+        cke<=1;
+        cs<=0;
+        ras<=0;
+        cas<=1;
+        we<=1;
+        dqmu<=0;
+        dqml<=0;
+        ba0<=A_IN_BANK[0];
+        ba1<=A_IN_BANK[1];
+        address<=A_IN_ROW;
+        read_counter=read_counter+1;
+    end
+    if ((read_counter>0) && (read_counter<t_rc)) begin
+        // NOP
+        cke<=1;
+        cs<=0;
+        ras<=1;
+        cas<=1;
+        we<=1;
+        address=13'bz;
+        read_counter=read_counter+1;
+    end
+    if ((read_counter==0) && (read_exit==0)) begin
+        //Exit Refresh
+        // SELFX
+        cke<=1;
+        cs<=0;
+        ras<=1;
+        cas<=1;
+        we<=1;
+        busy=1;
+        read_counter=read_counter+1;
+    end
+
+end
 // Idle and Precharge/Refresh States
 
 // Power Up and Initialization
