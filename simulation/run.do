@@ -1,5 +1,5 @@
 quietly set ACTELLIBNAME ProASIC3L
-quietly set PROJECT_DIR "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics"
+quietly set PROJECT_DIR "F:/Ball_Avionics"
 
 if {[file exists presynth/_info]} {
    echo "INFO: Simulation library presynth already exists"
@@ -10,9 +10,9 @@ if {[file exists presynth/_info]} {
 vmap presynth presynth
 vmap proasic3l "C:/Microsemi/Libero_v11.6/Designer/lib/modelsim/precompiled/vlog/proasic3l"
 
-vlog  -work presynth "${PROJECT_DIR}/hdl/sdram_interface.v"
-vlog "+incdir+${PROJECT_DIR}/stimulus"  -work presynth "${PROJECT_DIR}/stimulus/tb_sdram_interface.v"
+vlog  -work presynth "${PROJECT_DIR}/hdl/SPI_Master.v"
+vlog "+incdir+${PROJECT_DIR}/stimulus"  -work presynth "${PROJECT_DIR}/stimulus/spi_master_tb3.v"
 
-vsim -L proasic3l -L presynth  -t 1ps presynth.tb_sdram_interface
-add wave /tb_sdram_interface/*
+vsim -L proasic3l -L presynth  -t 1ps presynth.spi_master_tb3
+add wave /spi_master_tb3/*
 run 1000ns

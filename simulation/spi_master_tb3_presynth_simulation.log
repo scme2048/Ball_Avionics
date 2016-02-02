@@ -1,0 +1,96 @@
+# Reading C:/Microsemi/Libero_v11.6/Model/tcl/vsim/pref.tcl
+# do run.do
+# INFO: Simulation library presynth already exists
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet presynth presynth 
+# Modifying modelsim.ini
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet proasic3l C:/Microsemi/Libero_v11.6/Designer/lib/modelsim/precompiled/vlog/proasic3l 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 17:48:43 on Feb 01,2016
+# vlog -reportprogress 300 -work presynth F:/Ball_Avionics/hdl/SPI_Master.v 
+# -- Compiling module spi_master
+# 
+# Top level modules:
+# 	spi_master
+# End time: 17:48:44 on Feb 01,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 17:48:44 on Feb 01,2016
+# vlog -reportprogress 300 "+incdir+F:/Ball_Avionics/stimulus" -work presynth F:/Ball_Avionics/stimulus/spi_master_tb3.v 
+# -- Compiling module spi_master_tb3
+# 
+# Top level modules:
+# 	spi_master_tb3
+# End time: 17:48:45 on Feb 01,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -gui -do "do run.do" -l spi_master_tb3_presynth_simulation.log 
+# Start time: 17:48:46 on Feb 01,2016
+# //  ModelSim Microsemi 10.3c Jul 19 2014 
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading presynth.spi_master_tb3
+# Loading presynth.spi_master
+run -all
+add wave  \
+sim:/spi_master_tb3/spi_master_0/clk \
+sim:/spi_master_tb3/spi_master_0/rst \
+sim:/spi_master_tb3/spi_master_0/miso \
+sim:/spi_master_tb3/spi_master_0/mosi \
+sim:/spi_master_tb3/spi_master_0/sck \
+sim:/spi_master_tb3/spi_master_0/start \
+sim:/spi_master_tb3/spi_master_0/data_in \
+sim:/spi_master_tb3/spi_master_0/data_out \
+sim:/spi_master_tb3/spi_master_0/busy \
+sim:/spi_master_tb3/spi_master_0/new_data
+do run.do
+# INFO: Simulation library presynth already exists
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet presynth presynth 
+# Modifying modelsim.ini
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet proasic3l C:/Microsemi/Libero_v11.6/Designer/lib/modelsim/precompiled/vlog/proasic3l 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 17:51:25 on Feb 01,2016
+# vlog -reportprogress 300 -work presynth F:/Ball_Avionics/hdl/SPI_Master.v 
+# -- Compiling module spi_master
+# 
+# Top level modules:
+# 	spi_master
+# End time: 17:51:26 on Feb 01,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 17:51:26 on Feb 01,2016
+# vlog -reportprogress 300 "+incdir+F:/Ball_Avionics/stimulus" -work presynth F:/Ball_Avionics/stimulus/spi_master_tb3.v 
+# -- Compiling module spi_master_tb3
+# 
+# Top level modules:
+# 	spi_master_tb3
+# End time: 17:51:27 on Feb 01,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 17:51:28 on Feb 01,2016
+# Loading presynth.spi_master_tb3
+# Loading presynth.spi_master
+add wave  \
+sim:/spi_master_tb3/spi_master_0/clk \
+sim:/spi_master_tb3/spi_master_0/rst \
+sim:/spi_master_tb3/spi_master_0/miso \
+sim:/spi_master_tb3/spi_master_0/mosi \
+sim:/spi_master_tb3/spi_master_0/sck \
+sim:/spi_master_tb3/spi_master_0/start \
+sim:/spi_master_tb3/spi_master_0/data_in \
+sim:/spi_master_tb3/spi_master_0/data_out \
+sim:/spi_master_tb3/spi_master_0/busy \
+sim:/spi_master_tb3/spi_master_0/new_data
+run -all
+# End time: 18:25:50 on Feb 01,2016, Elapsed time: 0:34:22
+# Errors: 0, Warnings: 0

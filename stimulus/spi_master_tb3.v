@@ -35,11 +35,13 @@ parameter ORBIT_TIME = 500; //
 reg SYSCLK;
 reg NSYSRESET;
 reg [7:0] DATAIN;
+reg START;
 
 initial
 begin
     SYSCLK = 1'b0;
     NSYSRESET = 1'b0;
+    START = 1'b1;
 end
 
 //////////////////////////////////////////////////////////////////////
@@ -53,6 +55,7 @@ begin
         NSYSRESET = 1'b0;
         DATAIN = 8'b01010100;
     
+    
 end
 
 
@@ -61,12 +64,12 @@ end
 //////////////////////////////////////////////////////////////////////
 always @(SYSCLK)
     #(SYSCLK_PERIOD / 2.0) SYSCLK <= !SYSCLK;
-//always @(SYSCLK) begin
-//    #(ORBIT_TIME) DATAIN = 8'b01010100;
+always @(SYSCLK) begin
+    #(SYSCLK_PERIOD *100) START = !START;
 //    #(SYSCLK_PERIOD*20) DATAIN = 8'bz;
 //    #(SYSCLK_PERIOD*20) DATAIN = 8'b01010010;
 //    #(SYSCLK_PERIOD*20) DATAIN = 8'bz;
-//end
+end
 
 //////////////////////////////////////////////////////////////////////
 // Instantiate Unit Under Test:  spi_master
@@ -76,7 +79,7 @@ spi_master spi_master_0 (
     .clk(SYSCLK),
     .rst(NSYSRESET),
     .miso({1{1'b0}}),
-    .start({1{1'b1}}),
+    .start(START),
     .data_in({DATAIN}),
     //.data_in({8{1'b0}}),
 
