@@ -24,10 +24,11 @@
 
 //`timescale <time_units> / <precision>
 
-module read_address_traversal( CLK_48MHZ,NEXT, BA_READ_OUT, ROW_READ_OUT,COL_READ_OUT );
+module read_address_traversal( CLK_48MHZ,NEXT, REPLAY, BA_READ_OUT, ROW_READ_OUT,COL_READ_OUT );
 
 // Possibly add write addresses for tracking position
 input CLK_48MHZ,NEXT;
+input [4:0] REPLAY;
 output [1:0] BA_READ_OUT;
 output [8:0] COL_READ_OUT;
 output [12:0] ROW_READ_OUT;
@@ -55,7 +56,17 @@ end else begin
     current_count = current_count+1;
 end
 
-
 end
+
+
+//always @(posedge CLK_48MHZ) 
+//begin
+//
+//if (REPLAY >0) begin
+    //
+//end
+//
+//
+//end
 endmodule
 
