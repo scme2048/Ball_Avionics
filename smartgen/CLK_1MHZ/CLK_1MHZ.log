@@ -1,6 +1,6 @@
  ** Message System Log
  ** Database: 
- ** Date:   Tue Jan 12 11:55:30 2016
+ ** Date:   Tue Feb 02 20:59:37 2016
 
 
 ****************
@@ -14,7 +14,7 @@ Type                            : Static PLL
 PowerDown                       : Active Low
 Lock                            : Active High
 Input Freq(Mhz)                 : 48.000000
-CLKA Source                     : Hardwired I/O
+CLKA Source                     : External I/O
 Feedback Delay Value Index      : 1
 Feedback Mux Select             : 1
 XDLY Mux Select                 : No
@@ -66,21 +66,22 @@ Primary Clock Output Delay from CLKA 2.200
 Compile Report
 **************
 
+Info:  BLK007: No CoreConsole Database file imported for an M1 device.
 
 Netlist Resource Report
 =======================
 
-    CORE                       Used:      0  Total:  75264   (0.00%)
-    IO (W/ clocks)             Used:      0  Total:    341   (0.00%)
-    Differential IO            Used:      0  Total:    168   (0.00%)
+    CORE                       Used:      0  Total:  24576   (0.00%)
+    IO (W/ clocks)             Used:      0  Total:    300   (0.00%)
+    Differential IO            Used:      0  Total:     74   (0.00%)
     GLOBAL (Chip+Quadrant)     Used:      1  Total:     18   (5.56%)
-    PLL                        Used:      1  Total:      6   (16.67%)
-    RAM/FIFO                   Used:      0  Total:    112   (0.00%)
+    PLL                        Used:      1  Total:      1   (100.00%)
+    RAM/FIFO                   Used:      0  Total:     32   (0.00%)
     Low Static ICC             Used:      0  Total:      1   (0.00%)
     FlashROM                   Used:      0  Total:      1   (0.00%)
     User JTAG                  Used:      0  Total:      1   (0.00%)
 
 Wrote Verilog netlist to C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/smartgen\CLK_1MHZ\CLK_1MHZ.v.
 
- ** Log Ended:   Tue Jan 12 11:55:31 2016
+ ** Log Ended:   Tue Feb 02 20:59:38 2016
 

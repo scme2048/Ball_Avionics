@@ -1,0 +1,3 @@
+@W: MT420 |Found inferred clock clock_div_26MHZ_1MHZ|clk_out_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:clock_div_26MHZ_1MHZ_0.clk_out"
+@W: MT420 |Found inferred clock clock_div_1MHZ_1KHZ|clk_out_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:clock_div_1MHZ_1KHZ_0.clk_out"
+@W: MT420 |Found inferred clock CLK_26MHZ|GLA_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:CLK_26MHZ_0.GLA"

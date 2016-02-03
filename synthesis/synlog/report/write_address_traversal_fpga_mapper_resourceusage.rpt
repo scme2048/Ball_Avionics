@@ -1,0 +1,32 @@
+Target Part: M1A3P1000L_FBGA484_STD
+Report for cell write_address_traversal.verilog
+  Core Cell usage:
+              cell count     area count*area
+              AX1C    10      1.0       10.0
+               GND     1      0.0        0.0
+               INV     1      1.0        1.0
+             NOR2B     6      1.0        6.0
+             NOR3C    15      1.0       15.0
+               VCC     1      0.0        0.0
+              XOR2    13      1.0       13.0
+
+
+              DFN1    24      1.0       24.0
+                   -----          ----------
+             TOTAL    71                69.0
+
+
+  IO Cell usage:
+              cell count
+            CLKBUF     1
+            OUTBUF    24
+                   -----
+             TOTAL    25
+
+
+Core Cells         : 69 of 24576 (0%)
+IO Cells           : 25
+
+  RAM/ROM Usage Summary
+Block Rams : 0 of 32 (0%)
+

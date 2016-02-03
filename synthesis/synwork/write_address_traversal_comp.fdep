@@ -1,0 +1,15 @@
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\synthesis\\synwork\\write_address_traversal_comp.srs|-top|write_address_traversal|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-I|C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\synthesis\\|-I|C:\\Microsemi\\Libero_v11.6\\Synopsys\\fpga_J-2015.03M-3\\lib|-v2001|-devicelib|C:\\Microsemi\\Libero_v11.6\\Synopsys\\fpga_J-2015.03M-3\\lib\\proasic\\proasic3l.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work"
+#CUR:"C:\\Microsemi\\Libero_v11.6\\Synopsys\\fpga_J-2015.03M-3\\bin64\\c_ver.exe":1431625188
+#CUR:"C:\\Microsemi\\Libero_v11.6\\Synopsys\\fpga_J-2015.03M-3\\lib\\proasic\\proasic3l.v":1431615982
+#CUR:"C:\\Microsemi\\Libero_v11.6\\Synopsys\\fpga_J-2015.03M-3\\lib\\vlog\\hypermods.v":1431624842
+#CUR:"C:\\Microsemi\\Libero_v11.6\\Synopsys\\fpga_J-2015.03M-3\\lib\\vlog\\umr_capim.v":1431624842
+#CUR:"C:\\Microsemi\\Libero_v11.6\\Synopsys\\fpga_J-2015.03M-3\\lib\\vlog\\scemi_objects.v":1431624842
+#CUR:"C:\\Microsemi\\Libero_v11.6\\Synopsys\\fpga_J-2015.03M-3\\lib\\vlog\\scemi_pipes.svh":1431624842
+#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\hdl\\write_address_traversal.v":1454401642
+0			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\write_address_traversal.v" verilog
+#Dependency Lists(Uses List)
+0 -1
+#Dependency Lists(Users Of)
+0 -1
+#Design Unit to File Association
+module work write_address_traversal 0

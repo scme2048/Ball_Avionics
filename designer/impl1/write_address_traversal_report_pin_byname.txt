@@ -1,0 +1,44 @@
+*****************************************************************
+Pin Report - Date: Tue Feb 02 20:21:08 2016 UNCOMPLETED LAYOUT
+Product: Designer
+Release: v11.6
+Version: 11.6.0.34
+Design Name: write_address_traversal
+Family: ProASIC3L
+Die: M1A3P1000L
+Package: 484 FBGA
+*****************************************************************
+
+-----------------------------------------------------------------
+Flash*Freeze information
+        Pin name  : W6
+        Pin usage : Available as a regular pin
+-----------------------------------------------------------------
+
+Port              |Pin        |Fixed      |Function |I/O Std  |Output Drive (mA) |Slew |Resistor Pull |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
+------------------|-----------|-----------|---------|---------|------------------|-----|--------------|-----|-----------------|------------|--------------|
+BA_WRITE_OUT[0]    Unassigned  Unassigned            LVCMOS33  12                 High  None           No    5                 No           No
+BA_WRITE_OUT[1]    Unassigned  Unassigned            LVCMOS33  12                 High  None           No    5                 No           No
+COL_WRITE_OUT[0]   Unassigned  Unassigned            LVCMOS33  12                 High  None           No    5                 No           No
+COL_WRITE_OUT[1]   Unassigned  Unassigned            LVCMOS33  12                 High  None           No    5                 No           No
+COL_WRITE_OUT[2]   Unassigned  Unassigned            LVCMOS33  12                 High  None           No    5                 No           No
+COL_WRITE_OUT[3]   Unassigned  Unassigned            LVCMOS33  12                 High  None           No    5                 No           No
+COL_WRITE_OUT[4]   Unassigned  Unassigned            LVCMOS33  12                 High  None           No    5                 No           No
+COL_WRITE_OUT[5]   Unassigned  Unassigned            LVCMOS33  12                 High  None           No    5                 No           No
+COL_WRITE_OUT[6]   Unassigned  Unassigned            LVCMOS33  12                 High  None           No    5                 No           No
+COL_WRITE_OUT[7]   Unassigned  Unassigned            LVCMOS33  12                 High  None           No    5                 No           No
+COL_WRITE_OUT[8]   Unassigned  Unassigned            LVCMOS33  12                 High  None           No    5                 No           No
+NEXT               Unassigned  Unassigned            LVCMOS33  ---                ---   None           ---   ---               No           No
+ROW_WRITE_OUT[0]   Unassigned  Unassigned            LVCMOS33  12                 High  None           No    5                 No           No
+ROW_WRITE_OUT[1]   Unassigned  Unassigned            LVCMOS33  12                 High  None           No    5                 No           No
+ROW_WRITE_OUT[2]   Unassigned  Unassigned            LVCMOS33  12                 High  None           No    5                 No           No
+ROW_WRITE_OUT[3]   Unassigned  Unassigned            LVCMOS33  12                 High  None           No    5                 No           No
+ROW_WRITE_OUT[4]   Unassigned  Unassigned            LVCMOS33  12                 High  None           No    5                 No           No
+ROW_WRITE_OUT[5]   Unassigned  Unassigned            LVCMOS33  12                 High  None           No    5                 No           No
+ROW_WRITE_OUT[6]   Unassigned  Unassigned            LVCMOS33  12                 High  None           No    5                 No           No
+ROW_WRITE_OUT[7]   Unassigned  Unassigned            LVCMOS33  12                 High  None           No    5                 No           No
+ROW_WRITE_OUT[8]   Unassigned  Unassigned            LVCMOS33  12                 High  None           No    5                 No           No
+ROW_WRITE_OUT[9]   Unassigned  Unassigned            LVCMOS33  12                 High  None           No    5                 No           No
+ROW_WRITE_OUT[10]  Unassigned  Unassigned            LVCMOS33  12                 High  None           No    5                 No           No
+ROW_WRITE_OUT[11]  Unassigned  Unassigned            LVCMOS33  12                 High  None           No    5                 No           No
+ROW_WRITE_OUT[12]  Unassigned  Unassigned            LVCMOS33  12                 High  None           No    5                 No           No

@@ -1,0 +1,48 @@
+Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 1522R, Built Jun  4 2015 12:04:36
+Copyright (C) 1994-2015, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+Product Version J-2015.03M-3
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@L: C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\spi_test_scck.rpt 
+Printing clock  summary report in "C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\spi_test_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\spi_master.v":78:2:78:7|Removing sequential instance data_out_q[7:0] of view:PrimLib.sdffre(prim) in hierarchy view:work.spi_master(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\spi_master.v":78:2:78:7|Removing sequential instance new_data_q of view:PrimLib.dff(prim) in hierarchy view:work.spi_master(verilog) because there are no references to its outputs 
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 110MB)
+
+
+
+@S |Clock Summary
+*****************
+
+Start                                           Requested     Requested     Clock        Clock              
+Clock                                           Frequency     Period        Type         Group              
+------------------------------------------------------------------------------------------------------------
+CLK_26MHZ|GLA_inferred_clock                    100.0 MHz     10.000        inferred     Inferred_clkgroup_2
+clock_div_1MHZ_1KHZ|clk_out_inferred_clock      100.0 MHz     10.000        inferred     Inferred_clkgroup_0
+clock_div_26MHZ_1MHZ|clk_out_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_1
+============================================================================================================
+
+@W: MT530 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\test_constants_spi.v":36:0:36:5|Found inferred clock clock_div_1MHZ_1KHZ|clk_out_inferred_clock which controls 11 sequential elements including test_constants_spi_0.da[7:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\clock_div_1mhz_1khz.v":22:0:22:5|Found inferred clock clock_div_26MHZ_1MHZ|clk_out_inferred_clock which controls 18 sequential elements including clock_div_1MHZ_1KHZ_0.counter[16:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\clock_div_26mhz_1mhz.v":22:0:22:5|Found inferred clock CLK_26MHZ|GLA_inferred_clock which controls 35 sequential elements including clock_div_26MHZ_1MHZ_0.counter[16:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\spi_test.sap.
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 46MB peak: 110MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Feb 02 21:32:43 2016
+
+###########################################################]

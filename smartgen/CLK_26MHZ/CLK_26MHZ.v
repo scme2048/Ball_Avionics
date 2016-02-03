@@ -13,13 +13,13 @@ input  CLKA;
 output LOCK;
 output GLA;
 
-    wire VCC, GND;
+    wire CLKAP, VCC, GND;
     wire GND_power_net1;
     wire VCC_power_net1;
     assign GND = GND_power_net1;
     assign VCC = VCC_power_net1;
     
-    PLL #( .VCOFREQUENCY(208.000) )  Core (.CLKA(CLKA), .EXTFB(GND), 
+    PLL #( .VCOFREQUENCY(208.000) )  Core (.CLKA(CLKAP), .EXTFB(GND), 
         .POWERDOWN(POWERDOWN), .GLA(GLA), .LOCK(LOCK), .GLB(), .YB(), 
         .GLC(), .YC(), .OADIV0(VCC), .OADIV1(VCC), .OADIV2(VCC), 
         .OADIV3(GND), .OADIV4(GND), .OAMUX0(GND), .OAMUX1(GND), 
@@ -40,6 +40,7 @@ output GLA;
         .FBDLY0(GND), .FBDLY1(GND), .FBDLY2(GND), .FBDLY3(GND), 
         .FBDLY4(GND), .FBSEL0(VCC), .FBSEL1(GND), .XDLYSEL(GND), 
         .VCOSEL0(GND), .VCOSEL1(VCC), .VCOSEL2(VCC));
+    PLLINT pllint1 (.A(CLKA), .Y(CLKAP));
     GND GND_power_inst1 (.Y(GND_power_net1));
     VCC VCC_power_inst1 (.Y(VCC_power_net1));
     
@@ -65,11 +66,11 @@ endmodule
 // MGNCMPL:T
 // DESDIR:C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/smartgen\CLK_26MHZ
 // GEN_BEHV_MODULE:F
-// SMARTGEN_DIE:IT14X14M4LDP
+// SMARTGEN_DIE:M1IS8X8M2LDP
 // SMARTGEN_PACKAGE:fg484
 // AGENIII_IS_SUBPROJECT_LIBERO:T
 // FIN:48.000000
-// CLKASRC:0
+// CLKASRC:1
 // FBDLY:1
 // FBMUX:1
 // XDLYSEL:0

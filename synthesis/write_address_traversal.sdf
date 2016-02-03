@@ -1,0 +1,254 @@
+(DELAYFILE
+(SDFVERSION "OVI 2.1")
+(DESIGN "write_address_traversal")
+(DATE "123")
+(VENDOR "ProASIC3L")
+(PROGRAM "Synplify")
+(VERSION "mapact, Build 1522R")
+(DIVIDER /)
+(VOLTAGE 2.500000:2.500000:2.500000)
+(PROCESS "TYPICAL")
+(TEMPERATURE 70.000000:70.000000:70.000000)
+(TIMESCALE 1ns)
+(CELL
+  (CELLTYPE "write_address_traversal")
+  (INSTANCE)
+  (TIMINGCHECK
+
+    (PATHCONSTRAINT current_count\[0\]/CLK  current_count\[0\]/Q  current_count_c2/B  current_count_c2/Y  current_count_c4/B  current_count_c4/Y  current_count_c13_m6_0_a2/C  current_count_c13_m6_0_a2/Y  current_count_c15/B  current_count_c15/Y  current_count_c17/B  current_count_c17/Y  current_count_c19/B  current_count_c19/Y  current_count_c20/A  current_count_c20/Y  current_count_n22/B  current_count_n22/Y  current_count\[22\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[1\]/CLK  current_count\[1\]/Q  current_count_c2/A  current_count_c2/Y  current_count_c4/B  current_count_c4/Y  current_count_c13_m6_0_a2/C  current_count_c13_m6_0_a2/Y  current_count_c15/B  current_count_c15/Y  current_count_c17/B  current_count_c17/Y  current_count_c19/B  current_count_c19/Y  current_count_c20/A  current_count_c20/Y  current_count_n22/B  current_count_n22/Y  current_count\[22\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[2\]/CLK  current_count\[2\]/Q  current_count_c2/C  current_count_c2/Y  current_count_c4/B  current_count_c4/Y  current_count_c13_m6_0_a2/C  current_count_c13_m6_0_a2/Y  current_count_c15/B  current_count_c15/Y  current_count_c17/B  current_count_c17/Y  current_count_c19/B  current_count_c19/Y  current_count_c20/A  current_count_c20/Y  current_count_n22/B  current_count_n22/Y  current_count\[22\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[0\]/CLK  current_count\[0\]/Q  current_count_c2/B  current_count_c2/Y  current_count_c4/B  current_count_c4/Y  current_count_c13_m6_0_a2/C  current_count_c13_m6_0_a2/Y  current_count_c15/B  current_count_c15/Y  current_count_c17/B  current_count_c17/Y  current_count_c19/B  current_count_c19/Y  current_count_c20/A  current_count_c20/Y  current_count_n21/A  current_count_n21/Y  current_count\[21\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[8\]/CLK  current_count\[8\]/Q  current_count_c13_m6_0_a2_2/B  current_count_c13_m6_0_a2_2/Y  current_count_c13_m6_0_a2_5/C  current_count_c13_m6_0_a2_5/Y  current_count_c13_m6_0_a2/B  current_count_c13_m6_0_a2/Y  current_count_c15/B  current_count_c15/Y  current_count_c17/B  current_count_c17/Y  current_count_c19/B  current_count_c19/Y  current_count_c20/A  current_count_c20/Y  current_count_n22/B  current_count_n22/Y  current_count\[22\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[5\]/CLK  current_count\[5\]/Q  current_count_c13_m6_0_a2_4/C  current_count_c13_m6_0_a2_4/Y  current_count_c13_m6_0_a2_6/C  current_count_c13_m6_0_a2_6/Y  current_count_c13_m6_0_a2/A  current_count_c13_m6_0_a2/Y  current_count_c15/B  current_count_c15/Y  current_count_c17/B  current_count_c17/Y  current_count_c19/B  current_count_c19/Y  current_count_c20/A  current_count_c20/Y  current_count_n22/B  current_count_n22/Y  current_count\[22\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[10\]/CLK  current_count\[10\]/Q  current_count_c13_m6_0_a2_2/A  current_count_c13_m6_0_a2_2/Y  current_count_c13_m6_0_a2_5/C  current_count_c13_m6_0_a2_5/Y  current_count_c13_m6_0_a2/B  current_count_c13_m6_0_a2/Y  current_count_c15/B  current_count_c15/Y  current_count_c17/B  current_count_c17/Y  current_count_c19/B  current_count_c19/Y  current_count_c20/A  current_count_c20/Y  current_count_n22/B  current_count_n22/Y  current_count\[22\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[0\]/CLK  current_count\[0\]/Q  current_count_c2/B  current_count_c2/Y  current_count_c4/B  current_count_c4/Y  current_count_c13_m6_0_a2/C  current_count_c13_m6_0_a2/Y  current_count_c15/B  current_count_c15/Y  current_count_c17/B  current_count_c17/Y  current_count_c19/B  current_count_c19/Y  current_count_n20/A  current_count_n20/Y  current_count\[20\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[9\]/CLK  current_count\[9\]/Q  current_count_c13_m6_0_a2_4/A  current_count_c13_m6_0_a2_4/Y  current_count_c13_m6_0_a2_6/C  current_count_c13_m6_0_a2_6/Y  current_count_c13_m6_0_a2/A  current_count_c13_m6_0_a2/Y  current_count_c15/B  current_count_c15/Y  current_count_c17/B  current_count_c17/Y  current_count_c19/B  current_count_c19/Y  current_count_c20/A  current_count_c20/Y  current_count_n22/B  current_count_n22/Y  current_count\[22\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[3\]/CLK  current_count\[3\]/Q  current_count_c4/A  current_count_c4/Y  current_count_c13_m6_0_a2/C  current_count_c13_m6_0_a2/Y  current_count_c15/B  current_count_c15/Y  current_count_c17/B  current_count_c17/Y  current_count_c19/B  current_count_c19/Y  current_count_c20/A  current_count_c20/Y  current_count_n22/B  current_count_n22/Y  current_count\[22\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[13\]/CLK  current_count\[13\]/Q  current_count_c13_m6_0_a2_4/B  current_count_c13_m6_0_a2_4/Y  current_count_c13_m6_0_a2_6/C  current_count_c13_m6_0_a2_6/Y  current_count_c13_m6_0_a2/A  current_count_c13_m6_0_a2/Y  current_count_c15/B  current_count_c15/Y  current_count_c17/B  current_count_c17/Y  current_count_c19/B  current_count_c19/Y  current_count_c20/A  current_count_c20/Y  current_count_n22/B  current_count_n22/Y  current_count\[22\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[0\]/CLK  current_count\[0\]/Q  current_count_c2/B  current_count_c2/Y  current_count_c4/B  current_count_c4/Y  current_count_c6/B  current_count_c6/Y  current_count_c8/B  current_count_c8/Y  current_count_c10/B  current_count_c10/Y  current_count_c11/A  current_count_c11/Y  current_count_n13/B  current_count_n13/Y  current_count\[13\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[4\]/CLK  current_count\[4\]/Q  current_count_c4/C  current_count_c4/Y  current_count_c13_m6_0_a2/C  current_count_c13_m6_0_a2/Y  current_count_c15/B  current_count_c15/Y  current_count_c17/B  current_count_c17/Y  current_count_c19/B  current_count_c19/Y  current_count_c20/A  current_count_c20/Y  current_count_n22/B  current_count_n22/Y  current_count\[22\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[0\]/CLK  current_count\[0\]/Q  current_count_c2/B  current_count_c2/Y  current_count_c4/B  current_count_c4/Y  current_count_c13_m6_0_a2/C  current_count_c13_m6_0_a2/Y  current_count_c15/B  current_count_c15/Y  current_count_c17/B  current_count_c17/Y  current_count_n19/B  current_count_n19/Y  current_count\[19\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[12\]/CLK  current_count\[12\]/Q  current_count_c13_m6_0_a2_5/B  current_count_c13_m6_0_a2_5/Y  current_count_c13_m6_0_a2/B  current_count_c13_m6_0_a2/Y  current_count_c15/B  current_count_c15/Y  current_count_c17/B  current_count_c17/Y  current_count_c19/B  current_count_c19/Y  current_count_c20/A  current_count_c20/Y  current_count_n22/B  current_count_n22/Y  current_count\[22\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[0\]/CLK  current_count\[0\]/Q  current_count_c2/B  current_count_c2/Y  current_count_c4/B  current_count_c4/Y  current_count_c6/B  current_count_c6/Y  current_count_c8/B  current_count_c8/Y  current_count_c10/B  current_count_c10/Y  current_count_c11/A  current_count_c11/Y  current_count_n12/A  current_count_n12/Y  current_count\[12\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[7\]/CLK  current_count\[7\]/Q  current_count_c13_m6_0_a2_6/B  current_count_c13_m6_0_a2_6/Y  current_count_c13_m6_0_a2/A  current_count_c13_m6_0_a2/Y  current_count_c15/B  current_count_c15/Y  current_count_c17/B  current_count_c17/Y  current_count_c19/B  current_count_c19/Y  current_count_c20/A  current_count_c20/Y  current_count_n22/B  current_count_n22/Y  current_count\[22\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[11\]/CLK  current_count\[11\]/Q  current_count_c13_m6_0_a2_5/A  current_count_c13_m6_0_a2_5/Y  current_count_c13_m6_0_a2/B  current_count_c13_m6_0_a2/Y  current_count_c15/B  current_count_c15/Y  current_count_c17/B  current_count_c17/Y  current_count_c19/B  current_count_c19/Y  current_count_c20/A  current_count_c20/Y  current_count_n22/B  current_count_n22/Y  current_count\[22\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[0\]/CLK  current_count\[0\]/Q  current_count_c2/B  current_count_c2/Y  current_count_c4/B  current_count_c4/Y  current_count_c13_m6_0_a2/C  current_count_c13_m6_0_a2/Y  current_count_c15/B  current_count_c15/Y  current_count_c17/B  current_count_c17/Y  current_count_n18/A  current_count_n18/Y  current_count\[18\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[6\]/CLK  current_count\[6\]/Q  current_count_c13_m6_0_a2_6/A  current_count_c13_m6_0_a2_6/Y  current_count_c13_m6_0_a2/A  current_count_c13_m6_0_a2/Y  current_count_c15/B  current_count_c15/Y  current_count_c17/B  current_count_c17/Y  current_count_c19/B  current_count_c19/Y  current_count_c20/A  current_count_c20/Y  current_count_n22/B  current_count_n22/Y  current_count\[22\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[0\]/CLK  current_count\[0\]/Q  current_count_c2/B  current_count_c2/Y  current_count_c4/B  current_count_c4/Y  current_count_c6/B  current_count_c6/Y  current_count_c8/B  current_count_c8/Y  current_count_c10/B  current_count_c10/Y  current_count_n11/A  current_count_n11/Y  current_count\[11\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[0\]/CLK  current_count\[0\]/Q  current_count_c2/B  current_count_c2/Y  current_count_c4/B  current_count_c4/Y  current_count_c13_m6_0_a2/C  current_count_c13_m6_0_a2/Y  current_count_c15/B  current_count_c15/Y  current_count_n17/B  current_count_n17/Y  current_count\[17\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[0\]/CLK  current_count\[0\]/Q  current_count_c2/B  current_count_c2/Y  current_count_c4/B  current_count_c4/Y  current_count_c6/B  current_count_c6/Y  current_count_c8/B  current_count_c8/Y  current_count_n10/B  current_count_n10/Y  current_count\[10\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[0\]/CLK  current_count\[0\]/Q  current_count_c2/B  current_count_c2/Y  current_count_c4/B  current_count_c4/Y  current_count_c13_m6_0_a2/C  current_count_c13_m6_0_a2/Y  current_count_n23_m5_0_a2/B  current_count_n23_m5_0_a2/Y  current_count_n23_m6/B  current_count_n23_m6/Y  current_count\[23\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[0\]/CLK  current_count\[0\]/Q  current_count_c2/B  current_count_c2/Y  current_count_c4/B  current_count_c4/Y  current_count_c13_m6_0_a2/C  current_count_c13_m6_0_a2/Y  current_count_c15/B  current_count_c15/Y  current_count_n16/A  current_count_n16/Y  current_count\[16\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[0\]/CLK  current_count\[0\]/Q  current_count_c2/B  current_count_c2/Y  current_count_c4/B  current_count_c4/Y  current_count_c6/B  current_count_c6/Y  current_count_c8/B  current_count_c8/Y  current_count_n9/A  current_count_n9/Y  current_count\[9\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[0\]/CLK  current_count\[0\]/Q  current_count_c2/B  current_count_c2/Y  current_count_c4/B  current_count_c4/Y  current_count_c13_m6_0_a2/C  current_count_c13_m6_0_a2/Y  current_count_n15/B  current_count_n15/Y  current_count\[15\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[15\]/CLK  current_count\[15\]/Q  current_count_c15/C  current_count_c15/Y  current_count_c17/B  current_count_c17/Y  current_count_c19/B  current_count_c19/Y  current_count_c20/A  current_count_c20/Y  current_count_n22/B  current_count_n22/Y  current_count\[22\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[6\]/CLK  current_count\[6\]/Q  current_count_c6/C  current_count_c6/Y  current_count_c8/B  current_count_c8/Y  current_count_c10/B  current_count_c10/Y  current_count_c11/A  current_count_c11/Y  current_count_n13/B  current_count_n13/Y  current_count\[13\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[14\]/CLK  current_count\[14\]/Q  current_count_c15/A  current_count_c15/Y  current_count_c17/B  current_count_c17/Y  current_count_c19/B  current_count_c19/Y  current_count_c20/A  current_count_c20/Y  current_count_n22/B  current_count_n22/Y  current_count\[22\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[5\]/CLK  current_count\[5\]/Q  current_count_c6/A  current_count_c6/Y  current_count_c8/B  current_count_c8/Y  current_count_c10/B  current_count_c10/Y  current_count_c11/A  current_count_c11/Y  current_count_n13/B  current_count_n13/Y  current_count\[13\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[0\]/CLK  current_count\[0\]/Q  current_count_c2/B  current_count_c2/Y  current_count_c4/B  current_count_c4/Y  current_count_c6/B  current_count_c6/Y  current_count_n8/B  current_count_n8/Y  current_count\[8\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[0\]/CLK  current_count\[0\]/Q  current_count_c2/B  current_count_c2/Y  current_count_c4/B  current_count_c4/Y  current_count_c13_m6_0_a2/C  current_count_c13_m6_0_a2/Y  current_count_n14/A  current_count_n14/Y  current_count\[14\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[19\]/CLK  current_count\[19\]/Q  current_count_n23_m5_0_a2_3/B  current_count_n23_m5_0_a2_3/Y  current_count_n23_m5_0_a2_5/C  current_count_n23_m5_0_a2_5/Y  current_count_n23_m5_0_a2_6/C  current_count_n23_m5_0_a2_6/Y  current_count_n23_m5_0_a2/C  current_count_n23_m5_0_a2/Y  current_count_n23_m6/B  current_count_n23_m6/Y  current_count\[23\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[0\]/CLK  current_count\[0\]/Q  current_count_c2/B  current_count_c2/Y  current_count_c4/B  current_count_c4/Y  current_count_c6/B  current_count_c6/Y  current_count_n7/A  current_count_n7/Y  current_count\[7\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[20\]/CLK  current_count\[20\]/Q  current_count_n23_m5_0_a2_3/A  current_count_n23_m5_0_a2_3/Y  current_count_n23_m5_0_a2_5/C  current_count_n23_m5_0_a2_5/Y  current_count_n23_m5_0_a2_6/C  current_count_n23_m5_0_a2_6/Y  current_count_n23_m5_0_a2/C  current_count_n23_m5_0_a2/Y  current_count_n23_m6/B  current_count_n23_m6/Y  current_count\[23\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[17\]/CLK  current_count\[17\]/Q  current_count_c17/C  current_count_c17/Y  current_count_c19/B  current_count_c19/Y  current_count_c20/A  current_count_c20/Y  current_count_n22/B  current_count_n22/Y  current_count\[22\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[8\]/CLK  current_count\[8\]/Q  current_count_c8/C  current_count_c8/Y  current_count_c10/B  current_count_c10/Y  current_count_c11/A  current_count_c11/Y  current_count_n13/B  current_count_n13/Y  current_count\[13\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[16\]/CLK  current_count\[16\]/Q  current_count_c17/A  current_count_c17/Y  current_count_c19/B  current_count_c19/Y  current_count_c20/A  current_count_c20/Y  current_count_n22/B  current_count_n22/Y  current_count\[22\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[7\]/CLK  current_count\[7\]/Q  current_count_c8/A  current_count_c8/Y  current_count_c10/B  current_count_c10/Y  current_count_c11/A  current_count_c11/Y  current_count_n13/B  current_count_n13/Y  current_count\[13\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[0\]/CLK  current_count\[0\]/Q  current_count_c2/B  current_count_c2/Y  current_count_c4/B  current_count_c4/Y  current_count_n6/B  current_count_n6/Y  current_count\[6\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[18\]/CLK  current_count\[18\]/Q  current_count_n23_m5_0_a2_0/B  current_count_n23_m5_0_a2_0/Y  current_count_n23_m5_0_a2_6/B  current_count_n23_m5_0_a2_6/Y  current_count_n23_m5_0_a2/C  current_count_n23_m5_0_a2/Y  current_count_n23_m6/B  current_count_n23_m6/Y  current_count\[23\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[15\]/CLK  current_count\[15\]/Q  current_count_n23_m5_0_a2_5/B  current_count_n23_m5_0_a2_5/Y  current_count_n23_m5_0_a2_6/C  current_count_n23_m5_0_a2_6/Y  current_count_n23_m5_0_a2/C  current_count_n23_m5_0_a2/Y  current_count_n23_m6/B  current_count_n23_m6/Y  current_count\[23\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[16\]/CLK  current_count\[16\]/Q  current_count_n23_m5_0_a2_1/B  current_count_n23_m5_0_a2_1/Y  current_count_n23_m5_0_a2_6/A  current_count_n23_m5_0_a2_6/Y  current_count_n23_m5_0_a2/C  current_count_n23_m5_0_a2/Y  current_count_n23_m6/B  current_count_n23_m6/Y  current_count\[23\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[21\]/CLK  current_count\[21\]/Q  current_count_n23_m5_0_a2_5/A  current_count_n23_m5_0_a2_5/Y  current_count_n23_m5_0_a2_6/C  current_count_n23_m5_0_a2_6/Y  current_count_n23_m5_0_a2/C  current_count_n23_m5_0_a2/Y  current_count_n23_m6/B  current_count_n23_m6/Y  current_count\[23\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[17\]/CLK  current_count\[17\]/Q  current_count_n23_m5_0_a2_1/A  current_count_n23_m5_0_a2_1/Y  current_count_n23_m5_0_a2_6/A  current_count_n23_m5_0_a2_6/Y  current_count_n23_m5_0_a2/C  current_count_n23_m5_0_a2/Y  current_count_n23_m6/B  current_count_n23_m6/Y  current_count\[23\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[0\]/CLK  current_count\[0\]/Q  current_count_c2/B  current_count_c2/Y  current_count_c4/B  current_count_c4/Y  current_count_n5/A  current_count_n5/Y  current_count\[5\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[22\]/CLK  current_count\[22\]/Q  current_count_n23_m5_0_a2_0/A  current_count_n23_m5_0_a2_0/Y  current_count_n23_m5_0_a2_6/B  current_count_n23_m5_0_a2_6/Y  current_count_n23_m5_0_a2/C  current_count_n23_m5_0_a2/Y  current_count_n23_m6/B  current_count_n23_m6/Y  current_count\[23\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[10\]/CLK  current_count\[10\]/Q  current_count_c10/C  current_count_c10/Y  current_count_c11/A  current_count_c11/Y  current_count_n13/B  current_count_n13/Y  current_count\[13\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[19\]/CLK  current_count\[19\]/Q  current_count_c19/C  current_count_c19/Y  current_count_c20/A  current_count_c20/Y  current_count_n22/B  current_count_n22/Y  current_count\[22\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[18\]/CLK  current_count\[18\]/Q  current_count_c19/A  current_count_c19/Y  current_count_c20/A  current_count_c20/Y  current_count_n22/B  current_count_n22/Y  current_count\[22\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[9\]/CLK  current_count\[9\]/Q  current_count_c10/A  current_count_c10/Y  current_count_c11/A  current_count_c11/Y  current_count_n13/B  current_count_n13/Y  current_count\[13\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[0\]/CLK  current_count\[0\]/Q  current_count_c2/B  current_count_c2/Y  current_count_n4/B  current_count_n4/Y  current_count\[4\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[11\]/CLK  current_count\[11\]/Q  current_count_c11/B  current_count_c11/Y  current_count_n13/B  current_count_n13/Y  current_count\[13\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[20\]/CLK  current_count\[20\]/Q  current_count_c20/B  current_count_c20/Y  current_count_n22/B  current_count_n22/Y  current_count\[22\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[0\]/CLK  current_count\[0\]/Q  current_count_c2/B  current_count_c2/Y  current_count_n3/A  current_count_n3/Y  current_count\[3\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[14\]/CLK  current_count\[14\]/Q  current_count_n23_m5_0_a2/A  current_count_n23_m5_0_a2/Y  current_count_n23_m6/B  current_count_n23_m6/Y  current_count\[23\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[0\]/CLK  current_count\[0\]/Q  current_count_n2/B  current_count_n2/Y  current_count\[2\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[5\]/CLK  current_count\[5\]/Q  current_count_n6/A  current_count_n6/Y  current_count\[6\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[7\]/CLK  current_count\[7\]/Q  current_count_n8/A  current_count_n8/Y  current_count\[8\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[14\]/CLK  current_count\[14\]/Q  current_count_n15/A  current_count_n15/Y  current_count\[15\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[16\]/CLK  current_count\[16\]/Q  current_count_n17/A  current_count_n17/Y  current_count\[17\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[18\]/CLK  current_count\[18\]/Q  current_count_n19/A  current_count_n19/Y  current_count\[19\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[5\]/CLK  current_count\[5\]/Q  current_count_n5/B  current_count_n5/Y  current_count\[5\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[7\]/CLK  current_count\[7\]/Q  current_count_n7/B  current_count_n7/Y  current_count\[7\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[14\]/CLK  current_count\[14\]/Q  current_count_n14/B  current_count_n14/Y  current_count\[14\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[16\]/CLK  current_count\[16\]/Q  current_count_n16/B  current_count_n16/Y  current_count\[16\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[18\]/CLK  current_count\[18\]/Q  current_count_n18/B  current_count_n18/Y  current_count\[18\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[1\]/CLK  current_count\[1\]/Q  current_count_n2/A  current_count_n2/Y  current_count\[2\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[3\]/CLK  current_count\[3\]/Q  current_count_n4/A  current_count_n4/Y  current_count\[4\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[12\]/CLK  current_count\[12\]/Q  current_count_n13/A  current_count_n13/Y  current_count\[13\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[21\]/CLK  current_count\[21\]/Q  current_count_n22/A  current_count_n22/Y  current_count\[22\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[1\]/CLK  current_count\[1\]/Q  current_count_n1/B  current_count_n1/Y  current_count\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[3\]/CLK  current_count\[3\]/Q  current_count_n3/B  current_count_n3/Y  current_count\[3\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[12\]/CLK  current_count\[12\]/Q  current_count_n12/B  current_count_n12/Y  current_count\[12\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[11\]/CLK  current_count\[11\]/Q  current_count_n11/B  current_count_n11/Y  current_count\[11\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[20\]/CLK  current_count\[20\]/Q  current_count_n20/B  current_count_n20/Y  current_count\[20\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[21\]/CLK  current_count\[21\]/Q  current_count_n21/B  current_count_n21/Y  current_count\[21\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[9\]/CLK  current_count\[9\]/Q  current_count_n10/A  current_count_n10/Y  current_count\[10\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[9\]/CLK  current_count\[9\]/Q  current_count_n9/B  current_count_n9/Y  current_count\[9\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[0\]/CLK  current_count\[0\]/Q  current_count_RNO\[0\]/A  current_count_RNO\[0\]/Y  current_count\[0\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[0\]/CLK  current_count\[0\]/Q  current_count_n1/A  current_count_n1/Y  current_count\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[8\]/CLK  current_count\[8\]/Q  current_count_n8/C  current_count_n8/Y  current_count\[8\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[10\]/CLK  current_count\[10\]/Q  current_count_n10/C  current_count_n10/Y  current_count\[10\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[6\]/CLK  current_count\[6\]/Q  current_count_n6/C  current_count_n6/Y  current_count\[6\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[15\]/CLK  current_count\[15\]/Q  current_count_n15/C  current_count_n15/Y  current_count\[15\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[19\]/CLK  current_count\[19\]/Q  current_count_n19/C  current_count_n19/Y  current_count\[19\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[17\]/CLK  current_count\[17\]/Q  current_count_n17/C  current_count_n17/Y  current_count\[17\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[2\]/CLK  current_count\[2\]/Q  current_count_n2/C  current_count_n2/Y  current_count\[2\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[13\]/CLK  current_count\[13\]/Q  current_count_n13/C  current_count_n13/Y  current_count\[13\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[4\]/CLK  current_count\[4\]/Q  current_count_n4/C  current_count_n4/Y  current_count\[4\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[22\]/CLK  current_count\[22\]/Q  current_count_n22/C  current_count_n22/Y  current_count\[22\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[23\]/CLK  current_count\[23\]/Q  current_count_n23_m6/A  current_count_n23_m6/Y  current_count\[23\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT current_count\[0\]/CLK  current_count\[0\]/Q  ROW_WRITE_OUT_pad\[0\]/D  ROW_WRITE_OUT_pad\[0\]/PAD  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT current_count\[5\]/CLK  current_count\[5\]/Q  ROW_WRITE_OUT_pad\[5\]/D  ROW_WRITE_OUT_pad\[5\]/PAD  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT current_count\[7\]/CLK  current_count\[7\]/Q  ROW_WRITE_OUT_pad\[7\]/D  ROW_WRITE_OUT_pad\[7\]/PAD  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT current_count\[14\]/CLK  current_count\[14\]/Q  COL_WRITE_OUT_pad\[1\]/D  COL_WRITE_OUT_pad\[1\]/PAD  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT current_count\[16\]/CLK  current_count\[16\]/Q  COL_WRITE_OUT_pad\[3\]/D  COL_WRITE_OUT_pad\[3\]/PAD  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT current_count\[18\]/CLK  current_count\[18\]/Q  COL_WRITE_OUT_pad\[5\]/D  COL_WRITE_OUT_pad\[5\]/PAD  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT current_count\[1\]/CLK  current_count\[1\]/Q  ROW_WRITE_OUT_pad\[1\]/D  ROW_WRITE_OUT_pad\[1\]/PAD  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT current_count\[8\]/CLK  current_count\[8\]/Q  ROW_WRITE_OUT_pad\[8\]/D  ROW_WRITE_OUT_pad\[8\]/PAD  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT current_count\[10\]/CLK  current_count\[10\]/Q  ROW_WRITE_OUT_pad\[10\]/D  ROW_WRITE_OUT_pad\[10\]/PAD  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT current_count\[3\]/CLK  current_count\[3\]/Q  ROW_WRITE_OUT_pad\[3\]/D  ROW_WRITE_OUT_pad\[3\]/PAD  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT current_count\[12\]/CLK  current_count\[12\]/Q  ROW_WRITE_OUT_pad\[12\]/D  ROW_WRITE_OUT_pad\[12\]/PAD  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT current_count\[11\]/CLK  current_count\[11\]/Q  ROW_WRITE_OUT_pad\[11\]/D  ROW_WRITE_OUT_pad\[11\]/PAD  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT current_count\[6\]/CLK  current_count\[6\]/Q  ROW_WRITE_OUT_pad\[6\]/D  ROW_WRITE_OUT_pad\[6\]/PAD  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT current_count\[15\]/CLK  current_count\[15\]/Q  COL_WRITE_OUT_pad\[2\]/D  COL_WRITE_OUT_pad\[2\]/PAD  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT current_count\[19\]/CLK  current_count\[19\]/Q  COL_WRITE_OUT_pad\[6\]/D  COL_WRITE_OUT_pad\[6\]/PAD  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT current_count\[20\]/CLK  current_count\[20\]/Q  COL_WRITE_OUT_pad\[7\]/D  COL_WRITE_OUT_pad\[7\]/PAD  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT current_count\[17\]/CLK  current_count\[17\]/Q  COL_WRITE_OUT_pad\[4\]/D  COL_WRITE_OUT_pad\[4\]/PAD  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT current_count\[21\]/CLK  current_count\[21\]/Q  COL_WRITE_OUT_pad\[8\]/D  COL_WRITE_OUT_pad\[8\]/PAD  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT current_count\[9\]/CLK  current_count\[9\]/Q  ROW_WRITE_OUT_pad\[9\]/D  ROW_WRITE_OUT_pad\[9\]/PAD  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT current_count\[2\]/CLK  current_count\[2\]/Q  ROW_WRITE_OUT_pad\[2\]/D  ROW_WRITE_OUT_pad\[2\]/PAD  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT current_count\[13\]/CLK  current_count\[13\]/Q  COL_WRITE_OUT_pad\[0\]/D  COL_WRITE_OUT_pad\[0\]/PAD  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT current_count\[4\]/CLK  current_count\[4\]/Q  ROW_WRITE_OUT_pad\[4\]/D  ROW_WRITE_OUT_pad\[4\]/PAD  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT current_count\[22\]/CLK  current_count\[22\]/Q  BA_WRITE_OUT_pad\[0\]/D  BA_WRITE_OUT_pad\[0\]/PAD  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT current_count\[23\]/CLK  current_count\[23\]/Q  BA_WRITE_OUT_pad\[1\]/D  BA_WRITE_OUT_pad\[1\]/PAD  	(10.0:10.0:10.0) )
+
+  )
+)
+)

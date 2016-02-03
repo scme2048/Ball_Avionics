@@ -1,0 +1,61 @@
+
+
+@S |##### START OF TIMING REPORT #####[
+# Timing Report written on Tue Feb 02 21:32:44 2016
+#
+
+
+Top view:               spi_test
+Operating conditions:   pa3l.COMWC-1
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Wire load model:        pa3l
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: NA
+
+                                                Requested     Estimated     Requested     Estimated               Clock        Clock              
+Starting Clock                                  Frequency     Frequency     Period        Period        Slack     Type         Group              
+--------------------------------------------------------------------------------------------------------------------------------------------------
+CLK_26MHZ|GLA_inferred_clock                    100.0 MHz     133.5 MHz     10.000        7.491         2.509     inferred     Inferred_clkgroup_2
+clock_div_1MHZ_1KHZ|clk_out_inferred_clock      100.0 MHz     153.1 MHz     10.000        6.532         3.468     inferred     Inferred_clkgroup_0
+clock_div_26MHZ_1MHZ|clk_out_inferred_clock     100.0 MHz     133.8 MHz     10.000        7.473         2.527     inferred     Inferred_clkgroup_1
+==================================================================================================================================================
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                                    |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                     Ending                                       |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+clock_div_1MHZ_1KHZ|clk_out_inferred_clock   clock_div_1MHZ_1KHZ|clk_out_inferred_clock   |  0.000       False  |  No paths    -      |  No paths    -      |  No paths    -    
+clock_div_1MHZ_1KHZ|clk_out_inferred_clock   CLK_26MHZ|GLA_inferred_clock                 |  Diff grp    -      |  No paths    -      |  No paths    -      |  No paths    -    
+clock_div_26MHZ_1MHZ|clk_out_inferred_clock  clock_div_26MHZ_1MHZ|clk_out_inferred_clock  |  0.000       False  |  No paths    -      |  No paths    -      |  No paths    -    
+CLK_26MHZ|GLA_inferred_clock                 CLK_26MHZ|GLA_inferred_clock                 |  0.000       False  |  No paths    -      |  No paths    -      |  No paths    -    
+================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+##### END OF TIMING REPORT #####]
+

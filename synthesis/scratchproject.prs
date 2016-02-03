@@ -1,0 +1,71 @@
+#--  Synopsys, Inc.
+#--  Version J-2015.03M-3
+#--  Project file C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\scratchproject.prs
+
+#project files
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/smartgen/CLK_26MHZ/CLK_26MHZ.v"
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/clock_div_1MHZ_1KHZ.v"
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/clock_div_26MHZ_1MHZ.v"
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/SPI_Master.v"
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/test_constants_spi.v"
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/component/work/spi_test/spi_test.v"
+
+
+
+#implementation: "synthesis"
+impl -add C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis -type fpga
+
+#
+#implementation attributes
+
+set_option -vlog_std v2001
+
+#device options
+set_option -technology ProASIC3L
+set_option -part M1A3P1000L
+set_option -package FBGA484
+set_option -speed_grade STD
+set_option -part_companion ""
+
+#compilation/mapping options
+set_option -use_fsm_explorer 0
+set_option -top_module "spi_test"
+
+# mapper_options
+set_option -frequency 100.000
+set_option -write_verilog 0
+set_option -write_vhdl 0
+set_option -srs_instrumentation 1
+
+# actel_options
+set_option -rw_check_on_ram 0
+
+# Microsemi 500K
+set_option -run_prop_extract 1
+set_option -maxfan 24
+set_option -disable_io_insertion 0
+set_option -retiming 0
+set_option -report_path 4000
+set_option -opcond COMWC
+set_option -update_models_cp 0
+set_option -preserve_registers 0
+
+# Microsemi 500K
+set_option -globalthreshold 5000
+
+# sequential_optimization_options
+set_option -symbolic_fsm_compiler 1
+
+# Compiler Options
+set_option -compiler_compatible 0
+set_option -resource_sharing 1
+
+# Compiler Options
+set_option -auto_infer_blackbox 0
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+
+#set result format/file last
+project -result_file "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/synthesis/spi_test.edn"
+impl -active "synthesis"

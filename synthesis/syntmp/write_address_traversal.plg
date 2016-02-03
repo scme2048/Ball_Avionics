@@ -1,0 +1,15 @@
+@P:  Worst Slack : -2.148
+@P:  write_address_traversal|NEXT - Estimated Frequency : 82.3 MHz
+@P:  write_address_traversal|NEXT - Requested Frequency : 100.0 MHz
+@P:  write_address_traversal|NEXT - Estimated Period : 12.149
+@P:  write_address_traversal|NEXT - Requested Period : 10.000
+@P:  write_address_traversal|NEXT - Slack : -2.148
+@P:  Worst Slack(min analysis) : NA
+@P:  write_address_traversal|NEXT - Estimated Frequency(min analysis) : 82.3 MHz
+@P:  write_address_traversal|NEXT - Requested Frequency(min analysis) : 100.0 MHz
+@P:  write_address_traversal|NEXT - Estimated Period(min analysis) : 12.149
+@P:  write_address_traversal|NEXT - Requested Period(min analysis) : 10.000
+@P:  write_address_traversal|NEXT - Slack(min analysis) : -2.148
+@P:  Total Area : 69.0
+@P:  Total Area : 69.0
+@P:  CPU Time : 0h:00m:00s

@@ -1,0 +1,23 @@
+*****************************************************************
+Pin Report - Date: Tue Feb 02 21:47:09 2016 Pinchecksum: NOT-AVAILABLE
+Product: Designer
+Release: v11.6
+Version: 11.6.0.34
+Design Name: spi_test
+Family: ProASIC3L
+Die: M1A3P1000L
+Package: 484 FBGA
+*****************************************************************
+
+-----------------------------------------------------------------
+Flash*Freeze information
+        Pin name  : W6
+        Pin usage : Available as a regular pin
+-----------------------------------------------------------------
+
+Port      |Pin |Fixed |Function       |I/O Std  |Output Drive (mA) |Slew |Resistor Pull |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
+----------|----|------|---------------|---------|------------------|-----|--------------|-----|-----------------|------------|--------------|
+BUSY       D5   Yes    GAA0/IO00RSB0   LVCMOS33  12                 High  None           No    5                 No           No
+CLK_48MHZ  E4   Yes    GAB2/IO224PDB3  LVCMOS33  ---                ---   None           ---   ---               No           No
+MOSI       D6   Yes    GAA1/IO01RSB0   LVCMOS33  12                 High  None           No    5                 No           No
+SCK        D10  Yes    IO28RSB0        LVCMOS33  12                 High  None           No    5                 No           No
