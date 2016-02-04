@@ -1,0 +1,43 @@
+FlashPro
+Version: 11.6.0.34
+Release: v11.6
+
+Software Version: 11.6.0.34
+creating folder:
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\designer\impl1\spi_te\
+st_fp
+Driver : 3.0.0 build 1
+programmer '98250' : FlashPro3
+Created new project
+'C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\designer\impl1\spi_t\
+est_fp\spi_test.pro'
+PDB file
+'C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\designer\impl1\spi_t\
+est.pdb' has been loaded successfully.
+DESIGN : spi_test;  CHECKSUM : FFAE;  PDB_VERSION : 1.9
+Checking for software updates...
+This software version is up to date.
+programmer '98250' : Scan Chain...
+Warning: programmer '98250' : Vpump has been selected on programmer AND an externally provided
+         Vpump has also been detected. Using externally provided Vpump voltage source.
+programmer '98250' : Scan Chain PASSED.
+programmer '98250' : Executing action PROGRAM
+programmer '98250' : EXPORT FSN[48] = 014eaf603098
+programmer '98250' : Data Authentication
+programmer '98250' : Erase ...
+programmer '98250' : Completed erase
+programmer '98250' : EXPORT CHECKSUM: [16] = ffae
+programmer '98250' : Programming FPGA Array
+programmer '98250' : Verifying FPGA Array
+programmer '98250' :             Verifying FPGA Array -- PASS
+programmer '98250' : Finished: Wed Feb 03 17:58:56 2016 (Elapsed time 00:01:57)
+programmer '98250' : Executing action PROGRAM PASSED.
+
+                        o - o - o - o - o - o
+
+Warning: Project 'spi_test' has been modified. Do you want to save it? [YES]
+creating folder:
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\designer\impl1\spi_te\
+st_fp\projectData
+Project saved.
+Project closed.

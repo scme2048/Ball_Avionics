@@ -36,32 +36,50 @@ VALUE="Impl1",NUM=1
 CURREV=1
 ENDLIST
 LIST FileManager
+VALUE "<project>\component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf,actgen_cxf"
+STATE="utd"
+TIME="1454471541"
+SIZE="437"
+ENDFILE
+VALUE "<project>\component\work\DESIGN_IO\DESIGN_IO.cxf,actgen_cxf"
+STATE="utd"
+TIME="1454471542"
+SIZE="413"
+ENDFILE
 VALUE "<project>\component\work\spi_test\spi_test.cxf,actgen_cxf"
 STATE="utd"
-TIME="1454473955"
-SIZE="2431"
-ENDFILE
-VALUE "<project>\component\work\spi_test\spi_test.v,hdl"
-STATE="utd"
-TIME="1454473954"
-SIZE="3851"
-PARENT="<project>\component\work\spi_test\spi_test.cxf"
-IS_READONLY="TRUE"
+TIME="1454549463"
+SIZE="2144"
 ENDFILE
 VALUE "<project>\designer\impl1\spi_test.adb,adb"
 STATE="utd"
-TIME="1454471582"
-SIZE="47104"
+TIME="1454474828"
+SIZE="142336"
 ENDFILE
 VALUE "<project>\designer\impl1\spi_test.ide_des,ide_des"
 STATE="utd"
-TIME="1454471528"
-SIZE="233"
+TIME="1454474828"
+SIZE="1048"
+ENDFILE
+VALUE "<project>\designer\impl1\spi_test.pdb,pdb"
+STATE="utd"
+TIME="1454547337"
+SIZE="327726"
 ENDFILE
 VALUE "<project>\designer\impl1\spi_test_compile_log.rpt,log"
 STATE="utd"
 TIME="1454473979"
 SIZE="9436"
+ENDFILE
+VALUE "<project>\designer\impl1\spi_test_fp\projectData\spi_test.pdb,pdb"
+STATE="utd"
+TIME="1454548182"
+SIZE="1506554"
+ENDFILE
+VALUE "<project>\designer\impl1\spi_test_fp\spi_test.pro,pro"
+STATE="utd"
+TIME="1454547400"
+SIZE="2291"
 ENDFILE
 VALUE "<project>\designer\impl1\write_address_traversal.adb,adb"
 STATE="utd"
@@ -70,8 +88,8 @@ SIZE="65536"
 ENDFILE
 VALUE "<project>\designer\impl1\write_address_traversal.ide_des,ide_des"
 STATE="utd"
-TIME="1454466932"
-SIZE="248"
+TIME="1454469669"
+SIZE="1097"
 ENDFILE
 VALUE "<project>\designer\impl1\write_address_traversal_compile_log.rpt,log"
 STATE="utd"
@@ -185,13 +203,13 @@ SIZE="2012"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1454396860"
-SIZE="724"
+TIME="1454473858"
+SIZE="1009"
 ENDFILE
 VALUE "<project>\simulation\spi_master_tb3_presynth_simulation.log,log"
 STATE="utd"
-TIME="1454467816"
-SIZE="1876"
+TIME="1454468296"
+SIZE="2028"
 ENDFILE
 VALUE "<project>\simulation\tb_geig_data_handling_presynth_simulation.log,log"
 STATE="utd"
@@ -376,23 +394,23 @@ SIZE="2063"
 ENDFILE
 VALUE "<project>\synthesis\spi_test.edn,syn_edn"
 STATE="utd"
-TIME="1454471563"
-SIZE="98989"
+TIME="1454473964"
+SIZE="123665"
 ENDFILE
 VALUE "<project>\synthesis\spi_test.so,so"
 STATE="utd"
-TIME="1454471563"
+TIME="1454473964"
 SIZE="259"
 ENDFILE
 VALUE "<project>\synthesis\spi_test_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1454471563"
+TIME="1454473964"
 SIZE="310"
 ENDFILE
 VALUE "<project>\synthesis\spi_test_syn.prj,prj"
 STATE="utd"
-TIME="1454471563"
-SIZE="2222"
+TIME="1454473965"
+SIZE="2220"
 ENDFILE
 VALUE "<project>\synthesis\write_address_traversal.edn,syn_edn"
 STATE="utd"
@@ -419,7 +437,7 @@ LIST UsedFile
 ENDLIST
 LIST NewModulesInfo
 LIST "spi_test::work"
-FILE "<project>\component\work\spi_test\spi_test.v,hdl"
+FILE "<project>\component\work\spi_test\spi_test.cxf,actgen_cxf"
 LIST ProjectState5.1
 LIST Impl1
 LiberoState=Post_Layout
@@ -432,10 +450,6 @@ ENDLIST
 Used_File_List
 ENDUsed_File_List
 ENDLIST
-ENDLIST
-LIST PinReports
-VALUE "<project>\designer\impl1\spi_test_report_pin_byname.txt,log"
-VALUE "<project>\designer\impl1\spi_test_report_pin_bynumber.txt,log"
 ENDLIST
 ENDLIST
 LIST "write_address_traversal::work"
@@ -522,8 +536,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin\synplify_pro.exe"
-PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
-BATCH=1
+PARAM=""
+BATCH=0
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -531,7 +545,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_v11.6\Model\win32acoem\modelsim.exe"
-PARAM=" -l tb_spi_test_presynth_simulation.log "
+PARAM=""
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -595,6 +609,7 @@ ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 SmartDesign;spi_test;0
+HDL;hdl\timestamp.v;0
 ACTIVEVIEW;spi_test
 ENDLIST
 LIST ModuleSubBlockList
@@ -614,7 +629,9 @@ LIST "clock_div_1MHZ_1KHZ::work","hdl\clock_div_1MHZ_1KHZ.v","FALSE","FALSE"
 ENDLIST
 LIST "clock_div_26MHZ_1MHZ::work","hdl\clock_div_26MHZ_1MHZ.v","FALSE","FALSE"
 ENDLIST
-LIST "dummy_state::work","","FALSE","FALSE"
+LIST "DESIGN_FIRMWARE::work","component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf","TRUE","FALSE"
+ENDLIST
+LIST "DESIGN_IO::work","component\work\DESIGN_IO\DESIGN_IO.cxf","TRUE","FALSE"
 ENDLIST
 LIST "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
 ENDLIST
@@ -634,7 +651,7 @@ LIST "sdram_interface::work","hdl\sdram_interface.v","FALSE","FALSE"
 ENDLIST
 LIST "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
 ENDLIST
-LIST "spi_test::work","component\work\spi_test\spi_test.v","TRUE","FALSE"
+LIST "spi_test::work","component\work\spi_test\spi_test.cxf","TRUE","FALSE"
 SUBBLOCK "CLK_26MHZ::work","smartgen\CLK_26MHZ\CLK_26MHZ.v","TRUE","FALSE"
 SUBBLOCK "clock_div_1MHZ_1KHZ::work","hdl\clock_div_1MHZ_1KHZ.v","FALSE","FALSE"
 SUBBLOCK "clock_div_26MHZ_1MHZ::work","hdl\clock_div_26MHZ_1MHZ.v","FALSE","FALSE"
@@ -650,6 +667,8 @@ ENDLIST
 LIST "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
 ENDLIST
 LIST "write_address_traversal::work","hdl\write_address_traversal.v","FALSE","FALSE"
+ENDLIST
+LIST "dummy_state::work","","FALSE","FALSE"
 ENDLIST
 LIST "dummy_test::work","stimulus\dummy_test.v","FALSE","TRUE"
 SUBBLOCK "dummy_state::work","","FALSE","FALSE"
@@ -670,7 +689,7 @@ LIST "tb_sdram_interface::work","stimulus\tb_sdram_interface.v","FALSE","TRUE"
 SUBBLOCK "sdram_interface::work","hdl\sdram_interface.v","FALSE","FALSE"
 ENDLIST
 LIST "tb_spi_test::work","stimulus\tb_spi_test.v","FALSE","TRUE"
-SUBBLOCK "spi_test::work","component\work\spi_test\spi_test.v","TRUE","FALSE"
+SUBBLOCK "spi_test::work","component\work\spi_test\spi_test.cxf","TRUE","FALSE"
 ENDLIST
 LIST "tb_test_harness_geig::work","stimulus\tb_test_harness_geig.v","FALSE","TRUE"
 SUBBLOCK "test_harness_geiger_stack::work","hdl\test_harness_geiger_stack.v","FALSE","FALSE"
