@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Thu Feb 04 11:59:00 2016
+// Created by SmartDesign Thu Feb 04 23:33:58 2016
 // Version: v11.6 11.6.0.34
 //////////////////////////////////////////////////////////////////////
 
@@ -96,17 +96,17 @@ clock_div_26MHZ_1MHZ clock_div_26MHZ_1MHZ_0(
 //--------spi_master
 spi_master spi_master_0(
         // Inputs
-        .clk         ( CLK_26MHZ_0_GLA ),
-        .rst         ( RESET ),
-        .miso        ( GND_net ),
-        .start       ( test_constants_spi_0_START ),
-        .data_in     ( test_constants_spi_0_DATA ),
+        .clk      ( CLK_26MHZ_0_GLA ),
+        .rst      ( RESET ),
+        .miso     ( GND_net ),
+        .start    ( test_constants_spi_0_START ),
+        .data_in  ( test_constants_spi_0_DATA ),
         // Outputs
-        .mosi        ( MOSI_net_0 ),
-        .CLK_SCK_OUT ( CLK_SCK_net_0 ),
-        .busy        ( BUSY_net_0 ),
-        .new_data    (  ),
-        .data_out    (  ) 
+        .mosi     ( MOSI_net_0 ),
+        .sck      ( CLK_SCK_net_0 ),
+        .data_out (  ),
+        .busy     ( BUSY_net_0 ),
+        .new_data (  ) 
         );
 
 //--------test_constants_spi
@@ -115,8 +115,8 @@ test_constants_spi test_constants_spi_0(
         .CLK_1KHZ ( clock_div_1MHZ_1KHZ_0_CLK_1KHZ_OUT ),
         .RESET    ( RESET ),
         // Outputs
-        .DATA     ( test_constants_spi_0_DATA ),
-        .START    ( test_constants_spi_0_START ) 
+        .START    ( test_constants_spi_0_START ),
+        .DATA     ( test_constants_spi_0_DATA ) 
         );
 
 

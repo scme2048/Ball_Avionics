@@ -210,8 +210,8 @@ if (write_cycle==1) begin
         ras<=1;
         cas<=0;
         we<=0;
-        address[8:0] <= A_IN_COL;
-        address[10] <=1;
+        address[8:0] = A_IN_COL;
+        address[10] =1;
         weVAL<=1;
         dout<=D_IN;  
         write_counter=write_counter+1;
@@ -238,7 +238,7 @@ if (write_cycle==1) begin
         dqml<=0;
         ba0<=A_IN_BANK[0];
         ba1<=A_IN_BANK[1];
-        address<=A_IN_ROW;
+        address=A_IN_ROW;
         write_counter=write_counter+1;
     end
     if ((write_counter>0) && (write_counter<t_rc)) begin

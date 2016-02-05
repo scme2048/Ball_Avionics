@@ -1,0 +1,82 @@
+# Reading C:/Microsemi/Libero_v11.6/Model/tcl/vsim/pref.tcl
+# do run.do
+# INFO: Simulation library presynth already exists
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet presynth presynth 
+# Modifying modelsim.ini
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet proasic3l C:/Microsemi/Libero_v11.6/Designer/lib/modelsim/precompiled/vlog/proasic3l 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 23:34:09 on Feb 04,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/smartgen/CLK_26MHZ/CLK_26MHZ.v 
+# -- Compiling module CLK_26MHZ
+# 
+# Top level modules:
+# 	CLK_26MHZ
+# End time: 23:34:09 on Feb 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 23:34:09 on Feb 04,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/clock_div_1MHZ_1KHZ.v 
+# -- Compiling module clock_div_1MHZ_1KHZ
+# 
+# Top level modules:
+# 	clock_div_1MHZ_1KHZ
+# End time: 23:34:09 on Feb 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 23:34:09 on Feb 04,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/SPI_Master.v 
+# -- Compiling module spi_master
+# 
+# Top level modules:
+# 	spi_master
+# End time: 23:34:09 on Feb 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 23:34:09 on Feb 04,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/component/work/spi_test/spi_test.v 
+# -- Compiling module spi_test
+# 
+# Top level modules:
+# 	spi_test
+# End time: 23:34:09 on Feb 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 23:34:09 on Feb 04,2016
+# vlog -reportprogress 300 "+incdir+C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus" -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/tb_spi_test.v 
+# -- Compiling module tb_spi_test
+# 
+# Top level modules:
+# 	tb_spi_test
+# End time: 23:34:10 on Feb 04,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -gui -do "do run.do" -l tb_spi_test_presynth_simulation.log 
+# Start time: 23:34:10 on Feb 04,2016
+# //  ModelSim Microsemi 10.3c Jul 19 2014 
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading presynth.tb_spi_test
+# Loading presynth.spi_test
+# Loading presynth.CLK_26MHZ
+# Loading proasic3l.PLL
+# Loading proasic3l.PLLPRIM
+# Loading proasic3l.PLLINT
+# Loading proasic3l.GND
+# Loading proasic3l.VCC
+# Loading presynth.clock_div_1MHZ_1KHZ
+# Loading presynth.clock_div_26MHZ_1MHZ
+# Loading presynth.spi_master
+# Loading presynth.test_constants_spi
+#  ** Warning: FBSEL is unknown.
+#  Time: 0.0 Instance: tb_spi_test.spi_test_0.CLK_26MHZ_0.Core.P1 
+run -all
+# End time: 23:34:51 on Feb 04,2016, Elapsed time: 0:00:41
+# Errors: 0, Warnings: 0
