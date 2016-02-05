@@ -46,30 +46,92 @@ STATE="utd"
 TIME="1454471542"
 SIZE="413"
 ENDFILE
+VALUE "<project>\component\work\full_sys\full_sys.cxf,actgen_cxf"
+STATE="utd"
+TIME="1454387990"
+SIZE="2372"
+ENDFILE
 VALUE "<project>\component\work\spi_test\spi_test.cxf,actgen_cxf"
 STATE="utd"
-TIME="1454549463"
-SIZE="2144"
+TIME="1454612341"
+SIZE="2587"
+ENDFILE
+VALUE "<project>\component\work\spi_test\spi_test.v,hdl"
+STATE="utd"
+TIME="1454612340"
+SIZE="3959"
+PARENT="<project>\component\work\spi_test\spi_test.cxf"
+IS_READONLY="TRUE"
+ENDFILE
+VALUE "<project>\designer\impl1\clock_div_26MHZ_1MHZ.adb,adb"
+STATE="ood"
+TIME="1454610250"
+SIZE="39936"
+ENDFILE
+VALUE "<project>\designer\impl1\clock_div_26MHZ_1MHZ.ide_des,ide_des"
+STATE="utd"
+TIME="1454609363"
+SIZE="245"
+ENDFILE
+VALUE "<project>\designer\impl1\clock_div_26MHZ_1MHZ_ba.sdf,ba_sdf"
+STATE="ood"
+TIME="1454610515"
+SIZE="36810"
+ENDFILE
+VALUE "<project>\designer\impl1\clock_div_26MHZ_1MHZ_ba.v,ba_hdl"
+STATE="ood"
+TIME="1454610515"
+SIZE="12040"
+ENDFILE
+VALUE "<project>\designer\impl1\clock_div_26MHZ_1MHZ_ba_log.rpt,log"
+STATE="utd"
+TIME="1454610516"
+SIZE="939"
+ENDFILE
+VALUE "<project>\designer\impl1\clock_div_26MHZ_1MHZ_compile_log.rpt,log"
+STATE="utd"
+TIME="1454610251"
+SIZE="8437"
+ENDFILE
+VALUE "<project>\designer\impl1\clock_div_26MHZ_1MHZ_placeroute_log.rpt,log"
+STATE="utd"
+TIME="1454610510"
+SIZE="2639"
 ENDFILE
 VALUE "<project>\designer\impl1\spi_test.adb,adb"
 STATE="utd"
-TIME="1454474828"
-SIZE="142336"
+TIME="1454560468"
+SIZE="180224"
 ENDFILE
 VALUE "<project>\designer\impl1\spi_test.ide_des,ide_des"
 STATE="utd"
-TIME="1454474828"
-SIZE="1048"
+TIME="1454560469"
+SIZE="1046"
 ENDFILE
 VALUE "<project>\designer\impl1\spi_test.pdb,pdb"
+STATE="ood"
+TIME="1454548185"
+SIZE="1506554"
+ENDFILE
+VALUE "<project>\designer\impl1\spi_test_ba.sdf,ba_sdf"
 STATE="utd"
-TIME="1454547337"
-SIZE="327726"
+TIME="1454560468"
+SIZE="107280"
+ENDFILE
+VALUE "<project>\designer\impl1\spi_test_ba.v,ba_hdl"
+STATE="utd"
+TIME="1454612583"
+SIZE="67973"
+ENDFILE
+VALUE "<project>\designer\impl1\spi_test_ba_log.rpt,log"
+STATE="utd"
+TIME="1454612584"
+SIZE="867"
 ENDFILE
 VALUE "<project>\designer\impl1\spi_test_compile_log.rpt,log"
 STATE="utd"
-TIME="1454473979"
-SIZE="9436"
+TIME="1454612450"
+SIZE="9366"
 ENDFILE
 VALUE "<project>\designer\impl1\spi_test_fp\projectData\spi_test.pdb,pdb"
 STATE="utd"
@@ -78,8 +140,13 @@ SIZE="1506554"
 ENDFILE
 VALUE "<project>\designer\impl1\spi_test_fp\spi_test.pro,pro"
 STATE="utd"
-TIME="1454547400"
-SIZE="2291"
+TIME="1454548182"
+SIZE="2488"
+ENDFILE
+VALUE "<project>\designer\impl1\spi_test_timingconstraints_log.rpt,log"
+STATE="utd"
+TIME="1454560417"
+SIZE="465"
 ENDFILE
 VALUE "<project>\designer\impl1\write_address_traversal.adb,adb"
 STATE="utd"
@@ -90,11 +157,6 @@ VALUE "<project>\designer\impl1\write_address_traversal.ide_des,ide_des"
 STATE="utd"
 TIME="1454469669"
 SIZE="1097"
-ENDFILE
-VALUE "<project>\designer\impl1\write_address_traversal_compile_log.rpt,log"
-STATE="utd"
-TIME="1454469670"
-SIZE="8715"
 ENDFILE
 VALUE "<project>\hdl\clock_div_1MHZ_100KHZ.v,hdl"
 STATE="utd"
@@ -108,13 +170,13 @@ SIZE="856"
 ENDFILE
 VALUE "<project>\hdl\clock_div_1MHZ_1KHZ.v,hdl"
 STATE="utd"
-TIME="1452749856"
-SIZE="854"
+TIME="1454612207"
+SIZE="961"
 ENDFILE
 VALUE "<project>\hdl\clock_div_26MHZ_1MHZ.v,hdl"
 STATE="utd"
-TIME="1454473393"
-SIZE="858"
+TIME="1454609957"
+SIZE="967"
 ENDFILE
 VALUE "<project>\hdl\geig_data_handling.v,hdl"
 STATE="utd"
@@ -158,13 +220,13 @@ SIZE="15269"
 ENDFILE
 VALUE "<project>\hdl\SPI_Master.v,hdl"
 STATE="utd"
-TIME="1453768991"
-SIZE="3194"
+TIME="1454559653"
+SIZE="3210"
 ENDFILE
 VALUE "<project>\hdl\test_constants_spi.v,hdl"
 STATE="utd"
-TIME="1454469007"
-SIZE="1100"
+TIME="1454612308"
+SIZE="967"
 ENDFILE
 VALUE "<project>\hdl\test_harness.v,hdl"
 STATE="utd"
@@ -203,13 +265,23 @@ SIZE="2012"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1454473858"
-SIZE="1009"
+TIME="1454562211"
+SIZE="684"
 ENDFILE
 VALUE "<project>\simulation\spi_master_tb3_presynth_simulation.log,log"
 STATE="utd"
 TIME="1454468296"
 SIZE="2028"
+ENDFILE
+VALUE "<project>\simulation\tb_clk_div_26M_1M_postlayout_simulation.log,log"
+STATE="utd"
+TIME="1454610523"
+SIZE="1021"
+ENDFILE
+VALUE "<project>\simulation\tb_clk_div_26M_1M_postsynth_simulation.log,log"
+STATE="utd"
+TIME="1454609987"
+SIZE="1485"
 ENDFILE
 VALUE "<project>\simulation\tb_geig_data_handling_presynth_simulation.log,log"
 STATE="utd"
@@ -225,6 +297,16 @@ VALUE "<project>\simulation\tb_sdram_interface_presynth_simulation.log,log"
 STATE="utd"
 TIME="1454054299"
 SIZE="8206"
+ENDFILE
+VALUE "<project>\simulation\tb_spi_test_postlayout_simulation.log,log"
+STATE="utd"
+TIME="1454612590"
+SIZE="1971"
+ENDFILE
+VALUE "<project>\simulation\tb_spi_test_postsynth_simulation.log,log"
+STATE="utd"
+TIME="1454612370"
+SIZE="61"
 ENDFILE
 VALUE "<project>\simulation\tb_test_harness_geig_presynth_simulation.log,log"
 STATE="utd"
@@ -352,6 +434,11 @@ STATE="utd"
 TIME="1454387990"
 SIZE="2587"
 ENDFILE
+VALUE "<project>\stimulus\tb_clk_div_26M_1M.v,tb_hdl"
+STATE="utd"
+TIME="1454610167"
+SIZE="2193"
+ENDFILE
 VALUE "<project>\stimulus\tb_geiger_stack.v,tb_hdl"
 STATE="utd"
 TIME="1452828367"
@@ -374,8 +461,8 @@ SIZE="3685"
 ENDFILE
 VALUE "<project>\stimulus\tb_spi_test.v,tb_hdl"
 STATE="utd"
-TIME="1454473848"
-SIZE="1627"
+TIME="1454611880"
+SIZE="1818"
 ENDFILE
 VALUE "<project>\stimulus\tb_test_harness_geig.v,tb_hdl"
 STATE="utd"
@@ -392,25 +479,60 @@ STATE="utd"
 TIME="1452625277"
 SIZE="2063"
 ENDFILE
+VALUE "<project>\synthesis\clock_div_26MHZ_1MHZ.edn,syn_edn"
+STATE="ood"
+TIME="1454609968"
+SIZE="40366"
+ENDFILE
+VALUE "<project>\synthesis\clock_div_26MHZ_1MHZ.so,so"
+STATE="utd"
+TIME="1454609390"
+SIZE="283"
+ENDFILE
+VALUE "<project>\synthesis\clock_div_26MHZ_1MHZ.v,syn_hdl"
+STATE="ood"
+TIME="1454609981"
+SIZE="11495"
+ENDFILE
+VALUE "<project>\synthesis\clock_div_26MHZ_1MHZ_sdc.sdc,syn_sdc"
+STATE="ood"
+TIME="1454609390"
+SIZE="427"
+ENDFILE
+VALUE "<project>\synthesis\clock_div_26MHZ_1MHZ_syn.prj,prj"
+STATE="utd"
+TIME="1454609390"
+SIZE="1647"
+ENDFILE
 VALUE "<project>\synthesis\spi_test.edn,syn_edn"
 STATE="utd"
-TIME="1454473964"
-SIZE="123665"
+TIME="1454560983"
+SIZE="123708"
 ENDFILE
 VALUE "<project>\synthesis\spi_test.so,so"
 STATE="utd"
-TIME="1454473964"
+TIME="1454560983"
 SIZE="259"
+ENDFILE
+VALUE "<project>\synthesis\spi_test.v,syn_hdl"
+STATE="utd"
+TIME="1454560997"
+SIZE="36598"
 ENDFILE
 VALUE "<project>\synthesis\spi_test_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1454473964"
+TIME="1454560983"
 SIZE="310"
 ENDFILE
 VALUE "<project>\synthesis\spi_test_syn.prj,prj"
 STATE="utd"
-TIME="1454473965"
+TIME="1454560984"
 SIZE="2220"
+ENDFILE
+VALUE "<project>\synthesis\synwork\layer0.so,so"
+STATE="utd"
+TIME="1454609735"
+SIZE="159"
 ENDFILE
 VALUE "<project>\synthesis\write_address_traversal.edn,syn_edn"
 STATE="utd"
@@ -436,13 +558,14 @@ ENDLIST
 LIST UsedFile
 ENDLIST
 LIST NewModulesInfo
-LIST "spi_test::work"
-FILE "<project>\component\work\spi_test\spi_test.cxf,actgen_cxf"
+LIST "clock_div_26MHZ_1MHZ::work"
+FILE "<project>\hdl\clock_div_26MHZ_1MHZ.v,hdl"
+LIST AssociatedStimulus
+VALUE "<project>\stimulus\tb_clk_div_26M_1M.v,tb_hdl"
+ENDLIST
 LIST ProjectState5.1
 LIST Impl1
-LiberoState=Post_Layout
-ideDESIGNER(<project>\designer\impl1\spi_test.adb,adb)=StateSuccess
-ideSYNTHESIS(<project>\synthesis\spi_test.edn,syn_edn)=StateSuccess
+ideSTIMULUS=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -450,6 +573,34 @@ ENDLIST
 Used_File_List
 ENDUsed_File_List
 ENDLIST
+ENDLIST
+LIST PinReports
+VALUE "<project>\designer\impl1\clock_div_26MHZ_1MHZ_report_pin_byname.txt,log"
+VALUE "<project>\designer\impl1\clock_div_26MHZ_1MHZ_report_pin_bynumber.txt,log"
+ENDLIST
+ENDLIST
+LIST "spi_test::work"
+FILE "<project>\component\work\spi_test\spi_test.v,hdl"
+LIST AssociatedStimulus
+VALUE "<project>\stimulus\tb_spi_test.v,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+LiberoState=Post_Layout
+ideSYNTHESIS(<project>\synthesis\spi_test.edn,syn_edn)=StateSuccess
+ideSTIMULUS=StateSuccess
+ideDESIGNER(<project>\designer\impl1\spi_test.adb,adb)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST PinReports
+VALUE "<project>\designer\impl1\spi_test_report_pin_byname.txt,log"
+VALUE "<project>\designer\impl1\spi_test_report_pin_bynumber.txt,log"
 ENDLIST
 ENDLIST
 LIST "write_address_traversal::work"
@@ -466,13 +617,15 @@ Used_File_List
 ENDUsed_File_List
 ENDLIST
 ENDLIST
-LIST PinReports
-VALUE "<project>\designer\impl1\write_address_traversal_report_pin_byname.txt,log"
-VALUE "<project>\designer\impl1\write_address_traversal_report_pin_bynumber.txt,log"
-ENDLIST
 ENDLIST
 ENDLIST
 LIST AssociatedStimulus
+LIST spi_test
+VALUE "<project>\stimulus\tb_spi_test.v,tb_hdl"
+ENDLIST
+LIST clock_div_26MHZ_1MHZ
+VALUE "<project>\stimulus\tb_clk_div_26M_1M.v,tb_hdl"
+ENDLIST
 ENDLIST
 LIST Other_Association
 ENDLIST
@@ -483,7 +636,7 @@ Type=max
 RunTime=1000ns
 Resolution=1ps
 VsimOpt=
-EntityName=testbench
+EntityName=tb_spi_test
 TopInstanceName=<top>_0
 DoFileName=
 DoFileName2=wave.do
@@ -536,8 +689,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin\synplify_pro.exe"
-PARAM=""
-BATCH=0
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -545,7 +698,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_v11.6\Model\win32acoem\modelsim.exe"
-PARAM=""
+PARAM=" -l tb_spi_test_postlayout_simulation.log "
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -570,11 +723,23 @@ IS32BIT="1"
 EndProfile
 ENDLIST
 LIST ProjectState5.1
+LIST "clock_div_26MHZ_1MHZ::work"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
 LIST "spi_test::work"
 LIST Impl1
 LiberoState=Post_Layout
-ideDESIGNER(<project>\designer\impl1\spi_test.adb,adb)=StateSuccess
 ideSYNTHESIS(<project>\synthesis\spi_test.edn,syn_edn)=StateSuccess
+ideSTIMULUS=StateSuccess
+ideDESIGNER(<project>\designer\impl1\spi_test.adb,adb)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -608,9 +773,15 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+Reports;Reports;0
+ReportsCurrentItem;Export Back Annotated Files:spi_test_ba_log.rpt
+HDL;hdl\clock_div_26MHZ_1MHZ.v;0
+HDL;stimulus\tb_spi_test.v;0
 SmartDesign;spi_test;0
-HDL;hdl\timestamp.v;0
-ACTIVEVIEW;spi_test
+HDL;hdl\clock_div_1MHZ_1KHZ.v;0
+HDL;hdl\test_constants_spi.v;0
+HDL;hdl\SPI_Master.v;0
+ACTIVEVIEW;Reports
 ENDLIST
 LIST ModuleSubBlockList
 LIST "CLK_1M::work","smartgen\CLK_1M\CLK_1M.v","TRUE","FALSE"
@@ -633,6 +804,19 @@ LIST "DESIGN_FIRMWARE::work","component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf
 ENDLIST
 LIST "DESIGN_IO::work","component\work\DESIGN_IO\DESIGN_IO.cxf","TRUE","FALSE"
 ENDLIST
+LIST "full_sys::work","component\work\full_sys\full_sys.cxf","TRUE","FALSE"
+SUBBLOCK "CLK_1MHZ::work","smartgen\CLK_1MHZ\CLK_1MHZ.v","TRUE","FALSE"
+SUBBLOCK "CLK_26MHZ::work","smartgen\CLK_26MHZ\CLK_26MHZ.v","TRUE","FALSE"
+SUBBLOCK "CLK_6_5MHZ::work","smartgen\CLK_6_5MHZ\CLK_6_5MHZ.v","TRUE","FALSE"
+SUBBLOCK "clock_div_1MHZ_100KHZ::work","hdl\clock_div_1MHZ_100KHZ.v","FALSE","FALSE"
+SUBBLOCK "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
+SUBBLOCK "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
+SUBBLOCK "sdram_interface::work","hdl\sdram_interface.v","FALSE","FALSE"
+SUBBLOCK "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
+SUBBLOCK "test_harness_geiger_stack::work","hdl\test_harness_geiger_stack.v","FALSE","FALSE"
+SUBBLOCK "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
+SUBBLOCK "clock_div_1MHZ_1KHZ::work","hdl\clock_div_1MHZ_1KHZ.v","FALSE","FALSE"
+ENDLIST
 LIST "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
 ENDLIST
 LIST "mag_data_handling::work","hdl\mag_data_handling.v","FALSE","FALSE"
@@ -651,7 +835,7 @@ LIST "sdram_interface::work","hdl\sdram_interface.v","FALSE","FALSE"
 ENDLIST
 LIST "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
 ENDLIST
-LIST "spi_test::work","component\work\spi_test\spi_test.cxf","TRUE","FALSE"
+LIST "spi_test::work","component\work\spi_test\spi_test.v","TRUE","FALSE"
 SUBBLOCK "CLK_26MHZ::work","smartgen\CLK_26MHZ\CLK_26MHZ.v","TRUE","FALSE"
 SUBBLOCK "clock_div_1MHZ_1KHZ::work","hdl\clock_div_1MHZ_1KHZ.v","FALSE","FALSE"
 SUBBLOCK "clock_div_26MHZ_1MHZ::work","hdl\clock_div_26MHZ_1MHZ.v","FALSE","FALSE"
@@ -676,6 +860,9 @@ ENDLIST
 LIST "spi_master_tb3::work","stimulus\spi_master_tb3.v","FALSE","TRUE"
 SUBBLOCK "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
 ENDLIST
+LIST "tb_clk_div_26M_1M::work","stimulus\tb_clk_div_26M_1M.v","FALSE","TRUE"
+SUBBLOCK "clock_div_26MHZ_1MHZ::work","hdl\clock_div_26MHZ_1MHZ.v","FALSE","FALSE"
+ENDLIST
 LIST "tb_geig_data_handling::work","stimulus\tb_geig_data_handling.v","FALSE","TRUE"
 SUBBLOCK "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
 ENDLIST
@@ -689,7 +876,7 @@ LIST "tb_sdram_interface::work","stimulus\tb_sdram_interface.v","FALSE","TRUE"
 SUBBLOCK "sdram_interface::work","hdl\sdram_interface.v","FALSE","FALSE"
 ENDLIST
 LIST "tb_spi_test::work","stimulus\tb_spi_test.v","FALSE","TRUE"
-SUBBLOCK "spi_test::work","component\work\spi_test\spi_test.cxf","TRUE","FALSE"
+SUBBLOCK "spi_test::work","component\work\spi_test\spi_test.v","TRUE","FALSE"
 ENDLIST
 LIST "tb_test_harness_geig::work","stimulus\tb_test_harness_geig.v","FALSE","TRUE"
 SUBBLOCK "test_harness_geiger_stack::work","hdl\test_harness_geiger_stack.v","FALSE","FALSE"
@@ -702,4 +889,10 @@ SUBBLOCK "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
 ENDLIST
 ENDLIST
 LIST ActiveTestBenchList
+LIST "spi_test::work"
+ACTIVETESTBENCH "tb_spi_test::work","stimulus\tb_spi_test.v","FALSE"
+ENDLIST
+LIST "clock_div_26MHZ_1MHZ::work"
+ACTIVETESTBENCH "tb_clk_div_26M_1M::work","stimulus\tb_clk_div_26M_1M.v","FALSE"
+ENDLIST
 ENDLIST

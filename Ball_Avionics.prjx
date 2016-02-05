@@ -48,8 +48,19 @@ SIZE="413"
 ENDFILE
 VALUE "<project>\component\work\full_sys\full_sys.cxf,actgen_cxf"
 STATE="utd"
-TIME="1454387990"
+TIME="1454653477"
 SIZE="2372"
+ENDFILE
+VALUE "<project>\component\work\spi_test\spi_test.cxf,actgen_cxf"
+STATE="utd"
+TIME="1454612341"
+SIZE="2587"
+ENDFILE
+VALUE "<project>\component\work\spi_test\spi_test.v,hdl"
+STATE="utd"
+TIME="1454612340"
+SIZE="3959"
+PARENT="<project>\component\work\spi_test\spi_test.cxf"
 ENDFILE
 VALUE "<project>\designer\impl1\CLK_1M.ide_des,ide_des"
 STATE="utd"
@@ -73,8 +84,8 @@ SIZE="856"
 ENDFILE
 VALUE "<project>\hdl\clock_div_1MHZ_1KHZ.v,hdl"
 STATE="utd"
-TIME="1452749856"
-SIZE="854"
+TIME="1454612207"
+SIZE="961"
 ENDFILE
 VALUE "<project>\hdl\dummy_state.v,hdl"
 STATE="utd"
@@ -123,8 +134,8 @@ SIZE="15269"
 ENDFILE
 VALUE "<project>\hdl\SPI_Master.v,hdl"
 STATE="utd"
-TIME="1453768991"
-SIZE="3194"
+TIME="1454559653"
+SIZE="3210"
 ENDFILE
 VALUE "<project>\hdl\test_harness.v,hdl"
 STATE="utd"
@@ -163,8 +174,8 @@ SIZE="2012"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1454473858"
-SIZE="1009"
+TIME="1454612586"
+SIZE="913"
 ENDFILE
 VALUE "<project>\simulation\spi_master_tb3_presynth_simulation.log,log"
 STATE="utd"
@@ -507,6 +518,8 @@ LIST "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
 ENDLIST
 LIST "clock_div_1MHZ_1KHZ::work","hdl\clock_div_1MHZ_1KHZ.v","FALSE","FALSE"
 ENDLIST
+LIST "clock_div_26MHZ_1MHZ::work","","FALSE","FALSE"
+ENDLIST
 LIST "DESIGN_FIRMWARE::work","component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf","TRUE","FALSE"
 ENDLIST
 LIST "DESIGN_IO::work","component\work\DESIGN_IO\DESIGN_IO.cxf","TRUE","FALSE"
@@ -543,6 +556,15 @@ ENDLIST
 LIST "sdram_interface::work","hdl\sdram_interface.v","FALSE","FALSE"
 ENDLIST
 LIST "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
+ENDLIST
+LIST "spi_test::work","component\work\spi_test\spi_test.v","TRUE","FALSE"
+SUBBLOCK "CLK_26MHZ::work","smartgen\CLK_26MHZ\CLK_26MHZ.v","TRUE","FALSE"
+SUBBLOCK "clock_div_1MHZ_1KHZ::work","hdl\clock_div_1MHZ_1KHZ.v","FALSE","FALSE"
+SUBBLOCK "clock_div_26MHZ_1MHZ::work","","FALSE","FALSE"
+SUBBLOCK "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
+SUBBLOCK "test_constants_spi::work","","FALSE","FALSE"
+ENDLIST
+LIST "test_constants_spi::work","","FALSE","FALSE"
 ENDLIST
 LIST "test_harness::work","hdl\test_harness.v","FALSE","FALSE"
 ENDLIST

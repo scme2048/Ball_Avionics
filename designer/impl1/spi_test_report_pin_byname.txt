@@ -1,5 +1,5 @@
 *****************************************************************
-Pin Report - Date: Wed Feb 03 17:55:53 2016 Pinchecksum: NOT-AVAILABLE
+Pin Report - Date: Thu Feb 04 12:02:48 2016 Pinchecksum: NOT-AVAILABLE
 Product: Designer
 Release: v11.6
 Version: 11.6.0.34
@@ -19,5 +19,6 @@ Port      |Pin |Fixed |Function       |I/O Std  |Output Drive (mA) |Slew |Resist
 ----------|----|------|---------------|---------|------------------|-----|--------------|-----|-----------------|------------|--------------|
 BUSY       D5   Yes    GAA0/IO00RSB0   LVCMOS33  12                 High  None           No    5                 No           No
 CLK_48MHZ  E4   Yes    GAB2/IO224PDB3  LVCMOS33  ---                ---   None           ---   ---               No           No
+CLK_SCK    D10  Yes    IO28RSB0        LVCMOS33  12                 High  None           No    5                 No           No
 MOSI       D6   Yes    GAA1/IO01RSB0   LVCMOS33  12                 High  None           No    5                 No           No
-SCK        D10  Yes    IO28RSB0        LVCMOS33  12                 High  None           No    5                 No           No
+RESET      J4   No     IO217NDB3       LVCMOS33  ---                ---   None           ---   ---               No           No

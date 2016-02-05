@@ -1,0 +1,32 @@
+********************************************************************
+                            Global Net Report
+********************************************************************
+  
+Product: Designer
+Release: v11.6
+Version: 11.6.0.34
+Date: Thu Feb 04 11:28:28 2016
+Design Name: clock_div_26MHZ_1MHZ  Family: ProASIC3L  Die: M1A3P1000L  Package: 484 FBGA
+
+
+Automatic Global Net Placement Result:
+Status: Global net placement completed successfully
+
+
+Global Nets Information:
+
+        |-----------------------------------------------------|
+        |Global Nets         |Loads                           |
+        |-----------------------------------------------------|
+        |Name                |Core      |IO        |RAM       |
+        |-----------------------------------------------------|
+        |CLK_26MHZ_IN_c      |       18 |        0 |        0 |
+        |-----------------------------------------------------|
+
+Summary of Global Net Placement:
+
+        |------------------------------------------------------------------------|
+        |Global Net          |Assignment          |Violation                     |
+        |------------------------------------------------------------------------|
+        |CLK_26MHZ_IN_c      |UPPER_LEFT          |                              |
+        |------------------------------------------------------------------------|

@@ -1,0 +1,120 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/simulation
+vclock_div_26MHZ_1MHZ
+Z1 !s110 1454610523
+!i10b 1
+!s100 MiYXXFaV6aR8KcSUegCJ^0
+I4bD=5hhz>eY;Ad:abWh<O0
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1454610515
+8C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/designer/impl1/clock_div_26MHZ_1MHZ_ba.v
+FC:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/designer/impl1/clock_div_26MHZ_1MHZ_ba.v
+L0 6
+Z3 OW;L;10.3c;59
+r1
+!s85 0
+31
+!s108 1454610523.290000
+!s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/designer/impl1/clock_div_26MHZ_1MHZ_ba.v|
+!s90 -reportprogress|300|-work|postlayout|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/designer/impl1/clock_div_26MHZ_1MHZ_ba.v|
+!s101 -O0
+!i113 1
+Z4 o-work postlayout -O0
+nclock_div_26@m@h@z_1@m@h@z
+vPLLBA
+Z5 !s110 1454612590
+!i10b 1
+!s100 Ea:a>g5E3HVI[Cz=F^Hn`1
+I5>JFZ7JRF4iAE6:OYGW`I1
+R2
+R0
+Z6 w1454612583
+Z7 8C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/designer/impl1/spi_test_ba.v
+Z8 FC:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/designer/impl1/spi_test_ba.v
+L0 6
+R3
+r1
+!s85 0
+31
+Z9 !s108 1454612590.491000
+Z10 !s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/designer/impl1/spi_test_ba.v|
+Z11 !s90 -reportprogress|300|-work|postlayout|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/designer/impl1/spi_test_ba.v|
+!s101 -O0
+!i113 1
+R4
+n@p@l@l@b@a
+vspi_test
+R5
+!i10b 1
+!s100 KQRzie<jofzo]9LYz8FzN1
+I?3T_U7Ne5c^N=bnCS5DjQ1
+R2
+R0
+R6
+R7
+R8
+L0 217
+R3
+r1
+!s85 0
+31
+R9
+R10
+R11
+!s101 -O0
+!i113 1
+R4
+vtb_clk_div_26M_1M
+R1
+!i10b 1
+!s100 ]johNl=d21]zB:;AAO4^l2
+IPMQXlQ@klOGjnXEW6cY8`1
+R2
+R0
+w1454610167
+8C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/tb_clk_div_26M_1M.v
+FC:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/tb_clk_div_26M_1M.v
+L0 30
+R3
+r1
+!s85 0
+31
+!s108 1454610523.737000
+!s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/tb_clk_div_26M_1M.v|
+!s90 -reportprogress|300|+incdir+C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus|-work|postlayout|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/tb_clk_div_26M_1M.v|
+!s101 -O0
+!i113 1
+R4
+Z12 !s92 +incdir+C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus -work postlayout -O0
+ntb_clk_div_26@m_1@m
+vtb_spi_test
+R5
+!i10b 1
+!s100 5286ZEJ=dIlTFOjS`[aX>3
+Ie`3`HhnJ>?boeOL^YlAD32
+R2
+R0
+w1454611880
+8C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/tb_spi_test.v
+FC:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/tb_spi_test.v
+L0 21
+R3
+r1
+!s85 0
+31
+!s108 1454612590.772000
+!s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/tb_spi_test.v|
+!s90 -reportprogress|300|+incdir+C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus|-work|postlayout|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/tb_spi_test.v|
+!s101 -O0
+!i113 1
+R4
+R12

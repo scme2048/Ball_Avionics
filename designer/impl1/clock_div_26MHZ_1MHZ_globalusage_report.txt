@@ -1,0 +1,22 @@
+********************************************************************
+                            Global Usage Report
+********************************************************************
+  
+Product: Designer
+Release: v11.6
+Version: 11.6.0.34
+Date: Thu Feb 04 11:28:28 2016
+Design Name: clock_div_26MHZ_1MHZ  Family: ProASIC3L  Die: M1A3P1000L  Package: 484 FBGA
+Design State: Post-Layout
+
+
+The following nets have been routed to a quadrant global resource:
+
+    Fanout            Name
+    ----------------------
+    18                Net   : CLK_26MHZ_IN_c
+                      Driver: CLK_26MHZ_IN_pad/U0/U1/U_GL
+                      Region : quadrant_UL
+
+
+

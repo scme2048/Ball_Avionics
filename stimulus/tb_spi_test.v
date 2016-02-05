@@ -38,7 +38,16 @@ initial
 begin
     #(SYSCLK_PERIOD * 10 )
         NSYSRESET = 1'b1;
+    #(SYSCLK_PERIOD * 10 )
+        NSYSRESET = 1'b0;
 end
+
+//initial
+//begin
+     //#(SYSCLK_PERIOD * 20 )
+        //NSYSRESET = 1'b0;
+//end
+
 
 
 //////////////////////////////////////////////////////////////////////
@@ -54,13 +63,14 @@ wire busy;
 //////////////////////////////////////////////////////////////////////
 // Instantiate Unit Under Test:  spi_test
 //////////////////////////////////////////////////////////////////////
+// remove the ba?
 spi_test spi_test_0 (
     // Inputs
     .CLK_48MHZ(SYSCLK),
-
+    .RESET(NSYSRESET),
     // Outputs
     .MOSI( mosi),
-    .SCK( sck),
+    .CLK_SCK( sck),
     .BUSY( busy)
 
     // Inouts

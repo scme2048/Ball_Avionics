@@ -10,25 +10,30 @@
 //
 /////////////////////////////////////////////////////////////////////////////////////////////////// 
 
-module clock_div_26MHZ_1MHZ(CLK_26MHZ_IN,CLK_1MHZ_OUT);
+module clock_div_26MHZ_1MHZ(CLK_26MHZ_IN,RESET,CLK_1MHZ_OUT);
 input CLK_26MHZ_IN;
+input RESET;
 output CLK_1MHZ_OUT;
 wire CLK_1MHZ_OUT;
 
-reg [16:0] counter=1;
-reg clk_out=1;
+reg [16:0] counter;
+reg clk_out;
 parameter factor=26;
 assign CLK_1MHZ_OUT = clk_out;
-always @(posedge CLK_26MHZ_IN)
+always @(posedge CLK_26MHZ_IN or posedge RESET)
 begin
-    if (counter == factor/2) begin
-        clk_out = ~clk_out;
+    if (RESET) begin
+        clk_out<=1;
+        counter<=1;
+    end else if (counter == factor/2) begin
+        clk_out <= ~clk_out;
         counter <=1;
     end else begin
         counter <= counter+1;
     end
     
 end
+
 
 
 endmodule

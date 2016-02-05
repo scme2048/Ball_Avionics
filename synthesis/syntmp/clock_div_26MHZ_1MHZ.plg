@@ -1,0 +1,15 @@
+@P:  Worst Slack : 2.724
+@P:  clock_div_26MHZ_1MHZ|CLK_26MHZ_IN - Estimated Frequency : 137.4 MHz
+@P:  clock_div_26MHZ_1MHZ|CLK_26MHZ_IN - Requested Frequency : 100.0 MHz
+@P:  clock_div_26MHZ_1MHZ|CLK_26MHZ_IN - Estimated Period : 7.276
+@P:  clock_div_26MHZ_1MHZ|CLK_26MHZ_IN - Requested Period : 10.000
+@P:  clock_div_26MHZ_1MHZ|CLK_26MHZ_IN - Slack : 2.724
+@P:  Worst Slack(min analysis) : NA
+@P:  clock_div_26MHZ_1MHZ|CLK_26MHZ_IN - Estimated Frequency(min analysis) : 137.4 MHz
+@P:  clock_div_26MHZ_1MHZ|CLK_26MHZ_IN - Requested Frequency(min analysis) : 100.0 MHz
+@P:  clock_div_26MHZ_1MHZ|CLK_26MHZ_IN - Estimated Period(min analysis) : 7.276
+@P:  clock_div_26MHZ_1MHZ|CLK_26MHZ_IN - Requested Period(min analysis) : 10.000
+@P:  clock_div_26MHZ_1MHZ|CLK_26MHZ_IN - Slack(min analysis) : 2.724
+@P:  Total Area : 75.0
+@P:  Total Area : 75.0
+@P:  CPU Time : 0h:00m:00s

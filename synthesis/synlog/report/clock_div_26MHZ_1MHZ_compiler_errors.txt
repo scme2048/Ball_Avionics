@@ -1,0 +1,2 @@
+@E: CL172 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\clock_div_26MHZ_1MHZ.v":20:4:20:10|Only one always block can assign a given variable clk_out
+

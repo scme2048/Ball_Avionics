@@ -1,0 +1,2 @@
+@E: CL123 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\test_constants_spi.v":33:0:33:5|Logic for da[7:0] does not match a standard flip-flop
+

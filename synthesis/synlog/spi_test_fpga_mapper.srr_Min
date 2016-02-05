@@ -1,7 +1,7 @@
 
 
 @S |##### START OF TIMING REPORT #####[
-# Timing Report written on Tue Feb 02 21:32:44 2016
+# Timing Report written on Thu Feb 04 11:59:09 2016
 #
 
 
@@ -29,7 +29,7 @@ Starting Clock                                  Frequency     Frequency     Peri
 --------------------------------------------------------------------------------------------------------------------------------------------------
 CLK_26MHZ|GLA_inferred_clock                    100.0 MHz     133.5 MHz     10.000        7.491         2.509     inferred     Inferred_clkgroup_2
 clock_div_1MHZ_1KHZ|clk_out_inferred_clock      100.0 MHz     153.1 MHz     10.000        6.532         3.468     inferred     Inferred_clkgroup_0
-clock_div_26MHZ_1MHZ|clk_out_inferred_clock     100.0 MHz     133.8 MHz     10.000        7.473         2.527     inferred     Inferred_clkgroup_1
+clock_div_26MHZ_1MHZ|clk_out_inferred_clock     100.0 MHz     137.4 MHz     10.000        7.276         2.724     inferred     Inferred_clkgroup_1
 ==================================================================================================================================================
 
 

@@ -1,5 +1,5 @@
 *****************************************************************
-Pin Report - Date: Wed Feb 03 17:55:54 2016 Pinchecksum: NOT-AVAILABLE
+Pin Report - Date: Thu Feb 04 12:02:49 2016 Pinchecksum: NOT-AVAILABLE
 Product: Designer
 Release: v11.6
 Version: 11.6.0.34
@@ -136,7 +136,7 @@ D6      MOSI       GAA1/IO01RSB0      Special      LVCMOS33  12                 
 D7                 GAB0/IO02RSB0      Special
 D8                 IO16RSB0           Unassigned
 D9                 IO22RSB0           Unassigned
-D10     SCK        IO28RSB0           Fixed        LVCMOS33  12                 High  None           No    5                 No           No
+D10     CLK_SCK    IO28RSB0           Fixed        LVCMOS33  12                 High  None           No    5                 No           No
 D11                IO35RSB0           Unassigned
 D12                IO45RSB0           Unassigned
 D13                IO50RSB0           Unassigned
@@ -240,7 +240,7 @@ H22                Not Bonded         Unconnected
 J1                 IO212NDB3          Unassigned
 J2                 IO212PDB3          Unassigned
 J3                 Not Bonded         Unconnected
-J4                 IO217NDB3          Unassigned
+J4      RESET      IO217NDB3          Assigned     LVCMOS33  ---                ---   None           ---   ---               No           No
 J5                 IO218NDB3          Unassigned
 J6                 IO216PDB3          Unassigned
 J7                 IO216NDB3          Unassigned

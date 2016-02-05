@@ -1,0 +1,22 @@
+*****************************************************************
+Pin Report - Date: Thu Feb 04 11:28:29 2016 Pinchecksum: NOT-AVAILABLE
+Product: Designer
+Release: v11.6
+Version: 11.6.0.34
+Design Name: clock_div_26MHZ_1MHZ
+Family: ProASIC3L
+Die: M1A3P1000L
+Package: 484 FBGA
+*****************************************************************
+
+-----------------------------------------------------------------
+Flash*Freeze information
+        Pin name  : W6
+        Pin usage : Available as a regular pin
+-----------------------------------------------------------------
+
+Port         |Pin |Fixed |Function       |I/O Std  |Output Drive (mA) |Slew |Resistor Pull |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
+-------------|----|------|---------------|---------|------------------|-----|--------------|-----|-----------------|------------|--------------|
+CLK_1MHZ_OUT  A8   Yes    IO20RSB0        LVCMOS33  12                 High  None           No    5                 No           No
+CLK_26MHZ_IN  E4   Yes    GAB2/IO224PDB3  LVCMOS33  ---                ---   None           ---   ---               No           No
+RESET         E9   No     IO21RSB0        LVCMOS33  ---                ---   None           ---   ---               No           No

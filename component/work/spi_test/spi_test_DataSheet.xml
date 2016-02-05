@@ -12,7 +12,7 @@
     <project-description>
     </project-description>
     <location>C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/component/work/spi_test</location>
-    <state>GENERATED ( Tue Feb 02 21:32:34 2016 )</state>
+    <state>GENERATED ( Thu Feb 04 11:59:00 2016 )</state>
     <swide-toolchain>SoftConsole workspace has not been generated</swide-toolchain>
   </project-settings>
   <site-map>
@@ -56,13 +56,19 @@
     <io-standard>LVCMOS33</io-standard>
   </io>
   <io>
-    <port-name>SCK</port-name>
+    <port-name>CLK_SCK</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVCMOS33</io-standard>
   </io>
   <io>
     <port-name>CLK_48MHZ</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
+  <io>
+    <port-name>RESET</port-name>
     <direction>IN</direction>
     <pin-number>-</pin-number>
     <io-standard>LVCMOS33</io-standard>

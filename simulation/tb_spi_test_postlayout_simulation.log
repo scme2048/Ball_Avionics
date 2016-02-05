@@ -1,0 +1,96 @@
+# Reading C:/Microsemi/Libero_v11.6/Model/tcl/vsim/pref.tcl
+# do run.do
+# INFO: Simulation library ../designer/impl1/simulation/postlayout already exists
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet postlayout ../designer/impl1/simulation/postlayout 
+# Modifying modelsim.ini
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet proasic3l C:/Microsemi/Libero_v11.6/Designer/lib/modelsim/precompiled/vlog/proasic3l 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 12:03:10 on Feb 04,2016
+# vlog -reportprogress 300 -work postlayout C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/designer/impl1/spi_test_ba.v 
+# -- Compiling module PLLBA
+# -- Compiling module spi_test
+# 
+# Top level modules:
+# 	spi_test
+# End time: 12:03:10 on Feb 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 12:03:10 on Feb 04,2016
+# vlog -reportprogress 300 "+incdir+C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus" -work postlayout C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/tb_spi_test.v 
+# -- Compiling module tb_spi_test
+# 
+# Top level modules:
+# 	tb_spi_test
+# End time: 12:03:10 on Feb 04,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -gui -do "do run.do" -l tb_spi_test_postlayout_simulation.log 
+# Start time: 12:03:10 on Feb 04,2016
+# //  ModelSim Microsemi 10.3c Jul 19 2014 
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading postlayout.tb_spi_test
+# Loading postlayout.spi_test
+# Loading proasic3l.AND3
+# Loading proasic3l.NOR2B
+# Loading proasic3l.NOR2A
+# Loading proasic3l.MX2
+# Loading proasic3l.NOR2
+# Loading proasic3l.DFN1C1
+# Loading proasic3l.AX1C
+# Loading proasic3l.XOR2
+# Loading proasic3l.AND2
+# Loading proasic3l.AO1B
+# Loading proasic3l.DFN1
+# Loading proasic3l.OR2B
+# Loading proasic3l.AOI1B
+# Loading proasic3l.DFN1E1
+# Loading proasic3l.DFN1P1
+# Loading proasic3l.IOPAD_TRI
+# Loading proasic3l.OR3B
+# Loading proasic3l.OR2
+# Loading postlayout.PLLBA
+# Loading proasic3l.PLL_SDF
+# Loading proasic3l.PLL_DLY_SDF
+# Loading proasic3l.GND
+# Loading proasic3l.NOR3B
+# Loading proasic3l.BUFF
+# Loading proasic3l.AO1A
+# Loading proasic3l.NOR3A
+# Loading proasic3l.INV
+# Loading proasic3l.NOR3C
+# Loading proasic3l.OR2A
+# Loading proasic3l.XA1B
+# Loading proasic3l.XA1C
+# Loading proasic3l.IOIN_IB
+# Loading proasic3l.IOPAD_IN
+# Loading proasic3l.ULSICC_INT
+# Loading proasic3l.IOTRI_OB_EB
+# Loading proasic3l.CLKINT
+# Loading proasic3l.NOR3
+# Loading proasic3l.AO1D
+# Loading proasic3l.VCC
+# SDF 10.3c Compiler 2014.07 Jul 19 2014
+# 
+# Loading instances from C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/designer/impl1/spi_test_ba.sdf
+# Loading proasic3l.UDP_MUX2
+# Loading proasic3l.UFPRB
+# Loading proasic3l.Dffpr
+# Loading proasic3l.UDPN_MUX2
+# Loading timing data from C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/designer/impl1/spi_test_ba.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_spi_test File: C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/tb_spi_test.v
+run -all
+run -all
+run -all
+run -all
+# End time: 12:07:41 on Feb 04,2016, Elapsed time: 0:04:31
+# Errors: 0, Warnings: 0

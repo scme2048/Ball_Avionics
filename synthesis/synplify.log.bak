@@ -4,10 +4,10 @@ sourcing C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\message_overri
 Starting:    C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin64\mbin\synbatch.exe
 Install:     C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3
 Hostname:    SCOTT-PC
-Date:        Tue Feb 02 20:20:31 2016
+Date:        Wed Feb 03 21:43:00 2016
 Version:     J-2015.03M-3
 
-Arguments:   -product synplify_pro -licensetype synplifypro_actel -batch -log synplify.log write_address_traversal_syn.tcl
+Arguments:   -product synplify_pro -licensetype synplifypro_actel -batch -log synplify.log spi_test_syn.tcl
 ProductType: synplify_pro
 
 License checkout: synplifypro_actel
@@ -18,80 +18,78 @@ License Option: actel_oem
 Running in Vendor Mode
 
 
-"clock_globalthreshold" is unrecognized option for current device
-"low_power_ram_decomp" is unrecognized option for current device
-Implementation not found: synthesis
+auto_infer_blackbox is not supported in current product.
 
-log file: "C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\write_address_traversal.srr"
+log file: "C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\spi_test.srr"
 
 Running: synthesis in foreground
 
 
 
-Running write_address_traversal_syn|synthesis
+Running spi_test_syn|synthesis
 
 
-Running: compile (Compile) on write_address_traversal_syn|synthesis
+Running: compile (Compile) on spi_test_syn|synthesis
 
 
-Running: compile_flow (Compile Process) on write_address_traversal_syn|synthesis
+Running: compile_flow (Compile Process) on spi_test_syn|synthesis
 
 
-Running: compiler (Compile Input) on write_address_traversal_syn|synthesis
+Running: compiler (Compile Input) on spi_test_syn|synthesis
 
-Copied C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synwork\write_address_traversal_comp.srs to C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\write_address_traversal.srs
+Copied C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synwork\spi_test_comp.srs to C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\spi_test.srs
 
 
 compiler Completed
 Return Code: 0
-Run Time:0h:00m:03s
+Run Time:0h:00m:01s
 
 
-Running: multi_srs_gen (Multi-srs Generator) on write_address_traversal_syn|synthesis
+Running: multi_srs_gen (Multi-srs Generator) on spi_test_syn|synthesis
 
-Copied C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synwork\write_address_traversal_comp.srs to C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synwork\write_address_traversal_s.srs
+Copied C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synwork\spi_test_comp.srs to C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synwork\spi_test_s.srs
 
 
 multi_srs_gen Completed
 Return Code: 0
 Run Time:0h:00m:01s
 
-Copied C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synwork\write_address_traversal_mult.srs to C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\write_address_traversal.srs
+Copied C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synwork\spi_test_mult.srs to C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\spi_test.srs
 
-Complete: Compile Process on write_address_traversal_syn|synthesis
+Complete: Compile Process on spi_test_syn|synthesis
 
 
-Running: premap (Pre-mapping) on write_address_traversal_syn|synthesis
+Running: premap (Pre-mapping) on spi_test_syn|synthesis
 
-Copied C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\write_address_traversal.sap to C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synwork\write_address_traversal_s.sap
+Copied C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\spi_test.sap to C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synwork\spi_test_s.sap
+
+Copied C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\spi_test.fse to C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synwork\spi_test_s.fse
 
 
 premap Completed with warnings
 Return Code: 1
-Run Time:0h:00m:01s
+Run Time:0h:00m:00s
 
-Complete: Compile on write_address_traversal_syn|synthesis
-
-
-Running: map (Map) on write_address_traversal_syn|synthesis
+Complete: Compile on spi_test_syn|synthesis
 
 
-Running: fpga_mapper (Map & Optimize) on write_address_traversal_syn|synthesis
+Running: map (Map) on spi_test_syn|synthesis
 
-Copied C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synwork\write_address_traversal_m.srm to C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\write_address_traversal.srm
+
+Running: fpga_mapper (Map & Optimize) on spi_test_syn|synthesis
+
+Copied C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synwork\spi_test_m.srm to C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\spi_test.srm
 
 
 fpga_mapper Completed with warnings
 Return Code: 1
-Run Time:0h:00m:01s
+Run Time:0h:00m:02s
 
-Complete: Map on write_address_traversal_syn|synthesis
+Complete: Map on spi_test_syn|synthesis
 
-Complete: Logic Synthesis on write_address_traversal_syn|synthesis
+Complete: Logic Synthesis on spi_test_syn|synthesis
 
-Copied C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\write_address_traversal.srr to C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\backup\write_address_traversal.srr
-
-TCL script complete: "write_address_traversal_syn.tcl"
+TCL script complete: "spi_test_syn.tcl"
 
 exit status=0
 
