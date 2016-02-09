@@ -8,25 +8,25 @@
 # vmap -modelsim_quiet proasic3l C:/Microsemi/Libero_v11.6/Designer/lib/modelsim/precompiled/vlog/proasic3l 
 # Modifying modelsim.ini
 # Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 00:34:36 on Feb 09,2016
-# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/sdram_interface.v 
-# -- Compiling module sdram_interface
+# Start time: 00:35:31 on Feb 09,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/memory_controller.v 
+# -- Compiling module memory_controller
 # 
 # Top level modules:
-# 	sdram_interface
-# End time: 00:34:36 on Feb 09,2016, Elapsed time: 0:00:00
+# 	memory_controller
+# End time: 00:35:31 on Feb 09,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 00:34:36 on Feb 09,2016
-# vlog -reportprogress 300 "+incdir+C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus" -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/tb_sdram_interface.v 
-# -- Compiling module tb_sdram_interface
+# Start time: 00:35:31 on Feb 09,2016
+# vlog -reportprogress 300 "+incdir+C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus" -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/tb_memory_controller.v 
+# -- Compiling module tb_memory_controller
 # 
 # Top level modules:
-# 	tb_sdram_interface
-# End time: 00:34:36 on Feb 09,2016, Elapsed time: 0:00:00
+# 	tb_memory_controller
+# End time: 00:35:31 on Feb 09,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -gui -do "do run.do" -l tb_sdram_interface_presynth_simulation.log 
-# Start time: 00:34:37 on Feb 09,2016
+# vsim -gui -do "do run.do" -l tb_memory_controller_presynth_simulation.log 
+# Start time: 00:35:31 on Feb 09,2016
 # //  ModelSim Microsemi 10.3c Jul 19 2014 
 # //
 # //  Copyright 1991-2014 Mentor Graphics Corporation
@@ -36,8 +36,8 @@
 # //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
 # //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
 # //
-# Loading presynth.tb_sdram_interface
-# Loading presynth.sdram_interface
+# Loading presynth.tb_memory_controller
+# Loading presynth.memory_controller
 run -all
-# End time: 00:35:19 on Feb 09,2016, Elapsed time: 0:00:42
+# End time: 00:36:17 on Feb 09,2016, Elapsed time: 0:00:46
 # Errors: 0, Warnings: 0

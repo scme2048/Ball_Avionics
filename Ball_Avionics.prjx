@@ -63,6 +63,11 @@ SIZE="3929"
 PARENT="<project>\component\work\spi_test\spi_test.cxf"
 IS_READONLY="TRUE"
 ENDFILE
+VALUE "<project>\component\work\test_memory\test_memory.cxf,actgen_cxf"
+STATE="utd"
+TIME="1454998827"
+SIZE="627"
+ENDFILE
 VALUE "<project>\designer\impl1\CLK_1M.ide_des,ide_des"
 STATE="utd"
 TIME="1454549480"
@@ -115,8 +120,8 @@ SIZE="758"
 ENDFILE
 VALUE "<project>\hdl\memory_controller.v,hdl"
 STATE="utd"
-TIME="1454911984"
-SIZE="5265"
+TIME="1454999614"
+SIZE="5521"
 ENDFILE
 VALUE "<project>\hdl\mode_control.v,hdl"
 STATE="utd"
@@ -187,6 +192,11 @@ VALUE "<project>\simulation\tb_geig_data_handling_presynth_simulation.log,log"
 STATE="utd"
 TIME="1452749278"
 SIZE="2526"
+ENDFILE
+VALUE "<project>\simulation\tb_memory_controller_presynth_simulation.log,log"
+STATE="utd"
+TIME="1455002548"
+SIZE="126"
 ENDFILE
 VALUE "<project>\simulation\tb_read_address_traversal_presynth_simulation.log,log"
 STATE="utd"
@@ -331,6 +341,11 @@ STATE="utd"
 TIME="1452748886"
 SIZE="2568"
 ENDFILE
+VALUE "<project>\stimulus\tb_memory_controller.v,tb_hdl"
+STATE="utd"
+TIME="1455003471"
+SIZE="3402"
+ENDFILE
 VALUE "<project>\stimulus\tb_read_address_traversal.v,tb_hdl"
 STATE="utd"
 TIME="1454396714"
@@ -458,7 +473,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_v11.6\Model\win32acoem\modelsim.exe"
-PARAM=""
+PARAM=" -l tb_memory_controller_presynth_simulation.log "
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -507,12 +522,15 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+Reports;Reports;0
+ReportsCurrentItem;Project Summary:Ball_Avionics.log
 HDL;hdl\sdram_interface.v;0
 HDL;hdl\memory_controller.v;0
+HDL;stimulus\tb_memory_controller.v;0
 HDL;hdl\read_address_traversal.v;0
 SmartDesign;full_sys;0
 HDL;hdl\test_harness_geiger_stack.v;0
-ACTIVEVIEW;hdl\memory_controller.v
+ACTIVEVIEW;stimulus\tb_memory_controller.v
 ENDLIST
 LIST ModuleSubBlockList
 LIST "CLK_1M::work","smartgen\CLK_1M\CLK_1M.v","TRUE","FALSE"
@@ -579,6 +597,8 @@ LIST "test_harness::work","hdl\test_harness.v","FALSE","FALSE"
 ENDLIST
 LIST "test_harness_geiger_stack::work","hdl\test_harness_geiger_stack.v","FALSE","FALSE"
 ENDLIST
+LIST "test_memory::work","component\work\test_memory\test_memory.cxf","TRUE","FALSE"
+ENDLIST
 LIST "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
 ENDLIST
 LIST "write_address_traversal::work","hdl\write_address_traversal.v","FALSE","FALSE"
@@ -591,6 +611,9 @@ SUBBLOCK "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
 ENDLIST
 LIST "tb_geig_data_handling::work","stimulus\tb_geig_data_handling.v","FALSE","TRUE"
 SUBBLOCK "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
+ENDLIST
+LIST "tb_memory_controller::work","stimulus\tb_memory_controller.v","FALSE","TRUE"
+SUBBLOCK "memory_controller::work","hdl\memory_controller.v","FALSE","FALSE"
 ENDLIST
 LIST "tb_read_address_traversal::work","stimulus\tb_read_address_traversal.v","FALSE","TRUE"
 SUBBLOCK "read_address_traversal::work","hdl\read_address_traversal.v","FALSE","FALSE"

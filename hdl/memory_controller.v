@@ -43,6 +43,8 @@ output [12:0] ROW_OUT;
 output [1:0] CMD_OUT;
 
 /////Statements
+
+
 // Local Vars
 reg [47:0] geig_prev;
 reg [1:0] new_geig;
@@ -66,6 +68,17 @@ reg [7:0] schedule;
 reg [2:0] num_cycles;
 reg [2:0] write_count;
 reg busy_hold;
+
+// Assignments w/ Registers
+reg next_write, next_read, cmd_out, ba_out, row_out, col_out, data_out;
+assign NEXT_WRITE = next_write;
+assign NEXT_READ = next_read;
+assign CMD_OUT = cmd_out;
+assign BA_OUT = ba_out;
+assign ROW_OUT = row_out;
+assign COL_OUT = col_out;
+assign DATA_OUT = data_out;
+
 always @(posedge CLK_48MHZ)
 begin
 
@@ -135,22 +148,22 @@ if ((schedule[1:0] == new_geig_cmd) || (schedule[1:0] == new_mag_cmd)) begin
     if (write_count<num_cycles) begin
         // Write to data to address
         if ((busy_hold==1'b1)&&(SDRAM_STATUS==1'b0)) begin
-            NEXT_WRITE<=1'b1;
+            next_write<=1'b1;
             data_buffer = data_buffer >>16;
             busy_hold=1'b0;
             write_count=write_count+1;
         end
 
         if ((SDRAM_STATUS==1'b1) && (busy_hold==1)) begin
-            CMD_OUT=2'b00;
+            cmd_out<=2'b00;
         end
         if ((SDRAM_STATUS==1'b0) && (busy_hold==0)) begin
-            NEXT_WRITE=1'b0;
-            CMD_OUT=2'b10;
-            BA_OUT=BA_WRITE;
-            ROW_OUT=ROW_WRITE;
-            COL_OUT=COL_WRITE;
-            DATA_OUT=data_buffer[15:0];
+            next_write<=1'b0;
+            cmd_out<=2'b10;
+            ba_out<=BA_WRITE;
+            row_out<=ROW_WRITE;
+            col_out<=COL_WRITE;
+            data_out<=data_buffer[15:0];
             busy_hold=1'b1;
         end
     end else if (write_count==num_cycles) begin
@@ -159,23 +172,22 @@ if ((schedule[1:0] == new_geig_cmd) || (schedule[1:0] == new_mag_cmd)) begin
     end
 end else if (schedule[1:0]==new_read_cmd) begin
     if ((SDRAM_STATUS==1'b0) && (busy_hold==1)) begin
-        NEXT_READ=1'b1;
-        buys_hold=0;
+        next_read<=1'b1;
+        busy_hold=0;
     end
     if ((SDRAM_STATUS==1'b1) && (busy_hold==1)) begin
-        CMD_OUT=2'b00;
+        cmd_out<=2'b00;
     end
     if ((SDRAM_STATUS==1'b0) && (busy_hold==0)) begin
-        NEXT_READ=1'b0;
-        CMD_OUT=2'b01;
-        BA_OUT=BA_READ;
-        ROW_OUT=ROW_READ;
-        COL_OUT=COL_READ;
+        next_read<=1'b0;
+        cmd_out<=2'b01;
+        ba_out<=BA_READ;
+        row_out<=ROW_READ;
+        col_out<=COL_READ;
         busy_hold=1'b1;
     end
 end
 
-// Then send each chunk and wait for interface to complete cycle.
 
 
 end
