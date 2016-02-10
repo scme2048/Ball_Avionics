@@ -1,0 +1,4 @@
+HelpInfo,C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\html,fpgahelp.qhc,errormessages.mp,C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin\mbin\assistant
+Implementation;Synthesis;RootName:timestamp
+Implementation;Synthesis|| CL172 ||@E:Only one always block can assign a given variable TIMESTAMP[23:0]||timestamp.srr(53);liberoaction://cross_probe/hdl/file/'C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\timestamp.srr'/linenumber/53||timestamp.v(17);liberoaction://cross_probe/hdl/file/'C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\timestamp.v'/linenumber/17
+Implementation;Synthesis||(null)||Please refer to the log file for details about 1 Error(s) , 26 Warning(s)||timestamp.srr;liberoaction://open_report/file/timestamp.srr||(null);(null)

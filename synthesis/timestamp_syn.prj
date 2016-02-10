@@ -1,8 +1,6 @@
 #--  Synopsys, Inc.
 #--  Version J-2015.03M-3
-#--  Project file C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\run_options.txt
-#--  Written on Tue Feb 09 22:56:38 2016
-
+#--  Project file C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\timestamp_syn.prj
 
 #project files
 add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/timestamp.v"

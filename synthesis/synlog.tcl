@@ -1,1 +1,1 @@
-run_tcl -fg spi_test_syn.tcl
+run_tcl -fg timestamp_syn.tcl

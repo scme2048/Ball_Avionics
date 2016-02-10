@@ -63,6 +63,7 @@ wire [23:0] ts_out;
 timestamp timestamp_0 (
     // Inputs
     .CLK_10HZ(SYSCLK),
+    .RESET(NSYSRESET),
 
     // Outputs
     .TIMESTAMP( ts_out)

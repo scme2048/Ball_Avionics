@@ -1,0 +1,2 @@
+@E: CL172 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\timestamp.v":17:11:17:19|Only one always block can assign a given variable TIMESTAMP[23:0]
+

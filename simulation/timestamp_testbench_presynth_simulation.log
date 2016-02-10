@@ -8,25 +8,25 @@
 # vmap -modelsim_quiet proasic3l C:/Microsemi/Libero_v11.6/Designer/lib/modelsim/precompiled/vlog/proasic3l 
 # Modifying modelsim.ini
 # Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 12:01:43 on Jan 12,2016
+# Start time: 23:57:57 on Feb 09,2016
 # vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/timestamp.v 
 # -- Compiling module timestamp
 # 
 # Top level modules:
 # 	timestamp
-# End time: 12:01:43 on Jan 12,2016, Elapsed time: 0:00:00
+# End time: 23:57:57 on Feb 09,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 12:01:43 on Jan 12,2016
+# Start time: 23:57:57 on Feb 09,2016
 # vlog -reportprogress 300 "+incdir+C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus" -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/timestamp_testbench.v 
 # -- Compiling module timestamp_testbench
 # 
 # Top level modules:
 # 	timestamp_testbench
-# End time: 12:01:43 on Jan 12,2016, Elapsed time: 0:00:00
+# End time: 23:57:57 on Feb 09,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -gui -do "do run.do" -l timestamp_testbench_presynth_simulation.log 
-# Start time: 12:01:43 on Jan 12,2016
+# Start time: 23:57:58 on Feb 09,2016
 # //  ModelSim Microsemi 10.3c Jul 19 2014 
 # //
 # //  Copyright 1991-2014 Mentor Graphics Corporation
@@ -39,5 +39,44 @@
 # Loading presynth.timestamp_testbench
 # Loading presynth.timestamp
 run -all
-# End time: 12:07:06 on Jan 12,2016, Elapsed time: 0:05:23
+do run.do
+# INFO: Simulation library presynth already exists
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet presynth presynth 
+# Modifying modelsim.ini
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet proasic3l C:/Microsemi/Libero_v11.6/Designer/lib/modelsim/precompiled/vlog/proasic3l 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 23:59:39 on Feb 09,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/timestamp.v 
+# -- Compiling module timestamp
+# 
+# Top level modules:
+# 	timestamp
+# End time: 23:59:39 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 23:59:39 on Feb 09,2016
+# vlog -reportprogress 300 "+incdir+C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus" -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/timestamp_testbench.v 
+# -- Compiling module timestamp_testbench
+# 
+# Top level modules:
+# 	timestamp_testbench
+# End time: 23:59:39 on Feb 09,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 23:59:40 on Feb 09,2016
+# Loading presynth.timestamp_testbench
+# Loading presynth.timestamp
+run
+run
+run
+run
+run
+run
+run
+run -continue
+run -all
+# End time: 00:12:04 on Feb 10,2016, Elapsed time: 0:12:24
 # Errors: 0, Warnings: 0

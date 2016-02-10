@@ -10,8 +10,8 @@
 //
 /////////////////////////////////////////////////////////////////////////////////////////////////// 
 
-module geig_data_handling( CLK_100KHZ,CLK_10HZ, TIMESTAMP, GSTREAM, G_DATA_STACK );
-input CLK_100KHZ,CLK_10HZ,GSTREAM;
+module geig_data_handling( CLK_100KHZ,CLK_10HZ,RESET, TIMESTAMP, GSTREAM, G_DATA_STACK );
+input CLK_100KHZ,CLK_10HZ,GSTREAM,RESET;
 input [23:0] TIMESTAMP;
 output G_DATA_STACK;
 reg [47:0] G_DATA_STACK;

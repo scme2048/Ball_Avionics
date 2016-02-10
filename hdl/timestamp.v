@@ -10,16 +10,21 @@
 // Author: <Scott Mende>
 
 
-module timestamp( CLK_10HZ,TIMESTAMP);
-input CLK_10HZ;
+module timestamp( CLK_10HZ,RESET,TIMESTAMP);
+input CLK_10HZ,RESET;
 output TIMESTAMP;
 
-reg [23:0] TIMESTAMP=0;
+reg [23:0] TIMESTAMP;
 
-always @(posedge CLK_10HZ)
+always @(posedge CLK_10HZ or negedge RESET)
 begin
+    if (RESET) begin
+        TIMESTAMP<=24'b000000000000000000000000;
+    end else begin
     TIMESTAMP<=TIMESTAMP+1;
+    end
 end
+
 
 endmodule
 
