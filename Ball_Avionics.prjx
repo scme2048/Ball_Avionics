@@ -190,8 +190,8 @@ SIZE="2012"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1455003326"
-SIZE="704"
+TIME="1455087472"
+SIZE="693"
 ENDFILE
 VALUE "<project>\simulation\spi_master_tb3_presynth_simulation.log,log"
 STATE="utd"
@@ -235,8 +235,8 @@ SIZE="2059"
 ENDFILE
 VALUE "<project>\simulation\timestamp_testbench_presynth_simulation.log,log"
 STATE="utd"
-TIME="1455087579"
-SIZE="3475"
+TIME="1455088324"
+SIZE="3621"
 ENDFILE
 VALUE "<project>\smartgen\CLK_1MHZ\CLK_1MHZ.cxf,actgen_cxf"
 STATE="utd"
@@ -388,12 +388,12 @@ SIZE="2087"
 ENDFILE
 VALUE "<project>\synthesis\synwork\layer0.so,so"
 STATE="utd"
-TIME="1455083705"
+TIME="1455083798"
 SIZE="159"
 ENDFILE
 VALUE "<project>\synthesis\timestamp_syn.prj,prj"
 STATE="utd"
-TIME="1455083705"
+TIME="1455083798"
 SIZE="1602"
 ENDFILE
 VALUE "<project>\synthesis\write_address_traversal.edn,syn_edn"
@@ -504,8 +504,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin\synplify_pro.exe"
-PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
-BATCH=1
+PARAM=""
+BATCH=0
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -513,7 +513,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_v11.6\Model\win32acoem\modelsim.exe"
-PARAM=" -l timestamp_testbench_presynth_simulation.log "
+PARAM=""
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -573,20 +573,8 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-Reports;Reports;0
-ReportsCurrentItem;Synthesize:timestamp.srr
-SmartDesign;full_sys;0
-HDL;hdl\geig_data_handling.v;0
-HDL;stimulus\timestamp_testbench.v;0
-HDL;hdl\timestamp.v;0
-HDL;hdl\clock_div_1MHZ_100KHZ.v;0
-HDL;hdl\clock_div_1MHZ_10HZ.v;0
-HDL;hdl\SPI_Master.v;0
-HDL;hdl\test_harness_geiger_stack.v;0
-HDL;hdl\memory_controller.v;0
-HDL;stimulus\tb_memory_controller.v;0
-HDL;hdl\read_address_traversal.v;0
-ACTIVEVIEW;hdl\timestamp.v
+StartPage;StartPage;0
+ACTIVEVIEW;StartPage
 ENDLIST
 LIST ModuleSubBlockList
 LIST "CLK_1M::work","smartgen\CLK_1M\CLK_1M.v","TRUE","FALSE"
@@ -618,10 +606,10 @@ SUBBLOCK "CLK_6_5MHZ::work","smartgen\CLK_6_5MHZ\CLK_6_5MHZ.v","TRUE","FALSE"
 SUBBLOCK "clock_div_1MHZ_100KHZ::work","hdl\clock_div_1MHZ_100KHZ.v","FALSE","FALSE"
 SUBBLOCK "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
 SUBBLOCK "clock_div_1MHZ_1KHZ::work","hdl\clock_div_1MHZ_1KHZ.v","FALSE","FALSE"
+SUBBLOCK "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
 SUBBLOCK "sdram_interface::work","hdl\sdram_interface.v","FALSE","FALSE"
 SUBBLOCK "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
 SUBBLOCK "test_harness_geiger_stack::work","hdl\test_harness_geiger_stack.v","FALSE","FALSE"
-SUBBLOCK "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
 SUBBLOCK "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
 ENDLIST
 LIST "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
@@ -644,10 +632,10 @@ LIST "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
 ENDLIST
 LIST "spi_test::work","component\work\spi_test\spi_test.v","TRUE","FALSE"
 SUBBLOCK "CLK_26MHZ::work","smartgen\CLK_26MHZ\CLK_26MHZ.v","TRUE","FALSE"
+SUBBLOCK "clock_div_1MHZ_1KHZ::work","hdl\clock_div_1MHZ_1KHZ.v","FALSE","FALSE"
 SUBBLOCK "clock_div_26MHZ_1MHZ::work","","FALSE","FALSE"
 SUBBLOCK "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
 SUBBLOCK "test_constants_spi::work","","FALSE","FALSE"
-SUBBLOCK "clock_div_1MHZ_1KHZ::work","hdl\clock_div_1MHZ_1KHZ.v","FALSE","FALSE"
 ENDLIST
 LIST "test_constants_spi::work","","FALSE","FALSE"
 ENDLIST

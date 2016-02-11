@@ -22,20 +22,6 @@ module reset_pulse( CLK_48MHZ, EXT_RESET, RESET);
 input CLK_48MHZ,EXT_RESET;
 output RESET;
 
-
-reg pulse;
-reg rst;
-always @(posedge CLK_48MHZ) 
-begin
-    rst=1'b1;
-    if (pulse ==1'b1) begin
-        rst=1'b0;
-    end 
-end
-
-always @(posedge EXT_RESET)
-begin
-    pulse<=1'b1;
-end
+assign RESET = (EXT_RESET===1'b0) ? CLK_48MHZ  : 1'b1;
 endmodule
 
