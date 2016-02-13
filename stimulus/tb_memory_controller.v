@@ -43,20 +43,27 @@ reg [12:0] row_read;
 reg [1:0] ba_write;
 reg [8:0] col_write;
 reg [12:0] row_write;
+reg mag_toggle;
+reg geig_toggle;
+reg [5:0] mag_count;
 
 initial
 begin
     SYSCLK = 1'b0;
     NSYSRESET = 1'b0;
     sdram_status = 1'b0;
-    mag_data = 80'bZ;
-    geig_data = 47'bZ;
+   // mag_data = 80'bZ;
+    geig_data = 48'bZ;
     ba_read = 2'b00;
     col_read=9'b000000000;
     row_read = 13'b0000000000000;
     ba_write = 2'b00;
     col_write = 9'b000000000;
     row_write = 13'b0000000000000;
+    mag_toggle=1'b0;
+    geig_toggle=1'b0;
+    mag_count=0;
+    read_cmd=1'b0;
 end
 
 //////////////////////////////////////////////////////////////////////
@@ -64,7 +71,11 @@ end
 //////////////////////////////////////////////////////////////////////
 initial
 begin
-    #(SYSCLK_PERIOD * 10 )
+    #(SYSCLK_PERIOD * 1 )
+        NSYSRESET = 1'b1;
+    #(SYSCLK_PERIOD * 2 )
+        NSYSRESET = 1'b0;
+    #(SYSCLK_PERIOD * 3 )
         NSYSRESET = 1'b1;
         
 end
@@ -76,28 +87,51 @@ wire [1:0] ba_out;
 wire [8:0] col_out;
 wire [12:0] row_out;
 wire [1:0] cmd_out;
+
 //////////////////////////////////////////////////////////////////////
 // Clock Driver
 //////////////////////////////////////////////////////////////////////
 always @(SYSCLK) begin
     #(SYSCLK_PERIOD / 2.0) SYSCLK <= !SYSCLK;
-    //#(SYSCLK_PERIOD * 1000) mag_data <= 80'hFFFFFFFFFFFFFF;
-    //if (mag_data !== 80'bZ) begin
-        //#(SYSCLK_PERIOD*10) mag_data <=80'bZ;
-    //end
-    //if (cmd_out >2'b00) begin
-        //sdram_status=1'b1;
-        //#(SYSCLK_PERIOD*12) sdram_status=1'b0;
-    //end
 end
 
+always @(SYSCLK)
+    #(SYSCLK_PERIOD*1000) mag_toggle<=!mag_toggle;
+always @(SYSCLK)
+    #(SYSCLK_PERIOD*1000) geig_toggle<=!geig_toggle;
+always @(SYSCLK)
+    #(SYSCLK_PERIOD*1000) read_cmd<=!read_cmd;
 
+always @(SYSCLK) begin
+    if (mag_toggle==1'b1) begin
+        mag_data=80'h55554444333322221111;
+    end else begin
+        mag_data=80'bZ;
+    end
+
+    if (geig_toggle==1'b1) begin
+        geig_data=48'h333322221111;
+    end else begin
+        geig_data=48'bZ;
+    end
+
+    if ((cmd_out==1) || (cmd_out==2)) begin
+        sdram_status = 1'b1;
+    end else if ((sdram_status==1'b1) && (mag_count<10)) begin
+        mag_count=mag_count+1;
+    end else if (mag_count==10) begin
+        mag_count=0;
+        sdram_status=1'b0;
+    end
+    
+end
 //////////////////////////////////////////////////////////////////////
 // Instantiate Unit Under Test:  memory_controller
 //////////////////////////////////////////////////////////////////////
 memory_controller memory_controller_0 (
     // Inputs
     .CLK_48MHZ(SYSCLK),
+    .RESET(NSYSRESET),
     .SDRAM_STATUS(sdram_status),
     .READ_CMD(read_cmd),
     .GEIG_DATA(geig_data),

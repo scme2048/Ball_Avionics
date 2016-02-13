@@ -19,7 +19,7 @@ reg [16:0] counter;
 reg clk_out;
 parameter factor=10; // Change this number for proper clock. Period in relation to nanoseconds.
 assign CLK_100KHZ_OUT = clk_out;
-always @(posedge CLK_1MHZ_IN)
+always @(posedge CLK_1MHZ_IN or negedge RESET)
 begin
     if (RESET==1'b0) begin
         counter<=1;

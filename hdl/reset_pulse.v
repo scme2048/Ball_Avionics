@@ -18,10 +18,11 @@
 
 //`timescale <time_units> / <precision>
 
-module reset_pulse( CLK_48MHZ, EXT_RESET, RESET);
+module reset_pulse( CLK_48MHZ, EXT_RESET, RESET,CLK_OUT_48MHZ);
 input CLK_48MHZ,EXT_RESET;
-output RESET;
+output RESET, CLK_OUT_48MHZ;
 
+assign CLK_OUT_48MHZ = (EXT_RESET===1'b1) ? CLK_48MHZ : 1'b0;
 assign RESET = (EXT_RESET===1'b0) ? CLK_48MHZ  : 1'b1;
 endmodule
 

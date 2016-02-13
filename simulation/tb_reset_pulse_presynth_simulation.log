@@ -1,0 +1,142 @@
+# Reading C:/Microsemi/Libero_v11.6/Model/tcl/vsim/pref.tcl
+# do run.do
+# INFO: Simulation library presynth already exists
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet presynth presynth 
+# Modifying modelsim.ini
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet proasic3l C:/Microsemi/Libero_v11.6/Designer/lib/modelsim/precompiled/vlog/proasic3l 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 18:14:53 on Feb 10,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/reset_pulse.v 
+# -- Compiling module reset_pulse
+# 
+# Top level modules:
+# 	reset_pulse
+# End time: 18:14:53 on Feb 10,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 18:14:53 on Feb 10,2016
+# vlog -reportprogress 300 "+incdir+C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus" -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/tb_reset_pulse.v 
+# -- Compiling module tb_reset_pulse
+# 
+# Top level modules:
+# 	tb_reset_pulse
+# End time: 18:14:53 on Feb 10,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -gui -do "do run.do" -l tb_reset_pulse_presynth_simulation.log 
+# Start time: 18:14:54 on Feb 10,2016
+# //  ModelSim Microsemi 10.3c Jul 19 2014 
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading presynth.tb_reset_pulse
+# Loading presynth.reset_pulse
+do run.do
+# INFO: Simulation library presynth already exists
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet presynth presynth 
+# Modifying modelsim.ini
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet proasic3l C:/Microsemi/Libero_v11.6/Designer/lib/modelsim/precompiled/vlog/proasic3l 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 18:57:51 on Feb 10,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/reset_pulse.v 
+# -- Compiling module reset_pulse
+# 
+# Top level modules:
+# 	reset_pulse
+# End time: 18:57:51 on Feb 10,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 18:57:51 on Feb 10,2016
+# vlog -reportprogress 300 "+incdir+C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus" -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/tb_reset_pulse.v 
+# -- Compiling module tb_reset_pulse
+# 
+# Top level modules:
+# 	tb_reset_pulse
+# End time: 18:57:51 on Feb 10,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 18:57:52 on Feb 10,2016
+# Loading presynth.tb_reset_pulse
+# Loading presynth.reset_pulse
+# ** Warning: (vsim-3017) C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/tb_reset_pulse.v(64): [TFMPC] - Too few port connections. Expected 4, found 3.
+# 
+#         Region: /tb_reset_pulse/reset_pulse_0
+# ** Warning: (vsim-3722) C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/tb_reset_pulse.v(64): [TFMPC] - Missing connection for port 'CLK_OUT_48MHZ'.
+# 
+do run.do
+# INFO: Simulation library presynth already exists
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet presynth presynth 
+# Modifying modelsim.ini
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet proasic3l C:/Microsemi/Libero_v11.6/Designer/lib/modelsim/precompiled/vlog/proasic3l 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 18:58:49 on Feb 10,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/reset_pulse.v 
+# -- Compiling module reset_pulse
+# 
+# Top level modules:
+# 	reset_pulse
+# End time: 18:58:49 on Feb 10,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 18:58:49 on Feb 10,2016
+# vlog -reportprogress 300 "+incdir+C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus" -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/tb_reset_pulse.v 
+# -- Compiling module tb_reset_pulse
+# 
+# Top level modules:
+# 	tb_reset_pulse
+# End time: 18:58:49 on Feb 10,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 18:58:50 on Feb 10,2016
+# Loading presynth.tb_reset_pulse
+# Loading presynth.reset_pulse
+# ** Warning: (vsim-3017) C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/tb_reset_pulse.v(64): [TFMPC] - Too few port connections. Expected 4, found 3.
+# 
+#         Region: /tb_reset_pulse/reset_pulse_0
+# ** Warning: (vsim-3722) C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/tb_reset_pulse.v(64): [TFMPC] - Missing connection for port 'CLK_OUT_48MHZ'.
+# 
+do run.do
+# INFO: Simulation library presynth already exists
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet presynth presynth 
+# Modifying modelsim.ini
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet proasic3l C:/Microsemi/Libero_v11.6/Designer/lib/modelsim/precompiled/vlog/proasic3l 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 18:59:32 on Feb 10,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/reset_pulse.v 
+# -- Compiling module reset_pulse
+# 
+# Top level modules:
+# 	reset_pulse
+# End time: 18:59:32 on Feb 10,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 18:59:32 on Feb 10,2016
+# vlog -reportprogress 300 "+incdir+C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus" -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/tb_reset_pulse.v 
+# -- Compiling module tb_reset_pulse
+# 
+# Top level modules:
+# 	tb_reset_pulse
+# End time: 18:59:32 on Feb 10,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 18:59:33 on Feb 10,2016
+# Loading presynth.tb_reset_pulse
+# Loading presynth.reset_pulse
+# End time: 19:00:15 on Feb 10,2016, Elapsed time: 0:00:42
+# Errors: 0, Warnings: 0

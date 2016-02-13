@@ -15,18 +15,20 @@ input CLK_100KHZ,CLK_10HZ,GSTREAM,RESET;
 input [23:0] TIMESTAMP;
 output G_DATA_STACK;
 reg [47:0] G_DATA_STACK;
-reg [7:0] ID_GEIG=8'h47;
+reg [7:0] ID_GEIG;
 
 // Output data stack every 60 seconds, 600 deciseconds.
-reg [15:0] geig_counts=0;
-reg [9:0] min_counter=0; //Count to 600
-always @(posedge CLK_10HZ)
+reg [15:0] geig_counts;
+reg [9:0] min_counter; //Count to 600
+always @(posedge CLK_10HZ or negedge RESET)
 begin
-    if (min_counter==600) begin
+    if (RESET==1'b0) begin
+        ID_GEIG = 8'h47;
+        min_counter = 10'b0000000000;
+    end else if (min_counter==600) begin
         //Output G_Data_Stack
         G_DATA_STACK={geig_counts,TIMESTAMP,ID_GEIG};
         min_counter=1;
-        geig_counts=0;
     end else begin
     G_DATA_STACK=48'bZ;
     min_counter=min_counter+1;
@@ -38,17 +40,24 @@ end
 // NOTE: Check sampling frequency as geiger characterization continues.
 // - Initial geiger testing shows spikes of about 180 microsecs. Sampling at 100 kHz captures this. 
 // - Lower sampling frequency desirable for efficiency and ease of simulation/data accumulation.
-reg [9:0] shift_reg=0;
-always @(posedge CLK_100KHZ)
+reg [9:0] shift_reg;
+always @(posedge CLK_100KHZ or negedge RESET)
 begin
+// PUT IN RESETS HERE!
 //Shift all bits left by 1
 shift_reg=shift_reg<<1;
 //Assign first bit to Geiger Counter input
 shift_reg[0]=GSTREAM;
 
 // Catches up edge with a little buffer (6 ms) to account for debouncing.
-if (shift_reg == 10'b0000111111) begin
-    geig_counts=geig_counts+1;
+if (RESET==1'b0) begin
+    shift_reg=10'b0000000000;
+    geig_counts = 16'b0000000000000000;
+end else if (shift_reg == 10'b0000111111) begin
+    geig_counts=geig_counts+1; // THIS IS WRONG! WILL NOT SYNTHESIZE
+end
+if (min_counter ==600) begin
+    geig_counts=0;
 end
 
 

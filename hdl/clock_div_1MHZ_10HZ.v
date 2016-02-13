@@ -19,7 +19,7 @@ reg [16:0] counter=1;
 reg clk_out=1;
 parameter factor=100000;
 assign CLK_10HZ_OUT = clk_out;
-always @(posedge CLK_1MHZ_IN)
+always @(posedge CLK_1MHZ_IN or negedge RESET)
 begin
     if (RESET==1'b0) begin
         clk_out<=1;

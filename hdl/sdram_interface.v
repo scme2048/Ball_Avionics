@@ -6,7 +6,7 @@
 // Description: This module serves as the primary controller of the SDRAM. Memory traversal and commanding will be
 // handled elsewhere. This module is purely used to read and write data to memory.
 //
-//
+// THIS NEEDS RESETS SETUP!!!!!
 // Targeted device: <Family::ProASIC3L> <Die::A3PE3000L> <Package::484 FBGA>
 // Author: <Scott Mende>
 //
@@ -14,7 +14,7 @@
 
 //`timescale <time_units> / <precision>
 
-module sdram_interface(CLK_48MHZ,TIMESTAMP,A_IN_BANK,A_IN_COL,A_IN_ROW,D_IN,CMD_IN,
+module sdram_interface(CLK_48MHZ,RESET,TIMESTAMP,A_IN_BANK,A_IN_COL,A_IN_ROW,D_IN,CMD_IN,
 SDRAM_D0,SDRAM_D1,SDRAM_D2,SDRAM_D3,SDRAM_D4,SDRAM_D5,SDRAM_D6,SDRAM_D7,SDRAM_D8,SDRAM_D9,SDRAM_D10,SDRAM_D11,
 SDRAM_D12,SDRAM_D13,SDRAM_D14,SDRAM_D15,
 SDRAM_A0,SDRAM_A1,SDRAM_A2,SDRAM_A3,SDRAM_A4,SDRAM_A5,SDRAM_A6,SDRAM_A7,SDRAM_A8,SDRAM_A9,SDRAM_A10,SDRAM_A11,
@@ -34,6 +34,7 @@ parameter t_ref = 1; // Refresh period 6.4 ms, 1 timestamp is sufficient
 
 // Inputs
 input CLK_48MHZ;
+input RESET;
 input [23:0] TIMESTAMP;
 input [1:0] CMD_IN; // For now CMD_IN Options: 0-Idle, 1-Read, 2-Write 
 input [1:0] A_IN_BANK;
@@ -55,7 +56,7 @@ reg busy;
 assign STATUS=busy;
 // Data Assignment
 reg [15:0] dout; // This should be set to the input data
-reg weVAL=0; // This will be commanded during a write cycle
+reg weVAL; // This will be commanded during a write cycle
 
 assign SDRAM_D0 = (weVAL==1'b1) ? dout[0] : 1'bz;
 assign SDRAM_D1 = (weVAL==1'b1) ? dout[1] : 1'bz;
@@ -111,23 +112,23 @@ assign SDRAM_A11 = address[11];
 assign SDRAM_A12 = address[12];
 
 // Power Up and Initialization Control Variables
-reg pwr_up_hold =1'b1;
-reg pwr_stabalize=1'b0;
-reg [3:0] init_counter = 4'b0;
+reg pwr_up_hold;
+reg pwr_stabalize;
+reg [3:0] init_counter;
 reg [23:0] ts_delay;
 assign SDRAM_CLK = (pwr_stabalize===1'b0) ? 1'b0  : CLK_48MHZ; // Hold clock low while power stabalizes
 
 // Control Variables
-reg cke = 1'b0;
-reg cs  = 1'b0;
-reg ras = 1'b0;
-reg cas = 1'b0;
-reg we  = 1'b0;
-reg ba0 = 1'b0;
-reg ba1 = 1'b0;
-reg a10 = 1'b0;
-reg dqmu = 1'b0;
-reg dqml = 1'b0;
+reg cke;
+reg cs;
+reg ras;
+reg cas;
+reg we;
+reg ba0;
+reg ba1;
+reg a10;
+reg dqmu;
+reg dqml;
 // Control Output Assignments
 assign SDRAM_CKE = cke;
 assign SDRAM_CS =  cs;
@@ -140,27 +141,55 @@ assign SDRAM_DQMU= dqmu;
 assign SDRAM_DQML= dqml;
 
 // Write Cycle Command Vars and Counters
-reg write_cycle = 0;
-reg write_exit=0;
-reg [3:0] write_counter=4'b0;
+reg write_cycle;
+reg write_exit;
+reg [3:0] write_counter;
 
 // Read Cycle Command Vars and Counters
-reg read_cycle =0;
-reg [3:0] read_counter=4'b0;
-reg read_exit=0;
+reg read_cycle;
+reg [3:0] read_counter;
+reg read_exit;
 
 // Idle Cycle Command Vars and Counters
 reg idle_cycle;
 
+////////////////
+// TEMP VARS FOR OUTPUT OLD!!
 output test_WC;
 wire [3:0] test_WC;
 assign test_WC=read_counter;
+
+////////////////
 ///// Conditional Logic
-always @(negedge CLK_48MHZ)
+always @(negedge CLK_48MHZ or negedge RESET)
 begin
+if (RESET==1'b0) begin
+    //State/Cycle Vars
+    weVAL<=1'b0;
+    pwr_up_hold=1'b1;
+    pwr_stabalize=1'b0;
+    init_counter=4'b0;
+    write_cycle=1'b0;
+    write_exit=1'b0;
+    write_counter=4'b0;
+    read_cycle=1'b0;
+    read_counter=4'b0;
+    read_exit=1'b0;
+    //SDRAM Control Vars
+    cke<=1'b0;
+    cs<=1'b0;
+    ras<=1'b0;
+    cas<=1'b0;
+    we<=1'b0;
+    ba0<=1'b0;
+    ba1<=1'b0;
+    a10<=1'b0;
+    dqmu<=1'b0;
+    dqml<=1'b0;
+end
 
 // Command setup
-if (busy==0) begin
+if ((busy==0) && (RESET==1)) begin
     if (CMD_IN==2) begin
         write_cycle=1;
         write_exit=0;
@@ -174,7 +203,7 @@ if (busy==0) begin
 end
 
 // Write Cycle
-if (write_cycle==1) begin
+if ((write_cycle==1) && (RESET==1)) begin
     if (write_counter==t_rc+t_ras+2) begin
         //SELF
         cke<=0;
@@ -266,7 +295,7 @@ if (write_cycle==1) begin
 end
 
 /////// Read Cycle
-if (read_cycle==1) begin
+if ((read_cycle==1) && (RESET==1)) begin
     if (read_counter==t_rc+t_ras+5) begin
         //SELF
         cke<=0;
@@ -392,11 +421,10 @@ if (read_cycle==1) begin
     end
 
 end
-// Idle and Precharge/Refresh States
 
 // Power Up and Initialization
     // This Process takes just over .5 sec to complete. No data will be saved until this process completes.
-if (pwr_up_hold===1'b1) begin
+if ((pwr_up_hold===1'b1) && (RESET==1)) begin
     // Power stabalization wait. Just use 2 timestamps .2 sec
     if (TIMESTAMP < 2) begin
         // Keep things low. Control outs are initially low.

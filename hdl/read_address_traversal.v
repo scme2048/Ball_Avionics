@@ -24,10 +24,10 @@
 
 //`timescale <time_units> / <precision>
 
-module read_address_traversal( CLK_48MHZ,NEXT, REPLAY, BA_READ_OUT, ROW_READ_OUT,COL_READ_OUT );
+module read_address_traversal( CLK_48MHZ,NEXT,RESET, REPLAY, BA_READ_OUT, ROW_READ_OUT,COL_READ_OUT );
 
 // Possibly add write addresses for tracking position
-input CLK_48MHZ,NEXT;
+input CLK_48MHZ,NEXT,RESET;
 input [4:0] REPLAY;
 output [1:0] BA_READ_OUT;
 output [8:0] COL_READ_OUT;
@@ -40,14 +40,18 @@ output [12:0] ROW_READ_OUT;
 //parameter typical_pass = 576384;
 
 // Statements
-reg [23:0] current_count = 24'b0;
+reg [23:0] current_count;
 
 assign BA_READ_OUT = current_count[23:22];
 assign COL_READ_OUT = current_count[21:13];
 assign ROW_READ_OUT = current_count[12:0];
 
-always @(posedge NEXT)
+always @(posedge NEXT or negedge RESET)
 begin
+
+if (RESET==1'b0) begin
+    current_count=24'b0;
+end
 
 // Counter equal to 16777216
 if (current_count == 24'b111111111111111111111111) begin
@@ -58,15 +62,5 @@ end
 
 end
 
-
-//always @(posedge CLK_48MHZ) 
-//begin
-//
-//if (REPLAY >0) begin
-    //
-//end
-//
-//
-//end
 endmodule
 

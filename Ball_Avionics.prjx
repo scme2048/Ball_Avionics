@@ -48,8 +48,8 @@ SIZE="413"
 ENDFILE
 VALUE "<project>\component\work\full_sys\full_sys.cxf,actgen_cxf"
 STATE="utd"
-TIME="1455080263"
-SIZE="2530"
+TIME="1455302050"
+SIZE="2640"
 ENDFILE
 VALUE "<project>\component\work\spi_test\spi_test.cxf,actgen_cxf"
 STATE="utd"
@@ -90,17 +90,17 @@ SIZE="65536"
 ENDFILE
 VALUE "<project>\hdl\clock_div_1MHZ_100KHZ.v,hdl"
 STATE="utd"
-TIME="1455080078"
-SIZE="1027"
+TIME="1455156290"
+SIZE="1044"
 ENDFILE
 VALUE "<project>\hdl\clock_div_1MHZ_10HZ.v,hdl"
 STATE="utd"
-TIME="1455079866"
-SIZE="948"
+TIME="1455156247"
+SIZE="965"
 ENDFILE
 VALUE "<project>\hdl\clock_div_1MHZ_1KHZ.v,hdl"
 STATE="utd"
-TIME="1455079566"
+TIME="1455156268"
 SIZE="967"
 ENDFILE
 VALUE "<project>\hdl\dummy_state.v,hdl"
@@ -110,8 +110,8 @@ SIZE="706"
 ENDFILE
 VALUE "<project>\hdl\geig_data_handling.v,hdl"
 STATE="utd"
-TIME="1455080424"
-SIZE="1960"
+TIME="1455298553"
+SIZE="2282"
 ENDFILE
 VALUE "<project>\hdl\mag_data_handling.v,hdl"
 STATE="utd"
@@ -125,8 +125,8 @@ SIZE="758"
 ENDFILE
 VALUE "<project>\hdl\memory_controller.v,hdl"
 STATE="utd"
-TIME="1454999614"
-SIZE="5521"
+TIME="1455338939"
+SIZE="6074"
 ENDFILE
 VALUE "<project>\hdl\mode_control.v,hdl"
 STATE="utd"
@@ -135,18 +135,18 @@ SIZE="771"
 ENDFILE
 VALUE "<project>\hdl\read_address_traversal.v,hdl"
 STATE="utd"
-TIME="1454465569"
-SIZE="1850"
+TIME="1455157494"
+SIZE="1827"
 ENDFILE
 VALUE "<project>\hdl\reset_pulse.v,hdl"
 STATE="utd"
-TIME="1455087441"
-SIZE="918"
+TIME="1455155860"
+SIZE="866"
 ENDFILE
 VALUE "<project>\hdl\sdram_interface.v,hdl"
 STATE="utd"
-TIME="1454654777"
-SIZE="15266"
+TIME="1455301919"
+SIZE="15780"
 ENDFILE
 VALUE "<project>\hdl\SPI_Master.v,hdl"
 STATE="utd"
@@ -160,13 +160,13 @@ SIZE="1144"
 ENDFILE
 VALUE "<project>\hdl\test_harness_geiger_stack.v,hdl"
 STATE="utd"
-TIME="1452831723"
-SIZE="1744"
+TIME="1455300247"
+SIZE="1820"
 ENDFILE
 VALUE "<project>\hdl\timestamp.v,hdl"
 STATE="utd"
-TIME="1455087562"
-SIZE="706"
+TIME="1455156309"
+SIZE="712"
 ENDFILE
 VALUE "<project>\hdl\write_address_traversal.v,hdl"
 STATE="utd"
@@ -190,8 +190,8 @@ SIZE="2012"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1455087472"
-SIZE="693"
+TIME="1455304179"
+SIZE="704"
 ENDFILE
 VALUE "<project>\simulation\spi_master_tb3_presynth_simulation.log,log"
 STATE="utd"
@@ -200,13 +200,13 @@ SIZE="2028"
 ENDFILE
 VALUE "<project>\simulation\tb_geig_data_handling_presynth_simulation.log,log"
 STATE="utd"
-TIME="1452749278"
-SIZE="2526"
+TIME="1455299956"
+SIZE="2536"
 ENDFILE
 VALUE "<project>\simulation\tb_memory_controller_presynth_simulation.log,log"
 STATE="utd"
-TIME="1455003378"
-SIZE="2096"
+TIME="1455308132"
+SIZE="7590"
 ENDFILE
 VALUE "<project>\simulation\tb_read_address_traversal_presynth_simulation.log,log"
 STATE="utd"
@@ -215,7 +215,7 @@ SIZE="15931"
 ENDFILE
 VALUE "<project>\simulation\tb_sdram_interface_presynth_simulation.log,log"
 STATE="utd"
-TIME="1455003320"
+TIME="1455303074"
 SIZE="2078"
 ENDFILE
 VALUE "<project>\simulation\tb_spi_test_presynth_simulation.log,log"
@@ -232,11 +232,6 @@ VALUE "<project>\simulation\testbench_timestamp_presynth_simulation.log,log"
 STATE="utd"
 TIME="1452733615"
 SIZE="2059"
-ENDFILE
-VALUE "<project>\simulation\timestamp_testbench_presynth_simulation.log,log"
-STATE="utd"
-TIME="1455088324"
-SIZE="3621"
 ENDFILE
 VALUE "<project>\smartgen\CLK_1MHZ\CLK_1MHZ.cxf,actgen_cxf"
 STATE="utd"
@@ -348,13 +343,13 @@ SIZE="2587"
 ENDFILE
 VALUE "<project>\stimulus\tb_geig_data_handling.v,tb_hdl"
 STATE="utd"
-TIME="1452748886"
-SIZE="2568"
+TIME="1455299105"
+SIZE="2768"
 ENDFILE
 VALUE "<project>\stimulus\tb_memory_controller.v,tb_hdl"
 STATE="utd"
-TIME="1455003471"
-SIZE="3402"
+TIME="1455315343"
+SIZE="4166"
 ENDFILE
 VALUE "<project>\stimulus\tb_read_address_traversal.v,tb_hdl"
 STATE="utd"
@@ -363,8 +358,8 @@ SIZE="2283"
 ENDFILE
 VALUE "<project>\stimulus\tb_sdram_interface.v,tb_hdl"
 STATE="utd"
-TIME="1454048942"
-SIZE="3685"
+TIME="1455302425"
+SIZE="3816"
 ENDFILE
 VALUE "<project>\stimulus\tb_spi_test.v,tb_hdl"
 STATE="utd"
@@ -513,7 +508,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_v11.6\Model\win32acoem\modelsim.exe"
-PARAM=""
+PARAM=" -l tb_memory_controller_presynth_simulation.log "
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -574,7 +569,9 @@ ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 StartPage;StartPage;0
-ACTIVEVIEW;StartPage
+HDL;stimulus\tb_memory_controller.v;0
+HDL;hdl\memory_controller.v;0
+ACTIVEVIEW;hdl\memory_controller.v
 ENDLIST
 LIST ModuleSubBlockList
 LIST "CLK_1M::work","smartgen\CLK_1M\CLK_1M.v","TRUE","FALSE"
@@ -607,6 +604,7 @@ SUBBLOCK "clock_div_1MHZ_100KHZ::work","hdl\clock_div_1MHZ_100KHZ.v","FALSE","FA
 SUBBLOCK "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
 SUBBLOCK "clock_div_1MHZ_1KHZ::work","hdl\clock_div_1MHZ_1KHZ.v","FALSE","FALSE"
 SUBBLOCK "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
+SUBBLOCK "reset_pulse::work","hdl\reset_pulse.v","FALSE","FALSE"
 SUBBLOCK "sdram_interface::work","hdl\sdram_interface.v","FALSE","FALSE"
 SUBBLOCK "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
 SUBBLOCK "test_harness_geiger_stack::work","hdl\test_harness_geiger_stack.v","FALSE","FALSE"

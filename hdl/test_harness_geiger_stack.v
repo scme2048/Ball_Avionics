@@ -13,8 +13,8 @@
 
 //`timescale <time_units> / <precision>
 
-module test_harness_geiger_stack( CLK_1MHZ, TEST_DATA,D0,D1,D2,D3,D4,D5,D6,D7);
-input CLK_1MHZ;
+module test_harness_geiger_stack( CLK_1MHZ,RESET, TEST_DATA,D0,D1,D2,D3,D4,D5,D6,D7);
+input CLK_1MHZ,RESET;
 parameter bits = 48;
 input [47:0] TEST_DATA;
 
@@ -27,7 +27,7 @@ reg [7:0] data_chunk;
 reg set=0;
 reg [47:0] data_buffer;
 reg [47:0] data_orig;
-reg [2:0] counter=0;
+reg [2:0] counter;
 
 assign D0 = data_chunk[0];
 assign D1 = data_chunk[1];
@@ -39,8 +39,13 @@ assign D6 = data_chunk[6];
 assign D7 = data_chunk[7];
 
 
-always @ (posedge CLK_1MHZ) 
+always @ (posedge CLK_1MHZ or negedge RESET) 
 begin
+
+if (RESET==1'b0) begin
+    counter=0;
+end
+
 if ((counter==6) && (data_orig !== TEST_DATA)) begin
     set=0;
     counter=0;

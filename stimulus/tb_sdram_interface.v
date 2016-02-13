@@ -57,7 +57,11 @@ end
 //////////////////////////////////////////////////////////////////////
 initial
 begin
-    #(SYSCLK_PERIOD * 10 )
+    #(SYSCLK_PERIOD * 1 )
+        NSYSRESET = 1'b1;
+    #(SYSCLK_PERIOD * 2 )
+        NSYSRESET = 1'b0;
+    #(SYSCLK_PERIOD * 3 )
         NSYSRESET = 1'b1;
 end
 
@@ -87,6 +91,7 @@ wire [3:0] test;
 sdram_interface sdram_interface_0 (
     // Inputs
     .CLK_48MHZ(SYSCLK),
+    .RESET(NSYSRESET),
     .TIMESTAMP(timestamp),
     .A_IN_BANK(a_in_bank),
     .A_IN_COL(a_in_col),

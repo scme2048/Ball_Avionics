@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by Microsemi SmartDesign Wed Jan 13 20:39:54 2016
+// Created by Microsemi SmartDesign Wed Feb 10 18:10:33 2016
 // Testbench Template
 // This is a basic testbench that instantiates your design with basic 
 // clock and reset pins connected.  If your design has special
@@ -10,7 +10,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // Company: <Name>
 //
-// File: tb_geig_data_handling.v
+// File: tb_reset_pulse.v
 // File history:
 //      <Revision number>: <Date>: <Comments>
 //      <Revision number>: <Date>: <Comments>
@@ -27,23 +27,16 @@
 
 `timescale 1ns/100ps
 
-module tb_geig_data_handling;
+module tb_reset_pulse;
 
-parameter SYSCLK_PERIOD = 10000;// 100kHZ
-parameter CLK_10HZ_PERIOD = 100000000;
-parameter GEIG_100HZ_PERIOD= 10000000;
+parameter SYSCLK_PERIOD = 20.8333;// 48.0001MHZ
 
 reg SYSCLK;
 reg NSYSRESET;
-reg CLK_10HZ;
-reg GEIG_100HZ;
 
 initial
 begin
     SYSCLK = 1'b0;
-    NSYSRESET=1'b0;
-    CLK_10HZ= 1'b0;
-    GEIG_100HZ = 1'b0;
     NSYSRESET = 1'b0;
 end
 
@@ -52,28 +45,8 @@ end
 //////////////////////////////////////////////////////////////////////
 initial
 begin
-    #(SYSCLK_PERIOD * 1 )
+    #(SYSCLK_PERIOD * 10 )
         NSYSRESET = 1'b1;
-
-end
-
-initial
-begin
-    #(SYSCLK_PERIOD * 2)
-        NSYSRESET=1'b0;
-end
-
-initial
-begin
-
-    #(SYSCLK_PERIOD * 3)
-        NSYSRESET=1'b1;
-end
-
-initial
-begin
-    #(40000)
-        GEIG_100HZ=!GEIG_100HZ;
 end
 
 
@@ -83,27 +56,20 @@ end
 always @(SYSCLK)
     #(SYSCLK_PERIOD / 2.0) SYSCLK <= !SYSCLK;
 
-always @(SYSCLK)
-    #(CLK_10HZ_PERIOD / 2.0) CLK_10HZ <= !CLK_10HZ;
 
-always @(SYSCLK)
-    #(GEIG_100HZ_PERIOD) GEIG_100HZ <= !GEIG_100HZ;
-
-wire [47:0] d_out;
+wire reset;
+wire clk;
 //////////////////////////////////////////////////////////////////////
-// Instantiate Unit Under Test:  geig_data_handling
+// Instantiate Unit Under Test:  reset_pulse
 //////////////////////////////////////////////////////////////////////
-geig_data_handling geig_data_handling_0 (
+reset_pulse reset_pulse_0 (
     // Inputs
-    .CLK_100KHZ(SYSCLK),
-    .CLK_10HZ(CLK_10HZ),
-    .RESET(NSYSRESET),
-    .TIMESTAMP({23{23'b00101010100101011101000}}),
-    .GSTREAM(GEIG_100HZ),
+    .CLK_48MHZ(SYSCLK),
+    .EXT_RESET(NSYSRESET),
 
     // Outputs
-    .G_DATA_STACK(d_out)
-
+    .RESET(reset ),
+    .CLK_OUT_48MHZ(clk)
     // Inouts
 
 );

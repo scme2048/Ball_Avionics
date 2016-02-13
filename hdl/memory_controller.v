@@ -19,12 +19,12 @@
 
 //`timescale <time_units> / <precision>
 
-module memory_controller( CLK_48MHZ,SDRAM_STATUS,READ_CMD, GEIG_DATA, MAG_DATA, BA_READ,COL_READ, ROW_READ, 
+module memory_controller( CLK_48MHZ,RESET,SDRAM_STATUS,READ_CMD, GEIG_DATA, MAG_DATA, BA_READ,COL_READ, ROW_READ, 
 BA_WRITE, COL_WRITE, ROW_WRITE
 ,NEXT_READ,NEXT_WRITE,DATA_OUT,BA_OUT,COL_OUT,ROW_OUT,CMD_OUT);
 
 // Inputs
-input CLK_48MHZ,SDRAM_STATUS, READ_CMD;
+input CLK_48MHZ,RESET,SDRAM_STATUS, READ_CMD;
 input [47:0] GEIG_DATA;
 input [79:0] MAG_DATA;
 input [1:0] BA_READ;
@@ -47,12 +47,12 @@ output [1:0] CMD_OUT;
 
 // Local Vars
 reg [47:0] geig_prev;
-reg [1:0] new_geig;
+reg [47:0] geig_buffer;
 parameter new_geig_cmd =2'b01;
 parameter num_geig_cycles = 3;
 
 reg [79:0] mag_prev;
-reg [1:0] new_mag;
+reg [79:0] mag_buffer;
 parameter new_mag_cmd =2'b10;
 parameter num_mag_cycles = 5;
 
@@ -70,7 +70,13 @@ reg [2:0] write_count;
 reg busy_hold;
 
 // Assignments w/ Registers
-reg next_write, next_read, cmd_out, ba_out, row_out, col_out, data_out;
+reg next_write;
+reg next_read;
+reg [1:0] ba_out;
+reg [12:0] row_out;
+reg [8:0] col_out;
+reg [15:0] data_out;
+reg [1:0] cmd_out;
 assign NEXT_WRITE = next_write;
 assign NEXT_READ = next_read;
 assign CMD_OUT = cmd_out;
@@ -79,17 +85,25 @@ assign ROW_OUT = row_out;
 assign COL_OUT = col_out;
 assign DATA_OUT = data_out;
 
-always @(posedge CLK_48MHZ)
+always @(posedge CLK_48MHZ or negedge RESET)
 begin
 
+if (RESET==1'b0) begin
+    schedule = 8'b00000000;
+    busy_hold = 1'b0;
+    write_count=4'b0000;
+    next_write<=0;
+    next_read<=0;
+    cmd_out<=2'b00;
+    
+end
 // Shift schedule if needed
-if (schedule[1:0] ==2'b00) begin
+if ((schedule[1:0] ==2'b00) && (RESET==1'b1)) begin
     schedule=schedule>>2;
 end
 // Check for unique or new data for both sources and order in schedule by open slots
-if ((GEIG_DATA!==48'bZ) && (geig_prev===48'bZ)) begin
-    new_geig=1'b1;
-    data_buffer[47:0] = GEIG_DATA;
+if ((GEIG_DATA!==48'bZ) && (geig_prev===48'bZ) && (RESET==1'b1)) begin
+    geig_buffer[47:0] = GEIG_DATA;
     geig_prev = GEIG_DATA;
     if (schedule[1:0] == 2'b00) begin
         schedule[1:0] = new_geig_cmd;
@@ -104,9 +118,8 @@ end else begin
     geig_prev= GEIG_DATA;
 end
 
-if ((MAG_DATA!==80'bZ) && (mag_prev===80'bZ)) begin
-    new_mag=1'b1;
-    data_buffer[79:0] = MAG_DATA;
+if ((MAG_DATA!==80'bZ) && (mag_prev===80'bZ) && (RESET==1'b1)) begin
+    mag_buffer[79:0] = MAG_DATA;
     mag_prev = MAG_DATA;
     if (schedule[1:0] == 2'b00) begin
         schedule[1:0] = new_mag_cmd;
@@ -121,7 +134,8 @@ end else begin
     mag_prev=MAG_DATA;
 end
 
-if ((READ_CMD ==1'b1) && (read_prev ==1'b0))begin
+if ((READ_CMD ==1'b1) && (read_prev ==1'b0) && (RESET==1'b1))begin
+    read_prev=READ_CMD;
     if (schedule[1:0] == 2'b00) begin
         schedule[1:0] = new_read_cmd;
     end else if (schedule[3:2] ==2'b00) begin
@@ -137,27 +151,27 @@ end
 
 // Write packet cycle for geig and mag data
 // Break data into 16 bit chunks and write for whole packet.
-if ((schedule[1:0] == new_geig_cmd) || (schedule[1:0] == new_mag_cmd)) begin
-    if (schedule[1:0] == new_geig_cmd) begin
+if (((schedule[1:0] == new_geig_cmd) || (schedule[1:0] == new_mag_cmd)) && (RESET==1'b1)) begin
+    if ((schedule[1:0] == new_geig_cmd) && (write_count==0)) begin
         num_cycles=num_geig_cycles;
-    end else begin
+        data_buffer[47:0] = geig_buffer;
+    end else if ((schedule[1:0] == new_mag_cmd) && (write_count==0)) begin
         num_cycles = num_mag_cycles;
+        data_buffer[79:0]=mag_buffer;
     end
     // Write data for num_cycles cycles.
 
     if (write_count<num_cycles) begin
         // Write to data to address
+        if ((SDRAM_STATUS==1'b1) && (busy_hold==1)) begin
+            cmd_out<=2'b00;
+        end
         if ((busy_hold==1'b1)&&(SDRAM_STATUS==1'b0)) begin
             next_write<=1'b1;
             data_buffer = data_buffer >>16;
             busy_hold=1'b0;
             write_count=write_count+1;
-        end
-
-        if ((SDRAM_STATUS==1'b1) && (busy_hold==1)) begin
-            cmd_out<=2'b00;
-        end
-        if ((SDRAM_STATUS==1'b0) && (busy_hold==0)) begin
+        end else if ((SDRAM_STATUS==1'b0) && (busy_hold==0)) begin
             next_write<=1'b0;
             cmd_out<=2'b10;
             ba_out<=BA_WRITE;
@@ -170,15 +184,15 @@ if ((schedule[1:0] == new_geig_cmd) || (schedule[1:0] == new_mag_cmd)) begin
         write_count=0;
         schedule=schedule>>2;
     end
-end else if (schedule[1:0]==new_read_cmd) begin
+end else if ((schedule[1:0]==new_read_cmd) && (RESET==1'b1)) begin
+    if ((SDRAM_STATUS==1'b1) && (busy_hold==1)) begin
+        cmd_out<=2'b00;
+    end    
     if ((SDRAM_STATUS==1'b0) && (busy_hold==1)) begin
         next_read<=1'b1;
         busy_hold=0;
-    end
-    if ((SDRAM_STATUS==1'b1) && (busy_hold==1)) begin
-        cmd_out<=2'b00;
-    end
-    if ((SDRAM_STATUS==1'b0) && (busy_hold==0)) begin
+        schedule=schedule>>2;
+    end else if ((SDRAM_STATUS==1'b0) && (busy_hold==0)) begin
         next_read<=1'b0;
         cmd_out<=2'b01;
         ba_out<=BA_READ;
