@@ -593,9 +593,9 @@ module spi_mode_config (
 //            end
         end
         else if (~busy && rst) begin
-            byte_out_b <= 8'bz;
+            byte_out_b <= byte_out_a;
             mem_enable_b <=1'b0;
-            state_b<=state_a;
+            state_b<=PWR_RST;
             next_b <= 1'b0;
             ss_b <= 1'b1;
             byte_tracker_b <= 1'b0;
