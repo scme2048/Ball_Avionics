@@ -59,6 +59,8 @@ parameter num_mag_cycles = 5;
 reg [79:0] data_buffer;
 reg read_prev;
 parameter new_read_cmd = 2'b11;
+reg [23:0] read_address;
+reg [23:0] write_address;
 // Set a 2 bit command of operation to be next performed.
 // NOTHING: 2'b00
 // Write Geig: 2'b01
@@ -85,8 +87,13 @@ assign ROW_OUT = row_out;
 assign COL_OUT = col_out;
 assign DATA_OUT = data_out;
 
+///////////////
+// Always Block
 always @(posedge CLK_48MHZ or negedge RESET)
 begin
+// Set read_address and write_address for check later to ensure overlaps don't occur
+write_address = {BA_WRITE,COL_WRITE,ROW_WRITE};
+read_address = {BA_READ,COL_READ,ROW_READ};
 
 if (RESET==1'b0) begin
     schedule = 8'b00000000;
@@ -185,20 +192,29 @@ if (((schedule[1:0] == new_geig_cmd) || (schedule[1:0] == new_mag_cmd)) && (RESE
         schedule=schedule>>2;
     end
 end else if ((schedule[1:0]==new_read_cmd) && (RESET==1'b1)) begin
-    if ((SDRAM_STATUS==1'b1) && (busy_hold==1)) begin
-        cmd_out<=2'b00;
-    end    
-    if ((SDRAM_STATUS==1'b0) && (busy_hold==1)) begin
-        next_read<=1'b1;
-        busy_hold=0;
+    if (read_address == write_address) begin 
+        // prevent read operation if reads have caught up to writes.
+        // Can't do >= since address will loop back to 0.
         schedule=schedule>>2;
-    end else if ((SDRAM_STATUS==1'b0) && (busy_hold==0)) begin
-        next_read<=1'b0;
-        cmd_out<=2'b01;
-        ba_out<=BA_READ;
-        row_out<=ROW_READ;
-        col_out<=COL_READ;
-        busy_hold=1'b1;
+    end else begin
+        if ((SDRAM_STATUS==1'b1) && (busy_hold==1)) begin
+            // Step 2, Wait for sdram interface to not be busy.
+            cmd_out<=2'b00;
+        end    
+        if ((SDRAM_STATUS==1'b0) && (busy_hold==1)) begin
+            // Step 3, Request next read address and switch to next schedule.
+            next_read<=1'b1;
+            busy_hold=0;
+            schedule=schedule>>2;
+        end else if ((SDRAM_STATUS==1'b0) && (busy_hold==0)) begin
+            // Step 1 
+            next_read<=1'b0;
+            cmd_out<=2'b01;
+            ba_out<=BA_READ;
+            row_out<=ROW_READ;
+            col_out<=COL_READ;
+            busy_hold=1'b1;
+        end
     end
 end
 
