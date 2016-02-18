@@ -155,8 +155,8 @@ SIZE="1827"
 ENDFILE
 VALUE "<project>\hdl\read_buffer.v,hdl"
 STATE="utd"
-TIME="1455691757"
-SIZE="1387"
+TIME="1455779187"
+SIZE="2598"
 ENDFILE
 VALUE "<project>\hdl\reset_pulse.v,hdl"
 STATE="utd"
