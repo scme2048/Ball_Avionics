@@ -51,6 +51,11 @@ STATE="utd"
 TIME="1455302050"
 SIZE="2640"
 ENDFILE
+VALUE "<project>\component\work\geiger_integration\geiger_integration.cxf,actgen_cxf"
+STATE="utd"
+TIME="1455930333"
+SIZE="1898"
+ENDFILE
 VALUE "<project>\component\work\spi_test\spi_test.cxf,actgen_cxf"
 STATE="utd"
 TIME="1454654038"
@@ -220,8 +225,8 @@ SIZE="2012"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1455308693"
-SIZE="704"
+TIME="1455911823"
+SIZE="680"
 ENDFILE
 VALUE "<project>\simulation\spi_master_tb3_presynth_simulation.log,log"
 STATE="utd"
@@ -245,8 +250,8 @@ SIZE="15931"
 ENDFILE
 VALUE "<project>\simulation\tb_read_buffer_presynth_simulation.log,log"
 STATE="utd"
-TIME="1455911839"
-SIZE="1438"
+TIME="1455913493"
+SIZE="8627"
 ENDFILE
 VALUE "<project>\simulation\tb_sdram_interface_presynth_simulation.log,log"
 STATE="utd"
@@ -548,7 +553,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_v11.6\Model\win32acoem\modelsim.exe"
-PARAM=" -l tb_read_buffer_presynth_simulation.log "
+PARAM=""
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -608,12 +613,14 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+SmartDesign;geiger_integration;0
+StartPage;StartPage;0
 HDL;stimulus\tb_read_buffer.v;0
 HDL;hdl\read_buffer.v;0
 HDL;stimulus\tb_memory_controller.v;0
 HDL;hdl\memory_controller.v;0
 SmartDesign;full_sys;0
-ACTIVEVIEW;stimulus\tb_read_buffer.v
+ACTIVEVIEW;geiger_integration
 ENDLIST
 LIST ModuleSubBlockList
 LIST "CLK_1M::work","smartgen\CLK_1M\CLK_1M.v","TRUE","FALSE"
@@ -653,6 +660,14 @@ SUBBLOCK "test_harness_geiger_stack::work","hdl\test_harness_geiger_stack.v","FA
 SUBBLOCK "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
 ENDLIST
 LIST "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
+ENDLIST
+LIST "geiger_integration::work","component\work\geiger_integration\geiger_integration.cxf","TRUE","FALSE"
+SUBBLOCK "CLK_1MHZ::work","smartgen\CLK_1MHZ\CLK_1MHZ.v","TRUE","FALSE"
+SUBBLOCK "clock_div_1MHZ_100KHZ::work","hdl\clock_div_1MHZ_100KHZ.v","FALSE","FALSE"
+SUBBLOCK "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
+SUBBLOCK "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
+SUBBLOCK "test_harness_geiger_stack::work","hdl\test_harness_geiger_stack.v","FALSE","FALSE"
+SUBBLOCK "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
 ENDLIST
 LIST "mag_data_handling::work","hdl\mag_data_handling.v","FALSE","FALSE"
 ENDLIST
@@ -732,6 +747,9 @@ SUBBLOCK "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
 ENDLIST
 ENDLIST
 LIST ActiveTestBenchList
+LIST "timestamp::work"
+ACTIVETESTBENCH "timestamp_testbench::work","stimulus\timestamp_testbench.v","FALSE"
+ENDLIST
 LIST "timestamp::work"
 ACTIVETESTBENCH "timestamp_testbench::work","stimulus\timestamp_testbench.v","FALSE"
 ENDLIST
