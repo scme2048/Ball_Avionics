@@ -53,8 +53,8 @@ SIZE="2640"
 ENDFILE
 VALUE "<project>\component\work\geiger_integration\geiger_integration.cxf,actgen_cxf"
 STATE="utd"
-TIME="1455930333"
-SIZE="1898"
+TIME="1456117177"
+SIZE="3392"
 ENDFILE
 VALUE "<project>\component\work\spi_test\spi_test.cxf,actgen_cxf"
 STATE="utd"
@@ -613,13 +613,13 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+HDL;hdl\memory_controller.v;0
+SmartDesign;full_sys;0
 SmartDesign;geiger_integration;0
 StartPage;StartPage;0
 HDL;stimulus\tb_read_buffer.v;0
 HDL;hdl\read_buffer.v;0
 HDL;stimulus\tb_memory_controller.v;0
-HDL;hdl\memory_controller.v;0
-SmartDesign;full_sys;0
 ACTIVEVIEW;geiger_integration
 ENDLIST
 LIST ModuleSubBlockList
@@ -666,6 +666,7 @@ SUBBLOCK "CLK_1MHZ::work","smartgen\CLK_1MHZ\CLK_1MHZ.v","TRUE","FALSE"
 SUBBLOCK "clock_div_1MHZ_100KHZ::work","hdl\clock_div_1MHZ_100KHZ.v","FALSE","FALSE"
 SUBBLOCK "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
 SUBBLOCK "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
+SUBBLOCK "reset_pulse::work","hdl\reset_pulse.v","FALSE","FALSE"
 SUBBLOCK "test_harness_geiger_stack::work","hdl\test_harness_geiger_stack.v","FALSE","FALSE"
 SUBBLOCK "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
 ENDLIST
