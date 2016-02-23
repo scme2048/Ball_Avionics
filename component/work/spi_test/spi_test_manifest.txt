@@ -1,11 +1,11 @@
 Microsemi Corporation - Microsemi Libero Software Release v11.6 (Version 11.6.0.34)
 
-Date      :  Thu Feb 04 23:33:58 2016
-Project   :  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics
+Date      :  Sat Feb 13 19:51:53 2016
+Project   :  F:\Ball_Avionics
 Component :  spi_test
 Family    :  ProASIC3L
 
 
 HDL source files for all Synthesis and Simulation tools:
-    C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/component/work/spi_test/spi_test.v
+    F:/Ball_Avionics/component/work/spi_test/spi_test.v
 
