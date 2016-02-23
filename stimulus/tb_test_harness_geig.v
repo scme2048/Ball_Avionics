@@ -47,6 +47,10 @@ initial
 begin
     #(SYSCLK_PERIOD * 10 )
         NSYSRESET = 1'b1;
+    #(SYSCLK_PERIOD * 11 )
+        NSYSRESET = 1'b0;
+    #(SYSCLK_PERIOD * 12 )
+        NSYSRESET = 1'b1;
 end
 
 
@@ -57,7 +61,7 @@ always @(SYSCLK)
     #(SYSCLK_PERIOD / 2.0) SYSCLK <= !SYSCLK;
 
 always @(SYSCLK)
-    #(SYSCLK_PERIOD*20) test_data_in <= test_data_in+1000;
+    #(SYSCLK_PERIOD*20) test_data_in <= test_data_in+10200000;
 
 wire d0o,d1o,d2o,d3o,d4o,d5o,d6o,d7o;
 
@@ -68,7 +72,7 @@ test_harness_geiger_stack test_harness_geiger_stack_0 (
     // Inputs
     .CLK_1MHZ(SYSCLK),
     .TEST_DATA(test_data_in),
-
+    .RESET(NSYSRESET),
     // Outputs
     .D0( d0o),
     .D1( d1o),

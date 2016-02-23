@@ -1,1 +1,1 @@
-run_tcl -fg timestamp_syn.tcl
+run_tcl -fg geiger_integration_syn.tcl

@@ -1,0 +1,2 @@
+@E: CL123 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\test_harness_geiger_stack.v":42:0:42:5|Logic for data_buffer[47:0] does not match a standard flip-flop
+

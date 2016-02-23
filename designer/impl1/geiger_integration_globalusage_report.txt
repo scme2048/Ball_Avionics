@@ -1,0 +1,25 @@
+********************************************************************
+                            Global Usage Report
+********************************************************************
+  
+Product: Designer
+Release: v11.6
+Version: 11.6.0.34
+Date: Tue Feb 23 01:16:24 2016
+Design Name: geiger_integration  Family: ProASIC3L  Die: M1A3P1000L  Package: 484 FBGA
+Design State: Post-Layout
+
+The following nets have been routed to a chip global resource:
+
+    Fanout            Name
+    ----------------------
+    142               Net   : GLA
+                      Driver: CLK_1MHZ_0/Core/U_PLL
+    75                Net   : clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT
+                      Driver: clock_div_1MHZ_10HZ_0/clk_out_RNIT8C7/U_GL
+    25                Net   : clock_div_1MHZ_100KHZ_0_CLK_100KHZ_OUT
+                      Driver: clock_div_1MHZ_100KHZ_0/clk_out_RNIOQD8/U_GL
+
+
+
+

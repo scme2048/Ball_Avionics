@@ -1,0 +1,46 @@
+Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 1522R, Built Jun  4 2015 12:04:36
+Copyright (C) 1994-2015, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+Product Version J-2015.03M-3
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@L: C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\geiger_integration_scck.rpt 
+Printing clock  summary report in "C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\geiger_integration_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 102MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 102MB)
+
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 111MB)
+
+
+
+@S |Clock Summary
+*****************
+
+Start                                            Requested     Requested     Clock        Clock              
+Clock                                            Frequency     Period        Type         Group              
+-------------------------------------------------------------------------------------------------------------
+CLK_1MHZ|GLA_inferred_clock                      100.0 MHz     10.000        inferred     Inferred_clkgroup_2
+clock_div_1MHZ_10HZ|clk_out_inferred_clock       100.0 MHz     10.000        inferred     Inferred_clkgroup_0
+clock_div_1MHZ_100KHZ|clk_out_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_1
+=============================================================================================================
+
+@W: MT530 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\geig_data_handling.v":23:0:23:5|Found inferred clock clock_div_1MHZ_10HZ|clk_out_inferred_clock which controls 76 sequential elements including geig_data_handling_0.min_counter[9:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\geig_data_handling.v":44:0:44:5|Found inferred clock clock_div_1MHZ_100KHZ|clk_out_inferred_clock which controls 25 sequential elements including geig_data_handling_0.geig_counts[15:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\clock_div_1mhz_10hz.v":22:0:22:5|Found inferred clock CLK_1MHZ|GLA_inferred_clock which controls 144 sequential elements including clock_div_1MHZ_10HZ_0.counter[16:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\geiger_integration.sap.
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 47MB peak: 111MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Tue Feb 23 01:05:16 2016
+
+###########################################################]

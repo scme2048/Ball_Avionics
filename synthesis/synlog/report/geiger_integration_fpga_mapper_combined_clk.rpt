@@ -1,0 +1,20 @@
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+3 gated/generated clock tree(s) driving 242 clock pin(s) of sequential element(s)
+0 instances converted, 242 sequential instances remain driven by gated/generated clocks
+
+==================================================================================================================== Gated/Generated Clocks =====================================================================================================================
+Clock Tree ID     Driving Element                     Drive Element Type     Fanout     Sample Instance                            Explanation                                                                                                                   
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       CLK_1MHZ_0.Core                     PLL                    142        test_harness_geiger_stack_0.counter[2]     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0002       clock_div_1MHZ_10HZ_0.clk_out       DFN1P0                 75         timestamp_0.TIMESTAMP[23]                  No generated or derived clock directive on output of sequential instance                                                      
+@K:CKID0003       clock_div_1MHZ_100KHZ_0.clk_out     DFN1P0                 25         geig_data_handling_0.shift_reg[8]          No generated or derived clock directive on output of sequential instance                                                      
+=================================================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+

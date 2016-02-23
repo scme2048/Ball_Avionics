@@ -30,7 +30,7 @@ KEY ProjectDescription ""
 KEY Pa4PeripheralNewSeq "GOOD"
 KEY SimulationType "VERILOG"
 KEY Vendor "Actel"
-KEY ActiveRoot "spi_test::work"
+KEY ActiveRoot "geiger_integration::work"
 LIST REVISIONS
 VALUE="Impl1",NUM=1
 CURREV=1
@@ -53,8 +53,15 @@ SIZE="2640"
 ENDFILE
 VALUE "<project>\component\work\geiger_integration\geiger_integration.cxf,actgen_cxf"
 STATE="utd"
-TIME="1456117177"
-SIZE="3392"
+TIME="1456214709"
+SIZE="3802"
+ENDFILE
+VALUE "<project>\component\work\geiger_integration\geiger_integration.v,hdl"
+STATE="utd"
+TIME="1456214708"
+SIZE="5751"
+PARENT="<project>\component\work\geiger_integration\geiger_integration.cxf"
+IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\spi_test\spi_test.cxf,actgen_cxf"
 STATE="utd"
@@ -72,6 +79,11 @@ VALUE "<project>\component\work\test_memory\test_memory.cxf,actgen_cxf"
 STATE="utd"
 TIME="1454998827"
 SIZE="627"
+ENDFILE
+VALUE "<project>\component\work\transceiver_integration\transceiver_integration.cxf,actgen_cxf"
+STATE="utd"
+TIME="1456193964"
+SIZE="2086"
 ENDFILE
 VALUE "<project>\designer\impl1\clock_div_26MHZ_1MHZ.adb,adb"
 STATE="ood"
@@ -107,6 +119,41 @@ VALUE "<project>\designer\impl1\clock_div_26MHZ_1MHZ_placeroute_log.rpt,log"
 STATE="utd"
 TIME="1454610510"
 SIZE="2639"
+ENDFILE
+VALUE "<project>\designer\impl1\geiger_integration.adb,adb"
+STATE="utd"
+TIME="1456214766"
+SIZE="280576"
+ENDFILE
+VALUE "<project>\designer\impl1\geiger_integration.ide_des,ide_des"
+STATE="utd"
+TIME="1456195191"
+SIZE="243"
+ENDFILE
+VALUE "<project>\designer\impl1\geiger_integration_ba.sdf,ba_sdf"
+STATE="utd"
+TIME="1456215391"
+SIZE="388924"
+ENDFILE
+VALUE "<project>\designer\impl1\geiger_integration_ba.v,ba_hdl"
+STATE="utd"
+TIME="1456215391"
+SIZE="207299"
+ENDFILE
+VALUE "<project>\designer\impl1\geiger_integration_ba_log.rpt,log"
+STATE="utd"
+TIME="1456215392"
+SIZE="927"
+ENDFILE
+VALUE "<project>\designer\impl1\geiger_integration_compile_log.rpt,log"
+STATE="utd"
+TIME="1456214767"
+SIZE="10386"
+ENDFILE
+VALUE "<project>\designer\impl1\geiger_integration_placeroute_log.rpt,log"
+STATE="utd"
+TIME="1456215386"
+SIZE="2619"
 ENDFILE
 VALUE "<project>\designer\impl1\spi_test.adb,adb"
 STATE="ood"
@@ -195,8 +242,8 @@ SIZE="706"
 ENDFILE
 VALUE "<project>\hdl\geig_data_handling.v,hdl"
 STATE="utd"
-TIME="1455298553"
-SIZE="2282"
+TIME="1456210310"
+SIZE="2290"
 ENDFILE
 VALUE "<project>\hdl\mag_data_handling.v,hdl"
 STATE="utd"
@@ -270,8 +317,8 @@ SIZE="1144"
 ENDFILE
 VALUE "<project>\hdl\test_harness_geiger_stack.v,hdl"
 STATE="utd"
-TIME="1455300247"
-SIZE="1820"
+TIME="1456214315"
+SIZE="1740"
 ENDFILE
 VALUE "<project>\hdl\timestamp.v,hdl"
 STATE="utd"
@@ -318,15 +365,45 @@ STATE="utd"
 TIME="1454610216"
 SIZE="2698"
 ENDFILE
+VALUE "<project>\simulation\tb_geiger_integration_postlayout_simulation.log,log"
+STATE="utd"
+TIME="1456215400"
+SIZE="3211"
+ENDFILE
+VALUE "<project>\simulation\tb_geiger_integration_postsynth_simulation.log,log"
+STATE="utd"
+TIME="1456214835"
+SIZE="1224"
+ENDFILE
+VALUE "<project>\simulation\tb_geiger_integration_presynth_simulation.log,log"
+STATE="utd"
+TIME="1456214809"
+SIZE="20350"
+ENDFILE
 VALUE "<project>\simulation\tb_geig_data_handling_presynth_simulation.log,log"
 STATE="utd"
 TIME="1455299956"
 SIZE="2536"
 ENDFILE
+VALUE "<project>\simulation\tb_memory_controller_presynth_simulation.log,log"
+STATE="utd"
+TIME="1455339064"
+SIZE="26356"
+ENDFILE
 VALUE "<project>\simulation\tb_read_address_traversal_presynth_simulation.log,log"
 STATE="utd"
 TIME="1454401584"
 SIZE="15931"
+ENDFILE
+VALUE "<project>\simulation\tb_read_buffer_presynth_simulation.log,log"
+STATE="utd"
+TIME="1455913493"
+SIZE="8627"
+ENDFILE
+VALUE "<project>\simulation\tb_reset_pulse_presynth_simulation.log,log"
+STATE="utd"
+TIME="1455156015"
+SIZE="7368"
 ENDFILE
 VALUE "<project>\simulation\tb_sdram_interface_presynth_simulation.log,log"
 STATE="utd"
@@ -342,6 +419,11 @@ VALUE "<project>\simulation\tb_spi_test_postsynth_simulation.log,log"
 STATE="utd"
 TIME="1454612420"
 SIZE="3580"
+ENDFILE
+VALUE "<project>\simulation\tb_spi_test_presynth_simulation.log,log"
+STATE="utd"
+TIME="1454654091"
+SIZE="3731"
 ENDFILE
 VALUE "<project>\simulation\tb_test_harness_geig_presynth_simulation.log,log"
 STATE="utd"
@@ -469,6 +551,11 @@ STATE="utd"
 TIME="1454610167"
 SIZE="2193"
 ENDFILE
+VALUE "<project>\stimulus\tb_geiger_integration.v,tb_hdl"
+STATE="utd"
+TIME="1456195814"
+SIZE="2065"
+ENDFILE
 VALUE "<project>\stimulus\tb_geiger_stack.v,tb_hdl"
 STATE="utd"
 TIME="1452828367"
@@ -496,8 +583,8 @@ SIZE="1818"
 ENDFILE
 VALUE "<project>\stimulus\tb_test_harness_geig.v,tb_hdl"
 STATE="utd"
-TIME="1452832103"
-SIZE="2358"
+TIME="1456212482"
+SIZE="2494"
 ENDFILE
 VALUE "<project>\stimulus\testbench_timestamp.v,tb_hdl"
 STATE="utd"
@@ -533,6 +620,31 @@ VALUE "<project>\synthesis\clock_div_26MHZ_1MHZ_syn.prj,prj"
 STATE="utd"
 TIME="1454609968"
 SIZE="1647"
+ENDFILE
+VALUE "<project>\synthesis\geiger_integration.edn,syn_edn"
+STATE="utd"
+TIME="1456197858"
+SIZE="396264"
+ENDFILE
+VALUE "<project>\synthesis\geiger_integration.so,so"
+STATE="utd"
+TIME="1456197858"
+SIZE="279"
+ENDFILE
+VALUE "<project>\synthesis\geiger_integration.v,syn_hdl"
+STATE="utd"
+TIME="1456197967"
+SIZE="141895"
+ENDFILE
+VALUE "<project>\synthesis\geiger_integration_sdc.sdc,syn_sdc"
+STATE="utd"
+TIME="1456197858"
+SIZE="310"
+ENDFILE
+VALUE "<project>\synthesis\geiger_integration_syn.prj,prj"
+STATE="utd"
+TIME="1456196784"
+SIZE="2508"
 ENDFILE
 VALUE "<project>\synthesis\spi_test.edn,syn_edn"
 STATE="ood"
@@ -609,6 +721,30 @@ VALUE "<project>\designer\impl1\clock_div_26MHZ_1MHZ_report_pin_byname.txt,log"
 VALUE "<project>\designer\impl1\clock_div_26MHZ_1MHZ_report_pin_bynumber.txt,log"
 ENDLIST
 ENDLIST
+LIST "geiger_integration::work"
+FILE "<project>\component\work\geiger_integration\geiger_integration.v,hdl"
+LIST AssociatedStimulus
+VALUE "<project>\stimulus\tb_geiger_integration.v,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+LiberoState=Post_Layout
+ideDESIGNER(<project>\designer\impl1\geiger_integration.adb,adb)=StateSuccess
+ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\geiger_integration.edn,syn_edn)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST PinReports
+VALUE "<project>\designer\impl1\geiger_integration_report_pin_byname.txt,log"
+VALUE "<project>\designer\impl1\geiger_integration_report_pin_bynumber.txt,log"
+ENDLIST
+ENDLIST
 LIST "spi_test::work"
 FILE "<project>\component\work\spi_test\spi_test.v,hdl"
 LIST AssociatedStimulus
@@ -628,11 +764,14 @@ ENDLIST
 ENDLIST
 ENDLIST
 LIST AssociatedStimulus
+LIST clock_div_26MHZ_1MHZ
+VALUE "<project>\stimulus\tb_clk_div_26M_1M.v,tb_hdl"
+ENDLIST
 LIST spi_test
 VALUE "<project>\stimulus\tb_spi_test.v,tb_hdl"
 ENDLIST
-LIST clock_div_26MHZ_1MHZ
-VALUE "<project>\stimulus\tb_clk_div_26M_1M.v,tb_hdl"
+LIST geiger_integration
+VALUE "<project>\stimulus\tb_geiger_integration.v,tb_hdl"
 ENDLIST
 ENDLIST
 LIST Other_Association
@@ -644,7 +783,7 @@ Type=max
 RunTime=1000ns
 Resolution=1ps
 VsimOpt=
-EntityName=tb_spi_test
+EntityName=tb_geiger_integration
 TopInstanceName=<top>_0
 DoFileName=
 DoFileName2=wave.do
@@ -697,8 +836,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin\synplify_pro.exe"
-PARAM=""
-BATCH=0
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -706,7 +845,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_v11.6\Model\win32acoem\modelsim.exe"
-PARAM=""
+PARAM=" -l tb_geiger_integration_postlayout_simulation.log "
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -742,6 +881,20 @@ Used_File_List
 ENDUsed_File_List
 ENDLIST
 ENDLIST
+LIST "geiger_integration::work"
+LIST Impl1
+LiberoState=Post_Layout
+ideDESIGNER(<project>\designer\impl1\geiger_integration.adb,adb)=StateSuccess
+ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\geiger_integration.edn,syn_edn)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
 LIST "spi_test::work"
 LIST Impl1
 ideSTIMULUS=StateSuccess
@@ -766,8 +919,16 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+Reports;Reports;0
+ReportsCurrentItem;Place and Route:geiger_integration_placeroute_log.rpt
+HDL;stimulus\tb_test_harness_geig.v;0
+HDL;hdl\geig_data_handling.v;0
+HDL;hdl\test_harness_geiger_stack.v;0
 SmartDesign;geiger_integration;0
-ACTIVEVIEW;geiger_integration
+SmartDesign;transceiver_integration;0
+SmartDesign;spi_test;0
+HDL;stimulus\tb_geiger_integration.v;0
+ACTIVEVIEW;Reports
 ENDLIST
 LIST ModuleSubBlockList
 LIST "CLK_1M::work","smartgen\CLK_1M\CLK_1M.v","TRUE","FALSE"
@@ -796,24 +957,24 @@ LIST "full_sys::work","component\work\full_sys\full_sys.cxf","TRUE","FALSE"
 SUBBLOCK "CLK_1MHZ::work","smartgen\CLK_1MHZ\CLK_1MHZ.v","TRUE","FALSE"
 SUBBLOCK "CLK_26MHZ::work","smartgen\CLK_26MHZ\CLK_26MHZ.v","TRUE","FALSE"
 SUBBLOCK "CLK_6_5MHZ::work","smartgen\CLK_6_5MHZ\CLK_6_5MHZ.v","TRUE","FALSE"
-SUBBLOCK "reset_pulse::work","hdl\reset_pulse.v","FALSE","FALSE"
-SUBBLOCK "clock_div_1MHZ_1KHZ::work","hdl\clock_div_1MHZ_1KHZ.v","FALSE","FALSE"
-SUBBLOCK "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
 SUBBLOCK "clock_div_1MHZ_100KHZ::work","hdl\clock_div_1MHZ_100KHZ.v","FALSE","FALSE"
-SUBBLOCK "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
+SUBBLOCK "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
+SUBBLOCK "clock_div_1MHZ_1KHZ::work","hdl\clock_div_1MHZ_1KHZ.v","FALSE","FALSE"
+SUBBLOCK "reset_pulse::work","hdl\reset_pulse.v","FALSE","FALSE"
 SUBBLOCK "sdram_interface::work","hdl\sdram_interface.v","FALSE","FALSE"
 SUBBLOCK "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
-SUBBLOCK "test_harness_geiger_stack::work","hdl\test_harness_geiger_stack.v","FALSE","FALSE"
 SUBBLOCK "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
+SUBBLOCK "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
+SUBBLOCK "test_harness_geiger_stack::work","hdl\test_harness_geiger_stack.v","FALSE","FALSE"
 ENDLIST
 LIST "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
 ENDLIST
-LIST "geiger_integration::work","component\work\geiger_integration\geiger_integration.cxf","TRUE","FALSE"
+LIST "geiger_integration::work","component\work\geiger_integration\geiger_integration.v","TRUE","FALSE"
 SUBBLOCK "CLK_1MHZ::work","smartgen\CLK_1MHZ\CLK_1MHZ.v","TRUE","FALSE"
-SUBBLOCK "reset_pulse::work","hdl\reset_pulse.v","FALSE","FALSE"
-SUBBLOCK "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
 SUBBLOCK "clock_div_1MHZ_100KHZ::work","hdl\clock_div_1MHZ_100KHZ.v","FALSE","FALSE"
+SUBBLOCK "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
 SUBBLOCK "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
+SUBBLOCK "reset_pulse::work","hdl\reset_pulse.v","FALSE","FALSE"
 SUBBLOCK "test_harness_geiger_stack::work","hdl\test_harness_geiger_stack.v","FALSE","FALSE"
 SUBBLOCK "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
 ENDLIST
@@ -858,6 +1019,16 @@ LIST "test_memory::work","component\work\test_memory\test_memory.cxf","TRUE","FA
 ENDLIST
 LIST "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
 ENDLIST
+LIST "transceiver_integration::work","component\work\transceiver_integration\transceiver_integration.cxf","TRUE","FALSE"
+SUBBLOCK "CLK_26MHZ::work","smartgen\CLK_26MHZ\CLK_26MHZ.v","TRUE","FALSE"
+SUBBLOCK "clock_div_1MHZ_1KHZ::work","hdl\clock_div_1MHZ_1KHZ.v","FALSE","FALSE"
+SUBBLOCK "clock_div_26MHZ_1MHZ::work","hdl\clock_div_26MHZ_1MHZ.v","FALSE","FALSE"
+SUBBLOCK "mode_control::work","hdl\mode_control.v","FALSE","FALSE"
+SUBBLOCK "orbit_control::work","hdl\orbit_control.v","FALSE","FALSE"
+SUBBLOCK "reset_pulse::work","hdl\reset_pulse.v","FALSE","FALSE"
+SUBBLOCK "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
+SUBBLOCK "spi_mode_config::work","hdl\spi_mode_config.v","FALSE","FALSE"
+ENDLIST
 LIST "write_address_traversal::work","hdl\write_address_traversal.v","FALSE","FALSE"
 ENDLIST
 LIST "dummy_test::work","stimulus\dummy_test.v","FALSE","TRUE"
@@ -871,6 +1042,9 @@ SUBBLOCK "clock_div_26MHZ_1MHZ::work","hdl\clock_div_26MHZ_1MHZ.v","FALSE","FALS
 ENDLIST
 LIST "tb_geig_data_handling::work","stimulus\tb_geig_data_handling.v","FALSE","TRUE"
 SUBBLOCK "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
+ENDLIST
+LIST "tb_geiger_integration::work","stimulus\tb_geiger_integration.v","FALSE","TRUE"
+SUBBLOCK "geiger_integration::work","component\work\geiger_integration\geiger_integration.v","TRUE","FALSE"
 ENDLIST
 LIST "tb_geiger_stack::work","stimulus\tb_geiger_stack.v","FALSE","TRUE"
 SUBBLOCK "test_harness_geiger_stack::work","hdl\test_harness_geiger_stack.v","FALSE","FALSE"
@@ -897,5 +1071,8 @@ ENDLIST
 LIST ActiveTestBenchList
 LIST "spi_test::work"
 ACTIVETESTBENCH "tb_spi_test::work","stimulus\tb_spi_test.v","FALSE"
+ENDLIST
+LIST "geiger_integration::work"
+ACTIVETESTBENCH "tb_geiger_integration::work","stimulus\tb_geiger_integration.v","FALSE"
 ENDLIST
 ENDLIST

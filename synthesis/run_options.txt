@@ -1,11 +1,18 @@
 #--  Synopsys, Inc.
 #--  Version J-2015.03M-3
 #--  Project file C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\run_options.txt
-#--  Written on Tue Feb 09 22:56:38 2016
+#--  Written on Tue Feb 23 01:05:13 2016
 
 
 #project files
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/smartgen/CLK_1MHZ/CLK_1MHZ.v"
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/clock_div_1MHZ_100KHZ.v"
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/clock_div_1MHZ_10HZ.v"
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/geig_data_handling.v"
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/reset_pulse.v"
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/test_harness_geiger_stack.v"
 add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/timestamp.v"
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/component/work/geiger_integration/geiger_integration.v"
 
 
 
@@ -19,14 +26,14 @@ set_option -vlog_std v2001
 
 #device options
 set_option -technology ProASIC3L
-set_option -part A3PE3000L
+set_option -part M1A3P1000L
 set_option -package FBGA484
 set_option -speed_grade STD
 set_option -part_companion ""
 
 #compilation/mapping options
 set_option -use_fsm_explorer 0
-set_option -top_module "timestamp"
+set_option -top_module "geiger_integration"
 
 # mapper_options
 set_option -frequency 100.000
@@ -64,5 +71,5 @@ set_option -auto_infer_blackbox 0
 set_option -write_apr_constraint 1
 
 #set result format/file last
-project -result_file "./timestamp.edn"
+project -result_file "./geiger_integration.edn"
 impl -active "synthesis"

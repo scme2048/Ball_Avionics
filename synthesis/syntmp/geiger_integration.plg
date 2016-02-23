@@ -1,0 +1,42 @@
+@P:  Worst Slack : -1.617
+@P:  CLK_1MHZ|GLA_inferred_clock - Estimated Frequency : 96.6 MHz
+@P:  CLK_1MHZ|GLA_inferred_clock - Requested Frequency : 100.0 MHz
+@P:  CLK_1MHZ|GLA_inferred_clock - Estimated Period : 10.350
+@P:  CLK_1MHZ|GLA_inferred_clock - Requested Period : 10.000
+@P:  CLK_1MHZ|GLA_inferred_clock - Slack : -0.350
+@P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Estimated Frequency : 86.1 MHz
+@P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Requested Frequency : 100.0 MHz
+@P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Estimated Period : 11.617
+@P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Requested Period : 10.000
+@P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Slack : -1.617
+@P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Estimated Frequency : 89.4 MHz
+@P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Requested Frequency : 100.0 MHz
+@P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Estimated Period : 11.187
+@P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Requested Period : 10.000
+@P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Slack : -1.187
+@P:  Worst Slack(min analysis) : NA
+@P:  CLK_1MHZ|GLA_inferred_clock - Estimated Frequency(min analysis) : 96.6 MHz
+@P:  CLK_1MHZ|GLA_inferred_clock - Requested Frequency(min analysis) : 100.0 MHz
+@P:  CLK_1MHZ|GLA_inferred_clock - Estimated Period(min analysis) : 10.350
+@P:  CLK_1MHZ|GLA_inferred_clock - Requested Period(min analysis) : 10.000
+@P:  CLK_1MHZ|GLA_inferred_clock - Slack(min analysis) : -0.350
+@P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Estimated Frequency(min analysis) : 86.1 MHz
+@P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Requested Frequency(min analysis) : 100.0 MHz
+@P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Estimated Period(min analysis) : 11.617
+@P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Requested Period(min analysis) : 10.000
+@P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Slack(min analysis) : -1.617
+@P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Estimated Frequency(min analysis) : 89.4 MHz
+@P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Requested Frequency(min analysis) : 100.0 MHz
+@P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Estimated Period(min analysis) : 11.187
+@P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Requested Period(min analysis) : 10.000
+@P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Slack(min analysis) : -1.187
+@P:  Total Area : 611.0
+@P:  Total Area : 69.0
+@P:  Total Area : 227.0
+@P:  Total Area : 10.0
+@P:  Total Area : 153.0
+@P:  Total Area : 74.0
+@P:  Total Area : 78.0
+@P:  Total Area : 0.0
+@P:  Total Area : 611.0
+@P:  CPU Time : 0h:00m:01s
