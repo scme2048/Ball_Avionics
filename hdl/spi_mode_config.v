@@ -109,7 +109,7 @@ module spi_mode_config (
         start_a <= start_b;
         //chip_rdy = SLAVE_OUTPUT[7];
         //chip_state = SLAVE_OUTPUT[6:4];
-        if (busy) begin
+        //if (busy) begin
         case(state_b)
             IDLE: begin
                 mem_enable_a = 1'b0;
@@ -255,7 +255,7 @@ module spi_mode_config (
                 else if ((~chip_rdy)&&(byte_tracker_b)&&(config_cntr_b == 4)) begin
                     config_cntr_a = config_cntr_b + 1;
                     start_a = 1'b1;
-                    byte_out_a = 8'h41; //chip_rdy pin
+                    byte_out_a = 8'h41; //chip_rdy pin *******
                     byte_tracker_a = 1'b0;
                 end
                 //GDO0 Config
@@ -294,10 +294,23 @@ module spi_mode_config (
                 else if ((~chip_rdy)&&(byte_tracker_b)&&(config_cntr_b == 10)) begin
                     config_cntr_a = config_cntr_b + 1;
                     start_a = 1'b1;
-                    byte_out_a = 8'h3d; //61 bytes
+                    byte_out_a = 8'h42; //66 bytes
                     byte_tracker_a = 1'b0;
                 end
-                //Packet Automation Control
+                //Packet Automation Control 1 ***************
+                else if ((~chip_rdy)&&(~byte_tracker_b)&&(config_cntr_b == 11)) begin
+                    config_cntr_a = config_cntr_b + 1;
+                    start_a = 1'b1;
+                    byte_out_a = {WRITE,SINGLE_MODE,6'h7};
+                    byte_tracker_a = 1'b1;
+                end
+                else if ((~chip_rdy)&&(byte_tracker_b)&&(config_cntr_b == 12)) begin
+                    config_cntr_a = config_cntr_b + 1;
+                    start_a = 1'b1;
+                    byte_out_a = 8'h0; //no status bytes
+                    byte_tracker_a = 1'b0;
+                end
+                //Packet Automation Control 0
                 else if ((~chip_rdy)&&(~byte_tracker_b)&&(config_cntr_b == 11)) begin
                     config_cntr_a = config_cntr_b + 1;
                     start_a = 1'b1;
@@ -307,7 +320,7 @@ module spi_mode_config (
                 else if ((~chip_rdy)&&(byte_tracker_b)&&(config_cntr_b == 12)) begin
                     config_cntr_a = config_cntr_b + 1;
                     start_a = 1'b1;
-                    byte_out_a = 8'h8; //CRC check, finite packet mode
+                    byte_out_a = 8'h4; //CRC check, finite packet mode
                     byte_tracker_a = 1'b0;
                 end
                 //Channel Number
@@ -385,7 +398,7 @@ module spi_mode_config (
                 else if ((~chip_rdy)&&(byte_tracker_b)&&(config_cntr_b == 24)) begin
                     config_cntr_a = config_cntr_b + 1;
                     start_a = 1'b1;
-                    byte_out_a = 8'hf5; //Used for testing for ~433 MHz
+                    byte_out_a = 8'h4b; //Used for testing for ~433 MHz
                     byte_tracker_a = 1'b0;
                 end
                 //Modem Config 3
@@ -398,7 +411,7 @@ module spi_mode_config (
                 else if ((~chip_rdy)&&(byte_tracker_b)&&(config_cntr_b == 26)) begin
                     config_cntr_a = config_cntr_b + 1;
                     start_a = 1'b1;
-                    byte_out_a = 8'h83; //Used for testing for ~433 MHz
+                    byte_out_a = 8'hf8; //Used for testing for ~433 MHz
                     byte_tracker_a = 1'b0;
                 end
                 //Modem Config 2
@@ -414,6 +427,19 @@ module spi_mode_config (
                     byte_out_a = 8'h10; //Used for testing ***manchester encoding?
                     byte_tracker_a = 1'b0;
                 end
+                //Modem Config 1
+                else if ((~chip_rdy)&&(~byte_tracker_b)&&(config_cntr_b == 27)) begin
+                    config_cntr_a = config_cntr_b + 1;
+                    start_a = 1'b1;
+                    byte_out_a = {WRITE,SINGLE_MODE,6'h13};
+                    byte_tracker_a = 1'b1;
+                end
+                else if ((~chip_rdy)&&(byte_tracker_b)&&(config_cntr_b == 28)) begin
+                    config_cntr_a = config_cntr_b + 1;
+                    start_a = 1'b1;
+                    byte_out_a = 8'h2; //
+                    byte_tracker_a = 1'b0;
+                end
                 //Modem Deviation Setting
                 else if ((~chip_rdy)&&(~byte_tracker_b)&&(config_cntr_b == 29)) begin
                     config_cntr_a = config_cntr_b + 1;
@@ -424,7 +450,7 @@ module spi_mode_config (
                 else if ((~chip_rdy)&&(byte_tracker_b)&&(config_cntr_b == 30)) begin
                     config_cntr_a = config_cntr_b + 1;
                     start_a = 1'b1;
-                    byte_out_a = 8'h15; //from testing
+                    byte_out_a = 8'h46; //from testing
                     byte_tracker_a = 1'b0;
                 end
                 //Radio cntrl state config
@@ -567,10 +593,10 @@ module spi_mode_config (
             end
 
             endcase
-        end
+        //end
         end
 
-    always @(posedge clk or negedge rst or negedge busy) begin
+    always @(posedge clk or negedge rst or negedge busy or posedge busy) begin
         if (~rst && busy) begin
 //            if (~rst_mode) begin //power on sequence
             byte_out_b <= 8'bz;
