@@ -18,29 +18,14 @@
 
 //`timescale <time_units> / <precision>
 
-module test_constants_spi(CLK_1KHZ,RESET,DATA, START);
-input CLK_1KHZ,RESET;
-output [7:0] DATA;
-output START;
+module test_constants_spi(DATA,ROW_WRITE);
+output [15:0] DATA;
+output [12:0] ROW_WRITE;
+parameter dat= 15'b0100110101000111;
+parameter row = 12'b000000011101;
 
-reg st;
-reg [7:0] da;
-assign START=st;
-assign DATA=da;
+assign DATA=dat;
+assign ROW_WRITE=row;
 
-
-
-always @(posedge CLK_1KHZ or posedge RESET) 
-begin
-
-if (RESET) begin
-    da <= 8'b0;
-    st <= 1'b0;
-end else begin
-
-st<=!st;
-da<=da+1;
-end
-end
 endmodule
 
