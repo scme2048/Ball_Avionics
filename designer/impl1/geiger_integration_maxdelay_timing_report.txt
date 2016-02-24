@@ -1,0 +1,729 @@
+Timing Report Max Delay Analysis
+
+SmartTime Version v11.6
+Microsemi Corporation - Microsemi Libero Software Release v11.6 (Version 11.6.0.34)
+Date: Tue Feb 23 12:16:59 2016
+
+
+Design: geiger_integration
+Family: ProASIC3L
+Die: M1A3P1000L
+Package: 484 FBGA
+Temperature Range: 0 - 70 C
+Voltage Range: 1.425 - 1.575 V
+Speed Grade: STD
+Design State: Post-Layout
+Data source: Silicon verified
+Min Operating Conditions: BEST - 1.575 V - 0 C
+Max Operating Conditions: WORST - 1.425 V - 70 C
+Using Enhanced Min Delay Analysis
+Scenario for Timing Analysis: Primary
+
+
+-----------------------------------------------------
+SUMMARY
+
+Clock Domain:               CLK_1MHZ_0/Core:GLA
+Period (ns):                11.648
+Frequency (MHz):            85.852
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+External Setup (ns):        10.947
+External Hold (ns):         -1.099
+Min Clock-To-Out (ns):      1.584
+Max Clock-To-Out (ns):      6.359
+
+Clock Domain:               clock_div_1MHZ_10HZ_0/clk_out:Q
+Period (ns):                8.868
+Frequency (MHz):            112.765
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+External Setup (ns):        N/A
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      N/A
+Max Clock-To-Out (ns):      N/A
+
+                            Input to Output
+Min Delay (ns):             N/A
+Max Delay (ns):             N/A
+
+END SUMMARY
+-----------------------------------------------------
+
+Clock Domain CLK_1MHZ_0/Core:GLA
+
+SET Register to Register
+
+Path 1
+  From:                        test_harness_geiger_stack_0/data_prev[43]:CLK
+  To:                          test_harness_geiger_stack_0/data_buffer[20]:E
+  Delay (ns):                  11.290
+  Slack (ns):
+  Arrival (ns):                12.151
+  Required (ns):
+  Setup (ns):                  0.387
+  Minimum Period (ns):         11.648
+
+Path 2
+  From:                        test_harness_geiger_stack_0/data_prev[43]:CLK
+  To:                          test_harness_geiger_stack_0/data_buffer[29]:E
+  Delay (ns):                  11.279
+  Slack (ns):
+  Arrival (ns):                12.140
+  Required (ns):
+  Setup (ns):                  0.387
+  Minimum Period (ns):         11.637
+
+Path 3
+  From:                        test_harness_geiger_stack_0/data_prev[43]:CLK
+  To:                          test_harness_geiger_stack_0/data_buffer[23]:E
+  Delay (ns):                  11.124
+  Slack (ns):
+  Arrival (ns):                11.985
+  Required (ns):
+  Setup (ns):                  0.387
+  Minimum Period (ns):         11.505
+
+Path 4
+  From:                        test_harness_geiger_stack_0/data_prev[43]:CLK
+  To:                          test_harness_geiger_stack_0/data_buffer[11]:E
+  Delay (ns):                  11.124
+  Slack (ns):
+  Arrival (ns):                11.985
+  Required (ns):
+  Setup (ns):                  0.387
+  Minimum Period (ns):         11.482
+
+Path 5
+  From:                        test_harness_geiger_stack_0/data_prev[43]:CLK
+  To:                          test_harness_geiger_stack_0/data_buffer[44]:E
+  Delay (ns):                  11.089
+  Slack (ns):
+  Arrival (ns):                11.950
+  Required (ns):
+  Setup (ns):                  0.387
+  Minimum Period (ns):         11.441
+
+
+Expanded Path 1
+  From: test_harness_geiger_stack_0/data_prev[43]:CLK
+  To: test_harness_geiger_stack_0/data_buffer[20]:E
+  data required time                             N/C
+  data arrival time                          -   12.151
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        CLK_1MHZ_0/Core:GLA
+               +     0.000          Clock source
+  0.000                        CLK_1MHZ_0/Core:GLA (r)
+               +     0.861          net: GLA
+  0.861                        test_harness_geiger_stack_0/data_prev[43]:CLK (r)
+               +     0.657          cell: ADLIB:DFN1E1
+  1.518                        test_harness_geiger_stack_0/data_prev[43]:Q (f)
+               +     0.313          net: test_harness_geiger_stack_0/data_prev[43]
+  1.831                        test_harness_geiger_stack_0/data_prev_RNI63J6[43]:B (f)
+               +     0.880          cell: ADLIB:XOR2
+  2.711                        test_harness_geiger_stack_0/data_prev_RNI63J6[43]:Y (f)
+               +     0.976          net: test_harness_geiger_stack_0/un1_TEST_DATA_43
+  3.687                        test_harness_geiger_stack_0/data_prev_RNI0KVC[10]:C (f)
+               +     0.437          cell: ADLIB:XO1
+  4.124                        test_harness_geiger_stack_0/data_prev_RNI0KVC[10]:Y (f)
+               +     0.313          net: test_harness_geiger_stack_0/un1_TEST_DATA_NE_21
+  4.437                        test_harness_geiger_stack_0/data_prev_RNICM1Q[10]:C (f)
+               +     0.592          cell: ADLIB:OR3
+  5.029                        test_harness_geiger_stack_0/data_prev_RNICM1Q[10]:Y (f)
+               +     0.310          net: test_harness_geiger_stack_0/un1_TEST_DATA_NE_32
+  5.339                        test_harness_geiger_stack_0/data_prev_RNISHRD2[10]:C (f)
+               +     0.592          cell: ADLIB:OR3
+  5.931                        test_harness_geiger_stack_0/data_prev_RNISHRD2[10]:Y (f)
+               +     1.057          net: test_harness_geiger_stack_0/un1_TEST_DATA_NE_38
+  6.988                        test_harness_geiger_stack_0/data_prev_RNIOALL5[14]:C (f)
+               +     0.592          cell: ADLIB:OR3
+  7.580                        test_harness_geiger_stack_0/data_prev_RNIOALL5[14]:Y (f)
+               +     0.296          net: test_harness_geiger_stack_0/un1_TEST_DATA_NE_41
+  7.876                        test_harness_geiger_stack_0/data_prev_RNI331K8[0]:A (f)
+               +     0.479          cell: ADLIB:OR2
+  8.355                        test_harness_geiger_stack_0/data_prev_RNI331K8[0]:Y (f)
+               +     0.382          net: test_harness_geiger_stack_0/un1_TEST_DATA_NE
+  8.737                        test_harness_geiger_stack_0/set_0_RNIMEE09:A (f)
+               +     0.552          cell: ADLIB:MX2
+  9.289                        test_harness_geiger_stack_0/set_0_RNIMEE09:Y (f)
+               +     0.339          net: test_harness_geiger_stack_0/un1_TEST_DATA_2[0]
+  9.628                        test_harness_geiger_stack_0/set_0_RNI4LFF9:A (f)
+               +     0.459          cell: ADLIB:OR2B
+  10.087                       test_harness_geiger_stack_0/set_0_RNI4LFF9:Y (r)
+               +     2.064          net: test_harness_geiger_stack_0/un1_counter18_0
+  12.151                       test_harness_geiger_stack_0/data_buffer[20]:E (r)
+                                    
+  12.151                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          CLK_1MHZ_0/Core:GLA
+               +     0.000          Clock source
+  N/C                          CLK_1MHZ_0/Core:GLA (r)
+               +     0.890          net: GLA
+  N/C                          test_harness_geiger_stack_0/data_buffer[20]:CLK (r)
+               -     0.387          Library setup time: ADLIB:DFN1E0
+  N/C                          test_harness_geiger_stack_0/data_buffer[20]:E
+
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+Path 1
+  From:                        BUF2_PBRST_N_T9
+  To:                          test_harness_geiger_stack_0/data_prev[15]:E
+  Delay (ns):                  11.427
+  Slack (ns):
+  Arrival (ns):                11.427
+  Required (ns):
+  Setup (ns):                  0.387
+  External Setup (ns):         10.947
+
+Path 2
+  From:                        BUF2_PBRST_N_T9
+  To:                          test_harness_geiger_stack_0/data_prev[30]:E
+  Delay (ns):                  11.073
+  Slack (ns):
+  Arrival (ns):                11.073
+  Required (ns):
+  Setup (ns):                  0.387
+  External Setup (ns):         10.593
+
+Path 3
+  From:                        BUF2_PBRST_N_T9
+  To:                          test_harness_geiger_stack_0/data_prev[14]:E
+  Delay (ns):                  11.030
+  Slack (ns):
+  Arrival (ns):                11.030
+  Required (ns):
+  Setup (ns):                  0.387
+  External Setup (ns):         10.550
+
+Path 4
+  From:                        BUF2_PBRST_N_T9
+  To:                          test_harness_geiger_stack_0/data_prev[22]:E
+  Delay (ns):                  10.647
+  Slack (ns):
+  Arrival (ns):                10.647
+  Required (ns):
+  Setup (ns):                  0.387
+  External Setup (ns):         10.155
+
+Path 5
+  From:                        BUF2_PBRST_N_T9
+  To:                          test_harness_geiger_stack_0/data_prev[16]:E
+  Delay (ns):                  10.375
+  Slack (ns):
+  Arrival (ns):                10.375
+  Required (ns):
+  Setup (ns):                  0.387
+  External Setup (ns):         9.918
+
+
+Expanded Path 1
+  From: BUF2_PBRST_N_T9
+  To: test_harness_geiger_stack_0/data_prev[15]:E
+  data required time                             N/C
+  data arrival time                          -   11.427
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        BUF2_PBRST_N_T9 (f)
+               +     0.000          net: BUF2_PBRST_N_T9
+  0.000                        BUF2_PBRST_N_T9_pad/U0/U0:PAD (f)
+               +     0.592          cell: ADLIB:IOPAD_IN
+  0.592                        BUF2_PBRST_N_T9_pad/U0/U0:Y (f)
+               +     0.000          net: BUF2_PBRST_N_T9_pad/U0/NET1
+  0.592                        BUF2_PBRST_N_T9_pad/U0/U1:YIN (f)
+               +     0.036          cell: ADLIB:IOIN_IB
+  0.628                        BUF2_PBRST_N_T9_pad/U0/U1:Y (f)
+               +     5.031          net: BUF2_PBRST_N_T9_c
+  5.659                        reset_pulse_0/RESET_4:B (f)
+               +     0.580          cell: ADLIB:OR2
+  6.239                        reset_pulse_0/RESET_4:Y (f)
+               +     5.188          net: reset_pulse_0_RESET_4
+  11.427                       test_harness_geiger_stack_0/data_prev[15]:E (f)
+                                    
+  11.427                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          CLK_1MHZ_0/Core:GLA
+               +     0.000          Clock source
+  N/C                          CLK_1MHZ_0/Core:GLA (r)
+               +     0.867          net: GLA
+  N/C                          test_harness_geiger_stack_0/data_prev[15]:CLK (r)
+               -     0.387          Library setup time: ADLIB:DFN1E1
+  N/C                          test_harness_geiger_stack_0/data_prev[15]:E
+
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+Path 1
+  From:                        test_harness_geiger_stack_0/data_chunk[0]/U1:CLK
+  To:                          D0_OUT
+  Delay (ns):                  5.498
+  Slack (ns):
+  Arrival (ns):                6.359
+  Required (ns):
+  Clock to Out (ns):           6.359
+
+Path 2
+  From:                        test_harness_geiger_stack_0/data_chunk[2]/U1:CLK
+  To:                          D2_OUT
+  Delay (ns):                  4.801
+  Slack (ns):
+  Arrival (ns):                5.717
+  Required (ns):
+  Clock to Out (ns):           5.717
+
+Path 3
+  From:                        test_harness_geiger_stack_0/data_chunk[5]/U1:CLK
+  To:                          D5_OUT
+  Delay (ns):                  4.836
+  Slack (ns):
+  Arrival (ns):                5.703
+  Required (ns):
+  Clock to Out (ns):           5.703
+
+Path 4
+  From:                        test_harness_geiger_stack_0/data_chunk[4]/U1:CLK
+  To:                          D4_OUT
+  Delay (ns):                  4.442
+  Slack (ns):
+  Arrival (ns):                5.309
+  Required (ns):
+  Clock to Out (ns):           5.309
+
+Path 5
+  From:                        test_harness_geiger_stack_0/data_chunk[7]/U1:CLK
+  To:                          D7_OUT
+  Delay (ns):                  4.427
+  Slack (ns):
+  Arrival (ns):                5.294
+  Required (ns):
+  Clock to Out (ns):           5.294
+
+
+Expanded Path 1
+  From: test_harness_geiger_stack_0/data_chunk[0]/U1:CLK
+  To: D0_OUT
+  data required time                             N/C
+  data arrival time                          -   6.359
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        CLK_1MHZ_0/Core:GLA
+               +     0.000          Clock source
+  0.000                        CLK_1MHZ_0/Core:GLA (r)
+               +     0.861          net: GLA
+  0.861                        test_harness_geiger_stack_0/data_chunk[0]/U1:CLK (r)
+               +     0.657          cell: ADLIB:DFN1C0
+  1.518                        test_harness_geiger_stack_0/data_chunk[0]/U1:Q (f)
+               +     2.530          net: D0_OUT_c
+  4.048                        D0_OUT_pad/U0/U1:D (f)
+               +     0.587          cell: ADLIB:IOTRI_OB_EB
+  4.635                        D0_OUT_pad/U0/U1:DOUT (f)
+               +     0.000          net: D0_OUT_pad/U0/NET1
+  4.635                        D0_OUT_pad/U0/U0:D (f)
+               +     1.724          cell: ADLIB:IOPAD_TRI
+  6.359                        D0_OUT_pad/U0/U0:PAD (f)
+               +     0.000          net: D0_OUT
+  6.359                        D0_OUT (f)
+                                    
+  6.359                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          CLK_1MHZ_0/Core:GLA
+               +     0.000          Clock source
+  N/C                          CLK_1MHZ_0/Core:GLA (r)
+                                    
+  N/C                          D0_OUT (f)
+
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+Path 1
+  From:                        BUF2_PBRST_N_T9
+  To:                          geig_data_handling_0/geig_counts[10]/U1:CLR
+  Delay (ns):                  10.727
+  Slack (ns):
+  Arrival (ns):                10.727
+  Required (ns):
+  Recovery (ns):               0.265
+  External Recovery (ns):      10.125
+
+Path 2
+  From:                        BUF2_PBRST_N_T9
+  To:                          geig_data_handling_0/geig_counts[6]/U1:CLR
+  Delay (ns):                  10.436
+  Slack (ns):
+  Arrival (ns):                10.436
+  Required (ns):
+  Recovery (ns):               0.265
+  External Recovery (ns):      9.836
+
+Path 3
+  From:                        BUF2_PBRST_N_T9
+  To:                          geig_data_handling_0/geig_counts[7]/U1:CLR
+  Delay (ns):                  10.436
+  Slack (ns):
+  Arrival (ns):                10.436
+  Required (ns):
+  Recovery (ns):               0.265
+  External Recovery (ns):      9.834
+
+Path 4
+  From:                        BUF2_PBRST_N_T9
+  To:                          geig_data_handling_0/geig_counts[2]/U1:CLR
+  Delay (ns):                  10.271
+  Slack (ns):
+  Arrival (ns):                10.271
+  Required (ns):
+  Recovery (ns):               0.265
+  External Recovery (ns):      9.671
+
+Path 5
+  From:                        BUF2_PBRST_N_T9
+  To:                          geig_data_handling_0/geig_counts[8]/U1:CLR
+  Delay (ns):                  10.116
+  Slack (ns):
+  Arrival (ns):                10.116
+  Required (ns):
+  Recovery (ns):               0.265
+  External Recovery (ns):      9.514
+
+
+Expanded Path 1
+  From: BUF2_PBRST_N_T9
+  To: geig_data_handling_0/geig_counts[10]/U1:CLR
+  data required time                             N/C
+  data arrival time                          -   10.727
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        BUF2_PBRST_N_T9 (r)
+               +     0.000          net: BUF2_PBRST_N_T9
+  0.000                        BUF2_PBRST_N_T9_pad/U0/U0:PAD (r)
+               +     0.857          cell: ADLIB:IOPAD_IN
+  0.857                        BUF2_PBRST_N_T9_pad/U0/U0:Y (r)
+               +     0.000          net: BUF2_PBRST_N_T9_pad/U0/NET1
+  0.857                        BUF2_PBRST_N_T9_pad/U0/U1:YIN (r)
+               +     0.039          cell: ADLIB:IOIN_IB
+  0.896                        BUF2_PBRST_N_T9_pad/U0/U1:Y (r)
+               +     4.399          net: BUF2_PBRST_N_T9_c
+  5.295                        reset_pulse_0/RESET_2:B (r)
+               +     0.527          cell: ADLIB:OR2
+  5.822                        reset_pulse_0/RESET_2:Y (r)
+               +     4.905          net: reset_pulse_0_RESET_2
+  10.727                       geig_data_handling_0/geig_counts[10]/U1:CLR (r)
+                                    
+  10.727                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          CLK_1MHZ_0/Core:GLA
+               +     0.000          Clock source
+  N/C                          CLK_1MHZ_0/Core:GLA (r)
+               +     0.867          net: GLA
+  N/C                          geig_data_handling_0/geig_counts[10]/U1:CLK (r)
+               -     0.265          Library recovery time: ADLIB:DFN1C0
+  N/C                          geig_data_handling_0/geig_counts[10]/U1:CLR
+
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain clock_div_1MHZ_10HZ_0/clk_out:Q
+
+SET Register to Register
+
+Path 1
+  From:                        timestamp_0/TIMESTAMP[0]:CLK
+  To:                          timestamp_0/TIMESTAMP[22]:D
+  Delay (ns):                  8.365
+  Slack (ns):
+  Arrival (ns):                12.837
+  Required (ns):
+  Setup (ns):                  0.480
+  Minimum Period (ns):         8.868
+
+Path 2
+  From:                        timestamp_0/TIMESTAMP[0]:CLK
+  To:                          timestamp_0/TIMESTAMP[21]:D
+  Delay (ns):                  8.400
+  Slack (ns):
+  Arrival (ns):                12.872
+  Required (ns):
+  Setup (ns):                  0.480
+  Minimum Period (ns):         8.842
+
+Path 3
+  From:                        timestamp_0/TIMESTAMP[2]:CLK
+  To:                          timestamp_0/TIMESTAMP[22]:D
+  Delay (ns):                  8.335
+  Slack (ns):
+  Arrival (ns):                12.793
+  Required (ns):
+  Setup (ns):                  0.480
+  Minimum Period (ns):         8.824
+
+Path 4
+  From:                        geig_data_handling_0/min_counter[3]:CLK
+  To:                          geig_data_handling_0/G_DATA_STACK_1[11]/U1:D
+  Delay (ns):                  8.284
+  Slack (ns):
+  Arrival (ns):                12.756
+  Required (ns):
+  Setup (ns):                  0.511
+  Minimum Period (ns):         8.818
+
+Path 5
+  From:                        timestamp_0/TIMESTAMP[2]:CLK
+  To:                          timestamp_0/TIMESTAMP[21]:D
+  Delay (ns):                  8.370
+  Slack (ns):
+  Arrival (ns):                12.828
+  Required (ns):
+  Setup (ns):                  0.480
+  Minimum Period (ns):         8.798
+
+
+Expanded Path 1
+  From: timestamp_0/TIMESTAMP[0]:CLK
+  To: timestamp_0/TIMESTAMP[22]:D
+  data required time                             N/C
+  data arrival time                          -   12.837
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        clock_div_1MHZ_10HZ_0/clk_out:Q
+               +     0.000          Clock source
+  0.000                        clock_div_1MHZ_10HZ_0/clk_out:Q (r)
+               +     2.940          net: clock_div_1MHZ_10HZ_0/clk_out_i
+  2.940                        clock_div_1MHZ_10HZ_0/clk_out_RNIT8C7:A (r)
+               +     0.666          cell: ADLIB:CLKINT
+  3.606                        clock_div_1MHZ_10HZ_0/clk_out_RNIT8C7:Y (r)
+               +     0.866          net: clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT
+  4.472                        timestamp_0/TIMESTAMP[0]:CLK (r)
+               +     0.657          cell: ADLIB:DFN1C0
+  5.129                        timestamp_0/TIMESTAMP[0]:Q (f)
+               +     0.417          net: timestamp_0_TIMESTAMP[0]
+  5.546                        timestamp_0/TIMESTAMP_c2:B (f)
+               +     0.541          cell: ADLIB:NOR3C
+  6.087                        timestamp_0/TIMESTAMP_c2:Y (f)
+               +     0.358          net: timestamp_0/TIMESTAMP_c2
+  6.445                        timestamp_0/TIMESTAMP_c4:B (f)
+               +     0.541          cell: ADLIB:NOR3C
+  6.986                        timestamp_0/TIMESTAMP_c4:Y (f)
+               +     1.036          net: timestamp_0/TIMESTAMP_c4
+  8.022                        timestamp_0/TIMESTAMP_m6_0_a2:C (f)
+               +     0.572          cell: ADLIB:NOR3C
+  8.594                        timestamp_0/TIMESTAMP_m6_0_a2:Y (f)
+               +     0.311          net: timestamp_0/TIMESTAMP_c13
+  8.905                        timestamp_0/TIMESTAMP_c15:B (f)
+               +     0.541          cell: ADLIB:NOR3C
+  9.446                        timestamp_0/TIMESTAMP_c15:Y (f)
+               +     0.366          net: timestamp_0/TIMESTAMP_c15
+  9.812                        timestamp_0/TIMESTAMP_c17:B (f)
+               +     0.541          cell: ADLIB:NOR3C
+  10.353                       timestamp_0/TIMESTAMP_c17:Y (f)
+               +     0.372          net: timestamp_0/TIMESTAMP_c17
+  10.725                       timestamp_0/TIMESTAMP_c19:B (f)
+               +     0.541          cell: ADLIB:NOR3C
+  11.266                       timestamp_0/TIMESTAMP_c19:Y (f)
+               +     0.420          net: timestamp_0/TIMESTAMP_c19
+  11.686                       timestamp_0/TIMESTAMP_n22:A (f)
+               +     0.841          cell: ADLIB:AX1C
+  12.527                       timestamp_0/TIMESTAMP_n22:Y (r)
+               +     0.310          net: timestamp_0/TIMESTAMP_n22
+  12.837                       timestamp_0/TIMESTAMP[22]:D (r)
+                                    
+  12.837                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          clock_div_1MHZ_10HZ_0/clk_out:Q
+               +     0.000          Clock source
+  N/C                          clock_div_1MHZ_10HZ_0/clk_out:Q (r)
+               +     2.940          net: clock_div_1MHZ_10HZ_0/clk_out_i
+  N/C                          clock_div_1MHZ_10HZ_0/clk_out_RNIT8C7:A (r)
+               +     0.666          cell: ADLIB:CLKINT
+  N/C                          clock_div_1MHZ_10HZ_0/clk_out_RNIT8C7:Y (r)
+               +     0.843          net: clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT
+  N/C                          timestamp_0/TIMESTAMP[22]:CLK (r)
+               -     0.480          Library setup time: ADLIB:DFN1C0
+  N/C                          timestamp_0/TIMESTAMP[22]:D
+
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+Path 1
+  From:                        BUF2_PBRST_N_T9
+  To:                          timestamp_0/TIMESTAMP[8]:CLR
+  Delay (ns):                  11.019
+  Slack (ns):
+  Arrival (ns):                11.019
+  Required (ns):
+  Recovery (ns):               0.265
+  External Recovery (ns):      6.789
+
+Path 2
+  From:                        BUF2_PBRST_N_T9
+  To:                          timestamp_0/TIMESTAMP[7]:CLR
+  Delay (ns):                  10.974
+  Slack (ns):
+  Arrival (ns):                10.974
+  Required (ns):
+  Recovery (ns):               0.265
+  External Recovery (ns):      6.744
+
+Path 3
+  From:                        BUF2_PBRST_N_T9
+  To:                          timestamp_0/TIMESTAMP[6]:CLR
+  Delay (ns):                  10.772
+  Slack (ns):
+  Arrival (ns):                10.772
+  Required (ns):
+  Recovery (ns):               0.265
+  External Recovery (ns):      6.542
+
+Path 4
+  From:                        BUF2_PBRST_N_T9
+  To:                          timestamp_0/TIMESTAMP[16]:CLR
+  Delay (ns):                  10.353
+  Slack (ns):
+  Arrival (ns):                10.353
+  Required (ns):
+  Recovery (ns):               0.265
+  External Recovery (ns):      6.108
+
+Path 5
+  From:                        BUF2_PBRST_N_T9
+  To:                          geig_data_handling_0/G_DATA_STACK_1[19]/U1:CLR
+  Delay (ns):                  10.265
+  Slack (ns):
+  Arrival (ns):                10.265
+  Required (ns):
+  Recovery (ns):               0.265
+  External Recovery (ns):      6.077
+
+
+Expanded Path 1
+  From: BUF2_PBRST_N_T9
+  To: timestamp_0/TIMESTAMP[8]:CLR
+  data required time                             N/C
+  data arrival time                          -   11.019
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        BUF2_PBRST_N_T9 (r)
+               +     0.000          net: BUF2_PBRST_N_T9
+  0.000                        BUF2_PBRST_N_T9_pad/U0/U0:PAD (r)
+               +     0.857          cell: ADLIB:IOPAD_IN
+  0.857                        BUF2_PBRST_N_T9_pad/U0/U0:Y (r)
+               +     0.000          net: BUF2_PBRST_N_T9_pad/U0/NET1
+  0.857                        BUF2_PBRST_N_T9_pad/U0/U1:YIN (r)
+               +     0.039          cell: ADLIB:IOIN_IB
+  0.896                        BUF2_PBRST_N_T9_pad/U0/U1:Y (r)
+               +     4.925          net: BUF2_PBRST_N_T9_c
+  5.821                        reset_pulse_0/RESET_3:B (r)
+               +     0.527          cell: ADLIB:OR2
+  6.348                        reset_pulse_0/RESET_3:Y (r)
+               +     4.671          net: reset_pulse_0_RESET_3
+  11.019                       timestamp_0/TIMESTAMP[8]:CLR (r)
+                                    
+  11.019                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          clock_div_1MHZ_10HZ_0/clk_out:Q
+               +     0.000          Clock source
+  N/C                          clock_div_1MHZ_10HZ_0/clk_out:Q (r)
+               +     2.940          net: clock_div_1MHZ_10HZ_0/clk_out_i
+  N/C                          clock_div_1MHZ_10HZ_0/clk_out_RNIT8C7:A (r)
+               +     0.666          cell: ADLIB:CLKINT
+  N/C                          clock_div_1MHZ_10HZ_0/clk_out_RNIT8C7:Y (r)
+               +     0.889          net: clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT
+  N/C                          timestamp_0/TIMESTAMP[8]:CLK (r)
+               -     0.265          Library recovery time: ADLIB:DFN1C0
+  N/C                          timestamp_0/TIMESTAMP[8]:CLR
+
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Path set Pin to Pin
+
+SET Input to Output
+
+No Path
+
+END SET Input to Output
+
+----------------------------------------------------
+
+Path set User Sets
+

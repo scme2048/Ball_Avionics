@@ -13,7 +13,6 @@
 module clock_div_1MHZ_100KHZ(CLK_1MHZ_IN,RESET,CLK_100KHZ_OUT);
 input CLK_1MHZ_IN,RESET;
 output CLK_100KHZ_OUT;
-wire CLK_10HZ_OUT;
 
 reg [16:0] counter;
 reg clk_out;

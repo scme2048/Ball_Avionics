@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version J-2015.03M-3
 #--  Project file C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\run_options.txt
-#--  Written on Tue Feb 23 01:05:13 2016
+#--  Written on Tue Feb 23 12:15:47 2016
 
 
 #project files

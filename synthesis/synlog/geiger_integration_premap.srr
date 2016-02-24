@@ -22,17 +22,15 @@ Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 @S |Clock Summary
 *****************
 
-Start                                            Requested     Requested     Clock        Clock              
-Clock                                            Frequency     Period        Type         Group              
--------------------------------------------------------------------------------------------------------------
-CLK_1MHZ|GLA_inferred_clock                      100.0 MHz     10.000        inferred     Inferred_clkgroup_2
-clock_div_1MHZ_10HZ|clk_out_inferred_clock       100.0 MHz     10.000        inferred     Inferred_clkgroup_0
-clock_div_1MHZ_100KHZ|clk_out_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_1
-=============================================================================================================
+Start                                          Requested     Requested     Clock        Clock              
+Clock                                          Frequency     Period        Type         Group              
+-----------------------------------------------------------------------------------------------------------
+CLK_1MHZ|GLA_inferred_clock                    100.0 MHz     10.000        inferred     Inferred_clkgroup_1
+clock_div_1MHZ_10HZ|clk_out_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_0
+===========================================================================================================
 
 @W: MT530 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\geig_data_handling.v":23:0:23:5|Found inferred clock clock_div_1MHZ_10HZ|clk_out_inferred_clock which controls 76 sequential elements including geig_data_handling_0.min_counter[9:0]. This clock has no specified timing constraint which may adversely impact design performance. 
-@W: MT530 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\geig_data_handling.v":44:0:44:5|Found inferred clock clock_div_1MHZ_100KHZ|clk_out_inferred_clock which controls 25 sequential elements including geig_data_handling_0.geig_counts[15:0]. This clock has no specified timing constraint which may adversely impact design performance. 
-@W: MT530 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\clock_div_1mhz_10hz.v":22:0:22:5|Found inferred clock CLK_1MHZ|GLA_inferred_clock which controls 144 sequential elements including clock_div_1MHZ_10HZ_0.counter[16:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\clock_div_1mhz_10hz.v":22:0:22:5|Found inferred clock CLK_1MHZ|GLA_inferred_clock which controls 143 sequential elements including clock_div_1MHZ_10HZ_0.counter[16:0]. This clock has no specified timing constraint which may adversely impact design performance. 
 
 Finished Pre Mapping Phase.
 @N: BN225 |Writing default property annotation file C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\geiger_integration.sap.
@@ -41,6 +39,6 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 47MB peak: 111MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Feb 23 01:05:16 2016
+# Tue Feb 23 12:15:50 2016
 
 ###########################################################]

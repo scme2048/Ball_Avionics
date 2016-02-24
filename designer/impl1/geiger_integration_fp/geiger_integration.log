@@ -1,0 +1,34 @@
+FlashPro
+Version: 11.6.0.34
+Release: v11.6
+
+Software Version: 11.6.0.34
+PDB file
+'C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\designer\impl1\geige\
+r_integration.pdb' has been loaded successfully.
+DESIGN : geiger_integration;  CHECKSUM : 3BD3;  PDB_VERSION : 1.9
+Driver : 3.0.0 build 1
+programmer '98250' : FlashPro3
+Opened
+'C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\designer\impl1\geige\
+r_integration_fp\geiger_integration.pro'
+Checking for software updates...
+programmer '98250' : Scan Chain...
+Warning: programmer '98250' : Vpump has been selected on programmer AND an externally provided
+         Vpump has also been detected. Using externally provided Vpump voltage source.
+programmer '98250' : Scan Chain PASSED.
+programmer '98250' : Executing action PROGRAM
+programmer '98250' : EXPORT FSN[48] = 014eaf603098
+programmer '98250' : Data Authentication
+programmer '98250' : Erase ...
+programmer '98250' : Completed erase
+programmer '98250' : EXPORT CHECKSUM: [16] = 3bd3
+programmer '98250' : Programming FPGA Array
+programmer '98250' : Verifying FPGA Array
+programmer '98250' :             Verifying FPGA Array -- PASS
+programmer '98250' : Finished: Tue Feb 23 12:20:13 2016 (Elapsed time 00:01:57)
+programmer '98250' : Executing action PROGRAM PASSED.
+
+                        o - o - o - o - o - o
+
+Project closed.

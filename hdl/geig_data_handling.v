@@ -13,7 +13,7 @@
 module geig_data_handling( CLK_100KHZ,CLK_10HZ,RESET, TIMESTAMP, GSTREAM, G_DATA_STACK );
 input CLK_100KHZ,CLK_10HZ,GSTREAM,RESET;
 input [23:0] TIMESTAMP;
-output G_DATA_STACK;
+output [47:0] G_DATA_STACK;
 reg [47:0] G_DATA_STACK;
 reg [7:0] ID_GEIG;
 
@@ -40,7 +40,7 @@ end
 // NOTE: Check sampling frequency as geiger characterization continues.
 // - Initial geiger testing shows spikes of about 180 microsecs. Sampling at 100 kHz captures this. 
 // - Lower sampling frequency desirable for efficiency and ease of simulation/data accumulation.
-reg [9:0] shift_reg;
+reg [1:0] shift_reg;
 always @(posedge CLK_100KHZ or negedge RESET)
 begin
 // PUT IN RESETS HERE!
@@ -51,9 +51,9 @@ shift_reg[0]=GSTREAM;
 
 // Catches up edge with a little buffer (6 ms) to account for debouncing.
 if (RESET==1'b0) begin
-    shift_reg=10'b0000000000;
+    shift_reg=2'b00;
     geig_counts = 16'b0000000000000000;
-end else if (shift_reg == 10'b0000111111) begin
+end else if (shift_reg == 2'b01) begin
     geig_counts=geig_counts+1; // THIS IS WRONG! WILL NOT SYNTHESIZE
 end
 if (min_counter ==600) begin

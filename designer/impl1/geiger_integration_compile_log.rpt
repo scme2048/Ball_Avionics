@@ -2,7 +2,8 @@ Microsemi Libero Software
 Version: 11.6.0.34
 Release: v11.6
 
-Created a new design.
+Info: The design geiger_integration.adb was last modified by software version 11.6.0.34.
+Opened an existing Libero design geiger_integration.adb.
 'BA_NAME' set to 'geiger_integration_ba'
 'IDE_DESIGNERVIEW_NAME' set to 'Impl1'
 'IDE_DESIGNERVIEW_COUNT' set to '1'
@@ -11,19 +12,6 @@ Created a new design.
 'IDE_DESIGNERVIEW_ROOTDIR' set to
 'C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\designer'
 'IDE_DESIGNERVIEW_LASTREV' set to '1'
-'DESDIR' set to
-'C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/designer/impl1'
-'BA_DIR' set to
-'C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/designer/impl1'
-'BA_NETLIST_ALSO' set to '1'
-'EDNINFLAVOR' set to 'GENERIC'
-'NETLIST_NAMING_STYLE' set to 'VERILOG'
-'EXPORT_STATUS_REPORT' set to '1'
-'EXPORT_STATUS_REPORT_FILENAME' set to 'geiger_integration.rpt'
-'AUDIT_NETLIST_FILE' set to '1'
-'AUDIT_DCF_FILE' set to '1'
-'AUDIT_PIN_FILE' set to '1'
-'AUDIT_ADL_FILE' set to '1'
 
  Netlist Reading Time = 0.0 seconds
 Imported the file:
@@ -31,8 +19,7 @@ Imported the file:
 C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\geiger_inte\
 gration.edn
 
-The Import command succeeded ( 00:00:04 )
-Design saved to file geiger_integration.adb.
+The Import command succeeded ( 00:00:03 )
 =====================================================================
 Parameters used to run compile:
 ===============================
@@ -49,7 +36,7 @@ Speed grade : STD
 Temp        : 0:25:70
 Voltage     : 1.58:1.50:1.42
 
-Keep Existing Physical Constraints : No
+Keep Existing Physical Constraints : Yes
 Keep Existing Timing Constraints   : Yes
 
 pdc_abort_on_error                 : Yes
@@ -84,22 +71,29 @@ Optimized macros:
   - Buffers:                0
   - Inverters:              0
   - Tieoff:                 0
-  - Logic combining:        16
+  - Logic combining:        14
 
-    Total macros optimized  16
+    Total macros optimized  14
 
 Warning: CMP503: Remapped 67 enable flip-flop(s) to a 2-tile implementation because the CLR/PRE
          pin on the enable flip-flop is not being driven by a global net.
 
 There were 0 error(s) and 6 warning(s) in this design.
 =====================================================================
+
+Reading previous post-compile physical placement constraints.
+
+
+There were 0 error(s) and 0 warning(s).
+
+=====================================================================
 Compile report:
 ===============
 
-    CORE                       Used:    663  Total:  24576   (2.70%)
+    CORE                       Used:    575  Total:  24576   (2.34%)
     IO (W/ clocks)             Used:     11  Total:    300   (3.67%)
     Differential IO            Used:      0  Total:     74   (0.00%)
-    GLOBAL (Chip+Quadrant)     Used:      3  Total:     18   (16.67%)
+    GLOBAL (Chip+Quadrant)     Used:      2  Total:     18   (11.11%)
     PLL                        Used:      1  Total:      1   (100.00%)
     RAM/FIFO                   Used:      0  Total:     32   (0.00%)
     Low Static ICC             Used:      0  Total:      1   (0.00%)
@@ -110,7 +104,7 @@ Global Information:
 
     Type            | Used   | Total
     ----------------|--------|--------------
-    Chip global     | 3      | 6  (50.00%)*
+    Chip global     | 2      | 6  (33.33%)*
     Quadrant global | 0      | 12 (0.00%)
 
     (*) Chip globals may be assigned to Quadrant globals using the Multi-View Navigator (MVN)
@@ -121,8 +115,8 @@ Core Information:
 
     Type    | Instances    | Core tiles
     --------|--------------|-----------
-    COMB    | 421          | 421
-    SEQ     | 242          | 242
+    COMB    | 359          | 359
+    SEQ     | 216          | 216
 
 I/O Function:
 
@@ -144,9 +138,9 @@ I/O Technology:
 
 I/O Placement:
 
-    Locked  :   0
+    Locked  :  11 ( 100.00% )
     Placed  :   0
-    UnPlaced:  11 ( 100.00% )
+    UnPlaced:   0
 
 Net information report:
 =======================
@@ -160,36 +154,33 @@ The following nets drive enable flip-flops that have been remapped to a 2-tile i
                           Driver: reset_pulse_0/RESET_2
     21      SET/RESET_NET Net   : reset_pulse_0_RESET_0
                           Driver: reset_pulse_0/RESET_0
-    2       SET/RESET_NET Net   : reset_pulse_0_RESET_3
+    2       INT_NET       Net   : reset_pulse_0_RESET_3
                           Driver: reset_pulse_0/RESET_3
 
 The following nets have been assigned to a chip global resource:
     Fanout  Type          Name
     --------------------------
-    142     CLK_NET       Net   : GLA
+    141     CLK_NET       Net   : GLA
                           Driver: CLK_1MHZ_0/Core
                           Source: ESSENTIAL
     75      CLK_NET       Net   : clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT
                           Driver: clock_div_1MHZ_10HZ_0/clk_out_RNIT8C7
-                          Source: NETLIST
-    25      CLK_NET       Net   : clock_div_1MHZ_100KHZ_0_CLK_100KHZ_OUT
-                          Driver: clock_div_1MHZ_100KHZ_0/clk_out_RNIOQD8
                           Source: NETLIST
 
 High fanout nets in the post compile netlist:
     Fanout  Type          Name
     --------------------------
     24      INT_NET       Net   : test_harness_geiger_stack_0/un1_counter18_0
-                          Driver: test_harness_geiger_stack_0/set_0_RNI7I0G9
-    24      INT_NET       Net   : test_harness_geiger_stack_0/set_0_RNI7I0G9_0
-                          Driver: test_harness_geiger_stack_0/set_0_RNI7I0G9_0
+                          Driver: test_harness_geiger_stack_0/set_0_RNI4LFF9
+    24      INT_NET       Net   : test_harness_geiger_stack_0/set_0_RNI4LFF9_0
+                          Driver: test_harness_geiger_stack_0/set_0_RNI4LFF9_0
     22      SET/RESET_NET Net   : reset_pulse_0_RESET_0
                           Driver: reset_pulse_0/RESET_0
     22      SET/RESET_NET Net   : reset_pulse_0_RESET_1
                           Driver: reset_pulse_0/RESET_1
     22      SET/RESET_NET Net   : reset_pulse_0_RESET_2
                           Driver: reset_pulse_0/RESET_2
-    22      SET/RESET_NET Net   : reset_pulse_0_RESET_3
+    22      INT_NET       Net   : reset_pulse_0_RESET_3
                           Driver: reset_pulse_0/RESET_3
     22      INT_NET       Net   : reset_pulse_0_RESET_4
                           Driver: reset_pulse_0/RESET_4
@@ -197,23 +188,23 @@ High fanout nets in the post compile netlist:
                           Driver: reset_pulse_0/RESET_5
     22      SET/RESET_NET Net   : reset_pulse_0_RESET_6
                           Driver: reset_pulse_0/RESET_6
-    22      SET/RESET_NET Net   : reset_pulse_0_RESET_7
-                          Driver: reset_pulse_0/RESET_7
+    21      INT_NET       Net   : geig_data_handling_0/G_DATA_STACK6_1
+                          Driver: geig_data_handling_0/min_counter_RNIMHVQ2_0[1]
 
 Nets that are candidates for clock assignment and the resulting fanout:
     Fanout  Type          Name
     --------------------------
     24      INT_NET       Net   : test_harness_geiger_stack_0/un1_counter18_0
-                          Driver: test_harness_geiger_stack_0/set_0_RNI7I0G9
-    24      INT_NET       Net   : test_harness_geiger_stack_0/set_0_RNI7I0G9_0
-                          Driver: test_harness_geiger_stack_0/set_0_RNI7I0G9_0
+                          Driver: test_harness_geiger_stack_0/set_0_RNI4LFF9
+    24      INT_NET       Net   : test_harness_geiger_stack_0/set_0_RNI4LFF9_0
+                          Driver: test_harness_geiger_stack_0/set_0_RNI4LFF9_0
     22      SET/RESET_NET Net   : reset_pulse_0_RESET_0
                           Driver: reset_pulse_0/RESET_0
     22      SET/RESET_NET Net   : reset_pulse_0_RESET_1
                           Driver: reset_pulse_0/RESET_1
     22      SET/RESET_NET Net   : reset_pulse_0_RESET_2
                           Driver: reset_pulse_0/RESET_2
-    22      SET/RESET_NET Net   : reset_pulse_0_RESET_3
+    22      INT_NET       Net   : reset_pulse_0_RESET_3
                           Driver: reset_pulse_0/RESET_3
     22      INT_NET       Net   : reset_pulse_0_RESET_4
                           Driver: reset_pulse_0/RESET_4
@@ -221,8 +212,8 @@ Nets that are candidates for clock assignment and the resulting fanout:
                           Driver: reset_pulse_0/RESET_5
     22      SET/RESET_NET Net   : reset_pulse_0_RESET_6
                           Driver: reset_pulse_0/RESET_6
-    22      SET/RESET_NET Net   : reset_pulse_0_RESET_7
-                          Driver: reset_pulse_0/RESET_7
+    21      INT_NET       Net   : geig_data_handling_0/G_DATA_STACK6_1
+                          Driver: geig_data_handling_0/min_counter_RNIMHVQ2_0[1]
 ====================
 Flash*Freeze report:
 ====================
@@ -231,7 +222,7 @@ The design does not use the Flash*Freeze feature.
 
 ====================
 
-The Compile command succeeded ( 00:00:07 )
+The Compile command succeeded ( 00:00:04 )
 Wrote status report to file: geiger_integration_compile_report.txt
 
 The Report command succeeded ( 00:00:00 )
@@ -245,6 +236,6 @@ Design saved to file
 C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\designer\impl1\geiger\
 _integration.adb.
 
-The Execute Script command succeeded ( 00:00:32 )
+The Execute Script command succeeded ( 00:00:10 )
 Design closed.
 
