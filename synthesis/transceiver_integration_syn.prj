@@ -1,6 +1,6 @@
 #--  Synopsys, Inc.
 #--  Version J-2015.03M-3
-#--  Project file C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\scratchproject.prs
+#--  Project file C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\transceiver_integration_syn.prj
 
 #project files
 add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/smartgen/CLK_26MHZ/CLK_26MHZ.v"
@@ -17,7 +17,7 @@ add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/B
 
 
 #implementation: "synthesis"
-impl -add C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis -type fpga
+impl -add synthesis -type fpga
 
 #
 #implementation attributes
@@ -71,5 +71,5 @@ set_option -auto_infer_blackbox 0
 set_option -write_apr_constraint 1
 
 #set result format/file last
-project -result_file "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/synthesis/transceiver_integration.edn"
+project -result_file "./transceiver_integration.edn"
 impl -active "synthesis"

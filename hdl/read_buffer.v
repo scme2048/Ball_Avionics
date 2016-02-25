@@ -43,7 +43,7 @@ assign READ_CMD = read_cmd;
 always @(posedge NEXT_BYTE or negedge RESET) begin
     if (RESET==1'b0) begin
         position= 2'b00;
-        byte_out=8'bZ;
+        byte_out<=8'bZ;
     end else if (init_stage==0) begin
         if (position==2'b00) begin
             byte_out<=buffer_a[7:0];

@@ -98,15 +98,15 @@ module spi_mode_config (
 
 // Start up config
     always @(*) begin
-        byte_out_a <= byte_out_b;
-        mem_enable_a <=mem_enable_b;
-        state_a<=state_b;
-        next_a <= next_b;
-        ss_a <= ss_b;
-        byte_tracker_a <= byte_tracker_b;
-        begin_pass_a <= begin_pass_b;
-        config_cntr_a <= config_cntr_b;
-        start_a <= start_b;
+        byte_out_a = byte_out_b;
+        mem_enable_a =mem_enable_b;
+        state_a=state_b;
+        next_a = next_b;
+        ss_a = ss_b;
+        byte_tracker_a = byte_tracker_b;
+        begin_pass_a = begin_pass_b;
+        config_cntr_a = config_cntr_b;
+        start_a = start_b;
         //chip_rdy = SLAVE_OUTPUT[7];
         //chip_state = SLAVE_OUTPUT[6:4];
         //if (busy) begin
@@ -154,7 +154,7 @@ module spi_mode_config (
                 ss_a = 1'b0;
                 if((~chip_rdy)&&(~byte_tracker_b)) begin
                     start_a = 1'b1;
-                    byte_out_a <= SRES;
+                    byte_out_a = SRES;
                     byte_tracker_a = 1'b1;
                 end
                 else if((~chip_rdy)&&(byte_tracker_b)) begin

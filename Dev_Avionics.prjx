@@ -30,7 +30,7 @@ KEY ProjectDescription ""
 KEY Pa4PeripheralNewSeq "GOOD"
 KEY SimulationType "VERILOG"
 KEY Vendor "Actel"
-KEY ActiveRoot "geiger_integration::work"
+KEY ActiveRoot "transceiver_integration::work"
 LIST REVISIONS
 VALUE="Impl1",NUM=1
 CURREV=1
@@ -61,13 +61,6 @@ STATE="utd"
 TIME="1456215562"
 SIZE="3243"
 ENDFILE
-VALUE "<project>\component\work\spi_test\spi_test.v,hdl"
-STATE="utd"
-TIME="1456215562"
-SIZE="6084"
-PARENT="<project>\component\work\spi_test\spi_test.cxf"
-IS_READONLY="TRUE"
-ENDFILE
 VALUE "<project>\component\work\test_memory\test_memory.cxf,actgen_cxf"
 STATE="utd"
 TIME="1454998827"
@@ -75,8 +68,15 @@ SIZE="627"
 ENDFILE
 VALUE "<project>\component\work\transceiver_integration\transceiver_integration.cxf,actgen_cxf"
 STATE="utd"
-TIME="1456297541"
-SIZE="3015"
+TIME="1456360598"
+SIZE="3228"
+ENDFILE
+VALUE "<project>\component\work\transceiver_integration\transceiver_integration.v,hdl"
+STATE="utd"
+TIME="1456360597"
+SIZE="6095"
+PARENT="<project>\component\work\transceiver_integration\transceiver_integration.cxf"
+IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\designer\impl1\clock_div_26MHZ_1MHZ.adb,adb"
 STATE="ood"
@@ -223,6 +223,11 @@ STATE="utd"
 TIME="1454560417"
 SIZE="465"
 ENDFILE
+VALUE "<project>\designer\impl1\transceiver_integration.ide_des,ide_des"
+STATE="utd"
+TIME="1456358915"
+SIZE="248"
+ENDFILE
 VALUE "<project>\designer\impl1\write_address_traversal.adb,adb"
 STATE="ood"
 TIME="1454469669"
@@ -290,8 +295,8 @@ SIZE="771"
 ENDFILE
 VALUE "<project>\hdl\orbit_control.v,hdl"
 STATE="utd"
-TIME="1455339177"
-SIZE="1634"
+TIME="1456360026"
+SIZE="1652"
 ENDFILE
 VALUE "<project>\hdl\read_address_traversal.v,hdl"
 STATE="utd"
@@ -300,8 +305,8 @@ SIZE="1827"
 ENDFILE
 VALUE "<project>\hdl\read_buffer.v,hdl"
 STATE="utd"
-TIME="1455913388"
-SIZE="3188"
+TIME="1456360062"
+SIZE="3189"
 ENDFILE
 VALUE "<project>\hdl\reset_pulse.v,hdl"
 STATE="utd"
@@ -320,8 +325,8 @@ SIZE="3194"
 ENDFILE
 VALUE "<project>\hdl\spi_mode_config.v,hdl"
 STATE="utd"
-TIME="1456295850"
-SIZE="29054"
+TIME="1456360269"
+SIZE="29044"
 ENDFILE
 VALUE "<project>\hdl\test_constants_spi.v,hdl"
 STATE="utd"
@@ -689,6 +694,11 @@ STATE="utd"
 TIME="1456197102"
 SIZE="159"
 ENDFILE
+VALUE "<project>\synthesis\transceiver_integration_syn.prj,prj"
+STATE="utd"
+TIME="1456358984"
+SIZE="2753"
+ENDFILE
 VALUE "<project>\synthesis\write_address_traversal.edn,syn_edn"
 STATE="ood"
 TIME="1454469637"
@@ -752,13 +762,28 @@ ENDLIST
 ENDLIST
 ENDLIST
 LIST "spi_test::work"
-FILE "<project>\component\work\spi_test\spi_test.v,hdl"
+FILE "<project>\component\work\spi_test\spi_test.cxf,actgen_cxf"
 LIST AssociatedStimulus
 VALUE "<project>\stimulus\tb_spi_test.v,tb_hdl"
 ENDLIST
 LIST ProjectState5.1
 LIST Impl1
 ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST "transceiver_integration::work"
+FILE "<project>\component\work\transceiver_integration\transceiver_integration.v,hdl"
+LIST ProjectState5.1
+LIST Impl1
+ideSYNTHESIS(<project>\synthesis\transceiver_integration.edn,syn_edn)=StateFailure
+ideSYNTHESIS(<project>\synthesis\transceiver_integration.vm,syn_vm)=StateFailure
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -842,8 +867,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin\synplify_pro.exe"
-PARAM=""
-BATCH=0
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -909,6 +934,18 @@ Used_File_List
 ENDUsed_File_List
 ENDLIST
 ENDLIST
+LIST "transceiver_integration::work"
+LIST Impl1
+ideSYNTHESIS(<project>\synthesis\transceiver_integration.edn,syn_edn)=StateFailure
+ideSYNTHESIS(<project>\synthesis\transceiver_integration.vm,syn_vm)=StateFailure
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
 ENDLIST
 LIST ExcludePackageForSimulation
 ENDLIST
@@ -922,10 +959,14 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+Reports;Reports;0
+ReportsCurrentItem;Synthesize:transceiver_integration.srr
 SmartDesign;transceiver_integration;0
 HDL;hdl\orbit_control.v;0
 HDL;hdl\test_constants_spi.v;0
-ACTIVEVIEW;transceiver_integration
+HDL;hdl\read_buffer.v;0
+HDL;hdl\spi_mode_config.v;0
+ACTIVEVIEW;Reports
 ENDLIST
 LIST ModuleSubBlockList
 LIST "CLK_1M::work","smartgen\CLK_1M\CLK_1M.v","TRUE","FALSE"
@@ -999,15 +1040,15 @@ LIST "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
 ENDLIST
 LIST "spi_mode_config::work","hdl\spi_mode_config.v","FALSE","FALSE"
 ENDLIST
-LIST "spi_test::work","component\work\spi_test\spi_test.v","TRUE","FALSE"
+LIST "spi_test::work","component\work\spi_test\spi_test.cxf","TRUE","FALSE"
 SUBBLOCK "CLK_26MHZ::work","smartgen\CLK_26MHZ\CLK_26MHZ.v","TRUE","FALSE"
 SUBBLOCK "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
 SUBBLOCK "clock_div_1MHZ_1KHZ::work","hdl\clock_div_1MHZ_1KHZ.v","FALSE","FALSE"
 SUBBLOCK "clock_div_26MHZ_1MHZ::work","hdl\clock_div_26MHZ_1MHZ.v","FALSE","FALSE"
-SUBBLOCK "orbit_control::work","hdl\orbit_control.v","FALSE","FALSE"
 SUBBLOCK "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
-SUBBLOCK "spi_mode_config::work","hdl\spi_mode_config.v","FALSE","FALSE"
 SUBBLOCK "test_constants_spi::work","hdl\test_constants_spi.v","FALSE","FALSE"
+SUBBLOCK "orbit_control::work","hdl\orbit_control.v","FALSE","FALSE"
+SUBBLOCK "spi_mode_config::work","hdl\spi_mode_config.v","FALSE","FALSE"
 ENDLIST
 LIST "test_constants_spi::work","hdl\test_constants_spi.v","FALSE","FALSE"
 ENDLIST
@@ -1019,10 +1060,9 @@ LIST "test_memory::work","component\work\test_memory\test_memory.cxf","TRUE","FA
 ENDLIST
 LIST "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
 ENDLIST
-LIST "transceiver_integration::work","component\work\transceiver_integration\transceiver_integration.cxf","TRUE","FALSE"
+LIST "transceiver_integration::work","component\work\transceiver_integration\transceiver_integration.v","TRUE","FALSE"
 SUBBLOCK "CLK_26MHZ::work","smartgen\CLK_26MHZ\CLK_26MHZ.v","TRUE","FALSE"
 SUBBLOCK "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
-SUBBLOCK "clock_div_1MHZ_1KHZ::work","hdl\clock_div_1MHZ_1KHZ.v","FALSE","FALSE"
 SUBBLOCK "clock_div_26MHZ_1MHZ::work","hdl\clock_div_26MHZ_1MHZ.v","FALSE","FALSE"
 SUBBLOCK "orbit_control::work","hdl\orbit_control.v","FALSE","FALSE"
 SUBBLOCK "read_buffer::work","hdl\read_buffer.v","FALSE","FALSE"
@@ -1030,7 +1070,6 @@ SUBBLOCK "reset_pulse::work","hdl\reset_pulse.v","FALSE","FALSE"
 SUBBLOCK "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
 SUBBLOCK "spi_mode_config::work","hdl\spi_mode_config.v","FALSE","FALSE"
 SUBBLOCK "test_constants_spi::work","hdl\test_constants_spi.v","FALSE","FALSE"
-SUBBLOCK "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
 ENDLIST
 LIST "write_address_traversal::work","hdl\write_address_traversal.v","FALSE","FALSE"
 ENDLIST
@@ -1062,7 +1101,7 @@ LIST "tb_sdram_interface::work","stimulus\tb_sdram_interface.v","FALSE","TRUE"
 SUBBLOCK "sdram_interface::work","hdl\sdram_interface.v","FALSE","FALSE"
 ENDLIST
 LIST "tb_spi_test::work","stimulus\tb_spi_test.v","FALSE","TRUE"
-SUBBLOCK "spi_test::work","component\work\spi_test\spi_test.v","TRUE","FALSE"
+SUBBLOCK "spi_test::work","component\work\spi_test\spi_test.cxf","TRUE","FALSE"
 ENDLIST
 LIST "tb_test_harness_geig::work","stimulus\tb_test_harness_geig.v","FALSE","TRUE"
 SUBBLOCK "test_harness_geiger_stack::work","hdl\test_harness_geiger_stack.v","FALSE","FALSE"

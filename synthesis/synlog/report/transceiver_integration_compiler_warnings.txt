@@ -1,0 +1,2 @@
+@W: CG136 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\orbit_control.v":33:4:33:5|Edge and condition mismatch
+
