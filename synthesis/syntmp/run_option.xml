@@ -3,14 +3,14 @@
   Synopsys, Inc.
   Version J-2015.03M-3
   Project file C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\syntmp\run_option.xml
-  Written on Wed Feb 24 18:06:21 2016
+  Written on Wed Feb 24 19:46:28 2016
 
 
 --> 
 <project_attribute_list name="Project Settings"> 
-     <option name="project_name" display_name="Project Name">transceiver_integration_syn</option>
+     <option name="project_name" display_name="Project Name">geiger_integration_syn</option>
      <option name="impl_name" display_name="Implementation Name">synthesis</option>
-     <option name="top_module" display_name="Top Module">transceiver_integration</option>
+     <option name="top_module" display_name="Top Module">geiger_integration</option>
      <option name="retiming" display_name="Retiming">0</option>
      <option name="resource_sharing" display_name="Resource Sharing">1</option>
      <option name="maxfan" display_name="Fanout Guide">24</option>

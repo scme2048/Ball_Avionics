@@ -20,7 +20,7 @@ Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated document
 @I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\timestamp.v"
 @I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\component\work\geiger_integration\geiger_integration.v"
 Verilog syntax check successful!
-File C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\component\work\geiger_integration\geiger_integration.v changed - recompiling
+Options changed - recompiling
 Selecting top level module geiger_integration
 @N: CG364 :"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v":2810:7:2810:9|Synthesizing module PLL
 
@@ -36,12 +36,9 @@ Selecting top level module geiger_integration
 
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\clock_div_1MHZ_100KHZ.v":13:7:13:27|Synthesizing module clock_div_1MHZ_100KHZ
 
-@W: CG360 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\clock_div_1MHZ_100KHZ.v":16:5:16:16|No assignment to wire CLK_10HZ_OUT
-
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":13:7:13:24|Synthesizing module geig_data_handling
 
-@W: CS142 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":13:74:13:85|Range of port G_DATA_STACK in port declaration and body are different.
-@W: CL265 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":44:0:44:5|Pruning bit 1 of shift_reg[1:0] -- not in use ...
+@W: CL265 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":46:0:46:5|Pruning bit 1 of shift_reg[1:0] -- not in use ...
 
 @W: CL113 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":23:0:23:5|Feedback mux created for signal ID_GEIG[7:0].
 @W: CL250 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":23:0:23:5|All reachable assignments to ID_GEIG[7] assign 0, register removed by optimization
@@ -67,15 +64,13 @@ Selecting top level module geiger_integration
 @W: CS142 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\timestamp.v":13:33:13:41|Range of port TIMESTAMP in port declaration and body are different.
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\component\work\geiger_integration\geiger_integration.v":9:7:9:24|Synthesizing module geiger_integration
 
-@W: CL168 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\component\work\geiger_integration\geiger_integration.v":120:22:120:44|Pruning instance clock_div_1MHZ_100KHZ_0 -- not in use ...
-
 @W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":23:0:23:5|Pruning register bits 2 to 1 of G_DATA_STACK[2:0] 
 
 
 At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 72MB peak: 78MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Feb 23 12:15:48 2016
+# Wed Feb 24 19:46:29 2016
 
 ###########################################################]
 Synopsys Netlist Linker, version comp201503p1, Build 094R, built May 14 2015
@@ -84,7 +79,7 @@ Synopsys Netlist Linker, version comp201503p1, Build 094R, built May 14 2015
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Feb 23 12:15:48 2016
+# Wed Feb 24 19:46:29 2016
 
 ###########################################################]
 @END
@@ -92,6 +87,6 @@ Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Feb 23 12:15:48 2016
+# Wed Feb 24 19:46:29 2016
 
 ###########################################################]

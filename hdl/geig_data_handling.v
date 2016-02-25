@@ -26,9 +26,11 @@ begin
         ID_GEIG = 8'h47;
         min_counter = 10'b0000000000;
         G_DATA_STACK=48'b0;
-    end else if (min_counter==600) begin
+    end else if (min_counter==599) begin
         //Output G_Data_Stack
         G_DATA_STACK={geig_counts,TIMESTAMP,ID_GEIG};
+        min_counter=min_counter+1;
+    end else if (min_counter==600) begin
         min_counter=1;
     end else begin
         min_counter=min_counter+1;

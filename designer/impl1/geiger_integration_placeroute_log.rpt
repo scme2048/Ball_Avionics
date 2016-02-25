@@ -33,16 +33,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Tue Feb 23 12:16:10 2016
+Timing-driven Placer Started: Wed Feb 24 19:56:26 2016
 
-Placer Finished: Tue Feb 23 12:16:16 2016
-Total Placer CPU Time:     00:00:06
+Placer Finished: Wed Feb 24 19:56:33 2016
+Total Placer CPU Time:     00:00:07
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: geiger_integration              Started: Tue Feb 23 12:16:20 2016
+Design: geiger_integration              Started: Wed Feb 24 19:56:39 2016
 
  
 Iterative improvement...
@@ -50,9 +50,9 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: geiger_integration              
-Finished: Tue Feb 23 12:16:48 2016
-Total CPU Time:     00:00:28            Total Elapsed Time: 00:00:28
-Total Memory Usage: 369.4 Mbytes
+Finished: Wed Feb 24 19:57:02 2016
+Total CPU Time:     00:00:22            Total Elapsed Time: 00:00:23
+Total Memory Usage: 370.3 Mbytes
                         o - o - o - o - o - o
 
 Loading the Timing data for the design.
@@ -81,6 +81,6 @@ Design saved to file
 C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\designer\impl1\geiger\
 _integration.adb.
 
-The Execute Script command succeeded ( 00:00:49 )
+The Execute Script command succeeded ( 00:00:54 )
 Design closed.
 

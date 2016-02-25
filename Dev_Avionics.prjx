@@ -30,7 +30,7 @@ KEY ProjectDescription ""
 KEY Pa4PeripheralNewSeq "GOOD"
 KEY SimulationType "VERILOG"
 KEY Vendor "Actel"
-KEY ActiveRoot "transceiver_integration::work"
+KEY ActiveRoot "geiger_integration::work"
 LIST REVISIONS
 VALUE="Impl1",NUM=1
 CURREV=1
@@ -53,8 +53,15 @@ SIZE="2640"
 ENDFILE
 VALUE "<project>\component\work\geiger_integration\geiger_integration.cxf,actgen_cxf"
 STATE="utd"
-TIME="1456267305"
-SIZE="3495"
+TIME="1456365250"
+SIZE="3802"
+ENDFILE
+VALUE "<project>\component\work\geiger_integration\geiger_integration.v,hdl"
+STATE="utd"
+TIME="1456365249"
+SIZE="5751"
+PARENT="<project>\component\work\geiger_integration\geiger_integration.cxf"
+IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\spi_test\spi_test.cxf,actgen_cxf"
 STATE="utd"
@@ -114,7 +121,7 @@ TIME="1454610510"
 SIZE="2639"
 ENDFILE
 VALUE "<project>\designer\impl1\geiger_integration.adb,adb"
-STATE="ood"
+STATE="utd"
 TIME="1456262924"
 SIZE="493568"
 ENDFILE
@@ -124,9 +131,9 @@ TIME="1456262924"
 SIZE="1077"
 ENDFILE
 VALUE "<project>\designer\impl1\geiger_integration.pdb,pdb"
-STATE="ood"
-TIME="1456260509"
-SIZE="1506569"
+STATE="utd"
+TIME="1456369082"
+SIZE="1506333"
 ENDFILE
 VALUE "<project>\designer\impl1\geiger_integration_ba.sdf,ba_sdf"
 STATE="ood"
@@ -145,8 +152,8 @@ SIZE="927"
 ENDFILE
 VALUE "<project>\designer\impl1\geiger_integration_compile_log.rpt,log"
 STATE="utd"
-TIME="1456254965"
-SIZE="9996"
+TIME="1456368415"
+SIZE="10066"
 ENDFILE
 VALUE "<project>\designer\impl1\geiger_integration_fp\geiger_integration.pro,pro"
 STATE="utd"
@@ -160,17 +167,17 @@ SIZE="1506503"
 ENDFILE
 VALUE "<project>\designer\impl1\geiger_integration_placeroute_log.rpt,log"
 STATE="utd"
-TIME="1456255016"
+TIME="1456369030"
 SIZE="2619"
 ENDFILE
 VALUE "<project>\designer\impl1\geiger_integration_prgdata_log.rpt,log"
 STATE="utd"
-TIME="1456255059"
+TIME="1456369084"
 SIZE="886"
 ENDFILE
 VALUE "<project>\designer\impl1\geiger_integration_verifytiming_log.rpt,log"
 STATE="utd"
-TIME="1456255020"
+TIME="1456369036"
 SIZE="1307"
 ENDFILE
 VALUE "<project>\designer\impl1\spi_test.adb,adb"
@@ -228,6 +235,11 @@ STATE="utd"
 TIME="1456363199"
 SIZE="1094"
 ENDFILE
+VALUE "<project>\designer\impl1\transceiver_integration_compile_log.rpt,log"
+STATE="utd"
+TIME="1456362519"
+SIZE="9149"
+ENDFILE
 VALUE "<project>\designer\impl1\write_address_traversal.adb,adb"
 STATE="ood"
 TIME="1454469669"
@@ -265,8 +277,8 @@ SIZE="706"
 ENDFILE
 VALUE "<project>\hdl\geig_data_handling.v,hdl"
 STATE="utd"
-TIME="1456267368"
-SIZE="2279"
+TIME="1456365221"
+SIZE="2357"
 ENDFILE
 VALUE "<project>\hdl\mag_data_handling.v,hdl"
 STATE="utd"
@@ -370,8 +382,8 @@ SIZE="2012"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1456295553"
-SIZE="720"
+TIME="1456364555"
+SIZE="1315"
 ENDFILE
 VALUE "<project>\simulation\spi_master_tb3_presynth_simulation.log,log"
 STATE="utd"
@@ -445,13 +457,18 @@ SIZE="15335"
 ENDFILE
 VALUE "<project>\simulation\tb_tranceiver_integration_presynth_simulation.log,log"
 STATE="utd"
-TIME="1456364501"
-SIZE="2520"
+TIME="1456364720"
+SIZE="8035"
 ENDFILE
 VALUE "<project>\simulation\testbench_timestamp_presynth_simulation.log,log"
 STATE="utd"
 TIME="1452733615"
 SIZE="2059"
+ENDFILE
+VALUE "<project>\simulation\timestamp_testbench_presynth_simulation.log,log"
+STATE="utd"
+TIME="1456370183"
+SIZE="1963"
 ENDFILE
 VALUE "<project>\smartgen\CLK_1MHZ\CLK_1MHZ.cxf,actgen_cxf"
 STATE="utd"
@@ -650,7 +667,7 @@ TIME="1454609968"
 SIZE="1647"
 ENDFILE
 VALUE "<project>\synthesis\geiger_integration.edn,syn_edn"
-STATE="ood"
+STATE="utd"
 TIME="1456254952"
 SIZE="297376"
 ENDFILE
@@ -665,7 +682,7 @@ TIME="1456214829"
 SIZE="128904"
 ENDFILE
 VALUE "<project>\synthesis\geiger_integration_sdc.sdc,syn_sdc"
-STATE="ood"
+STATE="utd"
 TIME="1456254952"
 SIZE="310"
 ENDFILE
@@ -755,13 +772,16 @@ VALUE "<project>\designer\impl1\clock_div_26MHZ_1MHZ_report_pin_bynumber.txt,log
 ENDLIST
 ENDLIST
 LIST "geiger_integration::work"
-FILE "<project>\component\work\geiger_integration\geiger_integration.cxf,actgen_cxf"
+FILE "<project>\component\work\geiger_integration\geiger_integration.v,hdl"
 LIST AssociatedStimulus
 VALUE "<project>\stimulus\tb_geiger_integration.v,tb_hdl"
 ENDLIST
 LIST ProjectState5.1
 LIST Impl1
+LiberoState=Post_Layout
 ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\geiger_integration.edn,syn_edn)=StateSuccess
+ideDESIGNER(<project>\designer\impl1\geiger_integration.adb,adb)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -769,6 +789,10 @@ ENDLIST
 Used_File_List
 ENDUsed_File_List
 ENDLIST
+ENDLIST
+LIST PinReports
+VALUE "<project>\designer\impl1\geiger_integration_report_pin_byname.txt,log"
+VALUE "<project>\designer\impl1\geiger_integration_report_pin_bynumber.txt,log"
 ENDLIST
 ENDLIST
 LIST "spi_test::work"
@@ -831,7 +855,7 @@ Type=max
 RunTime=1000ns
 Resolution=1ps
 VsimOpt=
-EntityName=tb_tranceiver_integration
+EntityName=tb_geiger_integration
 TopInstanceName=<top>_0
 DoFileName=
 DoFileName2=wave.do
@@ -884,8 +908,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin\synplify_pro.exe"
-PARAM=""
-BATCH=0
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -893,7 +917,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_v11.6\Model\win32acoem\modelsim.exe"
-PARAM=" -l tb_tranceiver_integration_presynth_simulation.log "
+PARAM=" -l timestamp_testbench_presynth_simulation.log "
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -931,7 +955,10 @@ ENDLIST
 ENDLIST
 LIST "geiger_integration::work"
 LIST Impl1
+LiberoState=Post_Layout
 ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\geiger_integration.edn,syn_edn)=StateSuccess
+ideDESIGNER(<project>\designer\impl1\geiger_integration.adb,adb)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -977,9 +1004,6 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-SmartDesign;transceiver_integration;0
-HDL;stimulus\tb_tranceiver_integration.v;0
-ACTIVEVIEW;stimulus\tb_tranceiver_integration.v
 ENDLIST
 LIST ModuleSubBlockList
 LIST "CLK_1M::work","smartgen\CLK_1M\CLK_1M.v","TRUE","FALSE"
@@ -1011,16 +1035,16 @@ SUBBLOCK "CLK_6_5MHZ::work","smartgen\CLK_6_5MHZ\CLK_6_5MHZ.v","TRUE","FALSE"
 SUBBLOCK "clock_div_1MHZ_100KHZ::work","hdl\clock_div_1MHZ_100KHZ.v","FALSE","FALSE"
 SUBBLOCK "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
 SUBBLOCK "clock_div_1MHZ_1KHZ::work","hdl\clock_div_1MHZ_1KHZ.v","FALSE","FALSE"
-SUBBLOCK "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
 SUBBLOCK "reset_pulse::work","hdl\reset_pulse.v","FALSE","FALSE"
 SUBBLOCK "sdram_interface::work","hdl\sdram_interface.v","FALSE","FALSE"
 SUBBLOCK "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
 SUBBLOCK "test_harness_geiger_stack::work","hdl\test_harness_geiger_stack.v","FALSE","FALSE"
 SUBBLOCK "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
+SUBBLOCK "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
 ENDLIST
 LIST "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
 ENDLIST
-LIST "geiger_integration::work","component\work\geiger_integration\geiger_integration.cxf","TRUE","FALSE"
+LIST "geiger_integration::work","component\work\geiger_integration\geiger_integration.v","TRUE","FALSE"
 SUBBLOCK "CLK_1MHZ::work","smartgen\CLK_1MHZ\CLK_1MHZ.v","TRUE","FALSE"
 SUBBLOCK "clock_div_1MHZ_100KHZ::work","hdl\clock_div_1MHZ_100KHZ.v","FALSE","FALSE"
 SUBBLOCK "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
@@ -1102,7 +1126,7 @@ LIST "tb_geig_data_handling::work","stimulus\tb_geig_data_handling.v","FALSE","T
 SUBBLOCK "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
 ENDLIST
 LIST "tb_geiger_integration::work","stimulus\tb_geiger_integration.v","FALSE","TRUE"
-SUBBLOCK "geiger_integration::work","component\work\geiger_integration\geiger_integration.cxf","TRUE","FALSE"
+SUBBLOCK "geiger_integration::work","component\work\geiger_integration\geiger_integration.v","TRUE","FALSE"
 ENDLIST
 LIST "tb_geiger_stack::work","stimulus\tb_geiger_stack.v","FALSE","TRUE"
 SUBBLOCK "test_harness_geiger_stack::work","hdl\test_harness_geiger_stack.v","FALSE","FALSE"

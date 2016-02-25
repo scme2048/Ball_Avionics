@@ -1,2 +1,3 @@
 CKID0001:@|S:CLK_1MHZ_0.Core@|E:test_harness_geiger_stack_0.counter[2]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
 CKID0002:@|S:clock_div_1MHZ_10HZ_0.clk_out@|E:timestamp_0.TIMESTAMP[23]@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002 
+CKID0003:@|S:clock_div_1MHZ_100KHZ_0.clk_out@|E:geig_data_handling_0.geig_counts[15]@|F:@syn_sample_clock_path==CKID0003@|M:ClockId0003 

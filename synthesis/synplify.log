@@ -4,10 +4,10 @@ sourcing C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\message_overri
 Starting:    C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin64\mbin\synbatch.exe
 Install:     C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3
 Hostname:    SCOTT-PC
-Date:        Wed Feb 24 18:06:21 2016
+Date:        Wed Feb 24 19:46:28 2016
 Version:     J-2015.03M-3
 
-Arguments:   -product synplify_pro -licensetype synplifypro_actel -batch -log synplify.log transceiver_integration_syn.tcl
+Arguments:   -product synplify_pro -licensetype synplifypro_actel -batch -log synplify.log geiger_integration_syn.tcl
 ProductType: synplify_pro
 
 License checkout: synplifypro_actel
@@ -20,74 +20,76 @@ Running in Vendor Mode
 
 auto_infer_blackbox is not supported in current product.
 
-log file: "C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\transceiver_integration.srr"
+log file: "C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\geiger_integration.srr"
 
 Running: synthesis in foreground
 
 
 
-Running transceiver_integration_syn|synthesis
+Running geiger_integration_syn|synthesis
 
 
-Running: compile (Compile) on transceiver_integration_syn|synthesis
+Running: compile (Compile) on geiger_integration_syn|synthesis
 
 
-Running: compile_flow (Compile Process) on transceiver_integration_syn|synthesis
+Running: compile_flow (Compile Process) on geiger_integration_syn|synthesis
 
 
-Running: compiler (Compile Input) on transceiver_integration_syn|synthesis
+Running: compiler (Compile Input) on geiger_integration_syn|synthesis
 
-Copied C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synwork\transceiver_integration_comp.srs to C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\transceiver_integration.srs
+Copied C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synwork\geiger_integration_comp.srs to C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\geiger_integration.srs
 
 
 compiler Completed
 Return Code: 0
-Run Time:0h:00m:04s
+Run Time:0h:00m:02s
 
 
-Running: multi_srs_gen (Multi-srs Generator) on transceiver_integration_syn|synthesis
+Running: multi_srs_gen (Multi-srs Generator) on geiger_integration_syn|synthesis
 
-Copied C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synwork\transceiver_integration_comp.srs to C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synwork\transceiver_integration_s.srs
+Copied C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synwork\geiger_integration_comp.srs to C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synwork\geiger_integration_s.srs
 
 
 multi_srs_gen Completed
 Return Code: 0
 Run Time:0h:00m:00s
 
-Copied C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synwork\transceiver_integration_mult.srs to C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\transceiver_integration.srs
+Copied C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synwork\geiger_integration_mult.srs to C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\geiger_integration.srs
 
-Complete: Compile Process on transceiver_integration_syn|synthesis
+Complete: Compile Process on geiger_integration_syn|synthesis
 
 
-Running: premap (Pre-mapping) on transceiver_integration_syn|synthesis
+Running: premap (Pre-mapping) on geiger_integration_syn|synthesis
 
-Copied C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\transceiver_integration.sap to C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synwork\transceiver_integration_s.sap
+Copied C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\geiger_integration.sap to C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synwork\geiger_integration_s.sap
+
+Copied C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\geiger_integration.fse to C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synwork\geiger_integration_s.fse
 
 
 premap Completed with warnings
 Return Code: 1
-Run Time:0h:00m:02s
+Run Time:0h:00m:01s
 
-Complete: Compile on transceiver_integration_syn|synthesis
-
-
-Running: map (Map) on transceiver_integration_syn|synthesis
+Complete: Compile on geiger_integration_syn|synthesis
 
 
-Running: fpga_mapper (Map & Optimize) on transceiver_integration_syn|synthesis
+Running: map (Map) on geiger_integration_syn|synthesis
 
-Copied C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synwork\transceiver_integration_m.srm to C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\transceiver_integration.srm
+
+Running: fpga_mapper (Map & Optimize) on geiger_integration_syn|synthesis
+
+Copied C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synwork\geiger_integration_m.srm to C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\geiger_integration.srm
 
 
 fpga_mapper Completed with warnings
 Return Code: 1
-Run Time:0h:00m:01s
+Run Time:0h:00m:06s
 
-Complete: Map on transceiver_integration_syn|synthesis
+Complete: Map on geiger_integration_syn|synthesis
 
-Complete: Logic Synthesis on transceiver_integration_syn|synthesis
+Complete: Logic Synthesis on geiger_integration_syn|synthesis
 
-TCL script complete: "transceiver_integration_syn.tcl"
+TCL script complete: "geiger_integration_syn.tcl"
 
 exit status=0
 

@@ -6,7 +6,7 @@ Software Version: 11.6.0.34
 PDB file
 'C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\designer\impl1\geige\
 r_integration.pdb' has been loaded successfully.
-DESIGN : geiger_integration;  CHECKSUM : 3BD3;  PDB_VERSION : 1.9
+DESIGN : geiger_integration;  CHECKSUM : 7453;  PDB_VERSION : 1.9
 Driver : 3.0.0 build 1
 programmer '98250' : FlashPro3
 Opened
@@ -22,11 +22,11 @@ programmer '98250' : EXPORT FSN[48] = 014eaf603098
 programmer '98250' : Data Authentication
 programmer '98250' : Erase ...
 programmer '98250' : Completed erase
-programmer '98250' : EXPORT CHECKSUM: [16] = 3bd3
+programmer '98250' : EXPORT CHECKSUM: [16] = 7453
 programmer '98250' : Programming FPGA Array
 programmer '98250' : Verifying FPGA Array
 programmer '98250' :             Verifying FPGA Array -- PASS
-programmer '98250' : Finished: Tue Feb 23 12:20:13 2016 (Elapsed time 00:01:57)
+programmer '98250' : Finished: Wed Feb 24 20:00:47 2016 (Elapsed time 00:02:02)
 programmer '98250' : Executing action PROGRAM PASSED.
 
                         o - o - o - o - o - o
