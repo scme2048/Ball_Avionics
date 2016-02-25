@@ -1,0 +1,47 @@
+Target Part: M1A3P1000L_FBGA484_STD
+Report for cell transceiver_integration.verilog
+  Core Cell usage:
+              cell count     area count*area
+               AO1     1      1.0        1.0
+              AX1E     1      1.0        1.0
+              AXO6     1      1.0        1.0
+             AXOI5     1      1.0        1.0
+               GND     5      0.0        0.0
+               MX2    10      1.0       10.0
+              MX2B     1      1.0        1.0
+              NOR2     1      1.0        1.0
+             NOR2A    13      1.0       13.0
+             NOR2B     2      1.0        2.0
+              NOR3     4      1.0        4.0
+             NOR3A     1      1.0        1.0
+             NOR3B     2      1.0        2.0
+             NOR3C     1      1.0        1.0
+               OR2     1      1.0        1.0
+               OR3     1      1.0        1.0
+               PLL     1      0.0        0.0
+            PLLINT     1      0.0        0.0
+               VCC     5      0.0        0.0
+             XNOR2     1      1.0        1.0
+
+
+              DFN1    13      1.0       13.0
+            DFN1E1     3      1.0        3.0
+            DFN1P0     1      1.0        1.0
+                   -----          ----------
+             TOTAL    71                59.0
+
+
+  IO Cell usage:
+              cell count
+             INBUF     3
+            OUTBUF     3
+                   -----
+             TOTAL     6
+
+
+Core Cells         : 59 of 24576 (0%)
+IO Cells           : 6
+
+  RAM/ROM Usage Summary
+Block Rams : 0 of 32 (0%)
+

@@ -1,0 +1,335 @@
+Synopsys Microsemi Technology Mapper, Version mapact, Build 1522R, Built Jun  4 2015 12:04:36
+Copyright (C) 1994-2015, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+Product Version J-2015.03M-3
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 110MB)
+
+@N: BN115 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\component\work\transceiver_integration\transceiver_integration.v":108:14:108:28|Removing instance orbit_control_0 of view:work.orbit_control(verilog) because there are no references to its outputs 
+@N: BN115 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\component\work\transceiver_integration\transceiver_integration.v":90:20:90:40|Removing instance clock_div_1MHZ_10HZ_0 of view:work.clock_div_1MHZ_10HZ(verilog) because there are no references to its outputs 
+@N: BN115 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\component\work\transceiver_integration\transceiver_integration.v":99:21:99:42|Removing instance clock_div_26MHZ_1MHZ_0 of view:work.clock_div_26MHZ_1MHZ(verilog) because there are no references to its outputs 
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 110MB)
+
+@N:"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\spi_master.v":78:2:78:7|Found counter in view:work.spi_master(verilog) inst ctr_q[2:0]
+Encoding state machine state_q[2:0] (view:work.spi_master(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\spi_master.v":78:2:78:7|Removing sequential instance data_out_q[6] of view:PrimLib.dff(prim) in hierarchy view:work.spi_master(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\spi_master.v":78:2:78:7|Removing sequential instance data_out_q[5] of view:PrimLib.dff(prim) in hierarchy view:work.spi_master(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\spi_master.v":78:2:78:7|Removing sequential instance data_out_q[4] of view:PrimLib.dff(prim) in hierarchy view:work.spi_master(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\spi_master.v":78:2:78:7|Removing sequential instance data_out_q[3] of view:PrimLib.dff(prim) in hierarchy view:work.spi_master(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\spi_master.v":78:2:78:7|Removing sequential instance data_out_q[2] of view:PrimLib.dff(prim) in hierarchy view:work.spi_master(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\spi_master.v":78:2:78:7|Removing sequential instance data_out_q[1] of view:PrimLib.dff(prim) in hierarchy view:work.spi_master(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\spi_master.v":78:2:78:7|Removing sequential instance data_out_q[0] of view:PrimLib.dff(prim) in hierarchy view:work.spi_master(verilog) because there are no references to its outputs 
+Encoding state machine state_b[1:0] (view:work.spi_mode_config(verilog))
+original code -> new code
+   001 -> 0
+   010 -> 1
+@N: MO225 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\spi_mode_config.v":794:4:794:9|No possible illegal states for state machine state_b[1:0],safe FSM implementation is disabled
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 110MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 110MB)
+
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\spi_mode_config.v":794:4:794:9|Removing sequential instance spi_mode_config_0.state_b[0] of view:PrimLib.dffs(prim) in hierarchy view:work.transceiver_integration(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\spi_mode_config.v":794:4:794:9|Removing sequential instance spi_mode_config_0.byte_out_b[4] of view:PrimLib.dffr(prim) in hierarchy view:work.transceiver_integration(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\spi_master.v":78:2:78:7|Removing sequential instance spi_master_0.data_out_q[7] of view:PrimLib.dff(prim) in hierarchy view:work.transceiver_integration(verilog) because there are no references to its outputs 
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 110MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 110MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 110MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 110MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 110MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 110MB)
+
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 110MB)
+
+
+Added 0 Buffers
+Added 0 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 110MB)
+
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+1 gated/generated clock tree(s) driving 17 clock pin(s) of sequential element(s)
+0 instances converted, 17 sequential instances remain driven by gated/generated clocks
+
+===================================================================================================== Gated/Generated Clocks =====================================================================================================
+Clock Tree ID     Driving Element      Drive Element Type     Fanout     Sample Instance            Explanation                                                                                                                   
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       CLK_26MHZ_0.Core     PLL                    17         spi_mode_config_0.ss_b     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+==================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 110MB)
+
+Writing Analyst data base C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synwork\transceiver_integration_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 110MB)
+
+Writing EDIF Netlist and constraint files
+J-2015.03M-3
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 110MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 110MB)
+
+@W: MT420 |Found inferred clock CLK_26MHZ|GLA_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:CLK_26MHZ_0.GLA"
+
+
+
+@S |##### START OF TIMING REPORT #####[
+# Timing Report written on Wed Feb 24 18:06:28 2016
+#
+
+
+Top view:               transceiver_integration
+Library name:           pa3l
+Operating conditions:   COMWCSTD ( T = 70.0, V = 1.14, P = 1.26, tree_type = balanced_tree )
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Wire load model:        pa3l
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: 2.970
+
+                                                Requested     Estimated     Requested     Estimated               Clock        Clock              
+Starting Clock                                  Frequency     Frequency     Period        Period        Slack     Type         Group              
+--------------------------------------------------------------------------------------------------------------------------------------------------
+CLK_26MHZ|GLA_inferred_clock                    100.0 MHz     142.2 MHz     10.000        7.030         2.970     inferred     Inferred_clkgroup_2
+clock_div_1MHZ_10HZ|clk_out_inferred_clock      100.0 MHz     NA            10.000        NA            NA        inferred     Inferred_clkgroup_0
+clock_div_26MHZ_1MHZ|clk_out_inferred_clock     100.0 MHz     NA            10.000        NA            NA        inferred     Inferred_clkgroup_1
+==================================================================================================================================================
+@N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                      |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                      Ending                        |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------------------------------------------------
+CLK_26MHZ|GLA_inferred_clock  CLK_26MHZ|GLA_inferred_clock  |  10.000      2.970  |  No paths    -      |  No paths    -      |  No paths    -    
+==================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: CLK_26MHZ|GLA_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                            Starting                                                           Arrival          
+Instance                    Reference                        Type       Pin     Net            Time        Slack
+                            Clock                                                                               
+----------------------------------------------------------------------------------------------------------------
+spi_master_0.state_q[1]     CLK_26MHZ|GLA_inferred_clock     DFN1       Q       state_q[1]     0.797       2.970
+spi_master_0.sck_q[1]       CLK_26MHZ|GLA_inferred_clock     DFN1       Q       sck_q[1]       0.797       3.236
+spi_master_0.state_q[0]     CLK_26MHZ|GLA_inferred_clock     DFN1       Q       state_q[0]     0.797       3.963
+spi_master_0.sck_q[0]       CLK_26MHZ|GLA_inferred_clock     DFN1       Q       sck_q[0]       0.797       4.036
+spi_master_0.ctr_q[0]       CLK_26MHZ|GLA_inferred_clock     DFN1E1     Q       ctr_q[0]       0.628       4.555
+spi_master_0.ctr_q[1]       CLK_26MHZ|GLA_inferred_clock     DFN1E1     Q       ctr_q[1]       0.628       4.722
+spi_master_0.ctr_q[2]       CLK_26MHZ|GLA_inferred_clock     DFN1E1     Q       ctr_q[2]       0.628       4.981
+spi_master_0.data_q[0]      CLK_26MHZ|GLA_inferred_clock     DFN1       Q       data_q[0]      0.797       6.532
+spi_master_0.data_q[1]      CLK_26MHZ|GLA_inferred_clock     DFN1       Q       data_q[1]      0.797       6.532
+spi_master_0.data_q[2]      CLK_26MHZ|GLA_inferred_clock     DFN1       Q       data_q[2]      0.797       6.532
+================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                            Starting                                                            Required          
+Instance                    Reference                        Type     Pin     Net               Time         Slack
+                            Clock                                                                                 
+------------------------------------------------------------------------------------------------------------------
+spi_master_0.data_q[0]      CLK_26MHZ|GLA_inferred_clock     DFN1     D       data_q_RNO[0]     9.380        2.970
+spi_master_0.data_q[1]      CLK_26MHZ|GLA_inferred_clock     DFN1     D       data_q_RNO[1]     9.380        2.970
+spi_master_0.data_q[2]      CLK_26MHZ|GLA_inferred_clock     DFN1     D       data_q_RNO[2]     9.380        2.970
+spi_master_0.data_q[3]      CLK_26MHZ|GLA_inferred_clock     DFN1     D       data_q_RNO[3]     9.380        2.970
+spi_master_0.data_q[4]      CLK_26MHZ|GLA_inferred_clock     DFN1     D       data_q_RNO[4]     9.380        2.970
+spi_master_0.data_q[5]      CLK_26MHZ|GLA_inferred_clock     DFN1     D       data_q_RNO[5]     9.380        2.970
+spi_master_0.data_q[6]      CLK_26MHZ|GLA_inferred_clock     DFN1     D       data_q_RNO[6]     9.380        2.970
+spi_master_0.data_q[7]      CLK_26MHZ|GLA_inferred_clock     DFN1     D       data_q_RNO[7]     9.380        2.970
+spi_master_0.mosi_q         CLK_26MHZ|GLA_inferred_clock     DFN1     D       mosi_q_RNO        9.380        3.803
+spi_master_0.state_q[1]     CLK_26MHZ|GLA_inferred_clock     DFN1     D       N_108s            9.417        3.963
+==================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.620
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.380
+
+    - Propagation time:                      6.410
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     2.970
+
+    Number of logic level(s):                4
+    Starting point:                          spi_master_0.state_q[1] / Q
+    Ending point:                            spi_master_0.data_q[0] / D
+    The start point is clocked by            CLK_26MHZ|GLA_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            CLK_26MHZ|GLA_inferred_clock [rising] on pin CLK
+
+Instance / Net                              Pin      Pin               Arrival     No. of    
+Name                              Type      Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------
+spi_master_0.state_q[1]           DFN1      Q        Out     0.797     0.797       -         
+state_q[1]                        Net       -        -       1.032     -           6         
+spi_master_0.sck_q_RNISE6G[1]     NOR2A     A        In      -         1.829       -         
+spi_master_0.sck_q_RNISE6G[1]     NOR2A     Y        Out     0.679     2.507       -         
+SCLK_c                            Net       -        -       0.585     -           3         
+spi_master_0.sck_q_RNI9JLG[0]     NOR2B     A        In      -         3.092       -         
+spi_master_0.sck_q_RNI9JLG[0]     NOR2B     Y        Out     0.556     3.648       -         
+new_data_d_1_sqmuxa               Net       -        -       1.188     -           8         
+spi_master_0.data_q_RNO_0[0]      MX2       S        In      -         4.837       -         
+spi_master_0.data_q_RNO_0[0]      MX2       Y        Out     0.429     5.265       -         
+N_64                              Net       -        -       0.233     -           1         
+spi_master_0.data_q_RNO[0]        NOR2A     A        In      -         5.498       -         
+spi_master_0.data_q_RNO[0]        NOR2A     Y        Out     0.679     6.177       -         
+data_q_RNO[0]                     Net       -        -       0.233     -           1         
+spi_master_0.data_q[0]            DFN1      D        In      -         6.410       -         
+=============================================================================================
+Total path delay (propagation time + setup) of 7.030 is 3.760(53.5%) logic and 3.271(46.5%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+
+Finished final timing analysis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 110MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 110MB)
+
+--------------------------------------------------------------------------------
+Target Part: M1A3P1000L_FBGA484_STD
+Report for cell transceiver_integration.verilog
+  Core Cell usage:
+              cell count     area count*area
+               AO1     1      1.0        1.0
+              AX1E     1      1.0        1.0
+              AXO6     1      1.0        1.0
+             AXOI5     1      1.0        1.0
+               GND     5      0.0        0.0
+               MX2    10      1.0       10.0
+              MX2B     1      1.0        1.0
+              NOR2     1      1.0        1.0
+             NOR2A    13      1.0       13.0
+             NOR2B     2      1.0        2.0
+              NOR3     4      1.0        4.0
+             NOR3A     1      1.0        1.0
+             NOR3B     2      1.0        2.0
+             NOR3C     1      1.0        1.0
+               OR2     1      1.0        1.0
+               OR3     1      1.0        1.0
+               PLL     1      0.0        0.0
+            PLLINT     1      0.0        0.0
+               VCC     5      0.0        0.0
+             XNOR2     1      1.0        1.0
+
+
+              DFN1    13      1.0       13.0
+            DFN1E1     3      1.0        3.0
+            DFN1P0     1      1.0        1.0
+                   -----          ----------
+             TOTAL    71                59.0
+
+
+  IO Cell usage:
+              cell count
+             INBUF     3
+            OUTBUF     3
+                   -----
+             TOTAL     6
+
+
+Core Cells         : 59 of 24576 (0%)
+IO Cells           : 6
+
+  RAM/ROM Usage Summary
+Block Rams : 0 of 32 (0%)
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 47MB peak: 110MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Feb 24 18:06:28 2016
+
+###########################################################]

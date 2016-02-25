@@ -791,10 +791,10 @@ module spi_mode_config (
         //end
         end
 
-    always @(posedge clk or negedge rst or negedge busy or posedge busy) begin
-        if (~rst && busy) begin
+    always @(posedge clk or negedge rst) begin
+        if (rst==1'b0) begin
 //            if (~rst_mode) begin //power on sequence
-            byte_out_b <= 8'bz;
+            byte_out_b <= 8'b0;
             mem_enable_b <= 1'b0;
             state_b <= 3'h02;
             byte_tracker_b <= 1'b0;
@@ -803,7 +803,7 @@ module spi_mode_config (
             byte_tracker_b <= 1'b0;
             rst_cntr <= 0;
             begin_pass_b <= 0;
-            config_cntr_a <= 0;
+            config_cntr_b <= 0;
 //            end
 //            else if (rst_mode) begin
 //            state_b <= 3'h01;
@@ -813,7 +813,8 @@ module spi_mode_config (
 //            next_b <= 1'b0;
 //            end
         end
-        else if (~busy && rst) begin
+        else begin
+            if (busy==1'b0)  begin
             byte_out_b <= byte_out_a;
             mem_enable_b <=1'b0;
             state_b<=PWR_RST;
@@ -835,8 +836,8 @@ module spi_mode_config (
             //else rst_cntr <= 0;
             //end
             
-        end
-        else if (busy && rst) begin
+            end
+            else if (busy==1'b1) begin
             config_cntr_b <= config_cntr_a;
             byte_out_b <= byte_out_a;
             mem_enable_b <= mem_enable_a;
@@ -846,12 +847,13 @@ module spi_mode_config (
             byte_tracker_b <= 1'b0;
             begin_pass_b <= begin_pass_a;
             if (state_a == PWR_RST) begin
-            if (rst_cntr <= microsec*100)
-                rst_cntr <= rst_cntr + 1;
-            else rst_cntr <= 0;
-                rst_cntr <= 0;
+                if (rst_cntr <= microsec*100)
+                    rst_cntr <= rst_cntr + 1;
+                else rst_cntr <= 0;
+                    rst_cntr <= 0;
             end
 
+            end
         end
 //        else if (~busy) begin
 //            if (state_a == CONFIG_MODE) begin

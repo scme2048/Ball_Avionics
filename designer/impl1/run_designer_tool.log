@@ -4,22 +4,22 @@ Release: v11.6
 
 'IDE_DESIGNERVIEW_ROOTDIR' set to
 'C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\designer'
-Info: The design geiger_integration.adb was last modified by software version 11.6.0.34.
-Opened an existing Libero design geiger_integration.adb.
+Info: The design transceiver_integration.adb was last modified by software version 11.6.0.34.
+Opened an existing Libero design transceiver_integration.adb.
 
-The Execute Script command succeeded ( 00:00:31 )
+The Execute Script command succeeded ( 00:00:33 )
 Checking for software updates...
 Design saved to file
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\designer\impl1\geiger\
-_integration.adb.
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\designer\impl1\transc\
+eiver_integration.adb.
 Wrote pin report to file:
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\designer\impl1\geiger\
-_integration_report_pin_byname.txt
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\designer\impl1\transc\
+eiver_integration_report_pin_byname.txt
 
 The Report command succeeded ( 00:00:01 )
 Wrote pin report to file:
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\designer\impl1\geiger\
-_integration_report_pin_bynumber.txt
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\designer\impl1\transc\
+eiver_integration_report_pin_bynumber.txt
 
 The Report command succeeded ( 00:00:01 )
 

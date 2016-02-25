@@ -25,4 +25,75 @@ Selecting top level module transceiver_integration
 
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":22:7:22:21|Synthesizing module spi_mode_config
 
-@E: CS153 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":168:25:168:25|Can't mix blocking and non-blocking assignments to a variable
+@W: CG133 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":83:16:83:22|No assignment to start_b
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Optimizing register bit begin_pass_b to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Optimizing register bit byte_tracker_b to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Optimizing register bit rst_cntr[0] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Optimizing register bit rst_cntr[1] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Optimizing register bit rst_cntr[2] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Optimizing register bit rst_cntr[3] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Optimizing register bit rst_cntr[4] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Optimizing register bit rst_cntr[5] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Optimizing register bit rst_cntr[6] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Optimizing register bit rst_cntr[7] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Optimizing register bit rst_cntr[8] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Optimizing register bit rst_cntr[9] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Optimizing register bit rst_cntr[10] to a constant 0
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Pruning register rst_cntr[10:0] 
+
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Pruning register begin_pass_b 
+
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Pruning register byte_tracker_b 
+
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\test_constants_spi.v":21:7:21:24|Synthesizing module test_constants_spi
+
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\component\work\transceiver_integration\transceiver_integration.v":9:7:9:29|Synthesizing module transceiver_integration
+
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Optimizing register bit next_b to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Optimizing register bit mem_enable_b to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Optimizing register bit config_cntr_b[0] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Optimizing register bit byte_out_b[6] to a constant 0
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Pruning register bit 6 of byte_out_b[7:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Pruning register bit 0 of config_cntr_b[6:0] 
+
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Pruning register mem_enable_b 
+
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Pruning register next_b 
+
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Pruning register config_cntr_b[6:1] 
+
+@N: CL201 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Trying to extract state machine for register state_b
+Extracted state machine for register state_b
+State machine has 2 reachable states with original encodings of:
+   001
+   010
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Optimizing register bit byte_out_b[7] to a constant 0
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Pruning register bit 5 of byte_out_b[5:0] 
+
+@W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Pruning register bits 3 to 1 of byte_out_b[5:0] 
+
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Pruning register byte_out_b[7] 
+
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Optimizing register bit byte_out_b[0] to a constant 0
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Pruning register byte_out_b[0] 
+
+@W: CL246 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":23:16:23:27|Input port bits 6 to 0 of SLAVE_OUTPUT[7:0] are unused
+
+@A: CL153 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":83:16:83:22|*Unassigned bits of start_b are referenced and tied to 0 -- simulation mismatch possible.
+@W: CL159 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":24:16:24:28|Input DATA_FROM_MEM is unused
+@N: CL201 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\SPI_Master.v":78:2:78:7|Trying to extract state machine for register state_q
+Extracted state machine for register state_q
+State machine has 3 reachable states with original encodings of:
+   00
+   01
+   10
+@N: CL201 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\read_buffer.v":66:0:66:5|Trying to extract state machine for register init_stage
+Extracted state machine for register init_stage
+State machine has 3 reachable states with original encodings of:
+   00
+   01
+   10
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\orbit_control.v":32:0:32:5|Optimizing register bit cntr[13] to a constant 0
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\orbit_control.v":32:0:32:5|Pruning register bit 13 of cntr[13:0] 
+

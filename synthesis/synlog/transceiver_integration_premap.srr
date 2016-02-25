@@ -1,0 +1,68 @@
+Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 1522R, Built Jun  4 2015 12:04:36
+Copyright (C) 1994-2015, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+Product Version J-2015.03M-3
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@L: C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\transceiver_integration_scck.rpt 
+Printing clock  summary report in "C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\transceiver_integration_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+@N: BN115 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\component\work\transceiver_integration\transceiver_integration.v":118:12:118:24|Removing instance read_buffer_0 of view:work.read_buffer(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\read_buffer.v":66:0:66:5|Removing sequential instance read_cmd of view:PrimLib.dffre(prim) in hierarchy view:work.read_buffer(verilog) because there are no references to its outputs 
+@N: BN115 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\component\work\transceiver_integration\transceiver_integration.v":175:19:175:38|Removing instance test_constants_spi_0 of view:work.test_constants_spi(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\spi_master.v":78:2:78:7|Removing sequential instance new_data_q of view:PrimLib.dff(prim) in hierarchy view:work.spi_master(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\read_buffer.v":43:0:43:5|Removing sequential instance byte_out_cl_5[0] of view:PrimLib.dffre(prim) in hierarchy view:work.read_buffer(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\read_buffer.v":43:0:43:5|Removing sequential instance byte_out[0] of view:PrimLib.dffre(prim) in hierarchy view:work.read_buffer(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\read_buffer.v":43:0:43:5|Removing sequential instance byte_out_cl_7[0] of view:PrimLib.dffre(prim) in hierarchy view:work.read_buffer(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\read_buffer.v":43:0:43:5|Removing sequential instance byte_out[1] of view:PrimLib.dffre(prim) in hierarchy view:work.read_buffer(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\read_buffer.v":43:0:43:5|Removing sequential instance byte_out_cl_4[0] of view:PrimLib.dffre(prim) in hierarchy view:work.read_buffer(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\read_buffer.v":43:0:43:5|Removing sequential instance byte_out[2] of view:PrimLib.dffre(prim) in hierarchy view:work.read_buffer(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\read_buffer.v":43:0:43:5|Removing sequential instance byte_out_cl_6[0] of view:PrimLib.dffre(prim) in hierarchy view:work.read_buffer(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\read_buffer.v":43:0:43:5|Removing sequential instance byte_out[3] of view:PrimLib.dffre(prim) in hierarchy view:work.read_buffer(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\read_buffer.v":43:0:43:5|Removing sequential instance byte_out_cl_2[0] of view:PrimLib.dffre(prim) in hierarchy view:work.read_buffer(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\read_buffer.v":43:0:43:5|Removing sequential instance byte_out[4] of view:PrimLib.dffre(prim) in hierarchy view:work.read_buffer(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\read_buffer.v":43:0:43:5|Removing sequential instance byte_out_cl_3[0] of view:PrimLib.dffre(prim) in hierarchy view:work.read_buffer(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\read_buffer.v":43:0:43:5|Removing sequential instance byte_out[5] of view:PrimLib.dffre(prim) in hierarchy view:work.read_buffer(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\read_buffer.v":43:0:43:5|Removing sequential instance byte_out_cl_1[0] of view:PrimLib.dffre(prim) in hierarchy view:work.read_buffer(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\read_buffer.v":43:0:43:5|Removing sequential instance byte_out[6] of view:PrimLib.dffre(prim) in hierarchy view:work.read_buffer(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\read_buffer.v":43:0:43:5|Removing sequential instance byte_out_cl[0] of view:PrimLib.dffre(prim) in hierarchy view:work.read_buffer(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\read_buffer.v":43:0:43:5|Removing sequential instance byte_out[7] of view:PrimLib.dffre(prim) in hierarchy view:work.read_buffer(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\read_buffer.v":66:0:66:5|Removing sequential instance buffer_b[15:0] of view:PrimLib.dffe(prim) in hierarchy view:work.read_buffer(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\read_buffer.v":66:0:66:5|Removing sequential instance buffer_a[15:0] of view:PrimLib.dffe(prim) in hierarchy view:work.read_buffer(verilog) because there are no references to its outputs 
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 111MB)
+
+
+
+@S |Clock Summary
+*****************
+
+Start                                           Requested     Requested     Clock        Clock              
+Clock                                           Frequency     Period        Type         Group              
+------------------------------------------------------------------------------------------------------------
+CLK_26MHZ|GLA_inferred_clock                    100.0 MHz     10.000        inferred     Inferred_clkgroup_2
+clock_div_1MHZ_10HZ|clk_out_inferred_clock      100.0 MHz     10.000        inferred     Inferred_clkgroup_0
+clock_div_26MHZ_1MHZ|clk_out_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_1
+============================================================================================================
+
+@W: MT530 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\orbit_control.v":32:0:32:5|Found inferred clock clock_div_1MHZ_10HZ|clk_out_inferred_clock which controls 14 sequential elements including orbit_control_0.cntr[12:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\clock_div_1mhz_10hz.v":22:0:22:5|Found inferred clock clock_div_26MHZ_1MHZ|clk_out_inferred_clock which controls 18 sequential elements including clock_div_1MHZ_10HZ_0.counter[16:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\clock_div_26mhz_1mhz.v":23:0:23:5|Found inferred clock CLK_26MHZ|GLA_inferred_clock which controls 47 sequential elements including clock_div_26MHZ_1MHZ_0.counter[16:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\transceiver_integration.sap.
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 46MB peak: 111MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Feb 24 18:06:27 2016
+
+###########################################################]

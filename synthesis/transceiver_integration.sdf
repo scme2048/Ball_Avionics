@@ -1,0 +1,156 @@
+(DELAYFILE
+(SDFVERSION "OVI 2.1")
+(DESIGN "transceiver_integration")
+(DATE "123")
+(VENDOR "ProASIC3L")
+(PROGRAM "Synplify")
+(VERSION "mapact, Build 1522R")
+(DIVIDER /)
+(VOLTAGE 2.500000:2.500000:2.500000)
+(PROCESS "TYPICAL")
+(TEMPERATURE 70.000000:70.000000:70.000000)
+(TIMESCALE 1ns)
+(CELL
+  (CELLTYPE "transceiver_integration")
+  (INSTANCE)
+  (TIMINGCHECK
+
+    (PATHCONSTRAINT spi_master_0/state_q\[1\]/CLK  spi_master_0/state_q\[1\]/Q  spi_master_0/sck_q_RNISE6G\[1\]/A  spi_master_0/sck_q_RNISE6G\[1\]/Y  spi_master_0/sck_q_RNI9JLG\[0\]/A  spi_master_0/sck_q_RNI9JLG\[0\]/Y  spi_master_0/data_q_RNO_0\[0\]/S  spi_master_0/data_q_RNO_0\[0\]/Y  spi_master_0/data_q_RNO\[0\]/A  spi_master_0/data_q_RNO\[0\]/Y  spi_master_0/data_q\[0\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/state_q\[1\]/CLK  spi_master_0/state_q\[1\]/Q  spi_master_0/sck_q_RNISE6G\[1\]/A  spi_master_0/sck_q_RNISE6G\[1\]/Y  spi_master_0/sck_q_RNI9JLG\[0\]/A  spi_master_0/sck_q_RNI9JLG\[0\]/Y  spi_master_0/data_q_RNO_0\[1\]/S  spi_master_0/data_q_RNO_0\[1\]/Y  spi_master_0/data_q_RNO\[1\]/A  spi_master_0/data_q_RNO\[1\]/Y  spi_master_0/data_q\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/state_q\[1\]/CLK  spi_master_0/state_q\[1\]/Q  spi_master_0/sck_q_RNISE6G\[1\]/A  spi_master_0/sck_q_RNISE6G\[1\]/Y  spi_master_0/sck_q_RNI9JLG\[0\]/A  spi_master_0/sck_q_RNI9JLG\[0\]/Y  spi_master_0/data_q_RNO_0\[2\]/S  spi_master_0/data_q_RNO_0\[2\]/Y  spi_master_0/data_q_RNO\[2\]/A  spi_master_0/data_q_RNO\[2\]/Y  spi_master_0/data_q\[2\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/state_q\[1\]/CLK  spi_master_0/state_q\[1\]/Q  spi_master_0/sck_q_RNISE6G\[1\]/A  spi_master_0/sck_q_RNISE6G\[1\]/Y  spi_master_0/sck_q_RNI9JLG\[0\]/A  spi_master_0/sck_q_RNI9JLG\[0\]/Y  spi_master_0/data_q_RNO_0\[3\]/S  spi_master_0/data_q_RNO_0\[3\]/Y  spi_master_0/data_q_RNO\[3\]/A  spi_master_0/data_q_RNO\[3\]/Y  spi_master_0/data_q\[3\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/state_q\[1\]/CLK  spi_master_0/state_q\[1\]/Q  spi_master_0/sck_q_RNISE6G\[1\]/A  spi_master_0/sck_q_RNISE6G\[1\]/Y  spi_master_0/sck_q_RNI9JLG\[0\]/A  spi_master_0/sck_q_RNI9JLG\[0\]/Y  spi_master_0/data_q_RNO_0\[4\]/S  spi_master_0/data_q_RNO_0\[4\]/Y  spi_master_0/data_q_RNO\[4\]/A  spi_master_0/data_q_RNO\[4\]/Y  spi_master_0/data_q\[4\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/state_q\[1\]/CLK  spi_master_0/state_q\[1\]/Q  spi_master_0/sck_q_RNISE6G\[1\]/A  spi_master_0/sck_q_RNISE6G\[1\]/Y  spi_master_0/sck_q_RNI9JLG\[0\]/A  spi_master_0/sck_q_RNI9JLG\[0\]/Y  spi_master_0/data_q_RNO_0\[5\]/S  spi_master_0/data_q_RNO_0\[5\]/Y  spi_master_0/data_q_RNO\[5\]/A  spi_master_0/data_q_RNO\[5\]/Y  spi_master_0/data_q\[5\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/state_q\[1\]/CLK  spi_master_0/state_q\[1\]/Q  spi_master_0/sck_q_RNISE6G\[1\]/A  spi_master_0/sck_q_RNISE6G\[1\]/Y  spi_master_0/sck_q_RNI9JLG\[0\]/A  spi_master_0/sck_q_RNI9JLG\[0\]/Y  spi_master_0/data_q_RNO_0\[6\]/S  spi_master_0/data_q_RNO_0\[6\]/Y  spi_master_0/data_q_RNO\[6\]/A  spi_master_0/data_q_RNO\[6\]/Y  spi_master_0/data_q\[6\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/state_q\[1\]/CLK  spi_master_0/state_q\[1\]/Q  spi_master_0/sck_q_RNISE6G\[1\]/A  spi_master_0/sck_q_RNISE6G\[1\]/Y  spi_master_0/sck_q_RNI9JLG\[0\]/A  spi_master_0/sck_q_RNI9JLG\[0\]/Y  spi_master_0/data_q_RNO_0\[7\]/S  spi_master_0/data_q_RNO_0\[7\]/Y  spi_master_0/data_q_RNO\[7\]/A  spi_master_0/data_q_RNO\[7\]/Y  spi_master_0/data_q\[7\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/sck_q\[1\]/CLK  spi_master_0/sck_q\[1\]/Q  spi_master_0/sck_q_RNISE6G\[1\]/B  spi_master_0/sck_q_RNISE6G\[1\]/Y  spi_master_0/sck_q_RNI9JLG\[0\]/A  spi_master_0/sck_q_RNI9JLG\[0\]/Y  spi_master_0/data_q_RNO_0\[0\]/S  spi_master_0/data_q_RNO_0\[0\]/Y  spi_master_0/data_q_RNO\[0\]/A  spi_master_0/data_q_RNO\[0\]/Y  spi_master_0/data_q\[0\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/state_q\[1\]/CLK  spi_master_0/state_q\[1\]/Q  spi_master_0/sck_q_RNISE6G\[1\]/A  spi_master_0/sck_q_RNISE6G\[1\]/Y  spi_master_0/mosi_q_RNO_1/A  spi_master_0/mosi_q_RNO_1/Y  spi_master_0/mosi_q_RNO_0/S  spi_master_0/mosi_q_RNO_0/Y  spi_master_0/mosi_q_RNO/A  spi_master_0/mosi_q_RNO/Y  spi_master_0/mosi_q/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/state_q\[0\]/CLK  spi_master_0/state_q\[0\]/Q  spi_master_0/state_q_RNO_3\[1\]/C  spi_master_0/state_q_RNO_3\[1\]/Y  spi_master_0/state_q_RNO_1\[1\]/C  spi_master_0/state_q_RNO_1\[1\]/Y  spi_master_0/state_q_RNO_0\[1\]/B  spi_master_0/state_q_RNO_0\[1\]/Y  spi_master_0/state_q_RNO\[1\]/A  spi_master_0/state_q_RNO\[1\]/Y  spi_master_0/state_q\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/sck_q\[1\]/CLK  spi_master_0/sck_q\[1\]/Q  spi_master_0/state_q_RNO_3\[1\]/A  spi_master_0/state_q_RNO_3\[1\]/Y  spi_master_0/state_q_RNO_1\[1\]/C  spi_master_0/state_q_RNO_1\[1\]/Y  spi_master_0/state_q_RNO_0\[1\]/B  spi_master_0/state_q_RNO_0\[1\]/Y  spi_master_0/state_q_RNO\[1\]/A  spi_master_0/state_q_RNO\[1\]/Y  spi_master_0/state_q\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/sck_q\[0\]/CLK  spi_master_0/sck_q\[0\]/Q  spi_master_0/sck_q_RNI9JLG\[0\]/B  spi_master_0/sck_q_RNI9JLG\[0\]/Y  spi_master_0/data_q_RNO_0\[0\]/S  spi_master_0/data_q_RNO_0\[0\]/Y  spi_master_0/data_q_RNO\[0\]/A  spi_master_0/data_q_RNO\[0\]/Y  spi_master_0/data_q\[0\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/state_q\[1\]/CLK  spi_master_0/state_q\[1\]/Q  spi_master_0/state_q_RNO_3\[1\]/B  spi_master_0/state_q_RNO_3\[1\]/Y  spi_master_0/state_q_RNO_1\[1\]/C  spi_master_0/state_q_RNO_1\[1\]/Y  spi_master_0/state_q_RNO_0\[1\]/B  spi_master_0/state_q_RNO_0\[1\]/Y  spi_master_0/state_q_RNO\[1\]/A  spi_master_0/state_q_RNO\[1\]/Y  spi_master_0/state_q\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/ctr_q\[0\]/CLK  spi_master_0/ctr_q\[0\]/Q  spi_master_0/state_q_RNO_2\[1\]/A  spi_master_0/state_q_RNO_2\[1\]/Y  spi_master_0/state_q_RNO_1\[1\]/A  spi_master_0/state_q_RNO_1\[1\]/Y  spi_master_0/state_q_RNO_0\[1\]/B  spi_master_0/state_q_RNO_0\[1\]/Y  spi_master_0/state_q_RNO\[1\]/A  spi_master_0/state_q_RNO\[1\]/Y  spi_master_0/state_q\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/state_q\[1\]/CLK  spi_master_0/state_q\[1\]/Q  spi_master_0/state_q_RNIRHEV\[0\]/B  spi_master_0/state_q_RNIRHEV\[0\]/Y  spi_master_0/state_q_RNI4PR32\[0\]/B  spi_master_0/state_q_RNI4PR32\[0\]/Y  spi_master_0/ctr_q\[2\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT spi_master_0/state_q\[1\]/CLK  spi_master_0/state_q\[1\]/Q  spi_master_0/state_q_RNIRHEV\[0\]/B  spi_master_0/state_q_RNIRHEV\[0\]/Y  spi_master_0/state_q_RNI4PR32\[0\]/B  spi_master_0/state_q_RNI4PR32\[0\]/Y  spi_master_0/ctr_q\[0\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT spi_master_0/ctr_q\[1\]/CLK  spi_master_0/ctr_q\[1\]/Q  spi_master_0/state_q_RNO_2\[1\]/B  spi_master_0/state_q_RNO_2\[1\]/Y  spi_master_0/state_q_RNO_1\[1\]/A  spi_master_0/state_q_RNO_1\[1\]/Y  spi_master_0/state_q_RNO_0\[1\]/B  spi_master_0/state_q_RNO_0\[1\]/Y  spi_master_0/state_q_RNO\[1\]/A  spi_master_0/state_q_RNO\[1\]/Y  spi_master_0/state_q\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/state_q\[1\]/CLK  spi_master_0/state_q\[1\]/Q  spi_master_0/state_q_RNIRHEV\[0\]/B  spi_master_0/state_q_RNIRHEV\[0\]/Y  spi_master_0/ctr_q_RNO\[0\]/B  spi_master_0/ctr_q_RNO\[0\]/Y  spi_master_0/ctr_q\[0\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/state_q\[1\]/CLK  spi_master_0/state_q\[1\]/Q  spi_master_0/state_q_RNIRHEV\[0\]/B  spi_master_0/state_q_RNIRHEV\[0\]/Y  spi_master_0/sck_q_RNO\[0\]/B  spi_master_0/sck_q_RNO\[0\]/Y  spi_master_0/sck_q\[0\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/state_q\[1\]/CLK  spi_master_0/state_q\[1\]/Q  spi_master_0/state_q_RNIRHEV\[0\]/B  spi_master_0/state_q_RNIRHEV\[0\]/Y  spi_master_0/sck_q_RNO\[1\]/C  spi_master_0/sck_q_RNO\[1\]/Y  spi_master_0/sck_q\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/state_q\[1\]/CLK  spi_master_0/state_q\[1\]/Q  spi_master_0/state_q_RNIRHEV\[0\]/B  spi_master_0/state_q_RNIRHEV\[0\]/Y  spi_master_0/ctr_q_RNO\[2\]/B  spi_master_0/ctr_q_RNO\[2\]/Y  spi_master_0/ctr_q\[2\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/state_q\[1\]/CLK  spi_master_0/state_q\[1\]/Q  spi_master_0/state_q_RNIRHEV\[0\]/B  spi_master_0/state_q_RNIRHEV\[0\]/Y  spi_master_0/ctr_q_RNO\[1\]/B  spi_master_0/ctr_q_RNO\[1\]/Y  spi_master_0/ctr_q\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/state_q\[0\]/CLK  spi_master_0/state_q\[0\]/Q  spi_master_0/state_q_RNIRHEV\[0\]/A  spi_master_0/state_q_RNIRHEV\[0\]/Y  spi_master_0/state_q_RNI4PR32\[0\]/B  spi_master_0/state_q_RNI4PR32\[0\]/Y  spi_master_0/ctr_q\[2\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT spi_master_0/sck_q\[1\]/CLK  spi_master_0/sck_q\[1\]/Q  spi_master_0/state_q_RNO_1\[0\]/B  spi_master_0/state_q_RNO_1\[0\]/Y  spi_master_0/state_q_RNO_0\[0\]/B  spi_master_0/state_q_RNO_0\[0\]/Y  spi_master_0/state_q_RNO\[0\]/A  spi_master_0/state_q_RNO\[0\]/Y  spi_master_0/state_q\[0\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/state_q\[0\]/CLK  spi_master_0/state_q\[0\]/Q  spi_master_0/state_q_RNO_1\[0\]/A  spi_master_0/state_q_RNO_1\[0\]/Y  spi_master_0/state_q_RNO_0\[0\]/B  spi_master_0/state_q_RNO_0\[0\]/Y  spi_master_0/state_q_RNO\[0\]/A  spi_master_0/state_q_RNO\[0\]/Y  spi_master_0/state_q\[0\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/ctr_q\[2\]/CLK  spi_master_0/ctr_q\[2\]/Q  spi_master_0/state_q_RNO_2\[1\]/C  spi_master_0/state_q_RNO_2\[1\]/Y  spi_master_0/state_q_RNO_1\[1\]/A  spi_master_0/state_q_RNO_1\[1\]/Y  spi_master_0/state_q_RNO_0\[1\]/B  spi_master_0/state_q_RNO_0\[1\]/Y  spi_master_0/state_q_RNO\[1\]/A  spi_master_0/state_q_RNO\[1\]/Y  spi_master_0/state_q\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/sck_q\[1\]/CLK  spi_master_0/sck_q\[1\]/Q  spi_master_0/state_q_RNO_1\[1\]/B  spi_master_0/state_q_RNO_1\[1\]/Y  spi_master_0/state_q_RNO_0\[1\]/B  spi_master_0/state_q_RNO_0\[1\]/Y  spi_master_0/state_q_RNO\[1\]/A  spi_master_0/state_q_RNO\[1\]/Y  spi_master_0/state_q\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/sck_q\[0\]/CLK  spi_master_0/sck_q\[0\]/Q  spi_master_0/state_q_RNI8ILG\[0\]/B  spi_master_0/state_q_RNI8ILG\[0\]/Y  spi_master_0/state_q_RNI4PR32\[0\]/C  spi_master_0/state_q_RNI4PR32\[0\]/Y  spi_master_0/ctr_q\[2\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT spi_master_0/state_q\[1\]/CLK  spi_master_0/state_q\[1\]/Q  spi_master_0/state_q_RNO_1\[0\]/C  spi_master_0/state_q_RNO_1\[0\]/Y  spi_master_0/state_q_RNO_0\[0\]/B  spi_master_0/state_q_RNO_0\[0\]/Y  spi_master_0/state_q_RNO\[0\]/A  spi_master_0/state_q_RNO\[0\]/Y  spi_master_0/state_q\[0\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/sck_q\[1\]/CLK  spi_master_0/sck_q\[1\]/Q  spi_master_0/state_q_RNI8ILG\[0\]/A  spi_master_0/state_q_RNI8ILG\[0\]/Y  spi_master_0/state_q_RNI4PR32\[0\]/C  spi_master_0/state_q_RNI4PR32\[0\]/Y  spi_master_0/ctr_q\[2\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT spi_master_0/sck_q\[0\]/CLK  spi_master_0/sck_q\[0\]/Q  spi_master_0/mosi_q_RNO_1/B  spi_master_0/mosi_q_RNO_1/Y  spi_master_0/mosi_q_RNO_0/S  spi_master_0/mosi_q_RNO_0/Y  spi_master_0/mosi_q_RNO/A  spi_master_0/mosi_q_RNO/Y  spi_master_0/mosi_q/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/sck_q\[0\]/CLK  spi_master_0/sck_q\[0\]/Q  spi_master_0/sck_q_RNO_0\[1\]/B  spi_master_0/sck_q_RNO_0\[1\]/Y  spi_master_0/sck_q_RNO\[1\]/A  spi_master_0/sck_q_RNO\[1\]/Y  spi_master_0/sck_q\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/sck_q\[0\]/CLK  spi_master_0/sck_q\[0\]/Q  spi_master_0/state_q_RNI8ILG\[0\]/B  spi_master_0/state_q_RNI8ILG\[0\]/Y  spi_master_0/state_q_RNI4PR32\[0\]/C  spi_master_0/state_q_RNI4PR32\[0\]/Y  spi_master_0/ctr_q\[1\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT spi_master_0/state_q\[1\]/CLK  spi_master_0/state_q\[1\]/Q  spi_master_0/sck_q_RNO_0\[1\]/A  spi_master_0/sck_q_RNO_0\[1\]/Y  spi_master_0/sck_q_RNO\[1\]/A  spi_master_0/sck_q_RNO\[1\]/Y  spi_master_0/sck_q\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/ctr_q\[0\]/CLK  spi_master_0/ctr_q\[0\]/Q  spi_master_0/ctr_q_RNO_0\[2\]/A  spi_master_0/ctr_q_RNO_0\[2\]/Y  spi_master_0/ctr_q_RNO\[2\]/C  spi_master_0/ctr_q_RNO\[2\]/Y  spi_master_0/ctr_q\[2\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/state_q\[0\]/CLK  spi_master_0/state_q\[0\]/Q  spi_master_0/state_q_RNI8ILG\[0\]/C  spi_master_0/state_q_RNI8ILG\[0\]/Y  spi_master_0/state_q_RNI4PR32\[0\]/C  spi_master_0/state_q_RNI4PR32\[0\]/Y  spi_master_0/ctr_q\[2\]/E  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT spi_master_0/state_q\[1\]/CLK  spi_master_0/state_q\[1\]/Q  spi_master_0/state_q_RNO_0\[1\]/A  spi_master_0/state_q_RNO_0\[1\]/Y  spi_master_0/state_q_RNO\[1\]/A  spi_master_0/state_q_RNO\[1\]/Y  spi_master_0/state_q\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/state_q\[1\]/CLK  spi_master_0/state_q\[1\]/Q  spi_master_0/state_q_RNIRHEV\[0\]/B  spi_master_0/state_q_RNIRHEV\[0\]/Y  spi_mode_config_0/ss_b/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/sck_q\[1\]/CLK  spi_master_0/sck_q\[1\]/Q  spi_master_0/sck_q_RNO_0\[1\]/C  spi_master_0/sck_q_RNO_0\[1\]/Y  spi_master_0/sck_q_RNO\[1\]/A  spi_master_0/sck_q_RNO\[1\]/Y  spi_master_0/sck_q\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/state_q\[0\]/CLK  spi_master_0/state_q\[0\]/Q  spi_master_0/state_q_RNO_0\[0\]/A  spi_master_0/state_q_RNO_0\[0\]/Y  spi_master_0/state_q_RNO\[0\]/A  spi_master_0/state_q_RNO\[0\]/Y  spi_master_0/state_q\[0\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/sck_q\[0\]/CLK  spi_master_0/sck_q\[0\]/Q  spi_master_0/state_q_RNO_0\[0\]/S  spi_master_0/state_q_RNO_0\[0\]/Y  spi_master_0/state_q_RNO\[0\]/A  spi_master_0/state_q_RNO\[0\]/Y  spi_master_0/state_q\[0\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/sck_q\[0\]/CLK  spi_master_0/sck_q\[0\]/Q  spi_master_0/state_q_RNO_0\[1\]/S  spi_master_0/state_q_RNO_0\[1\]/Y  spi_master_0/state_q_RNO\[1\]/A  spi_master_0/state_q_RNO\[1\]/Y  spi_master_0/state_q\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/ctr_q\[1\]/CLK  spi_master_0/ctr_q\[1\]/Q  spi_master_0/ctr_q_RNO_0\[2\]/B  spi_master_0/ctr_q_RNO_0\[2\]/Y  spi_master_0/ctr_q_RNO\[2\]/C  spi_master_0/ctr_q_RNO\[2\]/Y  spi_master_0/ctr_q\[2\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/ctr_q\[1\]/CLK  spi_master_0/ctr_q\[1\]/Q  spi_master_0/ctr_q_RNO_0\[1\]/B  spi_master_0/ctr_q_RNO_0\[1\]/Y  spi_master_0/ctr_q_RNO\[1\]/C  spi_master_0/ctr_q_RNO\[1\]/Y  spi_master_0/ctr_q\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/ctr_q\[0\]/CLK  spi_master_0/ctr_q\[0\]/Q  spi_master_0/ctr_q_RNO_0\[1\]/A  spi_master_0/ctr_q_RNO_0\[1\]/Y  spi_master_0/ctr_q_RNO\[1\]/C  spi_master_0/ctr_q_RNO\[1\]/Y  spi_master_0/ctr_q\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/sck_q\[0\]/CLK  spi_master_0/sck_q\[0\]/Q  spi_master_0/sck_q_RNO\[0\]/C  spi_master_0/sck_q_RNO\[0\]/Y  spi_master_0/sck_q\[0\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/mosi_q/CLK  spi_master_0/mosi_q/Q  spi_master_0/mosi_q_RNO_0/A  spi_master_0/mosi_q_RNO_0/Y  spi_master_0/mosi_q_RNO/A  spi_master_0/mosi_q_RNO/Y  spi_master_0/mosi_q/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/data_q\[0\]/CLK  spi_master_0/data_q\[0\]/Q  spi_master_0/data_q_RNO_0\[0\]/A  spi_master_0/data_q_RNO_0\[0\]/Y  spi_master_0/data_q_RNO\[0\]/A  spi_master_0/data_q_RNO\[0\]/Y  spi_master_0/data_q\[0\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/data_q\[1\]/CLK  spi_master_0/data_q\[1\]/Q  spi_master_0/data_q_RNO_0\[1\]/A  spi_master_0/data_q_RNO_0\[1\]/Y  spi_master_0/data_q_RNO\[1\]/A  spi_master_0/data_q_RNO\[1\]/Y  spi_master_0/data_q\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/data_q\[2\]/CLK  spi_master_0/data_q\[2\]/Q  spi_master_0/data_q_RNO_0\[2\]/A  spi_master_0/data_q_RNO_0\[2\]/Y  spi_master_0/data_q_RNO\[2\]/A  spi_master_0/data_q_RNO\[2\]/Y  spi_master_0/data_q\[2\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/data_q\[3\]/CLK  spi_master_0/data_q\[3\]/Q  spi_master_0/data_q_RNO_0\[3\]/A  spi_master_0/data_q_RNO_0\[3\]/Y  spi_master_0/data_q_RNO\[3\]/A  spi_master_0/data_q_RNO\[3\]/Y  spi_master_0/data_q\[3\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/data_q\[4\]/CLK  spi_master_0/data_q\[4\]/Q  spi_master_0/data_q_RNO_0\[4\]/A  spi_master_0/data_q_RNO_0\[4\]/Y  spi_master_0/data_q_RNO\[4\]/A  spi_master_0/data_q_RNO\[4\]/Y  spi_master_0/data_q\[4\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/data_q\[5\]/CLK  spi_master_0/data_q\[5\]/Q  spi_master_0/data_q_RNO_0\[5\]/A  spi_master_0/data_q_RNO_0\[5\]/Y  spi_master_0/data_q_RNO\[5\]/A  spi_master_0/data_q_RNO\[5\]/Y  spi_master_0/data_q\[5\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/data_q\[6\]/CLK  spi_master_0/data_q\[6\]/Q  spi_master_0/data_q_RNO_0\[6\]/A  spi_master_0/data_q_RNO_0\[6\]/Y  spi_master_0/data_q_RNO\[6\]/A  spi_master_0/data_q_RNO\[6\]/Y  spi_master_0/data_q\[6\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/data_q\[7\]/CLK  spi_master_0/data_q\[7\]/Q  spi_master_0/data_q_RNO_0\[7\]/A  spi_master_0/data_q_RNO_0\[7\]/Y  spi_master_0/data_q_RNO\[7\]/A  spi_master_0/data_q_RNO\[7\]/Y  spi_master_0/data_q\[7\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/data_q\[0\]/CLK  spi_master_0/data_q\[0\]/Q  spi_master_0/data_q_RNO_0\[1\]/B  spi_master_0/data_q_RNO_0\[1\]/Y  spi_master_0/data_q_RNO\[1\]/A  spi_master_0/data_q_RNO\[1\]/Y  spi_master_0/data_q\[1\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/data_q\[1\]/CLK  spi_master_0/data_q\[1\]/Q  spi_master_0/data_q_RNO_0\[2\]/B  spi_master_0/data_q_RNO_0\[2\]/Y  spi_master_0/data_q_RNO\[2\]/A  spi_master_0/data_q_RNO\[2\]/Y  spi_master_0/data_q\[2\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/data_q\[2\]/CLK  spi_master_0/data_q\[2\]/Q  spi_master_0/data_q_RNO_0\[3\]/B  spi_master_0/data_q_RNO_0\[3\]/Y  spi_master_0/data_q_RNO\[3\]/A  spi_master_0/data_q_RNO\[3\]/Y  spi_master_0/data_q\[3\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/data_q\[3\]/CLK  spi_master_0/data_q\[3\]/Q  spi_master_0/data_q_RNO_0\[4\]/B  spi_master_0/data_q_RNO_0\[4\]/Y  spi_master_0/data_q_RNO\[4\]/A  spi_master_0/data_q_RNO\[4\]/Y  spi_master_0/data_q\[4\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/data_q\[4\]/CLK  spi_master_0/data_q\[4\]/Q  spi_master_0/data_q_RNO_0\[5\]/B  spi_master_0/data_q_RNO_0\[5\]/Y  spi_master_0/data_q_RNO\[5\]/A  spi_master_0/data_q_RNO\[5\]/Y  spi_master_0/data_q\[5\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/data_q\[5\]/CLK  spi_master_0/data_q\[5\]/Q  spi_master_0/data_q_RNO_0\[6\]/B  spi_master_0/data_q_RNO_0\[6\]/Y  spi_master_0/data_q_RNO\[6\]/A  spi_master_0/data_q_RNO\[6\]/Y  spi_master_0/data_q\[6\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/data_q\[6\]/CLK  spi_master_0/data_q\[6\]/Q  spi_master_0/data_q_RNO_0\[7\]/B  spi_master_0/data_q_RNO_0\[7\]/Y  spi_master_0/data_q_RNO\[7\]/A  spi_master_0/data_q_RNO\[7\]/Y  spi_master_0/data_q\[7\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/data_q\[7\]/CLK  spi_master_0/data_q\[7\]/Q  spi_master_0/mosi_q_RNO_0/B  spi_master_0/mosi_q_RNO_0/Y  spi_master_0/mosi_q_RNO/A  spi_master_0/mosi_q_RNO/Y  spi_master_0/mosi_q/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/ctr_q\[2\]/CLK  spi_master_0/ctr_q\[2\]/Q  spi_master_0/ctr_q_RNO_0\[2\]/C  spi_master_0/ctr_q_RNO_0\[2\]/Y  spi_master_0/ctr_q_RNO\[2\]/C  spi_master_0/ctr_q_RNO\[2\]/Y  spi_master_0/ctr_q\[2\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/ctr_q\[0\]/CLK  spi_master_0/ctr_q\[0\]/Q  spi_master_0/ctr_q_RNO\[0\]/C  spi_master_0/ctr_q_RNO\[0\]/Y  spi_master_0/ctr_q\[0\]/D  	(9.4:9.4:9.4) )
+
+    (PATHCONSTRAINT spi_master_0/state_q\[1\]/CLK  spi_master_0/state_q\[1\]/Q  spi_master_0/sck_q_RNISE6G\[1\]/A  spi_master_0/sck_q_RNISE6G\[1\]/Y  SCLK_pad/D  SCLK_pad/PAD  	(10.0:10.0:10.0) )
+
+    (PATHCONSTRAINT spi_master_0/mosi_q/CLK  spi_master_0/mosi_q/Q  MOSI_pad/D  MOSI_pad/PAD  	(10.0:10.0:10.0) )
+
+  )
+)
+)

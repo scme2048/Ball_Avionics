@@ -68,12 +68,12 @@ SIZE="627"
 ENDFILE
 VALUE "<project>\component\work\transceiver_integration\transceiver_integration.cxf,actgen_cxf"
 STATE="utd"
-TIME="1456360598"
+TIME="1456363315"
 SIZE="3228"
 ENDFILE
 VALUE "<project>\component\work\transceiver_integration\transceiver_integration.v,hdl"
 STATE="utd"
-TIME="1456360597"
+TIME="1456363314"
 SIZE="6095"
 PARENT="<project>\component\work\transceiver_integration\transceiver_integration.cxf"
 IS_READONLY="TRUE"
@@ -225,8 +225,8 @@ SIZE="465"
 ENDFILE
 VALUE "<project>\designer\impl1\transceiver_integration.ide_des,ide_des"
 STATE="utd"
-TIME="1456358915"
-SIZE="248"
+TIME="1456363199"
+SIZE="1094"
 ENDFILE
 VALUE "<project>\designer\impl1\write_address_traversal.adb,adb"
 STATE="ood"
@@ -325,8 +325,8 @@ SIZE="3194"
 ENDFILE
 VALUE "<project>\hdl\spi_mode_config.v,hdl"
 STATE="utd"
-TIME="1456360269"
-SIZE="29044"
+TIME="1456362367"
+SIZE="38062"
 ENDFILE
 VALUE "<project>\hdl\test_constants_spi.v,hdl"
 STATE="utd"
@@ -442,6 +442,11 @@ VALUE "<project>\simulation\tb_test_harness_geig_presynth_simulation.log,log"
 STATE="utd"
 TIME="1456213121"
 SIZE="15335"
+ENDFILE
+VALUE "<project>\simulation\tb_tranceiver_integration_presynth_simulation.log,log"
+STATE="utd"
+TIME="1456364501"
+SIZE="2520"
 ENDFILE
 VALUE "<project>\simulation\testbench_timestamp_presynth_simulation.log,log"
 STATE="utd"
@@ -604,6 +609,11 @@ STATE="utd"
 TIME="1456212482"
 SIZE="2494"
 ENDFILE
+VALUE "<project>\stimulus\tb_tranceiver_integration.v,tb_hdl"
+STATE="utd"
+TIME="1456364541"
+SIZE="2121"
+ENDFILE
 VALUE "<project>\stimulus\testbench_timestamp.v,tb_hdl"
 STATE="utd"
 TIME="1452733424"
@@ -691,12 +701,12 @@ SIZE="2220"
 ENDFILE
 VALUE "<project>\synthesis\synwork\layer0.so,so"
 STATE="utd"
-TIME="1456197102"
+TIME="1456362018"
 SIZE="159"
 ENDFILE
 VALUE "<project>\synthesis\transceiver_integration_syn.prj,prj"
 STATE="utd"
-TIME="1456358984"
+TIME="1456362388"
 SIZE="2753"
 ENDFILE
 VALUE "<project>\synthesis\write_address_traversal.edn,syn_edn"
@@ -780,10 +790,14 @@ ENDLIST
 ENDLIST
 LIST "transceiver_integration::work"
 FILE "<project>\component\work\transceiver_integration\transceiver_integration.v,hdl"
+LIST AssociatedStimulus
+VALUE "<project>\stimulus\tb_tranceiver_integration.v,tb_hdl"
+ENDLIST
 LIST ProjectState5.1
 LIST Impl1
 ideSYNTHESIS(<project>\synthesis\transceiver_integration.edn,syn_edn)=StateFailure
 ideSYNTHESIS(<project>\synthesis\transceiver_integration.vm,syn_vm)=StateFailure
+ideSTIMULUS=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -795,6 +809,9 @@ ENDLIST
 ENDLIST
 ENDLIST
 LIST AssociatedStimulus
+LIST transceiver_integration
+VALUE "<project>\stimulus\tb_tranceiver_integration.v,tb_hdl"
+ENDLIST
 LIST clock_div_26MHZ_1MHZ
 VALUE "<project>\stimulus\tb_clk_div_26M_1M.v,tb_hdl"
 ENDLIST
@@ -814,7 +831,7 @@ Type=max
 RunTime=1000ns
 Resolution=1ps
 VsimOpt=
-EntityName=tb_geiger_integration
+EntityName=tb_tranceiver_integration
 TopInstanceName=<top>_0
 DoFileName=
 DoFileName2=wave.do
@@ -867,8 +884,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin\synplify_pro.exe"
-PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
-BATCH=1
+PARAM=""
+BATCH=0
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -876,7 +893,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_v11.6\Model\win32acoem\modelsim.exe"
-PARAM=""
+PARAM=" -l tb_tranceiver_integration_presynth_simulation.log "
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -938,6 +955,7 @@ LIST "transceiver_integration::work"
 LIST Impl1
 ideSYNTHESIS(<project>\synthesis\transceiver_integration.edn,syn_edn)=StateFailure
 ideSYNTHESIS(<project>\synthesis\transceiver_integration.vm,syn_vm)=StateFailure
+ideSTIMULUS=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -959,14 +977,9 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-Reports;Reports;0
-ReportsCurrentItem;Synthesize:transceiver_integration.srr
 SmartDesign;transceiver_integration;0
-HDL;hdl\orbit_control.v;0
-HDL;hdl\test_constants_spi.v;0
-HDL;hdl\read_buffer.v;0
-HDL;hdl\spi_mode_config.v;0
-ACTIVEVIEW;Reports
+HDL;stimulus\tb_tranceiver_integration.v;0
+ACTIVEVIEW;stimulus\tb_tranceiver_integration.v
 ENDLIST
 LIST ModuleSubBlockList
 LIST "CLK_1M::work","smartgen\CLK_1M\CLK_1M.v","TRUE","FALSE"
@@ -1045,10 +1058,10 @@ SUBBLOCK "CLK_26MHZ::work","smartgen\CLK_26MHZ\CLK_26MHZ.v","TRUE","FALSE"
 SUBBLOCK "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
 SUBBLOCK "clock_div_1MHZ_1KHZ::work","hdl\clock_div_1MHZ_1KHZ.v","FALSE","FALSE"
 SUBBLOCK "clock_div_26MHZ_1MHZ::work","hdl\clock_div_26MHZ_1MHZ.v","FALSE","FALSE"
-SUBBLOCK "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
-SUBBLOCK "test_constants_spi::work","hdl\test_constants_spi.v","FALSE","FALSE"
 SUBBLOCK "orbit_control::work","hdl\orbit_control.v","FALSE","FALSE"
+SUBBLOCK "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
 SUBBLOCK "spi_mode_config::work","hdl\spi_mode_config.v","FALSE","FALSE"
+SUBBLOCK "test_constants_spi::work","hdl\test_constants_spi.v","FALSE","FALSE"
 ENDLIST
 LIST "test_constants_spi::work","hdl\test_constants_spi.v","FALSE","FALSE"
 ENDLIST
@@ -1106,6 +1119,9 @@ ENDLIST
 LIST "tb_test_harness_geig::work","stimulus\tb_test_harness_geig.v","FALSE","TRUE"
 SUBBLOCK "test_harness_geiger_stack::work","hdl\test_harness_geiger_stack.v","FALSE","FALSE"
 ENDLIST
+LIST "tb_tranceiver_integration::work","stimulus\tb_tranceiver_integration.v","FALSE","TRUE"
+SUBBLOCK "transceiver_integration::work","component\work\transceiver_integration\transceiver_integration.v","TRUE","FALSE"
+ENDLIST
 LIST "testbench_timestamp::work","stimulus\testbench_timestamp.v","FALSE","TRUE"
 SUBBLOCK "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
 ENDLIST
@@ -1114,6 +1130,9 @@ SUBBLOCK "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
 ENDLIST
 ENDLIST
 LIST ActiveTestBenchList
+LIST "transceiver_integration::work"
+ACTIVETESTBENCH "tb_tranceiver_integration::work","stimulus\tb_tranceiver_integration.v","FALSE"
+ENDLIST
 LIST "spi_test::work"
 ACTIVETESTBENCH "tb_spi_test::work","stimulus\tb_spi_test.v","FALSE"
 ENDLIST

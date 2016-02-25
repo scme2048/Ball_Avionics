@@ -1,0 +1,72 @@
+----------------------------------------------------------------------
+Report for cell transceiver_integration.verilog
+                                          Cell usage:
+                               cell       count     area    count*area
+                          CLK_26MHZ         1       0.0        0.0
+                                GND         1       0.0        0.0
+                              INBUF         3       0.0        0.0
+                             OUTBUF         3       0.0        0.0
+                                VCC         1       0.0        0.0
+                        reset_pulse         1       2.0        2.0
+                         spi_master         1      56.0       56.0
+                    spi_mode_config         1       1.0        1.0
+                            
+                         TOTAL             12                 59.0
+----------------------------------------------------------------------
+Report for cell spi_mode_config.netlist
+     Instance path:  spi_mode_config_0
+                                          Cell usage:
+                               cell       count     area    count*area
+                             DFN1P0         1       1.0        1.0
+                                GND         1       0.0        0.0
+                                VCC         1       0.0        0.0
+                            
+                         TOTAL              3                  1.0
+----------------------------------------------------------------------
+Report for cell spi_master.netlist
+     Instance path:  spi_master_0
+                                          Cell usage:
+                               cell       count     area    count*area
+                                AO1         1       1.0        1.0
+                               AX1E         1       1.0        1.0
+                               AXO6         1       1.0        1.0
+                              AXOI5         1       1.0        1.0
+                               DFN1        13       1.0       13.0
+                             DFN1E1         3       1.0        3.0
+                                GND         1       0.0        0.0
+                                MX2        10       1.0       10.0
+                               MX2B         1       1.0        1.0
+                               NOR2         1       1.0        1.0
+                              NOR2A        13       1.0       13.0
+                              NOR2B         1       1.0        1.0
+                               NOR3         4       1.0        4.0
+                              NOR3A         1       1.0        1.0
+                              NOR3B         2       1.0        2.0
+                              NOR3C         1       1.0        1.0
+                                OR3         1       1.0        1.0
+                                VCC         1       0.0        0.0
+                              XNOR2         1       1.0        1.0
+                            
+                         TOTAL             58                 56.0
+----------------------------------------------------------------------
+Report for cell reset_pulse.netlist
+     Instance path:  reset_pulse_0
+                                          Cell usage:
+                               cell       count     area    count*area
+                                GND         1       0.0        0.0
+                              NOR2B         1       1.0        1.0
+                                OR2         1       1.0        1.0
+                                VCC         1       0.0        0.0
+                            
+                         TOTAL              4                  2.0
+----------------------------------------------------------------------
+Report for cell CLK_26MHZ.netlist
+     Instance path:  CLK_26MHZ_0
+                                          Cell usage:
+                               cell       count     area    count*area
+                                GND         1       0.0        0.0
+                                PLL         1       0.0        0.0
+                             PLLINT         1       0.0        0.0
+                                VCC         1       0.0        0.0
+                            
+                         TOTAL              4                  0.0

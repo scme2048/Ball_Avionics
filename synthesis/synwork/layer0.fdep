@@ -12,9 +12,9 @@
 #CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\hdl\\read_buffer.v":1456360062
 #CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\hdl\\reset_pulse.v":1455155860
 #CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\hdl\\SPI_Master.v":1454653796
-#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\hdl\\spi_mode_config.v":1456360269
+#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\hdl\\spi_mode_config.v":1456362367
 #CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\hdl\\test_constants_spi.v":1456296721
-#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\component\\work\\transceiver_integration\\transceiver_integration.v":1456360597
+#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\component\\work\\transceiver_integration\\transceiver_integration.v":1456362376
 #numinternalfiles:5
 #defaultlanguage:verilog
 0			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\smartgen\CLK_26MHZ\CLK_26MHZ.v" verilog
