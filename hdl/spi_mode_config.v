@@ -804,6 +804,7 @@ module spi_mode_config (
             rst_cntr <= 0;
             begin_pass_b <= 0;
             config_cntr_b <= 0;
+            start_b <= 1'b0;
 //            end
 //            else if (rst_mode) begin
 //            state_b <= 3'h01;
@@ -818,11 +819,12 @@ module spi_mode_config (
             byte_out_b <= byte_out_a;
             mem_enable_b <=1'b0;
             state_b<=PWR_RST;
-            next_b <= 1'b0;
-            ss_b <= 1'b1;
+            next_b <= next_a;
+            ss_b <= ss_a;
             byte_tracker_b <= 1'b0;
             begin_pass_b <= begin_pass_a; 
             config_cntr_b <= config_cntr_a;
+            start_b <= start_a;
             if (state_a == PWR_RST) begin
             if (rst_cntr <= microsec*100)
                 rst_cntr <= rst_cntr + 1;
@@ -846,6 +848,7 @@ module spi_mode_config (
             ss_b <= ss_a;  
             byte_tracker_b <= 1'b0;
             begin_pass_b <= begin_pass_a;
+            start_b <= start_a;
             if (state_a == PWR_RST) begin
                 if (rst_cntr <= microsec*100)
                     rst_cntr <= rst_cntr + 1;
