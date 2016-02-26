@@ -1,0 +1,63 @@
+# Reading C:/Microsemi/Libero_v11.6/Model/tcl/vsim/pref.tcl
+# do run.do
+# INFO: Simulation library presynth already exists
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet presynth presynth 
+# Modifying modelsim.ini
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet proasic3l C:/Microsemi/Libero_v11.6/Designer/lib/modelsim/precompiled/vlog/proasic3l 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 19:19:24 on Feb 25,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/spi_mode_config.v 
+# -- Compiling module spi_mode_config
+# ** Warning: C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/spi_mode_config.v(38): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/spi_mode_config.v(39): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/spi_mode_config.v(40): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/spi_mode_config.v(41): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/spi_mode_config.v(42): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/spi_mode_config.v(43): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/spi_mode_config.v(800): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	spi_mode_config
+# End time: 19:19:24 on Feb 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 7
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 19:19:25 on Feb 25,2016
+# vlog -reportprogress 300 "+incdir+C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus" -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/spi_mode_config_tb.v 
+# -- Compiling module spi_mode_config_tb
+# 
+# Top level modules:
+# 	spi_mode_config_tb
+# End time: 19:19:25 on Feb 25,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -gui -do "do run.do" -l spi_mode_config_tb_presynth_simulation.log 
+# Start time: 19:19:25 on Feb 25,2016
+# //  ModelSim Microsemi 10.3c Jul 19 2014 
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading presynth.spi_mode_config_tb
+# Loading presynth.spi_mode_config
+run -all
+add wave -r /*
+restart
+run -all
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# End time: 19:28:19 on Feb 25,2016, Elapsed time: 0:08:54
+# Errors: 2, Warnings: 1

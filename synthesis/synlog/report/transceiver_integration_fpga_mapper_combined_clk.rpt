@@ -4,14 +4,14 @@
 
 Clock optimization not enabled
 0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
-1 gated/generated clock tree(s) driving 17 clock pin(s) of sequential element(s)
-0 instances converted, 17 sequential instances remain driven by gated/generated clocks
+1 gated/generated clock tree(s) driving 61 clock pin(s) of sequential element(s)
+0 instances converted, 61 sequential instances remain driven by gated/generated clocks
 
-===================================================================================================== Gated/Generated Clocks =====================================================================================================
-Clock Tree ID     Driving Element      Drive Element Type     Fanout     Sample Instance            Explanation                                                                                                                   
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@K:CKID0001       CLK_26MHZ_0.Core     PLL                    17         spi_mode_config_0.ss_b     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
-==================================================================================================================================================================================================================================
+=========================================================================================================== Gated/Generated Clocks ===========================================================================================================
+Clock Tree ID     Driving Element      Drive Element Type     Fanout     Sample Instance                        Explanation                                                                                                                   
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       CLK_26MHZ_0.Core     PLL                    61         spi_mode_config_0.config_cntr_b[6]     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+==============================================================================================================================================================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]

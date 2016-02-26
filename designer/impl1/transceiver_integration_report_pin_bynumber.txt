@@ -1,5 +1,5 @@
 *****************************************************************
-Pin Report - Date: Wed Feb 24 18:20:01 2016 UNCOMPLETED LAYOUT
+Pin Report - Date: Thu Feb 25 18:44:57 2016 Pinchecksum: NOT-AVAILABLE
 Product: Designer
 Release: v11.6
 Version: 11.6.0.34
@@ -137,8 +137,8 @@ D7                     GAB0/IO02RSB0      Special
 D8                     IO16RSB0           Unassigned
 D9                     IO22RSB0           Unassigned
 D10     SS             IO28RSB0           Fixed        LVCMOS33  12                 High  None           No    5                 No           No
-D11                    IO35RSB0           Unassigned
-D12                    IO45RSB0           Unassigned
+D11     ds2            IO35RSB0           Fixed        LVCMOS33  12                 High  None           No    5                 No           No
+D12     ds7            IO45RSB0           Fixed        LVCMOS33  12                 High  None           No    5                 No           No
 D13                    IO50RSB0           Unassigned
 D14                    IO55RSB0           Unassigned
 D15                    IO61RSB0           Unassigned
@@ -159,8 +159,8 @@ E7                     GAB1/IO03RSB0      Special
 E8                     IO17RSB0           Unassigned
 E9                     IO21RSB0           Unassigned
 E10                    IO27RSB0           Unassigned
-E11                    IO34RSB0           Unassigned
-E12                    IO44RSB0           Unassigned
+E11     ds1            IO34RSB0           Fixed        LVCMOS33  12                 High  None           No    5                 No           No
+E12     ds6            IO44RSB0           Fixed        LVCMOS33  12                 High  None           No    5                 No           No
 E13                    IO51RSB0           Unassigned
 E14                    IO57RSB0           Unassigned
 E15                    GBC1/IO73RSB0      Special
@@ -181,8 +181,8 @@ F7                     IO11RSB0           Unassigned
 F8                     GAC0/IO04RSB0      Special
 F9                     GAC1/IO05RSB0      Special
 F10                    IO25RSB0           Unassigned
-F11                    IO36RSB0           Unassigned
-F12                    IO42RSB0           Unassigned
+F11     ds3            IO36RSB0           Fixed        LVCMOS33  12                 High  None           No    5                 No           No
+F12     ds5            IO42RSB0           Fixed        LVCMOS33  12                 High  None           No    5                 No           No
 F13                    IO49RSB0           Unassigned
 F14                    IO56RSB0           Unassigned
 F15                    GBC0/IO72RSB0      Special
@@ -203,7 +203,7 @@ G7                     IO223NDB3          Unassigned
 G8                     GNDQ               Reserved
 G9                     IO23RSB0           Unassigned
 G10     SCLK           IO29RSB0           Fixed        LVCMOS33  12                 High  None           No    5                 No           No
-G11                    IO33RSB0           Unassigned
+G11     ds0            IO33RSB0           Fixed        LVCMOS33  12                 High  None           No    5                 No           No
 G12                    IO46RSB0           Unassigned
 G13                    IO52RSB0           Unassigned
 G14                    IO60RSB0           Unassigned
@@ -225,7 +225,7 @@ H7                     IO221PDB3          Unassigned
 H8                     VMV0               Reserved
 H9                     VCCIB0             Reserved
 H10                    VCCIB0             Reserved
-H11                    IO38RSB0           Unassigned
+H11     ds4            IO38RSB0           Fixed        LVCMOS33  12                 High  None           No    5                 No           No
 H12                    IO47RSB0           Unassigned
 H13                    VCCIB0             Reserved
 H14                    VCCIB0             Reserved

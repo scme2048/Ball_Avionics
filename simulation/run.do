@@ -10,9 +10,9 @@ if {[file exists presynth/_info]} {
 vmap presynth presynth
 vmap proasic3l "C:/Microsemi/Libero_v11.6/Designer/lib/modelsim/precompiled/vlog/proasic3l"
 
-vlog  -work presynth "${PROJECT_DIR}/hdl/timestamp.v"
-vlog "+incdir+${PROJECT_DIR}/stimulus"  -work presynth "${PROJECT_DIR}/stimulus/timestamp_testbench.v"
+vlog  -work presynth "${PROJECT_DIR}/hdl/spi_mode_config.v"
+vlog "+incdir+${PROJECT_DIR}/stimulus"  -work presynth "${PROJECT_DIR}/stimulus/spi_mode_config_tb.v"
 
-vsim -L proasic3l -L presynth  -t 1ps presynth.timestamp_testbench
-add wave /timestamp_testbench/*
+vsim -L proasic3l -L presynth  -t 1ps presynth.spi_mode_config_tb
+add wave /spi_mode_config_tb/*
 run 1000ns

@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Wed Feb 24 18:21:54 2016
+// Created by SmartDesign Thu Feb 25 17:58:54 2016
 // Version: v11.6 11.6.0.34
 //////////////////////////////////////////////////////////////////////
 
@@ -14,7 +14,15 @@ module transceiver_integration(
     // Outputs
     MOSI,
     SCLK,
-    SS
+    SS,
+    ds0,
+    ds1,
+    ds2,
+    ds3,
+    ds4,
+    ds5,
+    ds6,
+    ds7
 );
 
 //--------------------------------------------------------------------
@@ -29,6 +37,14 @@ input  MISO;
 output MOSI;
 output SCLK;
 output SS;
+output ds0;
+output ds1;
+output ds2;
+output ds3;
+output ds4;
+output ds5;
+output ds6;
+output ds7;
 //--------------------------------------------------------------------
 // Nets
 //--------------------------------------------------------------------
@@ -37,6 +53,14 @@ wire          CLK_26MHZ_0_GLA;
 wire          CLK_48MHZ;
 wire          clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT;
 wire          clock_div_26MHZ_1MHZ_0_CLK_1MHZ_OUT;
+wire          ds0_net_0;
+wire          ds1_net_0;
+wire          ds2_net_0;
+wire          ds3_net_0;
+wire          ds4_net_0;
+wire          ds5_net_0;
+wire          ds6_net_0;
+wire          ds7_net_0;
 wire          MISO;
 wire          MOSI_net_0;
 wire          orbit_control_0_tx_enable;
@@ -56,6 +80,14 @@ wire   [12:0] test_constants_spi_0_ROW_WRITE;
 wire          SS_net_1;
 wire          MOSI_net_1;
 wire          SCLK_net_1;
+wire          ds0_net_1;
+wire          ds1_net_1;
+wire          ds2_net_1;
+wire          ds3_net_1;
+wire          ds4_net_1;
+wire          ds5_net_1;
+wire          ds6_net_1;
+wire          ds7_net_1;
 //--------------------------------------------------------------------
 // TiedOff Nets
 //--------------------------------------------------------------------
@@ -73,6 +105,22 @@ assign MOSI_net_1 = MOSI_net_0;
 assign MOSI       = MOSI_net_1;
 assign SCLK_net_1 = SCLK_net_0;
 assign SCLK       = SCLK_net_1;
+assign ds0_net_1  = ds0_net_0;
+assign ds0        = ds0_net_1;
+assign ds1_net_1  = ds1_net_0;
+assign ds1        = ds1_net_1;
+assign ds2_net_1  = ds2_net_0;
+assign ds2        = ds2_net_1;
+assign ds3_net_1  = ds3_net_0;
+assign ds3        = ds3_net_1;
+assign ds4_net_1  = ds4_net_0;
+assign ds4        = ds4_net_1;
+assign ds5_net_1  = ds5_net_0;
+assign ds5        = ds5_net_1;
+assign ds6_net_1  = ds6_net_0;
+assign ds6        = ds6_net_1;
+assign ds7_net_1  = ds7_net_0;
+assign ds7        = ds7_net_1;
 //--------------------------------------------------------------------
 // Component instances
 //--------------------------------------------------------------------
@@ -135,6 +183,21 @@ reset_pulse reset_pulse_0(
         // Outputs
         .RESET         ( reset_pulse_0_RESET ),
         .CLK_OUT_48MHZ ( reset_pulse_0_CLK_OUT_48MHZ ) 
+        );
+
+//--------spi_data_out
+spi_data_out spi_data_out_0(
+        // Inputs
+        .data_from_spi ( spi_master_0_data_out ),
+        // Outputs
+        .ds0           ( ds0_net_0 ),
+        .ds1           ( ds1_net_0 ),
+        .ds2           ( ds2_net_0 ),
+        .ds3           ( ds3_net_0 ),
+        .ds4           ( ds4_net_0 ),
+        .ds5           ( ds5_net_0 ),
+        .ds6           ( ds6_net_0 ),
+        .ds7           ( ds7_net_0 ) 
         );
 
 //--------spi_master

@@ -53,7 +53,7 @@ r1
 R3
 n@c@l@k_1@m@h@z
 vCLK_26MHZ
-Z5 !s110 1456364559
+Z5 !s110 1456451543
 !i10b 1
 !s100 @cTHA:JZe?Xdfz>Wg0IJU0
 ISdkJJb_ZJA;:0HF]Qk[052
@@ -67,7 +67,7 @@ R2
 r1
 !s85 0
 31
-!s108 1456364559.616000
+!s108 1456451543.565000
 !s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/smartgen/CLK_26MHZ/CLK_26MHZ.v|
 !s90 -reportprogress|300|-work|presynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/smartgen/CLK_26MHZ/CLK_26MHZ.v|
 !s101 -O0
@@ -156,7 +156,7 @@ R2
 r1
 !s85 0
 31
-!s108 1456364559.710000
+!s108 1456451543.706000
 !s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/clock_div_1MHZ_10HZ.v|
 !s90 -reportprogress|300|-work|presynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/clock_div_1MHZ_10HZ.v|
 !s101 -O0
@@ -200,7 +200,7 @@ R2
 r1
 !s85 0
 31
-!s108 1456364559.804000
+!s108 1456451543.800000
 !s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/clock_div_26MHZ_1MHZ.v|
 !s90 -reportprogress|300|-work|presynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/clock_div_26MHZ_1MHZ.v|
 !s101 -O0
@@ -328,7 +328,7 @@ R2
 r1
 !s85 0
 31
-!s108 1456364559.882000
+!s108 1456451543.878000
 !s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/orbit_control.v|
 !s90 -reportprogress|300|-work|presynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/orbit_control.v|
 !s101 -O0
@@ -356,7 +356,7 @@ r1
 !i113 1
 R3
 vread_buffer
-R5
+Z16 !s110 1456451544
 !i10b 1
 !s100 =geNM6fXml=0Z8SgJ7C?H2
 II_N6h7hdX2NkAnW`_Od1Y0
@@ -370,14 +370,14 @@ R2
 r1
 !s85 0
 31
-!s108 1456364559.976000
+!s108 1456451543.987000
 !s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/read_buffer.v|
 !s90 -reportprogress|300|-work|presynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/read_buffer.v|
 !s101 -O0
 !i113 1
 R3
 vreset_pulse
-Z16 !s110 1456364560
+R16
 !i10b 1
 !s100 6ZRE7<mk_3D2o@7DL?BS>3
 IH=gFeO8><cl786_Zh:8Ke3
@@ -391,7 +391,7 @@ R2
 r1
 !s85 0
 31
-!s108 1456364560.069000
+!s108 1456451544.097000
 !s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/reset_pulse.v|
 !s90 -reportprogress|300|-work|presynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/reset_pulse.v|
 !s101 -O0
@@ -418,6 +418,27 @@ r1
 !s101 -O0
 !i113 1
 R3
+vspi_data_out
+R16
+!i10b 1
+!s100 h;B;F]FzRDI2C_4la`JeL1
+Im5mWc2ZH`TEB3;nVE5VY?3
+R1
+R0
+w1456447519
+8C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/spi_data_out.v
+FC:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/spi_data_out.v
+R14
+R2
+r1
+!s85 0
+31
+!s108 1456451544.206000
+!s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/spi_data_out.v|
+!s90 -reportprogress|300|-work|presynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/spi_data_out.v|
+!s101 -O0
+!i113 1
+R3
 vspi_master
 R16
 !i10b 1
@@ -433,7 +454,7 @@ R2
 r1
 !s85 0
 31
-!s108 1456364560.460000
+!s108 1456451544.315000
 !s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/SPI_Master.v|
 !s90 -reportprogress|300|-work|presynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/SPI_Master.v|
 !s101 -O0
@@ -462,13 +483,13 @@ r1
 R3
 R7
 vspi_mode_config
-R16
+!s110 1456453164
 !i10b 1
-!s100 H:W`=TEi2S1OX7G[59zZj0
-InEOa<Z=4f>GzZ`VB5l@bC3
+!s100 AZbFAdG@E5eiUi43m=eVI3
+I74k8iZH;=X8KJ2=<cHKf>2
 R1
 R0
-w1456362367
+w1456448326
 8C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/spi_mode_config.v
 FC:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/spi_mode_config.v
 R13
@@ -476,12 +497,34 @@ R2
 r1
 !s85 0
 31
-!s108 1456364560.569000
+!s108 1456453164.888000
 !s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/spi_mode_config.v|
 !s90 -reportprogress|300|-work|presynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/spi_mode_config.v|
 !s101 -O0
 !i113 1
 R3
+vspi_mode_config_tb
+!s110 1456453165
+!i10b 1
+!s100 <D?H;4E8fe81C?koUhY:l1
+IbP3_oD`T5U[@5[o]2dc>50
+R1
+R0
+w1456446861
+8C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/spi_mode_config_tb.v
+FC:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/spi_mode_config_tb.v
+R6
+R2
+r1
+!s85 0
+31
+!s108 1456453165.201000
+!s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/spi_mode_config_tb.v|
+!s90 -reportprogress|300|+incdir+C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus|-work|presynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/spi_mode_config_tb.v|
+!s101 -O0
+!i113 1
+R3
+R7
 vspi_test
 R10
 !i10b 1
@@ -748,7 +791,7 @@ r1
 R3
 R7
 vtb_tranceiver_integration
-Z17 !s110 1456364561
+!s110 1456451545
 !i10b 1
 !s100 M7467WTIT2nhAXF_1ViOX3
 I4g??<_b7RQ4P_nmglEIFR1
@@ -762,7 +805,7 @@ R2
 r1
 !s85 0
 31
-!s108 1456364561.163000
+!s108 1456451545.084000
 !s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/tb_tranceiver_integration.v|
 !s90 -reportprogress|300|+incdir+C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus|-work|presynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/tb_tranceiver_integration.v|
 !s101 -O0
@@ -784,7 +827,7 @@ R2
 r1
 !s85 0
 31
-!s108 1456364560.788000
+!s108 1456451544.675000
 !s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/test_constants_spi.v|
 !s90 -reportprogress|300|-work|presynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/test_constants_spi.v|
 !s101 -O0
@@ -834,7 +877,7 @@ r1
 R3
 R7
 vtimestamp
-Z18 !s110 1456370180
+Z17 !s110 1456370180
 !i10b 1
 !s100 g=869_M_0JQb<kS;^CZac1
 IPg9;0BObRHHmU4[7Jojln2
@@ -855,7 +898,7 @@ r1
 !i113 1
 R3
 vtimestamp_testbench
-R18
+R17
 !i10b 1
 !s100 <[aeKK]cjFAHE`<f;kJnG2
 ISNFjNMbzZ3QNbTmno6GFZ0
@@ -877,13 +920,13 @@ r1
 R3
 R7
 vtransceiver_integration
-R17
+R16
 !i10b 1
-!s100 Uh<=E8]Q_biDZfAROWzMU1
-Ihn^A1KF`Gk[n=8cgIZkR52
+!s100 ]Iodbodo<PW^5DEj:nL?G0
+ITLY:GjM<HV=3l9^lzDVzS3
 R1
 R0
-w1456363314
+w1456448334
 8C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/component/work/transceiver_integration/transceiver_integration.v
 FC:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/component/work/transceiver_integration/transceiver_integration.v
 L0 9
@@ -891,7 +934,7 @@ R2
 r1
 !s85 0
 31
-!s108 1456364561.007000
+!s108 1456451544.925000
 !s107 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/component/work/transceiver_integration/transceiver_integration.v|
 !s90 -reportprogress|300|-work|presynth|C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/component/work/transceiver_integration/transceiver_integration.v|
 !s101 -O0

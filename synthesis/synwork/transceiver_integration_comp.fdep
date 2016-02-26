@@ -1,4 +1,4 @@
-#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\synthesis\\synwork\\transceiver_integration_comp.srs|-top|transceiver_integration|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-I|C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\synthesis\\|-I|C:\\Microsemi\\Libero_v11.6\\Synopsys\\fpga_J-2015.03M-3\\lib|-v2001|-devicelib|C:\\Microsemi\\Libero_v11.6\\Synopsys\\fpga_J-2015.03M-3\\lib\\proasic\\proasic3l.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\synthesis\\synwork\\transceiver_integration_comp.srs|-top|transceiver_integration|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-I|C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\synthesis\\|-I|C:\\Microsemi\\Libero_v11.6\\Synopsys\\fpga_J-2015.03M-3\\lib|-v2001|-devicelib|C:\\Microsemi\\Libero_v11.6\\Synopsys\\fpga_J-2015.03M-3\\lib\\proasic\\proasic3l.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
 #CUR:"C:\\Microsemi\\Libero_v11.6\\Synopsys\\fpga_J-2015.03M-3\\bin64\\c_ver.exe":1431625188
 #CUR:"C:\\Microsemi\\Libero_v11.6\\Synopsys\\fpga_J-2015.03M-3\\lib\\proasic\\proasic3l.v":1431615982
 #CUR:"C:\\Microsemi\\Libero_v11.6\\Synopsys\\fpga_J-2015.03M-3\\lib\\vlog\\hypermods.v":1431624842
@@ -11,20 +11,22 @@
 #CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\hdl\\orbit_control.v":1456360026
 #CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\hdl\\read_buffer.v":1456360062
 #CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\hdl\\reset_pulse.v":1455155860
+#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\hdl\\spi_data_out.v":1456447519
 #CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\hdl\\SPI_Master.v":1454653796
-#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\hdl\\spi_mode_config.v":1456362367
+#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\hdl\\spi_mode_config.v":1456448326
 #CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\hdl\\test_constants_spi.v":1456296721
-#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\component\\work\\transceiver_integration\\transceiver_integration.v":1456362376
+#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\component\\work\\transceiver_integration\\transceiver_integration.v":1456448334
 0			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\smartgen\CLK_26MHZ\CLK_26MHZ.v" verilog
 1			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\clock_div_1MHZ_10HZ.v" verilog
 2			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\clock_div_26MHZ_1MHZ.v" verilog
 3			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\orbit_control.v" verilog
 4			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\read_buffer.v" verilog
 5			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\reset_pulse.v" verilog
-6			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\SPI_Master.v" verilog
-7			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v" verilog
-8			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\test_constants_spi.v" verilog
-9			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\component\work\transceiver_integration\transceiver_integration.v" verilog
+6			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_data_out.v" verilog
+7			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\SPI_Master.v" verilog
+8			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v" verilog
+9			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\test_constants_spi.v" verilog
+10			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\component\work\transceiver_integration\transceiver_integration.v" verilog
 #Dependency Lists(Uses List)
 0 -1
 1 -1
@@ -35,23 +37,26 @@
 6 -1
 7 -1
 8 -1
-9 8 7 6 5 4 3 2 1 0
-#Dependency Lists(Users Of)
-0 9
-1 9
-2 9
-3 9
-4 9
-5 9
-6 9
-7 9
-8 9
 9 -1
+10 9 8 7 6 5 4 3 2 1 0
+#Dependency Lists(Users Of)
+0 10
+1 10
+2 10
+3 10
+4 10
+5 10
+6 10
+7 10
+8 10
+9 10
+10 -1
 #Design Unit to File Association
-module work transceiver_integration 9
-module work test_constants_spi 8
-module work spi_mode_config 7
-module work spi_master 6
+module work transceiver_integration 10
+module work test_constants_spi 9
+module work spi_mode_config 8
+module work spi_master 7
+module work spi_data_out 6
 module work reset_pulse 5
 module work read_buffer 4
 module work orbit_control 3

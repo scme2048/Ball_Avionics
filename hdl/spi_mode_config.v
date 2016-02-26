@@ -69,7 +69,7 @@ module spi_mode_config (
     localparam chip_TXFIFO_UNDERFLOW = 3'b111;
 
     reg [6:0] config_cntr_a, config_cntr_b;
-    reg [10:0] rst_cntr;
+    reg [10:0] rst_cntr_b;
     reg [7:0] byte_out_a;
     reg mem_enable_a,ss_a,begin_pass_a;
     reg [2:0] state_a;
@@ -138,14 +138,14 @@ module spi_mode_config (
             PWR_RST: begin
                 ss_a = 1'b1;
                 start_a = 1'b0;
-                if (rst_cntr <= microsec)  
+                if (rst_cntr_b <= microsec)  
                     ss_a = 1'b0;
-                else if ((rst_cntr > microsec)&&(rst_cntr <= 42*microsec))
+                else if ((rst_cntr_b > microsec)&&(rst_cntr_b <= 42*microsec))
                     ss_a = 1'b1;
-                else if (rst_cntr > 42*microsec) begin
+                else if (rst_cntr_b > 42*microsec) begin
                     ss_a = 1'b0;
                     state_a = RST;
-                    rst_cntr = 11'b0;
+                    
                 end
                 //reset_mode = 1'b1;
             end
@@ -801,7 +801,7 @@ module spi_mode_config (
             byte_tracker_b <= 1'b0;
             next_b <= 1'b0;
             ss_b <= 1'b1;
-            rst_cntr <= 0;
+            rst_cntr_b <= 0;
             begin_pass_b <= 0;
             config_cntr_b <= 1;
             start_b <= 1'b0;
@@ -827,10 +827,10 @@ module spi_mode_config (
             start_b <= start_a;
             byte_tracker_b <= byte_tracker_a;
             if (state_a == PWR_RST) begin
-                if (rst_cntr <= microsec*100)
-                    rst_cntr <= rst_cntr + 1;
-                else rst_cntr <= 0;
-                  //  rst_cntr <= 0;
+                if (rst_cntr_b <= microsec*100)
+                    rst_cntr_b <= rst_cntr_b + 1;
+                else rst_cntr_b <= 0;
+                  //  rst_cntr_b <= 0;
             end
             
             //if (state_a == CONFIG_MODE) begin
@@ -851,9 +851,9 @@ module spi_mode_config (
             start_b <= start_a;
             byte_tracker_b <= byte_tracker_a;
             if (state_a == PWR_RST) begin
-                if (rst_cntr <= microsec*100)
-                    rst_cntr <= rst_cntr + 1;
-                else rst_cntr <= 0;
+                if (rst_cntr_b <= microsec*100)
+                    rst_cntr_b <= rst_cntr_b + 1;
+                else rst_cntr_b <= 0;
                    // rst_cntr <= 0;
             end
 

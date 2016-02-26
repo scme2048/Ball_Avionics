@@ -17,6 +17,7 @@ Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated document
 @I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\orbit_control.v"
 @I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\read_buffer.v"
 @I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\reset_pulse.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_data_out.v"
 @I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\SPI_Master.v"
 @I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v"
 @I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\test_constants_spi.v"
@@ -45,67 +46,30 @@ Selecting top level module transceiver_integration
 @A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\read_buffer.v":66:0:66:5|Feedback mux created for signal buffer_a[15:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\reset_pulse.v":21:7:21:17|Synthesizing module reset_pulse
 
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_data_out.v":21:7:21:18|Synthesizing module spi_data_out
+
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\SPI_Master.v":1:7:1:16|Synthesizing module spi_master
 
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":22:7:22:21|Synthesizing module spi_mode_config
 
-@W: CG133 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":83:16:83:22|No assignment to start_b
-@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Optimizing register bit begin_pass_b to a constant 0
-@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Optimizing register bit byte_tracker_b to a constant 0
-@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Optimizing register bit rst_cntr[0] to a constant 0
-@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Optimizing register bit rst_cntr[1] to a constant 0
-@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Optimizing register bit rst_cntr[2] to a constant 0
-@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Optimizing register bit rst_cntr[3] to a constant 0
-@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Optimizing register bit rst_cntr[4] to a constant 0
-@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Optimizing register bit rst_cntr[5] to a constant 0
-@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Optimizing register bit rst_cntr[6] to a constant 0
-@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Optimizing register bit rst_cntr[7] to a constant 0
-@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Optimizing register bit rst_cntr[8] to a constant 0
-@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Optimizing register bit rst_cntr[9] to a constant 0
-@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Optimizing register bit rst_cntr[10] to a constant 0
-@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Pruning register rst_cntr[10:0] 
-
-@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Pruning register begin_pass_b 
-
-@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Pruning register byte_tracker_b 
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":795:4:795:9|Optimizing register bit begin_pass_b to a constant 0
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":795:4:795:9|Pruning register begin_pass_b 
 
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\test_constants_spi.v":21:7:21:24|Synthesizing module test_constants_spi
 
 @N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\component\work\transceiver_integration\transceiver_integration.v":9:7:9:29|Synthesizing module transceiver_integration
 
-@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Optimizing register bit next_b to a constant 0
-@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Optimizing register bit mem_enable_b to a constant 0
-@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Optimizing register bit config_cntr_b[0] to a constant 0
-@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Optimizing register bit byte_out_b[6] to a constant 0
-@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Pruning register bit 6 of byte_out_b[7:0] 
-
-@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Pruning register bit 0 of config_cntr_b[6:0] 
-
-@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Pruning register mem_enable_b 
-
-@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Pruning register next_b 
-
-@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Pruning register config_cntr_b[6:1] 
-
-@N: CL201 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Trying to extract state machine for register state_b
+@N: CL201 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":795:4:795:9|Trying to extract state machine for register state_b
 Extracted state machine for register state_b
-State machine has 2 reachable states with original encodings of:
+State machine has 6 reachable states with original encodings of:
+   000
    001
    010
-@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Optimizing register bit byte_out_b[7] to a constant 0
-@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Pruning register bit 5 of byte_out_b[5:0] 
+   011
+   100
+   101
+@W: CL246 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":23:16:23:27|Input port bits 3 to 0 of SLAVE_OUTPUT[7:0] are unused
 
-@W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Pruning register bits 3 to 1 of byte_out_b[5:0] 
-
-@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Pruning register byte_out_b[7] 
-
-@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Optimizing register bit byte_out_b[0] to a constant 0
-@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":794:4:794:9|Pruning register byte_out_b[0] 
-
-@W: CL246 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":23:16:23:27|Input port bits 6 to 0 of SLAVE_OUTPUT[7:0] are unused
-
-@A: CL153 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":83:16:83:22|*Unassigned bits of start_b are referenced and tied to 0 -- simulation mismatch possible.
-@W: CL159 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":24:16:24:28|Input DATA_FROM_MEM is unused
 @N: CL201 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\SPI_Master.v":78:2:78:7|Trying to extract state machine for register state_q
 Extracted state machine for register state_q
 State machine has 3 reachable states with original encodings of:
@@ -122,26 +86,26 @@ State machine has 3 reachable states with original encodings of:
 @W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\orbit_control.v":32:0:32:5|Pruning register bit 13 of cntr[13:0] 
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 75MB peak: 77MB)
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 79MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Feb 24 18:06:21 2016
+# Thu Feb 25 17:59:01 2016
 
 ###########################################################]
 Synopsys Netlist Linker, version comp201503p1, Build 094R, built May 14 2015
 @N|Running in 64-bit mode
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Feb 24 18:06:24 2016
+# Thu Feb 25 17:59:01 2016
 
 ###########################################################]
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Wed Feb 24 18:06:24 2016
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Feb 25 17:59:01 2016
 
 ###########################################################]

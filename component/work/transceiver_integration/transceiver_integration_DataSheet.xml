@@ -12,13 +12,14 @@
     <project-description>
     </project-description>
     <location>C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/component/work/transceiver_integration</location>
-    <state>GENERATED ( Wed Feb 24 18:21:54 2016 )</state>
+    <state>GENERATED ( Thu Feb 25 17:58:55 2016 )</state>
     <swide-toolchain>SoftConsole workspace has not been generated</swide-toolchain>
   </project-settings>
   <site-map>
   </site-map>
   <fileset>
     <name>HDL File(s)</name>
+    <file>C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\component\work\geiger_integration\geiger_integration.v</file>
     <file>C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\component\work\transceiver_integration\transceiver_integration.v</file>
     <file>C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\clock_div_1MHZ_100KHZ.v</file>
     <file>C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\clock_div_1MHZ_10HZ.v</file>
@@ -36,6 +37,7 @@
     <file>C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\read_buffer.v</file>
     <file>C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\reset_pulse.v</file>
     <file>C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v</file>
+    <file>C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_data_out.v</file>
     <file>C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\SPI_Master.v</file>
     <file>C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v</file>
     <file>C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\test_constants_spi.v</file>
@@ -49,25 +51,37 @@
     <file>C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\smartgen\CLK_6_5MHZ\CLK_6_5MHZ.v</file>
   </fileset>
   <io>
-    <port-name>MOSI</port-name>
+    <port-name>SCLK</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVCMOS33</io-standard>
   </io>
   <io>
-    <port-name>MISO</port-name>
+    <port-name>ds7</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
+  <io>
+    <port-name>ds1</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
+  <io>
+    <port-name>ds4</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
+  <io>
+    <port-name>CLK_48MHZ</port-name>
     <direction>IN</direction>
     <pin-number>-</pin-number>
     <io-standard>LVCMOS33</io-standard>
   </io>
   <io>
-    <port-name>BUF2_PBRST_T9</port-name>
-    <direction>IN</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVCMOS33</io-standard>
-  </io>
-  <io>
-    <port-name>SCLK</port-name>
+    <port-name>ds2</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVCMOS33</io-standard>
@@ -79,8 +93,44 @@
     <io-standard>LVCMOS33</io-standard>
   </io>
   <io>
-    <port-name>CLK_48MHZ</port-name>
+    <port-name>ds5</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
+  <io>
+    <port-name>MOSI</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
+  <io>
+    <port-name>ds6</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
+  <io>
+    <port-name>BUF2_PBRST_T9</port-name>
     <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
+  <io>
+    <port-name>ds0</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
+  <io>
+    <port-name>MISO</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
+  <io>
+    <port-name>ds3</port-name>
+    <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVCMOS33</io-standard>
   </io>
@@ -119,6 +169,12 @@
     <core-exttype>reset_pulse</core-exttype>
     <core-location>hdl\reset_pulse.v</core-location>
     <core-name>reset_pulse_0</core-name>
+  </core>
+  <core type="HdlModule">
+    <core-type>HdlModule</core-type>
+    <core-exttype>spi_data_out</core-exttype>
+    <core-location>hdl\spi_data_out.v</core-location>
+    <core-name>spi_data_out_0</core-name>
   </core>
   <core type="HdlModule">
     <core-type>HdlModule</core-type>

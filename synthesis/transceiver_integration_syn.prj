@@ -9,6 +9,7 @@ add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/B
 add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/orbit_control.v"
 add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/read_buffer.v"
 add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/reset_pulse.v"
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/spi_data_out.v"
 add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/SPI_Master.v"
 add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/spi_mode_config.v"
 add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/test_constants_spi.v"
