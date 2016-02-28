@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="datasheet.xsl"?>
+<datasheet>
+  <header>master_mode</header>
+  <project-settings>
+    <fam>ProASIC3L</fam>
+    <die>A3P1000L</die>
+    <package>484 FBGA</package>
+    <speed-grade>-1</speed-grade>
+    <voltage>1.2</voltage>
+    <hdl-type>Verilog</hdl-type>
+    <project-description>
+    </project-description>
+    <location>F:/FPGA/Microsemi/First Try/SPI/component/work/master_mode</location>
+    <state>GENERATED ( Sun Feb 28 12:07:04 2016 )</state>
+    <swide-toolchain>SoftConsole workspace has not been generated</swide-toolchain>
+  </project-settings>
+  <site-map>
+  </site-map>
+  <fileset>
+    <name>HDL File(s)</name>
+    <file>F:\FPGA\Microsemi\First Try\SPI\component\work\master_mode\master_mode.v</file>
+    <file>F:\FPGA\Microsemi\First Try\SPI\hdl\dummy_mem.v</file>
+    <file>F:\FPGA\Microsemi\First Try\SPI\hdl\orbit_control.v</file>
+    <file>F:\FPGA\Microsemi\First Try\SPI\hdl\SPI_Master.v</file>
+    <file>F:\FPGA\Microsemi\First Try\SPI\hdl\spi_master2.v</file>
+    <file>F:\FPGA\Microsemi\First Try\SPI\hdl\spi_mode_config.v</file>
+  </fileset>
+  <io>
+    <port-name>MOSI</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
+  <io>
+    <port-name>RST</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
+  <io>
+    <port-name>MISO</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
+  <io>
+    <port-name>CLK_10</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
+  <io>
+    <port-name>SS</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
+  <io>
+    <port-name>SCK</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
+  <io>
+    <port-name>CLK_26</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
+  <core type="HdlModule">
+    <core-type>HdlModule</core-type>
+    <core-exttype>dummy_mem</core-exttype>
+    <core-location>hdl\dummy_mem.v</core-location>
+    <core-name>dummy_mem_0</core-name>
+  </core>
+  <core type="HdlModule">
+    <core-type>HdlModule</core-type>
+    <core-exttype>orbit_control</core-exttype>
+    <core-location>hdl\orbit_control.v</core-location>
+    <core-name>orbit_control_0</core-name>
+  </core>
+  <core type="HdlModule">
+    <core-type>HdlModule</core-type>
+    <core-exttype>spi_master</core-exttype>
+    <core-location>hdl\SPI_Master.v</core-location>
+    <core-name>spi_master_0</core-name>
+  </core>
+  <core type="HdlModule">
+    <core-type>HdlModule</core-type>
+    <core-exttype>spi_mode_config</core-exttype>
+    <core-location>hdl\spi_mode_config.v</core-location>
+    <core-name>spi_mode_config_0</core-name>
+  </core>
+  <memorysystem>
+    <title>Memory Map for master_mode</title>
+    <description>The project does not contain any subsystems.</description>
+  </memorysystem>
+</datasheet>

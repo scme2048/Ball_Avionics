@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by Microsemi SmartDesign Wed Feb 24 18:53:34 2016
+// Created by Microsemi SmartDesign Fri Feb 26 10:51:06 2016
 // Testbench Template
 // This is a basic testbench that instantiates your design with basic 
 // clock and reset pins connected.  If your design has special
@@ -10,7 +10,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // Company: <Name>
 //
-// File: spi_mode_config_tb.v
+// File: dummy_mem_tb.v
 // File history:
 //      <Revision number>: <Date>: <Comments>
 //      <Revision number>: <Date>: <Comments>
@@ -27,31 +27,19 @@
 
 `timescale 1ns/100ps
 
-module spi_mode_config_tb(
+module dummy_mem_tb;
 
-input [7:0] bo,
-input me,bp,ss,nc,s
-);
-
-parameter SYSCLK_PERIOD = 38.4615;// 10MHZ
+parameter SYSCLK_PERIOD = 38.46154;// 26MHZ
 
 reg SYSCLK;
 reg NSYSRESET;
-
-reg [7:0] so, dfm, cntr;
-reg te;
-reg [1:0] pwr_cntr;
-
+reg nxt;
 
 initial
 begin
     SYSCLK = 1'b0;
     NSYSRESET = 1'b1;
-    so = 8'b1;
-    dfm = 8'b0;
-    te = 1'b0;
-    pwr_cntr = 2'd0;
-    cntr = 8'd0;
+    nxt = 1'b0;
 end
 
 //////////////////////////////////////////////////////////////////////
@@ -61,7 +49,7 @@ initial
 begin
     #(SYSCLK_PERIOD * 10 )
         NSYSRESET = 1'b0;
-    #(SYSCLK_PERIOD * 1 )
+    #(SYSCLK_PERIOD)
         NSYSRESET = 1'b1;
 end
 
@@ -71,60 +59,26 @@ end
 //////////////////////////////////////////////////////////////////////
 always @(SYSCLK)
     #(SYSCLK_PERIOD / 2.0) SYSCLK <= !SYSCLK;
-
-always @ (negedge ss) begin
-
-    if (ss == 1'b0) begin
-        if (pwr_cntr < 2)
-            pwr_cntr <= pwr_cntr + 1;
-        else 
-            pwr_cntr <= 0;
-            //so <= 8'b0;
-    end    
-end
-
-always @ (posedge SYSCLK) begin
-
-    if (pwr_cntr == 2)
-        so <= 8'b0;
-        pwr_cntr = 0;
-    if ((bo == 8'hbf) || (bo == 8'h34)) begin
-        so <= 8'b00011111;  
-        if (cntr < 100)
-            cntr <= cntr +1;
-        else
-            cntr <= 0;
-            te <= 1'b1;
-    end
-end
-        
+    
+always @(SYSCLK)
+    #(SYSCLK_PERIOD * 20) nxt <= ~nxt;
 
 
 //////////////////////////////////////////////////////////////////////
-// Instantiate Unit Under Test:  spi_mode_config
+// Instantiate Unit Under Test:  dummy_mem
 //////////////////////////////////////////////////////////////////////
-spi_mode_config spi_mode_config_0 (
+dummy_mem dummy_mem_0 (
     // Inputs
-    .SLAVE_OUTPUT(so),
-    .DATA_FROM_MEM(dfm),
-    .TX_ENABLE(te),
-    .rst(NSYSRESET),
-    .clk(SYSCLK),
-    .busy({1{1'b1}}),
+    .NEXT_CMD(nxt),
+    .CLK(SYSCLK),
+    .RST(NSYSRESET),
 
     // Outputs
-    .byte_out( bo ),
-    .mem_enable( me ),
-    .begin_pass( bp ),
-    .ss( ss ),
-    .next_cmd( nc ),
-    .start( s )
+    .data( )
 
     // Inouts
 
 );
-
-
 
 endmodule
 

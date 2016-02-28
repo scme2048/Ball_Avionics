@@ -18,16 +18,16 @@ module spi_master #(parameter CLK_DIV = 2)(
 
   reg [STATE_SIZE-1:0] state_d, state_q; 
   reg [7:0] data_d, data_q;
-  reg [CLK_DIV-1:0] sck_d, sck_q;
-  //reg [1:0] sck_d, sck_q;
+  reg [1:0] sck_d, sck_q;
   reg mosi_d, mosi_q;
   reg [2:0] ctr_d, ctr_q;
   reg new_data_d, new_data_q;
   reg [7:0] data_out_d, data_out_q;
+  reg count;
    
   assign mosi = mosi_q;
   //assign sck = (~sck_q) & (state_q == TRANSFER);
-  assign sck = (~sck_q[CLK_DIV-1]) & (state_q == TRANSFER);
+  assign sck = (sck_q[1]) & (state_q == TRANSFER);
   assign busy = state_q != IDLE;
   assign data_out = data_out_q;
   assign new_data = new_data_q;
@@ -55,10 +55,17 @@ module spi_master #(parameter CLK_DIV = 2)(
         if (sck_q == {CLK_DIV-1{1'b1}}) begin  // if clock is half full (about to fall)
           sck_d = 1'b0;                        // reset to 0
           state_d = TRANSFER;                  // change state
+          mosi_d = data_q[7];
+
         end
       end
       TRANSFER: begin
-        sck_d = sck_q + 1'b1;                           // increment clock counter
+        if (sck_q == 2'b11) begin
+            sck_d = 2'b0;
+            mosi_d = data_q[7];
+        end
+        else
+            sck_d = sck_q + 1'b1;                       // increment clock counter
         if (sck_q == 4'b0000) begin                     // if clock counter is 0
           mosi_d = data_q[7];                           // output the MSB of data
         end else if (sck_q == {CLK_DIV-1{1'b1}}) begin  // else if it's half full (about to fall)
@@ -74,12 +81,14 @@ module spi_master #(parameter CLK_DIV = 2)(
       end
     endcase
   end
+
+
    
-  always @(posedge clk) begin
-    if (rst) begin
+  always @(posedge clk or negedge rst) begin
+    if (rst == 1'b0) begin
       ctr_q <= 3'b0;
       data_q <= 8'b0;
-      sck_q <= 4'b0;
+      sck_q <= 2'b01;
       mosi_q <= 1'b0;
       state_q <= IDLE;
       data_out_q <= 8'b0;
@@ -94,5 +103,6 @@ module spi_master #(parameter CLK_DIV = 2)(
       new_data_q <= new_data_d;
     end
   end
-   
+
+
 endmodule

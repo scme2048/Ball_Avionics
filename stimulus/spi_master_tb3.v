@@ -27,7 +27,9 @@
 
 `timescale 1ns/100ps
 
-module spi_master_tb3;
+module spi_master_tb3(
+input SCK
+);
 
 parameter SYSCLK_PERIOD = 38.46154;// 26MHZ
 parameter ORBIT_TIME = 500; // 
@@ -36,12 +38,14 @@ reg SYSCLK;
 reg NSYSRESET;
 reg [7:0] DATAIN;
 reg START;
+reg MISO;
 
 initial
 begin
     SYSCLK = 1'b0;
-    NSYSRESET = 1'b0;
+    NSYSRESET = 1'b1;
     START = 1'b1;
+    MISO = 1'b1;
 end
 
 //////////////////////////////////////////////////////////////////////
@@ -50,10 +54,11 @@ end
 initial
 begin
     #(SYSCLK_PERIOD * 4 )
-        NSYSRESET = 1'b1;
-    #(SYSCLK_PERIOD * 4 )
         NSYSRESET = 1'b0;
-        DATAIN = 8'b01010100;
+    #(SYSCLK_PERIOD * 10 )
+        NSYSRESET = 1'b1;
+        DATAIN = 8'b11010100;
+
     
     
 end
@@ -64,12 +69,13 @@ end
 //////////////////////////////////////////////////////////////////////
 always @(SYSCLK)
     #(SYSCLK_PERIOD / 2.0) SYSCLK <= !SYSCLK;
-always @(SYSCLK) begin
+always @(SYSCLK)
     #(SYSCLK_PERIOD *100) START = !START;
 //    #(SYSCLK_PERIOD*20) DATAIN = 8'bz;
 //    #(SYSCLK_PERIOD*20) DATAIN = 8'b01010010;
 //    #(SYSCLK_PERIOD*20) DATAIN = 8'bz;
-end
+always @ (negedge SCK)
+    MISO = !MISO;
 
 //////////////////////////////////////////////////////////////////////
 // Instantiate Unit Under Test:  spi_master
@@ -78,14 +84,14 @@ spi_master spi_master_0 (
     // Inputs
     .clk(SYSCLK),
     .rst(NSYSRESET),
-    .miso({1{1'b0}}),
+    .miso(MISO),
     .start(START),
     .data_in({DATAIN}),
     //.data_in({8{1'b0}}),
 
     // Outputs
     .mosi( ),
-    .sck( ),
+    .sck(SCK ),
     .data_out( ),
     .busy( ),
     .new_data( )

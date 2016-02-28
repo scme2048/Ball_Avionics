@@ -69,7 +69,7 @@ module spi_mode_config (
     localparam chip_TXFIFO_UNDERFLOW = 3'b111;
 
     reg [6:0] config_cntr_a, config_cntr_b;
-    reg [10:0] rst_cntr_b;
+    reg [10:0] rst_cntr;
     reg [7:0] byte_out_a;
     reg mem_enable_a,ss_a,begin_pass_a;
     reg [2:0] state_a;
@@ -97,72 +97,79 @@ module spi_mode_config (
     assign start = start_b;
 
 // Start up config
-    always @(*) begin
+    always @(negedge busy or negedge ss) begin
         byte_out_a = byte_out_b;
-        mem_enable_a =mem_enable_b;
-        state_a=state_b;
+        mem_enable_a = mem_enable_b;
+        state_a = state_b;
         next_a = next_b;
         ss_a = ss_b;
         byte_tracker_a = byte_tracker_b;
         begin_pass_a = begin_pass_b;
         config_cntr_a = config_cntr_b;
         start_a = start_b;
-        //chip_rdy = SLAVE_OUTPUT[7];
-        //chip_state = SLAVE_OUTPUT[6:4];
-        if (busy) begin
+        //if (busy == 1'b1) begin
         case(state_b)
             IDLE: begin
                 mem_enable_a = 1'b0;
                 chip_rdy = SLAVE_OUTPUT[7];
+                start_a = 1'b1;
                 //if (byte_tracker == 2'b00) begin
                 //    byte_out = STATUS;
-                if ((~byte_tracker_b)&&(~chip_rdy)) begin
-                    start_a = 1'b1;
-                    byte_out_a = SIDLE;
-                    byte_tracker_a = 1'b1;
-                end
-                else if ((~chip_rdy)&&(~TX_ENABLE)&&(byte_tracker_b)) begin 
-                    state_a = RX_MODE; //If idle and slave is ready, go to receive mode
-                    start_a = 1'b1;
-                    byte_out_a = SRX;
-                    byte_tracker_a = 1'b0;
-                end
-                else if ((~chip_rdy)&&(TX_ENABLE)&&(byte_tracker_b)) begin
-                    state_a = TX_MODE;
-                    start_a = 1'b1;
-                    byte_out_a = STX;
-                    byte_tracker_a = 1'b0;
-                end
+               // if (busy == 1'b1) begin
+                    if ((~byte_tracker_b)&&(~chip_rdy)) begin
+                       // if (busy == 1'b1) begin
+                            byte_out_a = SIDLE;
+                            byte_tracker_a = 1'b1;
+                       // end
+                    end
+                    else if ((~chip_rdy)&&(~TX_ENABLE)&&(byte_tracker_b)) begin 
+                        state_a = RX_MODE; //If idle and slave is ready, go to receive mode
+                        //if (busy == 1'b1) begin
+                            byte_out_a = SRX;
+                            byte_tracker_a = 1'b0;
+                       // end
+                    end
+                    else if ((~chip_rdy)&&(TX_ENABLE)&&(byte_tracker_b)) begin
+                        //if (busy == 1'b1) begin
+                            state_a = TX_MODE;
+                            byte_out_a = STX;
+                            byte_tracker_a = 1'b0;
+                        //end
+                    end
             end
-
-            PWR_RST: begin
-                ss_a = 1'b1;
-                start_a = 1'b0;
-                if (rst_cntr_b <= microsec)  
-                    ss_a = 1'b0;
-                else if ((rst_cntr_b > microsec)&&(rst_cntr_b <= 42*microsec))
-                    ss_a = 1'b1;
-                else if (rst_cntr_b > 42*microsec) begin
-                    ss_a = 1'b0;
-                    state_a = RST;
-                    
-                end
-                //reset_mode = 1'b1;
-            end
-            
+            //PWR_RST: begin
+                //ss_a = 1'b1;
+                //start_a = 1'b0;
+                //if (rst_cntr <= microsec) begin  
+                    //ss_a = 1'b0;
+                    ////start_a = 1'b0;
+                //end
+                //else if ((rst_cntr > microsec)&&(rst_cntr <= 42*microsec))
+                    //ss_a = 1'b1;
+                //else if (rst_cntr > 42*microsec) begin
+                    //ss_a = 1'b0;
+                    //state_a = RST;
+                    //rst_cntr = 11'b0;
+                //end
+                ////reset_mode = 1'b1;
+            //end
             RST: begin
                 chip_rdy = SLAVE_OUTPUT[7];
-                ss_a = 1'b0;
-                if((~chip_rdy)&&(~byte_tracker_b)) begin
-                    start_a = 1'b1;
-                    byte_out_a = SRES;
-                    byte_tracker_a = 1'b1;
-                end
-                else if((~chip_rdy)&&(byte_tracker_b)) begin
-                    start_a = 1'b0;
-                    state_a = CONFIG_MODE;
-                    byte_tracker_a = 1'b0;
-                end
+                //start_a = 1'b1;
+                //if (busy == 1'b1) begin
+                    if((~chip_rdy)&&(~byte_tracker_b)) begin
+                        byte_out_a = SRES;
+                        byte_tracker_a = 1'b1;
+                        start_a = 1'b1;
+                    end
+            //    end
+                    else if((~chip_rdy)&&(byte_tracker_b)) begin
+                        start_a = 1'b0;
+                        state_a = CONFIG_MODE;
+                        byte_tracker_a = 1'b0;
+                    end
+               // end
+                
             end         
         
             RX_MODE: begin
@@ -174,22 +181,28 @@ module spi_mode_config (
                 //    byte_out = SRX;
                 //    byte_tracker = 1'b1;
                 //end
+                //if (busy == 1'b1) begin
                 if ((TX_ENABLE) && (begin_pass_b)) begin
-                    state_a = TX_MODE;
                     start_a = 1'b1;
-                    byte_out_a = STX;
+                    //if (busy == 1'b1) begin
+                        state_a = TX_MODE;
+                        byte_out_a = STX;
+                   // end
                 end
                 else if ((chip_state == chip_RX)&&(~byte_tracker_b)&&(~chip_rdy)&& (~begin_pass_b)) begin
                     mem_enable_a = 1'b0;
                     start_a = 1'b1;
-                    byte_out_a = RXFIFO;
-                    byte_tracker_a = 1'b1;
+                    //if (busy == 1'b1) begin
+                        byte_out_a = RXFIFO;
+                        byte_tracker_a = 1'b1;
+                    //end
+               // end
                 end
                 else if ((chip_state == chip_RX)&&(byte_tracker_b)&&(~chip_rdy)&& (~begin_pass_b)) begin
                     mem_enable_a = 1'b0;
                     if (SLAVE_OUTPUT == 8'b01010100) begin
-                    //????????????????????????????????????????????????? if rx fifo tells me grnd station sent command: set begin_pass high
                         begin_pass_a = 1'b1;
+                        start_a = 1'b0;
                     end
                     byte_tracker_a = 1'b0;
                     
@@ -201,37 +214,42 @@ module spi_mode_config (
             TX_MODE: begin
                 chip_rdy = SLAVE_OUTPUT[7];
                 chip_state = SLAVE_OUTPUT[6:4];
-
-                if ((~TX_ENABLE)&&(~chip_rdy)) begin
-                    mem_enable_a = 1'b0;
-                    start_a = 1'b1;
-                    byte_out_a = SRX;
-                    state_a = RX_MODE;
-                    begin_pass_a = 1'b0;
-                end
-                else if (((TX_ENABLE)&&(chip_state != chip_TX))||chip_rdy)
-                    mem_enable_a = 1'b0;
-                else if ((~byte_tracker_b)&&(TX_ENABLE)&&(~chip_rdy)&&(chip_state == chip_TX)) begin
-                    next_a = 1'b0;
-                    mem_enable_a = 1'b0;
-                    start_a = 1'b1;
-                    byte_out_a = TXFIFO;
-                    byte_tracker_a = 1'b1;
-                end
-                else if ((byte_tracker_b)&&(TX_ENABLE)&&(~chip_rdy)&&(chip_state == chip_TX)) begin
-                    mem_enable_a = 1'b1;
-                    next_a = 1'b0;
-                    start_a = 1'b1;
-                    byte_out_a = DATA_FROM_MEM; //not sure about timing w/ this
-                    next_a = 1'b1;
-                    byte_tracker_a = 1'b0;
-                end
+                start_a = 1'b1;
+                //if (busy == 1'b1) begin
+                    if ((~TX_ENABLE)&&(~chip_rdy)) begin
+                        mem_enable_a = 1'b0;
+                   // start_a = 1'b1;
+                        byte_out_a = SRX;
+                        state_a = RX_MODE;
+                        begin_pass_a = 1'b0;
+                    end
+                //else if (((TX_ENABLE)&&(chip_state != chip_TX))||chip_rdy)
+                //    mem_enable_a = 1'b0;
+                    else if ((~byte_tracker_b)&&(TX_ENABLE)&&(~chip_rdy)&&(chip_state == chip_TX)) begin
+                        next_a = 1'b0;
+                        mem_enable_a = 1'b0;
+                  //  start_a = 1'b1;
+                        byte_out_a = TXFIFO;
+                        byte_tracker_a = 1'b1;
+                    end
+                    else if ((byte_tracker_b)&&(TX_ENABLE)&&(~chip_rdy)&&(chip_state == chip_TX)) begin
+                        mem_enable_a = 1'b1;
+                        next_a = 1'b0;
+                        start_a = 1'b1;
+                        byte_out_a = DATA_FROM_MEM; //not sure about timing w/ this
+                        next_a = 1'b1;
+                        byte_tracker_a = 1'b0;
+                    end
+               // end
             end
 
             CONFIG_MODE: begin
                 chip_rdy = SLAVE_OUTPUT[7];
                 chip_state = SLAVE_OUTPUT[6:4];
                 mem_enable_a = 1'b0;
+                //start_a = 1'b1;
+                
+                //if (busy == 1'b1) begin
                 //GDO2 Config
                 if ((~chip_rdy)&&(~byte_tracker_b)&&(config_cntr_b == 1)) begin
                     config_cntr_a = config_cntr_b + 1;
@@ -778,6 +796,7 @@ module spi_mode_config (
                     start_a = 1'b1;
                     byte_out_a = 8'h9; //from testing smartrf
                     byte_tracker_a = 1'b0;
+               // end
                 end
                 else if ((~chip_rdy)&&(~byte_tracker_b)&&(config_cntr_b == 83)) begin
                     config_cntr_a = 0;
@@ -789,7 +808,7 @@ module spi_mode_config (
             end
 
             endcase
-        end
+            //end
         end
 
     always @(posedge clk or negedge rst) begin
@@ -801,64 +820,89 @@ module spi_mode_config (
             byte_tracker_b <= 1'b0;
             next_b <= 1'b0;
             ss_b <= 1'b1;
-            rst_cntr_b <= 0;
+            rst_cntr <= 0;
             begin_pass_b <= 0;
             config_cntr_b <= 1;
             start_b <= 1'b0;
             
-//            end
-//            else if (rst_mode) begin
-//            state_b <= 3'h01;
-//            byte_out_b <= 8'bz;
-//            mem_enable_b <= 1'b0;
-//            byte_tracker_b <= 1'b0;
-//            next_b <= 1'b0;
-//            end
+            //PWR_RST: begin
+                //ss_a = 1'b1;
+                //start_a = 1'b0;
+                //if (rst_cntr <= microsec) begin  
+                    //ss_a = 1'b0;
+                    ////start_a = 1'b0;
+                //end
+                //else if ((rst_cntr > microsec)&&(rst_cntr <= 42*microsec))
+                    //ss_a = 1'b1;
+                //else if (rst_cntr > 42*microsec) begin
+                    //ss_a = 1'b0;
+                    //state_a = RST;
+                    //rst_cntr = 11'b0;
+                //end
+                ////reset_mode = 1'b1;
+            //end
         end
         else begin
-            if (busy==1'b0)  begin
-            byte_out_b <= byte_out_a;
-            mem_enable_b <= mem_enable_a;
-            state_b<=state_a; //****************
-            next_b <= next_a;
-            ss_b <= ss_a;
-            begin_pass_b <= begin_pass_a; 
-            config_cntr_b <= config_cntr_a;
-            start_b <= start_a;
-            byte_tracker_b <= byte_tracker_a;
-            if (state_a == PWR_RST) begin
-                if (rst_cntr_b <= microsec*100)
-                    rst_cntr_b <= rst_cntr_b + 1;
-                else rst_cntr_b <= 0;
-                  //  rst_cntr_b <= 0;
+            //if (busy==1'b0)  begin
+            if (ss_a == 1'b0) begin
+                byte_out_b <= byte_out_a;
+                mem_enable_b <= mem_enable_a;
+                state_b<=state_a;
+                next_b <= next_a;
+                ss_b <= ss_a;
+                begin_pass_b <= begin_pass_a; 
+                config_cntr_b <= config_cntr_a;
+                start_b <= start_a;
+                byte_tracker_b <= byte_tracker_a;
             end
-            
+            if (state_b == PWR_RST) begin
+                //if (rst_cntr <= microsec*100)
+                if (rst_cntr <= microsec) begin  
+                    ss_b <= 1'b0;
+                    rst_cntr <= rst_cntr + 1;
+                end
+                else if ((rst_cntr > microsec)&&(rst_cntr <= 42*microsec)) begin
+                    ss_b <= 1'b1;
+                    rst_cntr <= rst_cntr + 1;
+                end
+                else if (rst_cntr > 42*microsec) begin
+                    ss_b <= 1'b0;
+                    state_b <= RST;
+                 //   start_b <= 1'b1;
+                    rst_cntr <= rst_cntr + 1;
+                    //rst_cntr = 11'b0;                    
+                end
+                //else rst_cntr <= 0;
+                  //  rst_cntr <= 0;
+            end
+        end
+    end
             //if (state_a == CONFIG_MODE) begin
             //if (config_cntr_a <= 26)
                 //config_cntr_a <= config_cntr_a + 1;
             //else rst_cntr <= 0;
             //end
             
-            end
-            else if (busy==1'b1) begin
-            config_cntr_b <= config_cntr_a;
-            byte_out_b <= byte_out_a;
-            mem_enable_b <= mem_enable_a;
-            state_b<=state_a;
-            next_b <= next_a;
-            ss_b <= ss_a;  
-            begin_pass_b <= begin_pass_a;
-            start_b <= start_a;
-            byte_tracker_b <= byte_tracker_a;
-            if (state_a == PWR_RST) begin
-                if (rst_cntr_b <= microsec*100)
-                    rst_cntr_b <= rst_cntr_b + 1;
-                else rst_cntr_b <= 0;
-                   // rst_cntr <= 0;
-            end
+            //end
+            //else if (busy==1'b1) begin
+            //config_cntr_b <= config_cntr_a;
+            //byte_out_b <= byte_out_a;
+            //mem_enable_b <= mem_enable_a;
+            //state_b<=state_a;
+            //next_b <= next_a;
+            //ss_b <= ss_a;  
+            //begin_pass_b <= begin_pass_a;
+            //start_b <= start_a;
+            //byte_tracker_b <= byte_tracker_a;
+            //if (state_a == PWR_RST) begin
+                //if (rst_cntr <= microsec*100)
+                    //rst_cntr <= rst_cntr + 1;
+                //else rst_cntr <= 0;
+                   //// rst_cntr <= 0;
+            //end
+//
+            //end
 
-            end
-        end
 //        else if (~busy) begin
 //            if (state_a == CONFIG_MODE) begin
 //            if (config_cntr_a <= 25)
@@ -867,7 +911,7 @@ module spi_mode_config (
 //            end
 //        end
 
-    end
+
                     
 
 endmodule
