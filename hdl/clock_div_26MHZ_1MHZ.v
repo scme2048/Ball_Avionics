@@ -20,13 +20,13 @@ reg [16:0] counter;
 reg clk_out;
 parameter factor=26;
 assign CLK_1MHZ_OUT = clk_out;
-always @(posedge CLK_26MHZ_IN or posedge RESET)
+always @(posedge CLK_26MHZ_IN or negedge RESET)
 begin
-    if (RESET) begin
+    if (RESET==1'b0) begin
         clk_out<=1;
         counter<=1;
-    end else if (counter == factor/2) begin
-        clk_out <= ~clk_out;
+    end else if (counter == 13) begin
+        clk_out <= !clk_out;
         counter <=1;
     end else begin
         counter <= counter+1;

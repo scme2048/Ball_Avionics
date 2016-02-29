@@ -100,7 +100,18 @@ module spi_mode_config (
    
 
 // Start up config
-    always @(posedge busy) begin
+    always @(posedge busy or negedge rst) begin
+    if (rst==1'b0) begin
+        byte_out_a = 8'b0;
+        mem_enable_a = 1'b0;
+        state_a = 3'h01;
+        byte_tracker_a = 1'b0;
+        next_a = 1'b0;
+        ss_a = 1'b1;
+        begin_pass_a = 0;
+        config_cntr_a = 1;
+        start_a = 1'b0;
+    end else begin
         byte_out_a = byte_out_b;
         mem_enable_a = mem_enable_b;
         state_a = state_b;
@@ -815,8 +826,8 @@ module spi_mode_config (
             end
 
             endcase
-            //end
         end
+    end
 
     always @(posedge clk or negedge rst) begin
         if (rst==1'b0) begin

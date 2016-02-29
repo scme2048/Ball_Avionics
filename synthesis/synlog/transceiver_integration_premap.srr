@@ -17,7 +17,7 @@ Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 @N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\read_buffer.v":66:0:66:5|Removing sequential instance read_cmd of view:PrimLib.dffre(prim) in hierarchy view:work.read_buffer(verilog) because there are no references to its outputs 
 @N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\spi_master.v":90:2:90:7|Removing sequential instance new_data_q of view:PrimLib.dffr(prim) in hierarchy view:work.spi_master(verilog) because there are no references to its outputs 
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 111MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 111MB)
 
 
 
@@ -46,9 +46,9 @@ Finished Pre Mapping Phase.
 @N: BN225 |Writing default property annotation file C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\transceiver_integration.sap.
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 47MB peak: 111MB)
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 47MB peak: 111MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Feb 28 18:12:23 2016
+# Sun Feb 28 20:19:05 2016
 
 ###########################################################]

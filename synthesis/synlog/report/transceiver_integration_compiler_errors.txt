@@ -1,2 +1,2 @@
-@E: CL123 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":103:4:103:9|Logic for start_a does not match a standard flip-flop
+@E: CL123 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\clock_div_26MHZ_1MHZ.v":23:0:23:5|Logic for counter[16:0] does not match a standard flip-flop
 

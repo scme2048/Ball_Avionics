@@ -25,7 +25,7 @@ begin
         clk_out<=1;
         counter<=1;
     end else if (counter == factor) begin
-        clk_out <= ~clk_out;
+        clk_out <= !clk_out;
         counter <=1;
     end else begin
         counter <= counter+1;
