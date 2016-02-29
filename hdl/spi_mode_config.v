@@ -97,10 +97,10 @@ module spi_mode_config (
     assign start = start_b;
 
 
-wire SSI = ss;
+   
 
 // Start up config
-    always @(negedge busy ) begin
+    always @(posedge busy) begin
         byte_out_a = byte_out_b;
         mem_enable_a = mem_enable_b;
         state_a = state_b;
@@ -111,7 +111,6 @@ wire SSI = ss;
         config_cntr_a = config_cntr_b;
         start_a = start_b;
         //if (busy == 1'b1) begin
-        
         case(state_b)
             IDLE: begin
                 mem_enable_a = 1'b0;
@@ -157,18 +156,18 @@ wire SSI = ss;
                 //end
                 ////reset_mode = 1'b1;
             //end
-            RST: begin
-                chip_rdy = SLAVE_OUTPUT[7];
-                //start_a = 1'b1;
-                //if (busy == 1'b1) begin
-                    if((~chip_rdy)&&(~byte_tracker_b)) begin
-                        byte_out_a = SRES;
-                        //byte_tracker_a = 1'b1;
-                        start_a = 1'b1;
-                        state_a = CONFIG_MODE;
-
-                    end
-            //    end
+            //RST: begin
+                //chip_rdy = SLAVE_OUTPUT[7];
+                ////start_a = 1'b1;
+                ////if (busy == 1'b1) begin
+                    //if((~chip_rdy)&&(~byte_tracker_b)) begin
+                        //byte_out_a = SRES;
+                        ////byte_tracker_a = 1'b1;
+                        //start_a = 1'b1;
+                        //state_a = CONFIG_MODE;
+//
+                    //end
+            ////    end
                     //else if((~chip_rdy)&&(byte_tracker_b)) begin
                         //start_a = 1'b0;
                         //state_a = CONFIG_MODE;
@@ -178,7 +177,7 @@ wire SSI = ss;
                     //end
                // end
                 
-            end         
+            //end         
         
             RX_MODE: begin
                 chip_rdy = SLAVE_OUTPUT[7];
@@ -864,6 +863,7 @@ wire SSI = ss;
                 byte_tracker_b <= byte_tracker_a;
             end
             if (state_b == PWR_RST) begin
+                chip_rdy = SLAVE_OUTPUT[7];
                 //if (rst_cntr <= microsec*100)
                 if (rst_cntr <= microsec) begin  
                     ss_b <= 1'b0;
@@ -875,9 +875,14 @@ wire SSI = ss;
                 end
                 else if (rst_cntr > 42*microsec) begin
                     ss_b <= 1'b0;
-                    state_b <= RST;
+                 //   state_b <= RST;
                  //   start_b <= 1'b1;
                     rst_cntr <= rst_cntr + 1;
+                    if (~chip_rdy) begin
+                        start_b <= 1'b1;
+                        byte_out_b <= SRES;
+                        state_b <= CONFIG_MODE;
+                    end
                     //rst_cntr = 11'b0;                    
                 end
                 //else rst_cntr <= 0;
@@ -885,6 +890,12 @@ wire SSI = ss;
             end
         end
     end
+
+
+            //    end
+
+
+
             //if (state_a == CONFIG_MODE) begin
             //if (config_cntr_a <= 26)
                 //config_cntr_a <= config_cntr_a + 1;
