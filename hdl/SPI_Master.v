@@ -28,7 +28,7 @@ module spi_master #(parameter CLK_DIV = 2)(
   assign mosi = mosi_q;
   //assign sck = (~sck_q) & (state_q == TRANSFER);
   assign sck = (sck_q[1]) & (state_q == TRANSFER);
-  assign busy = state_q != IDLE;
+  assign busy = (state_q != IDLE);//&start;
   assign data_out = data_out_q;
   assign new_data = new_data_q;
    
@@ -40,7 +40,10 @@ module spi_master #(parameter CLK_DIV = 2)(
     new_data_d = 1'b0;
     data_out_d = data_out_q;
     state_d = state_q;
-     
+    
+    if (start == 1'b0)
+        state_d = IDLE;
+    //if (start == 1'b1) begin
     case (state_q)
       IDLE: begin
         sck_d = 4'b0;              // reset clock counter
@@ -80,8 +83,8 @@ module spi_master #(parameter CLK_DIV = 2)(
         end
       end
     endcase
+  //end
   end
-
 
    
   always @(posedge clk or negedge rst) begin
