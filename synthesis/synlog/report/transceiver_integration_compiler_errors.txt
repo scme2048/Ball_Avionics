@@ -1,2 +1,2 @@
-@E: CS153 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":804:21:804:21|Can't mix blocking and non-blocking assignments to a variable
+@E: CL123 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":103:4:103:9|Logic for start_a does not match a standard flip-flop
 

@@ -1,1 +1,6 @@
-CKID0001:@|S:CLK_26MHZ_0.Core@|E:spi_mode_config_0.config_cntr_b[6]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
+CKID0001:@|S:CLK_26MHZ_0.Core@|E:spi_mode_config_0.byte_out_b[7]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
+CKID0002:@|S:clock_div_26MHZ_1MHZ_0.clk_out@|E:clock_div_1MHZ_10HZ_0.counter[16]@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002 
+CKID0003:@|S:clock_div_1MHZ_10HZ_0.clk_out@|E:orbit_control_0.cntr[12]@|F:@syn_sample_clock_path==CKID0003@|M:ClockId0003 
+CKID0004:@|S:spi_mode_config_0.next_b@|E:read_buffer_0.position[0]@|F:@syn_sample_clock_path==CKID0004@|M:ClockId0004 
+CKID0005:@|S:spi_master_0.state_q_RNIRHEV[0]@|E:spi_mode_config_0.config_cntr_a[6]@|F:@syn_sample_clock_path==CKID0005@|M:ClockId0005 
+CKID0006:@|S:reset_pulse_0.CLK_OUT_48MHZ@|E:read_buffer_0.init_stage[1]@|F:@syn_sample_clock_path==CKID0006@|M:ClockId0006 

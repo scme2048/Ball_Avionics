@@ -1,18 +1,36 @@
 
-fsm_encoding {11782782} sequential
+fsm_encoding {9660663} sequential
 
-fsm_state_encoding {11782782} IDLE {00}
+fsm_state_encoding {9660663} 00 {00}
 
-fsm_state_encoding {11782782} WAIT_HALF {01}
+fsm_state_encoding {9660663} 01 {01}
 
-fsm_state_encoding {11782782} TRANSFER {10}
+fsm_state_encoding {9660663} 10 {10}
 
-fsm_registers {11782782} {state_q[1]}  {state_q[0]} 
+fsm_registers {9660663} {init_stage[1]}  {init_stage[0]} 
 
-fsm_encoding {1279447941} sequential
+fsm_encoding {12782782} sequential
 
-fsm_state_encoding {1279447941} PWR_RST {0}
+fsm_state_encoding {12782782} IDLE {00}
 
-fsm_state_encoding {1279447941} RST {1}
+fsm_state_encoding {12782782} WAIT_HALF {01}
 
-fsm_registers {1279447941} {state_b[0]} 
+fsm_state_encoding {12782782} TRANSFER {10}
+
+fsm_registers {12782782} {state_q[1]}  {state_q[0]} 
+
+fsm_encoding {1379547951} onehot
+
+fsm_state_encoding {1379547951} IDLE {000001}
+
+fsm_state_encoding {1379547951} PWR_RST {000010}
+
+fsm_state_encoding {1379547951} RST {000100}
+
+fsm_state_encoding {1379547951} RX_MODE {001000}
+
+fsm_state_encoding {1379547951} TX_MODE {010000}
+
+fsm_state_encoding {1379547951} CONFIG_MODE {100000}
+
+fsm_registers {1379547951} {state_b[5]}  {state_b[4]}  {state_b[3]}  {state_b[2]}  {state_b[1]}  {state_b[0]} 

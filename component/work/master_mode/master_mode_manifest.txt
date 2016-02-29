@@ -1,11 +1,11 @@
 Microsemi Corporation - Microsemi Libero Software Release v11.6 (Version 11.6.0.34)
 
-Date      :  Sun Feb 28 12:07:05 2016
-Project   :  F:\FPGA\Microsemi\First Try\SPI
+Date      :  Sun Feb 28 17:51:24 2016
+Project   :  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics
 Component :  master_mode
 Family    :  ProASIC3L
 
 
 HDL source files for all Synthesis and Simulation tools:
-    F:/FPGA/Microsemi/First Try/SPI/component/work/master_mode/master_mode.v
+    C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/component/work/master_mode/master_mode.v
 

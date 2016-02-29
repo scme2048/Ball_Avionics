@@ -64,7 +64,7 @@ always @(negedge ss ) begin
         if (count==2'b10) begin
             miso=1'b0;
             init=1'b0;
-            #(SYSCLK_PERIOD *2) miso=1'b1;
+            
     
         end
     end

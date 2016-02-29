@@ -1,7 +1,7 @@
 
 
 @S |##### START OF TIMING REPORT #####[
-# Timing Report written on Thu Feb 25 17:59:07 2016
+# Timing Report written on Sun Feb 28 18:12:27 2016
 #
 
 
@@ -27,11 +27,12 @@ Worst slack in design: NA
                                                 Requested     Estimated     Requested     Estimated                Clock        Clock              
 Starting Clock                                  Frequency     Frequency     Period        Period        Slack      Type         Group              
 ---------------------------------------------------------------------------------------------------------------------------------------------------
-CLK_26MHZ|GLA_inferred_clock                    100.0 MHz     72.5 MHz      10.000        13.786        -3.785     inferred     Inferred_clkgroup_3
-clock_div_1MHZ_10HZ|clk_out_inferred_clock      100.0 MHz     NA            10.000        NA            NA         inferred     Inferred_clkgroup_1
-clock_div_26MHZ_1MHZ|clk_out_inferred_clock     100.0 MHz     NA            10.000        NA            NA         inferred     Inferred_clkgroup_2
-reset_pulse|CLK_OUT_48MHZ_inferred_clock        100.0 MHz     NA            10.000        NA            NA         inferred     Inferred_clkgroup_4
-spi_mode_config|next_b_inferred_clock           100.0 MHz     NA            10.000        NA            NA         inferred     Inferred_clkgroup_0
+CLK_26MHZ|GLA_inferred_clock                    100.0 MHz     107.1 MHz     10.000        9.341         0.659      inferred     Inferred_clkgroup_4
+clock_div_1MHZ_10HZ|clk_out_inferred_clock      100.0 MHz     88.3 MHz      10.000        11.329        -1.329     inferred     Inferred_clkgroup_2
+clock_div_26MHZ_1MHZ|clk_out_inferred_clock     100.0 MHz     128.8 MHz     10.000        7.763         2.237      inferred     Inferred_clkgroup_3
+reset_pulse|CLK_OUT_48MHZ_inferred_clock        100.0 MHz     131.3 MHz     10.000        7.618         2.382      inferred     Inferred_clkgroup_5
+spi_master|state_q_inferred_clock[0]            100.0 MHz     NA            10.000        NA            NA         inferred     Inferred_clkgroup_0
+spi_mode_config|next_b_inferred_clock           100.0 MHz     309.5 MHz     10.000        3.231         6.769      inferred     Inferred_clkgroup_1
 ===================================================================================================================================================
 @N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
 
@@ -40,12 +41,22 @@ spi_mode_config|next_b_inferred_clock           100.0 MHz     NA            10.0
 Clock Relationships
 *******************
 
-Clocks                                                      |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
---------------------------------------------------------------------------------------------------------------------------------------------------
-Starting                      Ending                        |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
---------------------------------------------------------------------------------------------------------------------------------------------------
-CLK_26MHZ|GLA_inferred_clock  CLK_26MHZ|GLA_inferred_clock  |  0.000       False  |  No paths    -      |  No paths    -      |  No paths    -    
-==================================================================================================================================================
+Clocks                                                                                    |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                     Ending                                       |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+spi_master|state_q_inferred_clock[0]         CLK_26MHZ|GLA_inferred_clock                 |  Diff grp    -      |  No paths    -      |  No paths    -      |  No paths    -    
+spi_mode_config|next_b_inferred_clock        spi_master|state_q_inferred_clock[0]         |  Diff grp    -      |  No paths    -      |  No paths    -      |  No paths    -    
+spi_mode_config|next_b_inferred_clock        spi_mode_config|next_b_inferred_clock        |  0.000       False  |  No paths    -      |  No paths    -      |  No paths    -    
+clock_div_1MHZ_10HZ|clk_out_inferred_clock   spi_master|state_q_inferred_clock[0]         |  Diff grp    -      |  No paths    -      |  No paths    -      |  No paths    -    
+clock_div_1MHZ_10HZ|clk_out_inferred_clock   clock_div_1MHZ_10HZ|clk_out_inferred_clock   |  0.000       False  |  No paths    -      |  No paths    -      |  No paths    -    
+clock_div_26MHZ_1MHZ|clk_out_inferred_clock  clock_div_26MHZ_1MHZ|clk_out_inferred_clock  |  0.000       False  |  No paths    -      |  No paths    -      |  No paths    -    
+CLK_26MHZ|GLA_inferred_clock                 spi_master|state_q_inferred_clock[0]         |  Diff grp    -      |  No paths    -      |  No paths    -      |  No paths    -    
+CLK_26MHZ|GLA_inferred_clock                 clock_div_1MHZ_10HZ|clk_out_inferred_clock   |  Diff grp    -      |  No paths    -      |  No paths    -      |  No paths    -    
+CLK_26MHZ|GLA_inferred_clock                 CLK_26MHZ|GLA_inferred_clock                 |  0.000       False  |  No paths    -      |  No paths    -      |  No paths    -    
+reset_pulse|CLK_OUT_48MHZ_inferred_clock     spi_mode_config|next_b_inferred_clock        |  Diff grp    -      |  No paths    -      |  No paths    -      |  No paths    -    
+reset_pulse|CLK_OUT_48MHZ_inferred_clock     reset_pulse|CLK_OUT_48MHZ_inferred_clock     |  0.000       False  |  No paths    -      |  No paths    -      |  No paths    -    
+================================================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
 

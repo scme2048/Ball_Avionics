@@ -97,10 +97,10 @@ module spi_mode_config (
     assign start = start_b;
 
 
-   
+wire SSI = ss;
 
 // Start up config
-    always @(negedge busy or negedge ss) begin
+    always @(negedge busy ) begin
         byte_out_a = byte_out_b;
         mem_enable_a = mem_enable_b;
         state_a = state_b;
@@ -111,6 +111,7 @@ module spi_mode_config (
         config_cntr_a = config_cntr_b;
         start_a = start_b;
         //if (busy == 1'b1) begin
+        
         case(state_b)
             IDLE: begin
                 mem_enable_a = 1'b0;
