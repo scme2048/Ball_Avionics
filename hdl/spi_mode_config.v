@@ -96,6 +96,9 @@ module spi_mode_config (
     assign next_cmd = next_b;
     assign start = start_b;
 
+
+   
+
 // Start up config
     always @(negedge busy or negedge ss) begin
         byte_out_a = byte_out_b;
@@ -159,15 +162,19 @@ module spi_mode_config (
                 //if (busy == 1'b1) begin
                     if((~chip_rdy)&&(~byte_tracker_b)) begin
                         byte_out_a = SRES;
-                        byte_tracker_a = 1'b1;
+                        //byte_tracker_a = 1'b1;
                         start_a = 1'b1;
+                        state_a = CONFIG_MODE;
+
                     end
             //    end
-                    else if((~chip_rdy)&&(byte_tracker_b)) begin
-                        start_a = 1'b0;
-                        state_a = CONFIG_MODE;
-                        byte_tracker_a = 1'b0;
-                    end
+                    //else if((~chip_rdy)&&(byte_tracker_b)) begin
+                        //start_a = 1'b0;
+                        //state_a = CONFIG_MODE;
+
+                        ////byte_out_a = 8'h0; // *******
+                        //byte_tracker_a = 1'b0;
+                    //end
                // end
                 
             end         
