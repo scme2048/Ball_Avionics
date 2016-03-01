@@ -1,9 +1,10 @@
 # Created by Microsemi Libero Software 11.6.0.34
-# Wed Feb 24 19:57:11 2016
+# Mon Feb 29 21:03:24 2016
 
-# (OPEN DESIGN)
+# (NEW DESIGN)
 
-open_design "geiger_integration.adb"
+# create a new design
+new_design -name "geiger_integration" -family "ProASIC3L"
 
 # set default back-annotation base-name
 set_defvar "BA_NAME" "geiger_integration_ba"
@@ -14,9 +15,34 @@ set_defvar "IDE_DESIGNERVIEW_REVNUM0" "1"
 set_defvar "IDE_DESIGNERVIEW_ROOTDIR" {C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\designer}
 set_defvar "IDE_DESIGNERVIEW_LASTREV" "1"
 
-report -type "timing" -format "TEXT" -analysis "max" -print_summary "yes" -use_slack_threshold "no"                             -print_paths "yes" -max_paths 5 -max_expanded_paths 1                             -max_parallel_paths 1 -include_user_sets "no"                             -include_pin_to_pin "yes" -include_clock_domains "yes"                             -select_clock_domains "no" {geiger_integration_maxdelay_timing_report.txt}
-report -type "timing" -format "TEXT" -analysis "min" -print_summary "yes" -use_slack_threshold "no"                             -print_paths "yes" -max_paths 5 -max_expanded_paths 1                             -max_parallel_paths 1 -include_user_sets "no"                             -include_pin_to_pin "yes" -include_clock_domains "yes"                             -select_clock_domains "no" {geiger_integration_mindelay_timing_report.txt}
-report -type "timing_violations" -format "TEXT" -analysis "max" -use_slack_threshold "yes" -slack_threshold 0.00                               -limit_max_paths "yes" -max_paths 100 -max_expanded_paths 0                               -max_parallel_paths 1 {geiger_integration_maxdelay_timingviolations_report.txt}
-report -type "timing_violations" -format "TEXT" -analysis "min" -use_slack_threshold "yes" -slack_threshold 0.00                               -limit_max_paths "yes" -max_paths 100 -max_expanded_paths 0                               -max_parallel_paths 1 {geiger_integration_mindelay_timingviolations_report.txt}
+# set working directory
+set_defvar "DESDIR" "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/designer/impl1"
 
-save_design
+# set back-annotation output directory
+set_defvar "BA_DIR" "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/designer/impl1"
+
+# enable the export back-annotation netlist
+set_defvar "BA_NETLIST_ALSO" "1"
+
+# set EDIF options
+set_defvar "EDNINFLAVOR" "GENERIC"
+
+# set HDL options
+set_defvar "NETLIST_NAMING_STYLE" "VERILOG"
+
+# setup status report options
+set_defvar "EXPORT_STATUS_REPORT" "1"
+set_defvar "EXPORT_STATUS_REPORT_FILENAME" "geiger_integration.rpt"
+
+# legacy audit-mode flags (left here for historical reasons)
+set_defvar "AUDIT_NETLIST_FILE" "1"
+set_defvar "AUDIT_DCF_FILE" "1"
+set_defvar "AUDIT_PIN_FILE" "1"
+set_defvar "AUDIT_ADL_FILE" "1"
+
+# import of input files
+import_source  \
+-format "edif" -edif_flavor "GENERIC" -netlist_naming "VERILOG" {../../synthesis/geiger_integration.edn}
+
+# export translation of original netlist
+export -format "verilog" {../../synthesis/geiger_integration.v}

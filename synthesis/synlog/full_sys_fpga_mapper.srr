@@ -1,0 +1,2224 @@
+Synopsys Microsemi Technology Mapper, Version mapact, Build 1522R, Built Jun  4 2015 12:04:36
+Copyright (C) 1994-2015, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+Product Version J-2015.03M-3
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@W: BN132 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\read_buffer.v":43:0:43:5|Removing sequential instance read_buffer_0.byte_out_cl_7[0],  because it is equivalent to instance read_buffer_0.byte_out_cl_6[0]
+@W: BN132 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\read_buffer.v":43:0:43:5|Removing sequential instance read_buffer_0.byte_out_cl_6[0],  because it is equivalent to instance read_buffer_0.byte_out_cl_5[0]
+@W: BN132 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\read_buffer.v":43:0:43:5|Removing sequential instance read_buffer_0.byte_out_cl_5[0],  because it is equivalent to instance read_buffer_0.byte_out_cl_4[0]
+@W: BN132 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\read_buffer.v":43:0:43:5|Removing sequential instance read_buffer_0.byte_out_cl_4[0],  because it is equivalent to instance read_buffer_0.byte_out_cl_3[0]
+@W: BN132 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\read_buffer.v":43:0:43:5|Removing sequential instance read_buffer_0.byte_out_cl_3[0],  because it is equivalent to instance read_buffer_0.byte_out_cl_2[0]
+@W: BN132 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\read_buffer.v":43:0:43:5|Removing sequential instance read_buffer_0.byte_out_cl_2[0],  because it is equivalent to instance read_buffer_0.byte_out_cl_1[0]
+@W: BN132 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\read_buffer.v":43:0:43:5|Removing sequential instance read_buffer_0.byte_out_cl_1[0],  because it is equivalent to instance read_buffer_0.byte_out_cl[0]
+@W: BN132 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\sdram_interface.v":157:0:157:5|Removing sequential instance sdram_interface_0.dqmu,  because it is equivalent to instance sdram_interface_0.dqml
+@W: BN132 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\sdram_interface.v":157:0:157:5|Removing sequential instance sdram_interface_0.dread_cl_2[0],  because it is equivalent to instance sdram_interface_0.dread_cl_15[0]
+@W: BN132 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\sdram_interface.v":157:0:157:5|Removing sequential instance sdram_interface_0.dread_cl_15[0],  because it is equivalent to instance sdram_interface_0.dread_cl_7[0]
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\sdram_interface.v":157:0:157:5|Removing sequential instance dread_cl[0] of view:PrimLib.dffe(prim) in hierarchy view:work.sdram_interface(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\sdram_interface.v":157:0:157:5|Removing sequential instance dread_cl_3[0] of view:PrimLib.dffe(prim) in hierarchy view:work.sdram_interface(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\sdram_interface.v":157:0:157:5|Removing sequential instance dread_cl_4[0] of view:PrimLib.dffe(prim) in hierarchy view:work.sdram_interface(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\sdram_interface.v":157:0:157:5|Removing sequential instance dread_cl_5[0] of view:PrimLib.dffe(prim) in hierarchy view:work.sdram_interface(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\sdram_interface.v":157:0:157:5|Removing sequential instance dread_cl_6[0] of view:PrimLib.dffe(prim) in hierarchy view:work.sdram_interface(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\sdram_interface.v":157:0:157:5|Removing sequential instance dread_cl_8[0] of view:PrimLib.dffe(prim) in hierarchy view:work.sdram_interface(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\sdram_interface.v":157:0:157:5|Removing sequential instance dread_cl_9[0] of view:PrimLib.dffe(prim) in hierarchy view:work.sdram_interface(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\sdram_interface.v":157:0:157:5|Removing sequential instance dread_cl_10[0] of view:PrimLib.dffe(prim) in hierarchy view:work.sdram_interface(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\sdram_interface.v":157:0:157:5|Removing sequential instance dread_cl_11[0] of view:PrimLib.dffe(prim) in hierarchy view:work.sdram_interface(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\sdram_interface.v":157:0:157:5|Removing sequential instance dread_cl_12[0] of view:PrimLib.dffe(prim) in hierarchy view:work.sdram_interface(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\sdram_interface.v":157:0:157:5|Removing sequential instance dread_cl_13[0] of view:PrimLib.dffe(prim) in hierarchy view:work.sdram_interface(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\sdram_interface.v":157:0:157:5|Removing sequential instance dread_cl_14[0] of view:PrimLib.dffe(prim) in hierarchy view:work.sdram_interface(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\spi_mode_config.v":832:4:832:9|Removing sequential instance mem_enable_b of view:PrimLib.dffre(prim) in hierarchy view:work.spi_mode_config(verilog) because there are no references to its outputs 
+@A: BN291 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\spi_mode_config.v":832:4:832:9|Boundary register mem_enable_b packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\spi_mode_config.v":103:4:103:9|Removing sequential instance mem_enable_a of view:PrimLib.dffr(prim) in hierarchy view:work.spi_mode_config(verilog) because there are no references to its outputs 
+@A: BN291 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\spi_mode_config.v":103:4:103:9|Boundary register mem_enable_a packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 113MB)
+
+@N: MF238 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\clock_div_1mhz_10hz.v":31:19:31:28|Found 17-bit incrementor, 'un5_counter[16:0]'
+@N:"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\orbit_control.v":32:0:32:5|Found counter in view:work.orbit_control(verilog) inst cntr[12:0]
+@N:"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\read_address_traversal.v":49:0:49:5|Found counter in view:work.read_address_traversal(verilog) inst current_count[23:0]
+@N:"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\read_buffer.v":66:0:66:5|Found counter in view:work.read_buffer(verilog) inst init_wait[8:0]
+Encoding state machine init_stage[2:0] (view:work.read_buffer(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+@N: MF238 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\sdram_interface.v":224:22:224:37|Found 4-bit incrementor, 'un8_write_counter[3:0]'
+@N: MF238 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\sdram_interface.v":509:21:509:32|Found 24-bit incrementor, 'ts_delay_1[23:0]'
+@N: MF238 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\sdram_interface.v":456:25:456:39|Found 4-bit incrementor, 'un4_init_counter_1[3:0]'
+@N:"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\spi_master.v":90:2:90:7|Found counter in view:work.spi_master(verilog) inst ctr_q[2:0]
+Encoding state machine state_q[2:0] (view:work.spi_master(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\spi_master.v":90:2:90:7|Removing sequential instance data_out_q[0] of view:PrimLib.dffr(prim) in hierarchy view:work.spi_master(verilog) because there are no references to its outputs 
+@A: BN291 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\spi_master.v":90:2:90:7|Boundary register data_out_q[0] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\spi_master.v":90:2:90:7|Removing sequential instance data_out_q[1] of view:PrimLib.dffr(prim) in hierarchy view:work.spi_master(verilog) because there are no references to its outputs 
+@A: BN291 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\spi_master.v":90:2:90:7|Boundary register data_out_q[1] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\spi_master.v":90:2:90:7|Removing sequential instance data_out_q[2] of view:PrimLib.dffr(prim) in hierarchy view:work.spi_master(verilog) because there are no references to its outputs 
+@A: BN291 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\spi_master.v":90:2:90:7|Boundary register data_out_q[2] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\spi_master.v":90:2:90:7|Removing sequential instance data_out_q[3] of view:PrimLib.dffr(prim) in hierarchy view:work.spi_master(verilog) because there are no references to its outputs 
+@A: BN291 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\spi_master.v":90:2:90:7|Boundary register data_out_q[3] packed into a complex cell. To disable register packing, set syn_keep=1 on net between register and complex cell. 
+@N:"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\spi_mode_config.v":832:4:832:9|Found counter in view:work.spi_mode_config(verilog) inst rst_cntr[10:0]
+@N:"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\timestamp.v":19:0:19:5|Found counter in view:work.timestamp(verilog) inst TIMESTAMP[23:0]
+@N:"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\write_address_traversal.v":36:0:36:5|Found counter in view:work.write_address_traversal(verilog) inst current_count[23:0]
+
+Finished factoring (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 125MB peak: 126MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 121MB peak: 126MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 121MB peak: 130MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 122MB peak: 130MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:08s; Memory used current: 127MB peak: 130MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:08s; Memory used current: 127MB peak: 130MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:08s; Memory used current: 126MB peak: 130MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:09s; Memory used current: 156MB peak: 158MB)
+
+
+High Fanout Net Report
+**********************
+
+Driver Instance / Pin Name                    Fanout, notes                   
+------------------------------------------------------------------------------
+reset_pulse_0.RESET / Y                       262 : 246 asynchronous set/reset
+spi_mode_config_0.byte_tracker_b / Q          28                              
+spi_mode_config_0.config_cntr_b[2] / Q        27                              
+sdram_interface_0.write_cycle_4 / Y           28                              
+sdram_interface_0.read_cycle_4 / Y            35                              
+sdram_interface_0.ts_delay_0_sqmuxa / Y       26                              
+memory_controller_0.un1_schedule_11 / Y       25                              
+memory_controller_0.un1_next_write8_1 / Y     26                              
+spi_mode_config_0.state_a_7_0_i_o2[1] / Y     29                              
+==============================================================================
+
+@N: FP130 |Promoting Net reset_pulse_0_CLK_OUT_48MHZ on CLKINT  reset_pulse_0.CLK_OUT_48MHZ_inferred_clock 
+@N: FP130 |Promoting Net clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT on CLKINT  clock_div_1MHZ_10HZ_0.clk_out_inferred_clock 
+@N: FP130 |Promoting Net spi_master_0.state_q_89 on CLKINT  spi_master_0.state_q_inferred_clock[0] 
+@N: FP130 |Promoting Net memory_controller_0_NEXT_WRITE on CLKINT  memory_controller_0.next_write_inferred_clock 
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:09s; Memory used current: 156MB peak: 158MB)
+
+Replicating Combinational Instance spi_mode_config_0.state_a_7_0_i_o2[1], fanout 29 segments 2
+Replicating Combinational Instance memory_controller_0.un1_next_write8_1, fanout 26 segments 2
+Replicating Combinational Instance memory_controller_0.un1_schedule_11, fanout 25 segments 2
+Replicating Combinational Instance sdram_interface_0.ts_delay_0_sqmuxa, fanout 26 segments 2
+Replicating Combinational Instance sdram_interface_0.read_cycle_4, fanout 35 segments 2
+Replicating Combinational Instance sdram_interface_0.write_cycle_4, fanout 28 segments 2
+Replicating Sequential Instance spi_mode_config_0.config_cntr_b[2], fanout 27 segments 2
+Replicating Sequential Instance spi_mode_config_0.byte_tracker_b, fanout 28 segments 2
+Replicating Combinational Instance reset_pulse_0.RESET, fanout 265 segments 12
+Replicating Combinational Instance sdram_interface_0.busy_2_sqmuxa, fanout 25 segments 2
+
+Added 0 Buffers
+Added 20 Cells via replication
+	Added 2 Sequential Cells via replication
+	Added 18 Combinational Cells via replication
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:09s; Memory used current: 156MB peak: 158MB)
+
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+8 gated/generated clock tree(s) driving 373 clock pin(s) of sequential element(s)
+0 instances converted, 373 sequential instances remain driven by gated/generated clocks
+
+======================================================================================================================= Gated/Generated Clocks =======================================================================================================================
+Clock Tree ID     Driving Element                     Drive Element Type     Fanout     Sample Instance                                 Explanation                                                                                                                   
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       CLK_26MHZ_0.Core                    PLL                    56         spi_mode_config_0.state_b[2]                    Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0002       clock_div_1MHZ_10HZ_0.clk_out       DFN1P0                 38         timestamp_0.TIMESTAMP[23]                       No generated or derived clock directive on output of sequential instance                                                      
+@K:CKID0003       memory_controller_0.next_read       DFN1E1C0               24         read_address_traversal_0.current_count[23]      No generated or derived clock directive on output of sequential instance                                                      
+@K:CKID0004       memory_controller_0.next_write      DFN1E1C0               24         write_address_traversal_0.current_count[23]     No generated or derived clock directive on output of sequential instance                                                      
+@K:CKID0005       CLK_1MHZ_0.Core                     PLL                    18         clock_div_1MHZ_10HZ_0.counter[16]               Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0006       spi_mode_config_0.next_b            DFN1E0C0               11         read_buffer_0.position[1]                       No generated or derived clock directive on output of sequential instance                                                      
+@K:CKID0007       reset_pulse_0.CLK_OUT_48MHZ         NOR2B                  179        sdram_interface_0.write_counter[3]              No clocks found on inputs                                                                                                     
+@K:CKID0008       spi_master_0.state_q_RNIRHEV[0]     NOR2                   23         spi_mode_config_0.config_cntr_a[6]              No clocks found on inputs                                                                                                     
+======================================================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:09s; Memory used current: 151MB peak: 158MB)
+
+Writing Analyst data base C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synwork\full_sys_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:09s; Memory used current: 153MB peak: 158MB)
+
+Writing EDIF Netlist and constraint files
+J-2015.03M-3
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:10s; Memory used current: 154MB peak: 158MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:10s; Memory used current: 153MB peak: 158MB)
+
+@W: MT420 |Found inferred clock spi_mode_config|next_b_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:spi_mode_config_0.next_b"
+
+@W: MT420 |Found inferred clock spi_master|state_q_inferred_clock[0] with period 10.00ns. Please declare a user-defined clock on object "n:spi_master_0.state_q[0]"
+
+@W: MT420 |Found inferred clock reset_pulse|CLK_OUT_48MHZ_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:reset_pulse_0.CLK_OUT_48MHZ"
+
+@W: MT420 |Found inferred clock memory_controller|next_write_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:memory_controller_0.next_write"
+
+@W: MT420 |Found inferred clock memory_controller|next_read_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:memory_controller_0.next_read"
+
+@W: MT420 |Found inferred clock clock_div_1MHZ_10HZ|clk_out_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:clock_div_1MHZ_10HZ_0.clk_out"
+
+@W: MT420 |Found inferred clock CLK_26MHZ|GLA_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:CLK_26MHZ_0.GLA"
+
+@W: MT420 |Found inferred clock CLK_1MHZ|GLA_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:CLK_1MHZ_0.GLA"
+
+
+
+@S |##### START OF TIMING REPORT #####[
+# Timing Report written on Mon Feb 29 23:32:54 2016
+#
+
+
+Top view:               full_sys
+Library name:           pa3l
+Operating conditions:   COMWCSTD ( T = 70.0, V = 1.14, P = 1.26, tree_type = balanced_tree )
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Wire load model:        pa3l
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: -18.511
+
+                                                Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock                                  Frequency     Frequency     Period        Period        Slack       Type         Group              
+----------------------------------------------------------------------------------------------------------------------------------------------------
+CLK_1MHZ|GLA_inferred_clock                     100.0 MHz     128.8 MHz     10.000        7.763         2.237       inferred     Inferred_clkgroup_7
+CLK_26MHZ|GLA_inferred_clock                    100.0 MHz     97.5 MHz      10.000        10.258        -0.258      inferred     Inferred_clkgroup_5
+clock_div_1MHZ_10HZ|clk_out_inferred_clock      100.0 MHz     81.2 MHz      10.000        12.320        -2.320      inferred     Inferred_clkgroup_1
+memory_controller|next_read_inferred_clock      100.0 MHz     99.1 MHz      10.000        10.095        -0.096      inferred     Inferred_clkgroup_4
+memory_controller|next_write_inferred_clock     100.0 MHz     85.3 MHz      10.000        11.719        -1.719      inferred     Inferred_clkgroup_0
+reset_pulse|CLK_OUT_48MHZ_inferred_clock        100.0 MHz     35.1 MHz      10.000        28.511        -18.511     inferred     Inferred_clkgroup_6
+spi_master|state_q_inferred_clock[0]            100.0 MHz     NA            10.000        NA            NA          inferred     Inferred_clkgroup_2
+spi_mode_config|next_b_inferred_clock           100.0 MHz     204.4 MHz     10.000        4.892         5.108       inferred     Inferred_clkgroup_3
+====================================================================================================================================================
+@N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                                    |    rise  to  rise    |    fall  to  fall     |    rise  to  fall    |    fall  to  rise  
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                     Ending                                       |  constraint  slack   |  constraint  slack    |  constraint  slack   |  constraint  slack 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+memory_controller|next_write_inferred_clock  memory_controller|next_write_inferred_clock  |  10.000      -1.719  |  No paths    -        |  No paths    -       |  No paths    -     
+memory_controller|next_write_inferred_clock  reset_pulse|CLK_OUT_48MHZ_inferred_clock     |  Diff grp    -       |  No paths    -        |  No paths    -       |  No paths    -     
+clock_div_1MHZ_10HZ|clk_out_inferred_clock   clock_div_1MHZ_10HZ|clk_out_inferred_clock   |  10.000      -2.320  |  No paths    -        |  No paths    -       |  No paths    -     
+clock_div_1MHZ_10HZ|clk_out_inferred_clock   spi_master|state_q_inferred_clock[0]         |  No paths    -       |  No paths    -        |  Diff grp    -       |  No paths    -     
+clock_div_1MHZ_10HZ|clk_out_inferred_clock   reset_pulse|CLK_OUT_48MHZ_inferred_clock     |  No paths    -       |  No paths    -        |  Diff grp    -       |  No paths    -     
+spi_master|state_q_inferred_clock[0]         CLK_26MHZ|GLA_inferred_clock                 |  No paths    -       |  No paths    -        |  No paths    -       |  Diff grp    -     
+spi_mode_config|next_b_inferred_clock        spi_master|state_q_inferred_clock[0]         |  No paths    -       |  No paths    -        |  Diff grp    -       |  No paths    -     
+spi_mode_config|next_b_inferred_clock        spi_mode_config|next_b_inferred_clock        |  10.000      5.108   |  No paths    -        |  No paths    -       |  No paths    -     
+spi_mode_config|next_b_inferred_clock        reset_pulse|CLK_OUT_48MHZ_inferred_clock     |  Diff grp    -       |  No paths    -        |  No paths    -       |  No paths    -     
+memory_controller|next_read_inferred_clock   memory_controller|next_read_inferred_clock   |  10.000      -0.096  |  No paths    -        |  No paths    -       |  No paths    -     
+memory_controller|next_read_inferred_clock   reset_pulse|CLK_OUT_48MHZ_inferred_clock     |  Diff grp    -       |  No paths    -        |  No paths    -       |  No paths    -     
+CLK_26MHZ|GLA_inferred_clock                 clock_div_1MHZ_10HZ|clk_out_inferred_clock   |  Diff grp    -       |  No paths    -        |  No paths    -       |  No paths    -     
+CLK_26MHZ|GLA_inferred_clock                 spi_master|state_q_inferred_clock[0]         |  No paths    -       |  No paths    -        |  Diff grp    -       |  No paths    -     
+CLK_26MHZ|GLA_inferred_clock                 CLK_26MHZ|GLA_inferred_clock                 |  10.000      -0.258  |  No paths    -        |  No paths    -       |  No paths    -     
+reset_pulse|CLK_OUT_48MHZ_inferred_clock     spi_mode_config|next_b_inferred_clock        |  Diff grp    -       |  No paths    -        |  No paths    -       |  No paths    -     
+reset_pulse|CLK_OUT_48MHZ_inferred_clock     reset_pulse|CLK_OUT_48MHZ_inferred_clock     |  10.000      -2.712  |  10.000      -18.511  |  5.000       -8.584  |  5.000       -3.544
+CLK_1MHZ|GLA_inferred_clock                  CLK_1MHZ|GLA_inferred_clock                  |  10.000      2.237   |  No paths    -        |  No paths    -       |  No paths    -     
+=====================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: CLK_1MHZ|GLA_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                      Starting                                                           Arrival          
+Instance                              Reference                       Type       Pin     Net             Time        Slack
+                                      Clock                                                                               
+--------------------------------------------------------------------------------------------------------------------------
+clock_div_1MHZ_10HZ_0.counter[1]      CLK_1MHZ|GLA_inferred_clock     DFN1C0     Q       counter[1]      0.797       2.237
+clock_div_1MHZ_10HZ_0.counter[2]      CLK_1MHZ|GLA_inferred_clock     DFN1C0     Q       counter[2]      0.797       2.269
+clock_div_1MHZ_10HZ_0.counter[4]      CLK_1MHZ|GLA_inferred_clock     DFN1C0     Q       counter[4]      0.797       2.331
+clock_div_1MHZ_10HZ_0.counter[5]      CLK_1MHZ|GLA_inferred_clock     DFN1C0     Q       counter[5]      0.797       2.363
+clock_div_1MHZ_10HZ_0.counter[0]      CLK_1MHZ|GLA_inferred_clock     DFN1P0     Q       counter[0]      0.628       2.363
+clock_div_1MHZ_10HZ_0.counter[3]      CLK_1MHZ|GLA_inferred_clock     DFN1C0     Q       counter[3]      0.797       2.381
+clock_div_1MHZ_10HZ_0.counter[7]      CLK_1MHZ|GLA_inferred_clock     DFN1C0     Q       counter[7]      0.797       2.799
+clock_div_1MHZ_10HZ_0.counter[8]      CLK_1MHZ|GLA_inferred_clock     DFN1C0     Q       counter[8]      0.797       2.881
+clock_div_1MHZ_10HZ_0.counter[12]     CLK_1MHZ|GLA_inferred_clock     DFN1C0     Q       counter[12]     0.797       2.895
+clock_div_1MHZ_10HZ_0.counter[6]      CLK_1MHZ|GLA_inferred_clock     DFN1C0     Q       counter[6]      0.797       3.072
+==========================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                      Starting                                                             Required          
+Instance                              Reference                       Type       Pin     Net               Time         Slack
+                                      Clock                                                                                  
+-----------------------------------------------------------------------------------------------------------------------------
+clock_div_1MHZ_10HZ_0.counter[14]     CLK_1MHZ|GLA_inferred_clock     DFN1C0     D       counter_3[14]     9.417        2.237
+clock_div_1MHZ_10HZ_0.counter[15]     CLK_1MHZ|GLA_inferred_clock     DFN1C0     D       counter_3[15]     9.417        2.237
+clock_div_1MHZ_10HZ_0.clk_out         CLK_1MHZ|GLA_inferred_clock     DFN1P0     D       clk_out_RNO       9.417        2.640
+clock_div_1MHZ_10HZ_0.counter[12]     CLK_1MHZ|GLA_inferred_clock     DFN1C0     D       I_35              9.417        2.724
+clock_div_1MHZ_10HZ_0.counter[9]      CLK_1MHZ|GLA_inferred_clock     DFN1C0     D       counter_3[9]      9.417        2.812
+clock_div_1MHZ_10HZ_0.counter[11]     CLK_1MHZ|GLA_inferred_clock     DFN1C0     D       I_32              9.417        2.901
+clock_div_1MHZ_10HZ_0.counter[13]     CLK_1MHZ|GLA_inferred_clock     DFN1C0     D       I_37              9.417        2.901
+clock_div_1MHZ_10HZ_0.counter[16]     CLK_1MHZ|GLA_inferred_clock     DFN1C0     D       I_46              9.417        2.901
+clock_div_1MHZ_10HZ_0.counter[4]      CLK_1MHZ|GLA_inferred_clock     DFN1C0     D       counter_3[4]      9.380        2.963
+clock_div_1MHZ_10HZ_0.counter[6]      CLK_1MHZ|GLA_inferred_clock     DFN1C0     D       counter_3[6]      9.380        2.963
+=============================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.583
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.417
+
+    - Propagation time:                      7.180
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 2.237
+
+    Number of logic level(s):                5
+    Starting point:                          clock_div_1MHZ_10HZ_0.counter[1] / Q
+    Ending point:                            clock_div_1MHZ_10HZ_0.counter[14] / D
+    The start point is clocked by            CLK_1MHZ|GLA_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            CLK_1MHZ|GLA_inferred_clock [rising] on pin CLK
+
+Instance / Net                                        Pin      Pin               Arrival     No. of    
+Name                                       Type       Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------
+clock_div_1MHZ_10HZ_0.counter[1]           DFN1C0     Q        Out     0.797     0.797       -         
+counter[1]                                 Net        -        -       0.927     -           5         
+clock_div_1MHZ_10HZ_0.un5_counter.I_10     AND3       B        In      -         1.724       -         
+clock_div_1MHZ_10HZ_0.un5_counter.I_10     AND3       Y        Out     0.656     2.380       -         
+DWACT_FINC_E[0]                            Net        -        -       1.106     -           7         
+clock_div_1MHZ_10HZ_0.un5_counter.I_30     AND3       A        In      -         3.487       -         
+clock_div_1MHZ_10HZ_0.un5_counter.I_30     AND3       Y        Out     0.502     3.989       -         
+DWACT_FINC_E[6]                            Net        -        -       1.032     -           6         
+clock_div_1MHZ_10HZ_0.un5_counter.I_39     AND3       A        In      -         5.021       -         
+clock_div_1MHZ_10HZ_0.un5_counter.I_39     AND3       Y        Out     0.502     5.522       -         
+N_4                                        Net        -        -       0.233     -           1         
+clock_div_1MHZ_10HZ_0.un5_counter.I_40     XOR2       A        In      -         5.755       -         
+clock_div_1MHZ_10HZ_0.un5_counter.I_40     XOR2       Y        Out     0.528     6.284       -         
+I_40                                       Net        -        -       0.233     -           1         
+clock_div_1MHZ_10HZ_0.counter_RNO[14]      AOI1B      C        In      -         6.517       -         
+clock_div_1MHZ_10HZ_0.counter_RNO[14]      AOI1B      Y        Out     0.430     6.947       -         
+counter_3[14]                              Net        -        -       0.233     -           1         
+clock_div_1MHZ_10HZ_0.counter[14]          DFN1C0     D        In      -         7.180       -         
+=======================================================================================================
+Total path delay (propagation time + setup) of 7.763 is 3.998(51.5%) logic and 3.765(48.5%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: CLK_26MHZ|GLA_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                  Starting                                                              Arrival           
+Instance                          Reference                        Type         Pin     Net             Time        Slack 
+                                  Clock                                                                                   
+--------------------------------------------------------------------------------------------------------------------------
+spi_mode_config_0.state_b[1]      CLK_26MHZ|GLA_inferred_clock     DFN1E1C0     Q       state_b[1]      0.797       -0.258
+spi_mode_config_0.state_b[0]      CLK_26MHZ|GLA_inferred_clock     DFN1E1P0     Q       state_b[0]      0.797       0.102 
+spi_mode_config_0.rst_cntr[0]     CLK_26MHZ|GLA_inferred_clock     DFN1C0       Q       un74lto0        0.628       1.269 
+spi_mode_config_0.rst_cntr[5]     CLK_26MHZ|GLA_inferred_clock     DFN1E0C0     Q       rst_cntr[5]     0.797       1.356 
+spi_mode_config_0.rst_cntr[4]     CLK_26MHZ|GLA_inferred_clock     DFN1E0C0     Q       rst_cntr[4]     0.797       1.386 
+spi_mode_config_0.rst_cntr[2]     CLK_26MHZ|GLA_inferred_clock     DFN1E0C0     Q       un74lto2        0.628       1.398 
+spi_mode_config_0.rst_cntr[1]     CLK_26MHZ|GLA_inferred_clock     DFN1E0C0     Q       un74lto1        0.628       1.480 
+spi_mode_config_0.rst_cntr[3]     CLK_26MHZ|GLA_inferred_clock     DFN1E0C0     Q       rst_cntr[3]     0.797       1.600 
+spi_mode_config_0.rst_cntr[7]     CLK_26MHZ|GLA_inferred_clock     DFN1E0C0     Q       rst_cntr[7]     0.797       1.972 
+spi_mode_config_0.state_b[2]      CLK_26MHZ|GLA_inferred_clock     DFN1E1C0     Q       state_b[2]      0.628       2.024 
+==========================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                    Starting                                                                  Required           
+Instance                            Reference                        Type         Pin     Net                 Time         Slack 
+                                    Clock                                                                                        
+---------------------------------------------------------------------------------------------------------------------------------
+spi_mode_config_0.ss_b              CLK_26MHZ|GLA_inferred_clock     DFN1E1P0     D       ss_b_1_sqmuxa_1     9.492        -0.258
+spi_mode_config_0.rst_cntr[0]       CLK_26MHZ|GLA_inferred_clock     DFN1C0       D       N_477_i             9.417        1.218 
+spi_mode_config_0.rst_cntr[10]      CLK_26MHZ|GLA_inferred_clock     DFN1E0C0     D       N_141               9.380        1.269 
+spi_mode_config_0.byte_out_b[0]     CLK_26MHZ|GLA_inferred_clock     DFN1E1C0     E       N_86                9.530        1.302 
+spi_mode_config_0.byte_out_b[1]     CLK_26MHZ|GLA_inferred_clock     DFN1E1C0     E       N_86                9.530        1.302 
+spi_mode_config_0.byte_out_b[2]     CLK_26MHZ|GLA_inferred_clock     DFN1E1C0     E       N_86                9.530        1.302 
+spi_mode_config_0.byte_out_b[3]     CLK_26MHZ|GLA_inferred_clock     DFN1E1C0     E       N_86                9.530        1.302 
+spi_mode_config_0.byte_out_b[4]     CLK_26MHZ|GLA_inferred_clock     DFN1E1C0     E       N_86                9.530        1.302 
+spi_mode_config_0.byte_out_b[5]     CLK_26MHZ|GLA_inferred_clock     DFN1E1C0     E       N_86                9.530        1.302 
+spi_mode_config_0.byte_out_b[6]     CLK_26MHZ|GLA_inferred_clock     DFN1E1C0     E       N_86                9.530        1.302 
+=================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.508
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.492
+
+    - Propagation time:                      9.750
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.258
+
+    Number of logic level(s):                5
+    Starting point:                          spi_mode_config_0.state_b[1] / Q
+    Ending point:                            spi_mode_config_0.ss_b / D
+    The start point is clocked by            CLK_26MHZ|GLA_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            CLK_26MHZ|GLA_inferred_clock [rising] on pin CLK
+
+Instance / Net                                          Pin      Pin               Arrival     No. of    
+Name                                       Type         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------
+spi_mode_config_0.state_b[1]               DFN1E1C0     Q        Out     0.797     0.797       -         
+state_b[1]                                 Net          -        -       1.608     -           17        
+spi_mode_config_0.state_b_RNIPPJ4_0[0]     OR2A         B        In      -         2.405       -         
+spi_mode_config_0.state_b_RNIPPJ4_0[0]     OR2A         Y        Out     0.699     3.104       -         
+N_150                                      Net          -        -       1.510     -           14        
+spi_mode_config_0.state_b_RNI7OT6[2]       OR2          B        In      -         4.614       -         
+spi_mode_config_0.state_b_RNI7OT6[2]       OR2          Y        Out     0.699     5.313       -         
+N_173                                      Net          -        -       1.641     -           18        
+spi_mode_config_0.rst_cntr_RNIHRSJ[10]     NOR2         B        In      -         6.953       -         
+spi_mode_config_0.rst_cntr_RNIHRSJ[10]     NOR2         Y        Out     0.699     7.653       -         
+N_628_2                                    Net          -        -       0.280     -           2         
+spi_mode_config_0.ss_b_RNO_3               AO1          B        In      -         7.932       -         
+spi_mode_config_0.ss_b_RNO_3               AO1          Y        Out     0.613     8.545       -         
+m42_0_1                                    Net          -        -       0.233     -           1         
+spi_mode_config_0.ss_b_RNO                 OR3          C        In      -         8.778       -         
+spi_mode_config_0.ss_b_RNO                 OR3          Y        Out     0.739     9.517       -         
+ss_b_1_sqmuxa_1                            Net          -        -       0.233     -           1         
+spi_mode_config_0.ss_b                     DFN1E1P0     D        In      -         9.750       -         
+=========================================================================================================
+Total path delay (propagation time + setup) of 10.258 is 4.754(46.3%) logic and 5.504(53.7%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      10.000
+    - Setup time:                            0.508
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.492
+
+    - Propagation time:                      9.628
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.136
+
+    Number of logic level(s):                5
+    Starting point:                          spi_mode_config_0.state_b[1] / Q
+    Ending point:                            spi_mode_config_0.ss_b / D
+    The start point is clocked by            CLK_26MHZ|GLA_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            CLK_26MHZ|GLA_inferred_clock [rising] on pin CLK
+
+Instance / Net                                          Pin      Pin               Arrival     No. of    
+Name                                       Type         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------
+spi_mode_config_0.state_b[1]               DFN1E1C0     Q        Out     0.797     0.797       -         
+state_b[1]                                 Net          -        -       1.608     -           17        
+spi_mode_config_0.state_b_RNIPPJ4_0[0]     OR2A         B        In      -         2.405       -         
+spi_mode_config_0.state_b_RNIPPJ4_0[0]     OR2A         Y        Out     0.699     3.104       -         
+N_150                                      Net          -        -       1.510     -           14        
+spi_mode_config_0.state_b_RNI7OT6[2]       OR2          B        In      -         4.614       -         
+spi_mode_config_0.state_b_RNI7OT6[2]       OR2          Y        Out     0.699     5.313       -         
+N_173                                      Net          -        -       1.641     -           18        
+spi_mode_config_0.ss_b_RNO_5               NOR3B        C        In      -         6.953       -         
+spi_mode_config_0.ss_b_RNO_5               NOR3B        Y        Out     0.528     7.482       -         
+N_629                                      Net          -        -       0.233     -           1         
+spi_mode_config_0.ss_b_RNO_3               AO1          C        In      -         7.715       -         
+spi_mode_config_0.ss_b_RNO_3               AO1          Y        Out     0.709     8.423       -         
+m42_0_1                                    Net          -        -       0.233     -           1         
+spi_mode_config_0.ss_b_RNO                 OR3          C        In      -         8.656       -         
+spi_mode_config_0.ss_b_RNO                 OR3          Y        Out     0.739     9.395       -         
+ss_b_1_sqmuxa_1                            Net          -        -       0.233     -           1         
+spi_mode_config_0.ss_b                     DFN1E1P0     D        In      -         9.628       -         
+=========================================================================================================
+Total path delay (propagation time + setup) of 10.136 is 4.679(46.2%) logic and 5.457(53.8%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      10.000
+    - Setup time:                            0.508
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.492
+
+    - Propagation time:                      9.508
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.015
+
+    Number of logic level(s):                5
+    Starting point:                          spi_mode_config_0.state_b[1] / Q
+    Ending point:                            spi_mode_config_0.ss_b / D
+    The start point is clocked by            CLK_26MHZ|GLA_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            CLK_26MHZ|GLA_inferred_clock [rising] on pin CLK
+
+Instance / Net                                          Pin      Pin               Arrival     No. of    
+Name                                       Type         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------
+spi_mode_config_0.state_b[1]               DFN1E1C0     Q        Out     0.797     0.797       -         
+state_b[1]                                 Net          -        -       1.608     -           17        
+spi_mode_config_0.state_b_RNIPPJ4_0[0]     OR2A         B        In      -         2.405       -         
+spi_mode_config_0.state_b_RNIPPJ4_0[0]     OR2A         Y        Out     0.699     3.104       -         
+N_150                                      Net          -        -       1.510     -           14        
+spi_mode_config_0.state_b_RNI7OT6[2]       OR2          B        In      -         4.614       -         
+spi_mode_config_0.state_b_RNI7OT6[2]       OR2          Y        Out     0.699     5.313       -         
+N_173                                      Net          -        -       1.641     -           18        
+spi_mode_config_0.rst_cntr_RNIHRSJ[10]     NOR2         B        In      -         6.953       -         
+spi_mode_config_0.rst_cntr_RNIHRSJ[10]     NOR2         Y        Out     0.699     7.653       -         
+N_628_2                                    Net          -        -       0.280     -           2         
+spi_mode_config_0.ss_b_RNO_1               OA1          C        In      -         7.932       -         
+spi_mode_config_0.ss_b_RNO_1               OA1          Y        Out     0.720     8.652       -         
+N_627                                      Net          -        -       0.233     -           1         
+spi_mode_config_0.ss_b_RNO                 OR3          A        In      -         8.886       -         
+spi_mode_config_0.ss_b_RNO                 OR3          Y        Out     0.389     9.275       -         
+ss_b_1_sqmuxa_1                            Net          -        -       0.233     -           1         
+spi_mode_config_0.ss_b                     DFN1E1P0     D        In      -         9.508       -         
+=========================================================================================================
+Total path delay (propagation time + setup) of 10.015 is 4.512(45.0%) logic and 5.504(55.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      10.000
+    - Setup time:                            0.620
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.380
+
+    - Propagation time:                      9.278
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 0.102
+
+    Number of logic level(s):                5
+    Starting point:                          spi_mode_config_0.state_b[0] / Q
+    Ending point:                            spi_mode_config_0.ss_b / D
+    The start point is clocked by            CLK_26MHZ|GLA_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            CLK_26MHZ|GLA_inferred_clock [rising] on pin CLK
+
+Instance / Net                                          Pin      Pin               Arrival     No. of    
+Name                                       Type         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------
+spi_mode_config_0.state_b[0]               DFN1E1P0     Q        Out     0.797     0.797       -         
+state_b[0]                                 Net          -        -       1.510     -           14        
+spi_mode_config_0.state_b_RNIPPJ4_0[0]     OR2A         A        In      -         2.307       -         
+spi_mode_config_0.state_b_RNIPPJ4_0[0]     OR2A         Y        Out     0.504     2.810       -         
+N_150                                      Net          -        -       1.510     -           14        
+spi_mode_config_0.state_b_RNI7OT6[2]       OR2          B        In      -         4.320       -         
+spi_mode_config_0.state_b_RNI7OT6[2]       OR2          Y        Out     0.556     4.876       -         
+N_173                                      Net          -        -       1.641     -           18        
+spi_mode_config_0.rst_cntr_RNIHRSJ[10]     NOR2         B        In      -         6.517       -         
+spi_mode_config_0.rst_cntr_RNIHRSJ[10]     NOR2         Y        Out     0.556     7.073       -         
+N_628_2                                    Net          -        -       0.280     -           2         
+spi_mode_config_0.ss_b_RNO_3               AO1          B        In      -         7.353       -         
+spi_mode_config_0.ss_b_RNO_3               AO1          Y        Out     0.647     7.999       -         
+m42_0_1                                    Net          -        -       0.233     -           1         
+spi_mode_config_0.ss_b_RNO                 OR3          C        In      -         8.232       -         
+spi_mode_config_0.ss_b_RNO                 OR3          Y        Out     0.812     9.045       -         
+ss_b_1_sqmuxa_1                            Net          -        -       0.233     -           1         
+spi_mode_config_0.ss_b                     DFN1E1P0     D        In      -         9.278       -         
+=========================================================================================================
+Total path delay (propagation time + setup) of 9.898 is 4.493(45.4%) logic and 5.405(54.6%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      10.000
+    - Setup time:                            0.620
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.380
+
+    - Propagation time:                      9.101
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 0.278
+
+    Number of logic level(s):                5
+    Starting point:                          spi_mode_config_0.state_b[0] / Q
+    Ending point:                            spi_mode_config_0.ss_b / D
+    The start point is clocked by            CLK_26MHZ|GLA_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            CLK_26MHZ|GLA_inferred_clock [rising] on pin CLK
+
+Instance / Net                                          Pin      Pin               Arrival     No. of    
+Name                                       Type         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------
+spi_mode_config_0.state_b[0]               DFN1E1P0     Q        Out     0.797     0.797       -         
+state_b[0]                                 Net          -        -       1.510     -           14        
+spi_mode_config_0.state_b_RNIPPJ4_0[0]     OR2A         A        In      -         2.307       -         
+spi_mode_config_0.state_b_RNIPPJ4_0[0]     OR2A         Y        Out     0.504     2.810       -         
+N_150                                      Net          -        -       1.510     -           14        
+spi_mode_config_0.state_b_RNI7OT6[2]       OR2          B        In      -         4.320       -         
+spi_mode_config_0.state_b_RNI7OT6[2]       OR2          Y        Out     0.556     4.876       -         
+N_173                                      Net          -        -       1.641     -           18        
+spi_mode_config_0.ss_b_RNO_5               NOR3B        C        In      -         6.517       -         
+spi_mode_config_0.ss_b_RNO_5               NOR3B        Y        Out     0.389     6.906       -         
+N_629                                      Net          -        -       0.233     -           1         
+spi_mode_config_0.ss_b_RNO_3               AO1          C        In      -         7.139       -         
+spi_mode_config_0.ss_b_RNO_3               AO1          Y        Out     0.684     7.823       -         
+m42_0_1                                    Net          -        -       0.233     -           1         
+spi_mode_config_0.ss_b_RNO                 OR3          C        In      -         8.056       -         
+spi_mode_config_0.ss_b_RNO                 OR3          Y        Out     0.812     8.868       -         
+ss_b_1_sqmuxa_1                            Net          -        -       0.233     -           1         
+spi_mode_config_0.ss_b                     DFN1E1P0     D        In      -         9.101       -         
+=========================================================================================================
+Total path delay (propagation time + setup) of 9.722 is 4.363(44.9%) logic and 5.359(55.1%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: clock_div_1MHZ_10HZ|clk_out_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                              Starting                                                                                        Arrival           
+Instance                      Reference                                      Type       Pin     Net                           Time        Slack 
+                              Clock                                                                                                             
+------------------------------------------------------------------------------------------------------------------------------------------------
+timestamp_0.TIMESTAMP[0]      clock_div_1MHZ_10HZ|clk_out_inferred_clock     DFN1C0     Q       timestamp_0_TIMESTAMP[0]      0.797       -2.320
+timestamp_0.TIMESTAMP[2]      clock_div_1MHZ_10HZ|clk_out_inferred_clock     DFN1C0     Q       timestamp_0_TIMESTAMP[2]      0.797       -2.258
+timestamp_0.TIMESTAMP[8]      clock_div_1MHZ_10HZ|clk_out_inferred_clock     DFN1C0     Q       timestamp_0_TIMESTAMP[8]      0.797       -2.205
+orbit_control_0.cntr[0]       clock_div_1MHZ_10HZ|clk_out_inferred_clock     DFN1C0     Q       cntr[0]                       0.797       -2.190
+timestamp_0.TIMESTAMP[1]      clock_div_1MHZ_10HZ|clk_out_inferred_clock     DFN1C0     Q       timestamp_0_TIMESTAMP[1]      0.797       -2.165
+timestamp_0.TIMESTAMP[7]      clock_div_1MHZ_10HZ|clk_out_inferred_clock     DFN1C0     Q       timestamp_0_TIMESTAMP[7]      0.797       -2.098
+timestamp_0.TIMESTAMP[6]      clock_div_1MHZ_10HZ|clk_out_inferred_clock     DFN1C0     Q       timestamp_0_TIMESTAMP[6]      0.797       -2.083
+timestamp_0.TIMESTAMP[14]     clock_div_1MHZ_10HZ|clk_out_inferred_clock     DFN1C0     Q       timestamp_0_TIMESTAMP[14]     0.797       -1.883
+timestamp_0.TIMESTAMP[11]     clock_div_1MHZ_10HZ|clk_out_inferred_clock     DFN1C0     Q       timestamp_0_TIMESTAMP[11]     0.797       -1.803
+orbit_control_0.cntr[1]       clock_div_1MHZ_10HZ|clk_out_inferred_clock     DFN1C0     Q       cntr[1]                       0.797       -1.763
+================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                              Starting                                                                            Required           
+Instance                      Reference                                      Type       Pin     Net               Time         Slack 
+                              Clock                                                                                                  
+-------------------------------------------------------------------------------------------------------------------------------------
+timestamp_0.TIMESTAMP[23]     clock_div_1MHZ_10HZ|clk_out_inferred_clock     DFN1C0     D       TIMESTAMP_n23     9.417        -2.320
+orbit_control_0.cntr[12]      clock_div_1MHZ_10HZ|clk_out_inferred_clock     DFN1C0     D       cntr_n12          9.417        -2.190
+timestamp_0.TIMESTAMP[22]     clock_div_1MHZ_10HZ|clk_out_inferred_clock     DFN1C0     D       TIMESTAMP_n22     9.417        -1.799
+orbit_control_0.cntr[11]      clock_div_1MHZ_10HZ|clk_out_inferred_clock     DFN1C0     D       cntr_n11          9.417        -1.690
+timestamp_0.TIMESTAMP[14]     clock_div_1MHZ_10HZ|clk_out_inferred_clock     DFN1C0     D       TIMESTAMP_n14     9.417        -1.587
+timestamp_0.TIMESTAMP[21]     clock_div_1MHZ_10HZ|clk_out_inferred_clock     DFN1C0     D       TIMESTAMP_n21     9.417        -1.361
+timestamp_0.TIMESTAMP[13]     clock_div_1MHZ_10HZ|clk_out_inferred_clock     DFN1C0     D       TIMESTAMP_n13     9.417        -1.067
+orbit_control_0.cntr[10]      clock_div_1MHZ_10HZ|clk_out_inferred_clock     DFN1C0     D       cntr_n10          9.417        -0.854
+timestamp_0.TIMESTAMP[20]     clock_div_1MHZ_10HZ|clk_out_inferred_clock     DFN1C0     D       TIMESTAMP_n20     9.417        -0.841
+timestamp_0.TIMESTAMP[12]     clock_div_1MHZ_10HZ|clk_out_inferred_clock     DFN1C0     D       TIMESTAMP_n12     9.417        -0.231
+=====================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.583
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.417
+
+    - Propagation time:                      11.737
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -2.320
+
+    Number of logic level(s):                8
+    Starting point:                          timestamp_0.TIMESTAMP[0] / Q
+    Ending point:                            timestamp_0.TIMESTAMP[23] / D
+    The start point is clocked by            clock_div_1MHZ_10HZ|clk_out_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            clock_div_1MHZ_10HZ|clk_out_inferred_clock [rising] on pin CLK
+
+Instance / Net                                    Pin      Pin               Arrival     No. of    
+Name                                   Type       Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------
+timestamp_0.TIMESTAMP[0]               DFN1C0     Q        Out     0.797     0.797       -         
+timestamp_0_TIMESTAMP[0]               Net        -        -       1.288     -           11        
+timestamp_0.TIMESTAMP_RNIAT81[2]       NOR3C      B        In      -         2.085       -         
+timestamp_0.TIMESTAMP_RNIAT81[2]       NOR3C      Y        Out     0.656     2.741       -         
+TIMESTAMP_c2                           Net        -        -       0.585     -           3         
+timestamp_0.TIMESTAMP_RNIBB42[4]       NOR3C      B        In      -         3.325       -         
+timestamp_0.TIMESTAMP_RNIBB42[4]       NOR3C      Y        Out     0.656     3.981       -         
+TIMESTAMP_c4                           Net        -        -       0.585     -           3         
+timestamp_0.TIMESTAMP_RNIT3I2[5]       NOR2B      A        In      -         4.566       -         
+timestamp_0.TIMESTAMP_RNIT3I2[5]       NOR2B      Y        Out     0.556     5.122       -         
+TIMESTAMP_c5                           Net        -        -       0.585     -           3         
+timestamp_0.TIMESTAMP_RNII9EO2[15]     NOR2B      B        In      -         5.707       -         
+timestamp_0.TIMESTAMP_RNII9EO2[15]     NOR2B      Y        Out     0.679     6.386       -         
+TIMESTAMP_c15                          Net        -        -       0.585     -           3         
+timestamp_0.TIMESTAMP_RNIR4GK3[17]     NOR2B      B        In      -         6.970       -         
+timestamp_0.TIMESTAMP_RNIR4GK3[17]     NOR2B      Y        Out     0.679     7.649       -         
+TIMESTAMP_c17                          Net        -        -       0.585     -           3         
+timestamp_0.TIMESTAMP_RNI84IG4[19]     NOR2B      B        In      -         8.233       -         
+timestamp_0.TIMESTAMP_RNI84IG4[19]     NOR2B      Y        Out     0.679     8.912       -         
+TIMESTAMP_c19                          Net        -        -       0.585     -           3         
+timestamp_0.TIMESTAMP_RNI7NLC5[20]     NOR2B      B        In      -         9.496       -         
+timestamp_0.TIMESTAMP_RNI7NLC5[20]     NOR2B      Y        Out     0.679     10.175      -         
+TIMESTAMP_c21                          Net        -        -       0.280     -           2         
+timestamp_0.TIMESTAMP_RNO[23]          AX1C       B        In      -         10.455      -         
+timestamp_0.TIMESTAMP_RNO[23]          AX1C       Y        Out     1.049     11.504      -         
+TIMESTAMP_n23                          Net        -        -       0.233     -           1         
+timestamp_0.TIMESTAMP[23]              DFN1C0     D        In      -         11.737      -         
+===================================================================================================
+Total path delay (propagation time + setup) of 12.320 is 7.011(56.9%) logic and 5.308(43.1%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      10.000
+    - Setup time:                            0.583
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.417
+
+    - Propagation time:                      11.675
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -2.258
+
+    Number of logic level(s):                8
+    Starting point:                          timestamp_0.TIMESTAMP[2] / Q
+    Ending point:                            timestamp_0.TIMESTAMP[23] / D
+    The start point is clocked by            clock_div_1MHZ_10HZ|clk_out_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            clock_div_1MHZ_10HZ|clk_out_inferred_clock [rising] on pin CLK
+
+Instance / Net                                    Pin      Pin               Arrival     No. of    
+Name                                   Type       Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------
+timestamp_0.TIMESTAMP[2]               DFN1C0     Q        Out     0.797     0.797       -         
+timestamp_0_TIMESTAMP[2]               Net        -        -       1.188     -           8         
+timestamp_0.TIMESTAMP_RNIAT81[2]       NOR3C      C        In      -         1.985       -         
+timestamp_0.TIMESTAMP_RNIAT81[2]       NOR3C      Y        Out     0.694     2.679       -         
+TIMESTAMP_c2                           Net        -        -       0.585     -           3         
+timestamp_0.TIMESTAMP_RNIBB42[4]       NOR3C      B        In      -         3.263       -         
+timestamp_0.TIMESTAMP_RNIBB42[4]       NOR3C      Y        Out     0.656     3.919       -         
+TIMESTAMP_c4                           Net        -        -       0.585     -           3         
+timestamp_0.TIMESTAMP_RNIT3I2[5]       NOR2B      A        In      -         4.504       -         
+timestamp_0.TIMESTAMP_RNIT3I2[5]       NOR2B      Y        Out     0.556     5.060       -         
+TIMESTAMP_c5                           Net        -        -       0.585     -           3         
+timestamp_0.TIMESTAMP_RNII9EO2[15]     NOR2B      B        In      -         5.645       -         
+timestamp_0.TIMESTAMP_RNII9EO2[15]     NOR2B      Y        Out     0.679     6.324       -         
+TIMESTAMP_c15                          Net        -        -       0.585     -           3         
+timestamp_0.TIMESTAMP_RNIR4GK3[17]     NOR2B      B        In      -         6.908       -         
+timestamp_0.TIMESTAMP_RNIR4GK3[17]     NOR2B      Y        Out     0.679     7.587       -         
+TIMESTAMP_c17                          Net        -        -       0.585     -           3         
+timestamp_0.TIMESTAMP_RNI84IG4[19]     NOR2B      B        In      -         8.171       -         
+timestamp_0.TIMESTAMP_RNI84IG4[19]     NOR2B      Y        Out     0.679     8.850       -         
+TIMESTAMP_c19                          Net        -        -       0.585     -           3         
+timestamp_0.TIMESTAMP_RNI7NLC5[20]     NOR2B      B        In      -         9.435       -         
+timestamp_0.TIMESTAMP_RNI7NLC5[20]     NOR2B      Y        Out     0.679     10.113      -         
+TIMESTAMP_c21                          Net        -        -       0.280     -           2         
+timestamp_0.TIMESTAMP_RNO[23]          AX1C       B        In      -         10.393      -         
+timestamp_0.TIMESTAMP_RNO[23]          AX1C       Y        Out     1.049     11.442      -         
+TIMESTAMP_n23                          Net        -        -       0.233     -           1         
+timestamp_0.TIMESTAMP[23]              DFN1C0     D        In      -         11.675      -         
+===================================================================================================
+Total path delay (propagation time + setup) of 12.258 is 7.049(57.5%) logic and 5.209(42.5%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      10.000
+    - Setup time:                            0.583
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.417
+
+    - Propagation time:                      11.623
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -2.205
+
+    Number of logic level(s):                9
+    Starting point:                          timestamp_0.TIMESTAMP[8] / Q
+    Ending point:                            timestamp_0.TIMESTAMP[23] / D
+    The start point is clocked by            clock_div_1MHZ_10HZ|clk_out_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            clock_div_1MHZ_10HZ|clk_out_inferred_clock [rising] on pin CLK
+
+Instance / Net                                    Pin      Pin               Arrival     No. of    
+Name                                   Type       Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------
+timestamp_0.TIMESTAMP[8]               DFN1C0     Q        Out     0.797     0.797       -         
+timestamp_0_TIMESTAMP[8]               Net        -        -       1.210     -           9         
+timestamp_0.TIMESTAMP_RNI8LR[6]        NOR2B      B        In      -         2.007       -         
+timestamp_0.TIMESTAMP_RNI8LR[6]        NOR2B      Y        Out     0.679     2.685       -         
+TIMESTAMP_m6_0_a2_7_2                  Net        -        -       0.233     -           1         
+timestamp_0.TIMESTAMP_RNI98TS[13]      NOR3C      C        In      -         2.918       -         
+timestamp_0.TIMESTAMP_RNI98TS[13]      NOR3C      Y        Out     0.694     3.612       -         
+TIMESTAMP_m6_0_a2_7_5                  Net        -        -       0.233     -           1         
+timestamp_0.TIMESTAMP_RNII9R72[9]      NOR2B      B        In      -         3.845       -         
+timestamp_0.TIMESTAMP_RNII9R72[9]      NOR2B      Y        Out     0.679     4.524       -         
+TIMESTAMP_m6_0_a2_7                    Net        -        -       0.280     -           2         
+timestamp_0.TIMESTAMP_RNIL5SL2[15]     NOR2B      B        In      -         4.803       -         
+timestamp_0.TIMESTAMP_RNIL5SL2[15]     NOR2B      Y        Out     0.679     5.482       -         
+TIMESTAMP_c15_0                        Net        -        -       0.233     -           1         
+timestamp_0.TIMESTAMP_RNII9EO2[15]     NOR2B      A        In      -         5.715       -         
+timestamp_0.TIMESTAMP_RNII9EO2[15]     NOR2B      Y        Out     0.556     6.271       -         
+TIMESTAMP_c15                          Net        -        -       0.585     -           3         
+timestamp_0.TIMESTAMP_RNIR4GK3[17]     NOR2B      B        In      -         6.856       -         
+timestamp_0.TIMESTAMP_RNIR4GK3[17]     NOR2B      Y        Out     0.679     7.535       -         
+TIMESTAMP_c17                          Net        -        -       0.585     -           3         
+timestamp_0.TIMESTAMP_RNI84IG4[19]     NOR2B      B        In      -         8.119       -         
+timestamp_0.TIMESTAMP_RNI84IG4[19]     NOR2B      Y        Out     0.679     8.798       -         
+TIMESTAMP_c19                          Net        -        -       0.585     -           3         
+timestamp_0.TIMESTAMP_RNI7NLC5[20]     NOR2B      B        In      -         9.382       -         
+timestamp_0.TIMESTAMP_RNI7NLC5[20]     NOR2B      Y        Out     0.679     10.061      -         
+TIMESTAMP_c21                          Net        -        -       0.280     -           2         
+timestamp_0.TIMESTAMP_RNO[23]          AX1C       B        In      -         10.341      -         
+timestamp_0.TIMESTAMP_RNO[23]          AX1C       Y        Out     1.049     11.390      -         
+TIMESTAMP_n23                          Net        -        -       0.233     -           1         
+timestamp_0.TIMESTAMP[23]              DFN1C0     D        In      -         11.623      -         
+===================================================================================================
+Total path delay (propagation time + setup) of 12.205 is 7.750(63.5%) logic and 4.455(36.5%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      10.000
+    - Setup time:                            0.583
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.417
+
+    - Propagation time:                      11.607
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -2.190
+
+    Number of logic level(s):                11
+    Starting point:                          orbit_control_0.cntr[0] / Q
+    Ending point:                            orbit_control_0.cntr[12] / D
+    The start point is clocked by            clock_div_1MHZ_10HZ|clk_out_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            clock_div_1MHZ_10HZ|clk_out_inferred_clock [rising] on pin CLK
+
+Instance / Net                                   Pin      Pin               Arrival     No. of    
+Name                                  Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------
+orbit_control_0.cntr[0]               DFN1C0     Q        Out     0.797     0.797       -         
+cntr[0]                               Net        -        -       0.585     -           3         
+orbit_control_0.cntr_RNIP0MA[1]       NOR2B      B        In      -         1.382       -         
+orbit_control_0.cntr_RNIP0MA[1]       NOR2B      Y        Out     0.679     2.060       -         
+cntr_c1                               Net        -        -       0.280     -           2         
+orbit_control_0.cntr_RNIN21G[2]       NOR2B      B        In      -         2.340       -         
+orbit_control_0.cntr_RNIN21G[2]       NOR2B      Y        Out     0.679     3.019       -         
+cntr_c2                               Net        -        -       0.280     -           2         
+orbit_control_0.cntr_RNIM5CL[3]       NOR2B      B        In      -         3.298       -         
+orbit_control_0.cntr_RNIM5CL[3]       NOR2B      Y        Out     0.679     3.977       -         
+cntr_c3                               Net        -        -       0.280     -           2         
+orbit_control_0.cntr_RNIM9NQ[4]       NOR2B      B        In      -         4.257       -         
+orbit_control_0.cntr_RNIM9NQ[4]       NOR2B      Y        Out     0.679     4.935       -         
+cntr_c4                               Net        -        -       0.280     -           2         
+orbit_control_0.cntr_RNINE201[5]      NOR2B      B        In      -         5.215       -         
+orbit_control_0.cntr_RNINE201[5]      NOR2B      Y        Out     0.679     5.893       -         
+cntr_c5                               Net        -        -       0.280     -           2         
+orbit_control_0.cntr_RNIPKD51[6]      NOR2B      A        In      -         6.173       -         
+orbit_control_0.cntr_RNIPKD51[6]      NOR2B      Y        Out     0.556     6.729       -         
+cntr_c6                               Net        -        -       0.280     -           2         
+orbit_control_0.cntr_RNISROA1[7]      NOR2B      A        In      -         7.009       -         
+orbit_control_0.cntr_RNISROA1[7]      NOR2B      Y        Out     0.556     7.566       -         
+cntr_c7                               Net        -        -       0.280     -           2         
+orbit_control_0.cntr_RNI044G1[8]      NOR2B      A        In      -         7.845       -         
+orbit_control_0.cntr_RNI044G1[8]      NOR2B      Y        Out     0.556     8.402       -         
+cntr_c8                               Net        -        -       0.280     -           2         
+orbit_control_0.cntr_RNI5DFL1[9]      NOR2B      A        In      -         8.681       -         
+orbit_control_0.cntr_RNI5DFL1[9]      NOR2B      Y        Out     0.556     9.238       -         
+cntr_c9                               Net        -        -       0.280     -           2         
+orbit_control_0.cntr_RNIIVPL1[10]     NOR2B      A        In      -         9.518       -         
+orbit_control_0.cntr_RNIIVPL1[10]     NOR2B      Y        Out     0.556     10.074      -         
+cntr_c10                              Net        -        -       0.280     -           2         
+orbit_control_0.cntr_RNO[12]          AX1C       A        In      -         10.354      -         
+orbit_control_0.cntr_RNO[12]          AX1C       Y        Out     1.021     11.374      -         
+cntr_n12                              Net        -        -       0.233     -           1         
+orbit_control_0.cntr[12]              DFN1C0     D        In      -         11.607      -         
+==================================================================================================
+Total path delay (propagation time + setup) of 12.190 is 8.575(70.3%) logic and 3.615(29.7%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      10.000
+    - Setup time:                            0.583
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.417
+
+    - Propagation time:                      11.583
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -2.165
+
+    Number of logic level(s):                8
+    Starting point:                          timestamp_0.TIMESTAMP[1] / Q
+    Ending point:                            timestamp_0.TIMESTAMP[23] / D
+    The start point is clocked by            clock_div_1MHZ_10HZ|clk_out_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            clock_div_1MHZ_10HZ|clk_out_inferred_clock [rising] on pin CLK
+
+Instance / Net                                    Pin      Pin               Arrival     No. of    
+Name                                   Type       Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------
+timestamp_0.TIMESTAMP[1]               DFN1C0     Q        Out     0.797     0.797       -         
+timestamp_0_TIMESTAMP[1]               Net        -        -       1.288     -           11        
+timestamp_0.TIMESTAMP_RNIAT81[2]       NOR3C      A        In      -         2.085       -         
+timestamp_0.TIMESTAMP_RNIAT81[2]       NOR3C      Y        Out     0.502     2.587       -         
+TIMESTAMP_c2                           Net        -        -       0.585     -           3         
+timestamp_0.TIMESTAMP_RNIBB42[4]       NOR3C      B        In      -         3.171       -         
+timestamp_0.TIMESTAMP_RNIBB42[4]       NOR3C      Y        Out     0.656     3.827       -         
+TIMESTAMP_c4                           Net        -        -       0.585     -           3         
+timestamp_0.TIMESTAMP_RNIT3I2[5]       NOR2B      A        In      -         4.412       -         
+timestamp_0.TIMESTAMP_RNIT3I2[5]       NOR2B      Y        Out     0.556     4.968       -         
+TIMESTAMP_c5                           Net        -        -       0.585     -           3         
+timestamp_0.TIMESTAMP_RNII9EO2[15]     NOR2B      B        In      -         5.553       -         
+timestamp_0.TIMESTAMP_RNII9EO2[15]     NOR2B      Y        Out     0.679     6.231       -         
+TIMESTAMP_c15                          Net        -        -       0.585     -           3         
+timestamp_0.TIMESTAMP_RNIR4GK3[17]     NOR2B      B        In      -         6.816       -         
+timestamp_0.TIMESTAMP_RNIR4GK3[17]     NOR2B      Y        Out     0.679     7.495       -         
+TIMESTAMP_c17                          Net        -        -       0.585     -           3         
+timestamp_0.TIMESTAMP_RNI84IG4[19]     NOR2B      B        In      -         8.079       -         
+timestamp_0.TIMESTAMP_RNI84IG4[19]     NOR2B      Y        Out     0.679     8.758       -         
+TIMESTAMP_c19                          Net        -        -       0.585     -           3         
+timestamp_0.TIMESTAMP_RNI7NLC5[20]     NOR2B      B        In      -         9.342       -         
+timestamp_0.TIMESTAMP_RNI7NLC5[20]     NOR2B      Y        Out     0.679     10.021      -         
+TIMESTAMP_c21                          Net        -        -       0.280     -           2         
+timestamp_0.TIMESTAMP_RNO[23]          AX1C       B        In      -         10.301      -         
+timestamp_0.TIMESTAMP_RNO[23]          AX1C       Y        Out     1.049     11.350      -         
+TIMESTAMP_n23                          Net        -        -       0.233     -           1         
+timestamp_0.TIMESTAMP[23]              DFN1C0     D        In      -         11.583      -         
+===================================================================================================
+Total path delay (propagation time + setup) of 12.165 is 6.857(56.4%) logic and 5.308(43.6%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: memory_controller|next_read_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                               Starting                                                                                                       Arrival           
+Instance                                       Reference                                      Type       Pin     Net                                          Time        Slack 
+                                               Clock                                                                                                                            
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+read_address_traversal_0.current_count[0]      memory_controller|next_read_inferred_clock     DFN1C0     Q       read_address_traversal_0_ROW_READ_OUT[0]     0.797       -0.096
+read_address_traversal_0.current_count[1]      memory_controller|next_read_inferred_clock     DFN1C0     Q       read_address_traversal_0_ROW_READ_OUT[1]     0.797       0.096 
+read_address_traversal_0.current_count[4]      memory_controller|next_read_inferred_clock     DFN1C0     Q       read_address_traversal_0_ROW_READ_OUT[4]     0.797       0.099 
+read_address_traversal_0.current_count[6]      memory_controller|next_read_inferred_clock     DFN1C0     Q       read_address_traversal_0_ROW_READ_OUT[6]     0.797       0.128 
+read_address_traversal_0.current_count[5]      memory_controller|next_read_inferred_clock     DFN1C0     Q       read_address_traversal_0_ROW_READ_OUT[5]     0.797       0.181 
+read_address_traversal_0.current_count[3]      memory_controller|next_read_inferred_clock     DFN1C0     Q       read_address_traversal_0_ROW_READ_OUT[3]     0.797       0.241 
+read_address_traversal_0.current_count[2]      memory_controller|next_read_inferred_clock     DFN1C0     Q       read_address_traversal_0_ROW_READ_OUT[2]     0.797       0.395 
+read_address_traversal_0.current_count[13]     memory_controller|next_read_inferred_clock     DFN1C0     Q       read_address_traversal_0_COL_READ_OUT[0]     0.797       0.784 
+read_address_traversal_0.current_count[9]      memory_controller|next_read_inferred_clock     DFN1C0     Q       read_address_traversal_0_ROW_READ_OUT[9]     0.797       0.953 
+read_address_traversal_0.current_count[15]     memory_controller|next_read_inferred_clock     DFN1C0     Q       read_address_traversal_0_COL_READ_OUT[2]     0.797       0.996 
+================================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                               Starting                                                                                Required           
+Instance                                       Reference                                      Type       Pin     Net                   Time         Slack 
+                                               Clock                                                                                                      
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+read_address_traversal_0.current_count[21]     memory_controller|next_read_inferred_clock     DFN1C0     D       current_count_n21     9.417        -0.096
+read_address_traversal_0.current_count[22]     memory_controller|next_read_inferred_clock     DFN1C0     D       current_count_n22     9.417        -0.096
+read_address_traversal_0.current_count[20]     memory_controller|next_read_inferred_clock     DFN1C0     D       current_count_n20     9.417        0.425 
+read_address_traversal_0.current_count[14]     memory_controller|next_read_inferred_clock     DFN1C0     D       current_count_n14     9.417        0.715 
+read_address_traversal_0.current_count[19]     memory_controller|next_read_inferred_clock     DFN1C0     D       current_count_n19     9.417        1.046 
+read_address_traversal_0.current_count[13]     memory_controller|next_read_inferred_clock     DFN1C0     D       current_count_n13     9.417        1.083 
+read_address_traversal_0.current_count[18]     memory_controller|next_read_inferred_clock     DFN1C0     D       current_count_n18     9.417        1.566 
+read_address_traversal_0.current_count[12]     memory_controller|next_read_inferred_clock     DFN1C0     D       current_count_n12     9.417        1.604 
+read_address_traversal_0.current_count[6]      memory_controller|next_read_inferred_clock     DFN1C0     D       current_count_n6      9.417        2.030 
+read_address_traversal_0.current_count[15]     memory_controller|next_read_inferred_clock     DFN1C0     D       current_count_n15     9.417        2.058 
+==========================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.583
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.417
+
+    - Propagation time:                      9.513
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.096
+
+    Number of logic level(s):                6
+    Starting point:                          read_address_traversal_0.current_count[0] / Q
+    Ending point:                            read_address_traversal_0.current_count[21] / D
+    The start point is clocked by            memory_controller|next_read_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            memory_controller|next_read_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                     Pin      Pin               Arrival     No. of    
+Name                                                    Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------------
+read_address_traversal_0.current_count[0]               DFN1C0     Q        Out     0.797     0.797       -         
+read_address_traversal_0_ROW_READ_OUT[0]                Net        -        -       0.927     -           5         
+read_address_traversal_0.current_count_c1               NOR2B      B        In      -         1.724       -         
+read_address_traversal_0.current_count_c1               NOR2B      Y        Out     0.679     2.403       -         
+current_count_c1                                        Net        -        -       0.585     -           3         
+read_address_traversal_0.current_count_c6_s_RNIAFF5     NOR3C      B        In      -         2.988       -         
+read_address_traversal_0.current_count_c6_s_RNIAFF5     NOR3C      Y        Out     0.656     3.644       -         
+current_count_c6                                        Net        -        -       0.927     -           5         
+read_address_traversal_0.current_count_RNIRCEG1[10]     NOR3C      C        In      -         4.571       -         
+read_address_traversal_0.current_count_RNIRCEG1[10]     NOR3C      Y        Out     0.694     5.265       -         
+current_count_c15                                       Net        -        -       0.585     -           3         
+read_address_traversal_0.current_count_c17              NOR3C      B        In      -         5.849       -         
+read_address_traversal_0.current_count_c17              NOR3C      Y        Out     0.656     6.505       -         
+current_count_c17                                       Net        -        -       0.585     -           3         
+read_address_traversal_0.current_count_c19              NOR2B      A        In      -         7.090       -         
+read_address_traversal_0.current_count_c19              NOR2B      Y        Out     0.556     7.646       -         
+current_count_c19                                       Net        -        -       0.585     -           3         
+read_address_traversal_0.current_count_n21              AX1C       B        In      -         8.231       -         
+read_address_traversal_0.current_count_n21              AX1C       Y        Out     1.049     9.280       -         
+current_count_n21                                       Net        -        -       0.233     -           1         
+read_address_traversal_0.current_count[21]              DFN1C0     D        In      -         9.513       -         
+====================================================================================================================
+Total path delay (propagation time + setup) of 10.096 is 5.669(56.2%) logic and 4.426(43.8%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      10.000
+    - Setup time:                            0.583
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.417
+
+    - Propagation time:                      9.513
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.096
+
+    Number of logic level(s):                6
+    Starting point:                          read_address_traversal_0.current_count[0] / Q
+    Ending point:                            read_address_traversal_0.current_count[22] / D
+    The start point is clocked by            memory_controller|next_read_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            memory_controller|next_read_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                     Pin      Pin               Arrival     No. of    
+Name                                                    Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------------
+read_address_traversal_0.current_count[0]               DFN1C0     Q        Out     0.797     0.797       -         
+read_address_traversal_0_ROW_READ_OUT[0]                Net        -        -       0.927     -           5         
+read_address_traversal_0.current_count_c1               NOR2B      B        In      -         1.724       -         
+read_address_traversal_0.current_count_c1               NOR2B      Y        Out     0.679     2.403       -         
+current_count_c1                                        Net        -        -       0.585     -           3         
+read_address_traversal_0.current_count_c6_s_RNIAFF5     NOR3C      B        In      -         2.988       -         
+read_address_traversal_0.current_count_c6_s_RNIAFF5     NOR3C      Y        Out     0.656     3.644       -         
+current_count_c6                                        Net        -        -       0.927     -           5         
+read_address_traversal_0.current_count_RNIRCEG1[10]     NOR3C      C        In      -         4.571       -         
+read_address_traversal_0.current_count_RNIRCEG1[10]     NOR3C      Y        Out     0.694     5.265       -         
+current_count_c15                                       Net        -        -       0.585     -           3         
+read_address_traversal_0.current_count_c17              NOR3C      B        In      -         5.849       -         
+read_address_traversal_0.current_count_c17              NOR3C      Y        Out     0.656     6.505       -         
+current_count_c17                                       Net        -        -       0.585     -           3         
+read_address_traversal_0.current_count_c19              NOR2B      A        In      -         7.090       -         
+read_address_traversal_0.current_count_c19              NOR2B      Y        Out     0.556     7.646       -         
+current_count_c19                                       Net        -        -       0.585     -           3         
+read_address_traversal_0.current_count_n22              AX1C       B        In      -         8.231       -         
+read_address_traversal_0.current_count_n22              AX1C       Y        Out     1.049     9.280       -         
+current_count_n22                                       Net        -        -       0.233     -           1         
+read_address_traversal_0.current_count[22]              DFN1C0     D        In      -         9.513       -         
+====================================================================================================================
+Total path delay (propagation time + setup) of 10.096 is 5.669(56.2%) logic and 4.426(43.8%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      10.000
+    - Setup time:                            0.583
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.417
+
+    - Propagation time:                      9.321
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 0.096
+
+    Number of logic level(s):                6
+    Starting point:                          read_address_traversal_0.current_count[1] / Q
+    Ending point:                            read_address_traversal_0.current_count[21] / D
+    The start point is clocked by            memory_controller|next_read_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            memory_controller|next_read_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                     Pin      Pin               Arrival     No. of    
+Name                                                    Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------------
+read_address_traversal_0.current_count[1]               DFN1C0     Q        Out     0.797     0.797       -         
+read_address_traversal_0_ROW_READ_OUT[1]                Net        -        -       0.858     -           4         
+read_address_traversal_0.current_count_c1               NOR2B      A        In      -         1.655       -         
+read_address_traversal_0.current_count_c1               NOR2B      Y        Out     0.556     2.212       -         
+current_count_c1                                        Net        -        -       0.585     -           3         
+read_address_traversal_0.current_count_c6_s_RNIAFF5     NOR3C      B        In      -         2.796       -         
+read_address_traversal_0.current_count_c6_s_RNIAFF5     NOR3C      Y        Out     0.656     3.452       -         
+current_count_c6                                        Net        -        -       0.927     -           5         
+read_address_traversal_0.current_count_RNIRCEG1[10]     NOR3C      C        In      -         4.380       -         
+read_address_traversal_0.current_count_RNIRCEG1[10]     NOR3C      Y        Out     0.694     5.073       -         
+current_count_c15                                       Net        -        -       0.585     -           3         
+read_address_traversal_0.current_count_c17              NOR3C      B        In      -         5.658       -         
+read_address_traversal_0.current_count_c17              NOR3C      Y        Out     0.656     6.314       -         
+current_count_c17                                       Net        -        -       0.585     -           3         
+read_address_traversal_0.current_count_c19              NOR2B      A        In      -         6.898       -         
+read_address_traversal_0.current_count_c19              NOR2B      Y        Out     0.556     7.455       -         
+current_count_c19                                       Net        -        -       0.585     -           3         
+read_address_traversal_0.current_count_n21              AX1C       B        In      -         8.039       -         
+read_address_traversal_0.current_count_n21              AX1C       Y        Out     1.049     9.088       -         
+current_count_n21                                       Net        -        -       0.233     -           1         
+read_address_traversal_0.current_count[21]              DFN1C0     D        In      -         9.321       -         
+====================================================================================================================
+Total path delay (propagation time + setup) of 9.904 is 5.547(56.0%) logic and 4.357(44.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      10.000
+    - Setup time:                            0.583
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.417
+
+    - Propagation time:                      9.321
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 0.096
+
+    Number of logic level(s):                6
+    Starting point:                          read_address_traversal_0.current_count[1] / Q
+    Ending point:                            read_address_traversal_0.current_count[22] / D
+    The start point is clocked by            memory_controller|next_read_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            memory_controller|next_read_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                     Pin      Pin               Arrival     No. of    
+Name                                                    Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------------
+read_address_traversal_0.current_count[1]               DFN1C0     Q        Out     0.797     0.797       -         
+read_address_traversal_0_ROW_READ_OUT[1]                Net        -        -       0.858     -           4         
+read_address_traversal_0.current_count_c1               NOR2B      A        In      -         1.655       -         
+read_address_traversal_0.current_count_c1               NOR2B      Y        Out     0.556     2.212       -         
+current_count_c1                                        Net        -        -       0.585     -           3         
+read_address_traversal_0.current_count_c6_s_RNIAFF5     NOR3C      B        In      -         2.796       -         
+read_address_traversal_0.current_count_c6_s_RNIAFF5     NOR3C      Y        Out     0.656     3.452       -         
+current_count_c6                                        Net        -        -       0.927     -           5         
+read_address_traversal_0.current_count_RNIRCEG1[10]     NOR3C      C        In      -         4.380       -         
+read_address_traversal_0.current_count_RNIRCEG1[10]     NOR3C      Y        Out     0.694     5.073       -         
+current_count_c15                                       Net        -        -       0.585     -           3         
+read_address_traversal_0.current_count_c17              NOR3C      B        In      -         5.658       -         
+read_address_traversal_0.current_count_c17              NOR3C      Y        Out     0.656     6.314       -         
+current_count_c17                                       Net        -        -       0.585     -           3         
+read_address_traversal_0.current_count_c19              NOR2B      A        In      -         6.898       -         
+read_address_traversal_0.current_count_c19              NOR2B      Y        Out     0.556     7.455       -         
+current_count_c19                                       Net        -        -       0.585     -           3         
+read_address_traversal_0.current_count_n22              AX1C       B        In      -         8.039       -         
+read_address_traversal_0.current_count_n22              AX1C       Y        Out     1.049     9.088       -         
+current_count_n22                                       Net        -        -       0.233     -           1         
+read_address_traversal_0.current_count[22]              DFN1C0     D        In      -         9.321       -         
+====================================================================================================================
+Total path delay (propagation time + setup) of 9.904 is 5.547(56.0%) logic and 4.357(44.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      10.000
+    - Setup time:                            0.583
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.417
+
+    - Propagation time:                      9.318
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 0.099
+
+    Number of logic level(s):                6
+    Starting point:                          read_address_traversal_0.current_count[4] / Q
+    Ending point:                            read_address_traversal_0.current_count[21] / D
+    The start point is clocked by            memory_controller|next_read_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            memory_controller|next_read_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                     Pin      Pin               Arrival     No. of    
+Name                                                    Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------------
+read_address_traversal_0.current_count[4]               DFN1C0     Q        Out     0.797     0.797       -         
+read_address_traversal_0_ROW_READ_OUT[4]                Net        -        -       1.032     -           6         
+read_address_traversal_0.current_count_RNILGG3[2]       NOR3C      C        In      -         1.829       -         
+read_address_traversal_0.current_count_RNILGG3[2]       NOR3C      Y        Out     0.694     2.523       -         
+current_m2_0_a2_1                                       Net        -        -       0.233     -           1         
+read_address_traversal_0.current_count_c6_s_RNIAFF5     NOR3C      C        In      -         2.756       -         
+read_address_traversal_0.current_count_c6_s_RNIAFF5     NOR3C      Y        Out     0.694     3.449       -         
+current_count_c6                                        Net        -        -       0.927     -           5         
+read_address_traversal_0.current_count_RNIRCEG1[10]     NOR3C      C        In      -         4.377       -         
+read_address_traversal_0.current_count_RNIRCEG1[10]     NOR3C      Y        Out     0.694     5.070       -         
+current_count_c15                                       Net        -        -       0.585     -           3         
+read_address_traversal_0.current_count_c17              NOR3C      B        In      -         5.655       -         
+read_address_traversal_0.current_count_c17              NOR3C      Y        Out     0.656     6.311       -         
+current_count_c17                                       Net        -        -       0.585     -           3         
+read_address_traversal_0.current_count_c19              NOR2B      A        In      -         6.895       -         
+read_address_traversal_0.current_count_c19              NOR2B      Y        Out     0.556     7.452       -         
+current_count_c19                                       Net        -        -       0.585     -           3         
+read_address_traversal_0.current_count_n21              AX1C       B        In      -         8.036       -         
+read_address_traversal_0.current_count_n21              AX1C       Y        Out     1.049     9.085       -         
+current_count_n21                                       Net        -        -       0.233     -           1         
+read_address_traversal_0.current_count[21]              DFN1C0     D        In      -         9.318       -         
+====================================================================================================================
+Total path delay (propagation time + setup) of 9.901 is 5.722(57.8%) logic and 4.179(42.2%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: memory_controller|next_write_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                Starting                                                                                                           Arrival           
+Instance                                        Reference                                       Type       Pin     Net                                             Time        Slack 
+                                                Clock                                                                                                                                
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+write_address_traversal_0.current_count[0]      memory_controller|next_write_inferred_clock     DFN1C0     Q       write_address_traversal_0_ROW_WRITE_OUT[0]      0.797       -1.719
+write_address_traversal_0.current_count[1]      memory_controller|next_write_inferred_clock     DFN1C0     Q       write_address_traversal_0_ROW_WRITE_OUT[1]      0.797       -1.528
+write_address_traversal_0.current_count[2]      memory_controller|next_write_inferred_clock     DFN1C0     Q       write_address_traversal_0_ROW_WRITE_OUT[2]      0.797       -1.451
+write_address_traversal_0.current_count[3]      memory_controller|next_write_inferred_clock     DFN1C0     Q       write_address_traversal_0_ROW_WRITE_OUT[3]      0.797       -1.254
+write_address_traversal_0.current_count[12]     memory_controller|next_write_inferred_clock     DFN1C0     Q       write_address_traversal_0_ROW_WRITE_OUT[12]     0.797       -1.117
+write_address_traversal_0.current_count[11]     memory_controller|next_write_inferred_clock     DFN1C0     Q       write_address_traversal_0_ROW_WRITE_OUT[11]     0.797       -1.070
+write_address_traversal_0.current_count[10]     memory_controller|next_write_inferred_clock     DFN1C0     Q       write_address_traversal_0_ROW_WRITE_OUT[10]     0.797       -0.963
+write_address_traversal_0.current_count[9]      memory_controller|next_write_inferred_clock     DFN1C0     Q       write_address_traversal_0_ROW_WRITE_OUT[9]      0.797       -0.922
+write_address_traversal_0.current_count[13]     memory_controller|next_write_inferred_clock     DFN1C0     Q       write_address_traversal_0_COL_WRITE_OUT[0]      0.797       -0.470
+write_address_traversal_0.current_count[4]      memory_controller|next_write_inferred_clock     DFN1C0     Q       write_address_traversal_0_ROW_WRITE_OUT[4]      0.797       -0.380
+=====================================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                Starting                                                                                 Required           
+Instance                                        Reference                                       Type       Pin     Net                   Time         Slack 
+                                                Clock                                                                                                       
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+write_address_traversal_0.current_count[15]     memory_controller|next_write_inferred_clock     DFN1C0     D       current_count_n15     9.417        -1.719
+write_address_traversal_0.current_count[23]     memory_controller|next_write_inferred_clock     DFN1C0     D       current_count_n23     9.417        -1.269
+write_address_traversal_0.current_count[14]     memory_controller|next_write_inferred_clock     DFN1C0     D       current_count_n14     9.417        -1.199
+write_address_traversal_0.current_count[12]     memory_controller|next_write_inferred_clock     DFN1C0     D       current_count_n12     9.417        -0.761
+write_address_traversal_0.current_count[13]     memory_controller|next_write_inferred_clock     DFN1C0     D       current_count_n13     9.417        -0.761
+write_address_traversal_0.current_count[22]     memory_controller|next_write_inferred_clock     DFN1C0     D       current_count_n22     9.417        -0.749
+write_address_traversal_0.current_count[21]     memory_controller|next_write_inferred_clock     DFN1C0     D       current_count_n21     9.417        -0.311
+write_address_traversal_0.current_count[11]     memory_controller|next_write_inferred_clock     DFN1C0     D       current_count_n11     9.417        -0.240
+write_address_traversal_0.current_count[20]     memory_controller|next_write_inferred_clock     DFN1C0     D       current_count_n20     9.417        0.210 
+write_address_traversal_0.current_count[10]     memory_controller|next_write_inferred_clock     DFN1C0     D       current_count_n10     9.417        0.753 
+============================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.583
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.417
+
+    - Propagation time:                      11.137
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.719
+
+    Number of logic level(s):                7
+    Starting point:                          write_address_traversal_0.current_count[0] / Q
+    Ending point:                            write_address_traversal_0.current_count[15] / D
+    The start point is clocked by            memory_controller|next_write_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            memory_controller|next_write_inferred_clock [rising] on pin CLK
+
+Instance / Net                                             Pin      Pin               Arrival     No. of    
+Name                                            Type       Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------
+write_address_traversal_0.current_count[0]      DFN1C0     Q        Out     0.797     0.797       -         
+write_address_traversal_0_ROW_WRITE_OUT[0]      Net        -        -       0.927     -           5         
+read_buffer_0.init_stage_ns_i_a2_0_o2[1]        OR2B       B        In      -         1.724       -         
+read_buffer_0.init_stage_ns_i_a2_0_o2[1]        OR2B       Y        Out     0.679     2.403       -         
+N_22                                            Net        -        -       1.032     -           6         
+write_address_traversal_0.current_count_c4      NOR3B      C        In      -         3.435       -         
+write_address_traversal_0.current_count_c4      NOR3B      Y        Out     0.389     3.824       -         
+current_count_c4                                Net        -        -       0.585     -           3         
+write_address_traversal_0.current_count_c6      NOR2B      B        In      -         4.409       -         
+write_address_traversal_0.current_count_c6      NOR2B      Y        Out     0.679     5.087       -         
+current_count_c6                                Net        -        -       1.032     -           6         
+write_address_traversal_0.current_count_c8      NOR2B      B        In      -         6.119       -         
+write_address_traversal_0.current_count_c8      NOR2B      Y        Out     0.679     6.798       -         
+current_count_c8                                Net        -        -       0.585     -           3         
+write_address_traversal_0.current_count_c10     NOR3C      B        In      -         7.382       -         
+write_address_traversal_0.current_count_c10     NOR3C      Y        Out     0.656     8.038       -         
+current_count_c10                               Net        -        -       0.858     -           4         
+write_address_traversal_0.current_count_c13     NOR2B      B        In      -         8.896       -         
+write_address_traversal_0.current_count_c13     NOR2B      Y        Out     0.679     9.575       -         
+current_count_c13                               Net        -        -       0.280     -           2         
+write_address_traversal_0.current_count_n15     AX1C       B        In      -         9.855       -         
+write_address_traversal_0.current_count_n15     AX1C       Y        Out     1.049     10.904      -         
+current_count_n15                               Net        -        -       0.233     -           1         
+write_address_traversal_0.current_count[15]     DFN1C0     D        In      -         11.137      -         
+============================================================================================================
+Total path delay (propagation time + setup) of 11.719 is 6.188(52.8%) logic and 5.531(47.2%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      10.000
+    - Setup time:                            0.583
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.417
+
+    - Propagation time:                      10.945
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.528
+
+    Number of logic level(s):                7
+    Starting point:                          write_address_traversal_0.current_count[1] / Q
+    Ending point:                            write_address_traversal_0.current_count[15] / D
+    The start point is clocked by            memory_controller|next_write_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            memory_controller|next_write_inferred_clock [rising] on pin CLK
+
+Instance / Net                                             Pin      Pin               Arrival     No. of    
+Name                                            Type       Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------
+write_address_traversal_0.current_count[1]      DFN1C0     Q        Out     0.797     0.797       -         
+write_address_traversal_0_ROW_WRITE_OUT[1]      Net        -        -       0.858     -           4         
+read_buffer_0.init_stage_ns_i_a2_0_o2[1]        OR2B       A        In      -         1.655       -         
+read_buffer_0.init_stage_ns_i_a2_0_o2[1]        OR2B       Y        Out     0.556     2.212       -         
+N_22                                            Net        -        -       1.032     -           6         
+write_address_traversal_0.current_count_c4      NOR3B      C        In      -         3.243       -         
+write_address_traversal_0.current_count_c4      NOR3B      Y        Out     0.389     3.632       -         
+current_count_c4                                Net        -        -       0.585     -           3         
+write_address_traversal_0.current_count_c6      NOR2B      B        In      -         4.217       -         
+write_address_traversal_0.current_count_c6      NOR2B      Y        Out     0.679     4.896       -         
+current_count_c6                                Net        -        -       1.032     -           6         
+write_address_traversal_0.current_count_c8      NOR2B      B        In      -         5.928       -         
+write_address_traversal_0.current_count_c8      NOR2B      Y        Out     0.679     6.606       -         
+current_count_c8                                Net        -        -       0.585     -           3         
+write_address_traversal_0.current_count_c10     NOR3C      B        In      -         7.191       -         
+write_address_traversal_0.current_count_c10     NOR3C      Y        Out     0.656     7.847       -         
+current_count_c10                               Net        -        -       0.858     -           4         
+write_address_traversal_0.current_count_c13     NOR2B      B        In      -         8.705       -         
+write_address_traversal_0.current_count_c13     NOR2B      Y        Out     0.679     9.383       -         
+current_count_c13                               Net        -        -       0.280     -           2         
+write_address_traversal_0.current_count_n15     AX1C       B        In      -         9.663       -         
+write_address_traversal_0.current_count_n15     AX1C       Y        Out     1.049     10.712      -         
+current_count_n15                               Net        -        -       0.233     -           1         
+write_address_traversal_0.current_count[15]     DFN1C0     D        In      -         10.945      -         
+============================================================================================================
+Total path delay (propagation time + setup) of 11.528 is 6.066(52.6%) logic and 5.462(47.4%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      10.000
+    - Setup time:                            0.583
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.417
+
+    - Propagation time:                      10.868
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.451
+
+    Number of logic level(s):                7
+    Starting point:                          write_address_traversal_0.current_count[2] / Q
+    Ending point:                            write_address_traversal_0.current_count[15] / D
+    The start point is clocked by            memory_controller|next_write_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            memory_controller|next_write_inferred_clock [rising] on pin CLK
+
+Instance / Net                                              Pin      Pin               Arrival     No. of    
+Name                                             Type       Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------
+write_address_traversal_0.current_count[2]       DFN1C0     Q        Out     0.797     0.797       -         
+write_address_traversal_0_ROW_WRITE_OUT[2]       Net        -        -       1.106     -           7         
+write_address_traversal_0.current_count_c3_0     NOR2B      B        In      -         1.903       -         
+write_address_traversal_0.current_count_c3_0     NOR2B      Y        Out     0.679     2.582       -         
+current_count_c3_0                               Net        -        -       0.280     -           2         
+write_address_traversal_0.current_count_c4       NOR3B      A        In      -         2.862       -         
+write_address_traversal_0.current_count_c4       NOR3B      Y        Out     0.694     3.555       -         
+current_count_c4                                 Net        -        -       0.585     -           3         
+write_address_traversal_0.current_count_c6       NOR2B      B        In      -         4.140       -         
+write_address_traversal_0.current_count_c6       NOR2B      Y        Out     0.679     4.818       -         
+current_count_c6                                 Net        -        -       1.032     -           6         
+write_address_traversal_0.current_count_c8       NOR2B      B        In      -         5.850       -         
+write_address_traversal_0.current_count_c8       NOR2B      Y        Out     0.679     6.529       -         
+current_count_c8                                 Net        -        -       0.585     -           3         
+write_address_traversal_0.current_count_c10      NOR3C      B        In      -         7.114       -         
+write_address_traversal_0.current_count_c10      NOR3C      Y        Out     0.656     7.769       -         
+current_count_c10                                Net        -        -       0.858     -           4         
+write_address_traversal_0.current_count_c13      NOR2B      B        In      -         8.628       -         
+write_address_traversal_0.current_count_c13      NOR2B      Y        Out     0.679     9.306       -         
+current_count_c13                                Net        -        -       0.280     -           2         
+write_address_traversal_0.current_count_n15      AX1C       B        In      -         9.586       -         
+write_address_traversal_0.current_count_n15      AX1C       Y        Out     1.049     10.635      -         
+current_count_n15                                Net        -        -       0.233     -           1         
+write_address_traversal_0.current_count[15]      DFN1C0     D        In      -         10.868      -         
+=============================================================================================================
+Total path delay (propagation time + setup) of 11.451 is 6.493(56.7%) logic and 4.958(43.3%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      10.000
+    - Setup time:                            0.583
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.417
+
+    - Propagation time:                      10.687
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.269
+
+    Number of logic level(s):                7
+    Starting point:                          write_address_traversal_0.current_count[0] / Q
+    Ending point:                            write_address_traversal_0.current_count[23] / D
+    The start point is clocked by            memory_controller|next_write_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            memory_controller|next_write_inferred_clock [rising] on pin CLK
+
+Instance / Net                                             Pin      Pin               Arrival     No. of    
+Name                                            Type       Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------
+write_address_traversal_0.current_count[0]      DFN1C0     Q        Out     0.797     0.797       -         
+write_address_traversal_0_ROW_WRITE_OUT[0]      Net        -        -       0.927     -           5         
+read_buffer_0.init_stage_ns_i_a2_0_o2[1]        OR2B       B        In      -         1.724       -         
+read_buffer_0.init_stage_ns_i_a2_0_o2[1]        OR2B       Y        Out     0.679     2.403       -         
+N_22                                            Net        -        -       1.032     -           6         
+write_address_traversal_0.current_count_c4      NOR3B      C        In      -         3.435       -         
+write_address_traversal_0.current_count_c4      NOR3B      Y        Out     0.389     3.824       -         
+current_count_c4                                Net        -        -       0.585     -           3         
+write_address_traversal_0.current_count_c6      NOR2B      B        In      -         4.409       -         
+write_address_traversal_0.current_count_c6      NOR2B      Y        Out     0.679     5.087       -         
+current_count_c6                                Net        -        -       1.032     -           6         
+write_address_traversal_0.current_count_c17     NOR3C      A        In      -         6.119       -         
+write_address_traversal_0.current_count_c17     NOR3C      Y        Out     0.502     6.621       -         
+current_count_c17                               Net        -        -       0.585     -           3         
+write_address_traversal_0.current_count_c19     NOR3C      B        In      -         7.206       -         
+write_address_traversal_0.current_count_c19     NOR3C      Y        Out     0.656     7.862       -         
+current_count_c19                               Net        -        -       0.585     -           3         
+write_address_traversal_0.current_count_c21     NOR2B      B        In      -         8.446       -         
+write_address_traversal_0.current_count_c21     NOR2B      Y        Out     0.679     9.125       -         
+current_count_c21                               Net        -        -       0.280     -           2         
+write_address_traversal_0.current_count_n23     AX1C       B        In      -         9.405       -         
+write_address_traversal_0.current_count_n23     AX1C       Y        Out     1.049     10.453      -         
+current_count_n23                               Net        -        -       0.233     -           1         
+write_address_traversal_0.current_count[23]     DFN1C0     D        In      -         10.687      -         
+============================================================================================================
+Total path delay (propagation time + setup) of 11.269 is 6.011(53.3%) logic and 5.258(46.7%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      10.000
+    - Setup time:                            0.583
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.417
+
+    - Propagation time:                      10.671
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.254
+
+    Number of logic level(s):                7
+    Starting point:                          write_address_traversal_0.current_count[3] / Q
+    Ending point:                            write_address_traversal_0.current_count[15] / D
+    The start point is clocked by            memory_controller|next_write_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            memory_controller|next_write_inferred_clock [rising] on pin CLK
+
+Instance / Net                                              Pin      Pin               Arrival     No. of    
+Name                                             Type       Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------
+write_address_traversal_0.current_count[3]       DFN1C0     Q        Out     0.797     0.797       -         
+write_address_traversal_0_ROW_WRITE_OUT[3]       Net        -        -       1.032     -           6         
+write_address_traversal_0.current_count_c3_0     NOR2B      A        In      -         1.829       -         
+write_address_traversal_0.current_count_c3_0     NOR2B      Y        Out     0.556     2.385       -         
+current_count_c3_0                               Net        -        -       0.280     -           2         
+write_address_traversal_0.current_count_c4       NOR3B      A        In      -         2.665       -         
+write_address_traversal_0.current_count_c4       NOR3B      Y        Out     0.694     3.359       -         
+current_count_c4                                 Net        -        -       0.585     -           3         
+write_address_traversal_0.current_count_c6       NOR2B      B        In      -         3.943       -         
+write_address_traversal_0.current_count_c6       NOR2B      Y        Out     0.679     4.622       -         
+current_count_c6                                 Net        -        -       1.032     -           6         
+write_address_traversal_0.current_count_c8       NOR2B      B        In      -         5.654       -         
+write_address_traversal_0.current_count_c8       NOR2B      Y        Out     0.679     6.332       -         
+current_count_c8                                 Net        -        -       0.585     -           3         
+write_address_traversal_0.current_count_c10      NOR3C      B        In      -         6.917       -         
+write_address_traversal_0.current_count_c10      NOR3C      Y        Out     0.656     7.573       -         
+current_count_c10                                Net        -        -       0.858     -           4         
+write_address_traversal_0.current_count_c13      NOR2B      B        In      -         8.431       -         
+write_address_traversal_0.current_count_c13      NOR2B      Y        Out     0.679     9.110       -         
+current_count_c13                                Net        -        -       0.280     -           2         
+write_address_traversal_0.current_count_n15      AX1C       B        In      -         9.389       -         
+write_address_traversal_0.current_count_n15      AX1C       Y        Out     1.049     10.438      -         
+current_count_n15                                Net        -        -       0.233     -           1         
+write_address_traversal_0.current_count[15]      DFN1C0     D        In      -         10.671      -         
+=============================================================================================================
+Total path delay (propagation time + setup) of 11.254 is 6.370(56.6%) logic and 4.884(43.4%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: reset_pulse|CLK_OUT_48MHZ_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                         Starting                                                                             Arrival            
+Instance                                 Reference                                    Type       Pin     Net                  Time        Slack  
+                                         Clock                                                                                                   
+-------------------------------------------------------------------------------------------------------------------------------------------------
+sdram_interface_0.write_counter[2]       reset_pulse|CLK_OUT_48MHZ_inferred_clock     DFN0C0     Q       write_counter[2]     0.707       -18.511
+sdram_interface_0.write_counter[1]       reset_pulse|CLK_OUT_48MHZ_inferred_clock     DFN0C0     Q       write_counter[1]     0.707       -18.408
+sdram_interface_0.write_counter[3]       reset_pulse|CLK_OUT_48MHZ_inferred_clock     DFN0C0     Q       write_counter[3]     0.707       -18.191
+sdram_interface_0.write_counter_3[0]     reset_pulse|CLK_OUT_48MHZ_inferred_clock     DFN0C0     Q       write_counter[0]     0.707       -16.468
+sdram_interface_0.read_counter[3]        reset_pulse|CLK_OUT_48MHZ_inferred_clock     DFN0C0     Q       read_counter[3]      0.707       -12.440
+sdram_interface_0.read_counter[2]        reset_pulse|CLK_OUT_48MHZ_inferred_clock     DFN0C0     Q       read_counter[2]      0.707       -12.222
+sdram_interface_0.init_counter[0]        reset_pulse|CLK_OUT_48MHZ_inferred_clock     DFN0C0     Q       init_counter[0]      0.707       -12.000
+sdram_interface_0.init_counter[2]        reset_pulse|CLK_OUT_48MHZ_inferred_clock     DFN0C0     Q       init_counter[2]      0.707       -11.515
+sdram_interface_0.init_counter[3]        reset_pulse|CLK_OUT_48MHZ_inferred_clock     DFN0C0     Q       init_counter[3]      0.707       -11.493
+sdram_interface_0.read_counter[1]        reset_pulse|CLK_OUT_48MHZ_inferred_clock     DFN0C0     Q       read_counter[1]      0.707       -11.476
+=================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                       Starting                                                                               Required            
+Instance                               Reference                                    Type     Pin     Net                      Time         Slack  
+                                       Clock                                                                                                      
+--------------------------------------------------------------------------------------------------------------------------------------------------
+sdram_interface_0.address_cl_4[0]      reset_pulse|CLK_OUT_48MHZ_inferred_clock     DFN0     D       address_cl_239[0]        9.229        -18.511
+sdram_interface_0.address_cl_5[0]      reset_pulse|CLK_OUT_48MHZ_inferred_clock     DFN0     D       address_cl_234[0]        9.229        -18.511
+sdram_interface_0.address_cl_6[0]      reset_pulse|CLK_OUT_48MHZ_inferred_clock     DFN0     D       address_cl_236[0]        9.229        -18.511
+sdram_interface_0.address_cl_7[0]      reset_pulse|CLK_OUT_48MHZ_inferred_clock     DFN0     D       address_cl_232[0]        9.229        -18.511
+sdram_interface_0.address_cl_8[0]      reset_pulse|CLK_OUT_48MHZ_inferred_clock     DFN0     D       address_cl_237[0]        9.229        -18.511
+sdram_interface_0.address_cl_9[0]      reset_pulse|CLK_OUT_48MHZ_inferred_clock     DFN0     D       address_cl_231[0]        9.229        -18.511
+sdram_interface_0.address_cl_10[0]     reset_pulse|CLK_OUT_48MHZ_inferred_clock     DFN0     D       address_cl_235[0]        9.229        -18.511
+sdram_interface_0.address_cl_11[0]     reset_pulse|CLK_OUT_48MHZ_inferred_clock     DFN0     D       address_cl_233[0]        9.229        -18.511
+sdram_interface_0.address_cl_12[0]     reset_pulse|CLK_OUT_48MHZ_inferred_clock     DFN0     D       address_cl_240_iv[0]     9.229        -16.884
+sdram_interface_0.address[0]           reset_pulse|CLK_OUT_48MHZ_inferred_clock     DFN0     D       address_37[0]            9.229        -16.361
+==================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.771
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.229
+
+    - Propagation time:                      27.741
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -18.511
+
+    Number of logic level(s):                21
+    Starting point:                          sdram_interface_0.write_counter[2] / Q
+    Ending point:                            sdram_interface_0.address_cl_4[0] / D
+    The start point is clocked by            reset_pulse|CLK_OUT_48MHZ_inferred_clock [falling] on pin CLK
+    The end   point is clocked by            reset_pulse|CLK_OUT_48MHZ_inferred_clock [falling] on pin CLK
+
+Instance / Net                                               Pin      Pin               Arrival     No. of    
+Name                                              Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------
+sdram_interface_0.write_counter[2]                DFN0C0     Q        Out     0.707     0.707       -         
+write_counter[2]                                  Net        -        -       0.233     -           1         
+sdram_interface_0.write_counter_RNIG74O[2]        OA1        C        In      -         0.940       -         
+sdram_interface_0.write_counter_RNIG74O[2]        OA1        Y        Out     0.720     1.660       -         
+write_counter_2[2]                                Net        -        -       1.032     -           6         
+sdram_interface_0.write_counter_RNIVD8G1[1]       NOR2       B        In      -         2.692       -         
+sdram_interface_0.write_counter_RNIVD8G1[1]       NOR2       Y        Out     0.699     3.391       -         
+cke7_1                                            Net        -        -       0.280     -           2         
+sdram_interface_0.write_counter_3_RNIO20A2[0]     NOR2B      B        In      -         3.671       -         
+sdram_interface_0.write_counter_3_RNIO20A2[0]     NOR2B      Y        Out     0.558     4.229       -         
+cke7                                              Net        -        -       1.477     -           13        
+sdram_interface_0.write_counter_RNI9B423[3]       NOR2A      B        In      -         5.706       -         
+sdram_interface_0.write_counter_RNI9B423[3]       NOR2A      Y        Out     0.417     6.123       -         
+write_counter_3[3]                                Net        -        -       0.585     -           3         
+sdram_interface_0.write_counter_RNI8PCI4[1]       NOR2B      B        In      -         6.708       -         
+sdram_interface_0.write_counter_RNI8PCI4[1]       NOR2B      Y        Out     0.679     7.386       -         
+cke13                                             Net        -        -       1.239     -           10        
+sdram_interface_0.write_counter_3_RNI0NLC7[0]     OR2        B        In      -         8.625       -         
+sdram_interface_0.write_counter_3_RNI0NLC7[0]     OR2        Y        Out     0.699     9.324       -         
+write_counter_5[0]                                Net        -        -       0.233     -           1         
+sdram_interface_0.write_counter_RNIPJF7D[3]       NOR2A      A        In      -         9.557       -         
+sdram_interface_0.write_counter_RNIPJF7D[3]       NOR2A      Y        Out     0.679     10.236      -         
+write_counter_7[0]                                Net        -        -       0.585     -           3         
+sdram_interface_0.write_counter_RNI1NDQJ[1]       OR2        A        In      -         10.820      -         
+sdram_interface_0.write_counter_RNI1NDQJ[1]       OR2        Y        Out     0.549     11.369      -         
+un1_SDRAM_CS_3lto1                                Net        -        -       0.233     -           1         
+sdram_interface_0.write_counter_RNI36H1F1[2]      NOR3B      A        In      -         11.602      -         
+sdram_interface_0.write_counter_RNI36H1F1[2]      NOR3B      Y        Out     0.694     12.296      -         
+cke25                                             Net        -        -       1.608     -           17        
+sdram_interface_0.write_counter_RNIB9FKL1[1]      OR2        B        In      -         13.904      -         
+sdram_interface_0.write_counter_RNIB9FKL1[1]      OR2        Y        Out     0.699     14.603      -         
+write_counter_9[1]                                Net        -        -       0.585     -           3         
+sdram_interface_0.write_counter_RNI6C23U2[1]      OR2        B        In      -         15.188      -         
+sdram_interface_0.write_counter_RNI6C23U2[1]      OR2        Y        Out     0.699     15.887      -         
+un1_SDRAM_CS_4                                    Net        -        -       0.927     -           5         
+sdram_interface_0.write_counter_RNI8R5AP3[2]      NOR2A      A        In      -         16.814      -         
+sdram_interface_0.write_counter_RNI8R5AP3[2]      NOR2A      Y        Out     0.679     17.493      -         
+cke37                                             Net        -        -       1.575     -           16        
+sdram_interface_0.address_cl_4_RNI4RI968[0]       OA1B       C        In      -         19.068      -         
+sdram_interface_0.address_cl_4_RNI4RI968[0]       OA1B       Y        Out     0.568     19.636      -         
+address_cl_74[0]                                  Net        -        -       0.233     -           1         
+sdram_interface_0.address_cl_4_RNICOVN88[0]       MX2        B        In      -         19.869      -         
+sdram_interface_0.address_cl_4_RNICOVN88[0]       MX2        Y        Out     0.633     20.502      -         
+address_cl_81[0]                                  Net        -        -       0.280     -           2         
+sdram_interface_0.address_cl_4_RNIJIP5D8[0]       NOR2B      B        In      -         20.782      -         
+sdram_interface_0.address_cl_4_RNIJIP5D8[0]       NOR2B      Y        Out     0.558     21.340      -         
+address_cl_108[0]                                 Net        -        -       0.233     -           1         
+sdram_interface_0.address_cl_4_RNIJH42AA[0]       OA1        B        In      -         21.573      -         
+sdram_interface_0.address_cl_4_RNIJH42AA[0]       OA1        Y        Out     0.976     22.549      -         
+address_cl_133[0]                                 Net        -        -       0.233     -           1         
+sdram_interface_0.address_cl_4_RNIJGFU6C[0]       OA1        B        In      -         22.782      -         
+sdram_interface_0.address_cl_4_RNIJGFU6C[0]       OA1        Y        Out     0.976     23.758      -         
+address_cl_161[0]                                 Net        -        -       0.233     -           1         
+sdram_interface_0.address_cl_4_RNI669TGK[0]       MX2        B        In      -         23.991      -         
+sdram_interface_0.address_cl_4_RNI669TGK[0]       MX2        Y        Out     0.633     24.624      -         
+address_cl_168[0]                                 Net        -        -       0.280     -           2         
+sdram_interface_0.address_cl_4_RNO_1[0]           NOR2B      A        In      -         24.904      -         
+sdram_interface_0.address_cl_4_RNO_1[0]           NOR2B      Y        Out     0.528     25.432      -         
+address_cl_184[0]                                 Net        -        -       0.233     -           1         
+sdram_interface_0.address_cl_4_RNO_0[0]           OA1        B        In      -         25.665      -         
+sdram_interface_0.address_cl_4_RNO_0[0]           OA1        Y        Out     0.976     26.641      -         
+address_cl_224[0]                                 Net        -        -       0.233     -           1         
+sdram_interface_0.address_cl_4_RNO[0]             MX2        B        In      -         26.874      -         
+sdram_interface_0.address_cl_4_RNO[0]             MX2        Y        Out     0.633     27.508      -         
+address_cl_239[0]                                 Net        -        -       0.233     -           1         
+sdram_interface_0.address_cl_4[0]                 DFN0       D        In      -         27.741      -         
+==============================================================================================================
+Total path delay (propagation time + setup) of 28.511 is 15.730(55.2%) logic and 12.781(44.8%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      10.000
+    - Setup time:                            0.771
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.229
+
+    - Propagation time:                      27.741
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -18.511
+
+    Number of logic level(s):                21
+    Starting point:                          sdram_interface_0.write_counter[2] / Q
+    Ending point:                            sdram_interface_0.address_cl_8[0] / D
+    The start point is clocked by            reset_pulse|CLK_OUT_48MHZ_inferred_clock [falling] on pin CLK
+    The end   point is clocked by            reset_pulse|CLK_OUT_48MHZ_inferred_clock [falling] on pin CLK
+
+Instance / Net                                               Pin      Pin               Arrival     No. of    
+Name                                              Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------
+sdram_interface_0.write_counter[2]                DFN0C0     Q        Out     0.707     0.707       -         
+write_counter[2]                                  Net        -        -       0.233     -           1         
+sdram_interface_0.write_counter_RNIG74O[2]        OA1        C        In      -         0.940       -         
+sdram_interface_0.write_counter_RNIG74O[2]        OA1        Y        Out     0.720     1.660       -         
+write_counter_2[2]                                Net        -        -       1.032     -           6         
+sdram_interface_0.write_counter_RNIVD8G1[1]       NOR2       B        In      -         2.692       -         
+sdram_interface_0.write_counter_RNIVD8G1[1]       NOR2       Y        Out     0.699     3.391       -         
+cke7_1                                            Net        -        -       0.280     -           2         
+sdram_interface_0.write_counter_3_RNIO20A2[0]     NOR2B      B        In      -         3.671       -         
+sdram_interface_0.write_counter_3_RNIO20A2[0]     NOR2B      Y        Out     0.558     4.229       -         
+cke7                                              Net        -        -       1.477     -           13        
+sdram_interface_0.write_counter_RNI9B423[3]       NOR2A      B        In      -         5.706       -         
+sdram_interface_0.write_counter_RNI9B423[3]       NOR2A      Y        Out     0.417     6.123       -         
+write_counter_3[3]                                Net        -        -       0.585     -           3         
+sdram_interface_0.write_counter_RNI8PCI4[1]       NOR2B      B        In      -         6.708       -         
+sdram_interface_0.write_counter_RNI8PCI4[1]       NOR2B      Y        Out     0.679     7.386       -         
+cke13                                             Net        -        -       1.239     -           10        
+sdram_interface_0.write_counter_3_RNI0NLC7[0]     OR2        B        In      -         8.625       -         
+sdram_interface_0.write_counter_3_RNI0NLC7[0]     OR2        Y        Out     0.699     9.324       -         
+write_counter_5[0]                                Net        -        -       0.233     -           1         
+sdram_interface_0.write_counter_RNIPJF7D[3]       NOR2A      A        In      -         9.557       -         
+sdram_interface_0.write_counter_RNIPJF7D[3]       NOR2A      Y        Out     0.679     10.236      -         
+write_counter_7[0]                                Net        -        -       0.585     -           3         
+sdram_interface_0.write_counter_RNI1NDQJ[1]       OR2        A        In      -         10.820      -         
+sdram_interface_0.write_counter_RNI1NDQJ[1]       OR2        Y        Out     0.549     11.369      -         
+un1_SDRAM_CS_3lto1                                Net        -        -       0.233     -           1         
+sdram_interface_0.write_counter_RNI36H1F1[2]      NOR3B      A        In      -         11.602      -         
+sdram_interface_0.write_counter_RNI36H1F1[2]      NOR3B      Y        Out     0.694     12.296      -         
+cke25                                             Net        -        -       1.608     -           17        
+sdram_interface_0.write_counter_RNIB9FKL1[1]      OR2        B        In      -         13.904      -         
+sdram_interface_0.write_counter_RNIB9FKL1[1]      OR2        Y        Out     0.699     14.603      -         
+write_counter_9[1]                                Net        -        -       0.585     -           3         
+sdram_interface_0.write_counter_RNI6C23U2[1]      OR2        B        In      -         15.188      -         
+sdram_interface_0.write_counter_RNI6C23U2[1]      OR2        Y        Out     0.699     15.887      -         
+un1_SDRAM_CS_4                                    Net        -        -       0.927     -           5         
+sdram_interface_0.write_counter_RNI8R5AP3[2]      NOR2A      A        In      -         16.814      -         
+sdram_interface_0.write_counter_RNI8R5AP3[2]      NOR2A      Y        Out     0.679     17.493      -         
+cke37                                             Net        -        -       1.575     -           16        
+sdram_interface_0.address_cl_8_RNIFPD328[0]       OA1B       C        In      -         19.068      -         
+sdram_interface_0.address_cl_8_RNIFPD328[0]       OA1B       Y        Out     0.568     19.636      -         
+address_cl_73[0]                                  Net        -        -       0.233     -           1         
+sdram_interface_0.address_cl_8_RNIR27M48[0]       MX2        B        In      -         19.869      -         
+sdram_interface_0.address_cl_8_RNIR27M48[0]       MX2        Y        Out     0.633     20.502      -         
+address_cl_79[0]                                  Net        -        -       0.280     -           2         
+sdram_interface_0.address_cl_8_RNI2T0498[0]       NOR2B      B        In      -         20.782      -         
+sdram_interface_0.address_cl_8_RNI2T0498[0]       NOR2B      Y        Out     0.558     21.340      -         
+address_cl_110[0]                                 Net        -        -       0.233     -           1         
+sdram_interface_0.address_cl_8_RNI2SB06A[0]       OA1        B        In      -         21.573      -         
+sdram_interface_0.address_cl_8_RNI2SB06A[0]       OA1        Y        Out     0.976     22.549      -         
+address_cl_129[0]                                 Net        -        -       0.233     -           1         
+sdram_interface_0.address_cl_8_RNI2RMS2C[0]       OA1        B        In      -         22.782      -         
+sdram_interface_0.address_cl_8_RNI2RMS2C[0]       OA1        Y        Out     0.976     23.758      -         
+address_cl_157[0]                                 Net        -        -       0.233     -           1         
+sdram_interface_0.address_cl_8_RNI4RNP8K[0]       MX2        B        In      -         23.991      -         
+sdram_interface_0.address_cl_8_RNI4RNP8K[0]       MX2        Y        Out     0.633     24.624      -         
+address_cl_173[0]                                 Net        -        -       0.280     -           2         
+sdram_interface_0.address_cl_8_RNO_1[0]           NOR2B      A        In      -         24.904      -         
+sdram_interface_0.address_cl_8_RNO_1[0]           NOR2B      Y        Out     0.528     25.432      -         
+address_cl_180[0]                                 Net        -        -       0.233     -           1         
+sdram_interface_0.address_cl_8_RNO_0[0]           OA1        B        In      -         25.665      -         
+sdram_interface_0.address_cl_8_RNO_0[0]           OA1        Y        Out     0.976     26.641      -         
+address_cl_220[0]                                 Net        -        -       0.233     -           1         
+sdram_interface_0.address_cl_8_RNO[0]             MX2        B        In      -         26.874      -         
+sdram_interface_0.address_cl_8_RNO[0]             MX2        Y        Out     0.633     27.508      -         
+address_cl_237[0]                                 Net        -        -       0.233     -           1         
+sdram_interface_0.address_cl_8[0]                 DFN0       D        In      -         27.741      -         
+==============================================================================================================
+Total path delay (propagation time + setup) of 28.511 is 15.730(55.2%) logic and 12.781(44.8%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      10.000
+    - Setup time:                            0.771
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.229
+
+    - Propagation time:                      27.741
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -18.511
+
+    Number of logic level(s):                21
+    Starting point:                          sdram_interface_0.write_counter[2] / Q
+    Ending point:                            sdram_interface_0.address_cl_10[0] / D
+    The start point is clocked by            reset_pulse|CLK_OUT_48MHZ_inferred_clock [falling] on pin CLK
+    The end   point is clocked by            reset_pulse|CLK_OUT_48MHZ_inferred_clock [falling] on pin CLK
+
+Instance / Net                                               Pin      Pin               Arrival     No. of    
+Name                                              Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------
+sdram_interface_0.write_counter[2]                DFN0C0     Q        Out     0.707     0.707       -         
+write_counter[2]                                  Net        -        -       0.233     -           1         
+sdram_interface_0.write_counter_RNIG74O[2]        OA1        C        In      -         0.940       -         
+sdram_interface_0.write_counter_RNIG74O[2]        OA1        Y        Out     0.720     1.660       -         
+write_counter_2[2]                                Net        -        -       1.032     -           6         
+sdram_interface_0.write_counter_RNIVD8G1[1]       NOR2       B        In      -         2.692       -         
+sdram_interface_0.write_counter_RNIVD8G1[1]       NOR2       Y        Out     0.699     3.391       -         
+cke7_1                                            Net        -        -       0.280     -           2         
+sdram_interface_0.write_counter_3_RNIO20A2[0]     NOR2B      B        In      -         3.671       -         
+sdram_interface_0.write_counter_3_RNIO20A2[0]     NOR2B      Y        Out     0.558     4.229       -         
+cke7                                              Net        -        -       1.477     -           13        
+sdram_interface_0.write_counter_RNI9B423[3]       NOR2A      B        In      -         5.706       -         
+sdram_interface_0.write_counter_RNI9B423[3]       NOR2A      Y        Out     0.417     6.123       -         
+write_counter_3[3]                                Net        -        -       0.585     -           3         
+sdram_interface_0.write_counter_RNI8PCI4[1]       NOR2B      B        In      -         6.708       -         
+sdram_interface_0.write_counter_RNI8PCI4[1]       NOR2B      Y        Out     0.679     7.386       -         
+cke13                                             Net        -        -       1.239     -           10        
+sdram_interface_0.write_counter_3_RNI0NLC7[0]     OR2        B        In      -         8.625       -         
+sdram_interface_0.write_counter_3_RNI0NLC7[0]     OR2        Y        Out     0.699     9.324       -         
+write_counter_5[0]                                Net        -        -       0.233     -           1         
+sdram_interface_0.write_counter_RNIPJF7D[3]       NOR2A      A        In      -         9.557       -         
+sdram_interface_0.write_counter_RNIPJF7D[3]       NOR2A      Y        Out     0.679     10.236      -         
+write_counter_7[0]                                Net        -        -       0.585     -           3         
+sdram_interface_0.write_counter_RNI1NDQJ[1]       OR2        A        In      -         10.820      -         
+sdram_interface_0.write_counter_RNI1NDQJ[1]       OR2        Y        Out     0.549     11.369      -         
+un1_SDRAM_CS_3lto1                                Net        -        -       0.233     -           1         
+sdram_interface_0.write_counter_RNI36H1F1[2]      NOR3B      A        In      -         11.602      -         
+sdram_interface_0.write_counter_RNI36H1F1[2]      NOR3B      Y        Out     0.694     12.296      -         
+cke25                                             Net        -        -       1.608     -           17        
+sdram_interface_0.write_counter_RNIB9FKL1[1]      OR2        B        In      -         13.904      -         
+sdram_interface_0.write_counter_RNIB9FKL1[1]      OR2        Y        Out     0.699     14.603      -         
+write_counter_9[1]                                Net        -        -       0.585     -           3         
+sdram_interface_0.write_counter_RNI6C23U2[1]      OR2        B        In      -         15.188      -         
+sdram_interface_0.write_counter_RNI6C23U2[1]      OR2        Y        Out     0.699     15.887      -         
+un1_SDRAM_CS_4                                    Net        -        -       0.927     -           5         
+sdram_interface_0.write_counter_RNI8R5AP3[2]      NOR2A      A        In      -         16.814      -         
+sdram_interface_0.write_counter_RNI8R5AP3[2]      NOR2A      Y        Out     0.679     17.493      -         
+cke37                                             Net        -        -       1.575     -           16        
+sdram_interface_0.address_cl_10_RNIOTUM18[0]      OA1B       C        In      -         19.068      -         
+sdram_interface_0.address_cl_10_RNIOTUM18[0]      OA1B       Y        Out     0.568     19.636      -         
+address_cl_65[0]                                  Net        -        -       0.233     -           1         
+sdram_interface_0.address_cl_10_RNIDB9T38[0]      MX2        B        In      -         19.869      -         
+sdram_interface_0.address_cl_10_RNIDB9T38[0]      MX2        Y        Out     0.633     20.502      -         
+address_cl_86[0]                                  Net        -        -       0.280     -           2         
+sdram_interface_0.address_cl_10_RNIK53B88[0]      NOR2B      B        In      -         20.782      -         
+sdram_interface_0.address_cl_10_RNIK53B88[0]      NOR2B      Y        Out     0.558     21.340      -         
+address_cl_111[0]                                 Net        -        -       0.233     -           1         
+sdram_interface_0.address_cl_10_RNIK4E75A[0]      OA1        B        In      -         21.573      -         
+sdram_interface_0.address_cl_10_RNIK4E75A[0]      OA1        Y        Out     0.976     22.549      -         
+address_cl_135[0]                                 Net        -        -       0.233     -           1         
+sdram_interface_0.address_cl_10_RNIK3P32C[0]      OA1        B        In      -         22.782      -         
+sdram_interface_0.address_cl_10_RNIK3P32C[0]      OA1        Y        Out     0.976     23.758      -         
+address_cl_162[0]                                 Net        -        -       0.233     -           1         
+sdram_interface_0.address_cl_10_RNI8CS77K[0]      MX2        B        In      -         23.991      -         
+sdram_interface_0.address_cl_10_RNI8CS77K[0]      MX2        Y        Out     0.633     24.624      -         
+address_cl_172[0]                                 Net        -        -       0.280     -           2         
+sdram_interface_0.address_cl_10_RNO_1[0]          NOR2B      A        In      -         24.904      -         
+sdram_interface_0.address_cl_10_RNO_1[0]          NOR2B      Y        Out     0.528     25.432      -         
+address_cl_188[0]                                 Net        -        -       0.233     -           1         
+sdram_interface_0.address_cl_10_RNO_0[0]          OA1        B        In      -         25.665      -         
+sdram_interface_0.address_cl_10_RNO_0[0]          OA1        Y        Out     0.976     26.641      -         
+address_cl_223[0]                                 Net        -        -       0.233     -           1         
+sdram_interface_0.address_cl_10_RNO[0]            MX2        B        In      -         26.874      -         
+sdram_interface_0.address_cl_10_RNO[0]            MX2        Y        Out     0.633     27.508      -         
+address_cl_235[0]                                 Net        -        -       0.233     -           1         
+sdram_interface_0.address_cl_10[0]                DFN0       D        In      -         27.741      -         
+==============================================================================================================
+Total path delay (propagation time + setup) of 28.511 is 15.730(55.2%) logic and 12.781(44.8%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      10.000
+    - Setup time:                            0.771
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.229
+
+    - Propagation time:                      27.741
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -18.511
+
+    Number of logic level(s):                21
+    Starting point:                          sdram_interface_0.write_counter[2] / Q
+    Ending point:                            sdram_interface_0.address_cl_5[0] / D
+    The start point is clocked by            reset_pulse|CLK_OUT_48MHZ_inferred_clock [falling] on pin CLK
+    The end   point is clocked by            reset_pulse|CLK_OUT_48MHZ_inferred_clock [falling] on pin CLK
+
+Instance / Net                                               Pin      Pin               Arrival     No. of    
+Name                                              Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------
+sdram_interface_0.write_counter[2]                DFN0C0     Q        Out     0.707     0.707       -         
+write_counter[2]                                  Net        -        -       0.233     -           1         
+sdram_interface_0.write_counter_RNIG74O[2]        OA1        C        In      -         0.940       -         
+sdram_interface_0.write_counter_RNIG74O[2]        OA1        Y        Out     0.720     1.660       -         
+write_counter_2[2]                                Net        -        -       1.032     -           6         
+sdram_interface_0.write_counter_RNIVD8G1[1]       NOR2       B        In      -         2.692       -         
+sdram_interface_0.write_counter_RNIVD8G1[1]       NOR2       Y        Out     0.699     3.391       -         
+cke7_1                                            Net        -        -       0.280     -           2         
+sdram_interface_0.write_counter_3_RNIO20A2[0]     NOR2B      B        In      -         3.671       -         
+sdram_interface_0.write_counter_3_RNIO20A2[0]     NOR2B      Y        Out     0.558     4.229       -         
+cke7                                              Net        -        -       1.477     -           13        
+sdram_interface_0.write_counter_RNI9B423[3]       NOR2A      B        In      -         5.706       -         
+sdram_interface_0.write_counter_RNI9B423[3]       NOR2A      Y        Out     0.417     6.123       -         
+write_counter_3[3]                                Net        -        -       0.585     -           3         
+sdram_interface_0.write_counter_RNI8PCI4[1]       NOR2B      B        In      -         6.708       -         
+sdram_interface_0.write_counter_RNI8PCI4[1]       NOR2B      Y        Out     0.679     7.386       -         
+cke13                                             Net        -        -       1.239     -           10        
+sdram_interface_0.write_counter_3_RNI0NLC7[0]     OR2        B        In      -         8.625       -         
+sdram_interface_0.write_counter_3_RNI0NLC7[0]     OR2        Y        Out     0.699     9.324       -         
+write_counter_5[0]                                Net        -        -       0.233     -           1         
+sdram_interface_0.write_counter_RNIPJF7D[3]       NOR2A      A        In      -         9.557       -         
+sdram_interface_0.write_counter_RNIPJF7D[3]       NOR2A      Y        Out     0.679     10.236      -         
+write_counter_7[0]                                Net        -        -       0.585     -           3         
+sdram_interface_0.write_counter_RNI1NDQJ[1]       OR2        A        In      -         10.820      -         
+sdram_interface_0.write_counter_RNI1NDQJ[1]       OR2        Y        Out     0.549     11.369      -         
+un1_SDRAM_CS_3lto1                                Net        -        -       0.233     -           1         
+sdram_interface_0.write_counter_RNI36H1F1[2]      NOR3B      A        In      -         11.602      -         
+sdram_interface_0.write_counter_RNI36H1F1[2]      NOR3B      Y        Out     0.694     12.296      -         
+cke25                                             Net        -        -       1.608     -           17        
+sdram_interface_0.write_counter_RNIB9FKL1[1]      OR2        B        In      -         13.904      -         
+sdram_interface_0.write_counter_RNIB9FKL1[1]      OR2        Y        Out     0.699     14.603      -         
+write_counter_9[1]                                Net        -        -       0.585     -           3         
+sdram_interface_0.write_counter_RNI6C23U2[1]      OR2        B        In      -         15.188      -         
+sdram_interface_0.write_counter_RNI6C23U2[1]      OR2        Y        Out     0.699     15.887      -         
+un1_SDRAM_CS_4                                    Net        -        -       0.927     -           5         
+sdram_interface_0.write_counter_RNI8R5AP3[2]      NOR2A      A        In      -         16.814      -         
+sdram_interface_0.write_counter_RNI8R5AP3[2]      NOR2A      Y        Out     0.679     17.493      -         
+cke37                                             Net        -        -       1.575     -           16        
+sdram_interface_0.address_cl_5_RNI5ULA68[0]       OA1B       C        In      -         19.068      -         
+sdram_interface_0.address_cl_5_RNI5ULA68[0]       OA1B       Y        Out     0.568     19.636      -         
+address_cl_71[0]                                  Net        -        -       0.233     -           1         
+sdram_interface_0.address_cl_5_RNIEU5Q88[0]       MX2        B        In      -         19.869      -         
+sdram_interface_0.address_cl_5_RNIEU5Q88[0]       MX2        Y        Out     0.633     20.502      -         
+address_cl_87[0]                                  Net        -        -       0.280     -           2         
+sdram_interface_0.address_cl_5_RNILOV7D8[0]       NOR2B      B        In      -         20.782      -         
+sdram_interface_0.address_cl_5_RNILOV7D8[0]       NOR2B      Y        Out     0.558     21.340      -         
+address_cl_105[0]                                 Net        -        -       0.233     -           1         
+sdram_interface_0.address_cl_5_RNILNA4AA[0]       OA1        B        In      -         21.573      -         
+sdram_interface_0.address_cl_5_RNILNA4AA[0]       OA1        Y        Out     0.976     22.549      -         
+address_cl_134[0]                                 Net        -        -       0.233     -           1         
+sdram_interface_0.address_cl_5_RNILML07C[0]       OA1        B        In      -         22.782      -         
+sdram_interface_0.address_cl_5_RNILML07C[0]       OA1        Y        Out     0.976     23.758      -         
+address_cl_153[0]                                 Net        -        -       0.233     -           1         
+sdram_interface_0.address_cl_5_RNIAIL1HK[0]       MX2        B        In      -         23.991      -         
+sdram_interface_0.address_cl_5_RNIAIL1HK[0]       MX2        Y        Out     0.633     24.624      -         
+address_cl_175[0]                                 Net        -        -       0.280     -           2         
+sdram_interface_0.address_cl_5_RNO_1[0]           NOR2B      A        In      -         24.904      -         
+sdram_interface_0.address_cl_5_RNO_1[0]           NOR2B      Y        Out     0.528     25.432      -         
+address_cl_182[0]                                 Net        -        -       0.233     -           1         
+sdram_interface_0.address_cl_5_RNO_0[0]           OA1        B        In      -         25.665      -         
+sdram_interface_0.address_cl_5_RNO_0[0]           OA1        Y        Out     0.976     26.641      -         
+address_cl_227[0]                                 Net        -        -       0.233     -           1         
+sdram_interface_0.address_cl_5_RNO[0]             MX2        B        In      -         26.874      -         
+sdram_interface_0.address_cl_5_RNO[0]             MX2        Y        Out     0.633     27.508      -         
+address_cl_234[0]                                 Net        -        -       0.233     -           1         
+sdram_interface_0.address_cl_5[0]                 DFN0       D        In      -         27.741      -         
+==============================================================================================================
+Total path delay (propagation time + setup) of 28.511 is 15.730(55.2%) logic and 12.781(44.8%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      10.000
+    - Setup time:                            0.771
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.229
+
+    - Propagation time:                      27.741
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -18.511
+
+    Number of logic level(s):                21
+    Starting point:                          sdram_interface_0.write_counter[2] / Q
+    Ending point:                            sdram_interface_0.address_cl_6[0] / D
+    The start point is clocked by            reset_pulse|CLK_OUT_48MHZ_inferred_clock [falling] on pin CLK
+    The end   point is clocked by            reset_pulse|CLK_OUT_48MHZ_inferred_clock [falling] on pin CLK
+
+Instance / Net                                               Pin      Pin               Arrival     No. of    
+Name                                              Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------
+sdram_interface_0.write_counter[2]                DFN0C0     Q        Out     0.707     0.707       -         
+write_counter[2]                                  Net        -        -       0.233     -           1         
+sdram_interface_0.write_counter_RNIG74O[2]        OA1        C        In      -         0.940       -         
+sdram_interface_0.write_counter_RNIG74O[2]        OA1        Y        Out     0.720     1.660       -         
+write_counter_2[2]                                Net        -        -       1.032     -           6         
+sdram_interface_0.write_counter_RNIVD8G1[1]       NOR2       B        In      -         2.692       -         
+sdram_interface_0.write_counter_RNIVD8G1[1]       NOR2       Y        Out     0.699     3.391       -         
+cke7_1                                            Net        -        -       0.280     -           2         
+sdram_interface_0.write_counter_3_RNIO20A2[0]     NOR2B      B        In      -         3.671       -         
+sdram_interface_0.write_counter_3_RNIO20A2[0]     NOR2B      Y        Out     0.558     4.229       -         
+cke7                                              Net        -        -       1.477     -           13        
+sdram_interface_0.write_counter_RNI9B423[3]       NOR2A      B        In      -         5.706       -         
+sdram_interface_0.write_counter_RNI9B423[3]       NOR2A      Y        Out     0.417     6.123       -         
+write_counter_3[3]                                Net        -        -       0.585     -           3         
+sdram_interface_0.write_counter_RNI8PCI4[1]       NOR2B      B        In      -         6.708       -         
+sdram_interface_0.write_counter_RNI8PCI4[1]       NOR2B      Y        Out     0.679     7.386       -         
+cke13                                             Net        -        -       1.239     -           10        
+sdram_interface_0.write_counter_3_RNI0NLC7[0]     OR2        B        In      -         8.625       -         
+sdram_interface_0.write_counter_3_RNI0NLC7[0]     OR2        Y        Out     0.699     9.324       -         
+write_counter_5[0]                                Net        -        -       0.233     -           1         
+sdram_interface_0.write_counter_RNIPJF7D[3]       NOR2A      A        In      -         9.557       -         
+sdram_interface_0.write_counter_RNIPJF7D[3]       NOR2A      Y        Out     0.679     10.236      -         
+write_counter_7[0]                                Net        -        -       0.585     -           3         
+sdram_interface_0.write_counter_RNI1NDQJ[1]       OR2        A        In      -         10.820      -         
+sdram_interface_0.write_counter_RNI1NDQJ[1]       OR2        Y        Out     0.549     11.369      -         
+un1_SDRAM_CS_3lto1                                Net        -        -       0.233     -           1         
+sdram_interface_0.write_counter_RNI36H1F1[2]      NOR3B      A        In      -         11.602      -         
+sdram_interface_0.write_counter_RNI36H1F1[2]      NOR3B      Y        Out     0.694     12.296      -         
+cke25                                             Net        -        -       1.608     -           17        
+sdram_interface_0.write_counter_RNIB9FKL1[1]      OR2        B        In      -         13.904      -         
+sdram_interface_0.write_counter_RNIB9FKL1[1]      OR2        Y        Out     0.699     14.603      -         
+write_counter_9[1]                                Net        -        -       0.585     -           3         
+sdram_interface_0.write_counter_RNI6C23U2[1]      OR2        B        In      -         15.188      -         
+sdram_interface_0.write_counter_RNI6C23U2[1]      OR2        Y        Out     0.699     15.887      -         
+un1_SDRAM_CS_4                                    Net        -        -       0.927     -           5         
+sdram_interface_0.write_counter_RNI8R5AP3[2]      NOR2A      A        In      -         16.814      -         
+sdram_interface_0.write_counter_RNI8R5AP3[2]      NOR2A      Y        Out     0.679     17.493      -         
+cke37                                             Net        -        -       1.575     -           16        
+sdram_interface_0.address_cl_6_RNI61PB68[0]       OA1B       C        In      -         19.068      -         
+sdram_interface_0.address_cl_6_RNI61PB68[0]       OA1B       Y        Out     0.568     19.636      -         
+address_cl_66[0]                                  Net        -        -       0.233     -           1         
+sdram_interface_0.address_cl_6_RNIG4CS88[0]       MX2        B        In      -         19.869      -         
+sdram_interface_0.address_cl_6_RNIG4CS88[0]       MX2        Y        Out     0.633     20.502      -         
+address_cl_82[0]                                  Net        -        -       0.280     -           2         
+sdram_interface_0.address_cl_6_RNINU5AD8[0]       NOR2B      B        In      -         20.782      -         
+sdram_interface_0.address_cl_6_RNINU5AD8[0]       NOR2B      Y        Out     0.558     21.340      -         
+address_cl_112[0]                                 Net        -        -       0.233     -           1         
+sdram_interface_0.address_cl_6_RNINTG6AA[0]       OA1        B        In      -         21.573      -         
+sdram_interface_0.address_cl_6_RNINTG6AA[0]       OA1        Y        Out     0.976     22.549      -         
+address_cl_130[0]                                 Net        -        -       0.233     -           1         
+sdram_interface_0.address_cl_6_RNINSR27C[0]       OA1        B        In      -         22.782      -         
+sdram_interface_0.address_cl_6_RNINSR27C[0]       OA1        Y        Out     0.976     23.758      -         
+address_cl_155[0]                                 Net        -        -       0.233     -           1         
+sdram_interface_0.address_cl_6_RNIEU16HK[0]       MX2        B        In      -         23.991      -         
+sdram_interface_0.address_cl_6_RNIEU16HK[0]       MX2        Y        Out     0.633     24.624      -         
+address_cl_167[0]                                 Net        -        -       0.280     -           2         
+sdram_interface_0.address_cl_6_RNO_1[0]           NOR2B      A        In      -         24.904      -         
+sdram_interface_0.address_cl_6_RNO_1[0]           NOR2B      Y        Out     0.528     25.432      -         
+address_cl_186[0]                                 Net        -        -       0.233     -           1         
+sdram_interface_0.address_cl_6_RNO_0[0]           OA1        B        In      -         25.665      -         
+sdram_interface_0.address_cl_6_RNO_0[0]           OA1        Y        Out     0.976     26.641      -         
+address_cl_219[0]                                 Net        -        -       0.233     -           1         
+sdram_interface_0.address_cl_6_RNO[0]             MX2        B        In      -         26.874      -         
+sdram_interface_0.address_cl_6_RNO[0]             MX2        Y        Out     0.633     27.508      -         
+address_cl_236[0]                                 Net        -        -       0.233     -           1         
+sdram_interface_0.address_cl_6[0]                 DFN0       D        In      -         27.741      -         
+==============================================================================================================
+Total path delay (propagation time + setup) of 28.511 is 15.730(55.2%) logic and 12.781(44.8%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: spi_mode_config|next_b_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                 Starting                                                                        Arrival          
+Instance                         Reference                                 Type       Pin     Net                Time        Slack
+                                 Clock                                                                                            
+----------------------------------------------------------------------------------------------------------------------------------
+read_buffer_0.position[0]        spi_mode_config|next_b_inferred_clock     DFN1C0     Q       position[0]        0.797       5.108
+read_buffer_0.position[1]        spi_mode_config|next_b_inferred_clock     DFN1C0     Q       position[1]        0.797       5.329
+read_buffer_0.byte_out_cl[0]     spi_mode_config|next_b_inferred_clock     DFN1C0     Q       byte_out_cl[0]     0.797       6.769
+==================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                              Starting                                                                                         Required          
+Instance                      Reference                                 Type         Pin     Net                               Time         Slack
+                              Clock                                                                                                              
+-------------------------------------------------------------------------------------------------------------------------------------------------
+read_buffer_0.position[1]     spi_mode_config|next_b_inferred_clock     DFN1C0       D       I_10                              9.417        5.108
+read_buffer_0.byte_out[0]     spi_mode_config|next_b_inferred_clock     DFN1E1C0     D       byte_out_6[0]                     9.417        5.329
+read_buffer_0.byte_out[1]     spi_mode_config|next_b_inferred_clock     DFN1E1C0     D       byte_out_6[1]                     9.417        5.329
+read_buffer_0.byte_out[2]     spi_mode_config|next_b_inferred_clock     DFN1E1C0     D       byte_out_6[2]                     9.417        5.329
+read_buffer_0.byte_out[3]     spi_mode_config|next_b_inferred_clock     DFN1E1C0     D       byte_out_6[3]                     9.417        5.329
+read_buffer_0.byte_out[4]     spi_mode_config|next_b_inferred_clock     DFN1E1C0     D       byte_out_6[4]                     9.417        5.329
+read_buffer_0.byte_out[5]     spi_mode_config|next_b_inferred_clock     DFN1E1C0     D       byte_out_6[5]                     9.417        5.329
+read_buffer_0.byte_out[6]     spi_mode_config|next_b_inferred_clock     DFN1E1C0     D       byte_out_6[6]                     9.417        5.329
+read_buffer_0.byte_out[7]     spi_mode_config|next_b_inferred_clock     DFN1E1C0     D       byte_out_6[7]                     9.417        5.329
+read_buffer_0.position[0]     spi_mode_config|next_b_inferred_clock     DFN1C0       D       DWACT_ADD_CI_0_partial_sum[0]     9.417        6.382
+=================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.583
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.417
+
+    - Propagation time:                      4.309
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 5.108
+
+    Number of logic level(s):                2
+    Starting point:                          read_buffer_0.position[0] / Q
+    Ending point:                            read_buffer_0.position[1] / D
+    The start point is clocked by            spi_mode_config|next_b_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            spi_mode_config|next_b_inferred_clock [rising] on pin CLK
+
+Instance / Net                                   Pin      Pin               Arrival     No. of    
+Name                                  Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------
+read_buffer_0.position[0]             DFN1C0     Q        Out     0.797     0.797       -         
+position[0]                           Net        -        -       1.477     -           13        
+read_buffer_0.un1_position_2.I_1      AND2       A        In      -         2.274       -         
+read_buffer_0.un1_position_2.I_1      AND2       Y        Out     0.556     2.830       -         
+DWACT_ADD_CI_0_TMP[0]                 Net        -        -       0.233     -           1         
+read_buffer_0.un1_position_2.I_10     XOR2       B        In      -         3.063       -         
+read_buffer_0.un1_position_2.I_10     XOR2       Y        Out     1.013     4.076       -         
+I_10                                  Net        -        -       0.233     -           1         
+read_buffer_0.position[1]             DFN1C0     D        In      -         4.309       -         
+==================================================================================================
+Total path delay (propagation time + setup) of 4.892 is 2.949(60.3%) logic and 1.943(39.7%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+
+Finished final timing analysis (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:10s; Memory used current: 153MB peak: 158MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:10s; Memory used current: 153MB peak: 158MB)
+
+--------------------------------------------------------------------------------
+Target Part: M1A3P1000L_FBGA484_STD
+Report for cell full_sys.verilog
+  Core Cell usage:
+              cell count     area count*area
+              AND2    21      1.0       21.0
+              AND3    52      1.0       52.0
+               AO1    60      1.0       60.0
+              AO1A    29      1.0       29.0
+              AO1B    14      1.0       14.0
+              AO1C     3      1.0        3.0
+              AO1D     8      1.0        8.0
+              AOI1     3      1.0        3.0
+             AOI1B    10      1.0       10.0
+              AOI5     1      1.0        1.0
+               AX1     7      1.0        7.0
+              AX1C    37      1.0       37.0
+              AX1D     2      1.0        2.0
+              AXO5     1      1.0        1.0
+              AXO6     1      1.0        1.0
+            CLKINT     4      0.0        0.0
+               GND    14      0.0        0.0
+               INV     5      1.0        5.0
+               MX2   113      1.0      113.0
+              MX2A     5      1.0        5.0
+              MX2B     2      1.0        2.0
+              MX2C     6      1.0        6.0
+              NOR2    46      1.0       46.0
+             NOR2A   111      1.0      111.0
+             NOR2B   249      1.0      249.0
+              NOR3    16      1.0       16.0
+             NOR3A    57      1.0       57.0
+             NOR3B    56      1.0       56.0
+             NOR3C    72      1.0       72.0
+               OA1    81      1.0       81.0
+              OA1A    16      1.0       16.0
+              OA1B    33      1.0       33.0
+              OA1C    12      1.0       12.0
+              OAI1     9      1.0        9.0
+               OR2    64      1.0       64.0
+              OR2A    23      1.0       23.0
+              OR2B    17      1.0       17.0
+               OR3    54      1.0       54.0
+              OR3A     2      1.0        2.0
+              OR3B     4      1.0        4.0
+              OR3C     2      1.0        2.0
+               PLL     2      0.0        0.0
+            PLLINT     2      0.0        0.0
+               VCC    14      0.0        0.0
+               XA1    17      1.0       17.0
+              XA1A     1      1.0        1.0
+              XA1B     2      1.0        2.0
+              XA1C    11      1.0       11.0
+              XAI1     2      1.0        2.0
+             XNOR2     8      1.0        8.0
+               XO1     8      1.0        8.0
+              XO1A     1      1.0        1.0
+              XOR2   139      1.0      139.0
+              XOR3     1      1.0        1.0
+
+
+              DFN0    27      1.0       27.0
+            DFN0C0    37      1.0       37.0
+            DFN0E0    16      1.0       16.0
+          DFN0E0C0     8      1.0        8.0
+            DFN0E1    25      1.0       25.0
+            DFN0P0     4      1.0        4.0
+            DFN1C0   121      1.0      121.0
+          DFN1E0C0    25      1.0       25.0
+          DFN1E0P0     1      1.0        1.0
+            DFN1E1    57      1.0       57.0
+          DFN1E1C0    46      1.0       46.0
+          DFN1E1P0     2      1.0        2.0
+            DFN1P0     4      1.0        4.0
+                   -----          ----------
+             TOTAL  1903              1867.0
+
+
+  IO Cell usage:
+              cell count
+             BIBUF    16
+             INBUF     3
+            OUTBUF    13
+           TRIBUFF    13
+                   -----
+             TOTAL    45
+
+
+Core Cells         : 1867 of 24576 (8%)
+IO Cells           : 45
+
+  RAM/ROM Usage Summary
+Block Rams : 0 of 32 (0%)
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:11s; CPU Time elapsed 0h:00m:10s; Memory used current: 52MB peak: 158MB)
+
+Process took 0h:00m:11s realtime, 0h:00m:10s cputime
+# Mon Feb 29 23:32:54 2016
+
+###########################################################]

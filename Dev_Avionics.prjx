@@ -30,7 +30,7 @@ KEY ProjectDescription ""
 KEY Pa4PeripheralNewSeq "GOOD"
 KEY SimulationType "VERILOG"
 KEY Vendor "Actel"
-KEY ActiveRoot "transceiver_integration::work"
+KEY ActiveRoot "full_sys::work"
 LIST REVISIONS
 VALUE="Impl1",NUM=1
 CURREV=1
@@ -48,18 +48,25 @@ SIZE="413"
 ENDFILE
 VALUE "<project>\component\work\full_sys\full_sys.cxf,actgen_cxf"
 STATE="utd"
-TIME="1455302050"
-SIZE="2640"
+TIME="1456813493"
+SIZE="10240"
+ENDFILE
+VALUE "<project>\component\work\full_sys\full_sys.v,hdl"
+STATE="utd"
+TIME="1456813492"
+SIZE="18340"
+PARENT="<project>\component\work\full_sys\full_sys.cxf"
+IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\geiger_integration\geiger_integration.cxf,actgen_cxf"
 STATE="utd"
-TIME="1456365250"
+TIME="1456804917"
 SIZE="3802"
 ENDFILE
 VALUE "<project>\component\work\geiger_integration\geiger_integration.v,hdl"
 STATE="utd"
-TIME="1456365249"
-SIZE="5751"
+TIME="1456804916"
+SIZE="5757"
 PARENT="<project>\component\work\geiger_integration\geiger_integration.cxf"
 IS_READONLY="TRUE"
 ENDFILE
@@ -244,17 +251,17 @@ SIZE="465"
 ENDFILE
 VALUE "<project>\designer\impl1\transceiver_integration.adb,adb"
 STATE="utd"
-TIME="1456708416"
-SIZE="596480"
+TIME="1456716078"
+SIZE="758784"
 ENDFILE
 VALUE "<project>\designer\impl1\transceiver_integration.ide_des,ide_des"
 STATE="utd"
-TIME="1456708416"
-SIZE="1094"
+TIME="1456716078"
+SIZE="1093"
 ENDFILE
 VALUE "<project>\designer\impl1\transceiver_integration.pdb,pdb"
 STATE="utd"
-TIME="1456716077"
+TIME="1456719146"
 SIZE="1506191"
 ENDFILE
 VALUE "<project>\designer\impl1\transceiver_integration_ba.sdf,ba_sdf"
@@ -279,12 +286,12 @@ SIZE="10605"
 ENDFILE
 VALUE "<project>\designer\impl1\transceiver_integration_fp\projectData\transceiver_integration.pdb,pdb"
 STATE="utd"
-TIME="1456450562"
-SIZE="1505993"
+TIME="1456719143"
+SIZE="1506191"
 ENDFILE
 VALUE "<project>\designer\impl1\transceiver_integration_fp\transceiver_integration.pro,pro"
 STATE="utd"
-TIME="1456450562"
+TIME="1456719143"
 SIZE="2578"
 ENDFILE
 VALUE "<project>\designer\impl1\transceiver_integration_placeroute_log.rpt,log"
@@ -337,15 +344,10 @@ STATE="utd"
 TIME="1456706100"
 SIZE="1206"
 ENDFILE
-VALUE "<project>\hdl\dummy_state.v,hdl"
-STATE="utd"
-TIME="1452563936"
-SIZE="706"
-ENDFILE
 VALUE "<project>\hdl\geig_data_handling.v,hdl"
 STATE="utd"
-TIME="1456365221"
-SIZE="2357"
+TIME="1456803955"
+SIZE="2439"
 ENDFILE
 VALUE "<project>\hdl\mag_data_handling.v,hdl"
 STATE="utd"
@@ -359,18 +361,8 @@ SIZE="758"
 ENDFILE
 VALUE "<project>\hdl\memory_controller.v,hdl"
 STATE="utd"
-TIME="1455687487"
-SIZE="6805"
-ENDFILE
-VALUE "<project>\hdl\mem_traverse.v,hdl"
-STATE="utd"
-TIME="1450492718"
-SIZE="827"
-ENDFILE
-VALUE "<project>\hdl\mode_control.v,hdl"
-STATE="utd"
-TIME="1450492606"
-SIZE="771"
+TIME="1456813641"
+SIZE="6835"
 ENDFILE
 VALUE "<project>\hdl\orbit_control.v,hdl"
 STATE="utd"
@@ -379,8 +371,8 @@ SIZE="1652"
 ENDFILE
 VALUE "<project>\hdl\read_address_traversal.v,hdl"
 STATE="utd"
-TIME="1455157494"
-SIZE="1827"
+TIME="1456810616"
+SIZE="1845"
 ENDFILE
 VALUE "<project>\hdl\read_buffer.v,hdl"
 STATE="utd"
@@ -394,8 +386,8 @@ SIZE="866"
 ENDFILE
 VALUE "<project>\hdl\sdram_interface.v,hdl"
 STATE="utd"
-TIME="1455301919"
-SIZE="15780"
+TIME="1456813948"
+SIZE="15601"
 ENDFILE
 VALUE "<project>\hdl\spi_data_out.v,hdl"
 STATE="utd"
@@ -424,8 +416,8 @@ SIZE="1144"
 ENDFILE
 VALUE "<project>\hdl\test_harness_geiger_stack.v,hdl"
 STATE="utd"
-TIME="1456214315"
-SIZE="1740"
+TIME="1456804061"
+SIZE="1742"
 ENDFILE
 VALUE "<project>\hdl\timestamp.v,hdl"
 STATE="utd"
@@ -434,8 +426,8 @@ SIZE="712"
 ENDFILE
 VALUE "<project>\hdl\write_address_traversal.v,hdl"
 STATE="utd"
-TIME="1454401642"
-SIZE="1264"
+TIME="1456810635"
+SIZE="1361"
 ENDFILE
 VALUE "<project>\simulation\CLK_div_test_presynth_simulation.log,log"
 STATE="utd"
@@ -459,8 +451,8 @@ SIZE="5175"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1456707351"
-SIZE="1373"
+TIME="1456805624"
+SIZE="1185"
 ENDFILE
 VALUE "<project>\simulation\spi_master_tb3_presynth_simulation.log,log"
 STATE="utd"
@@ -573,32 +565,6 @@ SIZE="2760"
 PARENT="<project>\smartgen\CLK_1MHZ\CLK_1MHZ.cxf"
 IS_READONLY="TRUE"
 ENDFILE
-VALUE "<project>\smartgen\CLK_1M\CLK_1M.cxf,actgen_cxf"
-STATE="utd"
-TIME="1454472489"
-SIZE="2387"
-ENDFILE
-VALUE "<project>\smartgen\CLK_1M\CLK_1M.gen,gen"
-STATE="utd"
-TIME="1454472485"
-SIZE="586"
-PARENT="<project>\smartgen\CLK_1M\CLK_1M.cxf"
-IS_READONLY="TRUE"
-ENDFILE
-VALUE "<project>\smartgen\CLK_1M\CLK_1M.log,log"
-STATE="utd"
-TIME="1454472487"
-SIZE="4660"
-PARENT="<project>\smartgen\CLK_1M\CLK_1M.cxf"
-IS_READONLY="TRUE"
-ENDFILE
-VALUE "<project>\smartgen\CLK_1M\CLK_1M.v,hdl"
-STATE="utd"
-TIME="1454472487"
-SIZE="3074"
-PARENT="<project>\smartgen\CLK_1M\CLK_1M.cxf"
-IS_READONLY="TRUE"
-ENDFILE
 VALUE "<project>\smartgen\CLK_26MHZ\CLK_26MHZ.cxf,actgen_cxf"
 STATE="utd"
 TIME="1454471971"
@@ -695,7 +661,7 @@ SIZE="2187"
 ENDFILE
 VALUE "<project>\stimulus\tb_geig_data_handling.v,tb_hdl"
 STATE="utd"
-TIME="1455299105"
+TIME="1456805604"
 SIZE="2768"
 ENDFILE
 VALUE "<project>\stimulus\tb_memory_controller.v,tb_hdl"
@@ -773,29 +739,49 @@ STATE="utd"
 TIME="1454609968"
 SIZE="1647"
 ENDFILE
+VALUE "<project>\synthesis\full_sys.edn,syn_edn"
+STATE="utd"
+TIME="1456813974"
+SIZE="942294"
+ENDFILE
+VALUE "<project>\synthesis\full_sys.so,so"
+STATE="utd"
+TIME="1456813974"
+SIZE="259"
+ENDFILE
+VALUE "<project>\synthesis\full_sys_sdc.sdc,syn_sdc"
+STATE="utd"
+TIME="1456813974"
+SIZE="310"
+ENDFILE
+VALUE "<project>\synthesis\full_sys_syn.prj,prj"
+STATE="utd"
+TIME="1456813552"
+SIZE="3647"
+ENDFILE
 VALUE "<project>\synthesis\geiger_integration.edn,syn_edn"
-STATE="ood"
-TIME="1456368397"
-SIZE="331091"
+STATE="utd"
+TIME="1456804928"
+SIZE="351841"
 ENDFILE
 VALUE "<project>\synthesis\geiger_integration.so,so"
 STATE="utd"
-TIME="1456368397"
+TIME="1456804928"
 SIZE="279"
 ENDFILE
 VALUE "<project>\synthesis\geiger_integration.v,syn_hdl"
 STATE="ood"
-TIME="1456214829"
-SIZE="128904"
+TIME="1456805018"
+SIZE="136804"
 ENDFILE
 VALUE "<project>\synthesis\geiger_integration_sdc.sdc,syn_sdc"
-STATE="ood"
-TIME="1456368397"
+STATE="utd"
+TIME="1456804928"
 SIZE="310"
 ENDFILE
 VALUE "<project>\synthesis\geiger_integration_syn.prj,prj"
 STATE="utd"
-TIME="1456368398"
+TIME="1456804928"
 SIZE="2508"
 ENDFILE
 VALUE "<project>\synthesis\spi_test.edn,syn_edn"
@@ -825,32 +811,32 @@ SIZE="2220"
 ENDFILE
 VALUE "<project>\synthesis\synwork\layer0.so,so"
 STATE="utd"
-TIME="1456708305"
+TIME="1456714956"
 SIZE="159"
 ENDFILE
 VALUE "<project>\synthesis\transceiver_integration.edn,syn_edn"
 STATE="utd"
-TIME="1456708347"
-SIZE="456641"
+TIME="1456715947"
+SIZE="371490"
 ENDFILE
 VALUE "<project>\synthesis\transceiver_integration.so,so"
 STATE="utd"
-TIME="1456708347"
+TIME="1456715947"
 SIZE="289"
 ENDFILE
 VALUE "<project>\synthesis\transceiver_integration.v,syn_hdl"
 STATE="ood"
-TIME="1456713551"
-SIZE="117195"
+TIME="1456715639"
+SIZE="119129"
 ENDFILE
 VALUE "<project>\synthesis\transceiver_integration_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1456708347"
+TIME="1456715947"
 SIZE="310"
 ENDFILE
 VALUE "<project>\synthesis\transceiver_integration_syn.prj,prj"
 STATE="utd"
-TIME="1456708348"
+TIME="1456715948"
 SIZE="2867"
 ENDFILE
 VALUE "<project>\synthesis\write_address_traversal.edn,syn_edn"
@@ -898,14 +884,12 @@ VALUE "<project>\designer\impl1\clock_div_26MHZ_1MHZ_report_pin_byname.txt,log"
 VALUE "<project>\designer\impl1\clock_div_26MHZ_1MHZ_report_pin_bynumber.txt,log"
 ENDLIST
 ENDLIST
-LIST "geiger_integration::work"
-FILE "<project>\component\work\geiger_integration\geiger_integration.v,hdl"
-LIST AssociatedStimulus
-VALUE "<project>\stimulus\tb_geiger_integration.v,tb_hdl"
-ENDLIST
+LIST "full_sys::work"
+FILE "<project>\component\work\full_sys\full_sys.v,hdl"
 LIST ProjectState5.1
 LIST Impl1
-ideSTIMULUS=StateSuccess
+LiberoState=Post_Synthesis
+ideSYNTHESIS(<project>\synthesis\full_sys.edn,syn_edn)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -914,9 +898,24 @@ Used_File_List
 ENDUsed_File_List
 ENDLIST
 ENDLIST
-LIST PinReports
-VALUE "<project>\designer\impl1\geiger_integration_report_pin_byname.txt,log"
-VALUE "<project>\designer\impl1\geiger_integration_report_pin_bynumber.txt,log"
+ENDLIST
+LIST "geiger_integration::work"
+FILE "<project>\component\work\geiger_integration\geiger_integration.v,hdl"
+LIST AssociatedStimulus
+VALUE "<project>\stimulus\tb_geiger_integration.v,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+LiberoState=Post_Synthesis
+ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\geiger_integration.edn,syn_edn)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
 ENDLIST
 ENDLIST
 LIST "spi_test::work"
@@ -1046,7 +1045,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_v11.6\Model\win32acoem\modelsim.exe"
-PARAM=" -l tb_tranceiver_integration_postsynth_simulation.log "
+PARAM=""
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -1082,9 +1081,23 @@ Used_File_List
 ENDUsed_File_List
 ENDLIST
 ENDLIST
+LIST "full_sys::work"
+LIST Impl1
+LiberoState=Post_Synthesis
+ideSYNTHESIS(<project>\synthesis\full_sys.edn,syn_edn)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
 LIST "geiger_integration::work"
 LIST Impl1
+LiberoState=Post_Synthesis
 ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\geiger_integration.edn,syn_edn)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -1132,16 +1145,14 @@ ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 Reports;Reports;0
-ReportsCurrentItem;Generate Programming Data:transceiver_integration_prgdata_log.rpt
+ReportsCurrentItem;Synthesize:synplify.log
+SmartDesign;full_sys;0
 SmartDesign;transceiver_integration;0
-HDL;stimulus\tb_tranceiver_integration.v;0
-HDL;hdl\spi_mode_config.v;0
-HDL;hdl\orbit_control.v;0
-ACTIVEVIEW;Reports
+HDL;hdl\sdram_interface.v;0
+HDL;hdl\memory_controller.v;0
+ACTIVEVIEW;full_sys
 ENDLIST
 LIST ModuleSubBlockList
-LIST "CLK_1M::work","smartgen\CLK_1M\CLK_1M.v","TRUE","FALSE"
-ENDLIST
 LIST "CLK_1MHZ::work","smartgen\CLK_1MHZ\CLK_1MHZ.v","TRUE","FALSE"
 ENDLIST
 LIST "CLK_26MHZ::work","smartgen\CLK_26MHZ\CLK_26MHZ.v","TRUE","FALSE"
@@ -1162,32 +1173,37 @@ LIST "DESIGN_IO::work","component\work\DESIGN_IO\DESIGN_IO.cxf","TRUE","FALSE"
 ENDLIST
 LIST "dummy_mem::work","hdl\dummy_mem.v","FALSE","FALSE"
 ENDLIST
-LIST "dummy_state::work","hdl\dummy_state.v","FALSE","FALSE"
+LIST "dummy_state::work","","FALSE","FALSE"
 ENDLIST
-LIST "full_sys::work","component\work\full_sys\full_sys.cxf","TRUE","FALSE"
+LIST "full_sys::work","component\work\full_sys\full_sys.v","TRUE","FALSE"
 SUBBLOCK "CLK_1MHZ::work","smartgen\CLK_1MHZ\CLK_1MHZ.v","TRUE","FALSE"
 SUBBLOCK "CLK_26MHZ::work","smartgen\CLK_26MHZ\CLK_26MHZ.v","TRUE","FALSE"
-SUBBLOCK "CLK_6_5MHZ::work","smartgen\CLK_6_5MHZ\CLK_6_5MHZ.v","TRUE","FALSE"
 SUBBLOCK "clock_div_1MHZ_100KHZ::work","hdl\clock_div_1MHZ_100KHZ.v","FALSE","FALSE"
+SUBBLOCK "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
 SUBBLOCK "clock_div_1MHZ_1KHZ::work","hdl\clock_div_1MHZ_1KHZ.v","FALSE","FALSE"
 SUBBLOCK "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
+SUBBLOCK "orbit_control::work","hdl\orbit_control.v","FALSE","FALSE"
+SUBBLOCK "read_address_traversal::work","hdl\read_address_traversal.v","FALSE","FALSE"
+SUBBLOCK "read_buffer::work","hdl\read_buffer.v","FALSE","FALSE"
 SUBBLOCK "reset_pulse::work","hdl\reset_pulse.v","FALSE","FALSE"
-SUBBLOCK "sdram_interface::work","hdl\sdram_interface.v","FALSE","FALSE"
 SUBBLOCK "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
+SUBBLOCK "spi_mode_config::work","hdl\spi_mode_config.v","FALSE","FALSE"
 SUBBLOCK "test_harness_geiger_stack::work","hdl\test_harness_geiger_stack.v","FALSE","FALSE"
 SUBBLOCK "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
-SUBBLOCK "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
+SUBBLOCK "write_address_traversal::work","hdl\write_address_traversal.v","FALSE","FALSE"
+SUBBLOCK "memory_controller::work","hdl\memory_controller.v","FALSE","FALSE"
+SUBBLOCK "sdram_interface::work","hdl\sdram_interface.v","FALSE","FALSE"
 ENDLIST
 LIST "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
 ENDLIST
 LIST "geiger_integration::work","component\work\geiger_integration\geiger_integration.v","TRUE","FALSE"
 SUBBLOCK "CLK_1MHZ::work","smartgen\CLK_1MHZ\CLK_1MHZ.v","TRUE","FALSE"
 SUBBLOCK "clock_div_1MHZ_100KHZ::work","hdl\clock_div_1MHZ_100KHZ.v","FALSE","FALSE"
+SUBBLOCK "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
 SUBBLOCK "geig_data_handling::work","hdl\geig_data_handling.v","FALSE","FALSE"
 SUBBLOCK "reset_pulse::work","hdl\reset_pulse.v","FALSE","FALSE"
 SUBBLOCK "test_harness_geiger_stack::work","hdl\test_harness_geiger_stack.v","FALSE","FALSE"
 SUBBLOCK "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
-SUBBLOCK "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
 ENDLIST
 LIST "mag_data_handling::work","hdl\mag_data_handling.v","FALSE","FALSE"
 ENDLIST
@@ -1199,11 +1215,7 @@ SUBBLOCK "orbit_control::work","hdl\orbit_control.v","FALSE","FALSE"
 SUBBLOCK "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
 SUBBLOCK "spi_mode_config::work","hdl\spi_mode_config.v","FALSE","FALSE"
 ENDLIST
-LIST "mem_traverse::work","hdl\mem_traverse.v","FALSE","FALSE"
-ENDLIST
 LIST "memory_controller::work","hdl\memory_controller.v","FALSE","FALSE"
-ENDLIST
-LIST "mode_control::work","hdl\mode_control.v","FALSE","FALSE"
 ENDLIST
 LIST "orbit_control::work","hdl\orbit_control.v","FALSE","FALSE"
 ENDLIST
@@ -1223,13 +1235,13 @@ LIST "spi_mode_config::work","hdl\spi_mode_config.v","FALSE","FALSE"
 ENDLIST
 LIST "spi_test::work","component\work\spi_test\spi_test.cxf","TRUE","FALSE"
 SUBBLOCK "CLK_26MHZ::work","smartgen\CLK_26MHZ\CLK_26MHZ.v","TRUE","FALSE"
+SUBBLOCK "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
 SUBBLOCK "clock_div_1MHZ_1KHZ::work","hdl\clock_div_1MHZ_1KHZ.v","FALSE","FALSE"
+SUBBLOCK "clock_div_26MHZ_1MHZ::work","hdl\clock_div_26MHZ_1MHZ.v","FALSE","FALSE"
 SUBBLOCK "orbit_control::work","hdl\orbit_control.v","FALSE","FALSE"
 SUBBLOCK "spi_master::work","hdl\SPI_Master.v","FALSE","FALSE"
-SUBBLOCK "test_constants_spi::work","hdl\test_constants_spi.v","FALSE","FALSE"
-SUBBLOCK "clock_div_26MHZ_1MHZ::work","hdl\clock_div_26MHZ_1MHZ.v","FALSE","FALSE"
 SUBBLOCK "spi_mode_config::work","hdl\spi_mode_config.v","FALSE","FALSE"
-SUBBLOCK "clock_div_1MHZ_10HZ::work","hdl\clock_div_1MHZ_10HZ.v","FALSE","FALSE"
+SUBBLOCK "test_constants_spi::work","hdl\test_constants_spi.v","FALSE","FALSE"
 ENDLIST
 LIST "test_constants_spi::work","hdl\test_constants_spi.v","FALSE","FALSE"
 ENDLIST
@@ -1256,7 +1268,7 @@ ENDLIST
 LIST "write_address_traversal::work","hdl\write_address_traversal.v","FALSE","FALSE"
 ENDLIST
 LIST "dummy_test::work","stimulus\dummy_test.v","FALSE","TRUE"
-SUBBLOCK "dummy_state::work","hdl\dummy_state.v","FALSE","FALSE"
+SUBBLOCK "dummy_state::work","","FALSE","FALSE"
 ENDLIST
 LIST "master_mode_tb::work","stimulus\master_mode_tb.v","FALSE","TRUE"
 SUBBLOCK "master_mode::work","component\work\master_mode\master_mode.v","TRUE","FALSE"
@@ -1317,9 +1329,6 @@ SUBBLOCK "timestamp::work","hdl\timestamp.v","FALSE","FALSE"
 ENDLIST
 ENDLIST
 LIST ActiveTestBenchList
-LIST "transceiver_integration::work"
-ACTIVETESTBENCH "tb_tranceiver_integration::work","stimulus\tb_tranceiver_integration.v","FALSE"
-ENDLIST
 LIST "spi_test::work"
 ACTIVETESTBENCH "tb_spi_test::work","stimulus\tb_spi_test.v","FALSE"
 ENDLIST

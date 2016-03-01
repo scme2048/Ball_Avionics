@@ -1,1 +1,1 @@
-run_tcl -fg transceiver_integration_syn.tcl
+run_tcl -fg full_sys_syn.tcl

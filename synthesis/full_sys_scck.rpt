@@ -1,0 +1,35 @@
+# Synopsys Constraint Checker(syntax only), version mapact, Build 1522R, built Jun  4 2015
+# Copyright (C) 1994-2015, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+# Written on Mon Feb 29 23:32:42 2016
+
+
+##### DESIGN INFO #######################################################
+
+Top View:                "full_sys"
+Constraint File(s):      (none)
+
+#Run constraint checker to find more issues with constraints.
+#########################################################################
+
+
+
+No issues found in constraint syntax.
+
+
+
+Clock Summary
+*************
+
+Start                                           Requested     Requested     Clock        Clock              
+Clock                                           Frequency     Period        Type         Group              
+------------------------------------------------------------------------------------------------------------
+CLK_1MHZ|GLA_inferred_clock                     100.0 MHz     10.000        inferred     Inferred_clkgroup_7
+CLK_26MHZ|GLA_inferred_clock                    100.0 MHz     10.000        inferred     Inferred_clkgroup_5
+clock_div_1MHZ_10HZ|clk_out_inferred_clock      100.0 MHz     10.000        inferred     Inferred_clkgroup_1
+memory_controller|next_read_inferred_clock      100.0 MHz     10.000        inferred     Inferred_clkgroup_4
+memory_controller|next_write_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_0
+reset_pulse|CLK_OUT_48MHZ_inferred_clock        100.0 MHz     10.000        inferred     Inferred_clkgroup_6
+spi_master|state_q_inferred_clock[0]            100.0 MHz     10.000        inferred     Inferred_clkgroup_2
+spi_mode_config|next_b_inferred_clock           100.0 MHz     10.000        inferred     Inferred_clkgroup_3
+============================================================================================================

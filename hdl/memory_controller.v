@@ -25,7 +25,7 @@ BA_WRITE, COL_WRITE, ROW_WRITE
 
 // Inputs
 input CLK_48MHZ,RESET,SDRAM_STATUS, READ_CMD;
-input [47:0] GEIG_DATA;
+input [79:0] GEIG_DATA;
 input [79:0] MAG_DATA;
 input [1:0] BA_READ;
 input [8:0] COL_READ;
@@ -46,10 +46,10 @@ output [1:0] CMD_OUT;
 
 
 // Local Vars
-reg [47:0] geig_prev;
-reg [47:0] geig_buffer;
+reg [79:0] geig_prev;
+reg [79:0] geig_buffer;
 parameter new_geig_cmd =2'b01;
-parameter num_geig_cycles = 3;
+parameter num_geig_cycles = 5;
 
 reg [79:0] mag_prev;
 reg [79:0] mag_buffer;
@@ -91,9 +91,7 @@ assign DATA_OUT = data_out;
 // Always Block
 always @(posedge CLK_48MHZ or negedge RESET)
 begin
-// Set read_address and write_address for check later to ensure overlaps don't occur
-write_address = {BA_WRITE,COL_WRITE,ROW_WRITE};
-read_address = {BA_READ,COL_READ,ROW_READ};
+
 
 if (RESET==1'b0) begin
     schedule = 8'b00000000;
@@ -103,14 +101,17 @@ if (RESET==1'b0) begin
     next_read<=0;
     cmd_out<=2'b00;
     
-end
+end else begin
+// Set read_address and write_address for check later to ensure overlaps don't occur
+write_address = {BA_WRITE,COL_WRITE,ROW_WRITE};
+read_address = {BA_READ,COL_READ,ROW_READ};
 // Shift schedule if needed
 if ((schedule[1:0] ==2'b00) && (RESET==1'b1)) begin
     schedule=schedule>>2;
 end
 // Check for unique or new data for both sources and order in schedule by open slots
-if ((GEIG_DATA!==48'bZ) && (geig_prev===48'bZ) && (RESET==1'b1)) begin
-    geig_buffer[47:0] = GEIG_DATA;
+if ((GEIG_DATA!==80'bZ) && (geig_prev===80'bZ) && (RESET==1'b1)) begin
+    geig_buffer[79:0] = GEIG_DATA;
     geig_prev = GEIG_DATA;
     if (schedule[1:0] == 2'b00) begin
         schedule[1:0] = new_geig_cmd;
@@ -161,7 +162,7 @@ end
 if (((schedule[1:0] == new_geig_cmd) || (schedule[1:0] == new_mag_cmd)) && (RESET==1'b1)) begin
     if ((schedule[1:0] == new_geig_cmd) && (write_count==0)) begin
         num_cycles=num_geig_cycles;
-        data_buffer[47:0] = geig_buffer;
+        data_buffer[79:0] = geig_buffer;
     end else if ((schedule[1:0] == new_mag_cmd) && (write_count==0)) begin
         num_cycles = num_mag_cycles;
         data_buffer[79:0]=mag_buffer;
@@ -218,7 +219,7 @@ end else if ((schedule[1:0]==new_read_cmd) && (RESET==1'b1)) begin
     end
 end
 
-
+end // Reset Else
 
 end
 

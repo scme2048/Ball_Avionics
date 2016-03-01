@@ -1,0 +1,25 @@
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+8 gated/generated clock tree(s) driving 373 clock pin(s) of sequential element(s)
+0 instances converted, 373 sequential instances remain driven by gated/generated clocks
+
+======================================================================================================================= Gated/Generated Clocks =======================================================================================================================
+Clock Tree ID     Driving Element                     Drive Element Type     Fanout     Sample Instance                                 Explanation                                                                                                                   
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       CLK_26MHZ_0.Core                    PLL                    56         spi_mode_config_0.state_b[2]                    Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0002       clock_div_1MHZ_10HZ_0.clk_out       DFN1P0                 38         timestamp_0.TIMESTAMP[23]                       No generated or derived clock directive on output of sequential instance                                                      
+@K:CKID0003       memory_controller_0.next_read       DFN1E1C0               24         read_address_traversal_0.current_count[23]      No generated or derived clock directive on output of sequential instance                                                      
+@K:CKID0004       memory_controller_0.next_write      DFN1E1C0               24         write_address_traversal_0.current_count[23]     No generated or derived clock directive on output of sequential instance                                                      
+@K:CKID0005       CLK_1MHZ_0.Core                     PLL                    18         clock_div_1MHZ_10HZ_0.counter[16]               Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0006       spi_mode_config_0.next_b            DFN1E0C0               11         read_buffer_0.position[1]                       No generated or derived clock directive on output of sequential instance                                                      
+@K:CKID0007       reset_pulse_0.CLK_OUT_48MHZ         NOR2B                  179        sdram_interface_0.write_counter[3]              No clocks found on inputs                                                                                                     
+@K:CKID0008       spi_master_0.state_q_RNIRHEV[0]     NOR2                   23         spi_mode_config_0.config_cntr_a[6]              No clocks found on inputs                                                                                                     
+======================================================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+

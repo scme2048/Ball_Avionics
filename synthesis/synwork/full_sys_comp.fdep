@@ -1,0 +1,100 @@
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\synthesis\\synwork\\full_sys_comp.srs|-top|full_sys|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-I|C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\synthesis\\|-I|C:\\Microsemi\\Libero_v11.6\\Synopsys\\fpga_J-2015.03M-3\\lib|-v2001|-devicelib|C:\\Microsemi\\Libero_v11.6\\Synopsys\\fpga_J-2015.03M-3\\lib\\proasic\\proasic3l.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\Microsemi\\Libero_v11.6\\Synopsys\\fpga_J-2015.03M-3\\bin64\\c_ver.exe":1431625188
+#CUR:"C:\\Microsemi\\Libero_v11.6\\Synopsys\\fpga_J-2015.03M-3\\lib\\proasic\\proasic3l.v":1431615982
+#CUR:"C:\\Microsemi\\Libero_v11.6\\Synopsys\\fpga_J-2015.03M-3\\lib\\vlog\\hypermods.v":1431624842
+#CUR:"C:\\Microsemi\\Libero_v11.6\\Synopsys\\fpga_J-2015.03M-3\\lib\\vlog\\umr_capim.v":1431624842
+#CUR:"C:\\Microsemi\\Libero_v11.6\\Synopsys\\fpga_J-2015.03M-3\\lib\\vlog\\scemi_objects.v":1431624842
+#CUR:"C:\\Microsemi\\Libero_v11.6\\Synopsys\\fpga_J-2015.03M-3\\lib\\vlog\\scemi_pipes.svh":1431624842
+#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\smartgen\\CLK_1MHZ\\CLK_1MHZ.v":1454471978
+#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\smartgen\\CLK_26MHZ\\CLK_26MHZ.v":1454471969
+#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\hdl\\clock_div_1MHZ_100KHZ.v":1456295330
+#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\hdl\\clock_div_1MHZ_10HZ.v":1456715892
+#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\hdl\\clock_div_1MHZ_1KHZ.v":1455156268
+#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\hdl\\geig_data_handling.v":1456803955
+#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\hdl\\orbit_control.v":1456360026
+#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\hdl\\read_address_traversal.v":1456810616
+#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\hdl\\read_buffer.v":1456451963
+#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\hdl\\reset_pulse.v":1455155860
+#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\hdl\\SPI_Master.v":1456706100
+#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\hdl\\spi_mode_config.v":1456715580
+#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\hdl\\test_harness_geiger_stack.v":1456804061
+#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\hdl\\timestamp.v":1455156309
+#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\hdl\\write_address_traversal.v":1456810635
+#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\hdl\\memory_controller.v":1456813641
+#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\hdl\\sdram_interface.v":1456813948
+#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\component\\work\\full_sys\\full_sys.v":1456813492
+0			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\smartgen\CLK_1MHZ\CLK_1MHZ.v" verilog
+1			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\smartgen\CLK_26MHZ\CLK_26MHZ.v" verilog
+2			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\clock_div_1MHZ_100KHZ.v" verilog
+3			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\clock_div_1MHZ_10HZ.v" verilog
+4			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\clock_div_1MHZ_1KHZ.v" verilog
+5			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v" verilog
+6			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\orbit_control.v" verilog
+7			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\read_address_traversal.v" verilog
+8			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\read_buffer.v" verilog
+9			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\reset_pulse.v" verilog
+10			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\SPI_Master.v" verilog
+11			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v" verilog
+12			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\test_harness_geiger_stack.v" verilog
+13			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\timestamp.v" verilog
+14			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\write_address_traversal.v" verilog
+15			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v" verilog
+16			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v" verilog
+17			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\component\work\full_sys\full_sys.v" verilog
+#Dependency Lists(Uses List)
+0 -1
+1 -1
+2 -1
+3 -1
+4 -1
+5 -1
+6 -1
+7 -1
+8 -1
+9 -1
+10 -1
+11 -1
+12 -1
+13 -1
+14 -1
+15 -1
+16 -1
+17 14 13 12 11 10 16 9 8 7 6 15 5 2 3 4 1 0
+#Dependency Lists(Users Of)
+0 17
+1 17
+2 17
+3 17
+4 17
+5 17
+6 17
+7 17
+8 17
+9 17
+10 17
+11 17
+12 17
+13 17
+14 17
+15 17
+16 17
+17 -1
+#Design Unit to File Association
+module work full_sys 17
+module work sdram_interface 16
+module work memory_controller 15
+module work write_address_traversal 14
+module work timestamp 13
+module work test_harness_geiger_stack 12
+module work spi_mode_config 11
+module work spi_master 10
+module work reset_pulse 9
+module work read_buffer 8
+module work read_address_traversal 7
+module work orbit_control 6
+module work geig_data_handling 5
+module work clock_div_1MHZ_1KHZ 4
+module work clock_div_1MHZ_10HZ 3
+module work clock_div_1MHZ_100KHZ 2
+module work CLK_26MHZ 1
+module work CLK_1MHZ 0

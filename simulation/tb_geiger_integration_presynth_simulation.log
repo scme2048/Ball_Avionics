@@ -1,0 +1,122 @@
+# Reading C:/Microsemi/Libero_v11.6/Model/tcl/vsim/pref.tcl
+# do run.do
+# INFO: Simulation library presynth already exists
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet presynth presynth 
+# Modifying modelsim.ini
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet proasic3l C:/Microsemi/Libero_v11.6/Designer/lib/modelsim/precompiled/vlog/proasic3l 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 21:13:49 on Feb 29,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/smartgen/CLK_1MHZ/CLK_1MHZ.v 
+# -- Compiling module CLK_1MHZ
+# 
+# Top level modules:
+# 	CLK_1MHZ
+# End time: 21:13:49 on Feb 29,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 21:13:49 on Feb 29,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/clock_div_1MHZ_100KHZ.v 
+# -- Compiling module clock_div_1MHZ_100KHZ
+# 
+# Top level modules:
+# 	clock_div_1MHZ_100KHZ
+# End time: 21:13:50 on Feb 29,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 21:13:50 on Feb 29,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/clock_div_1MHZ_10HZ.v 
+# -- Compiling module clock_div_1MHZ_10HZ
+# 
+# Top level modules:
+# 	clock_div_1MHZ_10HZ
+# End time: 21:13:50 on Feb 29,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 21:13:50 on Feb 29,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/geig_data_handling.v 
+# -- Compiling module geig_data_handling
+# 
+# Top level modules:
+# 	geig_data_handling
+# End time: 21:13:50 on Feb 29,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 21:13:50 on Feb 29,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/reset_pulse.v 
+# -- Compiling module reset_pulse
+# 
+# Top level modules:
+# 	reset_pulse
+# End time: 21:13:50 on Feb 29,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 21:13:50 on Feb 29,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/test_harness_geiger_stack.v 
+# -- Compiling module test_harness_geiger_stack
+# 
+# Top level modules:
+# 	test_harness_geiger_stack
+# End time: 21:13:50 on Feb 29,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 21:13:50 on Feb 29,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/timestamp.v 
+# -- Compiling module timestamp
+# 
+# Top level modules:
+# 	timestamp
+# End time: 21:13:50 on Feb 29,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 21:13:50 on Feb 29,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/component/work/geiger_integration/geiger_integration.v 
+# -- Compiling module geiger_integration
+# 
+# Top level modules:
+# 	geiger_integration
+# End time: 21:13:50 on Feb 29,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 21:13:50 on Feb 29,2016
+# vlog -reportprogress 300 "+incdir+C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus" -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/tb_geiger_integration.v 
+# -- Compiling module tb_geiger_integration
+# 
+# Top level modules:
+# 	tb_geiger_integration
+# End time: 21:13:50 on Feb 29,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -gui -do "do run.do" -l tb_geiger_integration_presynth_simulation.log 
+# Start time: 21:13:50 on Feb 29,2016
+# //  ModelSim Microsemi 10.3c Jul 19 2014 
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading presynth.tb_geiger_integration
+# Loading presynth.geiger_integration
+# Loading presynth.CLK_1MHZ
+# Loading proasic3l.PLL
+# Loading proasic3l.PLLPRIM
+# Loading proasic3l.PLLINT
+# Loading proasic3l.GND
+# Loading proasic3l.VCC
+# Loading presynth.clock_div_1MHZ_10HZ
+# Loading presynth.clock_div_1MHZ_100KHZ
+# Loading presynth.geig_data_handling
+# Loading presynth.reset_pulse
+# Loading presynth.test_harness_geiger_stack
+# Loading presynth.timestamp
+#  ** Warning: FBSEL is unknown.
+#  Time: 0.0 Instance: tb_geiger_integration.geiger_integration_0.CLK_1MHZ_0.Core.P1 
+add wave sim:/tb_geiger_integration/geiger_integration_0/*
+restart
+run -all
+#  ** Warning: FBSEL is unknown.
+#  Time: 0.0 Instance: tb_geiger_integration.geiger_integration_0.CLK_1MHZ_0.Core.P1 

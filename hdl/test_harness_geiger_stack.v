@@ -15,7 +15,7 @@
 
 module test_harness_geiger_stack( CLK_1MHZ,RESET, TEST_DATA,D0,D1,D2,D3,D4,D5,D6,D7);
 input CLK_1MHZ,RESET;
-input [47:0] TEST_DATA;
+input [79:0] TEST_DATA;
 
 output D0,D1,D2,D3,D4,D5,D6,D7;
 
@@ -24,8 +24,8 @@ wire D0,D1,D2,D3,D4,D5,D6,D7;
 
 reg [7:0] data_chunk;
 reg set;
-reg [47:0] data_buffer;
-reg [47:0] data_prev;
+reg [79:0] data_buffer;
+reg [79:0] data_prev;
 reg [2:0] counter;
 
 assign D0 = data_chunk[0];
@@ -46,7 +46,7 @@ if (RESET==1'b0) begin
     set=0;
     data_chunk=0;
 end else begin
-    if ((set==1 ) && (counter<6)) begin
+    if ((set==1 ) && (counter<10)) begin
         data_chunk=data_buffer[7:0];
         data_buffer=data_buffer>>8;
         counter=counter+1;
@@ -54,7 +54,7 @@ end else begin
         data_buffer=TEST_DATA;
         set=1;
     end
-    if (counter==6) begin
+    if (counter==10) begin
         counter=0;
         set=0;
     end

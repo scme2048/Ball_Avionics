@@ -13,11 +13,12 @@
 module geig_data_handling( CLK_100KHZ,CLK_10HZ,RESET, TIMESTAMP, GSTREAM, G_DATA_STACK );
 input CLK_100KHZ,CLK_10HZ,GSTREAM,RESET;
 input [23:0] TIMESTAMP;
-output [47:0] G_DATA_STACK;
-reg [47:0] G_DATA_STACK;
+output [79:0] G_DATA_STACK;
+reg [79:0] G_DATA_STACK;
 reg [7:0] ID_GEIG;
 
 // Output data stack every 60 seconds, 600 deciseconds.
+parameter [31:0] filler_data = 32'b10101010101010101010101010101010;
 reg [15:0] geig_counts;
 reg [9:0] min_counter; //Count to 600
 always @(posedge CLK_10HZ or negedge RESET)
@@ -25,10 +26,10 @@ begin
     if (RESET==1'b0) begin
         ID_GEIG = 8'h47;
         min_counter = 10'b0000000000;
-        G_DATA_STACK=48'b0;
+        G_DATA_STACK=80'b0;
     end else if (min_counter==599) begin
         //Output G_Data_Stack
-        G_DATA_STACK={geig_counts,TIMESTAMP,ID_GEIG};
+        G_DATA_STACK={filler_data,geig_counts,TIMESTAMP,ID_GEIG};
         min_counter=min_counter+1;
     end else if (min_counter==600) begin
         min_counter=1;

@@ -12,7 +12,7 @@
     <project-description>
     </project-description>
     <location>C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/component/work/geiger_integration</location>
-    <state>GENERATED ( Wed Feb 24 18:54:10 2016 )</state>
+    <state>GENERATED ( Mon Feb 29 21:01:57 2016 )</state>
     <swide-toolchain>SoftConsole workspace has not been generated</swide-toolchain>
   </project-settings>
   <site-map>
@@ -20,11 +20,13 @@
   <fileset>
     <name>HDL File(s)</name>
     <file>C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\component\work\geiger_integration\geiger_integration.v</file>
+    <file>C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\component\work\master_mode\master_mode.v</file>
     <file>C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\component\work\transceiver_integration\transceiver_integration.v</file>
     <file>C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\clock_div_1MHZ_100KHZ.v</file>
     <file>C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\clock_div_1MHZ_10HZ.v</file>
     <file>C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\clock_div_1MHZ_1KHZ.v</file>
     <file>C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\clock_div_26MHZ_1MHZ.v</file>
+    <file>C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\dummy_mem.v</file>
     <file>C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\dummy_state.v</file>
     <file>C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v</file>
     <file>C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\mag_data_handling.v</file>
@@ -37,6 +39,7 @@
     <file>C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\read_buffer.v</file>
     <file>C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\reset_pulse.v</file>
     <file>C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v</file>
+    <file>C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_data_out.v</file>
     <file>C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\SPI_Master.v</file>
     <file>C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v</file>
     <file>C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\test_constants_spi.v</file>

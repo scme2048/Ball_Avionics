@@ -3,17 +3,24 @@
 #--  Project file C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\scratchproject.prs
 
 #project files
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/smartgen/CLK_1MHZ/CLK_1MHZ.v"
 add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/smartgen/CLK_26MHZ/CLK_26MHZ.v"
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/clock_div_1MHZ_100KHZ.v"
 add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/clock_div_1MHZ_10HZ.v"
-add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/clock_div_26MHZ_1MHZ.v"
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/clock_div_1MHZ_1KHZ.v"
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/geig_data_handling.v"
 add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/orbit_control.v"
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/read_address_traversal.v"
 add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/read_buffer.v"
 add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/reset_pulse.v"
-add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/spi_data_out.v"
 add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/SPI_Master.v"
 add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/spi_mode_config.v"
-add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/test_constants_spi.v"
-add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/component/work/transceiver_integration/transceiver_integration.v"
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/test_harness_geiger_stack.v"
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/timestamp.v"
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/write_address_traversal.v"
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/memory_controller.v"
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/sdram_interface.v"
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/component/work/full_sys/full_sys.v"
 
 
 
@@ -34,7 +41,7 @@ set_option -part_companion ""
 
 #compilation/mapping options
 set_option -use_fsm_explorer 0
-set_option -top_module "transceiver_integration"
+set_option -top_module "full_sys"
 
 # mapper_options
 set_option -frequency 100.000
@@ -72,5 +79,5 @@ set_option -auto_infer_blackbox 0
 set_option -write_apr_constraint 1
 
 #set result format/file last
-project -result_file "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/synthesis/transceiver_integration.edn"
+project -result_file "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/synthesis/full_sys.edn"
 impl -active "synthesis"

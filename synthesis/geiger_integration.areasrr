@@ -9,25 +9,25 @@ Report for cell geiger_integration.verilog
                                 VCC         1       0.0        0.0
               clock_div_1MHZ_100KHZ         1      74.0       74.0
                 clock_div_1MHZ_10HZ         1      78.0       78.0
-                 geig_data_handling         1     143.0      143.0
-                        reset_pulse         1       9.0        9.0
-          test_harness_geiger_stack         1     226.0      226.0
+                 geig_data_handling         1     145.0      145.0
+                        reset_pulse         1      10.0       10.0
+          test_harness_geiger_stack         1     271.0      271.0
                           timestamp         1      69.0       69.0
                             
-                         TOTAL             20                599.0
+                         TOTAL             20                647.0
 ----------------------------------------------------------------------
 Report for cell timestamp.netlist
      Instance path:  timestamp_0
                                           Cell usage:
                                cell       count     area    count*area
-                               AX1C        11       1.0       11.0
+                               AX1C        10       1.0       10.0
                              DFN1C0        24       1.0       24.0
                                 GND         1       0.0        0.0
                                 INV         1       1.0        1.0
                               NOR2B         6       1.0        6.0
                               NOR3C        15       1.0       15.0
                                 VCC         1       0.0        0.0
-                               XOR2        12       1.0       12.0
+                               XOR2        13       1.0       13.0
                             
                          TOTAL             71                 69.0
 ----------------------------------------------------------------------
@@ -35,28 +35,23 @@ Report for cell test_harness_geiger_stack.netlist
      Instance path:  test_harness_geiger_stack_0
                                           Cell usage:
                                cell       count     area    count*area
-                               AND2         1       1.0        1.0
-                               AOI1         1       1.0        1.0
-                              AOI1B         1       1.0        1.0
                              DFN1C0         3       1.0        3.0
-                             DFN1E0        48       1.0       48.0
-                           DFN1E0C0         3       1.0        3.0
-                             DFN1E1        44       1.0       44.0
+                             DFN1E0        64       1.0       64.0
+                             DFN1E1        60       1.0       60.0
                            DFN1E1C0         8       1.0        8.0
                                 GND         1       0.0        0.0
-                                MX2        37       1.0       37.0
-                              NOR2A        10       1.0       10.0
-                              NOR2B         5       1.0        5.0
-                               OA1A         2       1.0        2.0
-                                OR2         1       1.0        1.0
+                                MX2        52       1.0       52.0
+                              NOR2A         5       1.0        5.0
+                              NOR2B         4       1.0        4.0
+                                OR2         4       1.0        4.0
                                OR2B         3       1.0        3.0
-                                OR3        14       1.0       14.0
+                                OR3        17       1.0       17.0
                                 VCC         1       0.0        0.0
-                                XO1        12       1.0       12.0
-                               XOR2        31       1.0       31.0
-                              ZOR3I         2       1.0        2.0
+                                XO1        13       1.0       13.0
+                               XOR2        29       1.0       29.0
+                              ZOR3I         9       1.0        9.0
                             
-                         TOTAL            228                226.0
+                         TOTAL            273                271.0
 ----------------------------------------------------------------------
 Report for cell reset_pulse.netlist
      Instance path:  reset_pulse_0
@@ -64,10 +59,10 @@ Report for cell reset_pulse.netlist
                                cell       count     area    count*area
                                 GND         1       0.0        0.0
                               NOR2B         1       1.0        1.0
-                                OR2         8       1.0        8.0
+                                OR2         9       1.0        9.0
                                 VCC         1       0.0        0.0
                             
-                         TOTAL             11                  9.0
+                         TOTAL             12                 10.0
 ----------------------------------------------------------------------
 Report for cell geig_data_handling.netlist
      Instance path:  geig_data_handling_0
@@ -75,25 +70,24 @@ Report for cell geig_data_handling.netlist
                                cell       count     area    count*area
                                AND2         2       1.0        2.0
                                AND3         8       1.0        8.0
-                                AX1         1       1.0        1.0
                                AX1C         3       1.0        3.0
-                             DFN1C0        11       1.0       11.0
+                             DFN1C0        13       1.0       13.0
                            DFN1E1C0        56       1.0       56.0
                              DFN1P0         1       1.0        1.0
                                 GND         1       0.0        0.0
                                 INV         2       1.0        2.0
                                NOR2         1       1.0        1.0
                               NOR2A        12       1.0       12.0
-                              NOR2B        14       1.0       14.0
+                              NOR2B        17       1.0       17.0
                               NOR3A         1       1.0        1.0
                               NOR3B         1       1.0        1.0
-                              NOR3C         8       1.0        8.0
+                              NOR3C         5       1.0        5.0
                                 OR2         2       1.0        2.0
                                 VCC         1       0.0        0.0
-                               XA1B        10       1.0       10.0
+                               XA1B        11       1.0       11.0
                                XOR2        10       1.0       10.0
                             
-                         TOTAL            145                143.0
+                         TOTAL            147                145.0
 ----------------------------------------------------------------------
 Report for cell clock_div_1MHZ_100KHZ.netlist
      Instance path:  clock_div_1MHZ_100KHZ_0
@@ -111,9 +105,7 @@ Report for cell clock_div_1MHZ_100KHZ.netlist
                                NOR2         4       1.0        4.0
                               NOR2A         1       1.0        1.0
                               NOR2B         4       1.0        4.0
-                               NOR3         1       1.0        1.0
-                              NOR3A         1       1.0        1.0
-                              NOR3B         1       1.0        1.0
+                              NOR3A         3       1.0        3.0
                               NOR3C         2       1.0        2.0
                                 VCC         1       0.0        0.0
                                XOR2        16       1.0       16.0
@@ -133,12 +125,11 @@ Report for cell clock_div_1MHZ_10HZ.netlist
                              DFN1P0         2       1.0        2.0
                                 GND         1       0.0        0.0
                                 INV         1       1.0        1.0
-                               NOR2         2       1.0        2.0
-                              NOR2A         3       1.0        3.0
+                               NOR2         3       1.0        3.0
+                              NOR2A         2       1.0        2.0
                               NOR2B         5       1.0        5.0
                               NOR3A         1       1.0        1.0
-                              NOR3B         1       1.0        1.0
-                              NOR3C         2       1.0        2.0
+                              NOR3C         3       1.0        3.0
                                 VCC         1       0.0        0.0
                                XOR2        16       1.0       16.0
                             

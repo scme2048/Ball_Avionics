@@ -20,8 +20,7 @@ SDRAM_D12,SDRAM_D13,SDRAM_D14,SDRAM_D15,
 SDRAM_A0,SDRAM_A1,SDRAM_A2,SDRAM_A3,SDRAM_A4,SDRAM_A5,SDRAM_A6,SDRAM_A7,SDRAM_A8,SDRAM_A9,SDRAM_A10,SDRAM_A11,
 SDRAM_A12,
 SDRAM_CLK,SDRAM_BA0,SDRAM_BA1,SDRAM_CKE,SDRAM_CS,SDRAM_RAS,SDRAM_CAS,SDRAM_WE,SDRAM_DQML,SDRAM_DQMU,
-STATUS,DATA_READ,
-test_WC);
+STATUS,DATA_READ);
 
 // Timing Parameters (Given in 48MHZ (20.833) clock cycles needed to surpass)
 parameter t_rc = 4; // Ref/active -> ref/active command period 70ns
@@ -126,7 +125,6 @@ reg cas;
 reg we;
 reg ba0;
 reg ba1;
-reg a10;
 reg dqmu;
 reg dqml;
 // Control Output Assignments
@@ -153,11 +151,6 @@ reg read_exit;
 // Idle Cycle Command Vars and Counters
 reg idle_cycle;
 
-////////////////
-// TEMP VARS FOR OUTPUT OLD!!
-output test_WC;
-wire [3:0] test_WC;
-assign test_WC=read_counter;
 
 ////////////////
 ///// Conditional Logic
@@ -183,7 +176,6 @@ if (RESET==1'b0) begin
     we<=1'b0;
     ba0<=1'b0;
     ba1<=1'b0;
-    a10<=1'b0;
     dqmu<=1'b0;
     dqml<=1'b0;
 end
@@ -368,8 +360,8 @@ if ((read_cycle==1) && (RESET==1)) begin
         ras<=1;
         cas<=0;
         we<=1;
-        address[8:0] <= A_IN_COL;
-        address[10] <=1; 
+        address[8:0] = A_IN_COL;
+        address[10] =1; 
         dread<= 16'bz;
         read_counter=read_counter+1;
     end
@@ -395,7 +387,7 @@ if ((read_cycle==1) && (RESET==1)) begin
         dqml<=0;
         ba0<=A_IN_BANK[0];
         ba1<=A_IN_BANK[1];
-        address<=A_IN_ROW;
+        address=A_IN_ROW;
         read_counter=read_counter+1;
     end
     if ((read_counter>0) && (read_counter<t_rc)) begin
@@ -434,7 +426,7 @@ if ((pwr_up_hold===1'b1) && (RESET==1)) begin
         dqml<=1'b0;
         dqmu<=1'b0;
         dout<=16'b0;
-        busy<=1;
+        busy=1;
     end else if ((TIMESTAMP>=2)&&(TIMESTAMP<4)) begin
         pwr_stabalize=1'b1;
         cke<=1'b1;
@@ -533,8 +525,7 @@ if ((pwr_up_hold===1'b1) && (RESET==1)) begin
             ras<=0;
             cas<=1;
             we<=0;
-            a10=1;
-            address[10]=a10;
+            address[10]=1;
             init_counter=init_counter+1;
         end
 

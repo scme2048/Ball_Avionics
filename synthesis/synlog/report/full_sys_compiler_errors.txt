@@ -1,0 +1,2 @@
+@E: CS153 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":530:15:530:15|Can't mix blocking and non-blocking assignments to a variable
+

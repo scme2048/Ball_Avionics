@@ -1,0 +1,363 @@
+Synopsys HDL Compiler, version comp201503p1, Build 094R, built May 14 2015
+@N|Running in 64-bit mode
+Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp201503p1, Build 094R, built May 14 2015
+@N|Running in 64-bit mode
+Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@I::"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v"
+@I::"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\vlog\hypermods.v"
+@I::"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\vlog\umr_capim.v"
+@I::"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\vlog\scemi_objects.v"
+@I::"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\vlog\scemi_pipes.svh"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\smartgen\CLK_1MHZ\CLK_1MHZ.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\smartgen\CLK_26MHZ\CLK_26MHZ.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\clock_div_1MHZ_100KHZ.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\clock_div_1MHZ_10HZ.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\clock_div_1MHZ_1KHZ.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\orbit_control.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\read_address_traversal.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\read_buffer.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\reset_pulse.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\SPI_Master.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\test_harness_geiger_stack.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\timestamp.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\write_address_traversal.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\component\work\full_sys\full_sys.v"
+Verilog syntax check successful!
+Selecting top level module full_sys
+@N: CG364 :"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v":2810:7:2810:9|Synthesizing module PLL
+
+@N: CG364 :"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v":260:7:260:12|Synthesizing module PLLINT
+
+@N: CG364 :"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v":1229:7:1229:9|Synthesizing module GND
+
+@N: CG364 :"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v":2051:7:2051:9|Synthesizing module VCC
+
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\smartgen\CLK_1MHZ\CLK_1MHZ.v":5:7:5:14|Synthesizing module CLK_1MHZ
+
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\smartgen\CLK_26MHZ\CLK_26MHZ.v":5:7:5:15|Synthesizing module CLK_26MHZ
+
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\clock_div_1MHZ_1KHZ.v":13:7:13:25|Synthesizing module clock_div_1MHZ_1KHZ
+
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\clock_div_1MHZ_10HZ.v":13:7:13:25|Synthesizing module clock_div_1MHZ_10HZ
+
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\clock_div_1MHZ_100KHZ.v":13:7:13:27|Synthesizing module clock_div_1MHZ_100KHZ
+
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":13:7:13:24|Synthesizing module geig_data_handling
+
+@W: CL265 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":47:0:47:5|Pruning bit 1 of shift_reg[1:0] -- not in use ...
+
+@W: CL113 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Feedback mux created for signal ID_GEIG[7:0].
+@W: CL250 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|All reachable assignments to ID_GEIG[7] assign 0, register removed by optimization
+@W: CL251 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|All reachable assignments to ID_GEIG[6] assign 1, register removed by optimization
+@W: CL250 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|All reachable assignments to ID_GEIG[5:3] assign 0, register removed by optimization
+@W: CL251 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|All reachable assignments to ID_GEIG[2:0] assign 1, register removed by optimization
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[3] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[4] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[5] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[7] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[48] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[50] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[52] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[54] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[56] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[58] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[60] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[62] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[64] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[66] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[68] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[70] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[72] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[74] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[76] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[78] to a constant 0
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 78 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 76 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 74 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 72 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 70 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 68 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 66 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 64 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 62 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 60 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 58 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 56 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 54 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 52 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 50 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 48 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 7 of G_DATA_STACK[79:0] 
+
+@W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bits 5 to 3 of G_DATA_STACK[79:0] 
+
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":22:7:22:23|Synthesizing module memory_controller
+
+@W: CG133 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":50:11:50:21|No assignment to geig_buffer
+@W: CG133 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":55:11:55:20|No assignment to mag_buffer
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Pruning register write_address[23:0] 
+
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Pruning register read_address[23:0] 
+
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Pruning register geig_prev[79:0] 
+
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Pruning register mag_prev[79:0] 
+
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Feedback mux created for signal row_out[12:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Feedback mux created for signal read_prev -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Feedback mux created for signal num_cycles[2:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Feedback mux created for signal data_out[15:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Feedback mux created for signal data_buffer[79:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Feedback mux created for signal col_out[8:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Feedback mux created for signal ba_out[1:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[64] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[65] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[66] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[67] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[68] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[69] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[70] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[71] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[72] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[73] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[74] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[75] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[76] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[77] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[78] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[79] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit num_cycles[0] is always 1, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit num_cycles[1] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit num_cycles[2] is always 1, optimizing ...
+@W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Pruning register bits 79 to 64 of data_buffer[79:0] 
+
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\orbit_control.v":21:7:21:19|Synthesizing module orbit_control
+
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\read_address_traversal.v":27:7:27:28|Synthesizing module read_address_traversal
+
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\read_buffer.v":21:7:21:17|Synthesizing module read_buffer
+
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\read_buffer.v":66:0:66:5|Feedback mux created for signal buffer_b[15:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\read_buffer.v":66:0:66:5|Feedback mux created for signal buffer_a[15:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\reset_pulse.v":21:7:21:17|Synthesizing module reset_pulse
+
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":17:7:17:21|Synthesizing module sdram_interface
+
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Pruning register idle_cycle 
+
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal ts_delay[23:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal dout[15:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal busy -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal address_cl[0:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal address[0:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal address_cl[0:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal address[1:1] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal address_cl[0:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal address[2:2] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal address_cl[0:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal address[3:3] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal address_cl[0:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal address[4:4] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal address_cl[0:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal address[5:5] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal address_cl[0:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal address[6:6] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal address_cl[0:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal address[7:7] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal address_cl[0:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal address[8:8] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal address_cl[0:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal address[9:9] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal address_cl[0:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal address[10:10] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal address_cl[0:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal address[11:11] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal address_cl[0:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal address[12:12] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal dread_cl[0:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal dread[0:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal dread_cl[0:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal dread[1:1] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal dread_cl[0:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal dread[2:2] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal dread_cl[0:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal dread[3:3] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal dread_cl[0:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal dread[4:4] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal dread_cl[0:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal dread[5:5] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal dread_cl[0:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal dread[6:6] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal dread_cl[0:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal dread[7:7] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal dread_cl[0:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal dread[8:8] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal dread_cl[0:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal dread[9:9] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal dread_cl[0:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal dread[10:10] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal dread_cl[0:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal dread[11:11] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal dread_cl[0:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal dread[12:12] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal dread_cl[0:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal dread[13:13] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal dread_cl[0:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal dread[14:14] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal dread_cl[0:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Feedback mux created for signal dread[15:15] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Optimizing register bit cs to a constant 0
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Pruning register cs 
+
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\SPI_Master.v":1:7:1:16|Synthesizing module spi_master
+
+@W: CG133 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\SPI_Master.v":26:6:26:10|No assignment to count
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":22:7:22:21|Synthesizing module spi_mode_config
+
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":832:4:832:9|Pruning register chip_rdy 
+
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":103:4:103:9|Pruning register chip_rdy 
+
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":103:4:103:9|Pruning register chip_state[2:0] 
+
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\test_harness_geiger_stack.v":16:7:16:31|Synthesizing module test_harness_geiger_stack
+
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\test_harness_geiger_stack.v":41:0:41:5|Pruning register counter[2:0] 
+
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\test_harness_geiger_stack.v":41:0:41:5|Feedback mux created for signal data_prev[79:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\test_harness_geiger_stack.v":41:0:41:5|Feedback mux created for signal data_buffer[79:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\timestamp.v":13:7:13:15|Synthesizing module timestamp
+
+@W: CS142 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\timestamp.v":13:33:13:41|Range of port TIMESTAMP in port declaration and body are different.
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\write_address_traversal.v":21:7:21:29|Synthesizing module write_address_traversal
+
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\component\work\full_sys\full_sys.v":9:7:9:14|Synthesizing module full_sys
+
+@W: CL168 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\component\work\full_sys\full_sys.v":511:26:511:52|Pruning instance test_harness_geiger_stack_0 -- not in use ...
+
+@W: CL168 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\component\work\full_sys\full_sys.v":313:20:313:40|Pruning instance clock_div_1MHZ_1KHZ_0 -- not in use ...
+
+@W: CL246 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":23:16:23:27|Input port bits 3 to 0 of SLAVE_OUTPUT[7:0] are unused
+
+@N: CL201 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\SPI_Master.v":90:2:90:7|Trying to extract state machine for register state_q
+Extracted state machine for register state_q
+State machine has 3 reachable states with original encodings of:
+   00
+   01
+   10
+@N: CL201 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\read_buffer.v":66:0:66:5|Trying to extract state machine for register init_stage
+Extracted state machine for register init_stage
+State machine has 3 reachable states with original encodings of:
+   00
+   01
+   10
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\orbit_control.v":32:0:32:5|Optimizing register bit cntr[13] to a constant 0
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\orbit_control.v":32:0:32:5|Pruning register bit 13 of cntr[13:0] 
+
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[48] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[49] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[50] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[51] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[52] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[53] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[54] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[55] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[56] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[57] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[58] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[59] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[60] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[61] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[62] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[63] is always 0, optimizing ...
+@W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Pruning register bits 63 to 48 of data_buffer[63:0] 
+
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[32] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[33] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[34] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[35] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[36] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[37] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[38] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[39] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[40] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[41] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[42] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[43] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[44] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[45] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[46] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[47] is always 0, optimizing ...
+@W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Pruning register bits 47 to 32 of data_buffer[47:0] 
+
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[16] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[17] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[18] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[19] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[20] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[21] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[22] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[23] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[24] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[25] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[26] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[27] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[28] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[29] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[30] is always 0, optimizing ...
+@W: CL189 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Register bit data_buffer[31] is always 0, optimizing ...
+@W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Pruning register bits 31 to 16 of data_buffer[31:0] 
+
+@W: CL138 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Removing register 'data_buffer' because it is only assigned 0 or its original value.
+@W: CL138 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Removing register 'data_out' because it is only assigned 0 or its original value.
+@W: CL159 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":28:13:28:21|Input GEIG_DATA is unused
+@W: CL159 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":29:13:29:20|Input MAG_DATA is unused
+@W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bits 2 to 1 of G_DATA_STACK[2:0] 
+
+
+At c_ver Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 85MB peak: 108MB)
+
+Process took 0h:00m:03s realtime, 0h:00m:03s cputime
+# Mon Feb 29 23:32:39 2016
+
+###########################################################]
+Synopsys Netlist Linker, version comp201503p1, Build 094R, built May 14 2015
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Mon Feb 29 23:32:40 2016
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:04s realtime, 0h:00m:03s cputime
+# Mon Feb 29 23:32:40 2016
+
+###########################################################]

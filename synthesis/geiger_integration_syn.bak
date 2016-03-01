@@ -1,0 +1,67 @@
+#add_file options
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/smartgen/CLK_1MHZ/CLK_1MHZ.v"
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/clock_div_1MHZ_100KHZ.v"
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/clock_div_1MHZ_10HZ.v"
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/geig_data_handling.v"
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/reset_pulse.v"
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/test_harness_geiger_stack.v"
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/timestamp.v"
+add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/component/work/geiger_integration/geiger_integration.v"
+
+
+#project files
+
+
+#implementation: "synthesis"
+impl -add synthesis -type fpga
+
+#
+#implementation attributes
+
+set_option -vlog_std v2001
+
+#device options
+set_option -technology ProASIC3L
+set_option -part M1A3P1000L
+set_option -package FBGA484
+set_option -speed_grade STD
+#compilation/mapping options
+set_option -use_fsm_explorer 0
+set_option -top_module geiger_integration
+
+# mapper_options
+set_option -frequency 100.000
+set_option -write_verilog 0
+set_option -write_vhdl 0
+set_option -srs_instrumentation 1
+
+# actel_options
+set_option -rw_check_on_ram 0
+
+# Microsemi 500K
+set_option -run_prop_extract 1
+set_option -maxfan 24
+set_option -retiming 0
+set_option -report_path 4000
+set_option -opcond COMWC
+set_option -update_models_cp 0
+set_option -preserve_registers 0
+# Microsemi 500K
+set_option -globalthreshold 5000
+
+# sequential_optimization_options
+set_option -symbolic_fsm_compiler 1
+
+# Compiler Options
+set_option -compiler_compatible 0
+set_option -resource_sharing 1
+
+# Compiler Options
+set_option -auto_infer_blackbox 0
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+
+#set result format/file last
+project -result_file "./geiger_integration.edn"
+impl -active "synthesis"

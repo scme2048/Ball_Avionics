@@ -1,0 +1,20 @@
+
+fsm_encoding {13660662} sequential
+
+fsm_state_encoding {13660662} 00 {00}
+
+fsm_state_encoding {13660662} 01 {01}
+
+fsm_state_encoding {13660662} 10 {10}
+
+fsm_registers {13660662} {init_stage[1]}  {init_stage[0]} 
+
+fsm_encoding {15902901} sequential
+
+fsm_state_encoding {15902901} IDLE {00}
+
+fsm_state_encoding {15902901} WAIT_HALF {01}
+
+fsm_state_encoding {15902901} TRANSFER {10}
+
+fsm_registers {15902901} {state_q[1]}  {state_q[0]} 

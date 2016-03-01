@@ -1,0 +1,147 @@
+#Build: Synplify Pro J-2015.03M-3, Build 048R, May 14 2015
+#install: C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3
+#OS: Windows 8 6.2
+#Hostname: SCOTT-PC
+
+#Implementation: synthesis
+
+Synopsys HDL Compiler, version comp201503p1, Build 094R, built May 14 2015
+@N|Running in 64-bit mode
+Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp201503p1, Build 094R, built May 14 2015
+@N|Running in 64-bit mode
+Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@I::"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v"
+@I::"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\vlog\hypermods.v"
+@I::"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\vlog\umr_capim.v"
+@I::"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\vlog\scemi_objects.v"
+@I::"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\vlog\scemi_pipes.svh"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\smartgen\CLK_1MHZ\CLK_1MHZ.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\smartgen\CLK_26MHZ\CLK_26MHZ.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\clock_div_1MHZ_100KHZ.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\clock_div_1MHZ_10HZ.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\clock_div_1MHZ_1KHZ.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\orbit_control.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\read_address_traversal.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\read_buffer.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\reset_pulse.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\SPI_Master.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\test_harness_geiger_stack.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\timestamp.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\write_address_traversal.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\component\work\full_sys\full_sys.v"
+Verilog syntax check successful!
+Options changed - recompiling
+Selecting top level module full_sys
+@N: CG364 :"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v":2810:7:2810:9|Synthesizing module PLL
+
+@N: CG364 :"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v":260:7:260:12|Synthesizing module PLLINT
+
+@N: CG364 :"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v":1229:7:1229:9|Synthesizing module GND
+
+@N: CG364 :"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v":2051:7:2051:9|Synthesizing module VCC
+
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\smartgen\CLK_1MHZ\CLK_1MHZ.v":5:7:5:14|Synthesizing module CLK_1MHZ
+
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\smartgen\CLK_26MHZ\CLK_26MHZ.v":5:7:5:15|Synthesizing module CLK_26MHZ
+
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\clock_div_1MHZ_1KHZ.v":13:7:13:25|Synthesizing module clock_div_1MHZ_1KHZ
+
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\clock_div_1MHZ_10HZ.v":13:7:13:25|Synthesizing module clock_div_1MHZ_10HZ
+
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\clock_div_1MHZ_100KHZ.v":13:7:13:27|Synthesizing module clock_div_1MHZ_100KHZ
+
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":13:7:13:24|Synthesizing module geig_data_handling
+
+@W: CL265 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":47:0:47:5|Pruning bit 1 of shift_reg[1:0] -- not in use ...
+
+@W: CL113 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Feedback mux created for signal ID_GEIG[7:0].
+@W: CL250 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|All reachable assignments to ID_GEIG[7] assign 0, register removed by optimization
+@W: CL251 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|All reachable assignments to ID_GEIG[6] assign 1, register removed by optimization
+@W: CL250 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|All reachable assignments to ID_GEIG[5:3] assign 0, register removed by optimization
+@W: CL251 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|All reachable assignments to ID_GEIG[2:0] assign 1, register removed by optimization
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[3] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[4] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[5] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[7] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[48] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[50] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[52] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[54] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[56] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[58] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[60] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[62] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[64] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[66] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[68] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[70] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[72] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[74] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[76] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[78] to a constant 0
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 78 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 76 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 74 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 72 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 70 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 68 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 66 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 64 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 62 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 60 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 58 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 56 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 54 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 52 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 50 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 48 of G_DATA_STACK[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 7 of G_DATA_STACK[79:0] 
+
+@W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bits 5 to 3 of G_DATA_STACK[79:0] 
+
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":22:7:22:23|Synthesizing module memory_controller
+
+@W: CG133 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":50:11:50:21|No assignment to geig_buffer
+@W: CG133 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":55:11:55:20|No assignment to mag_buffer
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Pruning register write_address[23:0] 
+
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Pruning register read_address[23:0] 
+
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Pruning register geig_prev[79:0] 
+
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Pruning register mag_prev[79:0] 
+
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Feedback mux created for signal row_out[12:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@E: CL123 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Logic for read_prev does not match a standard flip-flop
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Mon Feb 29 23:25:52 2016
+
+###########################################################]
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Mon Feb 29 23:25:52 2016
+
+###########################################################]

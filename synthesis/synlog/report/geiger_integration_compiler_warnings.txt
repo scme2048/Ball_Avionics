@@ -1,15 +1,48 @@
-@W: CL265 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":46:0:46:5|Pruning bit 1 of shift_reg[1:0] -- not in use ...
-@W: CL113 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":23:0:23:5|Feedback mux created for signal ID_GEIG[7:0].
-@W: CL250 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":23:0:23:5|All reachable assignments to ID_GEIG[7] assign 0, register removed by optimization
-@W: CL251 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":23:0:23:5|All reachable assignments to ID_GEIG[6] assign 1, register removed by optimization
-@W: CL250 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":23:0:23:5|All reachable assignments to ID_GEIG[5:3] assign 0, register removed by optimization
-@W: CL251 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":23:0:23:5|All reachable assignments to ID_GEIG[2:0] assign 1, register removed by optimization
-@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":23:0:23:5|Optimizing register bit G_DATA_STACK[3] to a constant 0
-@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":23:0:23:5|Optimizing register bit G_DATA_STACK[4] to a constant 0
-@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":23:0:23:5|Optimizing register bit G_DATA_STACK[5] to a constant 0
-@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":23:0:23:5|Optimizing register bit G_DATA_STACK[7] to a constant 0
-@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":23:0:23:5|Pruning register bit 7 of G_DATA_STACK[47:0] 
-@W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":23:0:23:5|Pruning register bits 5 to 3 of G_DATA_STACK[47:0] 
+@W: CL265 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":47:0:47:5|Pruning bit 1 of shift_reg[1:0] -- not in use ...
+@W: CL113 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Feedback mux created for signal ID_GEIG[7:0].
+@W: CL250 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|All reachable assignments to ID_GEIG[7] assign 0, register removed by optimization
+@W: CL251 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|All reachable assignments to ID_GEIG[6] assign 1, register removed by optimization
+@W: CL250 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|All reachable assignments to ID_GEIG[5:3] assign 0, register removed by optimization
+@W: CL251 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|All reachable assignments to ID_GEIG[2:0] assign 1, register removed by optimization
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[3] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[4] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[5] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[7] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[48] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[50] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[52] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[54] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[56] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[58] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[60] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[62] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[64] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[66] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[68] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[70] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[72] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[74] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[76] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Optimizing register bit G_DATA_STACK[78] to a constant 0
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 78 of G_DATA_STACK[79:0] 
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 76 of G_DATA_STACK[79:0] 
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 74 of G_DATA_STACK[79:0] 
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 72 of G_DATA_STACK[79:0] 
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 70 of G_DATA_STACK[79:0] 
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 68 of G_DATA_STACK[79:0] 
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 66 of G_DATA_STACK[79:0] 
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 64 of G_DATA_STACK[79:0] 
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 62 of G_DATA_STACK[79:0] 
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 60 of G_DATA_STACK[79:0] 
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 58 of G_DATA_STACK[79:0] 
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 56 of G_DATA_STACK[79:0] 
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 54 of G_DATA_STACK[79:0] 
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 52 of G_DATA_STACK[79:0] 
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 50 of G_DATA_STACK[79:0] 
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 48 of G_DATA_STACK[79:0] 
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bit 7 of G_DATA_STACK[79:0] 
+@W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bits 5 to 3 of G_DATA_STACK[79:0] 
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\test_harness_geiger_stack.v":41:0:41:5|Pruning register counter[2:0] 
 @W: CS142 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\timestamp.v":13:33:13:41|Range of port TIMESTAMP in port declaration and body are different.
-@W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":23:0:23:5|Pruning register bits 2 to 1 of G_DATA_STACK[2:0] 
+@W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bits 2 to 1 of G_DATA_STACK[2:0] 
 

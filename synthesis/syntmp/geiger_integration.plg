@@ -1,42 +1,42 @@
-@P:  Worst Slack : -1.617
-@P:  CLK_1MHZ|GLA_inferred_clock - Estimated Frequency : 96.3 MHz
+@P:  Worst Slack : -2.148
+@P:  CLK_1MHZ|GLA_inferred_clock - Estimated Frequency : 95.2 MHz
 @P:  CLK_1MHZ|GLA_inferred_clock - Requested Frequency : 100.0 MHz
-@P:  CLK_1MHZ|GLA_inferred_clock - Estimated Period : 10.389
+@P:  CLK_1MHZ|GLA_inferred_clock - Estimated Period : 10.504
 @P:  CLK_1MHZ|GLA_inferred_clock - Requested Period : 10.000
-@P:  CLK_1MHZ|GLA_inferred_clock - Slack : -0.389
-@P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Estimated Frequency : 86.1 MHz
+@P:  CLK_1MHZ|GLA_inferred_clock - Slack : -0.504
+@P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Estimated Frequency : 82.3 MHz
 @P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Requested Frequency : 100.0 MHz
-@P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Estimated Period : 11.617
+@P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Estimated Period : 12.149
 @P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Requested Period : 10.000
-@P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Slack : -1.617
-@P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Estimated Frequency : 90.8 MHz
+@P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Slack : -2.148
+@P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Estimated Frequency : 83.0 MHz
 @P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Requested Frequency : 100.0 MHz
-@P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Estimated Period : 11.012
+@P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Estimated Period : 12.049
 @P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Requested Period : 10.000
-@P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Slack : -1.012
+@P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Slack : -2.049
 @P:  Worst Slack(min analysis) : NA
-@P:  CLK_1MHZ|GLA_inferred_clock - Estimated Frequency(min analysis) : 96.3 MHz
+@P:  CLK_1MHZ|GLA_inferred_clock - Estimated Frequency(min analysis) : 95.2 MHz
 @P:  CLK_1MHZ|GLA_inferred_clock - Requested Frequency(min analysis) : 100.0 MHz
-@P:  CLK_1MHZ|GLA_inferred_clock - Estimated Period(min analysis) : 10.389
+@P:  CLK_1MHZ|GLA_inferred_clock - Estimated Period(min analysis) : 10.504
 @P:  CLK_1MHZ|GLA_inferred_clock - Requested Period(min analysis) : 10.000
-@P:  CLK_1MHZ|GLA_inferred_clock - Slack(min analysis) : -0.389
-@P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Estimated Frequency(min analysis) : 86.1 MHz
+@P:  CLK_1MHZ|GLA_inferred_clock - Slack(min analysis) : -0.504
+@P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Estimated Frequency(min analysis) : 82.3 MHz
 @P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Requested Frequency(min analysis) : 100.0 MHz
-@P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Estimated Period(min analysis) : 11.617
+@P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Estimated Period(min analysis) : 12.149
 @P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Requested Period(min analysis) : 10.000
-@P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Slack(min analysis) : -1.617
-@P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Estimated Frequency(min analysis) : 90.8 MHz
+@P:  clock_div_1MHZ_10HZ|clk_out_inferred_clock - Slack(min analysis) : -2.148
+@P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Estimated Frequency(min analysis) : 83.0 MHz
 @P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Requested Frequency(min analysis) : 100.0 MHz
-@P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Estimated Period(min analysis) : 11.012
+@P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Estimated Period(min analysis) : 12.049
 @P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Requested Period(min analysis) : 10.000
-@P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Slack(min analysis) : -1.012
-@P:  Total Area : 599.0
+@P:  clock_div_1MHZ_100KHZ|clk_out_inferred_clock - Slack(min analysis) : -2.049
+@P:  Total Area : 647.0
 @P:  Total Area : 69.0
-@P:  Total Area : 226.0
-@P:  Total Area : 9.0
-@P:  Total Area : 143.0
+@P:  Total Area : 271.0
+@P:  Total Area : 10.0
+@P:  Total Area : 145.0
 @P:  Total Area : 74.0
 @P:  Total Area : 78.0
 @P:  Total Area : 0.0
-@P:  Total Area : 599.0
+@P:  Total Area : 647.0
 @P:  CPU Time : 0h:00m:01s

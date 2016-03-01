@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Wed Feb 24 18:54:09 2016
+// Created by SmartDesign Mon Feb 29 21:01:56 2016
 // Version: v11.6 11.6.0.34
 //////////////////////////////////////////////////////////////////////
 
@@ -56,7 +56,7 @@ wire          D5_OUT_net_0;
 wire          D6_OUT_net_0;
 wire          D7_OUT_net_0;
 wire          G_STREAM;
-wire   [47:0] geig_data_handling_0_G_DATA_STACK;
+wire   [79:0] geig_data_handling_0_G_DATA_STACK_0;
 wire          reset_pulse_0_CLK_OUT_48MHZ;
 wire          reset_pulse_0_RESET;
 wire   [23:0] timestamp_0_TIMESTAMP;
@@ -132,10 +132,10 @@ geig_data_handling geig_data_handling_0(
         .CLK_100KHZ   ( clock_div_1MHZ_100KHZ_0_CLK_100KHZ_OUT ),
         .CLK_10HZ     ( clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT ),
         .RESET        ( reset_pulse_0_RESET ),
-        .GSTREAM      ( G_STREAM ),
         .TIMESTAMP    ( timestamp_0_TIMESTAMP ),
+        .GSTREAM      ( G_STREAM ),
         // Outputs
-        .G_DATA_STACK ( geig_data_handling_0_G_DATA_STACK ) 
+        .G_DATA_STACK ( geig_data_handling_0_G_DATA_STACK_0 ) 
         );
 
 //--------reset_pulse
@@ -153,7 +153,7 @@ test_harness_geiger_stack test_harness_geiger_stack_0(
         // Inputs
         .CLK_1MHZ  ( CLK_1MHZ_0_GLA ),
         .RESET     ( reset_pulse_0_RESET ),
-        .TEST_DATA ( geig_data_handling_0_G_DATA_STACK ),
+        .TEST_DATA ( geig_data_handling_0_G_DATA_STACK_0 ),
         // Outputs
         .D0        ( D0_OUT_net_0 ),
         .D1        ( D1_OUT_net_0 ),

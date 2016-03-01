@@ -2,7 +2,7 @@
 @N: MF667 |Clock conversion disabled 
 @N: MF238 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\clock_div_1mhz_10hz.v":31:19:31:28|Found 17-bit incrementor, 'un5_counter[16:0]'
 @N: MF238 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\clock_div_1mhz_100khz.v":30:19:30:28|Found 17-bit incrementor, 'un5_counter[16:0]'
-@N: MF238 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\geig_data_handling.v":32:20:32:33|Found 10-bit incrementor, 'un2_min_counter[9:0]'
+@N: MF238 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\geig_data_handling.v":33:20:33:33|Found 10-bit incrementor, 'un2_min_counter[9:0]'
 @N: FP130 |Promoting Net clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT on CLKINT  clock_div_1MHZ_10HZ_0.clk_out_inferred_clock 
 @N: FP130 |Promoting Net clock_div_1MHZ_100KHZ_0_CLK_100KHZ_OUT on CLKINT  clock_div_1MHZ_100KHZ_0.clk_out_inferred_clock 
 @N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.

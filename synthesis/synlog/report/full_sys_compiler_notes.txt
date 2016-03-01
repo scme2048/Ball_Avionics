@@ -1,0 +1,28 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG364 :"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v":2810:7:2810:9|Synthesizing module PLL
+@N: CG364 :"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v":260:7:260:12|Synthesizing module PLLINT
+@N: CG364 :"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v":1229:7:1229:9|Synthesizing module GND
+@N: CG364 :"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v":2051:7:2051:9|Synthesizing module VCC
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\smartgen\CLK_1MHZ\CLK_1MHZ.v":5:7:5:14|Synthesizing module CLK_1MHZ
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\smartgen\CLK_26MHZ\CLK_26MHZ.v":5:7:5:15|Synthesizing module CLK_26MHZ
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\clock_div_1MHZ_1KHZ.v":13:7:13:25|Synthesizing module clock_div_1MHZ_1KHZ
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\clock_div_1MHZ_10HZ.v":13:7:13:25|Synthesizing module clock_div_1MHZ_10HZ
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\clock_div_1MHZ_100KHZ.v":13:7:13:27|Synthesizing module clock_div_1MHZ_100KHZ
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":13:7:13:24|Synthesizing module geig_data_handling
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":22:7:22:23|Synthesizing module memory_controller
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\orbit_control.v":21:7:21:19|Synthesizing module orbit_control
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\read_address_traversal.v":27:7:27:28|Synthesizing module read_address_traversal
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\read_buffer.v":21:7:21:17|Synthesizing module read_buffer
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\reset_pulse.v":21:7:21:17|Synthesizing module reset_pulse
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":17:7:17:21|Synthesizing module sdram_interface
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\SPI_Master.v":1:7:1:16|Synthesizing module spi_master
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\spi_mode_config.v":22:7:22:21|Synthesizing module spi_mode_config
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\test_harness_geiger_stack.v":16:7:16:31|Synthesizing module test_harness_geiger_stack
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\timestamp.v":13:7:13:15|Synthesizing module timestamp
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\write_address_traversal.v":21:7:21:29|Synthesizing module write_address_traversal
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\component\work\full_sys\full_sys.v":9:7:9:14|Synthesizing module full_sys
+@N: CL201 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\SPI_Master.v":90:2:90:7|Trying to extract state machine for register state_q
+@N: CL201 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\read_buffer.v":66:0:66:5|Trying to extract state machine for register init_stage
+@N|Running in 64-bit mode
+

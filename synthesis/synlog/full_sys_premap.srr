@@ -1,0 +1,78 @@
+Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 1522R, Built Jun  4 2015 12:04:36
+Copyright (C) 1994-2015, Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+Product Version J-2015.03M-3
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@L: C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\full_sys_scck.rpt 
+Printing clock  summary report in "C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\full_sys_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 104MB peak: 106MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 104MB peak: 106MB)
+
+@N: BN115 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\component\work\full_sys\full_sys.v":340:19:340:38|Removing instance geig_data_handling_0 of view:work.geig_data_handling(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\spi_master.v":90:2:90:7|Removing sequential instance new_data_q of view:PrimLib.dffr(prim) in hierarchy view:work.spi_master(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\geig_data_handling.v":24:0:24:5|Removing sequential instance G_DATA_STACK_1[0] of view:PrimLib.dffre(prim) in hierarchy view:work.geig_data_handling(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\geig_data_handling.v":24:0:24:5|Removing sequential instance G_DATA_STACK_1[6] of view:PrimLib.dffre(prim) in hierarchy view:work.geig_data_handling(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\geig_data_handling.v":24:0:24:5|Removing sequential instance G_DATA_STACK_1[47:8] of view:PrimLib.dffre(prim) in hierarchy view:work.geig_data_handling(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\geig_data_handling.v":24:0:24:5|Removing sequential instance G_DATA_STACK_1[49] of view:PrimLib.dffre(prim) in hierarchy view:work.geig_data_handling(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\geig_data_handling.v":24:0:24:5|Removing sequential instance G_DATA_STACK_1[51] of view:PrimLib.dffre(prim) in hierarchy view:work.geig_data_handling(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\geig_data_handling.v":24:0:24:5|Removing sequential instance G_DATA_STACK_1[53] of view:PrimLib.dffre(prim) in hierarchy view:work.geig_data_handling(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\geig_data_handling.v":24:0:24:5|Removing sequential instance G_DATA_STACK_1[55] of view:PrimLib.dffre(prim) in hierarchy view:work.geig_data_handling(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\geig_data_handling.v":24:0:24:5|Removing sequential instance G_DATA_STACK_1[57] of view:PrimLib.dffre(prim) in hierarchy view:work.geig_data_handling(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\geig_data_handling.v":24:0:24:5|Removing sequential instance G_DATA_STACK_1[59] of view:PrimLib.dffre(prim) in hierarchy view:work.geig_data_handling(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\geig_data_handling.v":24:0:24:5|Removing sequential instance G_DATA_STACK_1[61] of view:PrimLib.dffre(prim) in hierarchy view:work.geig_data_handling(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\geig_data_handling.v":24:0:24:5|Removing sequential instance G_DATA_STACK_1[63] of view:PrimLib.dffre(prim) in hierarchy view:work.geig_data_handling(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\geig_data_handling.v":24:0:24:5|Removing sequential instance G_DATA_STACK_1[65] of view:PrimLib.dffre(prim) in hierarchy view:work.geig_data_handling(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\geig_data_handling.v":24:0:24:5|Removing sequential instance G_DATA_STACK_1[67] of view:PrimLib.dffre(prim) in hierarchy view:work.geig_data_handling(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\geig_data_handling.v":24:0:24:5|Removing sequential instance G_DATA_STACK_1[69] of view:PrimLib.dffre(prim) in hierarchy view:work.geig_data_handling(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\geig_data_handling.v":24:0:24:5|Removing sequential instance G_DATA_STACK_1[71] of view:PrimLib.dffre(prim) in hierarchy view:work.geig_data_handling(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\geig_data_handling.v":24:0:24:5|Removing sequential instance G_DATA_STACK_1[73] of view:PrimLib.dffre(prim) in hierarchy view:work.geig_data_handling(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\geig_data_handling.v":24:0:24:5|Removing sequential instance G_DATA_STACK_1[75] of view:PrimLib.dffre(prim) in hierarchy view:work.geig_data_handling(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\geig_data_handling.v":24:0:24:5|Removing sequential instance G_DATA_STACK_1[77] of view:PrimLib.dffre(prim) in hierarchy view:work.geig_data_handling(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\geig_data_handling.v":24:0:24:5|Removing sequential instance G_DATA_STACK_1[79] of view:PrimLib.dffre(prim) in hierarchy view:work.geig_data_handling(verilog) because there are no references to its outputs 
+@N: BN115 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\component\work\full_sys\full_sys.v":331:22:331:44|Removing instance clock_div_1MHZ_100KHZ_0 of view:work.clock_div_1MHZ_100KHZ(verilog) because there are no references to its outputs 
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 113MB)
+
+
+
+@S |Clock Summary
+*****************
+
+Start                                           Requested     Requested     Clock        Clock              
+Clock                                           Frequency     Period        Type         Group              
+------------------------------------------------------------------------------------------------------------
+CLK_1MHZ|GLA_inferred_clock                     100.0 MHz     10.000        inferred     Inferred_clkgroup_7
+CLK_26MHZ|GLA_inferred_clock                    100.0 MHz     10.000        inferred     Inferred_clkgroup_5
+clock_div_1MHZ_10HZ|clk_out_inferred_clock      100.0 MHz     10.000        inferred     Inferred_clkgroup_1
+memory_controller|next_read_inferred_clock      100.0 MHz     10.000        inferred     Inferred_clkgroup_4
+memory_controller|next_write_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_0
+reset_pulse|CLK_OUT_48MHZ_inferred_clock        100.0 MHz     10.000        inferred     Inferred_clkgroup_6
+spi_master|state_q_inferred_clock[0]            100.0 MHz     10.000        inferred     Inferred_clkgroup_2
+spi_mode_config|next_b_inferred_clock           100.0 MHz     10.000        inferred     Inferred_clkgroup_3
+============================================================================================================
+
+@W: MT530 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\write_address_traversal.v":36:0:36:5|Found inferred clock memory_controller|next_write_inferred_clock which controls 24 sequential elements including write_address_traversal_0.current_count[23:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\orbit_control.v":32:0:32:5|Found inferred clock clock_div_1MHZ_10HZ|clk_out_inferred_clock which controls 38 sequential elements including orbit_control_0.cntr[12:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\spi_master.v":90:2:90:7|Found inferred clock spi_master|state_q_inferred_clock[0] which controls 41 sequential elements including spi_master_0.ctr_q[2:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\read_buffer.v":43:0:43:5|Found inferred clock spi_mode_config|next_b_inferred_clock which controls 19 sequential elements including read_buffer_0.byte_out[7]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\read_address_traversal.v":49:0:49:5|Found inferred clock memory_controller|next_read_inferred_clock which controls 24 sequential elements including read_address_traversal_0.current_count[23:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\spi_master.v":90:2:90:7|Found inferred clock CLK_26MHZ|GLA_inferred_clock which controls 60 sequential elements including spi_master_0.state_q[2:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\memory_controller.v":92:0:92:5|Found inferred clock reset_pulse|CLK_OUT_48MHZ_inferred_clock which controls 212 sequential elements including memory_controller_0.next_write. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\clock_div_1mhz_10hz.v":22:0:22:5|Found inferred clock CLK_1MHZ|GLA_inferred_clock which controls 18 sequential elements including clock_div_1MHZ_10HZ_0.counter[16:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\full_sys.sap.
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 48MB peak: 113MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Mon Feb 29 23:32:43 2016
+
+###########################################################]
