@@ -1,0 +1,355 @@
+# Reading C:/Microsemi/Libero_v11.6/Model/tcl/vsim/pref.tcl
+# do run.do
+# INFO: Simulation library presynth already exists
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet presynth presynth 
+# Modifying modelsim.ini
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet proasic3l C:/Microsemi/Libero_v11.6/Designer/lib/modelsim/precompiled/vlog/proasic3l 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 20:22:52 on Mar 01,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/smartgen/CLK_1MHZ/CLK_1MHZ.v 
+# -- Compiling module CLK_1MHZ
+# 
+# Top level modules:
+# 	CLK_1MHZ
+# End time: 20:22:53 on Mar 01,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 20:22:53 on Mar 01,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/buffer_data_out.v 
+# -- Compiling module buffer_data_out
+# 
+# Top level modules:
+# 	buffer_data_out
+# End time: 20:22:53 on Mar 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 20:22:53 on Mar 01,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/clock_div_1MHZ_10HZ.v 
+# -- Compiling module clock_div_1MHZ_10HZ
+# 
+# Top level modules:
+# 	clock_div_1MHZ_10HZ
+# End time: 20:22:53 on Mar 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 20:22:53 on Mar 01,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/constant_sensor_data.v 
+# -- Compiling module constant_sensor_data
+# 
+# Top level modules:
+# 	constant_sensor_data
+# End time: 20:22:53 on Mar 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 20:22:53 on Mar 01,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/memory_controller.v 
+# -- Compiling module memory_controller
+# 
+# Top level modules:
+# 	memory_controller
+# End time: 20:22:53 on Mar 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 20:22:53 on Mar 01,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/read_address_traversal.v 
+# -- Compiling module read_address_traversal
+# 
+# Top level modules:
+# 	read_address_traversal
+# End time: 20:22:53 on Mar 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 20:22:53 on Mar 01,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/read_buffer.v 
+# -- Compiling module read_buffer
+# 
+# Top level modules:
+# 	read_buffer
+# End time: 20:22:53 on Mar 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 20:22:54 on Mar 01,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/reset_pulse.v 
+# -- Compiling module reset_pulse
+# 
+# Top level modules:
+# 	reset_pulse
+# End time: 20:22:54 on Mar 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 20:22:54 on Mar 01,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/sdram_interface.v 
+# -- Compiling module sdram_interface
+# 
+# Top level modules:
+# 	sdram_interface
+# End time: 20:22:54 on Mar 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 20:22:54 on Mar 01,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/timestamp.v 
+# -- Compiling module timestamp
+# 
+# Top level modules:
+# 	timestamp
+# End time: 20:22:54 on Mar 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 20:22:54 on Mar 01,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/write_address_traversal.v 
+# -- Compiling module write_address_traversal
+# 
+# Top level modules:
+# 	write_address_traversal
+# End time: 20:22:54 on Mar 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 20:22:54 on Mar 01,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/component/work/memory_test/memory_test.v 
+# -- Compiling module memory_test
+# 
+# Top level modules:
+# 	memory_test
+# End time: 20:22:54 on Mar 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 20:22:54 on Mar 01,2016
+# vlog -reportprogress 300 "+incdir+C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus" -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/tb_memory_test.v 
+# -- Compiling module tb_memory_test
+# 
+# Top level modules:
+# 	tb_memory_test
+# End time: 20:22:54 on Mar 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -gui -do "do run.do" -l tb_memory_test_presynth_simulation.log 
+# Start time: 20:22:56 on Mar 01,2016
+# //  ModelSim Microsemi 10.3c Jul 19 2014 
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading presynth.tb_memory_test
+# Loading presynth.memory_test
+# Loading presynth.buffer_data_out
+# Loading presynth.CLK_1MHZ
+# Loading proasic3l.PLL
+# Loading proasic3l.PLLPRIM
+# Loading proasic3l.PLLINT
+# Loading proasic3l.GND
+# Loading proasic3l.VCC
+# Loading presynth.clock_div_1MHZ_10HZ
+# Loading presynth.constant_sensor_data
+# Loading presynth.memory_controller
+# Loading presynth.read_address_traversal
+# Loading presynth.read_buffer
+# Loading presynth.reset_pulse
+# Loading presynth.sdram_interface
+# Loading presynth.timestamp
+# Loading presynth.write_address_traversal
+# Trace back: Error QStructure::sort: invalid command name ""
+#   <6:proc:11: ::QStructure::sort .main_pane.structure 7 ascending
+#   <5:eval:1: ::QStructure::structsort .main_pane.structure 7 ascending
+#   <4:eval:1: ::namespace inscope ::QStructure {structsort .main_pane.structure} 7 ascending
+#   >3:proc:26: ::.main_pane.structure.interior.cs.body.struct sort 7 ascending
+#   >2:proc:10: ::.main_pane.structure.interior.cs.body.struct _initializeSortColumn
+#   <1:eval:1: ::namespace inscope ::vsimwidgets::Hierarchy {::.main_pane.structure.interior.cs.body.struct _initializeSortColumn}
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Scott  Hostname: SCOTT-PC  ProcessID: 14132
+# 
+#           Attempting to use alternate WLF file "./wlftr28dis".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftr28dis
+# 
+#  ** Warning: FBSEL is unknown.
+#  Time: 0.0 Instance: tb_memory_test.memory_test_0.CLK_1MHZ_0.Core.P1 
+run -all
+do run.do
+# INFO: Simulation library presynth already exists
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet presynth presynth 
+# Modifying modelsim.ini
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet proasic3l C:/Microsemi/Libero_v11.6/Designer/lib/modelsim/precompiled/vlog/proasic3l 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 20:26:10 on Mar 01,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/smartgen/CLK_1MHZ/CLK_1MHZ.v 
+# -- Compiling module CLK_1MHZ
+# 
+# Top level modules:
+# 	CLK_1MHZ
+# End time: 20:26:10 on Mar 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 20:26:11 on Mar 01,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/buffer_data_out.v 
+# -- Compiling module buffer_data_out
+# 
+# Top level modules:
+# 	buffer_data_out
+# End time: 20:26:11 on Mar 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 20:26:11 on Mar 01,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/clock_div_1MHZ_10HZ.v 
+# -- Compiling module clock_div_1MHZ_10HZ
+# 
+# Top level modules:
+# 	clock_div_1MHZ_10HZ
+# End time: 20:26:11 on Mar 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 20:26:11 on Mar 01,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/constant_sensor_data.v 
+# -- Compiling module constant_sensor_data
+# 
+# Top level modules:
+# 	constant_sensor_data
+# End time: 20:26:11 on Mar 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 20:26:11 on Mar 01,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/memory_controller.v 
+# -- Compiling module memory_controller
+# 
+# Top level modules:
+# 	memory_controller
+# End time: 20:26:11 on Mar 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 20:26:11 on Mar 01,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/read_address_traversal.v 
+# -- Compiling module read_address_traversal
+# 
+# Top level modules:
+# 	read_address_traversal
+# End time: 20:26:11 on Mar 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 20:26:11 on Mar 01,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/read_buffer.v 
+# -- Compiling module read_buffer
+# 
+# Top level modules:
+# 	read_buffer
+# End time: 20:26:11 on Mar 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 20:26:11 on Mar 01,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/reset_pulse.v 
+# -- Compiling module reset_pulse
+# 
+# Top level modules:
+# 	reset_pulse
+# End time: 20:26:11 on Mar 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 20:26:11 on Mar 01,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/sdram_interface.v 
+# -- Compiling module sdram_interface
+# 
+# Top level modules:
+# 	sdram_interface
+# End time: 20:26:11 on Mar 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 20:26:11 on Mar 01,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/timestamp.v 
+# -- Compiling module timestamp
+# 
+# Top level modules:
+# 	timestamp
+# End time: 20:26:12 on Mar 01,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 20:26:12 on Mar 01,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/write_address_traversal.v 
+# -- Compiling module write_address_traversal
+# 
+# Top level modules:
+# 	write_address_traversal
+# End time: 20:26:12 on Mar 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 20:26:12 on Mar 01,2016
+# vlog -reportprogress 300 -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/component/work/memory_test/memory_test.v 
+# -- Compiling module memory_test
+# 
+# Top level modules:
+# 	memory_test
+# End time: 20:26:12 on Mar 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 20:26:12 on Mar 01,2016
+# vlog -reportprogress 300 "+incdir+C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus" -work presynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/tb_memory_test.v 
+# -- Compiling module tb_memory_test
+# 
+# Top level modules:
+# 	tb_memory_test
+# End time: 20:26:12 on Mar 01,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim 
+# Start time: 20:26:14 on Mar 01,2016
+# Loading presynth.tb_memory_test
+# Loading presynth.memory_test
+# Loading presynth.buffer_data_out
+# Loading presynth.CLK_1MHZ
+# Loading proasic3l.PLL
+# Loading proasic3l.PLLPRIM
+# Loading proasic3l.PLLINT
+# Loading proasic3l.GND
+# Loading proasic3l.VCC
+# Loading presynth.clock_div_1MHZ_10HZ
+# Loading presynth.constant_sensor_data
+# Loading presynth.memory_controller
+# Loading presynth.read_address_traversal
+# Loading presynth.read_buffer
+# Loading presynth.reset_pulse
+# Loading presynth.sdram_interface
+# Loading presynth.timestamp
+# Loading presynth.write_address_traversal
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Scott  Hostname: SCOTT-PC  ProcessID: 14132
+# 
+#           Attempting to use alternate WLF file "./wlftsz02zg".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftsz02zg
+# 
+#  ** Warning: FBSEL is unknown.
+#  Time: 0.0 Instance: tb_memory_test.memory_test_0.CLK_1MHZ_0.Core.P1 
+restart
+run -all
+#  ** Warning: FBSEL is unknown.
+#  Time: 0.0 Instance: tb_memory_test.memory_test_0.CLK_1MHZ_0.Core.P1 
+run -all
+run -all
+run -all
+run -all
+run -all
+run -all
+run -all
+run -all
+add wave sim:/tb_memory_test/memory_test_0/*
+restart
+run -all
+#  ** Warning: FBSEL is unknown.
+#  Time: 0.0 Instance: tb_memory_test.memory_test_0.CLK_1MHZ_0.Core.P1 
+run -all
+run -all
+run -all
+run -all
+run -all
+run -all
+# End time: 01:14:39 on Mar 02,2016, Elapsed time: 4:48:25
+# Errors: 0, Warnings: 2
