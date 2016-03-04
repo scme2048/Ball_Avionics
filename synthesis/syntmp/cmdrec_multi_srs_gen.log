@@ -1,7 +1,7 @@
-C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin64\syn_nfilter.exe  -link  -top  full_sys  -multisrs  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synwork\full_sys_comp.srs  -osyn  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synwork\full_sys_mult.srs  -log  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synlog\full_sys_multi_srs_gen.srr 
+C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin64\syn_nfilter.exe  -link  -top  memory_test  -multisrs  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synwork\memory_test_comp.srs  -osyn  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synwork\memory_test_mult.srs  -log  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synlog\memory_test_multi_srs_gen.srr 
 rc:0 success:1
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synwork\full_sys_comp.srs|i|1456813960|67506
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synwork\full_sys_mult.srs|o|1456813962|14938
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synlog\full_sys_multi_srs_gen.srr|o|1456813962|374
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synwork\memory_test_comp.srs|i|1457077642|53124
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synwork\memory_test_mult.srs|o|1457077644|13294
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synlog\memory_test_multi_srs_gen.srr|o|1457077644|515
 C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin\syn_nfilter.exe|i|1431625058|3001344
 C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin64\syn_nfilter.exe|i|1431625246|3968000

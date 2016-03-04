@@ -1,1 +1,1 @@
-run_tcl -fg full_sys_syn.tcl
+run_tcl -fg memory_test_syn.tcl

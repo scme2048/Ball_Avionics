@@ -3,10 +3,10 @@ sourcing C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\message_overri
 Starting:    C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\bin64\mbin\synplify.exe
 Install:     C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3
 Hostname:    SCOTT-PC
-Date:        Mon Feb 29 20:55:33 2016
+Date:        Thu Mar 03 01:05:52 2016
 Version:     J-2015.03M-3
 
-Arguments:   -product synplify_pro geiger_integration_syn.prj
+Arguments:   -product synplify_pro memory_test_syn.prj
 ProductType: synplify_pro
 
 License checkout: synplifypro_actel

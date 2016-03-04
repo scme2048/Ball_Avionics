@@ -1,0 +1,2 @@
+@E: CG150 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":333:17:333:20|Can't mix blocking and non-blocking assignments. Bit 0 of dread
+

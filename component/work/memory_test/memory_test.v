@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Tue Mar 01 20:14:16 2016
+// Created by SmartDesign Fri Mar 04 00:47:10 2016
 // Version: v11.6 11.6.0.34
 //////////////////////////////////////////////////////////////////////
 
@@ -344,9 +344,9 @@ constant_sensor_data constant_sensor_data_0(
         .RESET        ( reset_pulse_0_RESET ),
         .TIMESTAMP    ( timestamp_0_TIMESTAMP ),
         // Outputs
+        .NEXT_BYTE    ( constant_sensor_data_0_NEXT_BYTE ),
         .G_DATA_STACK ( constant_sensor_data_0_G_DATA_STACK ),
-        .M_DATA_STACK ( constant_sensor_data_0_M_DATA_STACK ),
-        .NEXT_BYTE    ( constant_sensor_data_0_NEXT_BYTE ) 
+        .M_DATA_STACK ( constant_sensor_data_0_M_DATA_STACK ) 
         );
 
 //--------memory_controller

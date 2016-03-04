@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- *************************************************************************************
+FILE DESCRIPTION
+Max Top 5 critical clocks will be reported. For rest user needs to refer to Detailed report
+*******************************************************************************************-->
+<report_table display_priority="2" name="Timing Summary">
+<report_link name="Detailed report">
+<data>C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\synlog\memory_test_fpga_mapper.srr</data>
+<title>START OF TIMING REPORT</title>
+</report_link>
+<row>
+<data tcl_name="clock_name">Clock Name</data>
+<data tcl_name="req_freq">Req Freq</data>
+<data tcl_name="est_freq">Est Freq</data>
+<data tcl_name="slack">Slack</data>
+</row>
+<row>
+<data>CLK_1MHZ|GLA_inferred_clock</data>
+<data>100.0 MHz</data>
+<data>128.8 MHz</data>
+<data>2.237</data>
+</row>
+<row>
+<data>clock_div_1MHZ_10HZ|clk_out_inferred_clock</data>
+<data>100.0 MHz</data>
+<data>73.0 MHz</data>
+<data>-3.689</data>
+</row>
+<row>
+<data>constant_sensor_data|next_byte_control_inferred_clock</data>
+<data>100.0 MHz</data>
+<data>204.4 MHz</data>
+<data>5.108</data>
+</row>
+<row>
+<data>memory_controller|next_read_inferred_clock</data>
+<data>100.0 MHz</data>
+<data>84.1 MHz</data>
+<data>-1.888</data>
+</row>
+<row>
+<data>memory_controller|next_write_inferred_clock</data>
+<data>100.0 MHz</data>
+<data>83.0 MHz</data>
+<data>-2.053</data>
+</row>
+<row>
+<data>reset_pulse|CLK_OUT_48MHZ_inferred_clock</data>
+<data>100.0 MHz</data>
+<data>33.7 MHz</data>
+<data>-13.275</data>
+</row>
+</report_table>

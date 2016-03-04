@@ -1,0 +1,35 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\memory_controller.v":92:0:92:5|Removing sequential instance num_cycles[2] of view:PrimLib.dffre(prim) in hierarchy view:work.memory_controller(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\sdram_interface.v":157:0:157:5|Removing sequential instance dread_cl[0] of view:PrimLib.dffse(prim) in hierarchy view:work.sdram_interface(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\sdram_interface.v":157:0:157:5|Removing sequential instance dread_cl_2[0] of view:PrimLib.dffse(prim) in hierarchy view:work.sdram_interface(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\sdram_interface.v":157:0:157:5|Removing sequential instance dread_cl_3[0] of view:PrimLib.dffse(prim) in hierarchy view:work.sdram_interface(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\sdram_interface.v":157:0:157:5|Removing sequential instance dread_cl_4[0] of view:PrimLib.dffse(prim) in hierarchy view:work.sdram_interface(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\sdram_interface.v":157:0:157:5|Removing sequential instance dread_cl_5[0] of view:PrimLib.dffse(prim) in hierarchy view:work.sdram_interface(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\sdram_interface.v":157:0:157:5|Removing sequential instance dread_cl_6[0] of view:PrimLib.dffse(prim) in hierarchy view:work.sdram_interface(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\sdram_interface.v":157:0:157:5|Removing sequential instance dread_cl_7[0] of view:PrimLib.dffse(prim) in hierarchy view:work.sdram_interface(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\sdram_interface.v":157:0:157:5|Removing sequential instance dread_cl_8[0] of view:PrimLib.dffse(prim) in hierarchy view:work.sdram_interface(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\sdram_interface.v":157:0:157:5|Removing sequential instance dread_cl_9[0] of view:PrimLib.dffse(prim) in hierarchy view:work.sdram_interface(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\sdram_interface.v":157:0:157:5|Removing sequential instance dread_cl_10[0] of view:PrimLib.dffse(prim) in hierarchy view:work.sdram_interface(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\sdram_interface.v":157:0:157:5|Removing sequential instance dread_cl_11[0] of view:PrimLib.dffse(prim) in hierarchy view:work.sdram_interface(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\sdram_interface.v":157:0:157:5|Removing sequential instance dread_cl_12[0] of view:PrimLib.dffse(prim) in hierarchy view:work.sdram_interface(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\sdram_interface.v":157:0:157:5|Removing sequential instance dread_cl_13[0] of view:PrimLib.dffse(prim) in hierarchy view:work.sdram_interface(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\sdram_interface.v":157:0:157:5|Removing sequential instance dread_cl_14[0] of view:PrimLib.dffse(prim) in hierarchy view:work.sdram_interface(verilog) because there are no references to its outputs 
+@N: BN362 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\sdram_interface.v":157:0:157:5|Removing sequential instance dread_cl_15[0] of view:PrimLib.dffse(prim) in hierarchy view:work.sdram_interface(verilog) because there are no references to its outputs 
+@N: MF238 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\clock_div_1mhz_10hz.v":31:19:31:28|Found 17-bit incrementor, 'un5_counter[16:0]'
+@N: MF238 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\constant_sensor_data.v":65:18:65:29|Found 10-bit incrementor, 'un5_g_counter_1[9:0]'
+@N: MF238 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\constant_sensor_data.v":61:15:61:23|Found 17-bit incrementor, 'un3_g_data[16:0]'
+@N: MF238 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\constant_sensor_data.v":66:17:66:27|Found 48-bit incrementor, 'un3_mag_data[47:0]'
+@N: MF179 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\memory_controller.v":181:8:181:30|Found 3 bit by 3 bit '<' comparator, 'cmd_out12'
+@N: MF238 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\sdram_interface.v":232:26:232:41|Found 4-bit incrementor, 'un6_write_counter[3:0]'
+@N: MF238 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\sdram_interface.v":517:25:517:36|Found 24-bit incrementor, 'un3_ts_delay[23:0]'
+@N: MF238 :"c:\users\scott\documents\docs\school\senior\projects\libero\ball_avionics\hdl\sdram_interface.v":464:29:464:43|Found 4-bit incrementor, 'un2_init_counter_1[3:0]'
+@N: FP130 |Promoting Net reset_pulse_0_CLK_OUT_48MHZ on CLKINT  reset_pulse_0.CLK_OUT_48MHZ_inferred_clock 
+@N: FP130 |Promoting Net clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT on CLKINT  clock_div_1MHZ_10HZ_0.clk_out_inferred_clock 
+@N: FP130 |Promoting Net memory_controller_0_NEXT_WRITE on CLKINT  memory_controller_0.next_write_inferred_clock 
+@N: FP130 |Promoting Net memory_controller_0_NEXT_READ on CLKINT  memory_controller_0.next_read_inferred_clock 
+@N: FP130 |Promoting Net constant_sensor_data_0_NEXT_BYTE on CLKINT  constant_sensor_data_0.next_byte_control_inferred_clock 
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.
+@N: MT320 |Timing report estimates place and route data. Please look at the place and route timing report for final timing.
+@N: MT322 |Clock constraints cover only FF-to-FF paths associated with the clock.

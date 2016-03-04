@@ -1,0 +1,185 @@
+Synopsys HDL Compiler, version comp201503p1, Build 094R, built May 14 2015
+@N|Running in 64-bit mode
+Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp201503p1, Build 094R, built May 14 2015
+@N|Running in 64-bit mode
+Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated documentation are proprietary to Synopsys, Inc. This software may only be used in accordance with the terms and conditions of a written license agreement with Synopsys, Inc.  All other use, reproduction, or distribution of this software is strictly prohibited.
+
+@I::"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v"
+@I::"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\vlog\hypermods.v"
+@I::"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\vlog\umr_capim.v"
+@I::"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\vlog\scemi_objects.v"
+@I::"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\vlog\scemi_pipes.svh"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\smartgen\CLK_1MHZ\CLK_1MHZ.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\buffer_data_out.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\clock_div_1MHZ_10HZ.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\read_address_traversal.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\read_buffer.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\reset_pulse.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\timestamp.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\write_address_traversal.v"
+@I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\component\work\memory_test\memory_test.v"
+Verilog syntax check successful!
+File C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v changed - recompiling
+File C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\component\work\memory_test\memory_test.v changed - recompiling
+Selecting top level module memory_test
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\buffer_data_out.v":21:7:21:21|Synthesizing module buffer_data_out
+
+@N: CG364 :"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v":2810:7:2810:9|Synthesizing module PLL
+
+@N: CG364 :"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v":260:7:260:12|Synthesizing module PLLINT
+
+@N: CG364 :"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v":1229:7:1229:9|Synthesizing module GND
+
+@N: CG364 :"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v":2051:7:2051:9|Synthesizing module VCC
+
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\smartgen\CLK_1MHZ\CLK_1MHZ.v":5:7:5:14|Synthesizing module CLK_1MHZ
+
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\clock_div_1MHZ_10HZ.v":13:7:13:25|Synthesizing module clock_div_1MHZ_10HZ
+
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":21:7:21:26|Synthesizing module constant_sensor_data
+
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Optimizing register bit mag_stack[1] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Optimizing register bit mag_stack[4] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Optimizing register bit mag_stack[5] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Optimizing register bit mag_stack[7] to a constant 0
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Pruning register bit 7 of mag_stack[79:0] 
+
+@W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Pruning register bits 5 to 4 of mag_stack[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Pruning register bit 1 of mag_stack[79:0] 
+
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":22:7:22:23|Synthesizing module memory_controller
+
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Pruning register write_address[23:0] 
+
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Pruning register read_address[23:0] 
+
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Feedback mux created for signal read_prev -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Feedback mux created for signal mag_buffer[79:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Feedback mux created for signal geig_buffer[79:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Feedback mux created for signal data_buffer[79:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Optimizing register bit num_cycles[1] to a constant 0
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v":92:0:92:5|Pruning register bit 1 of num_cycles[2:0] 
+
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\read_address_traversal.v":27:7:27:28|Synthesizing module read_address_traversal
+
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\read_buffer.v":21:7:21:17|Synthesizing module read_buffer
+
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\read_buffer.v":66:0:66:5|Feedback mux created for signal buffer_b[15:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@A: CL282 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\read_buffer.v":66:0:66:5|Feedback mux created for signal buffer_a[15:0] -- possible set/reset assignment for signal missing. Specifying a reset value will improve timing and area.
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\reset_pulse.v":21:7:21:17|Synthesizing module reset_pulse
+
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":17:7:17:21|Synthesizing module sdram_interface
+
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Pruning register idle_cycle 
+
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Optimizing register bit cs to a constant 0
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v":157:0:157:5|Pruning register cs 
+
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\timestamp.v":13:7:13:15|Synthesizing module timestamp
+
+@W: CS142 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\timestamp.v":13:33:13:41|Range of port TIMESTAMP in port declaration and body are different.
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\write_address_traversal.v":21:7:21:29|Synthesizing module write_address_traversal
+
+@N: CG364 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\component\work\memory_test\memory_test.v":9:7:9:17|Synthesizing module memory_test
+
+@N: CL201 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\read_buffer.v":66:0:66:5|Trying to extract state machine for register init_stage
+Extracted state machine for register init_stage
+State machine has 3 reachable states with original encodings of:
+   00
+   01
+   10
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Optimizing register bit geiger_stack[3] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Optimizing register bit geiger_stack[4] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Optimizing register bit geiger_stack[5] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Optimizing register bit geiger_stack[7] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Optimizing register bit geiger_stack[49] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Optimizing register bit geiger_stack[51] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Optimizing register bit geiger_stack[53] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Optimizing register bit geiger_stack[55] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Optimizing register bit geiger_stack[57] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Optimizing register bit geiger_stack[59] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Optimizing register bit geiger_stack[61] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Optimizing register bit geiger_stack[63] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Optimizing register bit geiger_stack[65] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Optimizing register bit geiger_stack[67] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Optimizing register bit geiger_stack[69] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Optimizing register bit geiger_stack[71] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Optimizing register bit geiger_stack[73] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Optimizing register bit geiger_stack[75] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Optimizing register bit geiger_stack[77] to a constant 0
+@W: CL190 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Optimizing register bit geiger_stack[79] to a constant 0
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Pruning register bit 79 of geiger_stack[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Pruning register bit 77 of geiger_stack[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Pruning register bit 75 of geiger_stack[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Pruning register bit 73 of geiger_stack[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Pruning register bit 71 of geiger_stack[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Pruning register bit 69 of geiger_stack[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Pruning register bit 67 of geiger_stack[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Pruning register bit 65 of geiger_stack[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Pruning register bit 63 of geiger_stack[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Pruning register bit 61 of geiger_stack[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Pruning register bit 59 of geiger_stack[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Pruning register bit 57 of geiger_stack[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Pruning register bit 55 of geiger_stack[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Pruning register bit 53 of geiger_stack[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Pruning register bit 51 of geiger_stack[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Pruning register bit 49 of geiger_stack[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Pruning register bit 7 of geiger_stack[79:0] 
+
+@W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Pruning register bits 5 to 3 of geiger_stack[79:0] 
+
+@W: CL260 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Pruning register bit 3 of mag_stack[3:2] 
+
+@N: CL177 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Sharing sequential element mag_data.
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Pruning register mag_stack[2] 
+
+@W: CL169 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Pruning register mag_stack[6] 
+
+@W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v":47:0:47:5|Pruning register bits 2 to 1 of geiger_stack[2:0] 
+
+
+At c_ver Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 87MB peak: 259MB)
+
+Process took 0h:00m:05s realtime, 0h:00m:05s cputime
+# Fri Mar 04 00:47:22 2016
+
+###########################################################]
+Synopsys Netlist Linker, version comp201503p1, Build 094R, built May 14 2015
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Mar 04 00:47:22 2016
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:06s realtime, 0h:00m:06s cputime
+# Fri Mar 04 00:47:22 2016
+
+###########################################################]

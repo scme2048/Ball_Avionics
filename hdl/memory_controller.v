@@ -100,6 +100,15 @@ if (RESET==1'b0) begin
     next_write<=0;
     next_read<=0;
     cmd_out<=2'b00;
+    num_cycles=0;
+    ba_out<=0;
+    row_out<=0;
+    col_out<=0;
+    data_out<=0;
+    write_address=0;
+    read_address=0;
+    mag_prev=80'b0;
+    geig_prev=80'b0;
     
 end else begin
 // Set read_address and write_address for check later to ensure overlaps don't occur
@@ -110,7 +119,7 @@ if ((schedule[1:0] ==2'b00) && (RESET==1'b1)) begin
     schedule=schedule>>2;
 end
 // Check for unique or new data for both sources and order in schedule by open slots
-if ((GEIG_DATA!==80'bZ) && (geig_prev===80'bZ) && (RESET==1'b1)) begin
+if ((geig_prev!=GEIG_DATA) && (RESET==1'b1)) begin
     geig_buffer[79:0] = GEIG_DATA;
     geig_prev = GEIG_DATA;
     if (schedule[1:0] == 2'b00) begin
@@ -126,7 +135,7 @@ end else begin
     geig_prev= GEIG_DATA;
 end
 
-if ((MAG_DATA!==80'bZ) && (mag_prev===80'bZ) && (RESET==1'b1)) begin
+if ((mag_prev!=MAG_DATA) && (RESET==1'b1)) begin
     mag_buffer[79:0] = MAG_DATA;
     mag_prev = MAG_DATA;
     if (schedule[1:0] == 2'b00) begin

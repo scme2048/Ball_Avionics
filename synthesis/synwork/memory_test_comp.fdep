@@ -1,0 +1,70 @@
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\synthesis\\synwork\\memory_test_comp.srs|-top|memory_test|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-I|C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\synthesis\\|-I|C:\\Microsemi\\Libero_v11.6\\Synopsys\\fpga_J-2015.03M-3\\lib|-v2001|-devicelib|C:\\Microsemi\\Libero_v11.6\\Synopsys\\fpga_J-2015.03M-3\\lib\\proasic\\proasic3l.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\Microsemi\\Libero_v11.6\\Synopsys\\fpga_J-2015.03M-3\\bin64\\c_ver.exe":1431625188
+#CUR:"C:\\Microsemi\\Libero_v11.6\\Synopsys\\fpga_J-2015.03M-3\\lib\\proasic\\proasic3l.v":1431615982
+#CUR:"C:\\Microsemi\\Libero_v11.6\\Synopsys\\fpga_J-2015.03M-3\\lib\\vlog\\hypermods.v":1431624842
+#CUR:"C:\\Microsemi\\Libero_v11.6\\Synopsys\\fpga_J-2015.03M-3\\lib\\vlog\\umr_capim.v":1431624842
+#CUR:"C:\\Microsemi\\Libero_v11.6\\Synopsys\\fpga_J-2015.03M-3\\lib\\vlog\\scemi_objects.v":1431624842
+#CUR:"C:\\Microsemi\\Libero_v11.6\\Synopsys\\fpga_J-2015.03M-3\\lib\\vlog\\scemi_pipes.svh":1431624842
+#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\smartgen\\CLK_1MHZ\\CLK_1MHZ.v":1454471978
+#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\hdl\\buffer_data_out.v":1456888027
+#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\hdl\\clock_div_1MHZ_10HZ.v":1456715892
+#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\hdl\\constant_sensor_data.v":1456888156
+#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\hdl\\memory_controller.v":1457077549
+#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\hdl\\read_address_traversal.v":1456810616
+#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\hdl\\read_buffer.v":1456451963
+#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\hdl\\reset_pulse.v":1455155860
+#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\hdl\\sdram_interface.v":1457073366
+#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\hdl\\timestamp.v":1455156309
+#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\hdl\\write_address_traversal.v":1456810635
+#CUR:"C:\\Users\\Scott\\Documents\\Docs\\School\\Senior\\Projects\\Libero\\Ball_Avionics\\component\\work\\memory_test\\memory_test.v":1457077630
+0			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\smartgen\CLK_1MHZ\CLK_1MHZ.v" verilog
+1			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\buffer_data_out.v" verilog
+2			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\clock_div_1MHZ_10HZ.v" verilog
+3			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\constant_sensor_data.v" verilog
+4			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\memory_controller.v" verilog
+5			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\read_address_traversal.v" verilog
+6			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\read_buffer.v" verilog
+7			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\reset_pulse.v" verilog
+8			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\sdram_interface.v" verilog
+9			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\timestamp.v" verilog
+10			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\write_address_traversal.v" verilog
+11			"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\component\work\memory_test\memory_test.v" verilog
+#Dependency Lists(Uses List)
+0 -1
+1 -1
+2 -1
+3 -1
+4 -1
+5 -1
+6 -1
+7 -1
+8 -1
+9 -1
+10 -1
+11 10 9 8 7 6 5 4 3 2 0 1
+#Dependency Lists(Users Of)
+0 11
+1 11
+2 11
+3 11
+4 11
+5 11
+6 11
+7 11
+8 11
+9 11
+10 11
+11 -1
+#Design Unit to File Association
+module work memory_test 11
+module work write_address_traversal 10
+module work timestamp 9
+module work sdram_interface 8
+module work reset_pulse 7
+module work read_buffer 6
+module work read_address_traversal 5
+module work memory_controller 4
+module work constant_sensor_data 3
+module work clock_div_1MHZ_10HZ 2
+module work buffer_data_out 1
+module work CLK_1MHZ 0
