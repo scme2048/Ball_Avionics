@@ -8,7 +8,7 @@
 # vmap -modelsim_quiet proasic3l C:/Microsemi/Libero_v11.6/Designer/lib/modelsim/precompiled/vlog/proasic3l 
 # Modifying modelsim.ini
 # Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:17:08 on Mar 04,2016
+# Start time: 08:19:21 on Mar 04,2016
 # vlog -reportprogress 300 -work postsynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/synthesis/memory_test.v 
 # -- Compiling module read_address_traversal
 # -- Compiling module write_address_traversal
@@ -24,19 +24,19 @@
 # 
 # Top level modules:
 # 	memory_test
-# End time: 01:17:08 on Mar 04,2016, Elapsed time: 0:00:00
+# End time: 08:19:22 on Mar 04,2016, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 01:17:08 on Mar 04,2016
+# Start time: 08:19:22 on Mar 04,2016
 # vlog -reportprogress 300 "+incdir+C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus" -work postsynth C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/stimulus/tb_memory_test.v 
 # -- Compiling module tb_memory_test
 # 
 # Top level modules:
 # 	tb_memory_test
-# End time: 01:17:08 on Mar 04,2016, Elapsed time: 0:00:00
+# End time: 08:19:22 on Mar 04,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -gui -do "do run.do" -l tb_memory_test_postsynth_simulation.log 
-# Start time: 01:17:08 on Mar 04,2016
+# Start time: 08:19:26 on Mar 04,2016
 # //  ModelSim Microsemi 10.3c Jul 19 2014 
 # //
 # //  Copyright 1991-2014 Mentor Graphics Corporation
@@ -135,13 +135,15 @@
 # 
 #           File in use by: Scott  Hostname: SCOTT-PC  ProcessID: 14132
 # 
-#           Attempting to use alternate WLF file "./wlft5s5k9z".
+#           Attempting to use alternate WLF file "./wlftcz6b0k".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
 # 
-#           Using alternate file: ./wlft5s5k9z
+#           Using alternate file: ./wlftcz6b0k
 # 
 #  ** Warning: FBSEL is unknown.
 #  Time: 0.0 Instance: tb_memory_test.memory_test_0.CLK_1MHZ_0.Core.P1 
 run -all
-# End time: 01:18:13 on Mar 04,2016, Elapsed time: 0:01:05
+run -all
+run -all
+# End time: 12:07:28 on Mar 04,2016, Elapsed time: 3:48:02
 # Errors: 0, Warnings: 2

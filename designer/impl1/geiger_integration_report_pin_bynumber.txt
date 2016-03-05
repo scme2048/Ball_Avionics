@@ -1,11 +1,11 @@
 *****************************************************************
-Pin Report - Date: Wed Feb 24 19:57:10 2016 Pinchecksum: NOT-AVAILABLE
+Pin Report - Date: Fri Mar 04 12:33:12 2016 Pinchecksum: NOT-AVAILABLE
 Product: Designer
 Release: v11.6
 Version: 11.6.0.34
 Design Name: geiger_integration
 Family: ProASIC3L
-Die: M1A3P1000L
+Die: A3PE3000L
 Package: 484 FBGA
 *****************************************************************
 
@@ -15,489 +15,489 @@ Flash*Freeze information
         Pin usage : Available as a regular pin
 -----------------------------------------------------------------
 
-Number |Port            |Function          |State       |I/O Std  |Output Drive (mA) |Slew |Resistor Pull |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
--------|----------------|------------------|------------|---------|------------------|-----|--------------|-----|-----------------|------------|--------------|
-A1                       GND                Reserved
-A2                       GND                Reserved
-A3                       VCCIB0             Reserved
-A4                       IO07RSB0           Unassigned
-A5                       IO09RSB0           Unassigned
-A6                       IO13RSB0           Unassigned
-A7                       IO18RSB0           Unassigned
-A8                       IO20RSB0           Unassigned
-A9                       IO26RSB0           Unassigned
-A10                      IO32RSB0           Unassigned
-A11                      IO40RSB0           Unassigned
-A12                      IO41RSB0           Unassigned
-A13                      IO53RSB0           Unassigned
-A14                      IO59RSB0           Unassigned
-A15                      IO64RSB0           Unassigned
-A16                      IO65RSB0           Unassigned
-A17                      IO67RSB0           Unassigned
-A18                      IO69RSB0           Unassigned
-A19                      Not Bonded         Unconnected
-A20                      VCCIB0             Reserved
-A21                      GND                Reserved
-A22                      GND                Reserved
-AA1                      GND                Reserved
-AA2                      VCCIB3             Reserved
-AA3                      Not Bonded         Unconnected
-AA4                      IO181RSB2          Unassigned
-AA5                      IO178RSB2          Unassigned
-AA6                      IO175RSB2          Unassigned
-AA7                      IO169RSB2          Unassigned
-AA8                      IO166RSB2          Unassigned
-AA9                      IO160RSB2          Unassigned
-AA10                     IO152RSB2          Unassigned
-AA11                     IO146RSB2          Unassigned
-AA12                     IO139RSB2          Unassigned
-AA13                     IO133RSB2          Unassigned
-AA14                     Not Bonded         Unconnected
-AA15                     Not Bonded         Unconnected
-AA16                     IO122RSB2          Unassigned
-AA17                     IO119RSB2          Unassigned
-AA18                     IO117RSB2          Unassigned
-AA19                     Not Bonded         Unconnected
-AA20                     Not Bonded         Unconnected
-AA21                     VCCIB1             Reserved
-AA22                     GND                Reserved
-AB1                      GND                Reserved
-AB2                      GND                Reserved
-AB3                      VCCIB2             Reserved
-AB4                      IO180RSB2          Unassigned
-AB5                      IO176RSB2          Unassigned
-AB6                      IO173RSB2          Unassigned
-AB7                      IO167RSB2          Unassigned
-AB8                      IO162RSB2          Unassigned
-AB9                      IO156RSB2          Unassigned
-AB10                     IO150RSB2          Unassigned
-AB11                     IO145RSB2          Unassigned
-AB12                     IO144RSB2          Unassigned
-AB13                     IO132RSB2          Unassigned
-AB14                     IO127RSB2          Unassigned
-AB15                     IO126RSB2          Unassigned
-AB16                     IO123RSB2          Unassigned
-AB17                     IO121RSB2          Unassigned
-AB18                     IO118RSB2          Unassigned
-AB19                     Not Bonded         Unconnected
-AB20                     VCCIB2             Reserved
-AB21                     GND                Reserved
-AB22                     GND                Reserved
-B1                       GND                Reserved
-B2                       VCCIB3             Reserved
-B3                       Not Bonded         Unconnected
-B4                       IO06RSB0           Unassigned
-B5                       IO08RSB0           Unassigned
-B6                       IO12RSB0           Unassigned
-B7                       IO15RSB0           Unassigned
-B8                       IO19RSB0           Unassigned
-B9                       IO24RSB0           Unassigned
-B10                      IO31RSB0           Unassigned
-B11                      IO39RSB0           Unassigned
-B12                      IO48RSB0           Unassigned
-B13                      IO54RSB0           Unassigned
-B14                      IO58RSB0           Unassigned
-B15                      IO63RSB0           Unassigned
-B16                      IO66RSB0           Unassigned
-B17                      IO68RSB0           Unassigned
-B18                      IO70RSB0           Unassigned
-B19                      Not Bonded         Unconnected
-B20                      Not Bonded         Unconnected
-B21                      VCCIB1             Reserved
-B22                      GND                Reserved
-C1                       VCCIB3             Reserved
-C2                       IO220PDB3          Unassigned
-C3                       Not Bonded         Unconnected
-C4                       Not Bonded         Unconnected
-C5                       GND                Reserved
-C6                       IO10RSB0           Unassigned
-C7                       IO14RSB0           Unassigned
-C8                       VCC                Reserved
-C9                       VCC                Reserved
-C10                      IO30RSB0           Unassigned
-C11                      IO37RSB0           Unassigned
-C12                      IO43RSB0           Unassigned
-C13                      Not Bonded         Unconnected
-C14                      VCC                Reserved
-C15                      VCC                Reserved
-C16                      Not Bonded         Unconnected
-C17                      Not Bonded         Unconnected
-C18                      GND                Reserved
-C19                      Not Bonded         Unconnected
-C20                      Not Bonded         Unconnected
-C21                      Not Bonded         Unconnected
-C22                      VCCIB1             Reserved
-D1                       IO219PDB3          Unassigned
-D2                       IO220NDB3          Unassigned
-D3                       Not Bonded         Unconnected
-D4                       GND                Reserved
-D5      G_STREAM         GAA0/IO00RSB0      Special      LVCMOS33  ---                ---   None           ---   ---               No           No
-D6      D0_OUT           GAA1/IO01RSB0      Special      LVCMOS33  12                 High  None           No    5                 No           No
-D7                       GAB0/IO02RSB0      Special
-D8                       IO16RSB0           Unassigned
-D9                       IO22RSB0           Unassigned
-D10     D1_OUT           IO28RSB0           Fixed        LVCMOS33  12                 High  None           No    5                 No           No
-D11     D5_OUT           IO35RSB0           Fixed        LVCMOS33  12                 High  None           No    5                 No           No
-D12                      IO45RSB0           Unassigned
-D13                      IO50RSB0           Unassigned
-D14                      IO55RSB0           Unassigned
-D15                      IO61RSB0           Unassigned
-D16                      GBB1/IO75RSB0      Special
-D17                      GBA0/IO76RSB0      Special
-D18                      GBA1/IO77RSB0      Special
-D19                      GND                Reserved
-D20                      Not Bonded         Unconnected
-D21                      Not Bonded         Unconnected
-D22                      Not Bonded         Unconnected
-E1                       IO219NDB3          Unassigned
-E2                       Not Bonded         Unconnected
-E3                       GND                Reserved
-E4      CLK_48MHZ        GAB2/IO224PDB3     Special      LVCMOS33  ---                ---   None           ---   ---               No           No
-E5                       GAA2/IO225PDB3     Special
-E6                       GNDQ               Reserved
-E7                       GAB1/IO03RSB0      Special
-E8                       IO17RSB0           Unassigned
-E9                       IO21RSB0           Unassigned
-E10                      IO27RSB0           Unassigned
-E11     D4_OUT           IO34RSB0           Fixed        LVCMOS33  12                 High  None           No    5                 No           No
-E12                      IO44RSB0           Unassigned
-E13                      IO51RSB0           Unassigned
-E14                      IO57RSB0           Unassigned
-E15                      GBC1/IO73RSB0      Special
-E16                      GBB0/IO74RSB0      Special
-E17                      IO71RSB0           Unassigned
-E18                      GBA2/IO78PDB1      Special
-E19                      IO81PDB1           Unassigned
-E20                      GND                Reserved
-E21                      Not Bonded         Unconnected
-E22                      IO84PDB1           Unassigned
-F1                       Not Bonded         Unconnected
-F2                       IO215PDB3          Unassigned
-F3                       IO215NDB3          Unassigned
-F4                       IO224NDB3          Unassigned
-F5                       IO225NDB3          Unassigned
-F6                       VMV3               Reserved
-F7                       IO11RSB0           Unassigned
-F8                       GAC0/IO04RSB0      Special
-F9                       GAC1/IO05RSB0      Special
-F10                      IO25RSB0           Unassigned
-F11     D6_OUT           IO36RSB0           Fixed        LVCMOS33  12                 High  None           No    5                 No           No
-F12                      IO42RSB0           Unassigned
-F13                      IO49RSB0           Unassigned
-F14                      IO56RSB0           Unassigned
-F15                      GBC0/IO72RSB0      Special
-F16                      IO62RSB0           Unassigned
-F17                      VMV0               Reserved
-F18                      IO78NDB1           Unassigned
-F19                      IO81NDB1           Unassigned
-F20                      IO82PPB1           Unassigned
-F21                      Not Bonded         Unconnected
-F22                      IO84NDB1           Unassigned
-G1                       IO214NDB3          Unassigned
-G2                       IO214PDB3          Unassigned
-G3                       Not Bonded         Unconnected
-G4                       IO222NDB3          Unassigned
-G5                       IO222PDB3          Unassigned
-G6                       GAC2/IO223PDB3     Special
-G7                       IO223NDB3          Unassigned
-G8                       GNDQ               Reserved
-G9                       IO23RSB0           Unassigned
-G10     D2_OUT           IO29RSB0           Fixed        LVCMOS33  12                 High  None           No    5                 No           No
-G11     D3_OUT           IO33RSB0           Fixed        LVCMOS33  12                 High  None           No    5                 No           No
-G12                      IO46RSB0           Unassigned
-G13                      IO52RSB0           Unassigned
-G14                      IO60RSB0           Unassigned
-G15                      GNDQ               Reserved
-G16                      IO80NDB1           Unassigned
-G17                      GBB2/IO79PDB1      Special
-G18                      IO79NDB1           Unassigned
-G19                      IO82NPB1           Unassigned
-G20                      IO85PDB1           Unassigned
-G21                      IO85NDB1           Unassigned
-G22                      Not Bonded         Unconnected
-H1                       Not Bonded         Unconnected
-H2                       Not Bonded         Unconnected
-H3                       VCC                Reserved
-H4                       IO217PDB3          Unassigned
-H5                       IO218PDB3          Unassigned
-H6                       IO221NDB3          Unassigned
-H7                       IO221PDB3          Unassigned
-H8                       VMV0               Reserved
-H9                       VCCIB0             Reserved
-H10                      VCCIB0             Reserved
-H11     D7_OUT           IO38RSB0           Fixed        LVCMOS33  12                 High  None           No    5                 No           No
-H12                      IO47RSB0           Unassigned
-H13                      VCCIB0             Reserved
-H14                      VCCIB0             Reserved
-H15                      VMV1               Reserved
-H16                      GBC2/IO80PDB1      Special
-H17                      IO83PPB1           Unassigned
-H18                      IO86PPB1           Unassigned
-H19                      IO87PDB1           Unassigned
-H20                      VCC                Reserved
-H21                      Not Bonded         Unconnected
-H22                      Not Bonded         Unconnected
-J1                       IO212NDB3          Unassigned
-J2                       IO212PDB3          Unassigned
-J3                       Not Bonded         Unconnected
-J4                       IO217NDB3          Unassigned
-J5                       IO218NDB3          Unassigned
-J6                       IO216PDB3          Unassigned
-J7                       IO216NDB3          Unassigned
-J8                       VCCIB3             Reserved
-J9                       GND                Reserved
-J10                      VCC                Reserved
-J11                      VCC                Reserved
-J12                      VCC                Reserved
-J13                      VCC                Reserved
-J14                      GND                Reserved
-J15                      VCCIB1             Reserved
-J16                      IO83NPB1           Unassigned
-J17                      IO86NPB1           Unassigned
-J18                      IO90PPB1           Unassigned
-J19                      IO87NDB1           Unassigned
-J20                      Not Bonded         Unconnected
-J21                      IO89PDB1           Unassigned
-J22                      IO89NDB1           Unassigned
-K1                       IO211PDB3          Unassigned
-K2                       IO211NDB3          Unassigned
-K3                       Not Bonded         Unconnected
-K4                       IO210PPB3          Unassigned
-K5                       IO213NDB3          Unassigned
-K6                       IO213PDB3          Unassigned
-K7                       GFC1/IO209PPB3     Special
-K8                       VCCIB3             Reserved
-K9                       VCC                Reserved
-K10                      GND                Reserved
-K11                      GND                Reserved
-K12                      GND                Reserved
-K13                      GND                Reserved
-K14                      VCC                Reserved
-K15                      VCCIB1             Reserved
-K16                      GCC1/IO91PPB1      Special
-K17                      IO90NPB1           Unassigned
-K18                      IO88PDB1           Unassigned
-K19                      IO88NDB1           Unassigned
-K20                      IO94NPB1           Unassigned
-K21                      IO98NDB1           Unassigned
-K22                      IO98PDB1           Unassigned
-L1                       Not Bonded         Unconnected
-L2                       IO200PDB3          Unassigned
-L3                       IO210NPB3          Unassigned
-L4                       GFB0/IO208NPB3     Special
-L5                       GFA0/IO207NDB3     Special
-L6                       GFB1/IO208PPB3     Special
-L7                       VCOMPLF            Reserved
-L8                       GFC0/IO209NPB3     Special
-L9                       VCC                Reserved
-L10                      GND                Reserved
-L11                      GND                Reserved
-L12                      GND                Reserved
-L13                      GND                Reserved
-L14                      VCC                Reserved
-L15                      GCC0/IO91NPB1      Special
-L16                      GCB1/IO92PPB1      Special
-L17                      GCA0/IO93NPB1      Special
-L18                      IO96NPB1           Unassigned
-L19                      GCB0/IO92NPB1      Special
-L20                      IO97PDB1           Unassigned
-L21                      IO97NDB1           Unassigned
-L22                      IO99NPB1           Unassigned
-M1                       Not Bonded         Unconnected
-M2                       IO200NDB3          Unassigned
-M3                       IO206NDB3          Unassigned
-M4                       GFA2/IO206PDB3     Special
-M5                       GFA1/IO207PDB3     Special
-M6                       VCCPLF             Reserved
-M7                       IO205NDB3          Unassigned
-M8                       GFB2/IO205PDB3     Special
-M9                       VCC                Reserved
-M10                      GND                Reserved
-M11                      GND                Reserved
-M12                      GND                Reserved
-M13                      GND                Reserved
-M14                      VCC                Reserved
-M15                      GCB2/IO95PPB1      Special
-M16                      GCA1/IO93PPB1      Special
-M17                      GCC2/IO96PPB1      Special
-M18                      IO100PPB1          Unassigned
-M19                      GCA2/IO94PPB1      Special
-M20                      IO101PPB1          Unassigned
-M21                      IO99PPB1           Unassigned
-M22                      Not Bonded         Unconnected
-N1                       IO201NDB3          Unassigned
-N2                       IO201PDB3          Unassigned
-N3                       Not Bonded         Unconnected
-N4                       GFC2/IO204PDB3     Special
-N5                       IO204NDB3          Unassigned
-N6                       IO203NDB3          Unassigned
-N7                       IO203PDB3          Unassigned
-N8                       VCCIB3             Reserved
-N9                       VCC                Reserved
-N10                      GND                Reserved
-N11                      GND                Reserved
-N12                      GND                Reserved
-N13                      GND                Reserved
-N14                      VCC                Reserved
-N15                      VCCIB1             Reserved
-N16                      IO95NPB1           Unassigned
-N17                      IO100NPB1          Unassigned
-N18                      IO102NDB1          Unassigned
-N19                      IO102PDB1          Unassigned
-N20                      Not Bonded         Unconnected
-N21                      IO101NPB1          Unassigned
-N22                      IO103PDB1          Unassigned
-P1                       Not Bonded         Unconnected
-P2                       IO199PDB3          Unassigned
-P3                       IO199NDB3          Unassigned
-P4                       IO202NDB3          Unassigned
-P5                       IO202PDB3          Unassigned
-P6                       IO196PPB3          Unassigned
-P7                       IO193PPB3          Unassigned
-P8                       VCCIB3             Reserved
-P9                       GND                Reserved
-P10                      VCC                Reserved
-P11                      VCC                Reserved
-P12                      VCC                Reserved
-P13                      VCC                Reserved
-P14                      GND                Reserved
-P15                      VCCIB1             Reserved
-P16                      GDB0/IO112NPB1     Special
-P17                      IO106NDB1          Unassigned
-P18                      IO106PDB1          Unassigned
-P19                      IO107PDB1          Unassigned
-P20                      Not Bonded         Unconnected
-P21                      IO104PDB1          Unassigned
-P22                      IO103NDB1          Unassigned
-R1                       Not Bonded         Unconnected
-R2                       IO197PPB3          Unassigned
-R3                       VCC                Reserved
-R4                       IO197NPB3          Unassigned
-R5                       IO196NPB3          Unassigned
-R6                       IO193NPB3          Unassigned
-R7                       GEC0/IO190NPB3     Special
-R8                       VMV3               Reserved
-R9                       VCCIB2             Reserved
-R10                      VCCIB2             Reserved
-R11                      IO147RSB2          Unassigned
-R12                      IO136RSB2          Unassigned
-R13                      VCCIB2             Reserved
-R14                      VCCIB2             Reserved
-R15                      VMV2               Reserved
-R16                      IO110NDB1          Unassigned
-R17                      GDB1/IO112PPB1     Special
-R18                      GDC1/IO111PDB1     Special
-R19                      IO107NDB1          Unassigned
-R20                      VCC                Reserved
-R21                      IO104NDB1          Unassigned
-R22                      IO105PDB1          Unassigned
-T1                       IO198PDB3          Unassigned
-T2                       IO198NDB3          Unassigned
-T3                       Not Bonded         Unconnected
-T4                       IO194PPB3          Unassigned
-T5                       IO192PPB3          Unassigned
-T6                       GEC1/IO190PPB3     Special
-T7                       IO192NPB3          Unassigned
-T8                       GNDQ               Reserved
-T9      BUF2_PBRST_N_T9  GEA2/IO187RSB2     Special      LVCMOS33  ---                ---   None           ---   ---               No           No
-T10                      IO161RSB2          Unassigned
-T11                      IO155RSB2          Unassigned
-T12                      IO141RSB2          Unassigned
-T13                      IO129RSB2          Unassigned
-T14                      IO124RSB2          Unassigned
-T15                      GNDQ               Reserved
-T16                      IO110PDB1          Unassigned
-T17                      VJTAG              Reserved
-T18                      GDC0/IO111NDB1     Special
-T19                      GDA1/IO113PDB1     Special
-T20                      Not Bonded         Unconnected
-T21                      IO108PDB1          Unassigned
-T22                      IO105NDB1          Unassigned
-U1                       IO195PDB3          Unassigned
-U2                       IO195NDB3          Unassigned
-U3                       IO194NPB3          Unassigned
-U4                       GEB1/IO189PDB3     Special
-U5                       GEB0/IO189NDB3     Special
-U6                       VMV2               Reserved
-U7                       IO179RSB2          Unassigned
-U8                       IO171RSB2          Unassigned
-U9                       IO165RSB2          Unassigned
-U10                      IO159RSB2          Unassigned
-U11                      IO151RSB2          Unassigned
-U12                      IO137RSB2          Unassigned
-U13                      IO134RSB2          Unassigned
-U14                      IO128RSB2          Unassigned
-U15                      VMV1               Reserved
-U16                      TCK                Reserved
-U17                      VPUMP              Reserved
-U18                      TRST               Reserved
-U19                      GDA0/IO113NDB1     Special
-U20                      Not Bonded         Unconnected
-U21                      IO108NDB1          Unassigned
-U22                      IO109PDB1          Unassigned
-V1                       Not Bonded         Unconnected
-V2                       Not Bonded         Unconnected
-V3                       GND                Reserved
-V4                       GEA1/IO188PDB3     Special
-V5                       GEA0/IO188NDB3     Special
-V6                       IO184RSB2          Unassigned
-V7                       GEC2/IO185RSB2     Special
-V8                       IO168RSB2          Unassigned
-V9                       IO163RSB2          Unassigned
-V10                      IO157RSB2          Unassigned
-V11                      IO149RSB2          Unassigned
-V12                      IO143RSB2          Unassigned
-V13                      IO138RSB2          Unassigned
-V14                      IO131RSB2          Unassigned
-V15                      IO125RSB2          Unassigned
-V16                      GDB2/IO115RSB2     Special
-V17                      TDI                Reserved
-V18                      GNDQ               Reserved
-V19                      TDO                Reserved
-V20                      GND                Reserved
-V21                      Not Bonded         Unconnected
-V22                      IO109NDB1          Unassigned
-W1                       Not Bonded         Unconnected
-W2                       IO191PDB3          Unassigned
-W3                       Not Bonded         Unconnected
-W4                       GND                Reserved
-W5                       IO183RSB2          Unassigned
-W6                       FF/GEB2/IO186RSB2  Special
-W7                       IO172RSB2          Unassigned
-W8                       IO170RSB2          Unassigned
-W9                       IO164RSB2          Unassigned
-W10                      IO158RSB2          Unassigned
-W11                      IO153RSB2          Unassigned
-W12                      IO142RSB2          Unassigned
-W13                      IO135RSB2          Unassigned
-W14                      IO130RSB2          Unassigned
-W15                      GDC2/IO116RSB2     Special
-W16                      IO120RSB2          Unassigned
-W17                      GDA2/IO114RSB2     Special
-W18                      TMS                Reserved
-W19                      GND                Reserved
-W20                      Not Bonded         Unconnected
-W21                      Not Bonded         Unconnected
-W22                      Not Bonded         Unconnected
-Y1                       VCCIB3             Reserved
-Y2                       IO191NDB3          Unassigned
-Y3                       Not Bonded         Unconnected
-Y4                       IO182RSB2          Unassigned
-Y5                       GND                Reserved
-Y6                       IO177RSB2          Unassigned
-Y7                       IO174RSB2          Unassigned
-Y8                       VCC                Reserved
-Y9                       VCC                Reserved
-Y10                      IO154RSB2          Unassigned
-Y11                      IO148RSB2          Unassigned
-Y12                      IO140RSB2          Unassigned
-Y13                      Not Bonded         Unconnected
-Y14                      VCC                Reserved
-Y15                      VCC                Reserved
-Y16                      Not Bonded         Unconnected
-Y17                      Not Bonded         Unconnected
-Y18                      GND                Reserved
-Y19                      Not Bonded         Unconnected
-Y20                      Not Bonded         Unconnected
-Y21                      Not Bonded         Unconnected
-Y22                      VCCIB1             Reserved
+Number |Port            |Function            |State      |I/O Std  |Output Drive (mA) |Slew |Resistor Pull |Schmitt Trigger |Input Delay |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
+-------|----------------|--------------------|-----------|---------|------------------|-----|--------------|----------------|------------|-----|-----------------|------------|--------------|
+A1                       GND                  Reserved
+A2                       GND                  Reserved
+A3                       VCCIB0               Reserved
+A4                       IO10NDB0V1           Unassigned
+A5                       IO10PDB0V1           Unassigned
+A6                       IO16NDB0V1           Unassigned
+A7                       IO16PDB0V1           Unassigned
+A8                       IO18PDB0V2           Unassigned
+A9                       IO24PDB0V2           Unassigned
+A10                      IO28NDB0V3           Unassigned
+A11                      IO28PDB0V3           Unassigned
+A12                      IO46PDB1V0           Unassigned
+A13                      IO54PDB1V1           Unassigned
+A14                      IO56NDB1V1           Unassigned
+A15                      IO56PDB1V1           Unassigned
+A16                      IO64NDB1V2           Unassigned
+A17                      IO64PDB1V2           Unassigned
+A18                      IO72NDB1V3           Unassigned
+A19                      IO74NDB1V4           Unassigned
+A20                      VCCIB1               Reserved
+A21                      GND                  Reserved
+A22                      GND                  Reserved
+AA1                      GND                  Reserved
+AA2                      VCCIB6               Reserved
+AA3                      IO228PDB5V4          Unassigned
+AA4                      IO224PDB5V3          Unassigned
+AA5                      IO218NDB5V3          Unassigned
+AA6                      IO218PDB5V3          Unassigned
+AA7                      IO212NDB5V2          Unassigned
+AA8                      IO212PDB5V2          Unassigned
+AA9                      IO198PDB5V0          Unassigned
+AA10                     IO198NDB5V0          Unassigned
+AA11                     IO188PPB4V4          Unassigned
+AA12                     IO180NDB4V3          Unassigned
+AA13                     IO180PDB4V3          Unassigned
+AA14                     IO170NDB4V2          Unassigned
+AA15                     IO170PDB4V2          Unassigned
+AA16                     IO166NDB4V1          Unassigned
+AA17                     IO166PDB4V1          Unassigned
+AA18                     IO160NDB4V0          Unassigned
+AA19                     IO160PDB4V0          Unassigned
+AA20                     IO158NPB4V0          Unassigned
+AA21                     VCCIB3               Reserved
+AA22                     GND                  Reserved
+AB1                      GND                  Reserved
+AB2                      GND                  Reserved
+AB3                      VCCIB5               Reserved
+AB4                      IO216NDB5V2          Unassigned
+AB5                      IO216PDB5V2          Unassigned
+AB6                      IO210NDB5V2          Unassigned
+AB7                      IO210PDB5V2          Unassigned
+AB8                      IO208NDB5V1          Unassigned
+AB9                      IO208PDB5V1          Unassigned
+AB10                     IO197NDB5V0          Unassigned
+AB11                     IO197PDB5V0          Unassigned
+AB12                     IO174NDB4V2          Unassigned
+AB13                     IO174PDB4V2          Unassigned
+AB14                     IO172NDB4V2          Unassigned
+AB15                     IO172PDB4V2          Unassigned
+AB16                     IO168NDB4V1          Unassigned
+AB17                     IO168PDB4V1          Unassigned
+AB18                     IO162NDB4V1          Unassigned
+AB19                     IO162PDB4V1          Unassigned
+AB20                     VCCIB4               Reserved
+AB21                     GND                  Reserved
+AB22                     GND                  Reserved
+B1                       GND                  Reserved
+B2                       VCCIB7               Reserved
+B3                       IO06PPB0V0           Unassigned
+B4                       IO08NDB0V0           Unassigned
+B5                       IO08PDB0V0           Unassigned
+B6                       IO14NDB0V1           Unassigned
+B7                       IO14PDB0V1           Unassigned
+B8                       IO18NDB0V2           Unassigned
+B9                       IO24NDB0V2           Unassigned
+B10                      IO34PDB0V4           Unassigned
+B11                      IO40PDB0V4           Unassigned
+B12                      IO46NDB1V0           Unassigned
+B13                      IO54NDB1V1           Unassigned
+B14                      IO62NDB1V2           Unassigned
+B15                      IO62PDB1V2           Unassigned
+B16                      IO68NDB1V3           Unassigned
+B17                      IO68PDB1V3           Unassigned
+B18                      IO72PDB1V3           Unassigned
+B19                      IO74PDB1V4           Unassigned
+B20                      IO76NPB1V4           Unassigned
+B21                      VCCIB2               Reserved
+B22                      GND                  Reserved
+C1                       VCCIB7               Reserved
+C2                       IO303PDB7V3          Unassigned
+C3                       IO305PDB7V3          Unassigned
+C4                       IO06NPB0V0           Unassigned
+C5                       GND                  Reserved
+C6                       IO12NDB0V1           Unassigned
+C7                       IO12PDB0V1           Unassigned
+C8                       VCC                  Reserved
+C9                       VCC                  Reserved
+C10                      IO34NDB0V4           Unassigned
+C11                      IO40NDB0V4           Unassigned
+C12                      IO48NDB1V0           Unassigned
+C13                      IO48PDB1V0           Unassigned
+C14                      VCC                  Reserved
+C15                      VCC                  Reserved
+C16                      IO70NDB1V3           Unassigned
+C17                      IO70PDB1V3           Unassigned
+C18                      GND                  Reserved
+C19                      IO76PPB1V4           Unassigned
+C20                      IO88NDB2V0           Unassigned
+C21                      IO94PPB2V1           Unassigned
+C22                      VCCIB2               Reserved
+D1                       IO293PDB7V2          Unassigned
+D2                       IO303NDB7V3          Unassigned
+D3                       IO305NDB7V3          Unassigned
+D4                       GND                  Reserved
+D5                       GAA0/IO00NDB0V0      Special
+D6                       GAA1/IO00PDB0V0      Special
+D7                       GAB0/IO01NDB0V0      Special
+D8                       IO20PDB0V2           Unassigned
+D9                       IO22PDB0V2           Unassigned
+D10                      IO30PDB0V3           Unassigned
+D11                      IO38NDB0V4           Unassigned
+D12                      IO52NDB1V1           Unassigned
+D13                      IO52PDB1V1           Unassigned
+D14                      IO66NDB1V3           Unassigned
+D15                      IO66PDB1V3           Unassigned
+D16                      GBB1/IO80PDB1V4      Special
+D17                      GBA0/IO81NDB1V4      Special
+D18                      GBA1/IO81PDB1V4      Special
+D19                      GND                  Reserved
+D20                      IO88PDB2V0           Unassigned
+D21                      IO90PDB2V1           Unassigned
+D22                      IO94NPB2V1           Unassigned
+E1                       IO293NDB7V2          Unassigned
+E2      D0_OUT           IO299PPB7V3          Fixed       LVCMOS33  12                 High  None           ---              ---          No    5                 No           Yes
+E3                       GND                  Reserved
+E4                       GAB2/IO308PDB7V4     Special
+E5                       GAA2/IO309PDB7V4     Special
+E6                       GNDQ                 Reserved
+E7                       GAB1/IO01PDB0V0      Special
+E8                       IO20NDB0V2           Unassigned
+E9                       IO22NDB0V2           Unassigned
+E10                      IO30NDB0V3           Unassigned
+E11                      IO38PDB0V4           Unassigned
+E12                      IO44NDB1V0           Unassigned
+E13                      IO58NDB1V2           Unassigned
+E14                      IO58PDB1V2           Unassigned
+E15                      GBC1/IO79PDB1V4      Special
+E16                      GBB0/IO80NDB1V4      Special
+E17                      GNDQ                 Reserved
+E18                      GBA2/IO82PDB2V0      Special
+E19                      IO86NDB2V0           Unassigned
+E20                      GND                  Reserved
+E21                      IO90NDB2V1           Unassigned
+E22                      IO98PDB2V2           Unassigned
+F1                       IO299NPB7V3          Unassigned
+F2      D2_OUT           IO301NDB7V3          Fixed       LVCMOS33  12                 High  None           ---              ---          No    5                 No           Yes
+F3      G_STREAM         IO301PDB7V3          Fixed       LVCMOS33  ---                ---   None           No               Off          ---   ---               No           Yes
+F4                       IO308NDB7V4          Unassigned
+F5                       IO309NDB7V4          Unassigned
+F6                       VMV7                 Reserved
+F7                       VCCPLA               Reserved
+F8                       GAC0/IO02NDB0V0      Special
+F9                       GAC1/IO02PDB0V0      Special
+F10                      IO32NDB0V3           Unassigned
+F11                      IO32PDB0V3           Unassigned
+F12                      IO44PDB1V0           Unassigned
+F13                      IO50NDB1V1           Unassigned
+F14                      IO60PDB1V2           Unassigned
+F15                      GBC0/IO79NDB1V4      Special
+F16                      VCCPLB               Reserved
+F17                      VMV2                 Reserved
+F18                      IO82NDB2V0           Unassigned
+F19                      IO86PDB2V0           Unassigned
+F20                      IO96PDB2V1           Unassigned
+F21                      IO96NDB2V1           Unassigned
+F22                      IO98NDB2V2           Unassigned
+G1      D1_OUT           IO289NDB7V1          Fixed       LVCMOS33  12                 High  None           ---              ---          No    5                 No           Yes
+G2                       IO289PDB7V1          Unassigned
+G3                       IO291PPB7V2          Unassigned
+G4      D4_OUT           IO295PDB7V2          Fixed       LVCMOS33  12                 High  None           ---              ---          No    5                 No           Yes
+G5                       IO297PDB7V2          Unassigned
+G6      D3_OUT           GAC2/IO307PDB7V4     Special     LVCMOS33  12                 High  None           ---              ---          No    5                 No           Yes
+G7                       VCOMPLA              Reserved
+G8                       GNDQ                 Reserved
+G9                       IO26NDB0V3           Unassigned
+G10                      IO26PDB0V3           Unassigned
+G11                      IO36PDB0V4           Unassigned
+G12                      IO42PDB1V0           Unassigned
+G13                      IO50PDB1V1           Unassigned
+G14                      IO60NDB1V2           Unassigned
+G15                      GNDQ                 Reserved
+G16                      VCOMPLB              Reserved
+G17                      GBB2/IO83PDB2V0      Special
+G18                      IO92PDB2V1           Unassigned
+G19                      IO92NDB2V1           Unassigned
+G20                      IO102PDB2V2          Unassigned
+G21                      IO102NDB2V2          Unassigned
+G22                      IO105NDB2V2          Unassigned
+H1                       IO286PSB7V1          Unassigned
+H2                       IO291NPB7V2          Unassigned
+H3                       VCC                  Reserved
+H4      D6_OUT           IO295NDB7V2          Fixed       LVCMOS33  12                 High  None           ---              ---          No    5                 No           Yes
+H5      D5_OUT           IO297NDB7V2          Fixed       LVCMOS33  12                 High  None           ---              ---          No    5                 No           Yes
+H6                       IO307NDB7V4          Unassigned
+H7                       IO287PDB7V1          Unassigned
+H8                       VMV0                 Reserved
+H9                       VCCIB0               Reserved
+H10                      VCCIB0               Reserved
+H11                      IO36NDB0V4           Unassigned
+H12                      IO42NDB1V0           Unassigned
+H13                      VCCIB1               Reserved
+H14                      VCCIB1               Reserved
+H15                      VMV1                 Reserved
+H16                      GBC2/IO84PDB2V0      Special
+H17                      IO83NDB2V0           Unassigned
+H18                      IO100NDB2V2          Unassigned
+H19                      IO100PDB2V2          Unassigned
+H20                      VCC                  Reserved
+H21                      VMV2                 Reserved
+H22                      IO105PDB2V2          Unassigned
+J1                       IO285NDB7V1          Unassigned
+J2                       IO285PDB7V1          Unassigned
+J3                       VMV7                 Reserved
+J4      D7_OUT           IO279PDB7V0          Fixed       LVCMOS33  12                 High  None           ---              ---          No    5                 No           Yes
+J5                       IO283PDB7V1          Unassigned
+J6                       IO281PDB7V0          Unassigned
+J7                       IO287NDB7V1          Unassigned
+J8                       VCCIB7               Reserved
+J9                       GND                  Reserved
+J10                      VCC                  Reserved
+J11                      VCC                  Reserved
+J12                      VCC                  Reserved
+J13                      VCC                  Reserved
+J14                      GND                  Reserved
+J15                      VCCIB2               Reserved
+J16                      IO84NDB2V0           Unassigned
+J17                      IO104NDB2V2          Unassigned
+J18                      IO104PDB2V2          Unassigned
+J19                      IO106PPB2V3          Unassigned
+J20                      GNDQ                 Reserved
+J21                      IO109PDB2V3          Unassigned
+J22                      IO107PDB2V3          Unassigned
+K1                       IO277NDB7V0          Unassigned
+K2                       IO277PDB7V0          Unassigned
+K3                       GNDQ                 Reserved
+K4                       IO279NDB7V0          Unassigned
+K5                       IO283NDB7V1          Unassigned
+K6                       IO281NDB7V0          Unassigned
+K7                       GFC1/IO275PPB7V0     Special
+K8                       VCCIB7               Reserved
+K9                       VCC                  Reserved
+K10                      GND                  Reserved
+K11                      GND                  Reserved
+K12                      GND                  Reserved
+K13                      GND                  Reserved
+K14                      VCC                  Reserved
+K15                      VCCIB2               Reserved
+K16                      GCC1/IO112PPB2V3     Special
+K17                      IO108NDB2V3          Unassigned
+K18                      IO108PDB2V3          Unassigned
+K19                      IO110NPB2V3          Unassigned
+K20                      IO106NPB2V3          Unassigned
+K21                      IO109NDB2V3          Unassigned
+K22                      IO107NDB2V3          Unassigned
+L1                       IO257PSB6V2          Unassigned
+L2                       IO276PDB7V0          Unassigned
+L3                       IO276NDB7V0          Unassigned
+L4                       GFB0/IO274NPB7V0     Special
+L5                       GFA0/IO273NDB6V4     Special
+L6                       GFB1/IO274PPB7V0     Special
+L7                       VCOMPLF              Reserved
+L8      BUF2_PBRST_N_T9  GFC0/IO275NPB7V0     Special     LVCMOS33  ---                ---   None           No               Off          ---   ---               No           Yes
+L9                       VCC                  Reserved
+L10                      GND                  Reserved
+L11                      GND                  Reserved
+L12                      GND                  Reserved
+L13                      GND                  Reserved
+L14                      VCC                  Reserved
+L15                      GCC0/IO112NPB2V3     Special
+L16                      GCB1/IO113PPB2V3     Special
+L17                      GCA0/IO114NPB3V0     Special
+L18                      VCOMPLC              Reserved
+L19                      GCB0/IO113NPB2V3     Special
+L20                      IO110PPB2V3          Unassigned
+L21                      IO111NDB2V3          Unassigned
+L22                      IO111PDB2V3          Unassigned
+M1                       GNDQ                 Reserved
+M2                       IO255NPB6V2          Unassigned
+M3                       IO272NDB6V4          Unassigned
+M4                       GFA2/IO272PDB6V4     Special
+M5                       GFA1/IO273PDB6V4     Special
+M6                       VCCPLF               Reserved
+M7                       IO271NDB6V4          Unassigned
+M8                       GFB2/IO271PDB6V4     Special
+M9                       VCC                  Reserved
+M10                      GND                  Reserved
+M11                      GND                  Reserved
+M12                      GND                  Reserved
+M13                      GND                  Reserved
+M14                      VCC                  Reserved
+M15     CLK_48MHZ        GCB2/IO116PPB3V0     Special     LVCMOS33  ---                ---   None           No               Off          ---   ---               No           Yes
+M16                      GCA1/IO114PPB3V0     Special
+M17                      GCC2/IO117PPB3V0     Special
+M18                      VCCPLC               Reserved
+M19                      GCA2/IO115PDB3V0     Special
+M20                      IO115NDB3V0          Unassigned
+M21                      IO126PDB3V1          Unassigned
+M22                      IO124PSB3V1          Unassigned
+N1                       IO255PPB6V2          Unassigned
+N2                       IO253NDB6V2          Unassigned
+N3                       VMV6                 Reserved
+N4                       GFC2/IO270PPB6V4     Special
+N5                       IO261PPB6V3          Unassigned
+N6                       IO263PDB6V3          Unassigned
+N7                       IO263NDB6V3          Unassigned
+N8                       VCCIB6               Reserved
+N9                       VCC                  Reserved
+N10                      GND                  Reserved
+N11                      GND                  Reserved
+N12                      GND                  Reserved
+N13                      GND                  Reserved
+N14                      VCC                  Reserved
+N15                      VCCIB3               Reserved
+N16                      IO116NPB3V0          Unassigned
+N17                      IO132NPB3V2          Unassigned
+N18                      IO117NPB3V0          Unassigned
+N19                      IO132PPB3V2          Unassigned
+N20                      GNDQ                 Reserved
+N21                      IO126NDB3V1          Unassigned
+N22                      IO128PDB3V1          Unassigned
+P1                       IO247PDB6V1          Unassigned
+P2                       IO253PDB6V2          Unassigned
+P3                       IO270NPB6V4          Unassigned
+P4                       IO261NPB6V3          Unassigned
+P5                       IO249PPB6V1          Unassigned
+P6                       IO259PDB6V3          Unassigned
+P7                       IO259NDB6V3          Unassigned
+P8                       VCCIB6               Reserved
+P9                       GND                  Reserved
+P10                      VCC                  Reserved
+P11                      VCC                  Reserved
+P12                      VCC                  Reserved
+P13                      VCC                  Reserved
+P14                      GND                  Reserved
+P15                      VCCIB3               Reserved
+P16                      GDB0/IO152NPB3V4     Special
+P17                      IO136NDB3V2          Unassigned
+P18                      IO136PDB3V2          Unassigned
+P19                      IO138PDB3V3          Unassigned
+P20                      VMV3                 Reserved
+P21                      IO130PDB3V2          Unassigned
+P22                      IO128NDB3V1          Unassigned
+R1                       IO247NDB6V1          Unassigned
+R2                       IO245PDB6V1          Unassigned
+R3                       VCC                  Reserved
+R4                       IO249NPB6V1          Unassigned
+R5                       IO251NDB6V2          Unassigned
+R6                       IO251PDB6V2          Unassigned
+R7                       GEC0/IO236NPB6V0     Special
+R8                       VMV5                 Reserved
+R9                       VCCIB5               Reserved
+R10                      VCCIB5               Reserved
+R11                      IO196NDB5V0          Unassigned
+R12                      IO196PDB5V0          Unassigned
+R13                      VCCIB4               Reserved
+R14                      VCCIB4               Reserved
+R15                      VMV3                 Reserved
+R16                      VCCPLD               Reserved
+R17                      GDB1/IO152PPB3V4     Special
+R18                      GDC1/IO151PDB3V4     Special
+R19                      IO138NDB3V3          Unassigned
+R20                      VCC                  Reserved
+R21                      IO130NDB3V2          Unassigned
+R22                      IO134PDB3V2          Unassigned
+T1                       IO243PPB6V1          Unassigned
+T2                       IO245NDB6V1          Unassigned
+T3                       IO243NPB6V1          Unassigned
+T4                       IO241PDB6V0          Unassigned
+T5                       IO241NDB6V0          Unassigned
+T6                       GEC1/IO236PPB6V0     Special
+T7                       VCOMPLE              Reserved
+T8                       GNDQ                 Reserved
+T9                       GEA2/IO233PPB5V4     Special
+T10                      IO206NDB5V1          Unassigned
+T11                      IO202NDB5V1          Unassigned
+T12                      IO194NDB5V0          Unassigned
+T13                      IO186NDB4V4          Unassigned
+T14                      IO186PDB4V4          Unassigned
+T15                      GNDQ                 Reserved
+T16                      VCOMPLD              Reserved
+T17                      VJTAG                Reserved
+T18                      GDC0/IO151NDB3V4     Special
+T19                      GDA1/IO153PDB3V4     Special
+T20                      IO144PDB3V3          Unassigned
+T21                      IO140PDB3V3          Unassigned
+T22                      IO134NDB3V2          Unassigned
+U1                       IO240PPB6V0          Unassigned
+U2                       IO238PDB6V0          Unassigned
+U3                       IO238NDB6V0          Unassigned
+U4                       GEB1/IO235PDB6V0     Special
+U5                       GEB0/IO235NDB6V0     Special
+U6                       VMV6                 Reserved
+U7                       VCCPLE               Reserved
+U8                       IO233NPB5V4          Unassigned
+U9                       IO222PPB5V3          Unassigned
+U10                      IO206PDB5V1          Unassigned
+U11                      IO202PDB5V1          Unassigned
+U12                      IO194PDB5V0          Unassigned
+U13                      IO176NDB4V2          Unassigned
+U14                      IO176PDB4V2          Unassigned
+U15                      VMV4                 Reserved
+U16                      TCK                  Reserved
+U17                      VPUMP                Reserved
+U18                      TRST                 Reserved
+U19                      GDA0/IO153NDB3V4     Special
+U20                      IO144NDB3V3          Unassigned
+U21                      IO140NDB3V3          Unassigned
+U22                      IO142PDB3V3          Unassigned
+V1                       IO239PDB6V0          Unassigned
+V2                       IO240NPB6V0          Unassigned
+V3                       GND                  Reserved
+V4                       GEA1/IO234PDB6V0     Special
+V5                       GEA0/IO234NDB6V0     Special
+V6                       GNDQ                 Reserved
+V7                       GEC2/IO231PDB5V4     Special
+V8                       IO222NPB5V3          Unassigned
+V9                       IO204NDB5V1          Unassigned
+V10                      IO204PDB5V1          Unassigned
+V11                      IO195NDB5V0          Unassigned
+V12                      IO195PDB5V0          Unassigned
+V13                      IO178NDB4V3          Unassigned
+V14                      IO178PDB4V3          Unassigned
+V15                      IO155NDB4V0          Unassigned
+V16                      GDB2/IO155PDB4V0     Special
+V17                      TDI                  Reserved
+V18                      GNDQ                 Reserved
+V19                      TDO                  Reserved
+V20                      GND                  Reserved
+V21                      IO146PDB3V4          Unassigned
+V22                      IO142NDB3V3          Unassigned
+W1                       IO239NDB6V0          Unassigned
+W2                       IO237PDB6V0          Unassigned
+W3                       IO230PSB5V4          Unassigned
+W4                       GND                  Reserved
+W5                       IO232NDB5V4          Unassigned
+W6                       FF/GEB2/IO232PDB5V4  Special
+W7                       IO231NDB5V4          Unassigned
+W8                       IO214NDB5V2          Unassigned
+W9                       IO214PDB5V2          Unassigned
+W10                      IO200NDB5V0          Unassigned
+W11                      IO192NDB4V4          Unassigned
+W12                      IO184NDB4V3          Unassigned
+W13                      IO184PDB4V3          Unassigned
+W14                      IO156NDB4V0          Unassigned
+W15                      GDC2/IO156PDB4V0     Special
+W16                      IO154NDB4V0          Unassigned
+W17                      GDA2/IO154PDB4V0     Special
+W18                      TMS                  Reserved
+W19                      GND                  Reserved
+W20                      IO150NDB3V4          Unassigned
+W21                      IO146NDB3V4          Unassigned
+W22                      IO148PPB3V4          Unassigned
+Y1                       VCCIB6               Reserved
+Y2                       IO237NDB6V0          Unassigned
+Y3                       IO228NDB5V4          Unassigned
+Y4                       IO224NDB5V3          Unassigned
+Y5                       GND                  Reserved
+Y6                       IO220NDB5V3          Unassigned
+Y7                       IO220PDB5V3          Unassigned
+Y8                       VCC                  Reserved
+Y9                       VCC                  Reserved
+Y10                      IO200PDB5V0          Unassigned
+Y11                      IO192PDB4V4          Unassigned
+Y12                      IO188NPB4V4          Unassigned
+Y13                      IO187PSB4V4          Unassigned
+Y14                      VCC                  Reserved
+Y15                      VCC                  Reserved
+Y16                      IO164NDB4V1          Unassigned
+Y17                      IO164PDB4V1          Unassigned
+Y18                      GND                  Reserved
+Y19                      IO158PPB4V0          Unassigned
+Y20                      IO150PDB3V4          Unassigned
+Y21                      IO148NPB3V4          Unassigned
+Y22                      VCCIB3               Reserved

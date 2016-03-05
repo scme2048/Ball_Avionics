@@ -1,10 +1,12 @@
 # Created by Microsemi Libero Software 11.6.0.34
-# Mon Feb 29 21:03:24 2016
+# Fri Mar 04 12:08:17 2016
 
 # (NEW DESIGN)
 
 # create a new design
 new_design -name "geiger_integration" -family "ProASIC3L"
+set_device -die {A3PE3000L} -package {484 FBGA} -speed {STD} -voltage {1.5} -IO_DEFT_STD {LVCMOS 3.3V} -RESTRICTPROBEPINS {1} -RESTRICTSPIPINS {0} -TEMPR {IND} -UNUSED_MSS_IO_RESISTOR_PULL {None} -VCCI_1.5_VOLTR {COM} -VCCI_1.8_VOLTR {COM} -VCCI_2.5_VOLTR {COM} -VCCI_3.3_VOLTR {COM} -VOLTR {IND}
+
 
 # set default back-annotation base-name
 set_defvar "BA_NAME" "geiger_integration_ba"
@@ -44,5 +46,13 @@ set_defvar "AUDIT_ADL_FILE" "1"
 import_source  \
 -format "edif" -edif_flavor "GENERIC" -netlist_naming "VERILOG" {../../synthesis/geiger_integration.edn}
 
-# export translation of original netlist
-export -format "verilog" {../../synthesis/geiger_integration.v}
+# save the design database
+save_design {geiger_integration.adb}
+
+
+compile
+report -type "status" {geiger_integration_compile_report.txt}
+report -type "pin" -listby "name" {geiger_integration_report_pin_byname.txt}
+report -type "pin" -listby "number" {geiger_integration_report_pin_bynumber.txt}
+
+save_design

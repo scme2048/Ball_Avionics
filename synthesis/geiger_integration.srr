@@ -27,9 +27,7 @@ Copyright (C) 1994-2015 Synopsys, Inc. This software and the associated document
 @I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\timestamp.v"
 @I::"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\component\work\geiger_integration\geiger_integration.v"
 Verilog syntax check successful!
-
-Compiler output is up to date.  No re-compile necessary
-
+Options changed - recompiling
 Selecting top level module geiger_integration
 @N: CG364 :"C:\Microsemi\Libero_v11.6\Synopsys\fpga_J-2015.03M-3\lib\proasic\proasic3l.v":2810:7:2810:9|Synthesizing module PLL
 
@@ -126,10 +124,10 @@ Selecting top level module geiger_integration
 @W: CL279 :"C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\hdl\geig_data_handling.v":24:0:24:5|Pruning register bits 2 to 1 of G_DATA_STACK[2:0] 
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 70MB peak: 71MB)
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 72MB peak: 75MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Mon Feb 29 22:11:49 2016
+# Fri Mar 04 12:08:03 2016
 
 ###########################################################]
 Synopsys Netlist Linker, version comp201503p1, Build 094R, built May 14 2015
@@ -138,15 +136,15 @@ Synopsys Netlist Linker, version comp201503p1, Build 094R, built May 14 2015
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Mon Feb 29 22:11:51 2016
+# Fri Mar 04 12:08:05 2016
 
 ###########################################################]
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Mon Feb 29 22:11:51 2016
+Process took 0h:00m:03s realtime, 0h:00m:01s cputime
+# Fri Mar 04 12:08:05 2016
 
 ###########################################################]
 Synopsys Netlist Linker, version comp201503p1, Build 094R, built May 14 2015
@@ -156,7 +154,7 @@ File C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\s
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Mon Feb 29 22:11:53 2016
+# Fri Mar 04 12:08:06 2016
 
 ###########################################################]
 Pre-mapping Report
@@ -204,7 +202,7 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 47MB peak: 111MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Mon Feb 29 22:11:54 2016
+# Fri Mar 04 12:08:08 2016
 
 ###########################################################]
 Map & Optimize Report
@@ -325,7 +323,7 @@ geig_data_handling_0.m8 / Y                       41
 @N: FP130 |Promoting Net clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT on CLKINT  clock_div_1MHZ_10HZ_0.clk_out_inferred_clock 
 @N: FP130 |Promoting Net clock_div_1MHZ_100KHZ_0_CLK_100KHZ_OUT on CLKINT  clock_div_1MHZ_100KHZ_0.clk_out_inferred_clock 
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 114MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 114MB)
 
 Replicating Combinational Instance geig_data_handling_0.m8, fanout 41 segments 2
 Replicating Sequential Instance test_harness_geiger_stack_0.set, fanout 70 segments 3
@@ -338,7 +336,7 @@ Added 15 Cells via replication
 	Added 4 Sequential Cells via replication
 	Added 11 Combinational Cells via replication
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 114MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 114MB)
 
 
 
@@ -384,7 +382,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:0
 
 
 @S |##### START OF TIMING REPORT #####[
-# Timing Report written on Mon Feb 29 22:11:58 2016
+# Timing Report written on Fri Mar 04 12:08:12 2016
 #
 
 
@@ -1387,7 +1385,7 @@ Finished final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0
 Finished timing report (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 114MB)
 
 --------------------------------------------------------------------------------
-Target Part: M1A3P1000L_FBGA484_STD
+Target Part: A3PE3000L_FBGA484_STD
 Report for cell geiger_integration.verilog
   Core Cell usage:
               cell count     area count*area
@@ -1435,17 +1433,17 @@ Report for cell geiger_integration.verilog
              TOTAL    11
 
 
-Core Cells         : 647 of 24576 (3%)
+Core Cells         : 647 of 75264 (1%)
 IO Cells           : 11
 
   RAM/ROM Usage Summary
-Block Rams : 0 of 32 (0%)
+Block Rams : 0 of 112 (0%)
 
 Mapper successful!
 
 At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 50MB peak: 114MB)
 
 Process took 0h:00m:03s realtime, 0h:00m:01s cputime
-# Mon Feb 29 22:11:58 2016
+# Fri Mar 04 12:08:12 2016
 
 ###########################################################]

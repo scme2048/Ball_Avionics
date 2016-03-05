@@ -114,7 +114,7 @@ geig_data_handling_0.m8 / Y                       41
 @N: FP130 |Promoting Net clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT on CLKINT  clock_div_1MHZ_10HZ_0.clk_out_inferred_clock 
 @N: FP130 |Promoting Net clock_div_1MHZ_100KHZ_0_CLK_100KHZ_OUT on CLKINT  clock_div_1MHZ_100KHZ_0.clk_out_inferred_clock 
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 114MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 114MB)
 
 Replicating Combinational Instance geig_data_handling_0.m8, fanout 41 segments 2
 Replicating Sequential Instance test_harness_geiger_stack_0.set, fanout 70 segments 3
@@ -127,7 +127,7 @@ Added 15 Cells via replication
 	Added 4 Sequential Cells via replication
 	Added 11 Combinational Cells via replication
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 114MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 114MB)
 
 
 
@@ -173,7 +173,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:0
 
 
 @S |##### START OF TIMING REPORT #####[
-# Timing Report written on Mon Feb 29 22:11:58 2016
+# Timing Report written on Fri Mar 04 12:08:12 2016
 #
 
 
@@ -1176,7 +1176,7 @@ Finished final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0
 Finished timing report (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 114MB)
 
 --------------------------------------------------------------------------------
-Target Part: M1A3P1000L_FBGA484_STD
+Target Part: A3PE3000L_FBGA484_STD
 Report for cell geiger_integration.verilog
   Core Cell usage:
               cell count     area count*area
@@ -1224,17 +1224,17 @@ Report for cell geiger_integration.verilog
              TOTAL    11
 
 
-Core Cells         : 647 of 24576 (3%)
+Core Cells         : 647 of 75264 (1%)
 IO Cells           : 11
 
   RAM/ROM Usage Summary
-Block Rams : 0 of 32 (0%)
+Block Rams : 0 of 112 (0%)
 
 Mapper successful!
 
 At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:01s; Memory used current: 50MB peak: 114MB)
 
 Process took 0h:00m:03s realtime, 0h:00m:01s cputime
-# Mon Feb 29 22:11:58 2016
+# Fri Mar 04 12:08:12 2016
 
 ###########################################################]

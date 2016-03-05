@@ -1,4 +1,4 @@
-Target Part: M1A3P1000L_FBGA484_STD
+Target Part: A3PE3000L_FBGA484_STD
 Report for cell geiger_integration.verilog
   Core Cell usage:
               cell count     area count*area
@@ -46,9 +46,9 @@ Report for cell geiger_integration.verilog
              TOTAL    11
 
 
-Core Cells         : 647 of 24576 (3%)
+Core Cells         : 647 of 75264 (1%)
 IO Cells           : 11
 
   RAM/ROM Usage Summary
-Block Rams : 0 of 32 (0%)
+Block Rams : 0 of 112 (0%)
 

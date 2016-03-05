@@ -1,28 +1,28 @@
 ***************************************************************************
                                Status Report
-                          Wed Feb 24 19:46:53 2016 ***************************************************************************
+                          Fri Mar 04 12:08:52 2016 ***************************************************************************
 
 Product: Designer
 Release: v11.6
 Version: 11.6.0.34
 File Name: C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\designer\impl1\geiger_integration.adb
 Design Name: geiger_integration  Design State: compile
-Last Saved: Tue Feb 23 14:28:44 2016
+Last Saved: Fri Mar 04 12:08:40 2016
 
 ***** Device Data **************************************************
 
-Family: ProASIC3L  Die: M1A3P1000L  Package: 484 FBGA
+Family: ProASIC3L  Die: A3PE3000L  Package: 484 FBGA
 Speed: STD  Voltage: 1.5
 
 Restrict JTAG Pins: YES
 Restrict Probe Pins: YES
 
-Junction Temperature Range:   COM
-Voltage Range:   COM
+Junction Temperature Range:   IND
+Voltage Range:   IND
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Wed Feb 24 19:46:43 2016:
+Source File(s) Imported on Fri Mar 04 12:08:36 2016:
         C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\geiger_integration.edn
 
 
@@ -34,7 +34,7 @@ Back Annotation File: N/A
 ***** Bitstream Variables ******************************************
 
 Bitstream File: N/A
-     Lock Mode: off
+     Lock Mode: OFF
 
 
 ***** Compile Variables ********************************************
@@ -47,7 +47,7 @@ Parameters used to run compile:
 ===============================
 
 Family      : ProASIC3L
-Device      : M1A3P1000L
+Device      : A3PE3000L
 Package     : 484 FBGA
 Source      :
 C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\geiger_inte\
@@ -55,10 +55,10 @@ gration.edn
 Format      : EDIF
 Topcell     : geiger_integration
 Speed grade : STD
-Temp        : 0:25:70
+Temp        : -40:25:85
 Voltage     : 1.58:1.50:1.42
 
-Keep Existing Physical Constraints : Yes
+Keep Existing Physical Constraints : No
 Keep Existing Timing Constraints   : Yes
 
 pdc_abort_on_error                 : Yes
@@ -78,7 +78,6 @@ report_high_fanout_nets_limit      : 10
 =====================================================================
 Compile starts ...
 
-Info: BLK007: No CoreConsole Database file imported for an M1 device.
 Warning: CMP201: Net CLK_1MHZ_0/Core_GLB drives no load.
 Warning: CMP201: Net CLK_1MHZ_0/Core_GLC drives no load.
 Warning: CMP201: Net CLK_1MHZ_0/LOCK drives no load.
@@ -97,27 +96,20 @@ Optimized macros:
 
     Total macros optimized  17
 
-Warning: CMP503: Remapped 67 enable flip-flop(s) to a 2-tile implementation because the CLR/PRE
+Warning: CMP503: Remapped 64 enable flip-flop(s) to a 2-tile implementation because the CLR/PRE
          pin on the enable flip-flop is not being driven by a global net.
 
 There were 0 error(s) and 6 warning(s) in this design.
 =====================================================================
-
-Reading previous post-compile physical placement constraints.
-
-
-There were 0 error(s) and 0 warning(s).
-
-=====================================================================
 Compile report:
 ===============
 
-    CORE                       Used:    650  Total:  24576   (2.64%)
-    IO (W/ clocks)             Used:     11  Total:    300   (3.67%)
-    Differential IO            Used:      0  Total:     74   (0.00%)
+    CORE                       Used:    695  Total:  75264   (0.92%)
+    IO (W/ clocks)             Used:     11  Total:    341   (3.23%)
+    Differential IO            Used:      0  Total:    168   (0.00%)
     GLOBAL (Chip+Quadrant)     Used:      3  Total:     18   (16.67%)
-    PLL                        Used:      1  Total:      1   (100.00%)
-    RAM/FIFO                   Used:      0  Total:     32   (0.00%)
+    PLL                        Used:      1  Total:      6   (16.67%)
+    RAM/FIFO                   Used:      0  Total:    112   (0.00%)
     Low Static ICC             Used:      0  Total:      1   (0.00%)
     FlashROM                   Used:      0  Total:      1   (0.00%)
     User JTAG                  Used:      0  Total:      1   (0.00%)
@@ -137,8 +129,8 @@ Core Information:
 
     Type    | Instances    | Core tiles
     --------|--------------|-----------
-    COMB    | 416          | 416
-    SEQ     | 234          | 234
+    COMB    | 430          | 430
+    SEQ     | 265          | 265
 
 I/O Function:
 
@@ -160,9 +152,9 @@ I/O Technology:
 
 I/O Placement:
 
-    Locked  :  11 ( 100.00% )
+    Locked  :   0
     Placed  :   0
-    UnPlaced:   0
+    UnPlaced:  11 ( 100.00% )
 
 Net information report:
 =======================
@@ -170,20 +162,22 @@ Net information report:
 The following nets drive enable flip-flops that have been remapped to a 2-tile implementation:
     EffCnt  Type          Name
     --------------------------
-    24      SET/RESET_NET Net   : reset_pulse_0_RESET_1
+    23      SET/RESET_NET Net   : reset_pulse_0_RESET_1
                           Driver: reset_pulse_0/RESET_1
-    23      SET/RESET_NET Net   : reset_pulse_0_RESET_0
-                          Driver: reset_pulse_0/RESET_0
-    20      SET/RESET_NET Net   : reset_pulse_0_RESET_2
+    23      SET/RESET_NET Net   : reset_pulse_0_RESET_2
                           Driver: reset_pulse_0/RESET_2
+    17      SET/RESET_NET Net   : reset_pulse_0_RESET_0
+                          Driver: reset_pulse_0/RESET_0
+    1       INT_NET       Net   : reset_pulse_0_RESET_3
+                          Driver: reset_pulse_0/RESET_3
 
 The following nets have been assigned to a chip global resource:
     Fanout  Type          Name
     --------------------------
-    142     CLK_NET       Net   : GLA
+    171     CLK_NET       Net   : GLA
                           Driver: CLK_1MHZ_0/Core
                           Source: ESSENTIAL
-    75      CLK_NET       Net   : clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT
+    77      CLK_NET       Net   : clock_div_1MHZ_10HZ_0_CLK_10HZ_OUT
                           Driver: clock_div_1MHZ_10HZ_0/clk_out_RNIT8C7
                           Source: NETLIST
     17      CLK_NET       Net   : clock_div_1MHZ_100KHZ_0_CLK_100KHZ_OUT
@@ -193,50 +187,50 @@ The following nets have been assigned to a chip global resource:
 High fanout nets in the post compile netlist:
     Fanout  Type          Name
     --------------------------
-    24      SET/RESET_NET Net   : reset_pulse_0_RESET_0
+    24      INT_NET       Net   : test_harness_geiger_stack_0/set_1
+                          Driver: test_harness_geiger_stack_0/set_1
+    24      INT_NET       Net   : test_harness_geiger_stack_0/set_0
+                          Driver: test_harness_geiger_stack_0/set_0
+    23      SET/RESET_NET Net   : reset_pulse_0_RESET_0
                           Driver: reset_pulse_0/RESET_0
-    24      SET/RESET_NET Net   : reset_pulse_0_RESET_1
+    23      SET/RESET_NET Net   : reset_pulse_0_RESET_1
                           Driver: reset_pulse_0/RESET_1
-    24      SET/RESET_NET Net   : reset_pulse_0_RESET_2
+    23      SET/RESET_NET Net   : reset_pulse_0_RESET_2
                           Driver: reset_pulse_0/RESET_2
-    24      INT_NET       Net   : reset_pulse_0_RESET_3
+    23      INT_NET       Net   : reset_pulse_0_RESET_3
                           Driver: reset_pulse_0/RESET_3
-    24      INT_NET       Net   : reset_pulse_0_RESET_4
+    23      INT_NET       Net   : reset_pulse_0_RESET_4
                           Driver: reset_pulse_0/RESET_4
-    24      INT_NET       Net   : reset_pulse_0_RESET_5
+    23      INT_NET       Net   : reset_pulse_0_RESET_5
                           Driver: reset_pulse_0/RESET_5
-    24      SET/RESET_NET Net   : reset_pulse_0_RESET_6
+    23      SET/RESET_NET Net   : reset_pulse_0_RESET_6
                           Driver: reset_pulse_0/RESET_6
-    24      INT_NET       Net   : test_harness_geiger_stack_0/un1_counter18_0
-                          Driver: test_harness_geiger_stack_0/set_0_RNI4LFF9
-    24      INT_NET       Net   : test_harness_geiger_stack_0/set_0_RNI4LFF9_0
-                          Driver: test_harness_geiger_stack_0/set_0_RNI4LFF9_0
-    22      INT_NET       Net   : geig_data_handling_0/geig_counts19
-                          Driver: geig_data_handling_0/min_counter_RNIMHVQ2[2]
+    23      SET/RESET_NET Net   : reset_pulse_0_RESET_7
+                          Driver: reset_pulse_0/RESET_7
 
 Nets that are candidates for clock assignment and the resulting fanout:
     Fanout  Type          Name
     --------------------------
-    24      SET/RESET_NET Net   : reset_pulse_0_RESET_0
+    24      INT_NET       Net   : test_harness_geiger_stack_0/set_1
+                          Driver: test_harness_geiger_stack_0/set_1
+    24      INT_NET       Net   : test_harness_geiger_stack_0/set_0
+                          Driver: test_harness_geiger_stack_0/set_0
+    23      SET/RESET_NET Net   : reset_pulse_0_RESET_0
                           Driver: reset_pulse_0/RESET_0
-    24      SET/RESET_NET Net   : reset_pulse_0_RESET_1
+    23      SET/RESET_NET Net   : reset_pulse_0_RESET_1
                           Driver: reset_pulse_0/RESET_1
-    24      SET/RESET_NET Net   : reset_pulse_0_RESET_2
+    23      SET/RESET_NET Net   : reset_pulse_0_RESET_2
                           Driver: reset_pulse_0/RESET_2
-    24      INT_NET       Net   : reset_pulse_0_RESET_3
+    23      INT_NET       Net   : reset_pulse_0_RESET_3
                           Driver: reset_pulse_0/RESET_3
-    24      INT_NET       Net   : reset_pulse_0_RESET_4
+    23      INT_NET       Net   : reset_pulse_0_RESET_4
                           Driver: reset_pulse_0/RESET_4
-    24      INT_NET       Net   : reset_pulse_0_RESET_5
+    23      INT_NET       Net   : reset_pulse_0_RESET_5
                           Driver: reset_pulse_0/RESET_5
-    24      SET/RESET_NET Net   : reset_pulse_0_RESET_6
+    23      SET/RESET_NET Net   : reset_pulse_0_RESET_6
                           Driver: reset_pulse_0/RESET_6
-    24      INT_NET       Net   : test_harness_geiger_stack_0/un1_counter18_0
-                          Driver: test_harness_geiger_stack_0/set_0_RNI4LFF9
-    24      INT_NET       Net   : test_harness_geiger_stack_0/set_0_RNI4LFF9_0
-                          Driver: test_harness_geiger_stack_0/set_0_RNI4LFF9_0
-    22      INT_NET       Net   : geig_data_handling_0/geig_counts19
-                          Driver: geig_data_handling_0/min_counter_RNIMHVQ2[2]
+    23      SET/RESET_NET Net   : reset_pulse_0_RESET_7
+                          Driver: reset_pulse_0/RESET_7
 ====================
 Flash*Freeze report:
 ====================

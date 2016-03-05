@@ -24,7 +24,7 @@ set_option -vlog_std v2001
 
 #device options
 set_option -technology ProASIC3L
-set_option -part M1A3P1000L
+set_option -part A3PE3000L
 set_option -package FBGA484
 set_option -speed_grade STD
 set_option -part_companion ""

@@ -9,17 +9,17 @@ Opened an existing Libero design
 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/designer/impl1/geiger\
 _integration.adb.
 
-The Export-map command succeeded ( 00:00:30 )
+The Export-map command succeeded ( 00:01:13 )
 Wrote to the file:
 C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\designer\impl1\geiger\
 _integration.pdb
-CHECKSUM: 7453
+CHECKSUM: A961
 
-The Generate programming file command succeeded ( 00:00:35 )
+The Generate programming file command succeeded ( 00:01:17 )
 Design saved to file
 C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/designer/impl1/geiger\
 _integration.adb.
 
-The Execute Script command succeeded ( 00:00:45 )
+The Execute Script command succeeded ( 00:01:35 )
 Design closed.
 

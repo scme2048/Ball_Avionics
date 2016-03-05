@@ -4,10 +4,10 @@ Release: v11.6
 
 'IDE_DESIGNERVIEW_ROOTDIR' set to
 'C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\designer'
-Info: The design transceiver_integration.adb was last modified by software version 11.6.0.34.
-Opened an existing Libero design transceiver_integration.adb.
+Info: The design geiger_integration.adb was last modified by software version 11.6.0.34.
+Opened an existing Libero design geiger_integration.adb.
 
-The Execute Script command succeeded ( 00:00:30 )
+The Execute Script command succeeded ( 00:00:41 )
 Checking for software updates...
 ***** Layout Variables *********************************************
 
@@ -30,63 +30,46 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Sun Feb 28 18:42:23 2016
+Timing-driven Placer Started: Fri Mar 04 12:29:00 2016
 
-Placer Finished: Sun Feb 28 18:42:31 2016
+Placer Finished: Fri Mar 04 12:29:08 2016
 Total Placer CPU Time:     00:00:08
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: transceiver_integration         Started: Sun Feb 28 18:42:35 2016
+Design: geiger_integration              Started: Fri Mar 04 12:29:18 2016
 
  
 Iterative improvement...
 
 Timing-driven Router completed successfully.
 
-Design: transceiver_integration         
-Finished: Sun Feb 28 18:43:05 2016
-Total CPU Time:     00:00:29            Total Elapsed Time: 00:00:30
-Total Memory Usage: 372.9 Mbytes
+Design: geiger_integration              
+Finished: Fri Mar 04 12:30:07 2016
+Total CPU Time:     00:00:48            Total Elapsed Time: 00:00:49
+Total Memory Usage: 901.4 Mbytes
                         o - o - o - o - o - o
 
 Loading the Timing data for the design.
 Finished loading the Timing data.
 
-The Layout command succeeded ( 00:00:51 )
-Warning: The following files already exist:
-         
-         C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\designer\imp\
-         l1\transceiver_integration.pdb
-         
-         Do you want to replace the files? [YES]
-
-The Export-map command succeeded ( 00:00:28 )
-Warning: Overwriting the existing file:
-         C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\designer\imp\
-         l1\transceiver_integration.pdb.
-Wrote to the file:
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\designer\impl1\transc\
-eiver_integration.pdb
-CHECKSUM: 35E5
-
-The Generate programming file command succeeded ( 00:00:33 )
+The Layout command succeeded ( 00:01:20 )
 Design saved to file
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\designer\impl1\transc\
-eiver_integration.adb.
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\designer\impl1\geiger\
+_integration.adb.
 Wrote pin report to file:
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\designer\impl1\transc\
-eiver_integration_report_pin_byname.txt
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\designer\impl1\geiger\
+_integration_report_pin_byname.txt
 
-The Report command succeeded ( 00:00:00 )
+The Report command succeeded ( 00:00:01 )
 Wrote pin report to file:
-C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\designer\impl1\transc\
-eiver_integration_report_pin_bynumber.txt
+C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\designer\impl1\geiger\
+_integration_report_pin_bynumber.txt
 
 The Report command succeeded ( 00:00:01 )
 
-The Execute Script command succeeded ( 00:00:01 )
+The Execute Script command succeeded ( 00:00:02 )
 Design closed.
 
