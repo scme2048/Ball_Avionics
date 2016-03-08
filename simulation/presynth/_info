@@ -74,7 +74,7 @@ r1
 R5
 n@c@l@k_1@m@h@z
 vCLK_26MHZ
-!s110 1457400329
+!s110 1457400428
 !i10b 1
 !s100 @cTHA:JZe?Xdfz>Wg0IJU0
 I_o=e7Ie5m0MJGPz9aQ@kL3
@@ -88,7 +88,7 @@ R4
 r1
 !s85 0
 31
-!s108 1457400328.942000
+!s108 1457400428.435000
 !s107 F:/Ball_Avionics/smartgen/CLK_26MHZ/CLK_26MHZ.v|
 !s90 -reportprogress|300|-work|presynth|F:/Ball_Avionics/smartgen/CLK_26MHZ/CLK_26MHZ.v|
 !s101 -O0
@@ -163,13 +163,13 @@ r1
 R5
 nclock_div_1@m@h@z_100@k@h@z
 vclock_div_1MHZ_10HZ
-Z11 !s110 1457400335
+!s110 1457400429
 !i10b 1
 !s100 W4^MLJN4AUPQO3Q6Fcoac3
 I>GgD1JE4l@M:Y@S@?ZhVT0
 R2
 R6
-Z12 w1457398940
+Z11 w1457398940
 8F:/Ball_Avionics/hdl/clock_div_1MHZ_10HZ.v
 FF:/Ball_Avionics/hdl/clock_div_1MHZ_10HZ.v
 R10
@@ -177,7 +177,7 @@ R4
 r1
 !s85 0
 31
-!s108 1457400334.613000
+!s108 1457400429.460000
 !s107 F:/Ball_Avionics/hdl/clock_div_1MHZ_10HZ.v|
 !s90 -reportprogress|300|-work|presynth|F:/Ball_Avionics/hdl/clock_div_1MHZ_10HZ.v|
 !s101 -O0
@@ -185,7 +185,7 @@ r1
 R5
 nclock_div_1@m@h@z_10@h@z
 vclock_div_1MHZ_1KHZ
-Z13 !s110 1454654049
+Z12 !s110 1454654049
 !i10b 1
 !s100 b09c24R:k5LkKIEnXJKH22
 IF=S;0meCYM2>dW7K[9:8U3
@@ -207,13 +207,13 @@ r1
 R5
 nclock_div_1@m@h@z_1@k@h@z
 vclock_div_26MHZ_1MHZ
-R11
+Z13 !s110 1457400430
 !i10b 1
 !s100 z0bY?0=IBPKSWnzkeYIhc2
 Iia:NHRCzKMFoPJiIA<O^n2
 R2
 R6
-R12
+R11
 8F:/Ball_Avionics/hdl/clock_div_26MHZ_1MHZ.v
 FF:/Ball_Avionics/hdl/clock_div_26MHZ_1MHZ.v
 R10
@@ -221,7 +221,7 @@ R4
 r1
 !s85 0
 31
-!s108 1457400335.581000
+!s108 1457400430.095000
 !s107 F:/Ball_Avionics/hdl/clock_div_26MHZ_1MHZ.v|
 !s90 -reportprogress|300|-work|presynth|F:/Ball_Avionics/hdl/clock_div_26MHZ_1MHZ.v|
 !s101 -O0
@@ -441,13 +441,13 @@ r1
 !i113 1
 R5
 vorbit_control
-!s110 1457400336
+R13
 !i10b 1
 !s100 [aKYf7Rk>VkA@S8Ii6@[63
 I`2LUiYlo3=ILccR5N9[@`0
 R2
 R6
-R12
+R11
 8F:/Ball_Avionics/hdl/orbit_control.v
 FF:/Ball_Avionics/hdl/orbit_control.v
 R3
@@ -455,7 +455,7 @@ R4
 r1
 !s85 0
 31
-!s108 1457400336.073000
+!s108 1457400430.852000
 !s107 F:/Ball_Avionics/hdl/orbit_control.v|
 !s90 -reportprogress|300|-work|presynth|F:/Ball_Avionics/hdl/orbit_control.v|
 !s101 -O0
@@ -483,13 +483,13 @@ r1
 !i113 1
 R5
 vread_buffer
-!s110 1457400341
+!s110 1457400431
 !i10b 1
 !s100 [gA41`GOj5:hUkSNT8GI=2
 Icmbi]=jl4d6DF_4JLbFmX0
 R2
 R6
-R12
+R11
 8F:/Ball_Avionics/hdl/read_buffer.v
 FF:/Ball_Avionics/hdl/read_buffer.v
 R3
@@ -497,20 +497,20 @@ R4
 r1
 !s85 0
 31
-!s108 1457400336.986000
+!s108 1457400431.536000
 !s107 F:/Ball_Avionics/hdl/read_buffer.v|
 !s90 -reportprogress|300|-work|presynth|F:/Ball_Avionics/hdl/read_buffer.v|
 !s101 -O0
 !i113 1
 R5
 vreset_pulse
-!s110 1457400342
+!s110 1457400432
 !i10b 1
 !s100 6ZRE7<mk_3D2o@7DL?BS>3
 IOz^WFzd:5?<>8FaT?l=Nd3
 R2
 R6
-R12
+R11
 8F:/Ball_Avionics/hdl/reset_pulse.v
 FF:/Ball_Avionics/hdl/reset_pulse.v
 R3
@@ -518,7 +518,7 @@ R4
 r1
 !s85 0
 31
-!s108 1457400342.137000
+!s108 1457400432.327000
 !s107 F:/Ball_Avionics/hdl/reset_pulse.v|
 !s90 -reportprogress|300|-work|presynth|F:/Ball_Avionics/hdl/reset_pulse.v|
 !s101 -O0
@@ -546,7 +546,7 @@ r1
 !i113 1
 R5
 vspi_data_out
-!s110 1457400343
+!s110 1457400433
 !i10b 1
 !s100 h;B;F]FzRDI2C_4la`JeL1
 IlWIYG6oC5KjzK?g[831bo0
@@ -560,14 +560,14 @@ R4
 r1
 !s85 0
 31
-!s108 1457400343.296000
+!s108 1457400433.460000
 !s107 F:/Ball_Avionics/hdl/spi_data_out.v|
 !s90 -reportprogress|300|-work|presynth|F:/Ball_Avionics/hdl/spi_data_out.v|
 !s101 -O0
 !i113 1
 R5
 vspi_master
-!s110 1457400345
+!s110 1457400434
 !i10b 1
 !s100 DTBNlE_AI_VTc=R]MbYmH0
 I<CI7345d5]<T6]T5;zCj71
@@ -581,7 +581,7 @@ R4
 r1
 !s85 0
 31
-!s108 1457400344.950000
+!s108 1457400434.278000
 !s107 F:/Ball_Avionics/hdl/SPI_Master.v|
 !s90 -reportprogress|300|-work|presynth|F:/Ball_Avionics/hdl/SPI_Master.v|
 !s101 -O0
@@ -631,7 +631,7 @@ r1
 !i113 1
 R5
 vspi_mode_config2
-!s110 1457400348
+!s110 1457400435
 !i10b 1
 !s100 0cK_dY876=o5DbCT8FR=90
 I1NFfOWaT6nOlzAPP4c0>A2
@@ -645,7 +645,7 @@ R4
 r1
 !s85 0
 31
-!s108 1457400348.388000
+!s108 1457400435.418000
 !s107 F:/Ball_Avionics/hdl/spi_mode_config2.v|
 !s90 -reportprogress|300|-work|presynth|F:/Ball_Avionics/hdl/spi_mode_config2.v|
 !s101 -O0
@@ -674,7 +674,7 @@ r1
 R5
 R8
 vspi_test
-R13
+R12
 !i10b 1
 !s100 fZBEAUIDbm;@AC8z3DKmo2
 I_<[mUh3Y_b7P[VQIi>QoP3
@@ -961,7 +961,7 @@ r1
 R5
 R8
 vtb_tranceiver_integration
-!s110 1457400351
+!s110 1457400472
 !i10b 1
 !s100 FnnJ53zc07C0AH=6JaQXk1
 I^R^z3kBADWS`JbaXzNZnQ2
@@ -975,7 +975,7 @@ R4
 r1
 !s85 0
 31
-!s108 1457400351.504000
+!s108 1457400439.543000
 !s107 F:/Ball_Avionics/stimulus/tb_tranceiver_integration.v|
 !s90 -reportprogress|300|+incdir+F:/Ball_Avionics/stimulus|-work|presynth|F:/Ball_Avionics/stimulus/tb_tranceiver_integration.v|
 !s101 -O0
@@ -983,7 +983,7 @@ r1
 R5
 !s92 +incdir+F:/Ball_Avionics/stimulus -work presynth -O0
 vtest_constants_spi
-!s110 1457400349
+!s110 1457400436
 !i10b 1
 !s100 WnblOzb0=bO92ON1om5Lo1
 ID;Zj6LRI8noe;15f@ckYA2
@@ -997,7 +997,7 @@ R4
 r1
 !s85 0
 31
-!s108 1457400349.578000
+!s108 1457400436.681000
 !s107 F:/Ball_Avionics/hdl/test_constants_spi.v|
 !s90 -reportprogress|300|-work|presynth|F:/Ball_Avionics/hdl/test_constants_spi.v|
 !s101 -O0
@@ -1090,7 +1090,7 @@ r1
 R5
 R8
 vtransceiver_integration
-!s110 1457400350
+!s110 1457400438
 !i10b 1
 !s100 RRc0g;68TVlXg53VTJ[k_3
 IDQgA3RXZozUB6bjoOPmm<3
@@ -1104,7 +1104,7 @@ R4
 r1
 !s85 0
 31
-!s108 1457400350.440000
+!s108 1457400437.823000
 !s107 F:/Ball_Avionics/component/work/transceiver_integration/transceiver_integration.v|
 !s90 -reportprogress|300|-work|presynth|F:/Ball_Avionics/component/work/transceiver_integration/transceiver_integration.v|
 !s101 -O0

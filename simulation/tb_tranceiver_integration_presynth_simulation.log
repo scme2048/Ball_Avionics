@@ -8,79 +8,79 @@
 # vmap -modelsim_quiet proasic3l C:/Microsemi/Libero_v11.6/Designer/lib/modelsim/precompiled/vlog/proasic3l 
 # Modifying modelsim.ini
 # Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 18:25:28 on Mar 07,2016
+# Start time: 18:27:08 on Mar 07,2016
 # vlog -reportprogress 300 -work presynth F:/Ball_Avionics/smartgen/CLK_26MHZ/CLK_26MHZ.v 
 # -- Compiling module CLK_26MHZ
 # 
 # Top level modules:
 # 	CLK_26MHZ
-# End time: 18:25:34 on Mar 07,2016, Elapsed time: 0:00:06
+# End time: 18:27:09 on Mar 07,2016, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 18:25:34 on Mar 07,2016
+# Start time: 18:27:09 on Mar 07,2016
 # vlog -reportprogress 300 -work presynth F:/Ball_Avionics/hdl/clock_div_1MHZ_10HZ.v 
 # -- Compiling module clock_div_1MHZ_10HZ
 # 
 # Top level modules:
 # 	clock_div_1MHZ_10HZ
-# End time: 18:25:35 on Mar 07,2016, Elapsed time: 0:00:01
+# End time: 18:27:09 on Mar 07,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 18:25:35 on Mar 07,2016
+# Start time: 18:27:10 on Mar 07,2016
 # vlog -reportprogress 300 -work presynth F:/Ball_Avionics/hdl/clock_div_26MHZ_1MHZ.v 
 # -- Compiling module clock_div_26MHZ_1MHZ
 # 
 # Top level modules:
 # 	clock_div_26MHZ_1MHZ
-# End time: 18:25:35 on Mar 07,2016, Elapsed time: 0:00:00
+# End time: 18:27:10 on Mar 07,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 18:25:36 on Mar 07,2016
+# Start time: 18:27:10 on Mar 07,2016
 # vlog -reportprogress 300 -work presynth F:/Ball_Avionics/hdl/orbit_control.v 
 # -- Compiling module orbit_control
 # 
 # Top level modules:
 # 	orbit_control
-# End time: 18:25:36 on Mar 07,2016, Elapsed time: 0:00:00
+# End time: 18:27:11 on Mar 07,2016, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 18:25:36 on Mar 07,2016
+# Start time: 18:27:11 on Mar 07,2016
 # vlog -reportprogress 300 -work presynth F:/Ball_Avionics/hdl/read_buffer.v 
 # -- Compiling module read_buffer
 # 
 # Top level modules:
 # 	read_buffer
-# End time: 18:25:41 on Mar 07,2016, Elapsed time: 0:00:05
+# End time: 18:27:12 on Mar 07,2016, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 18:25:42 on Mar 07,2016
+# Start time: 18:27:12 on Mar 07,2016
 # vlog -reportprogress 300 -work presynth F:/Ball_Avionics/hdl/reset_pulse.v 
 # -- Compiling module reset_pulse
 # 
 # Top level modules:
 # 	reset_pulse
-# End time: 18:25:43 on Mar 07,2016, Elapsed time: 0:00:01
+# End time: 18:27:13 on Mar 07,2016, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 18:25:43 on Mar 07,2016
+# Start time: 18:27:13 on Mar 07,2016
 # vlog -reportprogress 300 -work presynth F:/Ball_Avionics/hdl/spi_data_out.v 
 # -- Compiling module spi_data_out
 # 
 # Top level modules:
 # 	spi_data_out
-# End time: 18:25:44 on Mar 07,2016, Elapsed time: 0:00:01
+# End time: 18:27:14 on Mar 07,2016, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 18:25:44 on Mar 07,2016
+# Start time: 18:27:14 on Mar 07,2016
 # vlog -reportprogress 300 -work presynth F:/Ball_Avionics/hdl/SPI_Master.v 
 # -- Compiling module spi_master
 # 
 # Top level modules:
 # 	spi_master
-# End time: 18:25:46 on Mar 07,2016, Elapsed time: 0:00:02
+# End time: 18:27:15 on Mar 07,2016, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 18:25:48 on Mar 07,2016
+# Start time: 18:27:15 on Mar 07,2016
 # vlog -reportprogress 300 -work presynth F:/Ball_Avionics/hdl/spi_mode_config2.v 
 # -- Compiling module spi_mode_config2
 # ** Warning: F:/Ball_Avionics/hdl/spi_mode_config2.v(38): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
@@ -102,10 +102,10 @@
 # 
 # Top level modules:
 # 	spi_mode_config2
-# End time: 18:25:49 on Mar 07,2016, Elapsed time: 0:00:01
+# End time: 18:27:16 on Mar 07,2016, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 8
 # Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 18:25:49 on Mar 07,2016
+# Start time: 18:27:16 on Mar 07,2016
 # vlog -reportprogress 300 -work presynth F:/Ball_Avionics/hdl/test_constants_spi.v 
 # -- Compiling module test_constants_spi
 # ** Warning: F:/Ball_Avionics/hdl/test_constants_spi.v(24): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
@@ -113,33 +113,90 @@
 # 
 # Top level modules:
 # 	test_constants_spi
-# End time: 18:25:50 on Mar 07,2016, Elapsed time: 0:00:01
+# End time: 18:27:17 on Mar 07,2016, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 1
 # Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 18:25:50 on Mar 07,2016
+# Start time: 18:27:17 on Mar 07,2016
 # vlog -reportprogress 300 -work presynth F:/Ball_Avionics/component/work/transceiver_integration/transceiver_integration.v 
 # -- Compiling module transceiver_integration
 # 
 # Top level modules:
 # 	transceiver_integration
-# End time: 18:25:51 on Mar 07,2016, Elapsed time: 0:00:01
+# End time: 18:27:19 on Mar 07,2016, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
-# Start time: 18:25:51 on Mar 07,2016
+# Start time: 18:27:19 on Mar 07,2016
 # vlog -reportprogress 300 "+incdir+F:/Ball_Avionics/stimulus" -work presynth F:/Ball_Avionics/stimulus/tb_tranceiver_integration.v 
 # -- Compiling module tb_tranceiver_integration
 # 
 # Top level modules:
 # 	tb_tranceiver_integration
-# End time: 18:25:52 on Mar 07,2016, Elapsed time: 0:00:01
+# End time: 18:27:53 on Mar 07,2016, Elapsed time: 0:00:34
 # Errors: 0, Warnings: 0
 # vsim -gui -do "do run.do" -l tb_tranceiver_integration_presynth_simulation.log 
-# Start time: 18:25:52 on Mar 07,2016
-# ** Error: License checkout has been disallowed because
-# only one session is allowed to run on an uncounted nodelocked
-# license and an instance of ModelSim is already running with a
-# nodelocked license on this machine.
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./run.do PAUSED at line 26
+# Start time: 18:27:53 on Mar 07,2016
+# //  ModelSim Microsemi 10.3c Jul 19 2014 
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading presynth.tb_tranceiver_integration
+# Loading presynth.transceiver_integration
+# Loading presynth.CLK_26MHZ
+# Loading proasic3l.PLL
+# Loading proasic3l.PLLPRIM
+# Loading proasic3l.PLLINT
+# Loading proasic3l.GND
+# Loading proasic3l.VCC
+# Loading presynth.clock_div_1MHZ_10HZ
+# Loading presynth.clock_div_26MHZ_1MHZ
+# Loading presynth.orbit_control
+# Loading presynth.read_buffer
+# Loading presynth.reset_pulse
+# Loading presynth.spi_data_out
+# Loading presynth.spi_master
+# Loading presynth.spi_mode_config2
+# Loading presynth.test_constants_spi
+# ** Warning: (vsim-3017) F:/Ball_Avionics/stimulus/tb_tranceiver_integration.v(59): [TFMPC] - Too few port connections. Expected 14, found 6.
+# 
+#         Region: /tb_tranceiver_integration/transceiver_integration_0
+# ** Warning: (vsim-3722) F:/Ball_Avionics/stimulus/tb_tranceiver_integration.v(59): [TFMPC] - Missing connection for port 'ds0'.
+# 
+# ** Warning: (vsim-3722) F:/Ball_Avionics/stimulus/tb_tranceiver_integration.v(59): [TFMPC] - Missing connection for port 'ds1'.
+# 
+# ** Warning: (vsim-3722) F:/Ball_Avionics/stimulus/tb_tranceiver_integration.v(59): [TFMPC] - Missing connection for port 'ds2'.
+# 
+# ** Warning: (vsim-3722) F:/Ball_Avionics/stimulus/tb_tranceiver_integration.v(59): [TFMPC] - Missing connection for port 'ds3'.
+# 
+# ** Warning: (vsim-3722) F:/Ball_Avionics/stimulus/tb_tranceiver_integration.v(59): [TFMPC] - Missing connection for port 'ds4'.
+# 
+# ** Warning: (vsim-3722) F:/Ball_Avionics/stimulus/tb_tranceiver_integration.v(59): [TFMPC] - Missing connection for port 'ds5'.
+# 
+# ** Warning: (vsim-3722) F:/Ball_Avionics/stimulus/tb_tranceiver_integration.v(59): [TFMPC] - Missing connection for port 'ds6'.
+# 
+# ** Warning: (vsim-3722) F:/Ball_Avionics/stimulus/tb_tranceiver_integration.v(59): [TFMPC] - Missing connection for port 'ds7'.
+# 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Scott  Hostname: SCOTT-PC  ProcessID: 14132
+# 
+#           Attempting to use alternate WLF file "./wlfty6hm10".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlfty6hm10
+# 
+#  ** Warning: FBSEL is unknown.
+#  Time: 0.0 Instance: tb_tranceiver_integration.transceiver_integration_0.CLK_26MHZ_0.Core.P1 
+add wave  \
+sim:/tb_tranceiver_integration/transceiver_integration_0/spi_mode_config_0_byte_out
+add wave  \
+sim:/tb_tranceiver_integration/transceiver_integration_0/spi_master_0_data_out
+add wave  \
+sim:/tb_tranceiver_integration/transceiver_integration_0/spi_master_0_chip_rdy
+run -all
+# End time: 18:37:58 on Mar 07,2016, Elapsed time: 0:10:05
+# Errors: 0, Warnings: 11
