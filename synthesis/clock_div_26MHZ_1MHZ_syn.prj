@@ -1,9 +1,9 @@
 #--  Synopsys, Inc.
 #--  Version J-2015.03M-3
-#--  Project file C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\synthesis\clock_div_26MHZ_1MHZ_syn.prj
+#--  Project file F:\Ball_Avionics\synthesis\clock_div_26MHZ_1MHZ_syn.prj
 
 #project files
-add_file -verilog "C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/hdl/clock_div_26MHZ_1MHZ.v"
+add_file -verilog "F:/Ball_Avionics/hdl/clock_div_26MHZ_1MHZ.v"
 
 
 

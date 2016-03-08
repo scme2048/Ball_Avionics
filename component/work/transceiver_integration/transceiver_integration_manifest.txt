@@ -1,11 +1,11 @@
 Microsemi Corporation - Microsemi Libero Software Release v11.6 (Version 11.6.0.34)
 
-Date      :  Sun Feb 28 20:18:51 2016
-Project   :  C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics
+Date      :  Mon Mar 07 18:24:55 2016
+Project   :  F:\Ball_Avionics
 Component :  transceiver_integration
 Family    :  ProASIC3L
 
 
 HDL source files for all Synthesis and Simulation tools:
-    C:/Users/Scott/Documents/Docs/School/Senior/Projects/Libero/Ball_Avionics/component/work/transceiver_integration/transceiver_integration.v
+    F:/Ball_Avionics/component/work/transceiver_integration/transceiver_integration.v
 

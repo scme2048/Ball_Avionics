@@ -1,0 +1,145 @@
+# Reading C:/Microsemi/Libero_v11.6/Model/tcl/vsim/pref.tcl
+# do run.do
+# INFO: Simulation library presynth already exists
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet presynth presynth 
+# Modifying modelsim.ini
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.07 Jul 19 2014
+# vmap -modelsim_quiet proasic3l C:/Microsemi/Libero_v11.6/Designer/lib/modelsim/precompiled/vlog/proasic3l 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 18:25:28 on Mar 07,2016
+# vlog -reportprogress 300 -work presynth F:/Ball_Avionics/smartgen/CLK_26MHZ/CLK_26MHZ.v 
+# -- Compiling module CLK_26MHZ
+# 
+# Top level modules:
+# 	CLK_26MHZ
+# End time: 18:25:34 on Mar 07,2016, Elapsed time: 0:00:06
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 18:25:34 on Mar 07,2016
+# vlog -reportprogress 300 -work presynth F:/Ball_Avionics/hdl/clock_div_1MHZ_10HZ.v 
+# -- Compiling module clock_div_1MHZ_10HZ
+# 
+# Top level modules:
+# 	clock_div_1MHZ_10HZ
+# End time: 18:25:35 on Mar 07,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 18:25:35 on Mar 07,2016
+# vlog -reportprogress 300 -work presynth F:/Ball_Avionics/hdl/clock_div_26MHZ_1MHZ.v 
+# -- Compiling module clock_div_26MHZ_1MHZ
+# 
+# Top level modules:
+# 	clock_div_26MHZ_1MHZ
+# End time: 18:25:35 on Mar 07,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 18:25:36 on Mar 07,2016
+# vlog -reportprogress 300 -work presynth F:/Ball_Avionics/hdl/orbit_control.v 
+# -- Compiling module orbit_control
+# 
+# Top level modules:
+# 	orbit_control
+# End time: 18:25:36 on Mar 07,2016, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 18:25:36 on Mar 07,2016
+# vlog -reportprogress 300 -work presynth F:/Ball_Avionics/hdl/read_buffer.v 
+# -- Compiling module read_buffer
+# 
+# Top level modules:
+# 	read_buffer
+# End time: 18:25:41 on Mar 07,2016, Elapsed time: 0:00:05
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 18:25:42 on Mar 07,2016
+# vlog -reportprogress 300 -work presynth F:/Ball_Avionics/hdl/reset_pulse.v 
+# -- Compiling module reset_pulse
+# 
+# Top level modules:
+# 	reset_pulse
+# End time: 18:25:43 on Mar 07,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 18:25:43 on Mar 07,2016
+# vlog -reportprogress 300 -work presynth F:/Ball_Avionics/hdl/spi_data_out.v 
+# -- Compiling module spi_data_out
+# 
+# Top level modules:
+# 	spi_data_out
+# End time: 18:25:44 on Mar 07,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 18:25:44 on Mar 07,2016
+# vlog -reportprogress 300 -work presynth F:/Ball_Avionics/hdl/SPI_Master.v 
+# -- Compiling module spi_master
+# 
+# Top level modules:
+# 	spi_master
+# End time: 18:25:46 on Mar 07,2016, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 18:25:48 on Mar 07,2016
+# vlog -reportprogress 300 -work presynth F:/Ball_Avionics/hdl/spi_mode_config2.v 
+# -- Compiling module spi_mode_config2
+# ** Warning: F:/Ball_Avionics/hdl/spi_mode_config2.v(38): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: F:/Ball_Avionics/hdl/spi_mode_config2.v(39): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: F:/Ball_Avionics/hdl/spi_mode_config2.v(40): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: F:/Ball_Avionics/hdl/spi_mode_config2.v(41): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: F:/Ball_Avionics/hdl/spi_mode_config2.v(42): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: F:/Ball_Avionics/hdl/spi_mode_config2.v(43): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: F:/Ball_Avionics/hdl/spi_mode_config2.v(99): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# ** Warning: F:/Ball_Avionics/hdl/spi_mode_config2.v(758): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	spi_mode_config2
+# End time: 18:25:49 on Mar 07,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 8
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 18:25:49 on Mar 07,2016
+# vlog -reportprogress 300 -work presynth F:/Ball_Avionics/hdl/test_constants_spi.v 
+# -- Compiling module test_constants_spi
+# ** Warning: F:/Ball_Avionics/hdl/test_constants_spi.v(24): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# 
+# Top level modules:
+# 	test_constants_spi
+# End time: 18:25:50 on Mar 07,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 18:25:50 on Mar 07,2016
+# vlog -reportprogress 300 -work presynth F:/Ball_Avionics/component/work/transceiver_integration/transceiver_integration.v 
+# -- Compiling module transceiver_integration
+# 
+# Top level modules:
+# 	transceiver_integration
+# End time: 18:25:51 on Mar 07,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.3c Compiler 2014.07 Jul 19 2014
+# Start time: 18:25:51 on Mar 07,2016
+# vlog -reportprogress 300 "+incdir+F:/Ball_Avionics/stimulus" -work presynth F:/Ball_Avionics/stimulus/tb_tranceiver_integration.v 
+# -- Compiling module tb_tranceiver_integration
+# 
+# Top level modules:
+# 	tb_tranceiver_integration
+# End time: 18:25:52 on Mar 07,2016, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -gui -do "do run.do" -l tb_tranceiver_integration_presynth_simulation.log 
+# Start time: 18:25:52 on Mar 07,2016
+# ** Error: License checkout has been disallowed because
+# only one session is allowed to run on an uncounted nodelocked
+# license and an instance of ModelSim is already running with a
+# nodelocked license on this machine.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./run.do PAUSED at line 26
