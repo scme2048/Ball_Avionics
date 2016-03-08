@@ -1,5 +1,9 @@
 KEY IDE_DES_TOOL "Ide"
+<<<<<<< HEAD
 KEY IDE_DES_ADB_PATH "C:\Users\Scott\Documents\Docs\School\Senior\Projects\Libero\Ball_Avionics\designer\impl1\full_sys.adb"
+=======
+KEY IDE_DES_ADB_PATH "F:\Ball_Avionics\designer\impl1\full_sys.adb"
+>>>>>>> e3d463430f9b1c845402c4b79cc586e97c769779
 LIST SOURCE_FILES
 ENDLIST
 LIST OPTIONAL_FILES

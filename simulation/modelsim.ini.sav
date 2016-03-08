@@ -83,7 +83,10 @@ postsynth = postsynth
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e3d463430f9b1c845402c4b79cc586e97c769779
 syncad_vhdl_lib = C:\Microsemi\Libero_v11.6\Designer/lib/actel/syncad_vhdl_lib
 
 [vcom]

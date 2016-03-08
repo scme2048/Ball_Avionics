@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Sun Feb 28 17:51:23 2016
+// Created by SmartDesign Mon Mar 07 16:48:42 2016
 // Version: v11.6 11.6.0.34
 //////////////////////////////////////////////////////////////////////
 
@@ -13,9 +13,11 @@ module master_mode(
     MISO,
     RST,
     // Outputs
+    BUSY,
     MOSI,
     SCK,
-    SS
+    SS,
+    START
 );
 
 //--------------------------------------------------------------------
@@ -28,12 +30,15 @@ input  RST;
 //--------------------------------------------------------------------
 // Output
 //--------------------------------------------------------------------
+output BUSY;
 output MOSI;
 output SCK;
 output SS;
+output START;
 //--------------------------------------------------------------------
 // Nets
 //--------------------------------------------------------------------
+wire         busy_net_0;
 wire         CLK_10;
 wire         CLK_26;
 wire   [7:0] dummy_mem_0_data;
@@ -42,25 +47,31 @@ wire         MOSI_net_0;
 wire         orbit_control_0_tx_enable;
 wire         RST;
 wire         SCK_net_0;
-wire         spi_master_0_busy;
+wire         spi_master_0_chip_rdy;
 wire   [7:0] spi_master_0_data_out;
 wire         spi_mode_config_0_begin_pass;
 wire   [7:0] spi_mode_config_0_byte_out;
 wire         spi_mode_config_0_next_cmd;
-wire         spi_mode_config_0_start;
 wire         SS_net_0;
+wire         start_net_0;
 wire         SCK_net_1;
 wire         MOSI_net_1;
 wire         SS_net_1;
+wire         busy_net_1;
+wire         start_net_1;
 //--------------------------------------------------------------------
 // Top level output port assignments
 //--------------------------------------------------------------------
-assign SCK_net_1  = SCK_net_0;
-assign SCK        = SCK_net_1;
-assign MOSI_net_1 = MOSI_net_0;
-assign MOSI       = MOSI_net_1;
-assign SS_net_1   = SS_net_0;
-assign SS         = SS_net_1;
+assign SCK_net_1   = SCK_net_0;
+assign SCK         = SCK_net_1;
+assign MOSI_net_1  = MOSI_net_0;
+assign MOSI        = MOSI_net_1;
+assign SS_net_1    = SS_net_0;
+assign SS          = SS_net_1;
+assign busy_net_1  = busy_net_0;
+assign BUSY        = busy_net_1;
+assign start_net_1 = start_net_0;
+assign START       = start_net_1;
 //--------------------------------------------------------------------
 // Component instances
 //--------------------------------------------------------------------
@@ -90,23 +101,25 @@ spi_master spi_master_0(
         .clk      ( CLK_26 ),
         .rst      ( RST ),
         .miso     ( MISO ),
-        .start    ( spi_mode_config_0_start ),
+        .start    ( start_net_0 ),
         .data_in  ( spi_mode_config_0_byte_out ),
         // Outputs
         .mosi     ( MOSI_net_0 ),
         .sck      ( SCK_net_0 ),
-        .busy     ( spi_master_0_busy ),
+        .busy     ( busy_net_0 ),
+        .chip_rdy ( spi_master_0_chip_rdy ),
         .new_data (  ),
         .data_out ( spi_master_0_data_out ) 
         );
 
-//--------spi_mode_config
-spi_mode_config spi_mode_config_0(
+//--------spi_mode_config2
+spi_mode_config2 spi_mode_config_0(
         // Inputs
         .TX_ENABLE     ( orbit_control_0_tx_enable ),
         .rst           ( RST ),
         .clk           ( CLK_26 ),
-        .busy          ( spi_master_0_busy ),
+        .busy          ( busy_net_0 ),
+        .chip_rdy      ( spi_master_0_chip_rdy ),
         .SLAVE_OUTPUT  ( spi_master_0_data_out ),
         .DATA_FROM_MEM ( dummy_mem_0_data ),
         // Outputs
@@ -114,7 +127,7 @@ spi_mode_config spi_mode_config_0(
         .begin_pass    ( spi_mode_config_0_begin_pass ),
         .ss            ( SS_net_0 ),
         .next_cmd      ( spi_mode_config_0_next_cmd ),
-        .start         ( spi_mode_config_0_start ),
+        .start         ( start_net_0 ),
         .byte_out      ( spi_mode_config_0_byte_out ) 
         );
 
