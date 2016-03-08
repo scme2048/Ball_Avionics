@@ -12,7 +12,7 @@
     <project-description>
     </project-description>
     <location>F:/FPGA/Microsemi/First Try/SPI/component/work/master_mode</location>
-    <state>GENERATED ( Sun Feb 28 12:07:04 2016 )</state>
+    <state>GENERATED ( Mon Mar 07 16:48:43 2016 )</state>
     <swide-toolchain>SoftConsole workspace has not been generated</swide-toolchain>
   </project-settings>
   <site-map>
@@ -25,6 +25,7 @@
     <file>F:\FPGA\Microsemi\First Try\SPI\hdl\SPI_Master.v</file>
     <file>F:\FPGA\Microsemi\First Try\SPI\hdl\spi_master2.v</file>
     <file>F:\FPGA\Microsemi\First Try\SPI\hdl\spi_mode_config.v</file>
+    <file>F:\FPGA\Microsemi\First Try\SPI\hdl\spi_mode_config2.v</file>
   </fileset>
   <io>
     <port-name>MOSI</port-name>
@@ -35,6 +36,12 @@
   <io>
     <port-name>RST</port-name>
     <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
+  <io>
+    <port-name>BUSY</port-name>
+    <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVCMOS33</io-standard>
   </io>
@@ -68,6 +75,12 @@
     <pin-number>-</pin-number>
     <io-standard>LVCMOS33</io-standard>
   </io>
+  <io>
+    <port-name>START</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVCMOS33</io-standard>
+  </io>
   <core type="HdlModule">
     <core-type>HdlModule</core-type>
     <core-exttype>dummy_mem</core-exttype>
@@ -88,8 +101,8 @@
   </core>
   <core type="HdlModule">
     <core-type>HdlModule</core-type>
-    <core-exttype>spi_mode_config</core-exttype>
-    <core-location>hdl\spi_mode_config.v</core-location>
+    <core-exttype>spi_mode_config2</core-exttype>
+    <core-location>hdl\spi_mode_config2.v</core-location>
     <core-name>spi_mode_config_0</core-name>
   </core>
   <memorysystem>
